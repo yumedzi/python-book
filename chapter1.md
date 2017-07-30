@@ -290,7 +290,7 @@ Doc string - first unassigned to variable string of module, function or class. T
 def f():
     '''
     Some nice function (the best in the world)
-    
+
     :no params:
     :return: None
     '''
@@ -302,7 +302,7 @@ Help on function f in module __main__:
 
 f()
     Some nice function (the best in the world)
-    
+
     :no params:
     :return: None
 ```
@@ -570,13 +570,13 @@ Operators can be overloaded in Python by defining special member functions—for
 class Foo(object): 
     attr1 = "Some value"
     attr2 = "Boo!"
-    
+
     def __str__(self):
         return "Nice warm object :)"
-    
+
     def foo(self):
         return self.attr1
-    
+
     def __init__(self, val=None): 
         print("Initializing new object!")
         if not val is None:

@@ -34,11 +34,7 @@ Hello World
 
 ## What is Python? {#What-is-Python?}
 
-
-
-![](images/tr_01_00.png "import antigravity")
-
-
+![](assets/import.png)
 
 ```
 import antigravity
@@ -76,7 +72,7 @@ import antigravity
 ### Why Python slower then compiled languages? {#Why-Python-slower-then-compiled-languages?}
 
 1. Python is Dynamically Typed rather than Statically Typed.
-   ![](images/tr_01_02.png)
+   ![](/assets/static_dynamic.png)
 2. Python is interpreted rather than compiled. A smart compiler can look ahead and optimize for repeated or unneeded operations, which can result in speed-ups
 3. Python's object model can lead to inefficient memory access
 
@@ -92,13 +88,11 @@ Almost everything said for Java also applies for C++, just more so: where Python
 
 ## Python 2/3 {#Python-2/3}
 
-  
 There are two main branches of Python:
 
 * Python 2 \(~ 2.7.10\)
 * Python 3 \(~ 3.5.2\)
 
-  
 Nowadays most development \(especially new projects\) are started mostly on Python 3.
 
 New \(and fixed old\) modules/technologies - are again mostly created firstly for Python 3 and in some cases backported.
@@ -121,74 +115,37 @@ Additionally:
   * dict.keys\(\), dict.items\(\), dict.values\(\)
   * map\(\), filter\(\), zip\(\)
   * range\(\) = xrange\(\) from Python 2
-* Iterator protocol change: next\(\) -
-  &gt;
-   \_\_next\_\_\(\)
+* Iterator protocol change: next\(\) -&gt; \_\_next\_\_\(\)
 * str = unicode
 * Different types objects comparison \(you can't compare str and int\)
 * PEP8 fixes
 
 Bonus:
 
+Bonus:
+
 * Annotations
 
-  ```
-  def
-  foo
-  (
-  a
-  :
-  'x'
-  ,
-  b
-  :
-  5
-  +
-  6
-  ,
-  c
-  :
-  list
-  )
-  -
-  >
-  max
-  (
-  2
-  ,
-  9
-  )
+  ```py
+  def foo(a: 'x', b: 5 + 6, c: list) -> max(2, 9)
   ```
 
 * Cool unpacking:
 
-  ```
-  (
-  a
-  ,
-  *
-  rest
-  ,
-  b
-  )
-  =
-  range
-  (
-  5
-  )
+  ```py
+  (a, *rest, b) = range(5)
   ```
 
-* New
-  **super\(\)**
-  – you don't need to write what class to extend \(we'll learn about them in OOP section\)
+* New **super\(\) **– you don't need to write what class to extend \(we'll learn about them in OOP section\)
 * Asyncio \(versions 3.4, 3.5+\)
 
 ### Python interpreter {#Python-interpreter}
 
 * Interpreter - mean it runs code almost "live"
-* Downloadable from
-  [http://python.org](http://python.org)
-* Python is script language but still it compiles runtime code in a form of so called bytecode which Python Virtual Machine \(PVM\) runs \(just like Java does with it's JVM\):![](images/tr_01_01.png "PVM explanation")
+* Downloadable from [http://python.org](http://python.org)
+* Python is script language but still it compiles runtime code in a form of so called bytecode which Python Virtual Machine \(PVM\) runs \(just like Java does with it's JVM\):
+
+![](/assets/interpreter.png)
 
 * Compiled code is auto-created and stored in .pyc files \(for Python 3 they are in separate \_\_pycache\_\_ directory\)
 
@@ -208,7 +165,7 @@ Bonus:
 
 * Run inline script:
 
-  ```
+  ```py
   $ python –c "print('Hello World yo!')"
   ```
 
@@ -217,208 +174,79 @@ Bonus:
 ## Identations {#Identations}
 
 * Identation or TAB, 2/4 spaces - whitespaces used to delimit program blocks - instead of punctuation or keywords, it uses indentation to indicate the run of a block.
-  ```
-  for
-  i
-  in
-  [
-  1
-  ,
-  2
-  ,
-  3
-  ]:
-  if
-  i
-  ==
-  3
-  :
-  print
-  (
-  "Number 3 found!"
-  )
-  else
-  :
-  print
-  (
-  "Number:"
-  ,
-  i
-  )
+  ```py
+  for i in [1, 2, 3]:
+      if i == 3:
+          print("Number 3 found!")
+      else:
+          print("Number:", i)
   ```
 
 In C we need to use brackets\("{" and "}"\) to delimit blocks of code:
 
-```
-void
-foo
-(
-int
-x
-)
+```cpp
+void foo(int x)
 {
-if
-(
-x
-==
-0
-)
-{
-bar
-();
-baz
-();
-}
-else
-{
-qux
-(
-x
-);
-foo
-(
-x
--
-1
-);
-}
+    if (x == 0) {
+        bar();
+        baz();
+    } else {
+        qux(x);
+        foo(x - 1);
+    }
 }
 ```
 
 In Python the same role is after indentations which make code much easier to read:
 
-```
-def
-foo
-(
-x
-):
-if
-x
-==
-0
-:
-bar
-()
-baz
-()
-else
-:
-qux
-(
-x
-)
-foo
-(
-x
--
-1
-)
+```py
+def foo(x):
+    if x == 0:
+        bar()
+        baz()
+    else:
+        qux(x)
+        foo(x - 1)
 ```
 
-In \[1\]:
+Easter egg describing the "love to braces":
 
-```
-# Easter egg describing the "love to braces"
-from
-__future__
-import
-braces
-```
-
-```
-  File 
-"
-<
-ipython-input-1-7e6f149a161c
->
-"
-, line 
-2
+```py
+>>> from __future__ import braces
+File "<ipython-input-1-7e6f149a161c>", line 2
     from __future__ import braces
-SyntaxError
-:
- not a chance
-
+SyntaxError: not a chance
 ```
 
-Identation must maintain the constant level for same level of nesting.
+Indentation must maintain the constant level for same level of nesting.
 
-This is**correct**:
+This is **correct**:
 
-```
-if
-condition
-:
-do_something1
-do_something2
+```py
+if condition:
+    do_something1()
+    do_something2()
 ```
 
-This is**incorrect**:
+This is **incorrect**:
 
-```
-if
-condition
-:
-do_something1
-do_something2
-```
-
-In \[ \]:
-
-```
-
+```py
+if condition:
+    do_something1()
+        do_something2()
 ```
 
 If code block is not big it is allowed to use inline form:
 
-```
-if
-condition
-:
-do_something1
-else
-:
-do_something2
+```py
+if condition: do_something1
+else: do_something2
 ```
 
 And it is possible to specify few statements on the same line using`;`:
 
-```
-a
-=
-[
-x
-for
-x
-in
-range
-(
-10
-)
-if
-x
-%
-2
-];
-f
-=
-open
-(
-"tmp.txt"
-,
-"w"
-);
-f
-.
-write
-(
-a
-);
-f
-.
-close
-()
+```py
+a = [x for x in range(10) if x % 2]; f = open("tmp.txt", "w"); f.write(a); f.close()
 ```
 
 These two examples are not readable so used very rarely.
@@ -427,8 +255,7 @@ These two examples are not readable so used very rarely.
 
 Naming rules:
 
-* can have only alphabetical characters, numbers and
-  `_`
+* can have only alphabetical characters, numbers and `_`
 * can't start with number
 * case sensitive
 * can't be one of reserved keywords
@@ -449,7 +276,7 @@ def       for       lambda    try
 
 `#`- starting with this symbol everything till the end of line is ingored
 
-In \[2\]:
+In \[2\]:
 
 ```
 a
@@ -460,9 +287,9 @@ a
 # Continuing our comments
 ```
 
-Doc string -_first string_of module, function or class. These string are used by IDEs, help auto-generating scripts etc. It is possible to specify multiline string by using starting and endign triple quotes\(`"""`or`'''`\).
+Doc string -\_first string\_of module, function or class. These string are used by IDEs, help auto-generating scripts etc. It is possible to specify multiline string by using starting and endign triple quotes\(`"""`or`'''`\).
 
-In \[8\]:
+In \[8\]:
 
 ```
 def
@@ -485,7 +312,7 @@ Out\[8\]:
 '\n    Some nice function (the best in the world)\n    \n    :no params:\n    :return: None\n    '
 ```
 
-In \[7\]:
+In \[7\]:
 
 ```
 def
@@ -507,13 +334,11 @@ Help on function f2 in module __main__:
 f2()
     Even better function
     with a much more great documentation!
-
-
 ```
 
 ## Objects in Python {#Objects-in-Python}
 
-In \[ \]:
+In \[ \]:
 
 ```
 a
@@ -546,7 +371,6 @@ Each object has:
 * type \(type object describing what kind this object is\)
 * value \(some data pay-load\)
 
-  
 A lot of variables can point to same object. You don't need to declare what exact type variable should be.
 
 * Compare objects by value:
@@ -568,7 +392,6 @@ This is what happenes when you do`a = 42`- you bind name`a`from namespace to an 
 
 # Python overview {#Python-overview}
 
-  
 To get you grasp of an idea about Python it's better to just fly over it awhole. To see main syntax nuances, basic operations and workflow. We won't stop to explain everything in detail as it will be covered in next sessions. Now it's just a show-off.
 
 So, in next few slides we are going to see:
@@ -889,7 +712,7 @@ close
 
 Operator "def" is used for creating functions
 
-In \[2\]:
+In \[2\]:
 
 ```
 def
@@ -924,7 +747,7 @@ Out\[2\]:
 
 #### Swapping two variables {#Swapping-two-variables}
 
-In \[3\]:
+In \[3\]:
 
 ```
 a
@@ -951,7 +774,6 @@ b
 
 ```
 54 45
-
 ```
 
 #### Read keyboard input {#Read-keyboard-input}
@@ -979,7 +801,7 @@ There is a common question - how exactly arguments are passing in Python's funct
 
 So, argument passing to a function is done not by value \(we don't have "raw" data in Python, only objects that wrapping it\) and not by reference \(reference is int number of memory location\). This is done by object-reference. In other words we are passing object itself \(it's almost like passing the pointer to an object in memory\).
 
-In \[10\]:
+In \[10\]:
 
 ```
 def
@@ -1010,12 +832,11 @@ my_list
 
 ```
 [1, 'END']
-
 ```
 
 ### Decorators {#Decorators}
 
-In \[15\]:
+In \[15\]:
 
 ```
 def
@@ -1069,7 +890,6 @@ show_something
 >
  Showing results:
 Main function ouput
-
 ```
 
 ### OOP {#OOP}
@@ -1080,7 +900,7 @@ The language supports extensive introspection of types and classes. Types can be
 
 Operators can be overloaded in Python by defining special member functions—for instance, defining**add**on a class permits one to use the + operator on members of that class.
 
-In \[23\]:
+In \[23\]:
 
 ```
 class
@@ -1170,7 +990,6 @@ Nice warm object :)
 Spam
 Spam
 Boo!
-
 ```
 
 ## Installation, IDEs etc. {#Installation,-IDEs-etc.}
@@ -1178,11 +997,13 @@ Boo!
 * Python.org:
   * [https://www.python.org/downloads/](https://www.python.org/downloads/)
 * Pip \(already installed in new versions of Python\) is Python package manager:
-  ```
-  pip install jupyter virtualenv
 
   ```
+  pip install jupyter virtualenv
+  ```
+
 * Virtualenv - manager of virtual environments which allows to keep different version of Python with different version of packages. Usage:
+
   ```
   virtualenv -p /path/to/existing/python venv
 
@@ -1199,7 +1020,6 @@ Boo!
 
   ...
   deactivate
-
   ```
 
 ### Problems with Python installation on WIndows {#Problems-with-Python-installation-on-WIndows}
@@ -1263,11 +1083,9 @@ Tasks/Challenges:
 * [http://www.checkio.org](http://www.checkio.org)
 * [http://empireofcode.com](http://empireofcode.com)
 
+# The end :\)&lt;/h1&gt;
 
-
-# The end :\)&lt;/h1&gt; 
-
-## Thank you all for listening!&lt;/h2&gt; 
+## Thank you all for listening!&lt;/h2&gt;
 
 ### Viktor Moyseyenko {#Viktor-Moyseyenko}
 

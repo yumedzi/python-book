@@ -1,5 +1,5 @@
 # Summary
 
 * [Book overview](README.md)
-* [First Chapter](chapter1.md)
+* [1. "Hello World"](chapter1.md)
 

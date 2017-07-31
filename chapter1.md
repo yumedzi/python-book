@@ -4,13 +4,12 @@
 
 #### Plan:
 
-* What is Python?
-* Example
-* Hello World
-* Python interpreter
-* Basic types, operators
-* Best IDEs
-* Sources for self-learning
+* [What is Python?](#What-is-Python?)
+* [Python interpreter](#Python-interpreter)
+* [Python Syntax](#Basic-syntax)
+* [Basic types, operators](#Python-overview)
+* [Installation, IDEs, etc.](#Installation,-IDEs-etc.)
+* [Sources for self-learning](#Sources-for-self-learning)
 
 ### Canonical example {#Canonical-example}
 

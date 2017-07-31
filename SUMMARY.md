@@ -10,4 +10,5 @@
   * [Python Overview](chapter1/python-overview.md)
   * [Installation, IDEs etc.](chapter1/installation-ides-etc.md)
   * [Sources for self-learning](chapter1/sources-for-self-learning.md)
+* [2. Basic Types](basic-types.md)
 

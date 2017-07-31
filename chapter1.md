@@ -7,6 +7,7 @@
 * [What is Python?](/chapter1/what-is-python.md)
 * [Python interpreter](/chapter1/python-interpreter.md)
 * [Python Syntax](/chapter1/basic-syntax.md)
+* [Python objects](/chapter1/python-objects.md)
 * [Basic types, operators](/chapter1/python-overview.md)
 * [Installation, IDEs, etc.](/chapter1/installation-ides-etc.md)
 * [Sources for self-learning](/chapter1/sources-for-self-learning.md)

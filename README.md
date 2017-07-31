@@ -1,73 +1,31 @@
 # Python Book
 
-## "Short" course overview:
+This book is compilation of materials used in Python Training conducted by me. Course itself written in a form of series of Jupyter notebooks with slides to give students interactive materials during presentation on each live session. And this book serves the purpose to be a "static" version of all slides kept in one place.
+
+### Short course overview:
 
 1. **Hello World**
-   * What is Python?
-   * Python interpreter
-   * What is Python object
-   * Basic types, operators
-   * Best IDEs
-   * Short overview of main features
+   * Introduction to Python, motivation and overview
 2. **Basic Types \#1**
-   * Python objects introspection
-   * Classification of builtin types
-     * Mutable, immutable, hashable, iterable
-   * Numbers
-     * Main features
-     * Problems with floating-point calculations
-     * Numpy usecases
-   * Strings
-     * Main methods
-     * Formatting
-     * Short dive into regular expressions
-     * Templating
+   * Classification of types + strings
 3. **Basic types \#2**
-   * Lists
-     * Main methods
-     * List comprehension
-     * Shallow/deep copy principles
-   * Tuples
-   * Dictionaries
-   * Sets
-   * Conditions
-   * Loops
+   * Lists, tuples, dicts, conditions, loops
 4. **Functions**
-   * Functions
-   * Arguments passing
-   * Scopes of visibility
-   * Generators
-   * Lambdas \(anonymous functions\)
+   * Functions, generators, lambdas
 5. **Functional Programming**
-   * Working with files
-   * Builtins
-   * Iterators
-   * Functional Programming
-   * Functools
-   * Comprehensions
+   * builtins, map, filter, functools.reduce
 6. **Styling, modules/pakages**
-   * Zen of Python
-   * Lint
-   * PEP 8
-   * Modules
-   * Standard modules
-   * Packages
+   * Zen of Python, PEP 8
 7. **OOP**
-   * OOP basics
-     * 4 principles of OOP
-     * Classes
-     * Old and new style objects
-   * Method Resolution Order
-   * Magic methods
-   * Slots and \_\_dict\_\_
-   * super\(\)
+   * OOP basics, magic methods, MRO
 8. **Decorators, Exceptions**
-   * Decorators
-   * Parameterizing decorators
-   * Exceptions
-   * Context managers
-
-# 
+9. **Testing**
+   * doctest, unittest
+   * Web testing basics, Selenium
+10. **Advanced Topics**
+    * Threading, multiprocessing
+    * subprocess, sys, shutil
+    * Serialization
 
 
 

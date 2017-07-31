@@ -10,33 +10,25 @@ Python is high-level dynamically typed interpreted programming language. Its des
 
 ### Canonical example {#Canonical-example}
 
-```
-print("Hello World!!")
-```
-
-```
+```py
+>>> print("Hello World!!")
 Hello World!!
 ```
 
 For Python 2:
 
-```
+```py
 >>> print "Hello World"
-```
-
-```
 Hello World
 ```
 
 ## There is an Easter egg illustrating Python's core idea: {#What-is-Python?}
 
 ```
-import antigravity
+>>> import antigravity
 ```
 
-![](assets/antigravity.png)
-
->
+![](/assets/antigravity.png)
 
 ## Pluses/Minuses of Python: {#Pluses/Minuses-of-Python:}
 

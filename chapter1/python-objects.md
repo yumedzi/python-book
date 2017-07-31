@@ -13,7 +13,7 @@ a = 42
 
 So: variable holds a value. You can change the value of a variable at any point. In this case variable will just point to another object. Old object will remain but if it won't be referenced by any variable it will be cleaned out.
 
-###  {#Naming-rules}
+####  {#Python-Objects.-Short-explanation:}
 
 #### Python Objects. Short explanation: {#Python-Objects.-Short-explanation:}
 
@@ -30,6 +30,8 @@ A lot of variables can point to same object. You don't need to declare what exac
   `==`
 * Compare objects by id:
   `is`
+
+####  {#Python-Objects.-In-depth-details:}
 
 #### Python Objects. In-depth details: {#Python-Objects.-In-depth-details:}
 

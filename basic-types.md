@@ -1,6 +1,8 @@
-# Basic Types
+# Basic Types, part 1
 
-> In this chapter we'll learn about main aspects of Python basic types, how to work with them, their methods and attributes, and also - how to do basic introspection.
+> In this chapter we'll learn about main aspects of Python basic types such as number as strings, how to work with them, their methods and attributes, and also - how to do basic introspection.
+>
+> In the next chapter \(part 2\) we'll continue to learn about basic types - such as lists, tuples, dicts and also how to loop through sequences, create conditions etc.
 
 ## Plan: {#Plan:}
 
@@ -11,9 +13,8 @@
 * [Numbers](/basic-types/number.md)
 * [Strings](/basic-types/strings.md)
 * [String Formatting](/basic-types/string-formatting.md)
-* Regular Expressions
-
-
+* [Regular Expressions](/basic-types/regular-expressions.md)
+* [Sources for self-learning](/chapter1/sources-for-self-learning.md)
 
 
 

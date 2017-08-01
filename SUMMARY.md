@@ -10,7 +10,7 @@
   * [Python Overview](chapter1/python-overview.md)
   * [Installation, IDEs etc.](chapter1/installation-ides-etc.md)
   * [Sources for self-learning](chapter1/sources-for-self-learning.md)
-* [2. Basic Types](basic-types.md)
+* [2. Basic Types, part 1](basic-types.md)
   * [Getting help](basic-types/getting-help.md)
   * [Introspection](basic-types/introspection.md)
   * [Classification of basic types](basic-types/classification-of-basic-types.md)
@@ -19,4 +19,5 @@
   * [Strings](basic-types/strings.md)
   * [String Formatting](basic-types/string-formatting.md)
   * [Regular Expressions](basic-types/regular-expressions.md)
+  * [Sources for self-learning](basic-types/sources-for-self-learning.md)
 

@@ -1,6 +1,6 @@
 # Strings
 
-> String is **immutable **sequence of characters. For Python it's almost like any other sequence \(more like tuple which is immutable version of list\). 
+> String is **immutable **sequence of characters. For Python it's almost like any other sequence \(more like tuple which is immutable version of list\).
 >
 > In Python 3 all characters are unicode objects - abstract representation of some symbol. It is like an "idea" of a symbol. When printing or writing to file strings are encoded to bytes with default encoding automatically by Python.
 
@@ -13,7 +13,7 @@ String literals are written in a variety of ways:
 * Triple quoted:
   `'''Three single quotes''', """Three double quotes"""`
 
-Examples: 
+Examples:
 
 ```py
 >>> s1 = "Hello, I'm nice little string"
@@ -50,8 +50,6 @@ I need to rest...
 
 ### Main methods of strings {#Main-methods-of-strings}
 
-In \[24\]:
-
 ```py
 print(dir("some_string"))  # Emm... actually all methods...
 ```
@@ -68,8 +66,6 @@ Output with all methods of strings:
 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip',
 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
-
-
 
 | Method\(s\) | Description |
 | :--- | :--- |
@@ -88,8 +84,6 @@ Output with all methods of strings:
 | `some_string[i]` | Return new string - one character by index **i** |
 | `some_string[n1:n2:step]` | Return new string - sub-string from n1 till n2 \(non-inclusive\) with step **step** |
 | `len(some_string)` | Return int - length of string |
-
-
 
 #### Some examples {#Some-examples}
 
@@ -184,11 +178,11 @@ True
 ##### Stripping - removing whitespaces {#Stripping---removing-whitespaces}
 
 * `.strip()`
-  - remove from the beginning and from the end both
+  * remove from the beginning and from the end both
 * `.rstrip()`
-  - remove only from the end
+  * remove only from the end
 * `.lstrip()`
-  - remove only from the beginning
+  * remove only from the beginning
 
 Example:
 

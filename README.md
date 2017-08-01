@@ -1,4 +1,4 @@
-[](/chapter1.md)# Python Book
+# Python Book
 
 This book is compilation of materials used in Python Training conducted by me. Course itself written in a form of series of Jupyter notebooks with slides to give students interactive materials during presentation on each live session. And this book serves the purpose to be a "static" version of all slides kept in one place.
 

@@ -28,7 +28,9 @@ Example of introspection of `str` object:
 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 
-We see a lot of methods available in object which gives us a hint what is the kind of object it is and what we can do with it. If the method of attribute name needs to be recalled - `dir()` is the best way to do this. Other way is to use [ipython](http://jupyter.org/)'s code completion \(type `some_object.` and press `TAB`\).
+We see a lot of methods available in object which gives us a hint what is the kind of object it is and what we can do with it. We see here lot of methods(functions). Many of them are enclosed with `__` - these are called magic methods and used by Python in various situation automatically - for example if object is to be compared with another one - method `__eq__()` will be used. Other methods - like `replace` - is regular ones. If the object has attributes (assigned variable belonging to object) - they would be listed in dir() output as well. There is no way how to distinguish between method and attribute because for Python anything is an object and method is the same as attribute with one exception - it can be called (has magic method `__call__`).
+
+If the method of attribute name needs to be recalled - `dir()` is the best way to do this. Other way is to use [ipython](http://jupyter.org/)'s code completion \(type `some_object.` and press `TAB`\).
 
 Introspection of an instance of some class:
 

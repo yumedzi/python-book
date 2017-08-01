@@ -1,6 +1,6 @@
 # Basic Types, part 1
 
-> In this chapter we'll learn about main aspects of Python basic types such as number as strings, how to work with them, their methods and attributes, and also - how to do basic introspection.
+> In this chapter we'll learn about main aspects of Python basic types such as numbers and strings, how to work with them, their methods and attributes, and also - \(which is very important to know from the beginning\) how to read help and do basic introspection of any object.
 >
 > In the next chapter \(part 2\) we'll continue to learn about basic types - such as lists, tuples, dicts and also how to loop through sequences, create conditions etc.
 

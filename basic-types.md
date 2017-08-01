@@ -9,7 +9,11 @@
 * [Classification of builtin types](/basic-types/classification-of-basic-types.md)
 * [None object](/basic-types/none-object.md)
 * [Numbers](/basic-types/number.md)
-* [Strings](/basic-types/strings.md)  \[IN PROGRESS\]
+* [Strings](/basic-types/strings.md)
+* [String Formatting](/basic-types/string-formatting.md)
+* Regular Expressions
+
+
 
 
 

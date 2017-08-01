@@ -17,4 +17,6 @@
   * [None object](basic-types/none-object.md)
   * [Numbers](basic-types/number.md)
   * [Strings](basic-types/strings.md)
+  * [String Formatting](basic-types/string-formatting.md)
+  * [Regular Expressions](basic-types/regular-expressions.md)
 

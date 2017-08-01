@@ -11,4 +11,10 @@
   * [Installation, IDEs etc.](chapter1/installation-ides-etc.md)
   * [Sources for self-learning](chapter1/sources-for-self-learning.md)
 * [2. Basic Types](basic-types.md)
+  * [Getting help](basic-types/getting-help.md)
+  * [Introspection](basic-types/introspection.md)
+  * [Classification of basic types](basic-types/classification-of-basic-types.md)
+  * [None object](basic-types/none-object.md)
+  * [Numbers](basic-types/number.md)
+  * [Strings](basic-types/strings.md)
 

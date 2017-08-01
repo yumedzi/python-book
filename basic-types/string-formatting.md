@@ -147,8 +147,7 @@ More examples:
 | ```'%10s' % ('test',)```         | ```'{:>10}'.format('test')```         | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```test``` | 
 | ```'%-10s' % ('test',)```        | ```'{:10}'.format('test')```          | ```test```       |
 | ---                              | ```'{:\_<10}'.format('test')```       | ```test______``` |
-| ---                              | ```'{:^10}'.format('test')```         | &nbsp;&nbsp;&nbsp;```test```&nbsp;&nbsp;&nbsp; | 
-|
+| ---                              | ```'{:^10}'.format('test')```         | &nbsp;&nbsp;&nbsp;```test```&nbsp;&nbsp;&nbsp; |
 | ```'%.3s' % ('abcdef',)```       | ```'{:.3}'.format('abcdef')```        | ```abc```        | 
 | ```'%d' % (42,)```               | ```'{:d}'.format(42)```               | ```42```         |
 | ```'%06.2f' % (3.141592,)```     | ```'{:06.2f}'.format(3.14159)```      | ```003.14```     |

@@ -38,7 +38,7 @@ Output:
 * Code with output together \(code will be prefixed with &gt;&gt;&gt; \):
 
 ```python
->>> 
+>>> "Hello Universe!".split()
 ["Hello", "Universe!"]
 ```
 

@@ -8,11 +8,11 @@ This book is compilation of materials used in Python Training conducted by me. C
 
 ### Short course overview:
 
-1. [**Hello World**](/chapter1.md)** **![](assets/green_ok.png)
+1. [**Hello World**](/chapter1.md)** ** ![](assets/green_ok.png)
    * Introduction to Python, motivation and overview
-2. [**Basic Types \#1**](/basic-types.md)![](assets/green_ok.png)
-   * Classification of types + strings
-3. **Basic types \#2**
+2. [**Basic Types \#1**](/basic-types.md) ![](assets/green_ok.png)
+   * Classification of types, introspection, numbers, strings
+3. [**Basic types \#2**](/basic-types-part-2.md) ![](assets/green_ok.png)
    * Lists, tuples, dicts, conditions, loops
 4. **Functions**
    * Functions, generators, lambdas

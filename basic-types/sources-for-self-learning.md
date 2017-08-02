@@ -1,15 +1,11 @@
 # Sources for self-learning
 
-* http://www.learnpython.org/ 
-    * Lessons 2,4-6, 11
-* http://pythonworld.ru/osnovy/formatirovanie-strokmetod-format.html
+* [http://www.learnpython.org/en/Variables\_and\_Types](http://www.learnpython.org/en/Variables_and_Types)
+* [http://www.learnpython.org/en/String\_Formatting](http://www.learnpython.org/en/String_Formatting)
+* [http://www.learnpython.org/en/Regular\_Expressions](http://www.learnpython.org/en/Regular_Expressions)
+* [http://pythonworld.ru/osnovy/formatirovanie-strokmetod-format.html](http://pythonworld.ru/osnovy/formatirovanie-strokmetod-format.html)
 
 
-* Lot of tasks: 
-    * http://www.codewars.com/r/gizMHA
- 
- 
-* Additional tutorials: 
-    * http://learnpythonthehardway.org/book/ 
-    * http://www.codecademy.com/tracks/python 
-    * https://www.coursera.org/course/pythonlearn
+
+
+

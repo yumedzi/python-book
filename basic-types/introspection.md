@@ -1,15 +1,44 @@
-## Introspection {#Introspection}
+# Introspection {#Introspection}
 
-* Checking the type of object/variable:
+## Checking the type of object/variable
 
-  * `type()`- returns a type of object
+* `type()`- returns a type of object
+  
+```python
+>>> type("foo")
+<class 'str'>
+```
+  
   * `isinstance(x, typeA)`- returns True/False depends if object`x`of type`typeA`
+  
+```python
+>>> isinstance("foo", str)
+True
+```
+  
+  * `id()` - returns an id of object:
+```python
+>>> id("123123")
+56147112
+```
 
+* `str()`, `repr()` - string and "machine" representation of object. str() is called automatically by print(), `repr()` is called when simply type name of object in a Python interactive shell:
+
+```python
+>>> obj = "I am string"
+
+>>> print(obj)  # str
+I am string
+
+>>> obj         # repr
+'I am string'
+```
+  
 * `dir()`- return a list of valid attributes for argument \(or list of names in current local scope if no argument\)
 
 * module`inspect`- low-level API for contents of a class, source code of a method, argument list for a function, detailed traceback
 
-* module`dis`- decompiling Python byte-code showing code execution trace
+* module `dis`- decompiling Python byte-code showing code execution trace
 
 Example of introspection of `str` object:
 
@@ -28,7 +57,9 @@ Example of introspection of `str` object:
 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 
-We see a lot of methods available in object which gives us a hint what is the kind of object it is and what we can do with it. We see here lot of methods(functions). Many of them are enclosed with `__` - these are called magic methods and used by Python in various situation automatically - for example if object is to be compared with another one - method `__eq__()` will be used. Other methods - like `replace` - is regular ones. If the object has attributes (assigned variable belonging to object) - they would be listed in dir() output as well. There is no way how to distinguish between method and attribute because for Python anything is an object and method is the same as attribute with one exception - it can be called (has magic method `__call__`).
+We see a lot of methods available in object which gives us a hint what is the kind of object it is and what we can do with it. We see here lot of methods\(functions\). Many of them are enclosed with `__` - these are called magic methods and used by Python in various situation automatically - for example if object is to be compared with another one - method `__eq__()` will be used. Other methods - like `replace` - is regular ones. If the object has attributes \(assigned variable belonging to object\) - they would be listed in dir\(\) output as well. There is no way how to distinguish between method and attribute because for Python anything is an object and method is the same as attribute with one exception - it can be called \(has magic method `__call__`\).
+
+## `dir`
 
 If the method of attribute name needs to be recalled - `dir()` is the best way to do this. Other way is to use [ipython](http://jupyter.org/)'s code completion \(type `some_object.` and press `TAB`\).
 
@@ -52,4 +83,17 @@ Output:
 ```
 
 In this case we can see many inherited methods \(from parent class called "object"\) and also attributes and methods defined by us \(in this example it is just one attribute `attr1`\)
+
+Additionally - if no arguments passed to `dir()` it will show all local variables defined (similarly to `globals()`, `locals()` functions which show global/local scopes).
+
+## `hasattr`
+In case it is needed to check if the object has some attribute hasattr\(\) is used:
+```python
+>>> hasattr(some_obj, "attr1")
+True
+
+>>> hasattr(some_obj, "attr2")
+False
+```
+
 

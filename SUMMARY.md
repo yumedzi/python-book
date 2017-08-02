@@ -20,4 +20,12 @@
   * [String Formatting](basic-types/string-formatting.md)
   * [Regular Expressions](basic-types/regular-expressions.md)
   * [Sources for self-learning](basic-types/sources-for-self-learning.md)
+* [3. Basic Types, part 2](basic-types-part-2.md)
+  * [Lists](basic-types-part-2/lists.md)
+  * Tuples
+  * Dictionaries
+  * Sets
+  * Conditions
+  * Loops
+  * Sources for self-learning
 

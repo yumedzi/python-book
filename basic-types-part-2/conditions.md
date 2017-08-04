@@ -47,6 +47,8 @@ The built-in function `bool()` can be used to convert any value to a Boolean, if
 (True, True, False, False)
 ```
 
+
+
 ## Truth Value Testing
 
 Any object can be tested for truth value, for use in an if or while condition or as operand of the Boolean operations below. The following values are considered false:
@@ -59,6 +61,47 @@ Any object can be tested for truth value, for use in an if or while condition or
 * instances of user-defined classes, if the class defines a __bool__() or __len__() method, when that method returns the integer zero or bool value False.
 
 All other values are considered true — so objects of many types are always true.
+
+## Conditional expressions
+
+This expression was created to simplify `if`/`else` calls in simple situations.
+
+> This is what called ternary operators or even "Elvis operator" in other languages
+
+```python
+something = value_if_true if condition else value_if_false
+```
+
+is the same as:
+
+```python
+if condition:
+    something = value_if_true
+else:
+    something = value_if_false
+```
+
+```python
+temp = 36
+state = "Hot like hell" if temp > 30 else "Bearable"
+print("Weather state is:", state)
+```
+
+```
+Weather state is: Hot like hell
+```
+
+It is possible to chain - but it is not very readable:
+
+```python
+temp = 24
+state = "Hot like hell" if temp > 30 else "Bearable" if temp > 10 else "Cold!" 
+print("Weather state is:", state)
+```
+
+```
+Weather state is: Bearable
+```
 
 ## Boolean operations
 

@@ -25,7 +25,7 @@ Creating a tuple with 1 element requires comma because without it Python conside
 (1,)
 ```
 
-In fact parences are not needed, they are just for readability:
+In fact parenceses are not needed, they are just for readability:
 
 
 ```python

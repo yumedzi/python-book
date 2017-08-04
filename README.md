@@ -14,7 +14,7 @@ This book is compilation of materials used in Python Training conducted by me. C
    * Classification of types, introspection, numbers, strings
 3. [**Basic types \#2**](/basic-types-part-2.md) ![](assets/green_ok.png)
    * Lists, tuples, dicts, conditions, loops
-4. **Functions**
+4. **[Functions](/functions.md)** ![](assets/green_ok.png)
    * Functions, generators, lambdas
 5. **Functional Programming**
    * builtins, map, filter, functools.reduce

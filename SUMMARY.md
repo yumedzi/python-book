@@ -28,4 +28,13 @@
   * [Conditions](basic-types-part-2/conditions.md)
   * [Loops](basic-types-part-2/loops.md)
   * [Sources for self-learning](basic-types-part-2/sources-for-self-learning.md)
+* [4. Functions](functions.md)
+  * [Functions](functions/functions.md)
+  * [Argument passing](argument-passing.md)
+  * [Namespaces](functions/namespaces.md)
+  * [Scopes of visibility](functions/scopes-of-visibility.md)
+  * [Generators](functions/generators.md)
+  * [Anonymous functions](functions/anonymous-functions.md)
+  * [Functions internals](functions/functions-internals.md)
+  * [Sources for self-learning](functions/sources-for-self-learning.md)
 

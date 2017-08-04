@@ -1,0 +1,10 @@
+{
+    "title": "Python Book",
+    "author": "Viktor Moyseyenko",
+    "plugins": [
+        "expandable-chapters",
+        "codetabs",
+        "richquotes",
+        "back-to-top-button"
+    ]
+}

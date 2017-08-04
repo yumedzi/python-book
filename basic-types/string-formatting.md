@@ -196,7 +196,7 @@ Output:
 
 #### Convert Values to different Bases 
 You can use the following letters to convert a number to their bases:
-        * **d**ecimal, he**x**, **o**ctal, **b**inary
+> **d**ecimal, he**x**, **o**ctal, **b**inary
 
 
 ```python

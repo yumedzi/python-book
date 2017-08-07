@@ -18,9 +18,9 @@ This book is compilation of materials used in Python Training conducted by me. C
    * Functions, generators, lambdas
 5. **[Functional Programming](/functional-programming.md)**  ![](assets/green_ok.png)
    * builtins, map, filter, functools.reduce
-6. **Styling, modules/pakages**
+6. **[Styling, modules/pakages](/styling.md)**  ![](assets/green_ok.png)
    * Zen of Python, PEP 8
-7. **OOP**
+7. **[OOP](/oop.md)**  ![](assets/green_ok.png)
    * OOP basics, magic methods, MRO
 8. **Decorators, Exceptions**
 9. **Testing**

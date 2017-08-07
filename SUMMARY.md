@@ -37,4 +37,13 @@
   * [Anonymous functions](functions/anonymous-functions.md)
   * [Functions internals](functions/functions-internals.md)
   * [Sources for self-learning](functions/sources-for-self-learning.md)
+* [5. Functional Programming](functional-programming.md)
+  * [Working with files](functional-programming/working-with-files.md)
+  * [Builtins](functional-programming/builtins.md)
+  * [Iterators](functional-programming/iterators.md)
+  * [Functional Programming](functional-programming/functional-programming.md)
+  * [Functools](functional-programming/functools.md)
+  * [Comprehensions](functional-programming/comprehensions.md)
+  * [Additional topics](functional-programming/additional-topics.md)
+  * [Sources for self-learning](functional-programming/sources-for-self-learning.md)
 

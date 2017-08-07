@@ -5,9 +5,12 @@
 ## Plan
 
 * [Functions](/functions/functions.md)
-* [Arguments passing](#Arguments-passing)
+* [Arguments passing](/argument-passing.md)
 * [Namespaces](/functions/namespaces.md)
 * [Scopes of visibility](/functions/scopes-of-visibility.md)
 * [Generators](/functions/generators.md)
 * [Lambdas \(anonymous functions\)](/functions/anonymous-functions.md)
 * [Sources for self-learning](/functions/sources-for-self-learning.md)
+
+
+

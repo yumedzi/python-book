@@ -1,7 +1,5 @@
 # Python Book
 
-
-
 This book is compilation of materials used in Python Training conducted by me. Course itself written in a form of series of Jupyter notebooks with slides to give students interactive materials during presentation on each live session. And this book serves the purpose to be a "static" version of all slides kept in one place.
 
 > ![](assets/green_ok.png) means it is already written, other chapters will be filled in gradually...
@@ -14,15 +12,15 @@ This book is compilation of materials used in Python Training conducted by me. C
    * Classification of types, introspection, numbers, strings
 3. [**Basic types \#2**](/basic-types-part-2.md) ![](assets/green_ok.png)
    * Lists, tuples, dicts, conditions, loops
-4. **[Functions](/functions.md)** ![](assets/green_ok.png)
+4. [**Functions**](/functions.md) ![](assets/green_ok.png)
    * Functions, generators, lambdas
-5. **[Functional Programming](/functional-programming.md)**  ![](assets/green_ok.png)
+5. [**Functional Programming**](/functional-programming.md)  ![](assets/green_ok.png)
    * builtins, map, filter, functools.reduce
-6. **[Styling, modules/pakages](/styling.md)**  ![](assets/green_ok.png)
+6. [**Styling, modules/pakages**](/styling.md)  ![](assets/green_ok.png)
    * Zen of Python, PEP 8
-7. **[OOP](/oop.md)**  ![](assets/green_ok.png)
+7. [**OOP**](/oop.md)  ![](assets/green_ok.png)
    * OOP basics, magic methods, MRO
-8. **Decorators, Exceptions**
+8. [**Decorators, Exceptions**](/decorators.md)
 9. **Testing**
    * doctest, unittest
    * Web testing basics, Selenium

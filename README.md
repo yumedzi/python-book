@@ -22,10 +22,11 @@ This book is compilation of materials used in Python Training conducted by me. C
    * OOP basics, magic methods, MRO
 8. [**Decorators, Exceptions**](/decorators.md) ![](assets/green_ok.png)
    * Basic of Decorators, Pearametrized Decorators, Exceptions, Context managers
-9. **Testing**  ![](assets/green_ok.png)
+9. **[Testing](/testing.md)**  ![](assets/green_ok.png)
    * doctest, unittest
+10. **Web testing**
    * Web testing basics, Selenium
-10. **Advanced Topics**
+11. **Advanced Topics**
     * Threading, multiprocessing
     * subprocess, sys, shutil
     * Serialization

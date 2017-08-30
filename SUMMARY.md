@@ -80,4 +80,5 @@
   * [Doctest](testing/doctest.md)
   * [Unittest](testing/unittest.md)
   * [Continiuos integration](testing/continiuos-integration.md)
+  * [Sources for self-learning](testing/sources-for-self-learning.md)
 

@@ -20,9 +20,9 @@ This book is compilation of materials used in Python Training conducted by me. C
    * Zen of Python, PEP 8
 7. [**OOP**](/oop.md)  ![](assets/green_ok.png)
    * OOP basics, magic methods, MRO
-8. [**Decorators, Exceptions**](/decorators.md) ![](blob:https://www.gitbook.com/8a41120b-f689-4bae-9494-d58a9befb824)
+8. [**Decorators, Exceptions**](/decorators.md) ![](assets/green_ok.png)
    * Basic of Decorators, Pearametrized Decorators, Exceptions, Context managers
-9. **Testing**
+9. **Testing**  ![](assets/green_ok.png)
    * doctest, unittest
    * Web testing basics, Selenium
 10. **Advanced Topics**

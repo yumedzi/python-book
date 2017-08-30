@@ -75,4 +75,9 @@
   * [Exceptions](decorators/exceptions.md)
   * [Context manager protocol](decorators/context-manager-protocol.md)
   * [Sources of self-learning](decorators/sources-of-self-learning.md)
+* [9. Testing](testing.md)
+  * [Testing theory](testing/testing-theory.md)
+  * [Doctest](testing/doctest.md)
+  * [Unittest](testing/unittest.md)
+  * [Continiuos integration](testing/continiuos-integration.md)
 

@@ -6,7 +6,7 @@ This book is compilation of materials used in Python Training conducted by me. C
 
 ### Short course overview:
 
-1. [**Hello World**](/01-intro.md)** ** ![](assets/green_ok.png)
+1. [**Hello World**](/ch01-intro.md)** ** ![](assets/green_ok.png)
    * Introduction to Python, motivation and overview
 2. [**Basic Types \#1**](/basic-types.md) ![](assets/green_ok.png)
    * Classification of types, introspection, numbers, strings

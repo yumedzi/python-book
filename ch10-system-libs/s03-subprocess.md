@@ -1,0 +1,609 @@
+# Subprocess
+
+The subprocess module allows us to:
+* spawn new processes
+* connect to their input/output/error pipes
+* obtain their return codes
+
+This module is wrapper for sys calls/functions:
+* `os.system()`
+* `os.spawn*()`
+* `os.popen*()`
+* `popen2.*()`
+* `commands.*()`
+
+## Most important methods:
+
+> These methods cover 95% of cases:
+
+* `call`
+    * When it is only needed to run some command without checking it's output
+    * Also there is `check_call` method which additionally checks the exit status
+* `getoutput`
+    * When it's only needed to get the command's output
+    * Also there is `check_output` method which additionally checks the exit status
+* `Popen`
+    * powerfull method which can run any kind of external command and even to pass it's output to another's command input
+
+Parameters for all `subprocess` methods are very similar. In fact they are all based on argument list for `Popen` method. The difference is that some of the methods don't utilize all of them.
+
+```python
+Popen(args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=None, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=(), *, encoding=None, errors=None, text=None)
+```
+
+These are most important `Popen` arguments (see it's help for a full list and their meaning):
+
+*  `args`: A string, or a sequence of program arguments.
+*  `stdin`, `stdout` and `stderr`: These specify the executed programs' standard `input`, `standard output` and `standard error` file handles, respectively.
+*  `shell`: If true, the command will be executed through the shell.
+*  `cwd`: Sets the current directory before the child is executed.
+
+The command which we need to run (`args` argument, as shown above) should be passed as a list for UNIX (for Windows it doesn't matter):
+
+`["ls", "-la", "/tmp"]` for command `ls -la /tmp`
+
+This is due to the security reason to avoid the possibility of command injection.
+
+Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of `shell=True` is strongly discouraged in cases where the command string is constructed from external input:
+
+```python
+>>> from subprocess import call
+>>> filename = input("What file would you like to display?\n")
+What file would you like to display?
+non_existent; rm -rf /
+>>> call("cat " + filename, shell=True) # Uh-oh. This will end badly...
+```
+
+### `subprocess.call`
+
+> Easiest way to just run some external command
+
+```python
+subprocess.call(['ls', '-la'])
+```
+
+This will:
+* Run command with arguments.  
+* Wait for command to complete or timeout
+* `return` the `returncode` attribute.
+
+
+
+```python
+!ls
+```
+
+    111					Basics_07_OOP.ipynb
+    Basics_01_Introduction.ipynb		Basics_08_Decorators.ipynb
+    Basics_02_Strings_numbers.ipynb		Basics_09_Testing.ipynb
+    Basics_03_Containers.ipynb		Basics_10_System_libs.ipynb
+    Basics_04_Functions.ipynb		images
+    Basics_05_Functional_Programming.ipynb	OWNED
+    Basics_06_PEP8_Styling.ipynb
+
+
+
+```python
+import subprocess
+
+subprocess.call(["touch", "111.txt"])
+```
+
+
+
+
+    0
+
+
+
+
+```python
+!ls 111.txt
+```
+
+    111.txt
+
+
+
+```python
+subprocess.call(["rm", "111.txt"])
+```
+
+
+
+
+    0
+
+
+
+
+```python
+subprocess.call(["ls", "111.txt"])
+```
+
+
+
+
+    2
+
+
+
+### `subprocess.check_call`
+
+> This is similar to `subprocess.call` but additionally will check result code
+
+
+```python
+subprocess.check_call(['ls', '-la'])
+```
+
+This will run command with arguments and wait for command to complete. If the exit code was zero (this mean it was completed successfully) then return, otherwise raise `CalledProcessError`.  The `CalledProcessError` object will have the return code in the `returncode` attribute.
+
+
+```python
+subprocess.check_call(["touch", "111.txt"])
+```
+
+
+
+
+    0
+
+
+
+
+```python
+subprocess.check_call(["ls", "111.txt"])
+```
+
+
+
+
+    0
+
+
+
+
+```python
+subprocess.check_call(["rm", "111.txt"])
+```
+
+
+
+
+    0
+
+
+
+
+```python
+subprocess.check_call(["ls", "111.txt"])
+```
+
+
+    
+
+    CalledProcessErrorTraceback (most recent call last)
+
+    <ipython-input-18-bf1b71ed0249> in <module>
+    ----> 1 subprocess.check_call(["ls", "111.txt"])
+    
+
+    /opt/conda/lib/python3.7/subprocess.py in check_call(*popenargs, **kwargs)
+        345         if cmd is None:
+        346             cmd = popenargs[0]
+    --> 347         raise CalledProcessError(retcode, cmd)
+        348     return 0
+        349 
+
+
+    CalledProcessError: Command '['ls', '111.txt']' returned non-zero exit status 2.
+
+
+
+```python
+# Create a temp lock file
+subprocess.check_call(["touch", ".lock"])
+
+# WORK....
+
+# Remove a lock:
+subprocess.check_call(["rm", ".lock"])
+```
+
+
+
+
+    0
+
+
+
+### `subprocess.getoutput`
+
+> Easiest way to get the result of running some external command (the contents of it's `STDOUT`) using shell directly.
+>
+> **Note: only argument is the command to run as string.** (Other subprocess method described here use `**popenargs` mentioned above.
+
+```python
+subprocess.getoutput('ls -la')
+```
+
+
+
+```python
+import subprocess
+
+subprocess.getoutput("date")
+```
+
+
+
+
+    'Wed Dec 11 10:42:17 UTC 2019'
+
+
+
+
+```python
+import subprocess
+
+print("Result 1:", subprocess.getoutput("touch 111.txt"))
+print("Result 2:", subprocess.getoutput("ls -la 111.txt"))
+print("Result 3 (status code for <rm -rf 111.txt> command):", subprocess.call(["rm", "-rf", "111.txt"]))
+print("Result 4:", subprocess.getoutput("ls -la 111.txt"))
+```
+
+    Result 1: 
+    Result 2: -rwxrwxrwx 1 jovyan users 0 Dec 11 10:42 111.txt
+    Result 3 (status code for <rm -rf 111.txt> command): 0
+    Result 4: ls: cannot access '111.txt': No such file or directory
+
+
+### `subprocess.check_output`
+
+> This is similar to `subprocess.getoutput` but:
+> * uses `*popenargs` arguments
+> * additionally will check result code
+
+
+```python
+subprocess.check_output(['ls', '-la'])
+```
+
+Run command with arguments and return its output. If the exit code was non-zero it raises a `CalledProcessError`.  The `CalledProcessError` object will have the return code in the `returncode` attribute and output in the `output` attribute.
+
+
+```python
+import subprocess
+
+print("Result 1:", subprocess.check_output(["touch", "111.txt"]))
+print("Result 2:", subprocess.check_output(["ls", "-la", "111.txt"]))
+print("Result 3 (status code for <rm -rf 111.txt> command):", subprocess.call(["rm", "-rf", "111.txt"]))
+```
+
+    Result 1: b''
+    Result 2: b'-rwxrwxrwx 1 jovyan users 0 Sep 20 12:16 111.txt\n'
+    Result 3 (status code for <rm -rf 111.txt> command): 0
+
+
+
+```python
+print("Result 4:", subprocess.check_output(["ls", "-la", "111.txt"]))
+```
+
+
+    
+
+    CalledProcessErrorTraceback (most recent call last)
+
+    <ipython-input-45-ff7b35de820f> in <module>
+    ----> 1 print("Result 4:", subprocess.check_output(["ls", "-la", "111.txt"]))
+    
+
+    /opt/conda/lib/python3.7/subprocess.py in check_output(timeout, *popenargs, **kwargs)
+        393 
+        394     return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+    --> 395                **kwargs).stdout
+        396 
+        397 
+
+
+    /opt/conda/lib/python3.7/subprocess.py in run(input, capture_output, timeout, check, *popenargs, **kwargs)
+        485         if check and retcode:
+        486             raise CalledProcessError(retcode, process.args,
+    --> 487                                      output=stdout, stderr=stderr)
+        488     return CompletedProcess(process.args, retcode, stdout, stderr)
+        489 
+
+
+    CalledProcessError: Command '['ls', '-la', '111.txt']' returned non-zero exit status 2.
+
+
+* `os.system(cmd)` -> exit_status
+    * Easiest way of running OS commands:
+
+
+```python
+import os
+status = os.system("ls")
+status
+```
+
+
+
+
+    0
+
+
+
+It's not possible to get results of the command but you can redirect output to some file and read it:
+
+`os.system("ls > /tmp/ls.out")`
+
+* `subprocess.call()` -> exit_status
+    * Simply wait until the command completes and gives us the exit status.
+
+> `subprocess.call(args, *, stdin=None, stdout=None, stderr=None, shell=False)`
+
+args is sequence with command like:
+* `"ls -la"`
+* `["ls", "-la"]`
+
+`stdin`, `stdout`, `stderr` – file objects (StringIO is usefull here)
+
+`shell` – run commands through shell not relying on python implementations. By default it is `False`
+
+> There is a difference in `args` depending on `shell`. If it `True` args must be a string - but this may lead to a seriuos risk. 
+
+Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of shell=True is strongly discouraged in cases where the command string is constructed from external input:
+
+```python
+>>> from subprocess import call
+>>> filename = input("What file would you like to display?\n")
+What file would you like to display?
+non_existent; rm -rf / #
+>>> call("cat " + filename, shell=True) # Uh-oh. This will end badly...
+```
+
+
+> So it's often recommended to split command to run via using `shlex` module
+
+
+```python
+import shlex
+
+command_to_run = "find / -type=d -name='super file'"
+
+print(shlex.split(command_to_run))
+print(command_to_run.split())
+```
+
+    ['find', '/', '-type=d', '-name=super file']
+    ['find', '/', '-type=d', "-name='super", "file'"]
+
+
+## Popen
+
+> Popen is ultimate universal method for running external programs. Popen allows to do everything - reading and writing data to pipes, do pipelines of commands etc.
+
+It allows to watch both stdout and stderr and much more. Just look at syntax:
+
+> `subprocess.Popen(args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=False, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=())`
+
+
+
+
+
+
+```python
+import subprocess
+proc = subprocess.Popen(['echo', 'Hello POPEN', '!!!'], 
+                        stdout=subprocess.PIPE,
+                        )
+stdout_value, stderr_value = proc.communicate()
+print('STDOUT:', stdout_value)
+print('STDERR:', stderr_value)
+print(proc.pid)
+```
+
+    STDOUT: b'Hello POPEN !!!\n'
+    STDERR: None
+    219
+
+
+
+```python
+import subprocess
+
+with open('tmp_file', "w") as f:
+    proc = subprocess.Popen(['cat'],
+                            stdin=subprocess.PIPE,
+                            stdout=f, 
+                            )
+    proc.communicate(b'SENDING SOMETHING TO STDIN ---> 08/01/2021\n')
+```
+
+
+```python
+import subprocess, os, platform
+
+print(os.path.abspath(os.path.curdir))
+
+if platform.system == "Windows":
+    proc = subprocess.Popen(['type', 'tmp_file'], 
+                            stdout=subprocess.PIPE,
+                            shell=True)
+else:
+    proc = subprocess.Popen(['cat', 'tmp_file' ], 
+                            stdout=subprocess.PIPE)
+
+stdout_value = proc.communicate()[0]
+print('STDOUT:', stdout_value) # Bytes is physical char bytes string
+print(stdout_value.decode("utf-8"))
+```
+
+    /notebooks/V2/Basics
+    STDOUT: b'SENDING SOMETHING TO STDIN ---> 08/01/2021\n'
+    SENDING SOMETHING TO STDIN ---> 08/01/2021
+    
+
+
+Or like this:
+
+
+```python
+import shlex
+
+cmd = "cat tmp_file"
+print(shlex.split(cmd))
+
+subprocess.check_output(shlex.split(cmd))
+```
+
+    ['cat', 'tmp_file']
+
+
+
+
+
+    b'SENDING SOMETHING TO STDIN ---> 08/01/2021\n'
+
+
+
+Pipeline:
+
+
+```python
+! df -ah | grep notebooks
+```
+
+    /dev/vg1000/lv  7.0T  6.3T  758G  90% /notebooks
+
+
+
+```python
+p1 = subprocess.Popen(['df', '-ah'], stdout=subprocess.PIPE)
+p2 = subprocess.Popen(['grep', '/notebooks'], stdin=p1.stdout, stdout=subprocess.PIPE, text=True)
+
+if p1.wait() == 0:  # Wait for p1 to finish with status 0
+    # p1.stdout.close()  # Allow p1 to detect a SIGPIPE if p2 exits
+    p2_output = p2.communicate()[0]
+    print(p2_output)
+```
+
+    /dev/vg1000/lv  7.0T  6.3T  758G  90% /notebooks
+    
+
+
+Need `awk`? No problem:
+
+
+```python
+import shlex
+
+p1 = subprocess.Popen(['df','-ah'], stdout=subprocess.PIPE)
+p2 = subprocess.Popen(['grep', '/notebooks'], stdin=p1.stdout, stdout=subprocess.PIPE)
+p3 = subprocess.Popen(shlex.split("awk '{print $5;}'"), stdin=p2.stdout, stdout=subprocess.PIPE, text=True)
+
+if p1.wait() == p2.wait() == 0:  # Wait for p2 to finish with status 0
+    print(p3.communicate()[0])
+else:
+    p3.kill()
+```
+
+    90%
+    
+
+
+Or - via Python:
+
+
+```python
+print(p2_output.split()[4])
+```
+
+    90%
+
+
+
+```python
+import re
+print(re.search(r'(\d+%)', p2_output).group(1))
+```
+
+    90%
+
+
+Another example - let's get how much memory Jupyter Notebook uses.
+
+Shell commands used:
+
+
+```python
+!ps auxw | grep jupyter-notebook | grep -v grep
+!ps auxw | grep jupyter-notebook | grep -v grep | awk '{print $5}'
+```
+
+    jovyan       7  0.0  0.7 251764 43292 pts/0    Sl+  Aug28   2:39 /opt/conda/bin/python /opt/conda/bin/jupyter-notebook
+    251764
+
+
+Via `subprocess.check_output()`:
+
+
+```python
+cmd = "ps auxw | grep jupyter-notebook | grep -v grep | awk '{print $5}'"
+
+print(float(subprocess.getoutput(cmd).rstrip()))
+print(float(subprocess.check_output(cmd, shell=True).decode("utf8").rstrip()))
+```
+
+    251984.0
+    251984.0
+
+
+Via `subprocess.Popen()`:
+
+
+```python
+p1 = subprocess.Popen(["ps", "auxw"], stdout=subprocess.PIPE)
+p2 = subprocess.Popen(["grep", "jupyter-notebook"], stdin=p1.stdout, stdout=subprocess.PIPE)
+p3 = subprocess.Popen(shlex.split("grep -v grep"), stdin=p2.stdout, stdout=subprocess.PIPE)
+p4 = subprocess.Popen(shlex.split("awk '{print $5}'"), stdin=p3.stdout, stdout=subprocess.PIPE)
+
+print(f'Jupyter Notebook eats {int(p4.communicate()[0].decode("utf8")) / 1024:5.2f} MB of memory')
+```
+
+    Jupyter Notebook eats 245.86 MB of memory
+
+
+We can also use context manager for `subprocess.Popen` to clean resources after running processes:
+
+
+```python
+with subprocess.Popen(["ls", "-la", "."], stdout=subprocess.PIPE, text=True) as proc:  
+    print(proc.pid)                                                               
+    print("Alive" if proc.poll() is None else "Terminated")                       
+    print("OUTPUT:")                                                              
+    print(proc.communicate()[0])                                                  
+```
+
+    298
+    Alive
+    OUTPUT:
+    total 720
+    drwxrwxrwx 1 jovyan users    606 Jan  8 09:26 .
+    drwxrwxrwx 1 jovyan users     84 Oct  2  2019 ..
+    -rwxrwxrwx 1 jovyan users  50842 Dec 11 09:57 Basics_01_Introduction.ipynb
+    -rwxrwxrwx 1 jovyan users 127227 Dec 16 09:51 Basics_02_Strings_numbers.ipynb
+    -rwxrwxrwx 1 jovyan users 132620 Dec 21 09:34 Basics_03_Containers.ipynb
+    -rwxrwxrwx 1 jovyan users  57519 Dec 28 09:30 Basics_04_Functions.ipynb
+    -rwxrwxrwx 1 jovyan users  45863 Dec 28 08:54 Basics_05_Functional_Programming.ipynb
+    -rwxrwxrwx 1 jovyan users  28629 Dec 30 09:22 Basics_06_PEP8_Styling.ipynb
+    -rwxrwxrwx 1 jovyan users  68502 Jan  4 09:42 Basics_07_OOP.ipynb
+    -rwxrwxrwx 1 jovyan users  49055 Dec 30 08:42 Basics_08_Decorators.ipynb
+    -rwxrwxrwx 1 jovyan users  63525 Sep  2 09:39 Basics_09_Testing.ipynb
+    -rwxrwxrwx 1 jovyan users  83955 Jan  8 09:26 Basics_10_System_libs.ipynb
+    lrwxrwxrwx 1 jovyan users     17 Aug 23  2019 images -> /notebooks/images
+    drwxrwxrwx 1 jovyan users    762 Sep 25  2019 .ipynb_checkpoints
+    -rwxrwxrwx 1 jovyan users     43 Jan  8 09:00 tmp_file

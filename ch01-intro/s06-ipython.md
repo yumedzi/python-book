@@ -8,7 +8,7 @@ Ipython is enhanced version of Python shell. It is also "REPL" shell. This means
 * **Print**: shows the output to the user.
 * **Loop**: repeat.
 
-<img src="images/jupyter_logo.png">
+<img src="../images/jupyter_logo.png">
 
 
 

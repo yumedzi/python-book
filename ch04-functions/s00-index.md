@@ -4,10 +4,10 @@
 
 #### Plan:
 
-[Functions](/ch04-functions/s01-functions.md)
-[Scopes of visibility](/ch04-functions/s02-scopes-of-visibility.md)
-[Generators](/ch04-functions/s03-generators.md)
-[Lambdas](/ch04-functions/s04-lambdas.md)
-[Function internals](/ch04-functions/s05-function-internals.md)
-[Sources for self-learning](/ch04-functions/s06-sources-for-self-learning.md)
+* [Functions](/ch04-functions/s01-functions.md)
+* [Scopes of visibility](/ch04-functions/s02-scopes-of-visibility.md)
+* [Generators](/ch04-functions/s03-generators.md)
+* [Lambdas](/ch04-functions/s04-lambdas.md)
+* [Function internals](/ch04-functions/s05-function-internals.md)
+* [Sources for self-learning](/ch04-functions/s06-sources-for-self-learning.md)
     

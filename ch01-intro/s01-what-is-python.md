@@ -29,7 +29,7 @@ print "Hello World" # Python 2
 import antigravity
 ```
 
-![import antigravity](images/tr_01_00.png)
+![import antigravity](../images/tr_01_00.png)
 
 
 > Python is high-level dynamically typed interpreted programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java.
@@ -48,7 +48,7 @@ import antigravity
 
 * Python was named for the BBC TV show [Monty Python's Flying Circus](https://en.wikipedia.org/wiki/Monty_Python%27s_Flying_Circus).
 
-<center><img src="images/guido.jpg" /></center>
+<center><img src="../images/guido.jpg" /></center>
 
 * [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum) is Python's principal author, and his continuing central role in deciding the direction of Python is reflected in the title given to him by the Python community, **Benevolent Dictator for Life (BDFL)**.
 
@@ -60,7 +60,7 @@ import antigravity
 
 * First commit to [SVN](https://hg.python.org/cpython/):
 
-<center><img src="images/tr_01_04.png" /></center>
+<center><img src="../images/tr_01_04.png" /></center>
 
 * **Python 1.0** was released on January 1994.
 
@@ -104,7 +104,7 @@ Python is used in these three areas the most now:
 ### Why Python slower then compiled languages?
 
 1. Python is Dynamically Typed rather than Statically Typed.
-<img src="images/tr_01_02.png"/>
+<img src="../images/tr_01_02.png"/>
 2. Python is interpreted rather than compiled.
 A smart compiler can look ahead and optimize for repeated or unneeded operations, which can result in speed-ups
 3. Python's object model can lead to inefficient memory access
@@ -180,7 +180,7 @@ def foo(a: 'x', b: 5 + 6, c: list) -> max(2, 9)
 * Interpreter - mean it runs code almost "live"
 * Downloadable from http://python.org 
 * Python is script language but still it compiles runtime code in a form of so called bytecode which Python Virtual Machine (PVM) runs (just like Java does with it's JVM):
-![PVM explanation](images/tr_01_01.png)
+![PVM explanation](../images/tr_01_01.png)
 
 * Compiled code is auto-created and stored in .pyc files (for Python 3 they are in separate \__pycache\__ directory)
 

@@ -218,7 +218,7 @@ For PyCharm (may be non-actual):
 
 `File >> Settings >> Editor >> Code Style: Right margin (columns)`
 
-<img src="images/tr_05_01.png">
+<img src="../images/tr_05_01.png">
 
 The preferred way of wrapping long lines is by using Python's implied line continuation inside parentheses, brackets and braces. If necessary, you can add an extra pair of parentheses around an expression, but sometimes using a backslash looks better.
 

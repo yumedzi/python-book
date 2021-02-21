@@ -11,7 +11,7 @@ Python classes provide all the standard features of Object Oriented Programming:
 * Instance/Object is box with attributes (data)
 * Class is the blueprint for this box
 
-<img src="images/tr_07_01.png">
+<img src="../images/tr_07_01.png">
 
 ## OOP mini glossary
 

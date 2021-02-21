@@ -16,7 +16,7 @@ Email regexp pattern example
 
 > `[\w\.\+\-]+@[a-z0-9\-]+(\.[a-z0-9\-]+)*`
 
-<img src="images/tr_02_02.png" />
+<img src="../images/tr_02_02.png" />
 
 
 ##### Character group
@@ -290,7 +290,7 @@ pattern
 * string `\naccount: ` followed by a string containing words ending with `\`
 * two capturing groups (`#2` and optional `#3`) for texts containing words only separated by optional (because of `?` quantifier) backslash
 
-<img src="images/tr_02_03.png" />
+<img src="../images/tr_02_03.png" />
 
 ### Flags
 

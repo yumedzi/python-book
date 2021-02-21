@@ -205,7 +205,7 @@ for i in tqdm(range(10000)):
 
 Possible color formattings:
 
-<img src="images/tr_10_04.png">  
+<img src="../images/tr_10_04.png">  
 
 
 ```python
@@ -247,7 +247,7 @@ with yaspin(text="Loading", color="yellow") as spinner:
 ```
 
 
-<img src="images/tr_10_05.gif">
+<img src="../images/tr_10_05.gif">
 
 ### Pendulum
 
@@ -547,7 +547,7 @@ nick = string(default=None)
 > profiling farm_unicorn.py
 ```
 
-<img src="images/tr_10_12.png">
+<img src="../images/tr_10_12.png">
 
 # Requests
 
@@ -670,27 +670,27 @@ JSON is built on two structures:
 * An ordered list of values. 
     * In Python it is __`list`__.
 
-<img src="images/rest_json.png">
+<img src="../images/rest_json.png">
 
 An object is an unordered set of name/value pairs. An object begins with { (left brace) and ends with } (right brace). Each name is followed by : (colon) and the name/value pairs are separated by , (comma).
 
-<img src="images/rest_object.gif">
+<img src="../images/rest_object.gif">
 
 An array is an ordered collection of values. An array begins with [ (left bracket) and ends with ] (right bracket). Values are separated by , (comma).
 
-<img src="images/rest_array.gif">
+<img src="../images/rest_array.gif">
 
 A value can be a string in double quotes, or a number, or true or false or null, or an object or an array. These structures can be nested.
 
-<img src="images/rest_value.gif">
+<img src="../images/rest_value.gif">
 
 A string is a sequence of zero or more Unicode characters, wrapped in double quotes, using backslash escapes. A character is represented as a single character string. A string is very much like a C or Java string.
 
-<img src="images/rest_string.gif">
+<img src="../images/rest_string.gif">
 
 A number is very much like a C or Java number, except that the octal and hexadecimal formats are not used.
 
-<img src="images/rest_number.gif">
+<img src="../images/rest_number.gif">
 
 ### `json` module 
 

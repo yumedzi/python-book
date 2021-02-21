@@ -1,7 +1,7 @@
 ## Iterable
 
 <center>
-<img src="images/tr_05_01.jpg" style="align: center">
+<img src="../images/tr_05_01.jpg" style="align: center">
 </center>
 
 > An iterable is an object capable of returning its members one at a time. That means - you can *iterate over* iterable.

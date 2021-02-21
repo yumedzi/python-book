@@ -6,4 +6,4 @@
 
 The difference between `0` and `None`:
 
-<img src="images/tr_02_01.jpg">
+<img src="../images/tr_02_01.jpg">

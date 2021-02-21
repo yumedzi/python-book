@@ -4,10 +4,10 @@
 
 #### Plan:
 
-[OOP Basics](/ch07-oop/s01-oop-basics.md)
-[Classes](/ch07-oop/s02-classes.md)
-[Method Resolution Order](/ch07-oop/s03-method-resolution-order.md)
-[Magic attributes and methods](/ch07-oop/s04-magic-attributes-and-methods.md)
-[Super](/ch07-oop/s05-super.md)
-[Sources for self-learning](/ch07-oop/s06-sources-for-self-learning.md)
+* [OOP Basics](/ch07-oop/s01-oop-basics.md)
+* [Classes](/ch07-oop/s02-classes.md)
+* [Method Resolution Order](/ch07-oop/s03-method-resolution-order.md)
+* [Magic attributes and methods](/ch07-oop/s04-magic-attributes-and-methods.md)
+* [Super](/ch07-oop/s05-super.md)
+* [Sources for self-learning](/ch07-oop/s06-sources-for-self-learning.md)
     

@@ -4,7 +4,7 @@
 
 #### Plan:
 
-[Decorators](/ch08-decorators-exceptions/s01-decorators.md)
-[Exceptions](/ch08-decorators-exceptions/s02-exceptions.md)
-[Sources for self-learning](/ch08-decorators-exceptions/s03-sources-for-self-learning.md)
+* [Decorators](/ch08-decorators-exceptions/s01-decorators.md)
+* [Exceptions](/ch08-decorators-exceptions/s02-exceptions.md)
+* [Sources for self-learning](/ch08-decorators-exceptions/s03-sources-for-self-learning.md)
     

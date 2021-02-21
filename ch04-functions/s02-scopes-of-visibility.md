@@ -27,7 +27,7 @@ Scopes of visibility in Python:
 
 The search is goes only in those 4 places!
 
-<img src="images/scope_resolution_1.png">
+<img src="../images/scope_resolution_1.png">
 
 Local variables can be accessed only inside the function in which they are declared, whereas global variables can be accessed throughout the program body by all functions. When you call a function, the variables declared inside it are brought into scope. Use ```global```to access global variable.
 

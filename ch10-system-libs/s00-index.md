@@ -4,8 +4,8 @@
 
 #### Plan:
 
-[Working with files](/ch10-system-libs/s01-working-with-files.md)
-[System libraries](/ch10-system-libs/s02-system-libraries.md)
-[Subprocess](/ch10-system-libs/s03-subprocess.md)
-[Additional CLI libraries](/ch10-system-libs/s04-additional-cli-libraries.md)
+* [Working with files](/ch10-system-libs/s01-working-with-files.md)
+* [System libraries](/ch10-system-libs/s02-system-libraries.md)
+* [Subprocess](/ch10-system-libs/s03-subprocess.md)
+* [Additional CLI libraries](/ch10-system-libs/s04-additional-cli-libraries.md)
     

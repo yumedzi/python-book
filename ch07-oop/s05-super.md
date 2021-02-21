@@ -4,7 +4,7 @@
 
 > This function gives you access to methods in a superclass from the subclass that inherits from it.
 
-<img src="images/tr_07_00.png">
+<img src="../images/tr_07_00.png">
 
 * Return a proxy/temporary object that allows to call superclass’s methods.
 * This is useful for accessing inherited methods that have been overridden in a class. The search order is same as that used by `getattr()` except that the type itself is skipped. 

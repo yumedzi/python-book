@@ -18,7 +18,7 @@ Iterator is:
 * Object returned by `iter(<iterable>)`
 
 <center>
-<img src="images/tr_05_02.jpg" style="align: center">
+<img src="../images/tr_05_02.jpg" style="align: center">
 </center>
 
 ### Iterator vs generator
@@ -26,7 +26,7 @@ Iterator is:
 > Generator is partial case of iterator.
 
 <center>
-<img src="images/tr_05_03.jpg" style="align: center">
+<img src="../images/tr_05_03.jpg" style="align: center">
 </center>
 
 

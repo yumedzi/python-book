@@ -125,7 +125,7 @@ D.mro()
 
 
 
-<img src="images/tr_07_MRO_of_D.png">
+<img src="../images/tr_07_MRO_of_D.png">
 
 
 ```python
@@ -142,7 +142,7 @@ print(F.__mro__)
     (<class '__main__.F'>, <class '__main__.D'>, <class '__main__.E'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)
 
 
-<img src='images/tr_07_MRO_of_F.png'>
+<img src='../images/tr_07_MRO_of_F.png'>
 
 What's important to know about C3 is that it guarantees three important features:
 

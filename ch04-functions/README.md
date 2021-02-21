@@ -1,4 +1,4 @@
-#4. Functions
+# 4. Functions
 
 > This chapter describes functions in Python - how to create, use them, process passed parameters. Also it covers scopes of visibility, lambdas (anonymous functions), generators and some additional topics like functions internals and closures.
 

@@ -1,4 +1,4 @@
-#2. Strings and numbers
+# 2. Strings and numbers
 
 > In this chapter we'll learn about main aspects of Python basic types such as numbers and strings, how to work with them, their methods and attributes, and also - (which is very important to know from the beginning) how to read help and do basic introspection of any object.
 

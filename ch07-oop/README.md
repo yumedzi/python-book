@@ -1,4 +1,4 @@
-#7. OOP
+# 7. OOP
 
 > This chapter covers main aspects of OOP realized in Python - classes, instances, method resolution, inheritance, class and instance methods. Also - magic methods, slots and methods overloading using super() function.
 

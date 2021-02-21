@@ -1,4 +1,4 @@
-#6. Code Styling
+# 6. Code Styling
 
 > This chapter covers main styling guides and recommendations from PEP8.
 

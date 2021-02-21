@@ -1,4 +1,4 @@
-#8. Decorators, Exceptions
+# 8. Decorators, Exceptions
 
 > This chapter talks about Decorators (basics, chaining and parametrizing), lot of examples and tricky usecases (see Riddle and one-time decorator) and Exceptions.
 

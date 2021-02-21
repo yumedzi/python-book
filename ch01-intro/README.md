@@ -1,4 +1,4 @@
-#1. Introduction to Python
+# 1. Introduction to Python
 
 > This first session is an introduction to Python. It is "Bird's eye view" for this course.
 

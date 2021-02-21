@@ -1,4 +1,4 @@
-#5. Functional Programming
+# 5. Functional Programming
 
 > This chapters presents most important builtin functionality of Python. Additionally it covers important object called iterator which is capable of returning it's members one by one, nuances of it's creation and usage.
 

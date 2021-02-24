@@ -30,6 +30,8 @@ The `%run` magic command allows you to run any python script and load all of its
 
 The `%edit` command gives a reasonable approximation of multiline editing, by invoking your favorite editor on the spot. IPython will execute the code you type in there as if it were typed interactively.
 
+It is possible to search the previously entered code with `Ctrl-R` shortcut.
+
 ### History
 
 IPython stores both the commands you enter, and the results it produces. You can easily go through previous commands with the up- and down-arrow keys, or access your history in more sophisticated ways.

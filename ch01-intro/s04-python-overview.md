@@ -204,7 +204,7 @@ def deco(f):
 
 @deco
 def show_something(): 
-    print("Main function output")  
+    print("Main function output")
     
 show_something()
 ```

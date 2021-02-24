@@ -9,7 +9,6 @@
     * https://docs.python.org/3/tutorial/
 * List of links, tutorials on Habrahabr:
     * http://habrahabr.ru/post/31180/
-* 
 
 
 * Why Python slow? (nice article with lot of Python internals explanation)

@@ -35,6 +35,6 @@ All Python objects are special structures in memory mostly consisting of the fol
 * type (pointer to another object that has information about type of current object)
 * some additional contextual data
     * for digits like int, float etc. - it's the value itself
-    * for sequences - pointer to sctucture in memory which holds member objects
+    * for sequences - pointer to structure in memory which holds member objects
     
 This is what happenes when you do ```a = 42``` - you bind name ```a``` from namespace to an object ```42```. A namespace is a mapping from names (identifiers) to objects. You can rebind that name to another object (even different type than previous) - this called rebinding. Also that name can be unbindinned by ```del a```.

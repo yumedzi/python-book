@@ -37,7 +37,7 @@ import antigravity
 > *There should be one — and preferably only one — obvious way to do it*
 
 * Universality - general purpose:
-    * Web, Machine Learning, Testing, services, game logic, math, science, education
+    * Machine Learning, Web, Testing, services, game logic, math, science, education
     * except DBs and things that required super fast computing
 
 ### History of Python (brief)
@@ -85,6 +85,7 @@ Python is used in these three areas the most now:
 
 ### Pluses:
 
+* Readability and indentations
 * Understandable tracebacks
 * Pretty fast for it's tasks - web, UI, math, analyse (PyPy, Cython, numpy, scipy)
 * Community (for FullStackOverflow developers)
@@ -127,7 +128,7 @@ Almost everything said for Java also applies for C++, just more so: where Python
 There are two main branches of Python: 
 
 * Python 2 (~ 2.7.17)
-* Python 3 (~ 3.9)
+* Python 3 (~ 3.9.2)
 
 Nowadays most development (especially new projects) are started mostly on Python 3.
 
@@ -178,7 +179,7 @@ def foo(a: 'x', b: 5 + 6, c: list) -> max(2, 9)
 ### Python interpreter
 
 * Interpreter - mean it runs code almost "live"
-* Downloadable from http://python.org 
+* Downloadable from https://www.python.org/ 
 * Python is script language but still it compiles runtime code in a form of so called bytecode which Python Virtual Machine (PVM) runs (just like Java does with it's JVM):
 ![PVM explanation](../images/tr_01_01.png)
 

@@ -1,6 +1,6 @@
 # Strings
 
-> String is **immutable sequence** of Unicode characters. For Python it's almost like any other sequence (more like tuple which is immutable version of list). 
+> String is **immutable iterable (sequence)** consists of Unicode characters. For Python it's almost like any other sequence (more like tuple which is immutable version of list). 
 
 String literals are written in a variety of ways:
 

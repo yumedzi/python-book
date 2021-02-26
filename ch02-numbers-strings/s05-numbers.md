@@ -150,7 +150,7 @@ random.shuffle(l)
 print(l)
 ```
 
-    [1, 5, 4, 3, 2]
+    [1, 4, 5, 3, 2]
 
 
 How random is "random"?
@@ -336,7 +336,7 @@ plt.show()
 %matplotlib inline
 (n, bins) = np.histogram(v, bins=50)
 plt.plot(.6*(bins[1:]+bins[:-1]), n)
-plt.show()
+plt.show() 
 ```
 
 

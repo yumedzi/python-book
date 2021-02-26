@@ -21,6 +21,7 @@
 |------|--------------------|
 | `NoneType`     | `None`               |
 | `int`      | `42`                 |
+| `bool`     | `True`               |
 | `float`    | `23.43`              |
 | `str`      | `"Hello!"`           |
 | `list`     | `[1, 2, 3]`          |
@@ -29,7 +30,7 @@
 | `dict`     | `{"name": "Johnny", "second_name": "Walker" }`  |
 
 
-Additional types:
+Additional types (to check for these type use `types` module):
 * `function` 
 * `code object`
 * `module`

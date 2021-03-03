@@ -41,7 +41,7 @@ Let's check our `ґ` character:
 |Value       | ґ
 |Name        | Cyrillic Small Letter Ghe with Upturn |
 |Codepoint   | 0491 |
-| In Python  | `'\u0419'`
+| In Python  | `'\u0491'`
 | Link       | [https://unicode-table.com/en/0491/](https://unicode-table.com/en/0491/)
 
 
@@ -128,6 +128,8 @@ So, let's summary previous section:
 
 Unicode string needs to be represented in memory as a set of code units, and code units are then mapped to 8-bit bytes. The rules for translating a Unicode string into a sequence of bytes are called a *character encoding*, or just an *encoding*. The opposite procedure is called *decoding*.
 
+> Note: In Python 3 "utf8" is the default encoding, so we can skip it in `encode` and `decode` methods.
+
 * encoding (transform Unicode into `bytes`)
     * `'Ґaнок'.encode('utf8')`
 * decoding (transform `bytes` into Unicode)
@@ -187,7 +189,7 @@ Decoding:
 
 ### UTF-8
 
-> UTF-8 is 8-bit Unicode Transformation Format
+> UTF-8 is dynamicly sized Unicode Transformation Format
 
 [UTF-8](https://en.wikipedia.org/wiki/UTF-8) is one of the best encodings made specifically to cover Unicode characters. 
 
@@ -195,6 +197,6 @@ UTF-8 is the standard text encoding in Python, Linux, osX, modern Windows and We
 
 UTF-8 is dynamic and can use not just 1 byte (8bit) but dynamically from 1 byte to 4 byte:
 * `1` byte for ASCII
-* `2` bytes for most Latin-derived (but not Cyrillic) languages
-* `3` bytes for the rest of the basic multilingual plane (cyrillic)
+* `2` bytes for most Latin-derived and Cyrillic languages
+* `3` bytes for the rest of the basic multilingual plane
 * `4` bytes for Asian languages, symbols and emojis

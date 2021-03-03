@@ -127,8 +127,8 @@ Examples:
 * `^[\w.']{2,}(\s[\w.']{2,})+$` - personal name
 * `^.{6,}$` - password 6 chars min
 * `^.{6,}$|^$` - password or empty string
-* `^([a-z][a-z0-9-]+(\.|-*\.))+[a-z]{2,6}$` - domain name
-* `^[_]*([a-z0-9]+(\.|_*)?)+@([a-z][a-z0-9-]+(\.|-*\.))+[a-z]{2,6}$` - email 
+* `^([a-z][a-z0-9-]+\.)+([a-z]{2,6})$` - domain name
+* `^[_]*([a-z0-9]+(\.|_*)?)+@([a-z][a-z0-9-]+\.)+[a-z]{2,6}$` - email 
 
 ### Regex Python API
 
@@ -166,7 +166,7 @@ print(r"Printing RAW string with <\n> and <\t\t> as special characters")
 Module `re` can compile regex pattern making it's repeated usage faster.
 
 Also it is worth to understand the difference between `match` and `search` methods:
- * `match` will try to match whole string with given pattern 
+ * `match` will try to match string with given pattern from the beginning of the string.
  * `search` will try to find the part of the text to match the given pattern. 
  
 That's why in most cases when we are looking for some text the usage `search` is preferred.
@@ -235,6 +235,30 @@ if m:
     Foo asd  34 
 
 
+An example of re-using the previously found group in the regexp. Here we try to find the username and password for the main account (which is defined by `main_user` config option):
+
+> NOTE: we use `re.S` (singleline) flag to make `.` to match any characters including `\n` too.
+
+
+```python
+config = """
+main_user: user02
+
+credential user01:U1_#$%^$#jbvsd123
+credential user02:U2_^&%^$^sdghjf23
+credential user03:U3_&%^GHFHGV2235H
+"""
+
+re.search(r"main_user: (\w+).*credential\s+\1:([^\n]*)", config, re.S).groups()
+```
+
+
+
+
+    ('user02', 'U2_^&%^$^sdghjf23')
+
+
+
 ### Multiple matching
 
 If we want to find all occurence of the text matching the given pattern - we should use `re.findall`
@@ -261,13 +285,23 @@ user: b.allen@starlabs.com
 account: ADCORP\Barry.Allen
 """
 
-pattern = r"""user: ([\w\d@\._]+)
+pattern = r"""user: ([\w\d@\.]+)
 account: \w+\\(\w+)\.?(\w*)?"""
+
+print(f"Result of re.findall: {re.findall(pattern, text)}")
 
 for email, first_name, second_name in re.findall(pattern, text):
     print(f"User <{email}>: {first_name} {second_name}")
+    
+for m in re.finditer(pattern, text):
+    email, first_name, second_name = m.groups()
+    print(f"User <{email}>: {first_name} {second_name}")
 ```
 
+    Result of re.findall: [('cmonet324@salon_paris.com', 'Claude', 'Monet'), ('Elizabeth2@windsor.com', 'Elizabeth', 'II'), ('b.allen@starlabs.com', 'Barry', 'Allen')]
+    User <cmonet324@salon_paris.com>: Claude Monet
+    User <Elizabeth2@windsor.com>: Elizabeth II
+    User <b.allen@starlabs.com>: Barry Allen
     User <cmonet324@salon_paris.com>: Claude Monet
     User <Elizabeth2@windsor.com>: Elizabeth II
     User <b.allen@starlabs.com>: Barry Allen
@@ -302,3 +336,43 @@ pattern
 | `re.I` |	Case **i**sensitive
 | `re.S` | 	**S**ingle line. Dot matches newline characters 
 | `re.X` |  E**x**tended. Spaces and text after a `#` in the pattern are ignored
+
+### Greediness
+
+> 'Greedy' means match longest possible string.
+>
+> 'Lazy' means match shortest possible string.
+
+
+By default quantifiers "\*" and "+" are greedy - this means that regexp will try to match as much text as possible.
+Let's check the following example where we can see that regexp will match too much (where we wanted to parse out the contents of the tag "span"):
+
+
+
+```python
+html = "<span>text1</span> and <span>text2</span> and <span>text3</span>"
+
+re.findall(r"<span>(.*)</span>", html)
+```
+
+
+
+
+    ['text1</span> and <span>text2</span> and <span>text3']
+
+
+
+To make these quantifiers (`*` and `+`) lazy (non-greedy) to much as few as possible we can add `?` to them.
+Now the example from above correctly returns the contents of all `<span>` tags:
+
+
+```python
+html = "<span>text1</span> and <span>text2</span> and <span>text3</span>"
+
+re.findall(r"<span>(.*?)</span>", html)
+```
+
+
+
+
+    ['text1', 'text2', 'text3']

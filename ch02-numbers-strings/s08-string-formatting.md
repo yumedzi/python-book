@@ -2,8 +2,8 @@
 
 > There are two (old one new) styles of string formatting in Python. They are very similar when dealing with simple stuff but also have a lot of in-deep presentation and text transformation options
 
-1. `str.format()` (new) provides a large degree of flexibility and customization.
-2. `printf-style` (**%**, old) - based on C printf style formatting that handles a narrower range of types and is slightly harder to use correctly, but is often faster for the cases it can handle.
+1. `printf-style` (**%**, old) - based on C printf style formatting that handles a narrower range of types and is slightly harder to use correctly, but is often faster for the cases it can handle.
+2. `str.format()` (new) provides a large degree of flexibility and customization.
 3. `f-strings` (Python 3.6) - inline formatting allowing to insert variables by names with format similar to `format()`
 
 
@@ -11,7 +11,7 @@
 print_me = 100505050.12123
 print(  "1. %s" % print_me )         # Old format, %
 print(  "2. {}".format(print_me) )   # New format, format()
-print( f"3. {print_me}")             # f-strings
+print( f"3. {print_me}" )            # f-strings
 ```
 
     1. 100505050.12123
@@ -64,10 +64,10 @@ print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 
 ```python
 data = {"food": "Pasta Carbonara", "money": 300}
-print( "And for dinner:  %(food)20s, money to spend: %(money)7.2f UAH" % data )
+print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
 ```
 
-    And for dinner:       Pasta Carbonara, money to spend:  300.00 UAH
+    And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH
 
 
 #### **{}** / format()
@@ -256,7 +256,7 @@ print('''{0}!
 
 * Convert Values to different Bases 
     * You can use the following letters to convert a number to their bases:
-        * **d**ecimal, he**x**, **o**ctal, **b**inary
+        * decimal, hex, octal, binary
 
 
 ```python
@@ -423,13 +423,13 @@ Format int value as hex:
 
 ```python
 value = 1234
-f'input={value:#06x}'
+f'input={value:#x}'
 ```
 
 
 
 
-    'input=0x04d2'
+    'input=0x4d2'
 
 
 
@@ -439,17 +439,17 @@ Format `datetime` objects (see [docs for datetime formatting](https://docs.pytho
 ```python
 import datetime
 now = datetime.datetime.now()
-print(now.strftime("%d/%m/%Y"))
-f'It was: {now:%d/%m/%Y}'
+print(now.strftime("%a %d/%m/%Y"))
+f'It was: {now:%a %d/%m/%Y}'
 ```
 
-    16/12/2020
+    Mon 01/03/2021
 
 
 
 
 
-    'It was: 16/12/2020'
+    'It was: Mon 01/03/2021'
 
 
 
@@ -459,7 +459,7 @@ f'It was: {now:%d/%m/%Y}'
 ```python
 import decimal
 
-width = 10
+width = 12
 precision = 5
 value = decimal.Decimal('12.34567')
 f'result: {value:{width}.{precision}f}'
@@ -468,7 +468,7 @@ f'result: {value:{width}.{precision}f}'
 
 
 
-    'result:   12.34567'
+    'result:     12.34567'
 
 
 
@@ -483,7 +483,7 @@ s = Template('$who likes $what')
 print(s.substitute(who='Johnny', what='whiskey'))
 
 d = dict(who='tim')
-#Template('Give $who $cookie').substitute(d) <--- will raise ValueError as 'cookie' not in a dictionary
+#Template('Give $who $cookie').substitute(d) <--- will raise KeyError as 'cookie' not in a dictionary
 print(Template('$who likes $cookies').safe_substitute(d)) # proper way
 ```
 

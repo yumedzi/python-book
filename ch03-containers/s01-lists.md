@@ -33,8 +33,8 @@ Worth to note that most methods are not returning anything - they are just direc
 | ```len(some_list)```       | Return int - length of the list
 | ```reverse()```            | Reverse order of elements of the list in place
 | ```sort()```               | Sort elements of the list in place
-| ```append(x)```            | Add new element ```x``` to the end of list
-| ```extend(another_list)``` | Add elements of list ```another_list``` to the end of list
+| ```append(x)```            | Add new element ```x``` to the end of the list
+| ```extend(iterable)```     | Append elements of iterable to the end of the list
 | ```pop()```                | Return and remove the last element from the list
 | ```pop(i)```               | Return and remove element by index ```i``` from the list
 
@@ -541,15 +541,15 @@ cool_list
 
 
 ```python
-# Random list (len till 10) from rand ints (till 10)
+# Random list (len till 15) from rand ints (till 10)
 from random import randrange
-[randrange(0, 10) for _ in range(randrange(3, 10))]
+[randrange(0, 10) for _ in range(randrange(3, 15))]
 ```
 
 
 
 
-    [4, 8, 3, 9, 3, 6, 9, 7, 8]
+    [2, 2, 4, 8, 9, 2, 4]
 
 
 
@@ -743,7 +743,7 @@ That's why it's possible to add list to itself as element!
 a = [1, 2, 3]
 a.append(a)
 print(a)
-print(a[-1][-1][-1][-1][-1][-1][-1][-1])
+print(a[-1][-1][-1][-1][-1][-1][-1])
 ```
 
     [1, 2, 3, [...]]

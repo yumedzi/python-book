@@ -128,7 +128,7 @@ The following table summarizes the operator precedence in Python, from lowest pr
 |Operator	|Description  |
 |-----------|-------------|
 |`lambda`                                        	| Lambda expression
-|`if – else`                                        | Conditional expression
+|`- if – else`                                        | Conditional expression
 |`or`, `and`, `not x`	                            | **Boolean OR, AND, NOT**
 |`in`, `not in`, `is`, `is not`, `<`, `<=`, `>`, `>=`, `!=`, `==` |	**Comparisons, including membership tests and identity tests**
 | <code>&#124;</code>, `^`, `&`                                      | Bitwise OR, XOR, AND

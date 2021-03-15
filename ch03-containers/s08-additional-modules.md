@@ -121,7 +121,7 @@ print(f(encountered_animals))
 ```
 
     defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
-    3.25 µs ± 34.1 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+    3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 
 
 The same using `setdefault` method:
@@ -144,7 +144,7 @@ print(f(encountered_animals))
 ```
 
     {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
-    2.45 µs ± 45.3 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+    2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 
 
 If we set `default_factory` to `int` we can create a counter of things:
@@ -157,10 +157,10 @@ for k in s.lower():
     # d.setdefault(k, 0) # if via setdefault
     d[k] += 1
 
-print(d.items())
+print(d)
 ```
 
-    dict_items([('a', 4), ('n', 2), ('m', 1), ('d', 1), ('r', 1), ('i', 1), ('g', 1), ('l', 1)])
+    defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 
 
 #### `Counter`
@@ -251,7 +251,7 @@ The type is specified at object creation time by using a type code, which is a s
 Syntax for creating an array:
 
 ```py
-array.array(typecode[, initializer]
+array.array(typecode[, initializer])
 ```
 
 Array has the similar to `list` operations like indexing and slicing. Also, `array` has these methods that are the same as in `list`:
@@ -348,7 +348,9 @@ print("Changing shape:\n", b.reshape(1, 6))
 
 ### `bytearray`
 
-> "Mutable string", at last :)
+> Array of bytes type (length of item is 1B)
+> 
+> Joke: "Mutable string", at last :)
 
 In Python 3 string is a sequence of Unicode characters. If we encode them we will get so-called `bytes` object suitable for sending over internet or writing it to a socket or file (but usually python hides this from programmer when dealing with files using default encoding). `bytes` is analogue of the strings used in Python 2. `bytes` object is immutable, just like regular string and has the same methods.
 
@@ -445,15 +447,15 @@ class Color(Enum):
     BLUE = 3
     
 # All enum members are hashable:
-settings_per_page = {
+color_settings_per_page = {
     Page.LOGIN: Color.RED,
     Page.DASHBOARD: Color.GREEN,
-    Page.SEARCH: Color.RED
+    Page.SEARCH: Color.BLUE
 }
-print(settings_per_page)
+print(color_settings_per_page)
 ```
 
-    {<Page.LOGIN: 1>: <Color.RED: 1>, <Page.DASHBOARD: 2>: <Color.GREEN: 2>, <Page.SEARCH: 3>: <Color.RED: 1>}
+    {<Page.LOGIN: 1>: <Color.RED: 1>, <Page.DASHBOARD: 2>: <Color.GREEN: 2>, <Page.SEARCH: 3>: <Color.BLUE: 3>}
 
 
 Enums can be iterated over:

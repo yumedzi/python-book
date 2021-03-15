@@ -1,10 +1,8 @@
 # Lists
 
-> List is ordered mutable sequence of objects.
+> List is ordered mutable sequence of ANY objects.
 
 > This means that it is allowed to change it's elements after creation: adding new, changing/removing existing etc.
-
-> Lists can contain a mix of types.
 
 Ways to create a list:
 * ```[]```
@@ -812,27 +810,5 @@ Time-complexity (aka "Big O" or "Big Oh") of various operations in current CPyth
 |min(s), max(s) |O(n) | |
 |Get Length     |O(1) |O(1) |
 
-
-### Data structures
-
-> This is a super short intro in Data structures
-
-There are two main basic data structures:
-* **Linked list**
-    * a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next.
-<img src="../images/tr_03_02.png">    
-    
-* **Array**
-    * a systematic arrangement of similar objects. Array has a fixed length and a type of members.
-<img src="../images/tr_03_01.png">    
-
-On top of these - two very important and widely used non-primitive data sctructures are built:
-
-* **Stack**
-    * *FILO* (First In Last Out) data structure, which means the item which is inserted last is retrieved first.
-* **Queue**
-    * FIFO (First In First Out) data structure, i.e. object which is first inserted, is first consumed.
-    
-<img src="../images/tr_03_03.1.png">     
 
 As we can see from [Complexity of operations](#Complexity-of-operations) section, `list` has fast (complexity is `O(1)`) such methods as `append` and `pop` which work with right end of the structure. So this is a *FILO* structure - "stack". So, if we want to achieve maximum performance we should use list as stack (and not use `insert(0, x)` and `pop(0)` methods).

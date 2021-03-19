@@ -21,6 +21,27 @@ Call function (execute and get it's result):
 function_name(arg1, arg2, ... argN)
 ```
 
+### Argument vs Parameter
+
+> **Parameter** is the function local variable it was declared with.
+> 
+> **Arguments** is the variable that was passed to the function during it's call.
+
+An example:
+
+```py
+def example(x):  #      x <-- parameter
+    return str(x)
+    
+example(100500)  # 100500 <-- argument
+```
+
+Here:
+* `x` is the *parameter*
+* `100500` is the *argument*
+
+Note: Python's official documentation often refers to *parameter* as *argument*, so *argument* can be used in most cases as more general term.
+
 Function always returns something. You can scpecify return value by operator ```return```. If not - ```None``` will be returned. 
 
 Python code statement can't be empty. You can "do nothing" with operator ```pass```:
@@ -409,7 +430,7 @@ The *keyword-only* parameters definition can be used to avoid the issue what it 
 
 
 ```python
-def files_search(files, *, depth=0, include_archives=None, count_duplicates= True):
+def files_search(files, *, depth=0, include_archives=None, count_duplicates=True):
     pass
 
 # OK:

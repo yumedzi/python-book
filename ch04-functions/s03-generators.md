@@ -18,35 +18,37 @@ Generator is particular case of more generic type - "iterator" which is defined 
 
 
 ```python
-def sum_range(x, y): 
-    for i in range(x+y):
+def sum_range(x, y):
+    print("Starting generator...")
+    for i in range(x + y):
         yield i
-        print("Yo!")
+        print("Next iteration!")
+    print("Stopping generator...Bye-bye!")
 
-gen = sum_range(2, 3)
+gen = sum_range(2, 2)
 print("First __next__:", next(gen))
 print("Second __next__:", next(gen))
 
-for x in gen:
+for x in gen:  # Recommended way of looping
     print("For loop:", x)
 
 try:
     print("__next__ on 'empty':", gen.__next__())
-except:
-    print(":(")
+except StopIteration:
+    print("Generator is already empty (raised StopIteration)")
 ```
 
+    Starting generator...
     First __next__: 0
-    Yo!
+    Next iteration!
     Second __next__: 1
-    Yo!
+    Next iteration!
     For loop: 2
-    Yo!
+    Next iteration!
     For loop: 3
-    Yo!
-    For loop: 4
-    Yo!
-    :(
+    Next iteration!
+    Stopping generator...Bye-bye!
+    Generator is already empty (raised StopIteration)
 
 
 ## Generator expressions

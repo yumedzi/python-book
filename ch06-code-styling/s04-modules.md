@@ -52,7 +52,7 @@ print(sa(2, 30))
 ```
 
 Module search logic:
-* built-in modules, `sys.modules`
+* built-in + already imported modules, `sys.modules`
 * files with the same name in current directory
 * locations in PYTHONPATH (`sys.path`):
     * the directory containing the input script (or the current directory).
@@ -127,7 +127,7 @@ Some modules are built into the interpreter; these provide access to operations 
     * `os, sys, io, argparse, optparse, logging, curses, platform`
     * `ctypes, time, datetime, multiprocessing, threading, subprocess`
 * String services:
-    * `re, string, StringIO, datetime, collections, pprint`
+    * `re, string, datetime, collections, pprint`
 * Numbers/calculation:
     * `numbers, math, decimal`
 
@@ -136,7 +136,7 @@ Some modules are built into the interpreter; these provide access to operations 
 * FP:
     * `functools, operator, itertools`
 * Serializing and compression:
-    * `pickle, cPickle, json, shelve, marshal, dbm`
+    * `pickle, json, shelve, marshal, dbm`
     * `sqlite3, zlib, bz2, zipfile, tarfile`
 
 * Internet:

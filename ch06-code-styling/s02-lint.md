@@ -26,3 +26,8 @@ $PYTHON_PATH/lib/site-packages/pylint/standard.rc
 pylint --generate-rcfile > standard.rc
 disable=W0511, C0321 >> standard.rc
 pylint --rcfile=<path>/standard.rc```
+
+Another good linters/checkers are:
+* [flake8](https://flake8.pycqa.org) - alternative PEP8 checker
+* [bandit](https://bandit.readthedocs.io) - security checker
+* [mypy](https://mypy.readthedocs.io) - static type checker

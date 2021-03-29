@@ -7,7 +7,7 @@ Why do we need them?
 
 How to create a package?
 1. Create directory
-2. Place a module
+2. Optional: Place a module
 3. That's it...
 
 > Note: In Python 2 and Python 3 before 3.5 you required to place there special (maybe empty) file `__init__.py`
@@ -26,6 +26,7 @@ In `main.py` we can import presented packages/modules in the following ways:
 
 ```python
 import helpers.file_processors.parser
+import helpers.file_processors.parser as hfp
 from helpers.file_processors import parser
 from helpers.file_processors import parser, saver
 from helpers.file_processors import parser as ps

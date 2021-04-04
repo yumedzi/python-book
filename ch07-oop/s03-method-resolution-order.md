@@ -6,7 +6,7 @@ For old class it was vertical-then-horizontal order of looking up for object att
 
 ## Old style class MRO
 
-> Just for information!
+> Just for information as it is used only in Python 2!
 
 ```python
 class A: 

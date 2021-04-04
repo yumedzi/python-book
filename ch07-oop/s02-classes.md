@@ -16,7 +16,7 @@ Class objects support two kinds of operations: attribute references and instanti
 
 
 ```python
-class Bus(object):
+class Bus:
     """ Sample Bus class """
     # Class attributes
     buses_count = 0
@@ -109,7 +109,7 @@ print(marshrutka_317.people_transferred)
 
 
 ```python
-class Robot(object):
+class Robot:
     sounds = ["Beeep", "Bzzzt", "Oooooh"]
     
     def __init__(self, name, weigth=1000):
@@ -191,6 +191,33 @@ d.a, d.x
 
 
 
+Let's enhance our `Robot` example by inheriting from two classes at once.
+
+
+```python
+class Mail:
+    def send_message(self, msg):
+        print(f"*** SENDING MESSAGE: <<<{msg}>>>  ***")
+        
+Mail().send_message("Test")
+```
+
+    *** SENDING MESSAGE: <<<Test>>>  ***
+
+
+
+```python
+class BendingMailingRobot(Robot, Mail):
+    sounds = ["Kill all humans", "Kiss my shiny metal face", "Oh, your God!",
+              "Oh wait you’re serious. Let me laugh even harder."]
+    
+bender2_0 = BendingMailingRobot("Bender 2.0")
+bender2_0.send_message(bender2_0.say())
+```
+
+    *** SENDING MESSAGE: <<<Bender 2.0 says: Kill all humans>>>  ***
+
+
 ## Methods
 
 Methods can be:
@@ -206,19 +233,19 @@ The method that should be called with the instance as it's first argument. This 
 
 
 ```python
-class Example(object):
+class Example:
     def cool_method(self):
         print(f"I am instance method, my instance is: {self}")
         
 ex = Example()
 ex.cool_method()
-# Example.cool_method(ex)
+# Example.cool_method(ex)  # <-- same 
 
 print(ex.cool_method)
 ```
 
-    I am instance method, my instance is: <__main__.Example object at 0x7fe60c7dcda0>
-    <bound method Example.cool_method of <__main__.Example object at 0x7fe60c7dcda0>>
+    I am instance method, my instance is: <__main__.Example object at 0x7f343cf57ac8>
+    <bound method Example.cool_method of <__main__.Example object at 0x7f343cf57ac8>>
 
 
 ### Class methods

@@ -13,11 +13,11 @@
 
 But first of all let's check what is bound/unbound method
 
-> Bound method is method that kind-of already has `self` as first argument already.
+> Method bound to the object is the function that passes that object as the first argument (instance for instance methods, class for class methods).
 
-> ```python
+```python
 a = A()
-a.method(x) --> A.method(a, x)
+a.method(x) --> A.method(a, x)  # <-- here a.method is bound method
 ```
 
 > "bound_method is bound method :)

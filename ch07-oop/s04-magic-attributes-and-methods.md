@@ -219,7 +219,7 @@ Battery: `functools.total_ordering`
 import functools
 
 @functools.total_ordering
-class Something(object):
+class Something:
     value = 1
     
     def __eq__(self, other):
@@ -231,7 +231,7 @@ class Something(object):
 b1 = Something()
 b1.value = 5
 b2 = Something()
-print(b1 != b2)
+print(b1 >= b2)
 print(b1 <= b2)
 ```
 

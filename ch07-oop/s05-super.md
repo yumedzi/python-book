@@ -33,7 +33,7 @@ Please notice that we don't pass `cls`/`self` into class/instance methods:
 
 ```python
 class A:
-    attr = "TEST ATTR"
+    attr = "class attr from A"
 
     def instance_method(self):
         print("Running method of A")
@@ -45,7 +45,7 @@ class A:
 
     @staticmethod
     def static_method():
-        return "Some static data"
+        return "Some static data (from A class)"
 
 
 class C:
@@ -54,17 +54,19 @@ class C:
 
 
 class B(A, C):
-    attr = "TEST ATTR #2"
+    attr = "class attr from B"
     
     def instance_method(self):
         print("Running instance method in B...")
         #return A.instance_method(self)
         return super().instance_method()   # FROM A (next in MRO)
+        # return super(B, self).instance_method()   # FROM A (next in MRO)
         #return super(A, self).instance_method()  # FROM C (after A)
 
     @classmethod
     def class_method(cls):
-        print("Running class method...")
+        print("Running class method in B...")
+        # print(f"!!! {A.class_method()}")
         return super().class_method()
 
     def __new__(cls):
@@ -79,34 +81,36 @@ class B(A, C):
 
 # Working with class A (original, super-class)
 a = A()
-a.attr = "Object's own attr"
-# print(obj.__dict__)
+a.attr = "Object's own attr (from class A)"
+print(a.__dict__)
 print(a.instance_method())
 print(a.class_method())
 # print(A.static_method())
-print("--------")
+print("--------" * 10)
+
 # Working with class B (child to A and C)
 b = B()
 print(B.mro())
-b.attr = "Object's own attr (#2)"
+b.attr = "Object's own attr (from class B)"
 print(b.instance_method())
 print(b.class_method())
 print(b.static_method())
 ```
 
+    {'attr': "Object's own attr (from class A)"}
     Running method of A
-    Object's own attr
-    TEST ATTR
-    --------
+    Object's own attr (from class A)
+    class attr from A
+    --------------------------------------------------------------------------------
     Running __new__...
     [<class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>, <class 'object'>]
     Running instance method in B...
     Running method of A
-    Object's own attr (#2)
-    Running class method...
-    TEST ATTR #2
+    Object's own attr (from class B)
+    Running class method in B...
+    class attr from B
     Running static method...
-    Some static data
+    Some static data (from A class)
 
 
 ### More examples:

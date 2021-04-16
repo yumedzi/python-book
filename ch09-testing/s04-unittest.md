@@ -57,7 +57,7 @@ import unittest
 
 class TestStringMethods(unittest.TestCase):
     def test_01_upper(self):
-        self.assertEqual('fooooool000'.upper(), 'FOOOOOO1000', "Critical Python string handling error")
+        self.assertEqual('fooooool000'.lower(), 'FOOOOOO1000'.lower(), "Critical Python string handling error")
 
     def test_02_isupper(self):
         self.assertTrue('FOO'.isupper())
@@ -79,17 +79,17 @@ if __name__ == '__main__':
     FAIL: test_01_upper (__main__.TestStringMethods)
     ----------------------------------------------------------------------
     Traceback (most recent call last):
-      File "<ipython-input-6-3628783ca985>", line 5, in test_01_upper
-        self.assertEqual('fooooool000'.upper(), 'FOOOOOO1000', "Critical Python string handling error")
-    AssertionError: 'FOOOOOOL000' != 'FOOOOOO1000'
-    - FOOOOOOL000
+      File "<ipython-input-1-af5344e748c5>", line 5, in test_01_upper
+        self.assertEqual('fooooool000'.lower(), 'FOOOOOO1000'.lower(), "Critical Python string handling error")
+    AssertionError: 'fooooool000' != 'foooooo1000'
+    - fooooool000
     ?        ^
-    + FOOOOOO1000
+    + foooooo1000
     ?        ^
      : Critical Python string handling error
     
     ----------------------------------------------------------------------
-    Ran 3 tests in 0.006s
+    Ran 3 tests in 0.013s
     
     FAILED (failures=1)
 

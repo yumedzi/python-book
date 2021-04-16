@@ -56,6 +56,11 @@ Jenkins can be installed through native system packages, Docker, or even run sta
 ```sh
 java -jar jenkins.war
 ```
+or use docker:
+
+```sh
+docker run -p 8080:8080 -p 50000:50000 --name jenkins -v JENKINS:/var/jenkins_home jenkins/jenkins
+```
 
 2. Upon first run it will tell admin pass (and also it will be stored at `~/.jenkins/secrets/initialAdminPassword`):
 

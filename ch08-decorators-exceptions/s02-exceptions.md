@@ -68,12 +68,25 @@ l = list(range(10))
 
 def get_item():
     num = input("Enter index: ")
-    if not num.isdigit():
+    # Fix this example!!!
+    if not num.isdigit() or (num.startswith("-") and not num[1:].isdigit()):
         return "Incorrect value"
     if len(l) < int(num):
         return "Out of range"
     return l[int(num)]
+
+get_item()
 ```
+
+    Enter index: -5
+
+
+
+
+
+    'Incorrect value'
+
+
 
 Better solution:
 
@@ -82,13 +95,14 @@ Better solution:
 def get_item():
     num = input("Enter index: ")
     try:
-        return l[int(float(num))]
+        return l[int(num)]
     except IndexError:
         return "Out of range"
     except (TypeError, ValueError):
         return "Incorrect value"
     except Exception as e:
         return f"Unexpected exception: {e.__class__.__name__}({e})"
+
 ```
 
 ## Custom Exceptions 
@@ -192,7 +206,7 @@ try:
     s = f.readline()
     i = int(s.strip())
 except (IOError, ValueError) as e: 
-    print("Data or file error: %s" % e )
+    print(f"Data or file error: {e}")
 ```
 
     Data or file error: [Errno 2] No such file or directory: 'myfile.txt'

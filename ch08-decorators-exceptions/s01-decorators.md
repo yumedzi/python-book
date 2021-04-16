@@ -9,6 +9,7 @@
 ```python
 def some_transformation(func):
     # doing something with func
+    return func2
 
 
 def foo(*args):
@@ -222,7 +223,7 @@ print(price)
 print(price(100, tax_rate=.1))
 ```
 
-    <function dollar.<locals>.wrapper at 0x7fd4f167c598>
+    <function dollar.<locals>.wrapper at 0x7f208019f8b0>
     Args are: (100,), KWArgs: {'tax_rate': 0.1}
     $110.0
 
@@ -231,7 +232,7 @@ The same example, but in one line:
 
 
 ```python
-def dollar(func):
+def dollar(func): 
     return lambda *args, **kwargs: f"${func(*args, **kwargs)}"
 
 @dollar
@@ -261,7 +262,7 @@ def json(func):
     return wrapper                           
                                         
                                              
-@json                                        
+@json                                       
 def f(x, y):                                 
     return x ** y                            
                                              
@@ -295,7 +296,7 @@ def my_func():
    pass
 
 print(my_func.counter)
-[my_func() for _ in range(7)]
+[my_func() for _ in range(9)]
 my_func() # +1
 print(f"my_func.counter = {my_func.counter}")
 print(f"my_func.__dict__ = {my_func.__dict__}")
@@ -303,8 +304,8 @@ print(f"my_func.__dict__ = {my_func.__dict__}")
 
     New deco init...
     0
-    my_func.counter = 8
-    my_func.__dict__ = {'counter': 8}
+    my_func.counter = 10
+    my_func.__dict__ = {'counter': 10}
 
 
 Shown above decorator is call counter.
@@ -586,8 +587,8 @@ calc_sum(2, 2)
 ```
 
     Traversing trough raw data internals...
+    Validating obtained subprocess results...
     Alligning matrixes of indexes for data frames...
-    Traversing trough raw data internals...
 
 
 
@@ -674,7 +675,7 @@ def makered(fn):
 def hello(text="Goodbye World!"):
     return text
 
-hello = makebold(makeitalic(makered(hello)))
+# hello = makebold(makeitalic(makered(hello)))
 
 hello()
 ```
@@ -682,7 +683,7 @@ hello()
 
 
 
-    "<b><i><span style='color: red;'><b><i><span style='color: red;'>Goodbye World!</span></i></b></span></i></b>"
+    "<b><i><span style='color: red;'>Goodbye World!</span></i></b>"
 
 
 

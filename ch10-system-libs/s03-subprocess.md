@@ -408,7 +408,7 @@ print(proc.pid)
 
     STDOUT: b'Hello POPEN !!!\n'
     STDERR: None
-    219
+    72
 
 
 
@@ -420,7 +420,7 @@ with open('tmp_file', "w") as f:
                             stdin=subprocess.PIPE,
                             stdout=f, 
                             )
-    proc.communicate(b'SENDING SOMETHING TO STDIN ---> 08/01/2021\n')
+    proc.communicate(b'SENDING SOMETHING TO STDIN ---> 2021/04/16\n')
 ```
 
 
@@ -443,8 +443,8 @@ print(stdout_value.decode("utf-8"))
 ```
 
     /notebooks/V2/Basics
-    STDOUT: b'SENDING SOMETHING TO STDIN ---> 08/01/2021\n'
-    SENDING SOMETHING TO STDIN ---> 08/01/2021
+    STDOUT: b'SENDING SOMETHING TO STDIN ---> 2021/04/16\n'
+    SENDING SOMETHING TO STDIN ---> 2021/04/16
     
 
 
@@ -457,7 +457,8 @@ import shlex
 cmd = "cat tmp_file"
 print(shlex.split(cmd))
 
-subprocess.check_output(shlex.split(cmd))
+#subprocess.check_output(shlex.split(cmd))
+subprocess.getoutput("cat tmp_file")
 ```
 
     ['cat', 'tmp_file']
@@ -466,7 +467,7 @@ subprocess.check_output(shlex.split(cmd))
 
 
 
-    b'SENDING SOMETHING TO STDIN ---> 08/01/2021\n'
+    'SENDING SOMETHING TO STDIN ---> 2021/04/16'
 
 
 
@@ -474,10 +475,10 @@ Pipeline:
 
 
 ```python
-! df -ah | grep notebooks
+! df -ah | grep /notebooks
 ```
 
-    /dev/vg1000/lv  7.0T  6.3T  758G  90% /notebooks
+    /dev/vg1000/lv  7.0T  6.6T  459G  94% /notebooks
 
 
 
@@ -486,12 +487,12 @@ p1 = subprocess.Popen(['df', '-ah'], stdout=subprocess.PIPE)
 p2 = subprocess.Popen(['grep', '/notebooks'], stdin=p1.stdout, stdout=subprocess.PIPE, text=True)
 
 if p1.wait() == 0:  # Wait for p1 to finish with status 0
-    # p1.stdout.close()  # Allow p1 to detect a SIGPIPE if p2 exits
+    #p1.stdout.close()  # Allow p2 to detect a SIGPIPE if p1 exits
     p2_output = p2.communicate()[0]
     print(p2_output)
 ```
 
-    /dev/vg1000/lv  7.0T  6.3T  758G  90% /notebooks
+    /dev/vg1000/lv  7.0T  6.6T  459G  94% /notebooks
     
 
 
@@ -511,7 +512,7 @@ else:
     p3.kill()
 ```
 
-    90%
+    94%
     
 
 
@@ -522,7 +523,7 @@ Or - via Python:
 print(p2_output.split()[4])
 ```
 
-    90%
+    94%
 
 
 
@@ -531,7 +532,7 @@ import re
 print(re.search(r'(\d+%)', p2_output).group(1))
 ```
 
-    90%
+    94%
 
 
 Another example - let's get how much memory Jupyter Notebook uses.
@@ -544,8 +545,8 @@ Shell commands used:
 !ps auxw | grep jupyter-notebook | grep -v grep | awk '{print $5}'
 ```
 
-    jovyan       7  0.0  0.7 251764 43292 pts/0    Sl+  Aug28   2:39 /opt/conda/bin/python /opt/conda/bin/jupyter-notebook
-    251764
+    jovyan       6  0.0  1.0 229712 64068 ?        Sl   Apr09   1:09 /opt/conda/bin/python /opt/conda/bin/jupyter-notebook
+    229712
 
 
 Via `subprocess.check_output()`:
@@ -574,7 +575,7 @@ p4 = subprocess.Popen(shlex.split("awk '{print $5}'"), stdin=p3.stdout, stdout=s
 print(f'Jupyter Notebook eats {int(p4.communicate()[0].decode("utf8")) / 1024:5.2f} MB of memory')
 ```
 
-    Jupyter Notebook eats 245.86 MB of memory
+    Jupyter Notebook eats 224.33 MB of memory
 
 
 We can also use context manager for `subprocess.Popen` to clean resources after running processes:
@@ -588,22 +589,22 @@ with subprocess.Popen(["ls", "-la", "."], stdout=subprocess.PIPE, text=True) as 
     print(proc.communicate()[0])                                                  
 ```
 
-    298
+    112
     Alive
     OUTPUT:
-    total 720
-    drwxrwxrwx 1 jovyan users    606 Jan  8 09:26 .
+    total 744
+    drwxrwxrwx 1 jovyan users    606 Apr 16 09:50 .
     drwxrwxrwx 1 jovyan users     84 Oct  2  2019 ..
-    -rwxrwxrwx 1 jovyan users  50842 Dec 11 09:57 Basics_01_Introduction.ipynb
-    -rwxrwxrwx 1 jovyan users 127227 Dec 16 09:51 Basics_02_Strings_numbers.ipynb
-    -rwxrwxrwx 1 jovyan users 132620 Dec 21 09:34 Basics_03_Containers.ipynb
-    -rwxrwxrwx 1 jovyan users  57519 Dec 28 09:30 Basics_04_Functions.ipynb
-    -rwxrwxrwx 1 jovyan users  45863 Dec 28 08:54 Basics_05_Functional_Programming.ipynb
-    -rwxrwxrwx 1 jovyan users  28629 Dec 30 09:22 Basics_06_PEP8_Styling.ipynb
-    -rwxrwxrwx 1 jovyan users  68502 Jan  4 09:42 Basics_07_OOP.ipynb
-    -rwxrwxrwx 1 jovyan users  49055 Dec 30 08:42 Basics_08_Decorators.ipynb
-    -rwxrwxrwx 1 jovyan users  63525 Sep  2 09:39 Basics_09_Testing.ipynb
-    -rwxrwxrwx 1 jovyan users  83955 Jan  8 09:26 Basics_10_System_libs.ipynb
+    -rwxrwxrwx 1 jovyan users  52631 Feb 24 11:26 Basics_01_Introduction.ipynb
+    -rwxrwxrwx 1 jovyan users 133308 Apr  4 09:38 Basics_02_Strings_numbers.ipynb
+    -rwxrwxrwx 1 jovyan users 134635 Mar 15 11:16 Basics_03_Containers.ipynb
+    -rwxrwxrwx 1 jovyan users  60168 Apr  4 16:31 Basics_04_Functions.ipynb
+    -rwxrwxrwx 1 jovyan users  47696 Mar 22 11:39 Basics_05_Functional_Programming.ipynb
+    -rwxrwxrwx 1 jovyan users  30427 Mar 29 10:17 Basics_06_PEP8_Styling.ipynb
+    -rwxrwxrwx 1 jovyan users  71901 Apr  7 06:37 Basics_07_OOP.ipynb
+    -rwxrwxrwx 1 jovyan users  50381 Apr  9 10:05 Basics_08_Decorators.ipynb
+    -rwxrwxrwx 1 jovyan users  70916 Apr 14 09:38 Basics_09_Testing.ipynb
+    -rwxrwxrwx 1 jovyan users  84181 Apr 16 09:50 Basics_10_System_libs.ipynb
     lrwxrwxrwx 1 jovyan users     17 Aug 23  2019 images -> /notebooks/images
-    drwxrwxrwx 1 jovyan users    762 Sep 25  2019 .ipynb_checkpoints
-    -rwxrwxrwx 1 jovyan users     43 Jan  8 09:00 tmp_file
+    drwxrwxrwx 1 jovyan users    762 Feb 24 11:26 .ipynb_checkpoints
+    -rwxrwxrwx 1 jovyan users     43 Apr 16 09:41 tmp_file

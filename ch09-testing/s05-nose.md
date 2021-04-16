@@ -1,10 +1,11 @@
 ## Nose
 Nose is handy to run all tests in a directory
 
-```
+```sh
 pip install nose
 
-$ nosetests```
+$ nosetests
+```
 
 This command - `nosetests` - will automatically look for any modules (and packages) with tests (there are unittest or nose tests in modules in working directory and sub-directories if the names of those packages match "test" subword (`-m` option, `NOSE_TESTMATCH`).
 

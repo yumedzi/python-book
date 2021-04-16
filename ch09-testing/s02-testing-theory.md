@@ -79,7 +79,7 @@ All levels of Functional Testing:
 
 ### Unit Testing
 
-> A **unit** is the smallest testable part of an application like functions, classes or procedures. 
+> A **unit** is the smallest testable part of an application like functions, classes. 
 
 > Unit Testing is a Software Testing method by which individual units of source code are tested.
 

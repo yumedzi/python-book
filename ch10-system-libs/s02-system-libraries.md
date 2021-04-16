@@ -105,6 +105,120 @@ for root, dirs, files in os.walk(top, topdown=False):
     * Remove directories (empty) recursively.
 
 
+## pathlib
+
+> `pathlib` is modern lib for working with paths.
+
+This lib is class-based wrapper on many `os` and `os.path` methods.
+
+Few examples:
+
+
+```python
+from pathlib import Path
+
+p = Path("example")
+
+print(p)
+print(p.resolve())  # os.path.abspath
+```
+
+    example
+    /notebooks/V2/Basics/example
+
+
+
+```python
+print(p.exists()) # `os.path.exists`
+```
+
+    False
+
+
+
+```python
+p.mkdir()         # os.mkdir
+print(p.exists()) 
+print(p.is_dir()) # os.path.is_dir
+```
+
+    True
+    True
+
+
+
+```python
+test_file = p / "test.txt"
+test_file
+```
+
+
+
+
+    PosixPath('example/test.txt')
+
+
+
+
+```python
+test_file.write_text("Hello Pathlib!")
+```
+
+
+
+
+    14
+
+
+
+
+```python
+test_file.read_text()
+```
+
+
+
+
+    'Hello Pathlib!'
+
+
+
+Listing dir's contents:
+
+
+```python
+[x for x in p.iterdir()]
+```
+
+
+
+
+    [PosixPath('example/test.txt')]
+
+
+
+Searching for particular files by pattern:
+
+
+```python
+[x for x in p.glob("*.txt")]
+```
+
+
+
+
+    [PosixPath('example/test.txt')]
+
+
+
+Clearing our samples:
+
+
+```python
+test_file.unlink()
+p.rmdir()
+```
+
 ## shutil
 
 > `shutil` module offers a number of high-level operations on files and collections of files. In particular, functions are provided which support file copying and removal. 
@@ -135,7 +249,7 @@ Mostly this module is about files and dirs copy and removal.
     * Remove an empty dir
 * `shutil.rmtree(path)`
     * Remove a tree
-* `shutil.rmtree(path)`
+* `shutil.rmtree(path, ignore_errors=True)`
     * Remove a tree ignoring any errors
 
 ### Example

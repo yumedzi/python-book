@@ -6,7 +6,7 @@
 
 ## Test Scenario
 
-> Test scenario is the requirent for the application from the eyes of end-user
+> Test scenario is the requirement for the application from the eyes of end-user
 
 A test scenario is a small statement to verify one particular area of an application and these are mainly prepared after reviewing the functional requirements. 
 
@@ -60,3 +60,4 @@ Usually it checks some specific functionality of the module, class or method. Fe
 | Test              | 3.4. User can login using correct new account credentials
 | Test              | 3.5. User can't login with correct new account credentials if verification period expired 
 | Test              | 3.6. User can't login with incorrect new account credentials
+| Test              | 3.7. Registering with used email address and getting error that login is already used

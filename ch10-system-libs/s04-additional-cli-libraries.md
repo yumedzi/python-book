@@ -178,6 +178,32 @@ NOTES
     You can also use flags syntax for POSITIONAL ARGUMENTS
 ```
 
+### pick
+
+* `pick`
+    * Command line menu mini framework
+    
+Installation:
+
+```shell
+pip install pick
+```
+
+Example:
+
+```python
+from pick import pick
+
+title = 'Please choose your favorite programming language: '
+options = ['Java', 'JavaScript', 'Python', 'PHP', 'C++', 'Erlang', 'Haskell']
+option, index = pick(options, title)
+print(option)
+```
+
+produces this:
+
+<img src="../images/tr_10_pick.gif">
+
 ### tqdm
 
 * [`tqdm`](https://github.com/tqdm/tqdm)
@@ -559,7 +585,7 @@ nick = string(default=None)
 
 Code to fetch a page without using `requests`
 
-```python
+```py
 # Python 2
 import urllib2
 
@@ -580,7 +606,8 @@ print handler.headers.getheader('content-type')
 
 # ------
 # 200
-# 'application/json'```
+# 'application/json'
+```
 
 Example for Python 3
 
@@ -631,18 +658,18 @@ endpoint = 'https://catfact.ninja/facts?limit=5'
 
 r = requests.get(endpoint)
 print(r.status_code) 
-# print(r.text)
+# print(r.json())
 facts = r.json()['data']
 for f in facts: 
     print(f"* {f['fact']}")
 ```
 
     200
-    * A cat sees about 6 times better than a human at night, and needs 1/6 the amount of of light that a human does - it has a layer of extra reflecting cells which absorb light.
-    * Researchers believe the word “tabby” comes from Attabiyah, a neighborhood in Baghdad, Iraq. Tabbies got their name because their striped coats resembled the famous wavy patterns in the silk produced in this city.
-    * The cat has 500 skeletal muscles (humans have 650).
-    * The first cat show was organized in 1871 in London. Cat shows later became a worldwide craze.
-    * A cat can jump 5 times as high as it is tall.
+    * A cat's jaw has only up and down motion; it does not have any lateral, side to side motion, like dogs and humans.
+    * Abraham Lincoln loved cats. He had four of them while he lived in the White House.
+    * When your cats rubs up against you, she is actually marking you as \hers\" with her scent. If your cat pushes his face against your head"
+    * Approximately 40,000 people are bitten by cats in the U.S. annually.
+    * A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
 
 
 

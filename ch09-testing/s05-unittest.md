@@ -95,7 +95,7 @@ if __name__ == '__main__':
 
 
 Result:
-    
+
 ```shell
 $ python super_script.py -v
 test (__main__.SomeTest) ... ok

@@ -4,7 +4,7 @@
 
 #### Plan:
 
-* [Basic Terminilogy](/ch09-testing/s01-basic-terminilogy.md)
+* [Basic Terminology](/ch09-testing/s01-basic-terminology.md)
 * [Testing theory](/ch09-testing/s02-testing-theory.md)
 * [Dev unit testing vs QA automated testing](/ch09-testing/s03-dev-unit-testing-vs-qa-automated-testing.md)
 * [Doctest](/ch09-testing/s04-doctest.md)

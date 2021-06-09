@@ -21,7 +21,7 @@
     * [argparse](https://docs.python.org/3/library/argparse.html)
     * [docopt](http://docopt.org/)
     * [click](https://click.palletsprojects.com/en/7.x/)
-* [fire](https://github.com/google/python-fire)
+    * [fire](https://github.com/google/python-fire)
 
 ####   [argparse](https://docs.python.org/3/library/argparse.html)
 

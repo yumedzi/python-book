@@ -24,6 +24,8 @@ if __name__ == '__main__':
     * A test case is the collection of tests combined by some common meaning/feature. It checks for a specific response to a particular set of inputs. `unittest` provides a base class, `TestCase`.
 * test fixture
     * A test fixture represents the preparation needed to perform one or more tests, and any associate cleanup actions.
+* mocking
+    * An operation of emulating some object's attribute or the result returned by arbitrary method to be able to test the functionality of tested unit in different conditions.
 * test suite
     * A test suite is a collection of test cases, test fixtures, or both.
 * test runner
@@ -34,16 +36,21 @@ if __name__ == '__main__':
 import unittest
 
 class TestStringMethods(unittest.TestCase):
-    def test_upper(self):
+    def test_001_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
         
-    def test_isupper(self):
+    def test_011_isupper(self):
         self.assertTrue('FOO'.isupper())
+        
+    def test_012_isupper(self):
         self.assertFalse('Foo'.isupper())
         
-    def test_split(self):
+    def test_021_split(self):
         s = 'hello world'
         self.assertEqual(s.split(), ['hello', 'world'])
+        
+    def test_022_split(self):
+        s = 'hello world'
         with self.assertRaises(TypeError):
             s.split(2)
 
@@ -79,7 +86,7 @@ if __name__ == '__main__':
     FAIL: test_01_upper (__main__.TestStringMethods)
     ----------------------------------------------------------------------
     Traceback (most recent call last):
-      File "<ipython-input-1-af5344e748c5>", line 5, in test_01_upper
+      File "<ipython-input-6-af5344e748c5>", line 5, in test_01_upper
         self.assertEqual('fooooool000'.lower(), 'FOOOOOO1000'.lower(), "Critical Python string handling error")
     AssertionError: 'fooooool000' != 'foooooo1000'
     - fooooool000
@@ -89,7 +96,7 @@ if __name__ == '__main__':
      : Critical Python string handling error
     
     ----------------------------------------------------------------------
-    Ran 3 tests in 0.013s
+    Ran 3 tests in 0.009s
     
     FAILED (failures=1)
 

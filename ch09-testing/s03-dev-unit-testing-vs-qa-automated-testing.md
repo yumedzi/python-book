@@ -5,7 +5,7 @@ There are some questions that are hard for understanding by a lot of people:
 * Should developer write tests when there is a QA team?
 * Which tests should the developer write and which ones - the QA engineer?
 
-Yes, unit tests are essential is the form of Functional testing. But in practice, Unit tests and Functional tests are separated by many nuances outlined below. Sometimes Functional tests are named as End-to-end tests.
+Yes, unit tests are essential is the form of Functional testing. But in practice, Unit tests and Functional tests are separated by many nuances outlined below. Sometimes Functional tests are named as `End-to-end tests`.
 
 ### Dev unit testing
 

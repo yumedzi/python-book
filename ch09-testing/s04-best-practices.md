@@ -29,7 +29,7 @@ def test_15(self):
    self.assertEqual(func(500), 1000)
 ```
 
-and 
+and:
 
 ```python
 def test_15_func_with_num__returns_double(self):

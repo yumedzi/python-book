@@ -9,6 +9,8 @@
 * [Dev unit testing vs QA automated testing](/ch09-testing/s03-dev-unit-testing-vs-qa-automated-testing.md)
 * [Doctest](/ch09-testing/s04-doctest.md)
 * [Unittest](/ch09-testing/s05-unittest.md)
-* [Nose](/ch09-testing/s06-nose.md)
-* [Continiuos Integration](/ch09-testing/s07-continiuos-integration.md)
+* [Test Runners](/ch09-testing/s06-test-runners.md)
+* [Pytest](/ch09-testing/s07-pytest.md)
+* [Nose](/ch09-testing/s08-nose.md)
+* [Continuous Integration](/ch09-testing/s09-continuous-integration.md)
     

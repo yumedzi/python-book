@@ -1,4 +1,4 @@
-# Continiuos integration
+# Continuous integration
 
 > In software engineering, continuous integration (CI) is the practice of merging all developers' working copies to a shared mainline several times a day.
 

@@ -7,7 +7,7 @@ Pytest has also a runner.
 To install and use the runner:
 
 ```bash
-pip install pytest
+pip install -U pytest pytest-cov
 ```
 
 This will add `pytest` binary to PATH allowing to run this command.
@@ -24,6 +24,10 @@ Let's check the main Pytest options per functionality.
 
 ### Running pytest
 
+* Auto-discovery of all tests starting with current directory:
+
+`pytest`
+
 * Run tests in a module
 
 `pytest test_mod.py`
@@ -34,10 +38,10 @@ Let's check the main Pytest options per functionality.
 
 Options:
 
-* `-q` - quite mode
+* `-q` - quiet mode
 * `-v` - verbose mode
+* `-s` - no capture (show all `print()` stdout/stderr outputs)
 * `-x` - exit instantly on first error or failed test.
-* `-s` - no capture (show all `print()` stdout outputs)
 * `--runxfail` - report the results of xfail tests as if they were not marked
 * `--lf` - rerun only the tests that failed at the last run (or all if none failed)
 * `--ff` - run all tests, but run the last failures first.
@@ -54,11 +58,14 @@ Here the keyword option allows to specify a query-like filter which is based on 
 * Run a specific test within a module:
 
 `pytest test_mod.py::test_func`
+
 `pytest test_mod.py::TestClass::test_method`
 
 * Run tests by marker expressions (decorated with the `@pytest.mark.critical`)
 
 `pytest -m critical`
+
+`pytest -m "critical and security"`
 
 
 ### Reporting
@@ -101,13 +108,13 @@ Coverage shows what part of the code is covered by unittest. Also there is a met
 It possible to install the plugin for pytest for coverage:
 
 ```bash
-pip install -U pytest pytest-cov
+pip install -U pytest-cov
 ```
 
 And then to use it:
 
 ```bash
-pytest --cov  --cov-report=xml
+pytest --cov --cov-report=xml
 ```
 
 to produce Cobertura-compliant XML-based report (that can be used in CI tool for reporting).

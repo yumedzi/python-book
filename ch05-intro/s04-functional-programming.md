@@ -86,40 +86,11 @@ def fp_function(data):
 
 Abstract and not abstract examples:
 
-<table>
-  <tr>
-    <th>Imperative</th>
-    <th>Functional</th>
-  </tr>
-  <tr>
-    <td>
-        <pre><code class="cm-s-ipython language-py" style="font-size: smaller;"><span class="cm-keyword">def</span> <span class="cm-def">imp_function</span>():
-    <span class="cm-variable">res</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>
-    <span class="cm-variable">do_this</span>()
-    <span class="cm-variable">do_that</span>()
-    <span class="cm-variable">do_and_that</span>()
-    <span class="cm-builtin">print</span>(<span class="cm-variable">res</span>)</code></pre>
-    </td>
-    <td>
-        <pre><code class="cm-s-ipython language-py"  style="font-size: smaller;"><span class="cm-keyword">def</span> <span class="cm-def">fp_function</span>(<span class="cm-variable">data</span>):
-    <span class="cm-keyword">return</span> <span class="cm-variable">do_and_that</span>(<span class="cm-variable">do_that</span>(<span class="cm-variable">do_this</span>(<span class="cm-variable">data</span>)))</code></pre>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <pre><code class="cm-s-ipython language-py"  style="font-size: smaller;"><span class="cm-keyword">def</span> <span class="cm-def">imp_function</span>():
-    <span class="cm-variable">res</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>
-    <span class="cm-variable">a</span> <span class="cm-operator">=</span> <span class="cm-variable">data</span>.<span class="cm-property">split</span>()
-    <span class="cm-keyword">for</span> <span class="cm-variable">x</span> <span class="cm-keyword">in</span> <span class="cm-variable">a</span>:
-        <span class="cm-variable">res</span> <span class="cm-operator">+=</span> <span class="cm-builtin">int</span>(<span class="cm-variable">x</span>)
-    <span class="cm-builtin">print</span>(<span class="cm-variable">res</span>)</code></pre>
-    </td>
-    <td>
-        <pre><code class="cm-s-ipython language-py"  style="font-size: smaller;"><span class="cm-keyword">def</span> <span class="cm-def">fp_function</span>(<span class="cm-variable">data</span>):
-    <span class="cm-keyword">return</span> <span class="cm-builtin">sum</span>(<span class="cm-builtin">map</span>(<span class="cm-builtin">int</span>, <span class="cm-variable">data</span>.<span class="cm-property">split</span>()))</code></pre>
-    </td>
-  </tr>
-</table>
+|Imperative|Functional|
+|----------------|--------------------------|
+|<pre>def imp_function():<br/>    res = 0<br/>    do_this()<br/>    do_that()<br/>    do_and_that_also()<br/>    print(res)<br/></pre>|<pre>def fp_function(data):<br/>    return do_and_that_also(do_that(do_this(data)))<br/></pre>|
+|<pre>def imp_function():<br/>    res = 0<br/>    a = data.split()<br/>    for x in a:<br/>        res += int(x)<br/>    print(res)</pre>|<pre>def fp_function(data):<br/>    return sum(map(int, data.split()))<br/></pre>|
+
 
 Task:
 

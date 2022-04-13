@@ -136,7 +136,7 @@ some_tuple + (4, "a")
 
 
 ```python
-a, b = 1, 2
+a, b = 1, 2 
 print(a, b)
 ```
 

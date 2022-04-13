@@ -407,7 +407,7 @@ AResult()()
 
 
 
-### Simple `super(kls, obj)` implementation
+### Simple `super(cls, obj)` implementation
 
 
 ```python

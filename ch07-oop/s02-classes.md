@@ -5,7 +5,7 @@
 Classes created with operator `class`:
  
 ```python 
-class A(object):
+class A:
     attr = 10
 ```
  
@@ -177,7 +177,7 @@ class D(B, C):  # change to D(C, B) and check...
     pass
 
 d = D()
-print(D.__mro__)
+print(D.__mro__) # D.mro()
 d.a, d.x
 ```
 

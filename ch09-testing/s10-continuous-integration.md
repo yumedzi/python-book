@@ -6,8 +6,8 @@ In practice, CI is a tool that:
 * monitors code repository
 * in case of changes it:
     * fetches recent version
-    * builds it
-    * runs defined tests
+    * runs defined tests (running any custom script)
+    * builds it (running any custom script)
     * in case of fail - notifies the author of the changes and/or other defined users
     * publish results, build graphs, statistics etc.
 

@@ -32,7 +32,7 @@
 * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/) - you can read it online for free
 
 ## Tasks, challenges
-* https://www.codewars.com/kata/python
 * https://www.hackerrank.com/domains/python
+* https://www.codewars.com/kata/python
 * https://py.checkio.org/
 * https://empireofcode.com/

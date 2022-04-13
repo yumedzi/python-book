@@ -28,6 +28,9 @@ Variables – no sctrict rules except:
 Functions:
 * `lowercase_with_underscores`
 
+Modules:
+* `lowercasewithoutunderscores`
+
 Class:
 * `CapWords`
 

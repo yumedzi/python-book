@@ -12,6 +12,7 @@
 * [Loguru](#Loguru)
 * [ConfigObj](#ConfigObj)
 * [Requests](#Requests)
+* [JSON](#JSON)
 * [xmltodict](#xmltodict)
 
 
@@ -127,7 +128,7 @@ def hello(name):
 @greet.command()
 @click.argument('name')
 def goodbye(**kwargs):
-    print(f'Goodbye, {kwargs['name']}!')
+    print(f'Goodbye, {kwargs["name"]}!')
 
 if __name__ == '__main__':
     greet()
@@ -751,7 +752,7 @@ json.dumps(b)
 
 #### Other serialization libs*
 
-> `pickle`, `cPickle`, `yaml`
+> `pickle`, `cPickle`, `yaml` (`pip install pyyaml`)
 
 * `.loads(string_representation)` -> get Python object from string
 * `.load(file_descriptor)` -> get Python object from file

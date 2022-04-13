@@ -10,7 +10,8 @@
 * They are needed when you want to pass callable object or process something only once.
 
 ```python
-lambda [arg1 [,arg2,.....argn]]: <expression>```
+lambda [arg1 [,arg2,.....argn]]: <expression>
+```
 
 * Lambdas can take any number of arguments but return just one value in the form of an expression. 
 * They cannot contain commands or multiple expressions. 

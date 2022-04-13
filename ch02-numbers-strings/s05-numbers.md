@@ -4,7 +4,6 @@
 
 * int
 * float
-* long (Python 2)
 * complex
 
 ### Operations:
@@ -172,7 +171,31 @@ print([random() for _ in range(5)])
 
 ### Problems with floating-point calculations
 
-Floating-point numbers are represented in computer hardware as base 2 (binary) fractions.
+> Short reminders about decimal and binary number systems
+
+The number in decimal number system:
+
+$$1234 = 1∗10^3+2∗10^2+3∗10^1+4∗10^0$$
+
+The number in binary number system:
+
+$$1011 = 1∗2^3+0∗2^2+1∗2^1+1∗2^0$$
+
+Table with decimal to binary map 
+
+| Decimal 	| Binary   | 	Powers of two
+|-----------|----------|--------------------------
+|0  | 0 	|$$0 * 2^0$$
+|1 	| 1 	|$$1 * 2^0$$
+|2 	| 10 	|$$1 * 2^1 + 0 * 2^0$$
+|3 	| 11 	|$$1 * 2^1 + 1 * 2^0$$
+|4 	| 100 	|$$1 * 2^2 + 0 * 2^1 + 0 * 2^0$$
+|5 	| 101 	|$$1 * 2^2 + 0 * 2^1 + 1 * 2^0$$
+|6 	| 110 	|$$1 * 2^2 + 1 * 2^1 + 0 * 2^0$$
+|7 	| 111 	|$$1 * 2^2 + 1 * 2^1 + 1 * 2^0$$
+|8 	| 1000 	|$$1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 0 * 2^0$$
+
+Now, the floating-point numbers are represented in computer hardware as base 2 (binary) fractions.
 
 For example this is `decimal fraction`:
 
@@ -192,17 +215,8 @@ If Python were to print the true decimal value of the binary approximation store
 ```
 0.1 -> 0.100000000000000005551115123125782
 ```
-
-
-```python
 print(0.1 + 0.2)
 print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1) 
-```
-
-    0.30000000000000004
-    0.9999999999999999
-
-
 
 ```python
 i = 0
@@ -329,7 +343,7 @@ plt.show()
 
 
     
-![png](../images/Basics_02_Strings_numbers_56_0.png)
+![png](../images/Basics_02_Strings_numbers_57_0.png)
     
 
 
@@ -343,4 +357,4 @@ plt.show()
 
 
     
-![png](../images/Basics_02_Strings_numbers_57_0.png)
+![png](../images/Basics_02_Strings_numbers_58_0.png)

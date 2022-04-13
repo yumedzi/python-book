@@ -25,7 +25,7 @@ We are checking the code only after `try` before `except`.
 ```python
 def divide_ten(num): 
     try: 
-        print(10.0 / num )
+        print(10.0 / float(num))
     except ZeroDivisionError as e: 
         print(f"Oops, invalid - you can't pass 0. Error: {e}") 
     except TypeError:
@@ -42,18 +42,18 @@ divide_ten("2")
 print("2)")
 divide_ten(0)
 print("3)")
-divide_ten(3)
+divide_ten([3])
 ```
 
     1)
-    Wrong type! <class 'str'>
+    5.0
+    Cool, no exceptions were triggered!
     We're done with that.
     2)
     Oops, invalid - you can't pass 0. Error: float division by zero
     We're done with that.
     3)
-    3.3333333333333335
-    Cool, no exceptions were triggered!
+    Wrong type! <class 'list'>
     We're done with that.
 
 

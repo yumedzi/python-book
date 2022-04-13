@@ -91,6 +91,8 @@ for root, dirs, files in os.walk(top, topdown=False):
         os.rmdir(os.path.join(root, name))
 ```
 
+### Cheatsheet
+
 * `os.getcwd()`, `os.curdir`
     * Returns current directory (absolute and relative ones)
 * `os.chdir(dir)`

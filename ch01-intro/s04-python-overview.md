@@ -76,24 +76,26 @@ all_rings.append("Ring of Power") # Also: extend(), count(), reverse(), sort()
 
 ### Conditions, cycles
 
-* Conditions:
-```python
-    if a > b: 
-        print("a is greater than b")
-    else:
-        print("Something is wrong...")
-```
-* Cycles:
+* Conditions
 
 ```python
-    for i in range(1, 10): 
-        print(i)
-
-    while True: 
-        print("Kill process or Ctrl-C :(")
+if a > b: 
+    print("a is greater than b")
+elif a > 0:
+    print("But it is still > 0")
+else:
+    print("Something is wrong...")
 ```
 
+* Cycles
 
+```python
+for i in range(1, 10): 
+    print(i)
+
+while True: 
+    print("Kill process or Ctrl-C :(")
+```
 
 ### Importing
 
@@ -198,7 +200,7 @@ testme(my_list)
 ```python
 def deco(f): 
     def w(*args, **kwargs): 
-        print(">>> Showing results:")
+        print(">>> Showing results :)")
         return f(*args, **kwargs) 
     return w
 
@@ -209,7 +211,7 @@ def show_something():
 show_something()
 ```
 
-    >>> Showing results:
+    >>> Showing results :)
     Main function output
 
 
@@ -225,7 +227,7 @@ Operators can be overloaded in Python by defining special member functions—for
 
 
 ```python
-class Foo(object): 
+class Foo: 
     attr1 = "Some value"
     attr2 = "Boo!"
     

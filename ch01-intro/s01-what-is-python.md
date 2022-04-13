@@ -128,7 +128,7 @@ Almost everything said for Java also applies for C++, just more so: where Python
 There are two main branches of Python: 
 
 * Python 2 (~ 2.7.17)
-* Python 3 (~ 3.9.2)
+* Python 3 (~ 3.9.7)
 
 Nowadays most development (especially new projects) are started mostly on Python 3.
 
@@ -183,7 +183,7 @@ def foo(a: 'x', b: 5 + 6, c: list) -> max(2, 9)
 * Python is script language but still it compiles runtime code in a form of so called bytecode which Python Virtual Machine (PVM) runs (just like Java does with it's JVM):
 ![PVM explanation](../images/tr_01_01.png)
 
-* Compiled code is auto-created and stored in .pyc files (for Python 3 they are in separate \__pycache\__ directory)
+* Compiled code is auto-created and stored in .pyc files (for Python 3 they are in separate `__pycache__` directory)
 
 
 

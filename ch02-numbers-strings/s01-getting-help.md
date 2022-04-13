@@ -14,14 +14,14 @@ math.cos?
 
 ```python
 import time
-help(time.clock)
+
+help(time.sleep)
 ```
 
-    Help on built-in function clock in module time:
+    Help on built-in function sleep in module time:
     
-    clock(...)
-        clock() -> floating point number
+    sleep(...)
+        sleep(seconds)
         
-        Return the CPU time or real time since the start of the process or since
-        the first call to clock().  This has as much precision as the system
-        records.
+        Delay execution for a given number of seconds.  The argument may be
+        a floating point number for subsecond precision.

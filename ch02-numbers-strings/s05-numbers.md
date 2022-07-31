@@ -343,7 +343,7 @@ plt.show()
 
 
     
-![png](../images/Basics_02_Strings_numbers_57_0.png)
+![png](../images/Basics_02_Strings_numbers_69_0.png)
     
 
 
@@ -357,4 +357,4 @@ plt.show()
 
 
     
-![png](../images/Basics_02_Strings_numbers_58_0.png)
+![png](../images/Basics_02_Strings_numbers_70_0.png)

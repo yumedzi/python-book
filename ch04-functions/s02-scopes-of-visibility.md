@@ -269,7 +269,9 @@ foo()
 
 
 
-### Closures *
+### Closures
+
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 
 Functions can use variables from outer scopes.
 

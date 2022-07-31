@@ -104,8 +104,9 @@ Python is used in these three areas the most now:
 
 ### Why Python slower then compiled languages?
 
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
+
 1. Python is Dynamically Typed rather than Statically Typed.
-<img src="../images/tr_01_02.png"/>
 2. Python is interpreted rather than compiled.
 A smart compiler can look ahead and optimize for repeated or unneeded operations, which can result in speed-ups
 3. Python's object model can lead to inefficient memory access
@@ -126,15 +127,15 @@ Almost everything said for Java also applies for C++, just more so: where Python
 ## Python 2/3
 
 There are two main branches of Python: 
-
 * Python 2 (~ 2.7.17)
-* Python 3 (~ 3.9.7)
+    * The old branch with the support stopped at January 2020.
+* Python 3 (~ 3.10)
 
-Nowadays most development (especially new projects) are started mostly on Python 3.
+Python 3 is a "big hotfix" for a lot of different issues found in Python 2 over the years.
 
-New (and fixed old) modules/technologies - are again mostly created firstly for Python 3 and in some cases backported.
+Python 3 is the only current version of Python. Python 2 is almost dead and while it still can be found pre-installed on some OS distributions (Linux and Mac OSX) it will be replaced by Python 3 as the new default everywhere.
 
-Differences are not so big in general syntax so it's better to use Python 3 but be aware of differences and be able to understand both.
+Differences are not so big in general syntax. It looks almost identical to Python 2. The most noticable change is that `print` is a function in Python 3, so it requires a parentheses surrounding the arguments.
 
 ### Changes in print:
 
@@ -191,24 +192,30 @@ def foo(a: 'x', b: 5 + 6, c: list) -> max(2, 9)
 
 
 
-#### Ways of running Python script:
+#### Running Python
+
+> Installation covered [later](#Installation,-IDEs-etc.)
 
 * Interactive shell (UNIX/Windows): 
+    * Type commands line by line and see the results immediately
+
 ```sh
 $ python
 ```
 
-* Run script: 
+* Run script (stored in a text file with `.py` extension):
+
 ```sh
 $ python script.py
 ```
 
-* Run inline script: 
+* Run an inline script: 
+
 ```sh
 $ python -c "print('Hello World yo!')"
 ```
 
-* Running specific module:
+* Running a specific module:
 ```sh
 $ python -m pip list
 ```

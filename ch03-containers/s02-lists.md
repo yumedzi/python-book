@@ -640,7 +640,9 @@ Some "real-world" example:
 [func(x, y) for x in list_x for y in list_y if check(x, y)]
 ```
 
-## Shallow and Deep copies
+## Deep/shallow copy
+
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 
 Variables in Python (name bindings) are just points to an object in memory. By assigning one variable to another we make them point to the same object which may lead to various problems.
 
@@ -783,6 +785,8 @@ list_ = list((range(1000)))
 
 
 ## Complexity of operations
+
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 
 Time-complexity (aka "Big O" or "Big Oh") of various operations in current CPython.
 

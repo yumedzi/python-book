@@ -1,5 +1,7 @@
 # Bonus stuff
 
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
+
 > The following modules deal with classes that are not considered as basic, but because of their extreme importance and often usage it would be nice to take a look at them:
 
 * Module `collections`

@@ -1,4 +1,6 @@
-# Functions internals \*
+# Functions internals
+
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 
 Function is wrapper around code object. Code object is wrapper for byte-code.
 

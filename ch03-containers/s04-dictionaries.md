@@ -143,6 +143,8 @@ print(new_book)
 
 ## How dictionaries work
 
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
+
 Dictionary lookup is done in three steps:
 
 1. A hash value of the key is computed using a hash function.
@@ -158,6 +160,8 @@ Dictionary lookup is done in three steps:
   return value of the lookup is then `pair[1]`.
 
 
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
+
 ```python
 def lookup(d, key):
     "Find a key `key` in a dict `d`"
@@ -169,6 +173,10 @@ def lookup(d, key):
     else:
         raise KeyError, "Key %s not found." % key
 ```
+
+<span title="Advanced topic" style="position: absolute; top: 5px; right: 30px; font-size: 250%; color:red">🔥</span>
+
+<span style="margin-bottom:100px">&nbsp;</span>
 
 That's why for dictionaries keys we can use only those objects that support hash function (e.g. through `__hash__`), equality comparison (e.g. through `__eq__` or `__cmp__`), and must satisfy the correctness condition above.
 
@@ -580,6 +588,8 @@ d
 
 
 ## Complexity of operations
+
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 
 |Operation |Average Case|Amortized Worst Case |
 |------------|------------|----------------------------|

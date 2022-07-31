@@ -26,7 +26,7 @@
 * [My GitBook with this course](https://yumedzi.gitbooks.io/python-book/content/)
 * Learning Python, 5th Edition by Mark Lutz
 <img src="https://learning.oreilly.com/library/cover/9781449355722/" alt="Cover image for Learning Python, 5th Edition" width="140" height="184">
-* Introducing Python by Bill Lubanovic
+* Introducing Python by Bill Lubanovic (1st or 2nd edition)
 <img src="https://learning.oreilly.com/library/cover/9781449361167/" alt="Cover image for Introducing Python" width="140" height="184">
 * [Think Python](http://greenteapress.com/wp/think-python/)
 * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/) - you can read it online for free

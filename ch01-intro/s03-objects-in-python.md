@@ -44,7 +44,7 @@ Simplified schema how code, variables and objects in memory interconnected:
 
 <img src="../images/tr_01_05.png">
 
-The variable itself doesn't have a specific type as it just points to the object. That's why we can reassign it to another object:
+The variable itself doesn't have a specific type by itself, it should be considered as a "name" or some kind of a "tag" attached to the object. In some sense it just points  to the object. Assignment does not copy a value - it just attaches a name to the object that contains the data. Also that's why we can reassign it to another object:
 
 
 ```python

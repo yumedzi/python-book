@@ -1,8 +1,5 @@
 # Python Book
 
-<p style="text-align: center"><img src="images/python_book_logo.png" alt="Super cool logo with Python-Ouroboros" width="400" height="400"></p>
-
-
 Hello, my name is Viktor Moyseyenko.
 
 This book is compilation of materials I've used in Python Training conducted by me over the years. I was polishing the materials collected here many times in order to get the most comprehensive and yet short Python learning experience possible.

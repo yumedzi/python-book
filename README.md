@@ -1,6 +1,6 @@
 # Python Book
 
-<p style="text-align: center"><img src="images/python_book_logo.png" alt="Python Book (mine)" width="400" height="400"></p>
+<p style="text-align: center"><img src="images/python_book_logo.png" alt="Super cool logo with Python-Ouroboros" width="400" height="400"></p>
 
 
 Hello, my name is Viktor Moyseyenko.

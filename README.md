@@ -2,6 +2,8 @@
 
 Hello, my name is Viktor Moyseyenko.
 
+<p style="text-align: center"><img src="images/python_book_logo.png" alt="Super cool logo with Python-Ouroboros" width="300" height="300"></p>
+
 This book is compilation of materials I've used in Python Training conducted by me over the years. I was polishing the materials collected here many times in order to get the most comprehensive and yet short Python learning experience possible.
 
 Course itself written in a form of series of Jupyter notebooks with slides to give students interactive materials during presentation on each live session. And this book serves the purpose to be a "static" version of all slides kept in one place (and in fact the book is auto-generated from the slides I am using).

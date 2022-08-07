@@ -142,7 +142,7 @@ import re
 print(dir(re))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     ['A', 'ASCII', 'DEBUG', 'DOTALL', 'I', 'IGNORECASE', 'L', 'LOCALE', 'M', 'MULTILINE', 'Match', 'Pattern', 'RegexFlag', 'S', 'Scanner', 'T', 'TEMPLATE', 'U', 'UNICODE', 'VERBOSE', 'X', '_MAXCACHE', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '__version__', '_cache', '_compile', '_compile_repl', '_expand', '_locale', '_pickle', '_special_chars_map', '_subx', 'compile', 'copyreg', 'enum', 'error', 'escape', 'findall', 'finditer', 'fullmatch', 'functools', 'match', 'purge', 'search', 'split', 'sre_compile', 'sre_parse', 'sub', 'subn', 'template']
 
@@ -160,7 +160,7 @@ print("Printing string with <\n> and <\t\t> as special characters")
 print(r"Printing RAW string with <\n> and <\t\t> as special characters")
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Printing string with <
     > and <		> as special characters
@@ -178,23 +178,23 @@ That's why in most cases when we are looking for some text the usage `search` is
 Main `re` methods:
 
 * ```compile(pattern)```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     * Compile pattern to optimize it's future usages in regexes
 * ```match(pattern, text)```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     * Determine if the RE matches at the beginning of the string.
 * ```search(pattern, text)```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     * Scan through a string, looking for any location where this RE matches.	
 * ```findall(pattern, text)```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Find all substrings where the RE matches, and returns them as a list.	
 * ```finditer(pattern, text)```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     * Find all substrings where the RE matches, and returns them as an iterator.
 
@@ -213,7 +213,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 
 **Match object** has the following methods:
 * ```groups()```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     * Return tuple with all matched groups
 * ```group()```

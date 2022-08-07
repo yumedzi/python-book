@@ -138,7 +138,7 @@ obj = B()
 obj.method()
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Old result: 1
 
@@ -170,7 +170,7 @@ obj.method()
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     2
 

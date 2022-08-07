@@ -67,7 +67,7 @@ s.upper()
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     'ҐУҐЛ 💝 ☕'
 
@@ -81,7 +81,7 @@ s[0]
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     'ґ'
 
@@ -95,7 +95,7 @@ s[0]
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     'ґ and ☕'
 
@@ -110,7 +110,7 @@ print(unicodedata.name("ґ"))
 print(unicodedata.name("☕"))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     CYRILLIC SMALL LETTER GHE WITH UPTURN
     HOT BEVERAGE
@@ -123,7 +123,7 @@ print(cap_char)
 print(unicodedata.lookup(cap_char))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     CYRILLIC CAPITAL LETTER GHE WITH UPTURN
     Ґ
@@ -161,7 +161,7 @@ Encoding:
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     b''
 
@@ -175,7 +175,7 @@ Encoding:
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     b'?'
 
@@ -189,7 +189,7 @@ Encoding:
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     b'&#1168;'
 

@@ -26,7 +26,7 @@ new_d
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}
 
@@ -43,7 +43,7 @@ new_d
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'name': 'John', 'surname': 'Stark'}
 
@@ -60,7 +60,7 @@ d2 = dict(pairs)
 print("d2:", d2)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     d1: {'Aria': 'Stark', 'Faceless': 'Man'}
     d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
@@ -77,7 +77,7 @@ dict.fromkeys(["name", "surname"])
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'name': None, 'surname': None}
 
@@ -91,7 +91,7 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}
 
@@ -108,7 +108,7 @@ d
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'a': [], 'b': [], 'c': [], 'd': [], 'e': []}
 
@@ -123,7 +123,7 @@ d
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}
 
@@ -141,7 +141,7 @@ d1 is d2, d2
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     (False, {'some_key': 'some_value'})
 

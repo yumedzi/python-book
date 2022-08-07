@@ -7,7 +7,7 @@ Also know as PEP 20. (PEP is proposal for enhancement)
 import this
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     The Zen of Python, by Tim Peters
     

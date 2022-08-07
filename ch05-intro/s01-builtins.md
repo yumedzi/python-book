@@ -163,7 +163,7 @@ setattr(a_object, "b", "Wow! Adding attrs like haxxxors")
 print( a_object.b )  
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     True
     5
@@ -178,7 +178,7 @@ getattr("Hello World", "lower")()
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     'hello world'
 

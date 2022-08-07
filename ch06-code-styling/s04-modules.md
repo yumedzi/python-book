@@ -66,7 +66,7 @@ Module search logic:
 print(__name__)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     __main__
 

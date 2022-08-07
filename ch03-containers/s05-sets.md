@@ -24,7 +24,7 @@ print(set_a)
 print(set_b)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {1, 2, 3, 4}
     {1, 2, 3, 4}
@@ -40,7 +40,7 @@ Main methods
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     ['add',
      'clear',

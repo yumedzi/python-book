@@ -22,7 +22,7 @@ else:
     print("a is lesser than 3")
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     a is greater than 3
 
@@ -43,7 +43,7 @@ True + True
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     2
 
@@ -57,7 +57,7 @@ True + True
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     6
 
@@ -71,7 +71,7 @@ bool(24), bool("sdsds"), bool(""), bool([])
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     (True, True, False, False)
 
@@ -115,7 +115,7 @@ else:
     print("You will not see this quote anyway =(")
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Take arms against a sea of troubles!
 

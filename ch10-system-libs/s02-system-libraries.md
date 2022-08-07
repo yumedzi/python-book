@@ -59,7 +59,7 @@ for root, dirs, files in os.walk('/tmp/'):
     print("ROOT:{}\nDIRS:{}\nFILES:{}\n".format(root, dirs, files))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     ROOT:/tmp/
     DIRS:['com.apple.launchd.jhoY1qEd1J', 'com.apple.launchd.T3n42gvHZB', 'com.apple.launchd.xfxnszQVjh']
@@ -127,7 +127,7 @@ print(p)
 print(p.resolve())  # os.path.abspath
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     example
     /notebooks/V2/Basics/example
@@ -138,7 +138,7 @@ print(p.resolve())  # os.path.abspath
 print(p.exists()) # `os.path.exists`
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     False
 
@@ -150,7 +150,7 @@ print(p.exists())
 print(p.is_dir()) # os.path.is_dir
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     True
     True
@@ -165,7 +165,7 @@ test_file
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     PosixPath('example/test.txt')
 
@@ -179,7 +179,7 @@ test_file.write_text("Hello Pathlib!")
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     14
 
@@ -193,7 +193,7 @@ test_file.read_text()
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     'Hello Pathlib!'
 
@@ -209,7 +209,7 @@ Listing dir's contents:
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     [PosixPath('example/test.txt')]
 

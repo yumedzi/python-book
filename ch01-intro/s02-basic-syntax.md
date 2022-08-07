@@ -64,7 +64,7 @@ if condition:
     do_something1()
         do_something2()
 ```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
             
 
@@ -133,7 +133,7 @@ def f():
 help(f)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Help on function f in module __main__:
     

@@ -14,7 +14,7 @@ print(f1.__code__.co_code)
 print(f2.__code__.co_code)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     b'd\x01S\x00'
     b'd\x01S\x00'
@@ -25,7 +25,7 @@ print(f2.__code__.co_code)
 print(f1.__code__.__doc__)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,
           constants, names, varnames, filename, name, firstlineno,

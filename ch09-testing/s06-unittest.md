@@ -83,7 +83,7 @@ if __name__ == '__main__':
     unittest.TextTestRunner(verbosity=1).run(suite)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     x..
     ----------------------------------------------------------------------

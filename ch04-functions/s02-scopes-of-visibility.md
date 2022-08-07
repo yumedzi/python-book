@@ -63,7 +63,7 @@ foo()
 print("now global is", all)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     builtin: <built-in function all>
     global: [1, 2, 3]
@@ -92,7 +92,7 @@ f()
 print(a, b, c)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     1
     1 2 old string
@@ -126,7 +126,7 @@ print("Outside the function -> b:", b)
 
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Inside the function -> a: 100
     Inside the function -> b: 888
@@ -151,7 +151,7 @@ def f():
 f()
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'c': 25}
 
@@ -176,7 +176,7 @@ def outer():
 outer()
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     local value
 
@@ -197,7 +197,7 @@ outer()
 
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     enclosed variable
 
@@ -223,7 +223,7 @@ outer()
 print(a)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     enclosed variable
     changed enclosed variable
@@ -279,7 +279,7 @@ foo()
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     55
 

@@ -78,7 +78,7 @@ print(A())
 A()
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     <__main__.A object at 0x7ff51775b4a8>
 
@@ -108,7 +108,7 @@ A().__hash__()
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     8793164831643
 
@@ -130,7 +130,7 @@ A.__bases__
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     (object,)
 
@@ -148,7 +148,7 @@ print(A.__doc__)
 help(A)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     None
     Help on class A in module __main__:
@@ -178,7 +178,7 @@ A.__module__
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     '__main__'
 
@@ -199,7 +199,7 @@ bool(A())
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     True
 
@@ -247,7 +247,7 @@ print(b1 >= b2)
 print(b1 <= b2)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     True
     False
@@ -291,7 +291,7 @@ c.__dict__
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'b': 2}
 

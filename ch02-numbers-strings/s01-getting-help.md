@@ -5,13 +5,13 @@
 ```python
 help(math.sqrt)
 ```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     * IPython shell:
 ```python
 math.cos?
 ```
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     * Web: https://docs.python.org/3/  
 
@@ -22,7 +22,7 @@ import time
 help(time.sleep)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Help on built-in function sleep in module time:
     

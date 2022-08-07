@@ -11,7 +11,7 @@
 print("Hello World")
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Hello World
 
@@ -21,7 +21,7 @@ print("Hello World")
 print "Hello World" # Python 2
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Hello World
 

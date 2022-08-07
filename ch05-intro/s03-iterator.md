@@ -47,7 +47,7 @@ list(iter([1, 2, "a", None, 10.1]))
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     [1, 2, 'a', None, 10.1]
 
@@ -66,7 +66,7 @@ print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__(
 print (a_iter.__next__())
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     False
     <method-wrapper '__iter__' of list object at 0x000000000441FC48>

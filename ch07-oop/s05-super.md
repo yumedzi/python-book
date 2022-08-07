@@ -97,7 +97,7 @@ print(b.class_method())
 print(b.static_method())
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'attr': "Object's own attr (from class A)"}
     Running method of A
@@ -142,7 +142,7 @@ fd[1] = 100500
 print(fd["1"])
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     100500
 
@@ -178,7 +178,7 @@ vd[5]
 vd
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Set: z -> 3
     Set: 100 -> 100500
@@ -214,7 +214,7 @@ counter = VerboseCounter("boombbbam")
 print(counter)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
     Set: b -> 1
@@ -260,7 +260,7 @@ print(SuperList())
 print(SuperList("abcde"))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Before __init__: ['START', 'STOP']
     ['START', 'STOP']
@@ -298,7 +298,7 @@ print("After changes:", l)
 print(id(l))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     >>> Use parent's constructor but print this line!
     >>> Original list: []
@@ -339,7 +339,7 @@ class D(C):
 D().m()
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
     super().m() -> C (we take <m> from <C>)
@@ -368,7 +368,7 @@ AResult()()
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     1
 

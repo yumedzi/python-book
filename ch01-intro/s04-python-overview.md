@@ -146,7 +146,7 @@ print(mult(b=15, a=5))
 print(mult(10))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     22
     30
@@ -169,7 +169,7 @@ a, b
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     ('54', 45)
 
@@ -215,7 +215,7 @@ def show_something():
 show_something()
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     >>> Showing results :)
     Main function output
@@ -257,7 +257,7 @@ print(Foo.attr1)
 print(obj.foo())
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Initializing new object with val=Super Value
     Nice warm object :)

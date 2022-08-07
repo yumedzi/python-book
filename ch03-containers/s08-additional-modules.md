@@ -24,7 +24,7 @@ student = ("John", "Jakeson", 23, "18 B")
 print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Student Jakeson from group 18 B is 23 year old
 
@@ -42,7 +42,7 @@ print(f'Student {student.surname} from group {student.group} is {student.age} ye
 student
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Student Jakeson from group 18 B is 23 year old
 
@@ -61,7 +61,7 @@ To transform into dict:
 print(student._asdict())
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])
 
@@ -85,7 +85,7 @@ print(de.pop())
 print(de.popleft()) 
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     e
     a
@@ -97,7 +97,7 @@ de.appendleft("BEGIN")
 print(de)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     deque(['BEGIN', 'b', 'c', 'd'])
 
@@ -132,7 +132,7 @@ print(f(encountered_animals))
 %timeit f(encountered_animals)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
     3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
@@ -157,7 +157,7 @@ print(f(encountered_animals))
 %timeit f(encountered_animals)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
     2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
@@ -176,7 +176,7 @@ for k in s.lower():
 print(d)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 

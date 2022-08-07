@@ -45,7 +45,7 @@ print("3)")
 divide_ten([3])
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     1)
     5.0
@@ -80,7 +80,7 @@ def get_item():
 get_item()
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Enter index: -5
 
@@ -163,7 +163,7 @@ main(-6)
 main(3)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Oops, can't div by zero!
     ERROR: Can't work with negative numbers
@@ -194,7 +194,7 @@ except:
     raise
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
     /tmp/1123123.txt
@@ -217,7 +217,7 @@ except (IOError, ValueError) as e:
     print(f"Data or file error: {e}")
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Data or file error: [Errno 2] No such file or directory: 'myfile.txt'
 

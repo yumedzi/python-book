@@ -25,7 +25,7 @@ print(p.send(10))
 print(p.send(-25.3))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     <generator object pluser at 0x7f4b14319a20>
     0

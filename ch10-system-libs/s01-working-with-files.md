@@ -56,7 +56,7 @@ with open(filename) as f:
 print(f.closed)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Test string!!!
     

@@ -59,7 +59,7 @@ a = a + " World"
 print(f"#3. a now is {a}")
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     #1. a now is 42
     #2. a now is [1, 2, 42]
@@ -79,7 +79,7 @@ print("a == b →", a == b)
 print("a is b →", a is b)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     a == b → True
     a is b → True
@@ -93,7 +93,7 @@ print("a == b →", a == b)
 print("a is b →", a is b)
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     a == b → True
     a is b → False

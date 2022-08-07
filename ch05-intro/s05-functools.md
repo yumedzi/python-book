@@ -30,7 +30,7 @@ h2 = lambda arg: string_concatenator("Hello ", arg)
 print(h2("Beatufiul World"))
 ```
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     Hello World
     Margarita, Bye-bye, ja nai!..
@@ -47,7 +47,7 @@ pow_of_10(5) # 5 - second arg
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     100000.0
 
@@ -66,7 +66,7 @@ quadrupler(2)
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     16
 
@@ -89,7 +89,7 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     15
 
@@ -103,7 +103,7 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     15
 
@@ -120,7 +120,7 @@ Factorial, "ez mode":
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     120
 
@@ -134,7 +134,7 @@ functools.reduce(lambda x, y: x * y, range(1,6))
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     120
 
@@ -149,7 +149,7 @@ functools.reduce(mul, range(1,6))
 
 
 
-<sub>Output:</sub>
+_<mark style="color:purple;">Output</mark>_:
 
     120
 

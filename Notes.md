@@ -32,7 +32,7 @@ text_to_split = "Hello Galaxy!"
 splitting_function(text_to_split)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>
+📟 _<mark style="color:green;">Output:</mark>_
 
      ["Hello", "Galaxy!"]
 

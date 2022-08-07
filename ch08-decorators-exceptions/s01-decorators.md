@@ -6,8 +6,6 @@
 
 * Idea is to alter function or method without a mess and confusion:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def some_transformation(func):
     # doing something with func
@@ -20,8 +18,6 @@ foo = some_transformation(foo)
 ```
 
 * Decorator will make this look really more readable and nice:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 @some_transformation
 def foo(*args):
@@ -38,8 +34,6 @@ To avoid checking routine things like cookie, check for it's existense in DB and
 
 Another decorator checks if the user has needed rights to see this page. 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 @login_required
 @staff_required
@@ -53,8 +47,6 @@ def view_project_adm(request, client_id):
 ### Flask
 
 Decorator binds the function to specific route
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 @app.route("/project/<id>")
@@ -206,8 +198,6 @@ Notes: Si,Re
 
 General format of usage:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 @mydecorator
 def myfunc():
@@ -215,12 +205,11 @@ def myfunc():
 ```
 It is the **absolutely** the same as:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def myfunc():
     pass
 myfunc = mydecorator(myfunc)
+
 ```
 
 where `mydecorator` is some function...
@@ -228,7 +217,7 @@ where `mydecorator` is some function...
 Example of decorator realization
 
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def my_deco(func): 
@@ -546,7 +535,7 @@ print(test1.counter)
 
 
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def my_deco(func): # FINAL VERSION OF IDEAL DECORATOR
@@ -705,8 +694,6 @@ calc_sum(2, 2)
 Super cool decorator that controls the time of execution for decorated function and stops it in case of exceeding that time:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def time_limit(func):
     "Giving <func> 3 seconds to run"
@@ -729,7 +716,7 @@ def time_limit(func):
 Let's check how it works:
 
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import time
@@ -757,8 +744,6 @@ print(long(4))
 
 It is possible to chain and use multiple decorators in succession.
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def makebold(fn): 
@@ -840,8 +825,6 @@ Hints:
 * remember counter decorator!
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def riddle_deco(f):
     def _f(bill, *args):
@@ -910,8 +893,6 @@ print(calc_tips._val)
 Way to improve this cashing decorator - change key to a tuple that contains a `tip_rate` also. In this way we'll cover all possible cases.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def riddle_deco(f):
     def _f(bill, tip_rate=0.10, *args):
@@ -931,8 +912,6 @@ def calc_tips(bill, tip_rate=0.10):
 
 And one-liner!
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def riddle_deco(f):

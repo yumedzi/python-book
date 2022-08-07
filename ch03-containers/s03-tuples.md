@@ -272,8 +272,6 @@ In other words:
 
 * Parts of datetime are different kinds, so it is tuple:
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
-
 ```python
 # python 2
 >>> import time
@@ -304,8 +302,6 @@ datetime.datetime.now()
 
 * Values is result of range() are all of the same type, so it is list (in Python 2):
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
-
 ```python
 # python 2
 >>> range(10)
@@ -327,8 +323,6 @@ list(range(10))
 
 
 * Coordinates:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # one coordinate is a tuple, each member is different kind of value (X, Y)

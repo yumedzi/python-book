@@ -17,8 +17,6 @@
 | `%`                 | Modulo (remainder after division)
 
 To fix division on Python2:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 from __future__ import division
 ```

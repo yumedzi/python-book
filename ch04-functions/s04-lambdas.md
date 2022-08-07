@@ -9,8 +9,6 @@
 * Not faster
 * They are needed when you want to pass callable object or process something only once.
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 lambda [arg1 [,arg2,.....argn]]: <expression>
 ```
@@ -80,8 +78,6 @@ list(map(lambda x: x**2, range(5)))
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def power_n(n): 
     import math 
@@ -92,8 +88,6 @@ print(squared(5))
 ```
 
 ### Example from production
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 conversions = {

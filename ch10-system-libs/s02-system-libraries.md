@@ -30,8 +30,6 @@ Script lists filenames from a dir, prints their relative and absolute paths
 
 `dir: /home/user/dir, file: foo.txt`
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def printdir(dir):
   filenames = os.listdir(dir)
@@ -92,8 +90,6 @@ FILES:['1']
     
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 # Mass file deleter - !DON'T TRY THIS AT HOME!
 import os
@@ -151,8 +147,6 @@ example
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(p.exists()) # `os.path.exists`
@@ -294,8 +288,6 @@ Searching for particular files by pattern:
 Clearing our samples:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 test_file.unlink()
 p.rmdir()
@@ -337,8 +329,6 @@ Mostly this module is about files and dirs copy and removal.
 ### Example
 
 Backing up python source files:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import shutil

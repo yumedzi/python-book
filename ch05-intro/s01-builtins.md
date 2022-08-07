@@ -202,8 +202,6 @@ getattr("Hello World", "lower")()
 
 > **Iterable** is the source of data for iterator, usually - some sequence.
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 [1, 2, 3]
 ("a", "b")
@@ -215,8 +213,6 @@ reversed("abc")
 ```
 
 > **Iterator** - an abstract object that is capable of yielding "next" item and raising `StopIteration` in the end.
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 iter("abce")

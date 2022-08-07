@@ -236,8 +236,6 @@ Dictionary lookup is done in three steps:
 
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def lookup(d, key):
     "Find a key `key` in a dict `d`"
@@ -474,8 +472,6 @@ print(counter(characters))
 ### Method `update`
 
 Doc says:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 D.update([E, ]**F) -> None.  Update D from dict/iterable E and F.
 If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]

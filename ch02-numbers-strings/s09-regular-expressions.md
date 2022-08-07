@@ -327,8 +327,6 @@ re.search(r"main_user: (\w+).*credential\s+\1:([^\n]*)", config, re.S).groups()
 
 If we want to find all occurence of the text matching the given pattern - we should use `re.findall`
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 re.findall(pattern, string)
 ```

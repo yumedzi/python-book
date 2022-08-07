@@ -50,8 +50,6 @@ Exceptions:
 Imports should usually be on separate lines
 
 Yes:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import os
 import sys
@@ -59,8 +57,6 @@ from subprocess import Popen, PIPE
 ```
 
 No:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import sys, os
 ```
@@ -69,8 +65,6 @@ Imports should be grouped in the following order:
 * standard library imports
 * related third party imports
 * local application/library specific imports
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import os
@@ -85,8 +79,6 @@ You should put a blank line between each group of imports.
 
 Absolute imports are recommended, as they are usually more readable and tend to be better behaved (or at least give better error messages) if the import system is incorrectly configured (such as when a directory inside a package ends up on sys.path )
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import mypkg.sibling
 from mypkg import sibling
@@ -94,8 +86,6 @@ from mypkg.sibling import example
 ```
 
 But in some cases - when dealing with complex package layouts where using absolute imports would be unnecessarily verbose:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from . import sibling
@@ -132,16 +122,12 @@ No: `dct ['key'] = lst [index]`
 * Don't use spaces around the = sign when used to indicate a keyword argument or a default parameter value.
 
 Yes: 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def complex(real, imag=0.0, varz):
     return magic(r=real, i=imag)
 ```
 
 No:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def complex(real, imag = 0.0, varz):
     return magic(r = real, i = imag)
@@ -152,8 +138,6 @@ def complex(real, imag = 0.0, varz):
 Continuation lines should align wrapped elements either vertically using Python's implicit line joining inside parentheses, brackets and braces, or using a hanging indent
 
 These examples are good:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Aligned with opening delimiter.
@@ -166,8 +150,6 @@ def long_function_name(
         var_three, var_four):
     print(var_one)
 ```
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Hanging indents should add a level (may be not 4 spaces)
@@ -183,8 +165,6 @@ d = dict(x=10,
 ```
 
 NO:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Arguments on first line forbidden when not using vertical alignment.
@@ -203,16 +183,12 @@ def long_function_name(
 
 *  Using if:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 # No extra indentation. It's correct but ugly
 if (this_is_one_thing and
     that_is_another_thing):
     do_something()
 ```
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Add a comment, which will provide some distinction in editors
@@ -235,8 +211,6 @@ Limit all lines to a maximum of 79 characters.
 * For flowing long blocks of text with fewer structural restrictions (docstrings or comments), the line length should be limited to 72
 characters.
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 with open('/path/to/some/file/you/want/to/read') as file_1, \
         open('/path/to/some/file/being/written', 'w') as file_2:
@@ -250,8 +224,6 @@ For PyCharm (may be non-actual):
 <img src="../images/tr_05_01.png">
 
 The preferred way of wrapping long lines is by using Python's implied line continuation inside parentheses, brackets and braces. If necessary, you can add an extra pair of parentheses around an expression, but sometimes using a backslash looks better.
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 a = some_function(
@@ -269,8 +241,6 @@ a = '1' + '2' + \
 ```
 
 Also:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 if (number > 5 and

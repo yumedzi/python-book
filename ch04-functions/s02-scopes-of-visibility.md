@@ -1,16 +1,12 @@
 # Namespaces
 
 Namespaces are just dictionaries with some names (what we call variable name) mapped to objects (actual data in memory). This mapping allows to access target object by a name that we've assigned to it. So: 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 some_string = "Hello World"
 ```
 creates a reference to the "Hello Worold" object, and makes it accessible by variable name ```some_string```.
 
 In this case our namespace will be:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 {"some_string": "Hello World"}
 ```

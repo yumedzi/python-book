@@ -7,8 +7,6 @@ Python has two loops available in syntax:
 
 ## For
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 for <target> in <target_iterable>:
     <code>
@@ -24,8 +22,6 @@ Notes:
 * `for` fetches all items from iterable by firstly converting it to iterable by `iter()` then calling `next()` on it. 
 
 Example of usecase of "break/else":
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 courses = get_subscribed_courses(request.user)  # all courses of this user
@@ -85,8 +81,6 @@ BYE BYE!!! (break called!)
 
 
 One more example for for-else loop - selection of DB:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 
@@ -223,16 +217,12 @@ Also - from 3.5:
 
 Try to avoid the code like the following one:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 for i in range(len(food)):
     print(food[i])
 ```
 
 Instead, use clearer "Pythonic" way:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 for piece in food:
@@ -268,8 +258,6 @@ Girl number 4 is Maria
 
 The following code:
     
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 list(enumerate(seasons))
@@ -278,8 +266,6 @@ list(enumerate(seasons, start=1))
 ```
 
 is equivalent to:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def enumerate(sequence, start=0):
@@ -292,8 +278,6 @@ def enumerate(sequence, start=0):
 
 
 ## While
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 while <condition>:

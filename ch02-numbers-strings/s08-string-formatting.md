@@ -171,8 +171,6 @@ Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my
 It is possible to pass arguments by names:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 data = {"money": 45, "food":"salad"}
 # `**` - means we are passing dict as a sequence of key-value pairs
@@ -298,8 +296,6 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 | ---                              | ```'{p.type}'.format(p=Plant())```    | ```tree```       |
 
 In last example assuming p is the instance of Plant class defined like:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class Plant(object):
     type = 'tree
@@ -378,8 +374,6 @@ This feature is described by [PEP 498](https://www.python.org/dev/peps/pep-0498/
 
 
 The format is:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f'<text> { <expression> <optional !s, !r, or !a> <optional : format specifier> } <text> ... '

@@ -2,8 +2,6 @@
 
 > Python has one omnipotent logical condition check operator: ```if```.
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 if <condition>:
     <actions_when_condition_is_True>
@@ -158,15 +156,11 @@ Take arms against a sea of troubles!
 
 
 Because the expression is equivalent to:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 (decision == "be") or ("to be")
 ```
 
 Solution:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 decision in ("be", "to be")
 ```

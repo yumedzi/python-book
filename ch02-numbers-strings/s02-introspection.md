@@ -67,8 +67,6 @@ In this case we can see many inherited methods (from parent class called "object
 > `sys.getsizeof()` - get the size (in bytes) of the memory allocated byt the object.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import sys
 
@@ -88,8 +86,6 @@ sys.getsizeof(100500)
 There is a nice library `rich` used for displaying various content to terminal. It is can be used as additional inspection tool in Python (or `ipython`/`Jupyter` also):
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from rich import inspect
@@ -121,8 +117,6 @@ inspect(i)
 
 And with methods overview:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 inspect(i, methods=True)
@@ -158,8 +152,6 @@ inspect(i, methods=True)
 
 An example of `list` inspection:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 inspect([1, 2, 3], methods=True)

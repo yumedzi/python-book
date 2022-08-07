@@ -144,8 +144,6 @@ print(marshrutka_317.people_transferred)
 ## Inheritance
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class Robot:
     sounds = ["Beeep", "Bzzzt", "Oooooh"]
@@ -186,8 +184,6 @@ Bip 1.0 says: Oooooh
 
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class BendingRobot(Robot):
@@ -261,7 +257,7 @@ d.a, d.x
 Let's enhance our `Robot` example by inheriting from two classes at once.
 
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class Mail:
@@ -404,15 +400,11 @@ This chapter is only viable for Python 2 - as in Python 3 there are no such dist
 
 Before Python 2.5 the format for creating a class was:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class Old:
     pass
 ```
 This was resulted in various problems with MRO and types. So some code redesigned, for this new format introduced:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class New(object):

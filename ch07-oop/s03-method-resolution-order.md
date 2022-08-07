@@ -8,8 +8,6 @@ For old class it was vertical-then-horizontal order of looking up for object att
 
 > Just for information as it is used only in Python 2!
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class A: 
     x = 'from A'
@@ -23,8 +21,6 @@ class C(A):
 class D(B, C): 
     pass
 ```
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(D.x)

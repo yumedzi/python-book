@@ -111,8 +111,6 @@ There are different types of inheritance (all are supported by Python):
 
 Polymorphism means the ability to exist in multiple forms: "one name, many forms". An example:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 list().__len__
 str().__len__

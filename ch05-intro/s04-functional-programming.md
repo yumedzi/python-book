@@ -157,8 +157,6 @@ Let's try to guess quickly what the following two functions do.
 Imperative:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def mystery_imp(x):
     r = 0
@@ -171,8 +169,6 @@ def mystery_imp(x):
 
 Functional:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def mystery_fp(str_):

@@ -22,8 +22,6 @@ Ideally, `doctest` informs human readers, and tells the computer what to expect 
 * Finally, any lines that don't start with `>>>` or `...`, up to the next blank line or `>>>` prompt, represent the output expected from the statement.
 
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
-
 ```python
 def some_func(x, y=0):
     '''
@@ -64,8 +62,6 @@ Test passed.
 
 We can test anything that can be typed in interactive Python shell:
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
-
 ```python
 def some_func():
     '''
@@ -93,8 +89,6 @@ Doctests can be keeped in docstrings in:
 
 
 The simplest way to start using doctest:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 if __name__ == "__main__":
     import doctest
@@ -104,8 +98,6 @@ if __name__ == "__main__":
 Simplest testing ever!
 
 **test_example.py**
-🪄 _<mark style="color:green;">Code and Output:</mark>_
-
 ```python
 def sum_nums(*args):
     """
@@ -152,8 +144,6 @@ ok
 Exception tracebacks tend to contain many details that are not relevant to the test, but that can change unexpectedly.
 * The doctest module deals with this by ignoring the traceback entirely: it's only concerned with the first line:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 Traceback (most recent call last):
 <Exception>: <expected details>
@@ -161,8 +151,6 @@ Traceback (most recent call last):
 
 * which tells it that you expect an exception, and the part after the traceback, which tells it which exception you expect.
 * The doctest module only reports a failure if one of these parts does not match.
-
-🪄 _<mark style="color:green;">Code and Output:</mark>_
 
 ```python
 >>> 1/0
@@ -178,8 +166,6 @@ SyntaxError: invalid syntax
 ## Expecting blank lines
 
 The doctest handles this situation by matching a line that contains only the text `<BLANKLINE>` in the expected output with a real blank line in the actual output.
-
-🪄 _<mark style="color:green;">Code and Output:</mark>_
 
 ```python
 >>> def a(): 
@@ -199,8 +185,6 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 * `+SKIP` – skip the test
 * `+IGNORE_EXCEPTION_DETAIL`
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
-
 ```python
 >>> 'This is expression that eval a string'
 ... # doctest: +ELLIPSIS
@@ -211,8 +195,6 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 >>> dt.datetime.now().isoformat() # doctest: +ELLIPSIS
 '...-...-...T...:...:...'
 ```
-
-🪄 _<mark style="color:green;">Code and Output:</mark>_
 
 ```python
 >>> [1, 2, 3, 4, 5, 6, 7, 8, 9] # doctest: +NORMALIZE_WHITESPACE
@@ -227,8 +209,6 @@ ZeroDivisionError
 ```
 
 ## Trick
-
-🪄 _<mark style="color:green;">Code and Output:</mark>_
 
 ```python
 def test_zero(f):

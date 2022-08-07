@@ -48,8 +48,6 @@ And much more (because everything in Python is a object and thus - everything is
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import sys, rich
 
@@ -109,8 +107,6 @@ For _1 million_ of elements:
 
 Memory size may not be the only criteria to select data type. Rather, time required to perform operation on data type can be critical criteria.
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import sys, rich

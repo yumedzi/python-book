@@ -141,8 +141,6 @@ deque(['BEGIN', 'b', 'c', 'd'])
 
 > `defaultdict` is a sub-class of `dict` object:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 defaultdict(default_factory[, ...]) --> dict with default factory
 ```
@@ -520,8 +518,6 @@ print(b''.join([chr(x).encode('utf8') for x in reversed(b[:5:-1])]))
 > An enumeration is a set of symbolic names (members) bound to unique, constant values. Within an enumeration, the members can be compared by identity, and the enumeration itself can be iterated over.
 
 In a simplified sense, this is an iteratable set of constants.
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from enum import Enum

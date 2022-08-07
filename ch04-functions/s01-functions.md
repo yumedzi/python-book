@@ -10,8 +10,6 @@
 
 Definition: 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def function_name(arg1, arg2, ... argN): 
     <statements> 
@@ -19,8 +17,6 @@ def function_name(arg1, arg2, ... argN):
 ```
 
 Call function (execute and get it's result): 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 function_name(arg1, arg2, ... argN)
 ```
@@ -51,8 +47,6 @@ Function always returns something. You can scpecify return value by operator ```
 Python code statement can't be empty. You can "do nothing" with operator ```pass```:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def empty():
     pass
@@ -60,8 +54,6 @@ def empty():
 
 or even in this way (Python 3 only):
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def empty():
@@ -251,8 +243,6 @@ Schematics of these arguments and special parameters:
 
 > `/` works from Python 3.8
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
       -----------    ----------     ----------
@@ -283,8 +273,6 @@ If `/` and `*` are not present in the function definition, arguments may be pass
 
 > Required arguments are the arguments passed to a function in correct positional order (that's why they also known as *positional*). The number of arguments in the function call should match exactly with the function definition.
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def print_strings(str1, str2): 
@@ -470,8 +458,6 @@ But calling `int(x=100)` is ugly and incorrect while `int("100")` looks natural.
 
 So now (from 3.8) Python has the same syntax option as in C allowing to prohibit keyword arguments:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def pos_only(arg, /):
     ...
@@ -485,8 +471,6 @@ pos_only(arg=42)  # Error
 > There is a special syntax to mark some arguments as *keyword-only*. Those parameters go after `*` symbol in the arguments list.
 
 Parameters marked as *keyword-only* can be passed only by keyword.
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def kw_only(arg, *, kwarg1, kwarg2):
@@ -504,8 +488,6 @@ kw_only(10, 20, 30)
 Consider this function:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def files_search(files, depth=None, case_sensitive=True, include_archives=None, count_duplicates=False):
     pass
@@ -513,8 +495,6 @@ def files_search(files, depth=None, case_sensitive=True, include_archives=None, 
 
 There is a lot of ways to call this function, and not all calls are understandable in terms of which value was passed to each argument:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 files_search(["1.txt", "some.log"])
@@ -527,8 +507,6 @@ files_search(["1.txt", "some.log"], depth=1, include_archives=True)
 
 The *keyword-only* parameters definition can be used to avoid the issue what it is not possible to understand what argument was set:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def files_search(files, *, depth=0, include_archives=None, count_duplicates=True):
@@ -563,16 +541,12 @@ files_search(["1.txt", "some.log"], 1, 1, True, False)
 
 > Mostly decorative optional feature. Used to generate more understandable help and documentation, add support for this in IDE.
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def foo(a: expression, b: expression = 5):
     ...
 ```
 
 More examples:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def compile(source: "something compilable",
             filename: "where the compilable thing comes from",

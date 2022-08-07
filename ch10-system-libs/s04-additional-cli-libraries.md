@@ -26,8 +26,6 @@
 
 ####   [argparse](https://docs.python.org/3/library/argparse.html)
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import argparse
 
@@ -70,8 +68,6 @@ optional arguments:
 ```
 
 ####  [docopt](http://docopt.org/)
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 """
@@ -117,8 +113,6 @@ Options:
 
 ####   [click](https://click.palletsprojects.com/en/7.x/)
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import click
 
@@ -153,8 +147,6 @@ Options:
 
 #### [fire](https://github.com/google/python-fire)
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import fire
@@ -199,8 +191,6 @@ pip install pick
 ```
 
 Example:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from pick import pick
@@ -286,8 +276,6 @@ back to normal now
 * [yaspin](https://github.com/pavdmyt/yaspin)
     * Yet Another Terminal Spinner for Python
     
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import time
 from random import randint
@@ -499,8 +487,6 @@ logger.debug("Check it now!")
 
 
 The code
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 logger.add("output.log", backtrace=True, diagnose=True)  # Set 'False' to not leak sensitive data in prod
 
@@ -557,8 +543,6 @@ log_file = /tmp/example.log
 
 and use it like this:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 from configobj import ConfigObj
 
@@ -586,8 +570,6 @@ pip install configobj
 
 #### Reading config
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # As example let's read ini from "virtual" file:
@@ -644,8 +626,6 @@ Validation is done with the help of `Validator` object and `configspec` (which r
 
 Example of configspec:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 port = integer(0, 100)
 user = string(max=25)
@@ -657,8 +637,6 @@ nick = string(default=None)
 ### Profiling
 
 > The profiling package is an interactive continuous Python profiler. It is inspired from Unity 3D profiler. This package provides these features:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 > pip install profiling
@@ -736,8 +714,6 @@ except urllib.error.HTTPError as e:
 
 
 Example with requests:
-
-🪄 _<mark style="color:green;">Code and Output:</mark>_
 
 ```python
 import requests

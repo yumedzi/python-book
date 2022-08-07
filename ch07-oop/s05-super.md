@@ -15,8 +15,6 @@ But first of all let's check what is bound/unbound method
 
 > Method bound to the object is the function that passes that object as the first argument (instance for instance methods, class for class methods).
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 a = A()
 a.method(x) --> A.method(a, x)  # <-- here a.method is bound method
@@ -166,8 +164,6 @@ print(fd["1"])
 The dict with logging around setting a key:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class VerboseDict(dict):
     def __setitem__(self, key, value):
@@ -312,7 +308,7 @@ There is also bigger example for this with lot of print() calls to see where exa
 We can clearly see that firstly we call `__new__` and after that `__init__`
 
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class SuperList(list):
@@ -492,8 +488,6 @@ AResult()()
 ### Simple `super(cls, obj)` implementation
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class super:                                         
     def __init__(self, *args, **kwargs):             
@@ -513,7 +507,8 @@ class super:
                 ret = getattr(cls, attr)             
                 if callable(ret):                    
                     return lambda: ret(self.instance)
-                return ret
+                return ret                           
+
 ```
 
 

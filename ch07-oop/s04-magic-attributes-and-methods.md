@@ -9,12 +9,10 @@
 * `__class__`
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class A:
     "Our great class" 
-    x = 1
+    x = 1 
 ```
 
 ## Magic methods 
@@ -42,8 +40,6 @@ class A:
 * Works with ```cls``` (class object, as instance is not created yet)
 * Old style class don't have this method!
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def __new__(cls):
     return super().__new__(cls)
@@ -56,8 +52,6 @@ def __new__(cls):
 * It is not a constructor (there is `__new__()` for that)
 * `__init__()` takes an already created object and fills required attributes according to declared logic first arg is `self`
 * Doesn't return anything (it returns `None`), just assigning attributes to an object.
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def __init__(self, name): 

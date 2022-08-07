@@ -119,8 +119,6 @@ print(dir("some_string")) #Emm... actually all methods...
 #### Some examples
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 some_string = "Some funny string!"
 ```
@@ -410,7 +408,7 @@ for str_ in TEST_STRINGS:
 * ```.lstrip()``` - remove only from the beginning
 
 
-🪄 _<mark style="color:green;">Code and Output:</mark>_
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 whitespaces_str = "  Some text goes and goes...  "

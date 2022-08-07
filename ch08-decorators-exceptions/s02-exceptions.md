@@ -8,8 +8,6 @@ Errors detected during execution are called **exceptions** and are not unconditi
 
 General form:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 try:
     <code> 
@@ -111,8 +109,6 @@ Enter index: -5
 Better solution:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def get_item():
     num = input("Enter index: ")
@@ -124,11 +120,10 @@ def get_item():
         return "Incorrect value"
     except Exception as e:
         return f"Unexpected exception: {e.__class__.__name__}({e})"
+
 ```
 
 ## Custom Exceptions 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class SimpleCustomException(Exception):
@@ -271,8 +266,6 @@ Debug version of raise with condition:
 `assert <test>[, <data>]`
 
 is equivalent to:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 if __debug__: 

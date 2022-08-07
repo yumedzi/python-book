@@ -22,8 +22,6 @@ Each Unicode symbol has unique name and codepoint (it's number). Codepoint inclu
 
 Some examples:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 0061    'a'; LATIN SMALL LETTER A
 ...

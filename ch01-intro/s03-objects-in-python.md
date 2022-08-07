@@ -13,8 +13,6 @@ The same data can be interpreted differently thus the type of data is as importa
 Below is the base example how we assign the data to the variables (in Python terms this is often called as "binding"):
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 a = 42
 ```

@@ -67,7 +67,7 @@ s.upper()
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     'ҐУҐЛ 💝 ☕'
 
@@ -81,7 +81,7 @@ s[0]
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     'ґ'
 
@@ -95,7 +95,7 @@ _<mark style="color:purple;">Output</mark>_:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     'ґ and ☕'
 
@@ -110,7 +110,7 @@ print(unicodedata.name("ґ"))
 print(unicodedata.name("☕"))
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     CYRILLIC SMALL LETTER GHE WITH UPTURN
     HOT BEVERAGE
@@ -123,7 +123,7 @@ print(cap_char)
 print(unicodedata.lookup(cap_char))
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     CYRILLIC CAPITAL LETTER GHE WITH UPTURN
     Ґ
@@ -161,7 +161,7 @@ Encoding:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     b''
 
@@ -175,7 +175,7 @@ _<mark style="color:purple;">Output</mark>_:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     b'?'
 
@@ -189,7 +189,7 @@ _<mark style="color:purple;">Output</mark>_:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     b'&#1168;'
 

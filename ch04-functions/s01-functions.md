@@ -74,7 +74,7 @@ print("Now you'll get the error:")
 f1()  
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     No complains at this point!
     ------------------------------
@@ -120,7 +120,7 @@ a = 100500
 print(foo()) # Will return 100500 because during call global a equals to 100500
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     10
     100500
@@ -140,7 +140,7 @@ print(sum(x=5))
 
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     74
     74
@@ -168,7 +168,7 @@ print(random_phrase(4))
 print(random_phrase(length=6))
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     evil unicorns
     I think ehmm evil unicorns
@@ -187,7 +187,7 @@ def random_phrase(length=3):
 print(random_phrase(length=5))
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     evil umm ehmm I think evil
 
@@ -250,7 +250,7 @@ def print_strings(str1, str2):
 print_strings("Hello", "World")
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     Hello World
 
@@ -267,7 +267,7 @@ print_strings(str1="Hello", str2="World")
 print_strings(str2="James Bond", str1="Bond,")
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     Hello World
     Bond, James Bond
@@ -287,7 +287,7 @@ add_friend("Mark")
 add_friend(name="Mark")
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     Friend Mark (20) added
     Friend Mark (20) added

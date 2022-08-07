@@ -97,7 +97,7 @@ print(b.class_method())
 print(b.static_method())
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     {'attr': "Object's own attr (from class A)"}
     Running method of A
@@ -142,7 +142,7 @@ fd[1] = 100500
 print(fd["1"])
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     100500
 
@@ -178,7 +178,7 @@ vd[5]
 vd
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     Set: z -> 3
     Set: 100 -> 100500
@@ -214,7 +214,7 @@ counter = VerboseCounter("boombbbam")
 print(counter)
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
     Set: b -> 1
@@ -260,7 +260,7 @@ print(SuperList())
 print(SuperList("abcde"))
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     Before __init__: ['START', 'STOP']
     ['START', 'STOP']
@@ -298,7 +298,7 @@ print("After changes:", l)
 print(id(l))
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     >>> Use parent's constructor but print this line!
     >>> Original list: []
@@ -339,7 +339,7 @@ class D(C):
 D().m()
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
     super().m() -> C (we take <m> from <C>)
@@ -368,7 +368,7 @@ AResult()()
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     1
 

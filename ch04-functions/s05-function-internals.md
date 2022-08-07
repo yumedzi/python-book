@@ -14,7 +14,7 @@ print(f1.__code__.co_code)
 print(f2.__code__.co_code)
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     b'd\x01S\x00'
     b'd\x01S\x00'
@@ -25,7 +25,7 @@ _<mark style="color:purple;">Output</mark>_:
 print(f1.__code__.__doc__)
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,
           constants, names, varnames, filename, name, firstlineno,

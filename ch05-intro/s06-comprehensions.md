@@ -20,7 +20,7 @@
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -34,7 +34,7 @@ _<mark style="color:purple;">Output</mark>_:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     [0, 2, 4, 6, 8]
 
@@ -48,7 +48,7 @@ _<mark style="color:purple;">Output</mark>_:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     [(2, 1),
      (4, 1),
@@ -75,7 +75,7 @@ _<mark style="color:purple;">Output</mark>_:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     {0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}
 
@@ -89,7 +89,7 @@ _<mark style="color:purple;">Output</mark>_:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     {0: 2, 1: 2, 2: 2}
 
@@ -108,7 +108,7 @@ print(set(list_with_duplicated)) # recommended way
 print({x for x in list_with_duplicated if x % 2}) # more logical usage
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     {1, 2, 3, 4}
     {1, 2, 3, 4}
@@ -127,7 +127,7 @@ _<mark style="color:purple;">Output</mark>_:
 
 
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     <generator object <genexpr> at 0x0000023DF7253678>
 

@@ -38,7 +38,7 @@ except StopIteration:
     print("Generator is already empty (raised StopIteration)")
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     Starting generator...
     First __next__: 0
@@ -71,7 +71,7 @@ gen = (x for x in range(1,10) if not x % 2) # get generator using generator expr
 print(list(gen))
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     <generator object <genexpr> at 0x7f3e79f23c78>
     2
@@ -93,7 +93,7 @@ for i in gen:
     print(i)
 ```
 
-_<mark style="color:purple;">Output</mark>_:
+_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
 
     <generator object gen_func at 0x103dcf518>
     2

@@ -31,7 +31,8 @@ def splitting_function(text):
 text_to_split = "Hello Galaxy!"
 splitting_function(text_to_split)
 ```
-Output:
+
+_<mark style="color:purple;">Output</mark>_:
 
      ["Hello", "Galaxy!"]
 

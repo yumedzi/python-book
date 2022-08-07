@@ -185,9 +185,13 @@ a, b = 1, 2
 print(a, b)
 ```
 
-    1 2
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+1 2
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -196,9 +200,13 @@ a, b = b, a
 print(a, b)
 ```
 
-    2 1
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+2 1
+```
+{% endcode %}
 Available only in Python 3:
 
 
@@ -209,9 +217,13 @@ a, *b, c = 1, 2, 3, 4, 5, 6, 7
 print("a is {}, b is {}, c is {}".format(a, b, c))
 ```
 
-    a is 1, b is [2, 3, 4, 5, 6], c is 7
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+a is 1, b is [2, 3, 4, 5, 6], c is 7
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -221,8 +233,13 @@ x, *_ = f()
 print(x)
 ```
 
-    1
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+1
+```
+{% endcode %}
 
 ## Tuples vs Lists
 
@@ -259,8 +276,13 @@ import datetime
 print(*datetime.datetime.now().timetuple(), sep=", ")
 ```
 
-    2022, 8, 7, 22, 4, 21, 6, 219, -1
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+2022, 8, 7, 22, 4, 21, 6, 219, -1
+```
+{% endcode %}
 
 * Values is result of range() are all of the same type, so it is list (in Python 2):
 
@@ -280,9 +302,13 @@ list(range(10))
 
 
 
-    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+{% endcode %}
 
 * Coordinates:
 

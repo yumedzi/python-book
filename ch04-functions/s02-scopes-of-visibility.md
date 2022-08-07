@@ -315,9 +315,13 @@ foo()
 
 
 
-    55
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+55
+```
+{% endcode %}
 
 ### Closures
 
@@ -338,9 +342,13 @@ i = 5
 foo()
 ```
 
-    5
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+5
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -361,11 +369,15 @@ print(result)
 print("Result of running inner function:", result())
 ```
 
-    Running inner: 5
-    <function foo.<locals>.inner at 0x7f3e881fe488>
-    Result of running inner function: 5
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Running inner: 5
+<function foo.<locals>.inner at 0x7f3e881fe488>
+Result of running inner function: 5
+```
+{% endcode %}
 How can `inner` know about `a` if `foo` is already returned and all we can't access to it's local variables normally?
 
 
@@ -378,6 +390,13 @@ cell = result.__closure__[0]
 print("Free var #1 value:", cell.cell_contents)
 ```
 
-    Free vars: ('a',)
-    (<cell at 0x7f3e88272258: int object at 0x5594948e94a0>,)
-    Free var #1 value: 5
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Free vars: ('a',)
+(<cell at 0x7f3e88272258: int object at 0x5594948e94a0>,)
+Free var #1 value:
+```
+{% endcode %}
+5

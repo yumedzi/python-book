@@ -203,8 +203,13 @@ But we can workaround this by using builtin function `sorted()` and specifying y
 print(sorted(new_list, key=str)) # Here we are sorting in fact by string representations
 ```
 
-    [15, 16, 23, 4, 42, 8, 'a', 'b', 'c']
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+[15, 16, 23, 4, 42, 8, 'a', 'b', 'c']
+```
+{% endcode %}
 
 ### Appending, extending
 
@@ -219,10 +224,13 @@ some_list
 
 
 
-    [4, 8, 15, 16, 23, 42, 1000]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[4, 8, 15, 16, 23, 42, 1000]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -235,10 +243,13 @@ some_list
 
 
 
-    [4, 8, 15, 16, 23, 42, 1000, 1000, [10, 10, [20, 20]], [...]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[4, 8, 15, 16, 23, 42, 1000, 1000, [10, 10, [20, 20]], [...]]
+```
+{% endcode %}
 By extending nested list Python will treat all nested as elements just as other types
 
 
@@ -252,21 +263,25 @@ some_list
 
 
 
-    [4,
-     8,
-     15,
-     16,
-     23,
-     42,
-     1000,
-     1000,
-     [10, 10, [20, 20]],
-     [...],
-     0,
-     [1, 2],
-     [3, 4]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+[4,
+ 8,
+ 15,
+ 16,
+ 23,
+ 42,
+ 1000,
+ 1000,
+ [10, 10, [20, 20]],
+ [...],
+ 0,
+ [1, 2],
+ [3, 4]]
+```
+{% endcode %}
 
 ### Removing
 
@@ -280,10 +295,13 @@ some_list.pop()
 
 
 
-    [3, 4]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[3, 4]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -294,10 +312,13 @@ some_list.pop(0)
 
 
 
-    4
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+4
+```
+{% endcode %}
 
 ```python
 del some_list[0]
@@ -314,9 +335,13 @@ some_list
 
 
 
-    [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+[15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+```
+{% endcode %}
 
 ### Other examples
 We saw very similar examples for strings - because strings are sequence too. That is the core idea (called ducktyping) in Python - the same behavior even if the types are different.
@@ -331,23 +356,26 @@ some_list * 2
 
 
 
-    [15,
-     16,
-     23,
-     [10, 10, [20, 20]],
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     0,
-     [1, 2],
-     15,
-     16,
-     23,
-     [10, 10, [20, 20]],
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     0,
-     [1, 2]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[15,
+ 16,
+ 23,
+ [10, 10, [20, 20]],
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ 0,
+ [1, 2],
+ 15,
+ 16,
+ 23,
+ [10, 10, [20, 20]],
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ 0,
+ [1, 2]]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -358,16 +386,19 @@ some_list[::-1]
 
 
 
-    [[1, 2],
-     0,
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     [10, 10, [20, 20]],
-     23,
-     16,
-     15]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[[1, 2],
+ 0,
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ [10, 10, [20, 20]],
+ 23,
+ 16,
+ 15]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -378,10 +409,13 @@ some_list[:4]
 
 
 
-    [15, 16, 23, [10, 10, [20, 20]]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[15, 16, 23, [10, 10, [20, 20]]]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -392,14 +426,17 @@ some_list[2:]
 
 
 
-    [23,
-     [10, 10, [20, 20]],
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     0,
-     [1, 2]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[23,
+ [10, 10, [20, 20]],
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ 0,
+ [1, 2]]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -408,16 +445,19 @@ print (some_list)
 some_list[-2]
 ```
 
-    [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+[15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
 
 
 
 
 
-    0
-
-
-
+0
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -428,15 +468,19 @@ some_list[-2]
 
 
 
-    [15,
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     16,
-     0,
-     23,
-     [1, 2],
-     [10, 10, [20, 20]]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+[15,
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ 16,
+ 0,
+ 23,
+ [1, 2],
+ [10, 10, [20, 20]]]
+```
+{% endcode %}
 
 ```IndexError``` exception is raised for non-existent index element
 
@@ -448,16 +492,21 @@ some_list[1000]
 ```
 
 
-    
+📟 _<mark style="color:green;">Output:</mark>_
 
-    IndexErrorTraceback (most recent call last)
+{% code overflow="wrap" %}
+```
 
-    <ipython-input-24-a1d5b08ec438> in <module>()
-    ----> 1 some_list[1000]
-    
 
-    IndexError: list index out of range
+IndexErrorTraceback (most recent call last)
 
+<ipython-input-24-a1d5b08ec438> in <module>()
+----> 1 some_list[1000]
+
+
+IndexError: list index out of range
+```
+{% endcode %}
 
 ## List slices
 
@@ -478,16 +527,19 @@ print (some_list)
 some_list[2:4]
 ```
 
-    [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+[15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
 
 
 
 
 
-    [23, [10, 10, [20, 20]]]
-
-
-
+[23, [10, 10, [20, 20]]]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -499,10 +551,13 @@ some_list
 
 
 
-    [15, 16, 'a', 'b', 'c', [...], 0, [1, 2]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[15, 16, 'a', 'b', 'c', [...], 0, [1, 2]]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -514,9 +569,13 @@ some_list
 
 
 
-    [100, 100, 100, 16, 'a', 'b', 'c', [...], 0, [1, 2]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+[100, 100, 100, 16, 'a', 'b', 'c', [...], 0, [1, 2]]
+```
+{% endcode %}
 
 ### Slice deletion
 
@@ -533,9 +592,14 @@ del list_[2:4]
 print("After:", list_)
 ```
 
-    Before: [1, 2, 3, 4, 5]
-    After: [1, 2, 5]
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Before: [1, 2, 3, 4, 5]
+After: [1, 2, 5]
+```
+{% endcode %}
 
 ### Slice assignment
 
@@ -552,9 +616,14 @@ list_[2:4] = ["A"]
 print("After:", list_)
 ```
 
-    Before: [1, 2, 3, 4, 5]
-    After: [1, 2, 'A', 5]
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Before: [1, 2, 3, 4, 5]
+After: [1, 2, 'A', 5]
+```
+{% endcode %}
 
 ## List comprehensions
 
@@ -573,10 +642,13 @@ cool_list
 
 
 
-    [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+```
+{% endcode %}
 It's absolutely the same as:
 
 
@@ -592,10 +664,13 @@ cool_list
 
 
 
-    [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -606,10 +681,13 @@ cool_list
 
 
 
-    [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -622,10 +700,13 @@ from random import randrange
 
 
 
-    [2, 2, 4, 8, 9, 2, 4]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[2, 2, 4, 8, 9, 2, 4]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -636,10 +717,13 @@ from random import randrange
 
 
 
-    ['1-A', '1-B', '1-C', '2-A', '2-B', '2-C', '3-A', '3-B', '3-C']
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+['1-A', '1-B', '1-C', '2-A', '2-B', '2-C', '3-A', '3-B', '3-C']
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -651,9 +735,13 @@ for x in [1, 2, 3]:
 print(list_)
 ```
 
-    ['1-A', '1-B', '1-C', '2-A', '2-B', '2-C', '3-A', '3-B', '3-C']
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+['1-A', '1-B', '1-C', '2-A', '2-B', '2-C', '3-A', '3-B', '3-C']
+```
+{% endcode %}
 The order of loops matters:
 
 
@@ -666,10 +754,13 @@ The order of loops matters:
 
 
 
-    ['a-1', 'a-2', 'a-3', 'b-1', 'b-2', 'b-3', 'c-1', 'c-2', 'c-3']
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+['a-1', 'a-2', 'a-3', 'b-1', 'b-2', 'b-3', 'c-1', 'c-2', 'c-3']
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -680,10 +771,13 @@ The order of loops matters:
 
 
 
-    ['a-1', 'b-1', 'c-1', 'a-2', 'b-2', 'c-2', 'a-3', 'b-3', 'c-3']
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+['a-1', 'b-1', 'c-1', 'a-2', 'b-2', 'c-2', 'a-3', 'b-3', 'c-3']
+```
+{% endcode %}
 It's possible to create nested list and use conditions as well:
 
 
@@ -696,10 +790,13 @@ It's possible to create nested list and use conditions as well:
 
 
 
-    [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+```
+{% endcode %}
 is equivalent to:
 
 
@@ -717,10 +814,13 @@ combs
 
 
 
-    [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+```
+{% endcode %}
 Some "real-world" example:
 
 ```python
@@ -746,9 +846,14 @@ a[0] = "Surprise"
 print ("b is", b)
 ```
 
-    True
-    b is ['Surprise', 2, 3]
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+True
+b is ['Surprise', 2, 3]
+```
+{% endcode %}
 
 ### Shallow copy of lists
 
@@ -768,11 +873,15 @@ print ("a is:", a)
 print ("b is:", b)
 ```
 
-    False
-    a is: ['Oh!', 2, 3]
-    b is: ['Surprise', 2, 3]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+False
+a is: ['Oh!', 2, 3]
+b is: ['Surprise', 2, 3]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -783,9 +892,14 @@ print ("b is:", b)
 print(a)
 ```
 
-    b is: ['Oh!', 2, 3]
-    ['New', 2, 3]
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+b is: ['Oh!', 2, 3]
+['New', 2, 3]
+```
+{% endcode %}
 
 ### Shallow copy problems
 If list has mutable object deeper than on the very first nesting level - shallow copy will cause similar problems as before.
@@ -801,9 +915,14 @@ print (a is b)
 print ("b is:", b)
 ```
 
-    False
-    b is: [['Surprise!', 2], 3]
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+False
+b is: [['Surprise!', 2], 3]
+```
+{% endcode %}
 
 ### Deep copy
 
@@ -826,9 +945,14 @@ print ("b is:", b)
 print ("c is:", c)
 ```
 
-    b is: [['Surprise!', 2], 3]
-    c is: [[1, 2], 3]
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+b is: [['Surprise!', 2], 3]
+c is: [[1, 2], 3]
+```
+{% endcode %}
 
 ### Self-referencing list
 
@@ -845,10 +969,14 @@ print(a)
 print(a[-1][-1][-1][-1][-1][-1][-1])
 ```
 
-    [1, 2, 3, [...]]
-    [1, 2, 3, [...]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+[1, 2, 3, [...]]
+[1, 2, 3, [...]]
+```
+{% endcode %}
 In this case when we ```del```ete it - Python garbage collector won't delete from memory - because the number of reference to this object is not null
 
 Usual Python console:
@@ -881,9 +1009,14 @@ list_ = list((range(1000)))
 %timeit 999 in list_
 ```
 
-    12.2 µs ± 35.2 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
-    29.7 µs ± 68.2 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+12.2 µs ± 35.2 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+29.7 µs ± 68.2 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+```
+{% endcode %}
 
 ## Complexity of operations
 

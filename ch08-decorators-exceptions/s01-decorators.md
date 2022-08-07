@@ -353,12 +353,16 @@ print(f"my_func.counter = {my_func.counter}")
 print(f"my_func.__dict__ = {my_func.__dict__}")
 ```
 
-    New deco init...
-    0
-    my_func.counter = 10
-    my_func.__dict__ = {'counter': 10}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+New deco init...
+0
+my_func.counter = 10
+my_func.__dict__ = {'counter': 10}
+```
+{% endcode %}
 Shown above decorator is call counter.
 
 ### Evolution of decorator
@@ -383,10 +387,13 @@ test1, test1(100500)
 
 
 
-    (<function __main__.test1(x)>, 100500)
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+(<function __main__.test1(x)>, 100500)
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -403,11 +410,15 @@ print(test1(25))
 print(test1(48))
 ```
 
-    Init...
-    25
-    48
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Init...
+25
+48
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -427,11 +438,15 @@ print(test1(25))
 print(test1.created_at)
 ```
 
-    Init...
-    25
-    2019-12-09 10:17:56.486420
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Init...
+25
+2019-12-09 10:17:56.486420
+```
+{% endcode %}
 Tro-lo-lo decorator which return completely other function than original one:
 
 
@@ -455,10 +470,13 @@ test1()
 
 
 
-    'HAhahahahha Trololo'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'HAhahahahha Trololo'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -478,10 +496,14 @@ print(test1)
 print(test1(25))
 ```
 
-    <function my_deco.<locals>.wrapper at 0x10483a488>
-    25
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+<function my_deco.<locals>.wrapper at 0x10483a488>
+25
+```
+{% endcode %}
 Adding some counter to wrapper to be able to see in test1:
 
 
@@ -506,11 +528,15 @@ print(test1(1))
 print(test1.counter)
 ```
 
-    25 48
-    1
-    3
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+25 48
+1
+3
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -546,22 +572,25 @@ foo(10, 40)
 foo.info()
 ```
 
-    Init of decorator...
-    >>> Before running!...
-    >>> Result is: 10000000000000000000000000000000000000000
-    >>> After running....
-    >>> Before running!...
-    >>> Result is: 10000000000000000000000000000000000000000
-    >>> After running....
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Init of decorator...
+>>> Before running!...
+>>> Result is: 10000000000000000000000000000000000000000
+>>> After running....
+>>> Before running!...
+>>> Result is: 10000000000000000000000000000000000000000
+>>> After running....
 
 
 
 
 
-    'This function was decorated by IDEAL DECORATOR on 2020-12-30 07:52:06.535243 and ran 2 times (last run: 2020-12-30 07:52:06.536808)'
-
-
-
+'This function was decorated by IDEAL DECORATOR on 2020-12-30 07:52:06.535243 and ran 2 times (last run: 2020-12-30 07:52:06.536808)'
+```
+{% endcode %}
 You want more?... 
 
 Ok. It is very useful timer decorator
@@ -592,9 +621,14 @@ l = my_fnc(1)
 l2 = f()
 ```
 
-    Function: my_fnc(1, {}), time spent: 3.666 seconds
-    Function: f({}), time spent: 7.063 seconds
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Function: my_fnc(1, {}), time spent: 3.666 seconds
+Function: f({}), time spent: 7.063 seconds
+```
+{% endcode %}
 
 "Fakely long runnning" decorator
 
@@ -618,12 +652,16 @@ def f():
 f()
 ```
 
-    Work is in progress....
-    Work is in progress....
-    Work is in progress....
-    Done
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Work is in progress....
+Work is in progress....
+Work is in progress....
+Done
+```
+{% endcode %}
 It is possible to add some random strings to show during "fake running" time window:
 
 
@@ -656,18 +694,21 @@ def calc_sum(x, y):
 calc_sum(2, 2)
 ```
 
-    Traversing trough raw data internals...
-    Validating obtained subprocess results...
-    Alligning matrixes of indexes for data frames...
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Traversing trough raw data internals...
+Validating obtained subprocess results...
+Alligning matrixes of indexes for data frames...
 
 
 
 
 
-    4
-
-
-
+4
+```
+{% endcode %}
 Super cool decorator that controls the time of execution for decorated function and stops it in case of exceeding that time:
 
 
@@ -710,12 +751,17 @@ print(">>> Running long / 4 seconds:")
 print(long(4))
 ```
 
-    >>> Running quick / 1 second:
-    Done
-    >>> Running long / 4 seconds:
-    Timed out! 
-    None
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+>>> Running quick / 1 second:
+Done
+>>> Running long / 4 seconds:
+Timed out! 
+None
+```
+{% endcode %}
 
 ## Chaining decorators
 
@@ -757,9 +803,13 @@ hello()
 
 
 
-    "<b><i><span style='color: red;'>Goodbye World!</span></i></b>"
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+"<b><i><span style='color: red;'>Goodbye World!</span></i></b>"
+```
+{% endcode %}
 
 <b><i><span style='color: red;'>Goodbye World!</span></i></b>
 
@@ -780,10 +830,13 @@ hello()
 
 
 
-    '<b><i><b><b>Goodbye again, World!</b></b></i></b>'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'<b><i><b><b>Goodbye again, World!</b></b></i></b>'
+```
+{% endcode %}
 As resume memoization rule:
     
 > Decorator is 
@@ -829,10 +882,13 @@ calc_tips(100)
 
 
 
-    10
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+10
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -843,10 +899,13 @@ calc_tips(200, 0.05)
 
 
 
-    10
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+10
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -854,9 +913,13 @@ calc_tips(200, 0.05)
 print(calc_tips(100, 0.05)) # Surprise! Why?
 ```
 
-    10
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+10
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -864,9 +927,13 @@ print(calc_tips(100, 0.05)) # Surprise! Why?
 print(calc_tips._val)
 ```
 
-    {100: 10, 200: 10}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+{100: 10, 200: 10}
+```
+{% endcode %}
 Way to improve this cashing decorator - change key to a tuple that contains a `tip_rate` also. In this way we'll cover all possible cases.
 
 
@@ -912,11 +979,15 @@ print("Function docstring:", calc_tips.__doc__)
 print(calc_tips)
 ```
 
-    Function name: _f
-    Function docstring: None
-    <function riddle_deco.<locals>._f at 0x7fd4f15baea0>
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Function name: _f
+Function docstring: None
+<function riddle_deco.<locals>._f at 0x7fd4f15baea0>
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -929,10 +1000,14 @@ print("Function name:", calc_tips.__name__)
 print(calc_tips)
 ```
 
-    Function name: test
-    <function test at 0x7fd4f15baea0>
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Function name: test
+<function test at 0x7fd4f15baea0>
+```
+{% endcode %}
 We can do this in decorator to fix all these issues
 
 
@@ -958,12 +1033,16 @@ print(pretty_func.__doc__)
 print(pretty_func)
 ```
 
-    Mew mew mew
-    pretty_func
-    Print something nice
-    <function pretty_func at 0x7f210c6936a8>
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Mew mew mew
+pretty_func
+Print something nice
+<function pretty_func at 0x7f210c6936a8>
+```
+{% endcode %}
 Alternative - suggested method - to use `functools.wraps` decorator which will automatically assign wrapper function’s `__module__`, `__name__`, `__qualname__`, `__annotations__` and `__doc__`. 
 
 
@@ -991,12 +1070,17 @@ print(example.__doc__)
 print(example)
 ```
 
-    Calling decorated function
-    Called example function
-    example
-    Docstring
-    <function example at 0x104ad2ea0>
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Calling decorated function
+Called example function
+example
+Docstring
+<function example at 0x104ad2ea0>
+```
+{% endcode %}
 
 ### One-time decorator
 
@@ -1028,7 +1112,14 @@ def f():
     1/0
 ```
 
-    It was nice, thank you for all..
-    Some text
-    Some text
-    It was nice, thank you for all..
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+It was nice, thank you for all..
+Some text
+Some text
+It was nice, thank you for al
+```
+{% endcode %}
+l..

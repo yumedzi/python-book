@@ -266,8 +266,13 @@ bender2_0 = BendingMailingRobot("Bender 2.0")
 bender2_0.send_message(bender2_0.say())
 ```
 
-    *** SENDING MESSAGE: <<<Bender 2.0 says: Kill all humans>>>  ***
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+*** SENDING MESSAGE: <<<Bender 2.0 says: Kill all humans>>>  ***
+```
+{% endcode %}
 
 ## Methods
 
@@ -297,9 +302,14 @@ ex.cool_method()
 print(ex.cool_method)
 ```
 
-    I am instance method, my instance is: <__main__.Example object at 0x7f343cf57ac8>
-    <bound method Example.cool_method of <__main__.Example object at 0x7f343cf57ac8>>
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+I am instance method, my instance is: <__main__.Example object at 0x7f343cf57ac8>
+<bound method Example.cool_method of <__main__.Example object at 0x7f343cf57ac8>>
+```
+{% endcode %}
 
 ### Class methods
 
@@ -328,10 +338,15 @@ ex.instance_method()
 Example.class_method() # Example.class_method(Example)
 ```
 
-    CLS: 5
-    INSTANCE: 25
-    CLS: 5
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+CLS: 5
+INSTANCE: 25
+CLS: 5
+```
+{% endcode %}
 
 ### Static method
 
@@ -360,16 +375,20 @@ ex.other_stat_method("Topot")
 Example.attr
 ```
 
-    I am a static method, I don't have access to anything :(
-    I am a static method, I don't have access to anything :(
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+I am a static method, I don't have access to anything :(
+I am a static method, I don't have access to anything :(
 
 
 
 
 
-    123123
-
-
+123123
+```
+{% endcode %}
 
 # Old and New classes
 

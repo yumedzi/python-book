@@ -423,10 +423,13 @@ AResult()()
 
 
 
-    1
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+1
+```
+{% endcode %}
 To start FROM A2:
 
 
@@ -442,10 +445,13 @@ AResult()()
 
 
 
-    2
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+2
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -459,9 +465,13 @@ AResult()()
 
 
 
-    3
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+3
+```
+{% endcode %}
 
 ### Simple `super(cls, obj)` implementation
 
@@ -513,12 +523,19 @@ print(D.mro())
 D().m()
 ```
 
-    [<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.C'>, <class 'object'>]
-    (<class '__main__.B'>, <__main__.D object at 0x7f4245717dd8>)
-    Running __getattr__, attr = m
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+[<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.C'>, <class 'object'>]
+(<class '__main__.B'>, <__main__.D object at 0x7f4245717dd8>)
+Running __getattr__, attr = m
 
 
 
 
 
-    'C'
+'
+```
+{% endcode %}
+C'

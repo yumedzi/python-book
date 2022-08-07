@@ -253,10 +253,13 @@ Searching for particular files by pattern:
 
 
 
-    [PosixPath('example/test.txt')]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+[PosixPath('example/test.txt')]
+```
+{% endcode %}
 Clearing our samples:
 
 

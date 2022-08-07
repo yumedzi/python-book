@@ -199,5 +199,12 @@ print([fib(n) for n in range(20)])
 print(fib.cache_info())
 ```
 
-    [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
-    CacheInfo(hits=36, misses=20, maxsize=None, currsize=20)
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
+CacheInfo(hits=36, misses=20, maxsize=None, currsize=2
+```
+{% endcode %}
+0)

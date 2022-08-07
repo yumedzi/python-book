@@ -351,8 +351,13 @@ except AttributeError:
     print("We can't access attribute b as it is not listed in __slots__")
 ```
 
-    False
-    We can't access attribute b as it is not listed in __slots__
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+False
+We can't access attribute b as it is not listed in __slots__
+```
+{% endcode %}
 
 `__slots__` are meaninless when the class is inherited from the one which doesn't have `__slots__`.

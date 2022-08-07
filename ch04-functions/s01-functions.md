@@ -346,9 +346,14 @@ friend2 = dict(name="Sara", age=18)
 add_friend(**friend2)
 ```
 
-    Friend John (25) added
-    Friend Sara (18) added
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Friend John (25) added
+Friend Sara (18) added
+```
+{% endcode %}
 
 ### Order
 
@@ -379,13 +384,17 @@ print( func(10, 20, c=6))  # Correct order
 #print( func(c=6, 10, 20))  # Incorrect order
 ```
 
-    5
-    6
-    9
-    13
-    36
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+5
+6
+9
+13
+36
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -394,16 +403,21 @@ print( func(3, c=6))  # Missing required arg b - exception!
 ```
 
 
-    ---------------------------------------------------------------------------
+📟 _<mark style="color:green;">Output:</mark>_
 
-    TypeError                                 Traceback (most recent call last)
+{% code overflow="wrap" %}
+```
+---------------------------------------------------------------------------
 
-    <ipython-input-3-e4ed5e80880e> in <module>()
-    ----> 1 print( func(3, c=6))  # Missing required arg b - exception!
-    
+TypeError                                 Traceback (most recent call last)
 
-    TypeError: func() missing 1 required positional argument: 'b'
+<ipython-input-3-e4ed5e80880e> in <module>()
+----> 1 print( func(3, c=6))  # Missing required arg b - exception!
 
+
+TypeError: func() missing 1 required positional argument: 'b'
+```
+{% endcode %}
 
 ## Positional-Only parameters
 
@@ -418,13 +432,16 @@ The thing is - that many built-in functions implemented in C already accept only
 help(divmod)
 ```
 
-    Help on built-in function divmod in module builtins:
-    
-    divmod(x, y, /)
-        Return the tuple (x//y, x%y).  Invariant: div*y + mod == x.
-    
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Help on built-in function divmod in module builtins:
 
+divmod(x, y, /)
+    Return the tuple (x//y, x%y).  Invariant: div*y + mod == x.
+```
+{% endcode %}
 This is useful in many case, for example `int` has this help:
 
 ```txt
@@ -505,17 +522,22 @@ files_search(["1.txt", "some.log"], 1, 1, True, False)
 ```
 
 
-    
+📟 _<mark style="color:green;">Output:</mark>_
 
-    TypeErrorTraceback (most recent call last)
+{% code overflow="wrap" %}
+```
 
-    <ipython-input-7-53f9c885bca9> in <module>
-          1 # ERROR:
-    ----> 2 files_search(["1.txt", "some.log"], 1, 1, True, False)
-    
 
-    TypeError: files_search() takes 1 positional argument but 5 were given
+TypeErrorTraceback (most recent call last)
 
+<ipython-input-7-53f9c885bca9> in <module>
+      1 # ERROR:
+----> 2 files_search(["1.txt", "some.log"], 1, 1, True, False)
+
+
+TypeError: files_search() takes 1 positional argument but 5 were given
+```
+{% endcode %}
 
 ## Annotations
 

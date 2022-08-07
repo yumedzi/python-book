@@ -230,9 +230,13 @@ from collections import Counter
 print(Counter(['red', 'blue', 'red', 'green', 'blue', 'blue']))
 ```
 
-    Counter({'blue': 3, 'red': 2, 'green': 1})
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Counter({'blue': 3, 'red': 2, 'green': 1})
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -241,9 +245,13 @@ cnt = Counter('AnnaMadrigal'.lower())
 print(cnt)
 ```
 
-    Counter({'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Counter({'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
+```
+{% endcode %}
 It has many useful methods:
 
 
@@ -253,9 +261,13 @@ It has many useful methods:
 print(Counter("Asdasdasdasd").items())
 ```
 
-    dict_items([('A', 1), ('s', 4), ('d', 4), ('a', 3)])
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+dict_items([('A', 1), ('s', 4), ('d', 4), ('a', 3)])
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -264,9 +276,13 @@ print(Counter("Asdasdasdasd").items())
 print(list(cnt.elements()))
 ```
 
-    ['A', 'n', 'n', 'a', 'a', 'a', 'M', 'd', 'r', 'i', 'g', 'l']
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+['A', 'n', 'n', 'a', 'a', 'a', 'M', 'd', 'r', 'i', 'g', 'l']
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -275,9 +291,13 @@ print(list(cnt.elements()))
 print(cnt.most_common(3))
 ```
 
-    [('a', 3), ('n', 2), ('A', 1)]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+[('a', 3), ('n', 2), ('A', 1)]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -289,8 +309,13 @@ c.subtract(d)
 print(c)
 ```
 
-    Counter({'a': 3, 'b': 0, 'c': -3, 'd': -6})
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Counter({'a': 3, 'b': 0, 'c': -3, 'd': -6})
+```
+{% endcode %}
 
 ### `array`
 
@@ -348,11 +373,16 @@ bytes_array.frombytes(b"123")
 print(bytes_array)
 ```
 
-    Array now is array('f', [1.2000000476837158, 2.0999999046325684]), item size is 4)
-    After appending array is array('f', [1.2000000476837158, 2.0999999046325684, 3.141516923904419])
-    array('b', [65, 66, 67])
-    array('b', [65, 66, 67, 49, 50, 51])
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Array now is array('f', [1.2000000476837158, 2.0999999046325684]), item size is 4)
+After appending array is array('f', [1.2000000476837158, 2.0999999046325684, 3.141516923904419])
+array('b', [65, 66, 67])
+array('b', [65, 66, 67, 49, 50, 51])
+```
+{% endcode %}
 
 #### `numpy`
 
@@ -383,16 +413,20 @@ print(f'b:\n{b}, shape is {b.shape}')
 print(f"Transpose T:\n{b.T}")
 ```
 
-    a is [2 3 4], type is int64, len is 3, shape is (3,)
-    b:
-    [[1 2 3]
-     [4 5 6]], shape is (2, 3)
-    Transpose T:
-    [[1 4]
-     [2 5]
-     [3 6]]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+a is [2 3 4], type is int64, len is 3, shape is (3,)
+b:
+[[1 2 3]
+ [4 5 6]], shape is (2, 3)
+Transpose T:
+[[1 4]
+ [2 5]
+ [3 6]]
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -403,18 +437,23 @@ print("Transforming, mult by 3:\n", b * 3)
 print("Changing shape:\n", b.reshape(1, 6))
 ```
 
-    Transforming, add 0.5:
-     [[1.5 2.5 3.5]
-     [4.5 5.5 6.5]]
-    Transforming, add 3*b:
-     [[ 4  8 12]
-     [16 20 24]]
-    Transforming, mult by 3:
-     [[ 3  6  9]
-     [12 15 18]]
-    Changing shape:
-     [[1 2 3 4 5 6]]
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Transforming, add 0.5:
+ [[1.5 2.5 3.5]
+ [4.5 5.5 6.5]]
+Transforming, add 3*b:
+ [[ 4  8 12]
+ [16 20 24]]
+Transforming, mult by 3:
+ [[ 3  6  9]
+ [12 15 18]]
+Changing shape:
+ [[1 2 3 4 5 6]]
+```
+{% endcode %}
 
 ### `bytearray`
 
@@ -436,9 +475,14 @@ print(bytes_)
 print(dir(bytes_))
 ```
 
-    b'\xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd1\x96\xd1\x82, \xd0\xa1\xd0\xb2\xd1\x96\xd1\x82\xd0\xb5!'
-    ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'center', 'count', 'decode', 'endswith', 'expandtabs', 'find', 'fromhex', 'hex', 'index', 'isalnum', 'isalpha', 'isascii', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+b'\xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd1\x96\xd1\x82, \xd0\xa1\xd0\xb2\xd1\x96\xd1\x82\xd0\xb5!'
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'center', 'count', 'decode', 'endswith', 'expandtabs', 'find', 'fromhex', 'hex', 'index', 'isalnum', 'isalpha', 'isascii', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+```
+{% endcode %}
 
 `bytearray` bultin type is mutable counterpart of `bytes` type.
 
@@ -458,10 +502,14 @@ print(b)
 print(b[0], b[3:6], b[:5:-1], sep=", ")
 ```
 
-    bytearray(b'Hello World')
-    72, bytearray(b'lo '), bytearray(b'dlroW')
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+bytearray(b'Hello World')
+72, bytearray(b'lo '), bytearray(b'dlroW')
+```
+{% endcode %}
 Good news: due to Python's duck-typing, methods of `str`, `bytes` and `bytearray` are the same, the main difference is that they return the object of the correspondent type. Also, when iterating through `bytearray`, it will yield bytecode of the character. This can sometimes overcomplicate things.
 
 
@@ -478,16 +526,21 @@ print()
 print(b''.join([chr(x).encode('utf8') for x in reversed(b[:5:-1])]))
 ```
 
-    bytearray(b'Hello World')
-    True
-    100
-    108
-    114
-    111
-    87
-    
-    b'World'
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+bytearray(b'Hello World')
+True
+100
+108
+114
+111
+87
+
+b'World'
+```
+{% endcode %}
 
 ### `enum`
 
@@ -533,9 +586,13 @@ color_settings_per_page = {
 print(color_settings_per_page)
 ```
 
-    {<Page.LOGIN: 1>: <Color.RED: 1>, <Page.DASHBOARD: 2>: <Color.GREEN: 2>, <Page.SEARCH: 3>: <Color.BLUE: 3>}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+{<Page.LOGIN: 1>: <Color.RED: 1>, <Page.DASHBOARD: 2>: <Color.GREEN: 2>, <Page.SEARCH: 3>: <Color.BLUE: 3>}
+```
+{% endcode %}
 Enums can be iterated over:
 
 
@@ -547,12 +604,16 @@ for color in Color:
     print(color)
 ```
 
-    We have these color options:
-    Color.RED
-    Color.GREEN
-    Color.BLUE
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+We have these color options:
+Color.RED
+Color.GREEN
+Color.BLUE
+```
+{% endcode %}
 It behaves like a new type:
 
 
@@ -564,11 +625,15 @@ print(isinstance(Color.GREEN, Color))
 print(Color.RED.name)
 ```
 
-    <enum 'Color'>
-    True
-    RED
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+<enum 'Color'>
+True
+RED
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -578,5 +643,12 @@ print(Animal)
 print(list(Animal))
 ```
 
-    <enum 'Animal'>
-    [<Animal.ANT: 1>, <Animal.BEE: 2>, <Animal.CAT: 3>, <Animal.DOG: 4>]
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+<enum 'Animal'>
+[<Animal.ANT: 1>, <Animal.BEE: 2>, <Animal.CAT: 3>, <Animal.DOG:
+```
+{% endcode %}
+4>]

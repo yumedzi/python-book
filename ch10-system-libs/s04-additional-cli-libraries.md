@@ -416,10 +416,15 @@ print(delta.in_words(locale='en'))
 print(delta.in_words(locale='ru')) # <-- Only "ru" at the moment, no "ua" :(
 ```
 
-    In hours: 23
-    1 week 23 hours 59 minutes 59 seconds
-    1 неделя 23 часа 59 минут 59 секунд
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+In hours: 23
+1 week 23 hours 59 minutes 59 seconds
+1 неделя 23 часа 59 минут 59 секунд
+```
+{% endcode %}
 
 ### Loguru
 
@@ -436,9 +441,13 @@ from loguru import logger
 logger.debug("That's it, beautiful and simple logging!")
 ```
 
-    2019-09-20 13:08:41.340 | DEBUG    | __main__:<module>:3 - That's it, beautiful and simple logging!
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+2019-09-20 13:08:41.340 | DEBUG    | __main__:<module>:3 - That's it, beautiful and simple logging!
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -455,12 +464,16 @@ logger.add(sys.stdout, colorize=True, format="<green>{time}</green> <level>{mess
 logger.debug("Check it now!")
 ```
 
-    2019-09-20 13:09:10.415 | DEBUG    | __main__:<module>:10 - Check it now!
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+2019-09-20 13:09:10.415 | DEBUG    | __main__:<module>:10 - Check it now!
 
 
-    [32m2019-09-20T13:09:10.415490+0000[0m [34m[1mCheck it now![0m
-
-
+[32m2019-09-20T13:09:10.415490+0000[0m [34m[1mCheck it now![0m
+```
+{% endcode %}
 The code
 ```python
 logger.add("output.log", backtrace=True, diagnose=True)  # Set 'False' to not leak sensitive data in prod
@@ -580,11 +593,16 @@ print(config['services'])  # ["ui", "web", "db"]
 print(config['logging']['log_file'])
 ```
 
-    0.1
-    True
-    ['ui', 'web', 'db', 'logging', 'web services']
-    /tmp/example.log
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+0.1
+True
+['ui', 'web', 'db', 'logging', 'web services']
+/tmp/example.log
+```
+{% endcode %}
 
 #### Validating
 
@@ -685,9 +703,13 @@ except urllib.error.HTTPError as e:
     print(e)
 ```
 
-    HTTP Error 401: Unauthorized
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+HTTP Error 401: Unauthorized
+```
+{% endcode %}
 Example with requests:
 
 ```python
@@ -724,14 +746,18 @@ for f in facts:
     print(f"* {f['fact']}")
 ```
 
-    200
-    * A cat's jaw has only up and down motion; it does not have any lateral, side to side motion, like dogs and humans.
-    * Abraham Lincoln loved cats. He had four of them while he lived in the White House.
-    * When your cats rubs up against you, she is actually marking you as \hers\" with her scent. If your cat pushes his face against your head"
-    * Approximately 40,000 people are bitten by cats in the U.S. annually.
-    * A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+200
+* A cat's jaw has only up and down motion; it does not have any lateral, side to side motion, like dogs and humans.
+* Abraham Lincoln loved cats. He had four of them while he lived in the White House.
+* When your cats rubs up against you, she is actually marking you as \hers\" with her scent. If your cat pushes his face against your head"
+* Approximately 40,000 people are bitten by cats in the U.S. annually.
+* A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -742,9 +768,13 @@ requests.get('https://catfact.ninja/fact').json()['fact']
 
 
 
-    'Some common houseplants poisonous to cats include: English Ivy, iris, mistletoe, philodendron, and yew.'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+'Some common houseplants poisonous to cats include: English Ivy, iris, mistletoe, philodendron, and yew.'
+```
+{% endcode %}
 
 ## JSON
 
@@ -803,15 +833,19 @@ print(json.dumps(a))
 json.dumps(b)
 ```
 
-    [1, 2, "hello man!", [34, 56.5]]
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+[1, 2, "hello man!", [34, 56.5]]
 
 
 
 
 
-    '{"a": 1, "b": 3, "c": [1, 2, 3, "hello"]}'
-
-
+'{"a": 1, "b": 3, "c": [1, 2, 3, "hello"]}'
+```
+{% endcode %}
 
 #### Other serialization libs*
 
@@ -838,16 +872,20 @@ print(unpickled)
 unpickled[-1][-1]['01'](5)
 ```
 
-    b'\x80\x03]q\x00(K\x01K\x02K\x03K\x04}q\x01(X\x01\x00\x00\x00aq\x02X\x01\x00\x00\x00bq\x03X\x02\x00\x00\x0001q\x04c__main__\nf\nq\x05u\x86q\x06e.'
-    [1, 2, 3, (4, {'a': 'b', '01': <function f at 0x7f6dc4048378>})]
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+b'\x80\x03]q\x00(K\x01K\x02K\x03K\x04}q\x01(X\x01\x00\x00\x00aq\x02X\x01\x00\x00\x00bq\x03X\x02\x00\x00\x0001q\x04c__main__\nf\nq\x05u\x86q\x06e.'
+[1, 2, 3, (4, {'a': 'b', '01': <function f at 0x7f6dc4048378>})]
 
 
 
 
 
-    25
-
-
+25
+```
+{% endcode %}
 
 ## xmltodict
 
@@ -887,8 +925,15 @@ print("Attribute <what> is:", dict_["audience"]["id"]["@what"])
 print("Groups:", dict_["audience"]["groups"]["group"])
 ```
 
-    Parsed dict:
-    OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
-    Name is: Vishal
-    Attribute <what> is: blablabla
-    Groups: ['users', 'admin']
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Parsed dict:
+OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
+Name is: Vishal
+Attribute <what> is: blablabla
+Groups: ['users', 'admi
+```
+{% endcode %}
+n']

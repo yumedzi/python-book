@@ -181,8 +181,13 @@ new_book = {**defaults, "John": "Stark"}
 print(new_book)
 ```
 
-    {'John': 'Stark', 'Aria': 'Stark'}
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+{'John': 'Stark', 'Aria': 'Stark'}
+```
+{% endcode %}
 
 ## How dictionaries work
 
@@ -239,8 +244,13 @@ some_dict = {"name": "John", "surname": "Snow"}
 print( dir(some_dict) ) # All methods a gain
 ```
 
-    ['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+```
+{% endcode %}
 
 #### Dictionary methods
 
@@ -277,10 +287,13 @@ some_dict["name"]
 
 
 
-    'John'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'John'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -292,10 +305,13 @@ some_dict
 
 
 
-    {'name': 'John', 'surname': 'Stark'}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+{'name': 'John', 'surname': 'Stark'}
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -307,9 +323,13 @@ some_dict
 
 
 
-    {'name': 'John', 'surname': 'Stark', 'alive': True}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+{'name': 'John', 'surname': 'Stark', 'alive': True}
+```
+{% endcode %}
 
 ### Method `get`
 
@@ -323,17 +343,21 @@ some_dict["6th_book"]
 ```
 
 
-    
+📟 _<mark style="color:green;">Output:</mark>_
 
-    KeyErrorTraceback (most recent call last)
-
-    <ipython-input-69-9dbfbd76b8e1> in <module>()
-    ----> 1 some_dict["6th_book"]
-    
-
-    KeyError: '6th_book'
+{% code overflow="wrap" %}
+```
 
 
+KeyErrorTraceback (most recent call last)
+
+<ipython-input-69-9dbfbd76b8e1> in <module>()
+----> 1 some_dict["6th_book"]
+
+
+KeyError: '6th_book'
+```
+{% endcode %}
 More correctly:
 
 
@@ -346,9 +370,13 @@ else:
     print("Martin!....:(")
 ```
 
-    Martin!....:(
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Martin!....:(
+```
+{% endcode %}
 Even better - use ```get()```
 
 > Using `get` is very "pythonic"
@@ -367,9 +395,13 @@ some_dict.get("6th_book", "Nope....")
 
 
 
-    'Nope....'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+'Nope....'
+```
+{% endcode %}
 
 ### Method `setdefault`
 
@@ -388,10 +420,13 @@ d
 
 
 
-    {'John': 'Snow', 'Aria': 'Stark'}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+{'John': 'Snow', 'Aria': 'Stark'}
+```
+{% endcode %}
 So, the code:
 
 
@@ -401,9 +436,13 @@ So, the code:
 print(d.setdefault("Robert", "Baration"))
 ```
 
-    Baration
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Baration
+```
+{% endcode %}
 is the same as:
 
 
@@ -415,9 +454,13 @@ if "Robert" not in d:
 print(d["Robert"])
 ```
 
-    Baration
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Baration
+```
+{% endcode %}
 If the default value is a list it can used for appending the needed value right away:
 
 
@@ -435,8 +478,13 @@ def counter(str_):
 print(counter(characters))
 ```
 
-    {'a': 7, 's': 4, 'd': 5, 'f': 3, 'g': 2}
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+{'a': 7, 's': 4, 'd': 5, 'f': 3, 'g': 2}
+```
+{% endcode %}
 
 ### Method `update`
 
@@ -462,10 +510,13 @@ d
 
 
 
-    {'a': 1, 'b': 2}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+{'a': 1, 'b': 2}
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -478,10 +529,13 @@ d
 
 
 
-    {'a': 1, 'b': 2}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+{'a': 1, 'b': 2}
+```
+{% endcode %}
 And crazy example - two syntaxes altogether:
 
 
@@ -496,9 +550,13 @@ d
 
 
 
-    {'Aria': 'Stark', 'Yaken': 'Gharr', 'Faceless': 'Man', 'some_other_key': 123}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+{'Aria': 'Stark', 'Yaken': 'Gharr', 'Faceless': 'Man', 'some_other_key': 123}
+```
+{% endcode %}
 
 ### Deleting
 
@@ -515,10 +573,13 @@ d
 
 
 
-    {'Aria': 'Stark', 'Faceless': 'Man', 'some_other_key': 123}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+{'Aria': 'Stark', 'Faceless': 'Man', 'some_other_key': 123}
+```
+{% endcode %}
 To clear all keys it is possible to use `clear()`
 
 
@@ -532,10 +593,13 @@ d
 
 
 
-    {}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+{}
+```
+{% endcode %}
 Also - just like with lists we have `pop()` and `popitem()` methods.
 
 * `pop(k [,v])` will return value by key `k` or default value `d`
@@ -552,11 +616,16 @@ print(d.popitem())
 print("What is left:", d)
 ```
 
-    Man
-    What is left: {'Aria': 'Stark', 'Yaken': 'Gharr', 'some_other_key': 123}
-    ('some_other_key', 123)
-    What is left: {'Aria': 'Stark', 'Yaken': 'Gharr'}
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Man
+What is left: {'Aria': 'Stark', 'Yaken': 'Gharr', 'some_other_key': 123}
+('some_other_key', 123)
+What is left: {'Aria': 'Stark', 'Yaken': 'Gharr'}
+```
+{% endcode %}
 
 ### Dictionary view objects
 
@@ -597,15 +666,19 @@ print(f"values:  (len is {len(values)}): {values}")
 print("list(values):", list(values))
 ```
 
-    dict is {'Alfa': 0, 'Bravo': 1, 'Charlie': 2, 'Delta': 3}
-     - - -
-    keys (len is dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])): dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
-    list(keys): ['Alfa', 'Bravo', 'Charlie', 'Delta']
-     - - -
-    values:  (len is 4): dict_values([0, 1, 2, 3])
-    list(values): [0, 1, 2, 3]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+dict is {'Alfa': 0, 'Bravo': 1, 'Charlie': 2, 'Delta': 3}
+ - - -
+keys (len is dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])): dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
+list(keys): ['Alfa', 'Bravo', 'Charlie', 'Delta']
+ - - -
+values:  (len is 4): dict_values([0, 1, 2, 3])
+list(values): [0, 1, 2, 3]
+```
+{% endcode %}
 Check how dynamic are `dictviews`:
 
 
@@ -620,9 +693,14 @@ del d['Delta']
 print("After:", d.keys())
 ```
 
-    Before: dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
-    After: dict_keys(['Alfa', 'Bravo'])
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Before: dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
+After: dict_keys(['Alfa', 'Bravo'])
+```
+{% endcode %}
 
 ## Dictionary comprehesions
 
@@ -636,10 +714,13 @@ print("After:", d.keys())
 
 
 
-    {0: 1, 1: 1, 2: 1, 3: 1, 4: 1}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+{0: 1, 1: 1, 2: 1, 3: 1, 4: 1}
+```
+{% endcode %}
 Not so oftenly used because:
 
 
@@ -652,10 +733,13 @@ Not so oftenly used because:
 
 
 
-    {0: 2, 1: 2, 2: 2}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+{0: 2, 1: 2, 2: 2}
+```
+{% endcode %}
 Sometimes dictionary comprehension is useful when you need to set a default mutable value (so `dict.fromkeys` is not good)
 
 
@@ -670,9 +754,13 @@ d
 
 
 
-    {'a': [1], 'b': [], 'c': [], 'd': [], 'e': []}
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+{'a': [1], 'b': [], 'c': [], 'd': [], 'e': []}
+```
+{% endcode %}
 
 ## Complexity of operations
 

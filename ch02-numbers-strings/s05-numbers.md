@@ -170,10 +170,13 @@ random.randrange(15)  # from 0 to 14, doesn't include 15
 
 
 
-    7
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+7
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -184,10 +187,13 @@ random.choice(["She loves me", "She doesn't love me"])
 
 
 
-    'She loves me'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'She loves me'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -198,9 +204,13 @@ random.shuffle(l)
 print(l)
 ```
 
-    [1, 4, 5, 3, 2]
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+[1, 4, 5, 3, 2]
+```
+{% endcode %}
 How random is "random"?
 
 
@@ -216,9 +226,14 @@ seed(123456)
 print([random() for _ in range(5)])
 ```
 
-    [0.8056271362589, 0.7940590105180981, 0.029425761106168014, 0.17465638335376021, 0.0022298761599784944]
-    [0.8056271362589, 0.7940590105180981, 0.029425761106168014, 0.17465638335376021, 0.0022298761599784944]
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+[0.8056271362589, 0.7940590105180981, 0.029425761106168014, 0.17465638335376021, 0.0022298761599784944]
+[0.8056271362589, 0.7940590105180981, 0.029425761106168014, 0.17465638335376021, 0.0022298761599784944]
+```
+{% endcode %}
 
 ### Problems with floating-point calculations
 
@@ -278,28 +293,32 @@ for _ in range(20):
     print(i)
 ```
 
-    0.1
-    0.2
-    0.30000000000000004
-    0.4
-    0.5
-    0.6
-    0.7
-    0.7999999999999999
-    0.8999999999999999
-    0.9999999999999999
-    1.0999999999999999
-    1.2
-    1.3
-    1.4000000000000001
-    1.5000000000000002
-    1.6000000000000003
-    1.7000000000000004
-    1.8000000000000005
-    1.9000000000000006
-    2.0000000000000004
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+0.1
+0.2
+0.30000000000000004
+0.4
+0.5
+0.6
+0.7
+0.7999999999999999
+0.8999999999999999
+0.9999999999999999
+1.0999999999999999
+1.2
+1.3
+1.4000000000000001
+1.5000000000000002
+1.6000000000000003
+1.7000000000000004
+1.8000000000000005
+1.9000000000000006
+2.0000000000000004
+```
+{% endcode %}
 Rounding has similar problems if number representation is approximated:
 
 
@@ -312,10 +331,13 @@ round(2.675, 2)
 
 
 
-    2.67
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+2.67
+```
+{% endcode %}
 Because it is: 2.67499999999999982236431605997495353221893310546875
 
 To see "true" value use **`decimal.Decimal`**:
@@ -331,10 +353,13 @@ Decimal(0.1)
 
 
 
-    Decimal('0.1000000000000000055511151231257827021181583404541015625')
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+Decimal('0.1000000000000000055511151231257827021181583404541015625')
+```
+{% endcode %}
 To set human-friendly numbers – convert string with number to Decimal :
 
 
@@ -347,9 +372,13 @@ Decimal('0.1') + Decimal('0.2')
 
 
 
-    Decimal('0.3')
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Decimal('0.3')
+```
+{% endcode %}
 
 ### Complex calculations
 
@@ -365,9 +394,13 @@ for x in range(1000, 1000000):
     10 / x
 ```
 
-    96.4 ms ± 1.19 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+96.4 ms ± 1.19 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -377,8 +410,13 @@ for x in range(1000, 1000000):
     10 / Decimal(x)
 ```
 
-    606 ms ± 6.88 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+606 ms ± 6.88 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+```
+{% endcode %}
 
 ### Scientific calculations
 
@@ -407,7 +445,14 @@ plt.show()
 ```
 
 
-    
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+
+```
+{% endcode %}
+
 ![png](../images/Basics_02_Strings_numbers_69_0.png)
     
 
@@ -423,5 +468,12 @@ plt.show()
 ```
 
 
-    
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+
+```
+{% endcode %}
+
 ![png](../images/Basics_02_Strings_numbers_70_0.png)

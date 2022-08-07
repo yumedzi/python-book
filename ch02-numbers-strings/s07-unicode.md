@@ -222,10 +222,13 @@ b'?'
 
 
 
-    b'&#1168;'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+b'&#1168;'
+```
+{% endcode %}
 Decoding:
 
 `bytes.decode(encoding='utf-8', errors='strict')`

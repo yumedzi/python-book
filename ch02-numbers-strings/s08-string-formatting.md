@@ -178,10 +178,13 @@ More examples:
 
 
 
-    'First thing in the morning is coffee'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'First thing in the morning is coffee'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -192,10 +195,13 @@ More examples:
 
 
 
-    "I'd like a cookie with coffee"
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+"I'd like a cookie with coffee"
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -206,10 +212,13 @@ More examples:
 
 
 
-    'Bring me coffee and cookie'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'Bring me coffee and cookie'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -220,10 +229,13 @@ More examples:
 
 
 
-    'Remember my name: Heisenberg'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'Remember my name: Heisenberg'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -235,10 +247,13 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 
 
 
-    'Remember my name: Heisenberg'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'Remember my name: Heisenberg'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -249,9 +264,13 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 
 
 
-    'String has this method: <built-in method isalpha of str object at 0x7f2112e2dc70>'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+'String has this method: <built-in method isalpha of str object at 0x7f2112e2dc70>'
+```
+{% endcode %}
 
 ### Differences between formatters:
 
@@ -307,13 +326,17 @@ print('''{0}!
 '''.format('TOM', 'No answer'))
 ```
 
-    TOM!
-    No answer. 
-    "TOM!" 
-    No answer. 
-    "What's gone with that boy, I wonder? You TOM!" No answer. 
-    
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+TOM!
+No answer. 
+"TOM!" 
+No answer. 
+"What's gone with that boy, I wonder? You TOM!" No answer.
+```
+{% endcode %}
 
 * Convert Values to different Bases 
     * You can use the following letters to convert a number to their bases:
@@ -326,8 +349,13 @@ print('''{0}!
 print ("{0:d} - {0:x} - {0:o} - {0:b}".format(21))
 ```
 
-    21 - 15 - 25 - 10101
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+21 - 15 - 25 - 10101
+```
+{% endcode %}
 
 * Escaping braces:
 
@@ -338,8 +366,13 @@ print ("{0:d} - {0:x} - {0:o} - {0:b}".format(21))
 print ( "{{0}} / {}".format("TEST") )
 ```
 
-    {0} / TEST
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+{0} / TEST
+```
+{% endcode %}
 
 #### f-strings formatting
 
@@ -368,12 +401,16 @@ print(f'{var:_^12.3f}')
 print(f'{var:^10}')
 ```
 
-    34.125
-    00000034.125
-    ___34.125___
-      34.125  
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+34.125
+00000034.125
+___34.125___
+  34.125
+```
+{% endcode %}
 In case interpolating var is not defined - you'll get regular NameError:
 
 
@@ -384,17 +421,21 @@ f'{unexistent_var}'
 ```
 
 
-    
+📟 _<mark style="color:green;">Output:</mark>_
 
-    NameErrorTraceback (most recent call last)
-
-    <ipython-input-71-a2838fe909a3> in <module>
-    ----> 1 f'{unexistent_var}'
-    
-
-    NameError: name 'unexistent_var' is not defined
+{% code overflow="wrap" %}
+```
 
 
+NameErrorTraceback (most recent call last)
+
+<ipython-input-71-a2838fe909a3> in <module>
+----> 1 f'{unexistent_var}'
+
+
+NameError: name 'unexistent_var' is not defined
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -403,16 +444,21 @@ f'{1/0}'
 ```
 
 
-    
+📟 _<mark style="color:green;">Output:</mark>_
 
-    ZeroDivisionErrorTraceback (most recent call last)
+{% code overflow="wrap" %}
+```
 
-    <ipython-input-72-a9fc87ed0d89> in <module>
-    ----> 1 f'{1/0}'
-    
 
-    ZeroDivisionError: division by zero
+ZeroDivisionErrorTraceback (most recent call last)
 
+<ipython-input-72-a9fc87ed0d89> in <module>
+----> 1 f'{1/0}'
+
+
+ZeroDivisionError: division by zero
+```
+{% endcode %}
 
 `f-string` are evaluated only during creation (once):
 
@@ -426,9 +472,13 @@ str_ = f'Value is {value}'
 print(str_)
 ```
 
-    Value is 100500
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Value is 100500
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -437,9 +487,13 @@ value = 42
 print(str_)
 ```
 
-    Value is 100500
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Value is 100500
+```
+{% endcode %}
 Expressions may be evaluated directly inside a string:
 
 
@@ -452,10 +506,13 @@ f'{ 1 + 2 }'
 
 
 
-    '3'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'3'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -467,10 +524,13 @@ f'{"just another string"}'
 
 
 
-    'quoted string'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'quoted string'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -484,10 +544,13 @@ f'{d["a"], l[2:5]}'
 
 
 
-    '(100500, [3, 4, 5])'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'(100500, [3, 4, 5])'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -497,10 +560,14 @@ def foo(x):
 print(f'Result of function is:\n{foo("John")}')
 ```
 
-    Result of function is:
-    Hello! John
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Result of function is:
+Hello! John
+```
+{% endcode %}
 Format int value as hex:
 
 
@@ -514,10 +581,13 @@ f'input={value:#x}'
 
 
 
-    'input=0x4d2'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'input=0x4d2'
+```
+{% endcode %}
 Format `datetime` objects (see [docs for datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior):
 
 
@@ -530,15 +600,19 @@ print(now.strftime("%a %d/%m/%Y"))
 f'It was: {now:%a %d/%m/%Y}'
 ```
 
-    Mon 01/03/2021
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Mon 01/03/2021
 
 
 
 
 
-    'It was: Mon 01/03/2021'
-
-
+'It was: Mon 01/03/2021'
+```
+{% endcode %}
 
 ### Dynamic width
 
@@ -557,9 +631,13 @@ f'result: {value:{width}.{precision}f}'
 
 
 
-    'result:     12.34567'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+'result:     12.34567'
+```
+{% endcode %}
 
 ####  Templates
 
@@ -578,5 +656,12 @@ d = dict(who='tim')
 print(Template('$who likes $cookies').safe_substitute(d)) # proper way
 ```
 
-    Johnny likes whiskey
-    tim likes $cookies
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Johnny likes whiskey
+tim likes $cookie
+```
+{% endcode %}
+s

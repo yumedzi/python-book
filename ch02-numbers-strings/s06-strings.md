@@ -224,9 +224,13 @@ True
 
 
 
-    (True, True, True)
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+(True, True, True)
+```
+{% endcode %}
 
 ##### Nice examples regarding checks:
 
@@ -241,10 +245,13 @@ low_str.islower(), low_str.isupper()
 
 
 
-    (True, False)
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+(True, False)
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -257,10 +264,13 @@ almost_digit_str.isdigit(), true_digit_str.isdigit()
 
 
 
-    (False, True)
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+(False, True)
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -274,9 +284,13 @@ phone_num.isalpha(), name.isalpha(), name_with_spaces.isalpha()
 
 
 
-    (False, True, False)
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+(False, True, False)
+```
+{% endcode %}
 
 ### Checks of numeric/digits
 
@@ -331,19 +345,24 @@ for str_ in TEST_STRINGS:
         print(f'{method_str:23} 🡒 {eval(method_str)}')
 ```
 
-    '123'.isdecimal()       🡒 True
-    '123'.isdigit()         🡒 True
-    '123'.isnumeric()       🡒 True
-    '1₂34⁵'.isdecimal()     🡒 False
-    '1₂34⁵'.isdigit()       🡒 True
-    '1₂34⁵'.isnumeric()     🡒 True
-    '½¾⅚'.isdecimal()       🡒 False
-    '½¾⅚'.isdigit()         🡒 False
-    '½¾⅚'.isnumeric()       🡒 True
-    '一二三'.isdecimal()       🡒 False
-    '一二三'.isdigit()         🡒 False
-    '一二三'.isnumeric()       🡒 True
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+'123'.isdecimal()       🡒 True
+'123'.isdigit()         🡒 True
+'123'.isnumeric()       🡒 True
+'1₂34⁵'.isdecimal()     🡒 False
+'1₂34⁵'.isdigit()       🡒 True
+'1₂34⁵'.isnumeric()     🡒 True
+'½¾⅚'.isdecimal()       🡒 False
+'½¾⅚'.isdigit()         🡒 False
+'½¾⅚'.isnumeric()       🡒 True
+'一二三'.isdecimal()       🡒 False
+'一二三'.isdigit()         🡒 False
+'一二三'.isnumeric()       🡒 True
+```
+{% endcode %}
 
 ##### Checking for space-containing strings
 * To check for all-spaces string - use ```.isspace()```
@@ -358,9 +377,13 @@ for str_ in TEST_STRINGS:
 
 
 
-    (True, True)
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+(True, True)
+```
+{% endcode %}
 
 * A bit hackish way to check for alphabeticals with spaces - via using ```.replace()```
 
@@ -374,9 +397,13 @@ for str_ in TEST_STRINGS:
 
 
 
-    True
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+True
+```
+{% endcode %}
 
 ##### Stripping - removing whitespaces
 * ```.strip()``` - remove from the beginning and from the end both
@@ -394,11 +421,16 @@ print("R-stripped string: >>>" + whitespaces_str.rstrip() + "<<<")
 print("L-stripped string: >>>" + whitespaces_str.lstrip() + "<<<")
 ```
 
-    Initial string:   >>>  Some text goes and goes...  <<<
-    Stripped string: >>>Some text goes and goes...<<<
-    R-stripped string: >>>  Some text goes and goes...<<<
-    L-stripped string: >>>Some text goes and goes...  <<<
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Initial string:   >>>  Some text goes and goes...  <<<
+Stripped string: >>>Some text goes and goes...<<<
+R-stripped string: >>>  Some text goes and goes...<<<
+L-stripped string: >>>Some text goes and goes...  <<<
+```
+{% endcode %}
 
 ##### Get character by index (it's possible because string is sequence)
 
@@ -414,9 +446,13 @@ some_string, some_string[0], some_string[3], some_string[-1]
 
 
 
-    ('Some funny string!', 'S', 'e', '!')
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+('Some funny string!', 'S', 'e', '!')
+```
+{% endcode %}
 
 ##### Slicing
 ```some_str[start:stop[:step]]``` (again sequence-like syntax) - getting part of sequence. 
@@ -435,10 +471,13 @@ some_string[0:4], some_string[5:10], some_string[0:-1], some_string[:]
 
 
 
-    ('Some', 'funny', 'Some funny string', 'Some funny string!')
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+('Some', 'funny', 'Some funny string', 'Some funny string!')
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -449,9 +488,13 @@ some_string[:10:2], some_string[::3], some_string[::-1]
 
 
 
-    ('Sm un', 'Seuytn', '!gnirts ynnuf emoS')
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+('Sm un', 'Seuytn', '!gnirts ynnuf emoS')
+```
+{% endcode %}
 
 ##### Splitting/joining
 
@@ -467,13 +510,17 @@ print(some_string.split("!"))
 print(some_string.split("ZZZZ"))
 ```
 
-    ['sdfsdfsdf', '!', '', '', '', '', 'sdfsdff', '\t', '\n', 'wdfwefwefwef', 'wefwef']
-    ['sdfsdfsdf', '!', 'sdfsdff', 'wdfwefwefwef', 'wefwef']
-    ['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
-    ['sdfsdfsdf ', '     sdfsdff \t \n wdfwefwefwef wefwef']
-    ['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+['sdfsdfsdf', '!', '', '', '', '', 'sdfsdff', '\t', '\n', 'wdfwefwefwef', 'wefwef']
+['sdfsdfsdf', '!', 'sdfsdff', 'wdfwefwefwef', 'wefwef']
+['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
+['sdfsdfsdf ', '     sdfsdff \t \n wdfwefwefwef wefwef']
+['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -482,9 +529,14 @@ print("---".join(["First", "Second", "Third"]))
 print(",".join(some_string.split()))
 ```
 
-    First---Second---Third
-    sdfsdfsdf,!,sdfsdff,wdfwefwefwef,wefwef
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+First---Second---Third
+sdfsdfsdf,!,sdfsdff,wdfwefwefwef,wefwef
+```
+{% endcode %}
 
 ### Concatenation
 
@@ -500,10 +552,13 @@ Rare case where string can be merged if they are separated by any number of spac
 
 
 
-    'Hello World'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+'Hello World'
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -514,9 +569,13 @@ some_big_string = "Dear Katerina Matveevna! " \
 print(some_big_string)
 ```
 
-    Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -527,8 +586,13 @@ some_big_string = ("Dear Katerina Matveevna! "
 print(some_big_string)
 ```
 
-    Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
+```
+{% endcode %}
 
 ### Unicode
 
@@ -548,9 +612,13 @@ import string
 print(len(string.ascii_letters) + len(string.digits) + len(string.punctuation) + len(string.whitespace))
 ```
 
-    100
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+100
+```
+{% endcode %}
 In Python we can get ASCII "index" of the character with builtin function `ord` and get the character by that index with function `chr`.
 
 
@@ -561,10 +629,14 @@ print(chr(65))
 print(ord("A"))
 ```
 
-    A
-    65
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+A
+65
+```
+{% endcode %}
 Please note that in fact these functions work with Unicode table (that we will cover in a minute) but Unicode table begins with ASCII and extends it.
 
 We can get all 128 characters of ASCII:
@@ -576,11 +648,15 @@ We can get all 128 characters of ASCII:
 print("ASCII:\n", ''.join(chr(x) for x in range(128)))
 ```
 
-    ASCII:
-      	
-     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+ASCII:
+  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+```
+{% endcode %}
 So, ASCII is great we can't write neither cyrillic texts like `ґуґл з'їв яйко-сподівайко` nor swedish like `Surströmming` with it. The reason is simple - this table just doesn't have needed codepoints for non-latin characters.
 
 That's why at some point other encodings (tables of codepoints) used all 8 bits were created:
@@ -601,5 +677,12 @@ print("ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
 #print("ґуґл з'їв яйко-сподівайко".encode("latin-1")) # WON'T WORK
 ```
 
-    b'Surstr\xf6mming'
-    b"\xb4\xf3\xb4\xeb \xe7'\xbf\xe2 \xff\xe9\xea\xee-\xf1\xef\xee\xe4\xb3\xe2\xe0\xe9\xea\xee"
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+b'Surstr\xf6mming'
+b"\xb4\xf3\xb4\xeb \xe7'\xbf\xe2 \xff\xe9\xea\xee-\xf1\xef\xee\xe4\xb3\xe2\xe0\xe9\xea\xe
+```
+{% endcode %}
+e"

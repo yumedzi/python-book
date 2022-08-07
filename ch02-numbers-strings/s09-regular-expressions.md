@@ -255,13 +255,31 @@ If they successfully match the pattern - they will return special `re.Match` obj
 {% endcode %}
 
 * ```group()```
-    * Return the string matched by the RE	
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+* Return the string matched by the RE
+```
+{% endcode %}
+
 * ```start()```, ```end()```
-    * Return the starting/ending position of the match	
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+* Return the starting/ending position of the match
+```
+{% endcode %}
+
 * ```span()```
-    * Return a tuple containing the (start, end) positions of the match
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+* Return a tuple containing the (start, end) positions of the match
+```
+{% endcode %}
 An example of using groups and match object:
 
 
@@ -283,14 +301,18 @@ if m:
     print(text[22:34])
 ```
 
-    <re.Match object; span=(10, 34), match='Foo bar 12x Foo asd  34 '>
-    ('asd', '34')
-    Foo bar 12x Foo asd  34 
-    34
-    asd
-    Foo asd  34 
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+<re.Match object; span=(10, 34), match='Foo bar 12x Foo asd  34 '>
+('asd', '34')
+Foo bar 12x Foo asd  34 
+34
+asd
+Foo asd  34
+```
+{% endcode %}
 An example of re-using the previously found group in the regexp. Here we try to find the username and password for the main account (which is defined by `main_user` config option):
 
 > NOTE: we use `re.S` (singleline) flag to make `.` to match any characters including `\n` too.
@@ -313,9 +335,13 @@ re.search(r"main_user: (\w+).*credential\s+\1:([^\n]*)", config, re.S).groups()
 
 
 
-    ('user02', 'U2_^&%^$^sdghjf23')
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+('user02', 'U2_^&%^$^sdghjf23')
+```
+{% endcode %}
 
 ### Multiple matching
 
@@ -358,15 +384,19 @@ for m in re.finditer(pattern, text):
     print(f"User <{email}>: {first_name} {second_name}")
 ```
 
-    Result of re.findall: [('cmonet324@salon_paris.com', 'Claude', 'Monet'), ('Elizabeth2@windsor.com', 'Elizabeth', 'II'), ('b.allen@starlabs.com', 'Barry', 'Allen')]
-    User <cmonet324@salon_paris.com>: Claude Monet
-    User <Elizabeth2@windsor.com>: Elizabeth II
-    User <b.allen@starlabs.com>: Barry Allen
-    User <cmonet324@salon_paris.com>: Claude Monet
-    User <Elizabeth2@windsor.com>: Elizabeth II
-    User <b.allen@starlabs.com>: Barry Allen
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+Result of re.findall: [('cmonet324@salon_paris.com', 'Claude', 'Monet'), ('Elizabeth2@windsor.com', 'Elizabeth', 'II'), ('b.allen@starlabs.com', 'Barry', 'Allen')]
+User <cmonet324@salon_paris.com>: Claude Monet
+User <Elizabeth2@windsor.com>: Elizabeth II
+User <b.allen@starlabs.com>: Barry Allen
+User <cmonet324@salon_paris.com>: Claude Monet
+User <Elizabeth2@windsor.com>: Elizabeth II
+User <b.allen@starlabs.com>: Barry Allen
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -377,9 +407,13 @@ pattern
 
 
 
-    'user: ([\\w\\d@\\._]+)\naccount: \\w+\\\\(\\w+)\\.?(\\w*)?'
+📟 _<mark style="color:green;">Output:</mark>_
 
-
+{% code overflow="wrap" %}
+```
+'user: ([\\w\\d@\\._]+)\naccount: \\w+\\\\(\\w+)\\.?(\\w*)?'
+```
+{% endcode %}
 
 * string `user: `
 * text containing words, digits, `@`, dots and `_` - capturing as group `#1`
@@ -422,10 +456,13 @@ re.findall(r"<span>(.*)</span>", html)
 
 
 
-    ['text1</span> and <span>text2</span> and <span>text3']
+📟 _<mark style="color:green;">Output:</mark>_
 
-
-
+{% code overflow="wrap" %}
+```
+['text1</span> and <span>text2</span> and <span>text3']
+```
+{% endcode %}
 To make these quantifiers (`*` and `+`) lazy (non-greedy) to much as few as possible we can add `?` to them.
 Now the example from above correctly returns the contents of all `<span>` tags:
 
@@ -441,4 +478,11 @@ re.findall(r"<span>(.*?)</span>", html)
 
 
 
-    ['text1', 'text2', 'text3']
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+['text1', 'text2', 'text
+```
+{% endcode %}
+3']

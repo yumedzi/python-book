@@ -72,8 +72,8 @@ Lists are indexable, starting at 0
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print (some_list)
-some_list[0]
+print(some_list)
+print(some_list[0])
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -140,23 +140,15 @@ some_list[-1]
 
 ```python
 print (some_list)
-len(some_list)
+print(len(some_list))
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}
-```
-[4, 8, 15, 16, 23, 42]
-```
-{% endcode %}
-
-
-
-
-
-
-    6
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #ff0000; text-decoration-color: #ff0000">╭──────────────────────────── </span><span style="color: #800000; text-decoration-color: #800000; font-weight: bold">Traceback </span><span style="color: #bf7f7f; text-decoration-color: #bf7f7f; font-weight: bold">(most recent call last)</span><span style="color: #ff0000; text-decoration-color: #ff0000"> ────────────────────────────╮</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000">│</span> <span style="color: #808000; text-decoration-color: #808000">&lt;ipython-input-1-025ea52905df&gt;</span>:<span style="color: #0000ff; text-decoration-color: #0000ff">1</span> in <span style="color: #00ff00; text-decoration-color: #00ff00">&lt;module&gt;</span>                                              <span style="color: #ff0000; text-decoration-color: #ff0000">│</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000">╰───────────────────────────────────────────────────────────────────────────────────────────╯</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000; font-weight: bold">NameError: </span>name <span style="color: #008000; text-decoration-color: #008000">'some_list'</span> is not defined
+</pre>
 
 
 

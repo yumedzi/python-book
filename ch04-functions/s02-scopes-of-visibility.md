@@ -72,14 +72,17 @@ print("now global is", all)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    builtin: <built-in function all>
-    global: [1, 2, 3]
-    enclosed: [1, 2, 3, 'changed!']
-    checking 'all': [1, 2, 3, 'changed!']
-    changing global: [7, 8, 9]
-    checking 'all': [1, 2, 3, 'changed!']
-    inner3 says: [1, 2, 3, 'changed!']
-    now global is [7, 8, 9]
+{% code overflow="wrap" %}```
+builtin: <built-in function all>
+global: [1, 2, 3]
+enclosed: [1, 2, 3, 'changed!']
+checking 'all': [1, 2, 3, 'changed!']
+changing global: [7, 8, 9]
+checking 'all': [1, 2, 3, 'changed!']
+inner3 says: [1, 2, 3, 'changed!']
+now global is [7, 8, 9]
+{% endcode %}
+
 
 
 
@@ -101,8 +104,11 @@ print(a, b, c)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    1
-    1 2 old string
+{% code overflow="wrap" %}```
+1
+1 2 old string
+{% endcode %}
+
 
 
 * `a` - free variable
@@ -135,10 +141,13 @@ print("Outside the function -> b:", b)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Inside the function -> a: 100
-    Inside the function -> b: 888
-    Outside the function -> a: 0
-    Outside the function -> b: 888
+{% code overflow="wrap" %}```
+Inside the function -> a: 100
+Inside the function -> b: 888
+Outside the function -> a: 0
+Outside the function -> b: 888
+{% endcode %}
+
 
 
 Get all locals, globals:
@@ -162,7 +171,10 @@ f()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {'c': 25}
+{% code overflow="wrap" %}```
+{'c': 25}
+{% endcode %}
+
 
 
 ### Enclosed scope
@@ -187,7 +199,10 @@ outer()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    local value
+{% code overflow="wrap" %}```
+local value
+{% endcode %}
+
 
 
 
@@ -208,7 +223,10 @@ outer()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    enclosed variable
+{% code overflow="wrap" %}```
+enclosed variable
+{% endcode %}
+
 
 
 Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
@@ -234,10 +252,13 @@ print(a)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    enclosed variable
-    changed enclosed variable
-    changed enclosed variable
-    global variable
+{% code overflow="wrap" %}```
+enclosed variable
+changed enclosed variable
+changed enclosed variable
+global variable
+{% endcode %}
+
 
 
 Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
@@ -294,7 +315,10 @@ foo()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    55
+{% code overflow="wrap" %}```
+55
+{% endcode %}
+
 
 
 

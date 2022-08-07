@@ -11,7 +11,10 @@ import this
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    The Zen of Python, by Tim Peters
+{% code overflow="wrap" %}```
+The Zen of Python, by Tim Peters
+{% endcode %}
+
     
     Beautiful is better than ugly.
     Explicit is better than implicit.

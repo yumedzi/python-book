@@ -88,7 +88,10 @@ A()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    <__main__.A object at 0x7ff51775b4a8>
+{% code overflow="wrap" %}```
+<__main__.A object at 0x7ff51775b4a8>
+{% endcode %}
+
 
 
 
@@ -120,7 +123,10 @@ A().__hash__()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    8793164831643
+{% code overflow="wrap" %}```
+8793164831643
+{% endcode %}
+
 
 
 
@@ -142,7 +148,10 @@ A.__bases__
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    (object,)
+{% code overflow="wrap" %}```
+(object,)
+{% endcode %}
+
 
 
 
@@ -162,8 +171,11 @@ help(A)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    None
-    Help on class A in module __main__:
+{% code overflow="wrap" %}```
+None
+Help on class A in module __main__:
+{% endcode %}
+
     
     class A(builtins.object)
      |  Data descriptors defined here:
@@ -194,7 +206,10 @@ A.__module__
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    '__main__'
+{% code overflow="wrap" %}```
+'__main__'
+{% endcode %}
+
 
 
 
@@ -217,7 +232,10 @@ bool(A())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    True
+{% code overflow="wrap" %}```
+True
+{% endcode %}
+
 
 
 
@@ -265,8 +283,11 @@ print(b1 <= b2)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    True
-    False
+{% code overflow="wrap" %}```
+True
+False
+{% endcode %}
+
 
 
 ### Iterator protocol
@@ -309,7 +330,10 @@ c.__dict__
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {'b': 2}
+{% code overflow="wrap" %}```
+{'b': 2}
+{% endcode %}
+
 
 
 

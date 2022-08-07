@@ -32,9 +32,12 @@ print(h2("Beatufiul World"))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Hello World
-    Margarita, Bye-bye, ja nai!..
-    Hello Beatufiul World
+{% code overflow="wrap" %}```
+Hello World
+Margarita, Bye-bye, ja nai!..
+Hello Beatufiul World
+{% endcode %}
+
 
 
 
@@ -51,7 +54,10 @@ pow_of_10(5) # 5 - second arg
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    100000.0
+{% code overflow="wrap" %}```
+100000.0
+{% endcode %}
+
 
 
 
@@ -72,7 +78,10 @@ quadrupler(2)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    16
+{% code overflow="wrap" %}```
+16
+{% endcode %}
+
 
 
 
@@ -97,7 +106,10 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    15
+{% code overflow="wrap" %}```
+15
+{% endcode %}
+
 
 
 
@@ -113,7 +125,10 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    15
+{% code overflow="wrap" %}```
+15
+{% endcode %}
+
 
 
 
@@ -132,7 +147,10 @@ Factorial, "ez mode":
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    120
+{% code overflow="wrap" %}```
+120
+{% endcode %}
+
 
 
 
@@ -148,7 +166,10 @@ functools.reduce(lambda x, y: x * y, range(1,6))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    120
+{% code overflow="wrap" %}```
+120
+{% endcode %}
+
 
 
 
@@ -165,7 +186,10 @@ functools.reduce(mul, range(1,6))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    120
+{% code overflow="wrap" %}```
+120
+{% endcode %}
+
 
 
 

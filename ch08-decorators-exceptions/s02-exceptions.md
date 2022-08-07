@@ -49,16 +49,19 @@ divide_ten([3])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    1)
-    5.0
-    Cool, no exceptions were triggered!
-    We're done with that.
-    2)
-    Oops, invalid - you can't pass 0. Error: float division by zero
-    We're done with that.
-    3)
-    Wrong type! <class 'list'>
-    We're done with that.
+{% code overflow="wrap" %}```
+1)
+5.0
+Cool, no exceptions were triggered!
+We're done with that.
+2)
+Oops, invalid - you can't pass 0. Error: float division by zero
+We're done with that.
+3)
+Wrong type! <class 'list'>
+We're done with that.
+{% endcode %}
+
 
 
 Another working example:
@@ -84,7 +87,10 @@ get_item()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Enter index: -5
+{% code overflow="wrap" %}```
+Enter index: -5
+{% endcode %}
+
 
 
 
@@ -167,9 +173,12 @@ main(3)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Oops, can't div by zero!
-    ERROR: Can't work with negative numbers
-    3.3333333333333335
+{% code overflow="wrap" %}```
+Oops, can't div by zero!
+ERROR: Can't work with negative numbers
+3.3333333333333335
+{% endcode %}
+
 
 
 ## Referring to exceptions
@@ -198,8 +207,11 @@ except:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
-    /tmp/1123123.txt
+{% code overflow="wrap" %}```
+OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
+/tmp/1123123.txt
+{% endcode %}
+
 
 
 ## Catching multiple exceptions
@@ -221,7 +233,10 @@ except (IOError, ValueError) as e:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Data or file error: [Errno 2] No such file or directory: 'myfile.txt'
+{% code overflow="wrap" %}```
+Data or file error: [Errno 2] No such file or directory: 'myfile.txt'
+{% endcode %}
+
 
 
 ## assert

@@ -72,7 +72,10 @@ print(__name__)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    __main__
+{% code overflow="wrap" %}```
+__main__
+{% endcode %}
+
 
 
 Execution of modules as scripts:

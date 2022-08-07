@@ -84,9 +84,12 @@ f1()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    No complains at this point!
-    ------------------------------
-    Now you'll get the error:
+{% code overflow="wrap" %}```
+No complains at this point!
+------------------------------
+Now you'll get the error:
+{% endcode %}
+
 
 
 
@@ -130,8 +133,11 @@ print(foo()) # Will return 100500 because during call global a equals to 100500
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    10
-    100500
+{% code overflow="wrap" %}```
+10
+100500
+{% endcode %}
+
 
 
 But most often the function relies on the data passed to it:
@@ -150,10 +156,13 @@ print(sum(x=5))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    74
-    74
-    54
-    54
+{% code overflow="wrap" %}```
+74
+74
+54
+54
+{% endcode %}
+
 
 
 We can assign default argument:
@@ -178,9 +187,12 @@ print(random_phrase(length=6))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    evil unicorns
-    I think ehmm evil unicorns
-    ehmm umm unicorns evil nice unicorns
+{% code overflow="wrap" %}```
+evil unicorns
+I think ehmm evil unicorns
+ehmm umm unicorns evil nice unicorns
+{% endcode %}
+
 
 
 Using list comprehesion we can make this function very short
@@ -197,7 +209,10 @@ print(random_phrase(length=5))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    evil umm ehmm I think evil
+{% code overflow="wrap" %}```
+evil umm ehmm I think evil
+{% endcode %}
+
 
 
 ## Arguments definitions
@@ -266,7 +281,10 @@ print_strings("Hello", "World")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Hello World
+{% code overflow="wrap" %}```
+Hello World
+{% endcode %}
+
 
 
 ### Keyword arguments
@@ -285,8 +303,11 @@ print_strings(str2="James Bond", str1="Bond,")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Hello World
-    Bond, James Bond
+{% code overflow="wrap" %}```
+Hello World
+Bond, James Bond
+{% endcode %}
+
 
 
 ### Default arguments
@@ -305,8 +326,11 @@ add_friend(name="Mark")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Friend Mark (20) added
-    Friend Mark (20) added
+{% code overflow="wrap" %}```
+Friend Mark (20) added
+Friend Mark (20) added
+{% endcode %}
+
 
 
 ### Variable-length arguments 

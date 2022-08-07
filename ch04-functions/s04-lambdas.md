@@ -49,7 +49,10 @@ f(2, 6)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    8
+{% code overflow="wrap" %}```
+8
+{% endcode %}
+
 
 
 
@@ -65,7 +68,10 @@ list(map(lambda x: x**2, range(5)))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    [0, 1, 4, 9, 16]
+{% code overflow="wrap" %}```
+[0, 1, 4, 9, 16]
+{% endcode %}
+
 
 
 
@@ -114,8 +120,11 @@ f2 = lambda: len([ x for x in range(10000)])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    654 µs ± 13.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-    663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+{% code overflow="wrap" %}```
+654 µs ± 13.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+{% endcode %}
+
 
 
 This is because lambda is syntax sugar and in the end almost the same code is being constructed
@@ -130,17 +139,20 @@ dis.dis(f1)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-      2           0 LOAD_GLOBAL              0 (len)
-                  3 LOAD_CONST               1 (<code object <listcomp> at 0x103e14c90, file "<ipython-input-67-9c2575e1edb3>", line 2>)
-                  6 LOAD_CONST               2 ('f1.<locals>.<listcomp>')
-                  9 MAKE_FUNCTION            0
-                 12 LOAD_GLOBAL              1 (range)
-                 15 LOAD_CONST               3 (10000)
-                 18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 21 GET_ITER
-                 22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 28 RETURN_VALUE
+{% code overflow="wrap" %}```
+  2           0 LOAD_GLOBAL              0 (len)
+              3 LOAD_CONST               1 (<code object <listcomp> at 0x103e14c90, file "<ipython-input-67-9c2575e1edb3>", line 2>)
+              6 LOAD_CONST               2 ('f1.<locals>.<listcomp>')
+              9 MAKE_FUNCTION            0
+             12 LOAD_GLOBAL              1 (range)
+             15 LOAD_CONST               3 (10000)
+             18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             21 GET_ITER
+             22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             28 RETURN_VALUE
+{% endcode %}
+
 
 
 
@@ -152,14 +164,17 @@ dis.dis(f2)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-      4           0 LOAD_GLOBAL              0 (len)
-                  3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)
-                  6 LOAD_CONST               2 ('<lambda>.<locals>.<listcomp>')
-                  9 MAKE_FUNCTION            0
-                 12 LOAD_GLOBAL              1 (range)
-                 15 LOAD_CONST               3 (10000)
-                 18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 21 GET_ITER
-                 22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+{% code overflow="wrap" %}```
+  4           0 LOAD_GLOBAL              0 (len)
+              3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)
+              6 LOAD_CONST               2 ('<lambda>.<locals>.<listcomp>')
+              9 MAKE_FUNCTION            0
+             12 LOAD_GLOBAL              1 (range)
+             15 LOAD_CONST               3 (10000)
+             18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             21 GET_ITER
+             22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+{% endcode %}
+
                  28 RETURN_VALUE

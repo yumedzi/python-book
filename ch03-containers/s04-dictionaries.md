@@ -30,7 +30,10 @@ new_d
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}
+{% code overflow="wrap" %}```
+{'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}
+{% endcode %}
+
 
 
 
@@ -49,7 +52,10 @@ new_d
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {'name': 'John', 'surname': 'Stark'}
+{% code overflow="wrap" %}```
+{'name': 'John', 'surname': 'Stark'}
+{% endcode %}
+
 
 
 
@@ -68,8 +74,11 @@ print("d2:", d2)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    d1: {'Aria': 'Stark', 'Faceless': 'Man'}
-    d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
+{% code overflow="wrap" %}```
+d1: {'Aria': 'Stark', 'Faceless': 'Man'}
+d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
+{% endcode %}
+
 
 
 Using method `dict.fromkeys` we can create a new dict from an iterable (some collection) of keys.
@@ -87,7 +96,10 @@ dict.fromkeys(["name", "surname"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {'name': None, 'surname': None}
+{% code overflow="wrap" %}```
+{'name': None, 'surname': None}
+{% endcode %}
+
 
 
 
@@ -103,7 +115,10 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}
+{% code overflow="wrap" %}```
+{'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}
+{% endcode %}
+
 
 
 
@@ -122,7 +137,10 @@ d
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {'a': [], 'b': [], 'c': [], 'd': [], 'e': []}
+{% code overflow="wrap" %}```
+{'a': [], 'b': [], 'c': [], 'd': [], 'e': []}
+{% endcode %}
+
 
 
 
@@ -139,7 +157,10 @@ d
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}
+{% code overflow="wrap" %}```
+{'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}
+{% endcode %}
+
 
 
 
@@ -159,7 +180,10 @@ d1 is d2, d2
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    (False, {'some_key': 'some_value'})
+{% code overflow="wrap" %}```
+(False, {'some_key': 'some_value'})
+{% endcode %}
+
 
 
 

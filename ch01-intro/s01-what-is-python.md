@@ -15,7 +15,10 @@ print("Hello World")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Hello World
+{% code overflow="wrap" %}```
+Hello World
+{% endcode %}
+
 
 
 
@@ -27,7 +30,10 @@ print "Hello World" # Python 2
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Hello World
+{% code overflow="wrap" %}```
+Hello World
+{% endcode %}
+
 
 
 ## What is Python?

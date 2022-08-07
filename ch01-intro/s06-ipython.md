@@ -53,7 +53,10 @@ To run any command at the system shell, simply prefix it with !, e.g.:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    /notebooks
+{% code overflow="wrap" %}```
+/notebooks
+{% endcode %}
+
 
 
 ### Ipython magic functions
@@ -76,7 +79,10 @@ The following examples show how to call the builtin %timeit magic, both in line 
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    502 ns ± 4.41 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
+{% code overflow="wrap" %}```
+502 ns ± 4.41 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
+{% endcode %}
+
 
 
 
@@ -89,7 +95,10 @@ max(x)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    609 µs ± 2.23 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+{% code overflow="wrap" %}```
+609 µs ± 2.23 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+{% endcode %}
+
 
 
 The builtin magics include:

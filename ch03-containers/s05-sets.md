@@ -28,8 +28,11 @@ print(set_b)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    {1, 2, 3, 4}
-    {1, 2, 3, 4}
+{% code overflow="wrap" %}```
+{1, 2, 3, 4}
+{1, 2, 3, 4}
+{% endcode %}
+
 
 
 Main methods
@@ -46,23 +49,26 @@ Main methods
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    ['add',
-     'clear',
-     'copy',
-     'difference',
-     'difference_update',
-     'discard',
-     'intersection',
-     'intersection_update',
-     'isdisjoint',
-     'issubset',
-     'issuperset',
-     'pop',
-     'remove',
-     'symmetric_difference',
-     'symmetric_difference_update',
-     'union',
-     'update']
+{% code overflow="wrap" %}```
+['add',
+ 'clear',
+ 'copy',
+ 'difference',
+ 'difference_update',
+ 'discard',
+ 'intersection',
+ 'intersection_update',
+ 'isdisjoint',
+ 'issubset',
+ 'issuperset',
+ 'pop',
+ 'remove',
+ 'symmetric_difference',
+ 'symmetric_difference_update',
+ 'union',
+ 'update']
+{% endcode %}
+
 
 
 

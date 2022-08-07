@@ -73,7 +73,10 @@ s.upper()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    'ҐУҐЛ 💝 ☕'
+{% code overflow="wrap" %}```
+'ҐУҐЛ 💝 ☕'
+{% endcode %}
+
 
 
 
@@ -89,7 +92,10 @@ s[0]
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    'ґ'
+{% code overflow="wrap" %}```
+'ґ'
+{% endcode %}
+
 
 
 
@@ -105,7 +111,10 @@ s[0]
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    'ґ and ☕'
+{% code overflow="wrap" %}```
+'ґ and ☕'
+{% endcode %}
+
 
 
 
@@ -122,8 +131,11 @@ print(unicodedata.name("☕"))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    CYRILLIC SMALL LETTER GHE WITH UPTURN
-    HOT BEVERAGE
+{% code overflow="wrap" %}```
+CYRILLIC SMALL LETTER GHE WITH UPTURN
+HOT BEVERAGE
+{% endcode %}
+
 
 
 
@@ -137,8 +149,11 @@ print(unicodedata.lookup(cap_char))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    CYRILLIC CAPITAL LETTER GHE WITH UPTURN
-    Ґ
+{% code overflow="wrap" %}```
+CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+Ґ
+{% endcode %}
+
 
 
 ### Encoding and Decoding
@@ -177,7 +192,10 @@ Encoding:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    b''
+{% code overflow="wrap" %}```
+b''
+{% endcode %}
+
 
 
 
@@ -193,7 +211,10 @@ Encoding:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    b'?'
+{% code overflow="wrap" %}```
+b'?'
+{% endcode %}
+
 
 
 
@@ -207,7 +228,10 @@ Encoding:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    b'&#1168;'
+{% code overflow="wrap" %}```
+b'&#1168;'
+{% endcode %}
+
 
 
 

@@ -93,10 +93,13 @@ print(scream)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    LaLaLa
-    LaLaLaLaLaLaLaLaLaLaLaLaLaLaLa
-    Oops, Exception:  name 'song' is not defined
-    <function Super Song at 0x103fe2a60>
+{% code overflow="wrap" %}```
+LaLaLa
+LaLaLaLaLaLaLaLaLaLaLaLaLaLaLa
+Oops, Exception:  name 'song' is not defined
+<function Super Song at 0x103fe2a60>
+{% endcode %}
+
 
 
 `2`. We can define function everywhere! It will exist in that namespace only. #easy!
@@ -121,8 +124,11 @@ print(music(10))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
-    Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
+{% code overflow="wrap" %}```
+New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
+Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
+{% endcode %}
+
 
 
 Of course we can't access internal functions in any way...
@@ -139,7 +145,10 @@ except NameError as e:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Oh, we can't acces this function outside: name '_random_music' is not defined
+{% code overflow="wrap" %}```
+Oh, we can't acces this function outside: name '_random_music' is not defined
+{% endcode %}
+
 
 
 `3`. We can even `return` function as function's result. After this we can use that object as new function itself.
@@ -166,10 +175,13 @@ print(party()())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
-    Notes: Do,Fa,Si,Si,Do,Do,Do,Do,Fa,Do,La,Fa,Re,La,Si
-    New pop-hit: Oooh-Toonc
-    Notes: Si,Re
+{% code overflow="wrap" %}```
+New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
+Notes: Do,Fa,Si,Si,Do,Do,Do,Do,Fa,Do,La,Fa,Re,La,Si
+New pop-hit: Oooh-Toonc
+Notes: Si,Re
+{% endcode %}
+
 
 
 ## Decorator syntax and examples
@@ -217,9 +229,12 @@ greet()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    >>> Before running function
-    Hello!
-    >>> After running function
+{% code overflow="wrap" %}```
+>>> Before running function
+Hello!
+>>> After running function
+{% endcode %}
+
 
 
 Another example:
@@ -245,9 +260,12 @@ print(price(100, tax_rate=.1))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    <function dollar.<locals>.wrapper at 0x7f208019f8b0>
-    Args are: (100,), KWArgs: {'tax_rate': 0.1}
-    $110.0
+{% code overflow="wrap" %}```
+<function dollar.<locals>.wrapper at 0x7f208019f8b0>
+Args are: (100,), KWArgs: {'tax_rate': 0.1}
+$110.0
+{% endcode %}
+
 
 
 The same example, but in one line:
@@ -269,7 +287,10 @@ f()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    '$100'
+{% code overflow="wrap" %}```
+'$100'
+{% endcode %}
+
 
 
 
@@ -302,7 +323,10 @@ f(3, 5)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    '{"result": 243}'
+{% code overflow="wrap" %}```
+'{"result": 243}'
+{% endcode %}
+
 
 
 

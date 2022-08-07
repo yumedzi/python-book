@@ -72,7 +72,10 @@ if condition:
 ```
 📟 _<mark style="color:green;">Output:</mark>_
 
-            
+{% code overflow="wrap" %}```
+
+{% endcode %}
+
 
 If code block is not big it is allowed to use inline form:
 
@@ -147,7 +150,10 @@ help(f)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Help on function f in module __main__:
+{% code overflow="wrap" %}```
+Help on function f in module __main__:
+{% endcode %}
+
     
     f()
         Some nice function (the best in the world)

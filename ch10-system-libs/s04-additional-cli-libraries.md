@@ -222,7 +222,10 @@ for i in tqdm(range(10000)):
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    100%|██████████| 10000/10000 [00:11<00:00, 902.17it/s] 
+{% code overflow="wrap" %}```
+100%|██████████| 10000/10000 [00:11<00:00, 902.17it/s]
+{% endcode %}
+
 
 
 ### Colorama
@@ -253,12 +256,15 @@ print('back to normal now')
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    [33m[44msome yellow text
-    [42mand with a green background
-    Test..
-    [41m[2mand in dim text
-    [0m
-    back to normal now
+{% code overflow="wrap" %}```
+[33m[44msome yellow text
+[42mand with a green background
+Test..
+[41m[2mand in dim text
+[0m
+back to normal now
+{% endcode %}
+
 
 
 ### Yaspin
@@ -302,7 +308,10 @@ now_in_kiev
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
+{% code overflow="wrap" %}```
+DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
+{% endcode %}
+
 
 
 
@@ -318,7 +327,10 @@ len(pendulum.timezones)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    592
+{% code overflow="wrap" %}```
+592
+{% endcode %}
+
 
 
 
@@ -334,8 +346,11 @@ print(pendulum.parse('20160413'))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    2020-11-05T00:00:00+00:00
-    2016-04-13T00:00:00+00:00
+{% code overflow="wrap" %}```
+2020-11-05T00:00:00+00:00
+2016-04-13T00:00:00+00:00
+{% endcode %}
+
 
 
 
@@ -348,8 +363,11 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    2020-05-01T00:00:00+00:00
-    2018-01-17T00:00:00+00:00
+{% code overflow="wrap" %}```
+2020-05-01T00:00:00+00:00
+2018-01-17T00:00:00+00:00
+{% endcode %}
+
 
 
 
@@ -365,7 +383,10 @@ now_in_kiev.in_timezone('UTC')
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))
+{% code overflow="wrap" %}```
+DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))
+{% endcode %}
+
 
 
 
@@ -381,9 +402,12 @@ print(pendulum.now().subtract(seconds=7).diff_for_humans())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    4 days ago
-    1 hour ago
-    a few seconds ago
+{% code overflow="wrap" %}```
+4 days ago
+1 hour ago
+a few seconds ago
+{% endcode %}
+
 
 
 

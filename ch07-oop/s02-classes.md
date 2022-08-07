@@ -65,11 +65,14 @@ print(f"Bus.buses = {Bus.buses}")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
-    Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
-    Bus.people_transferred = 200
-    Bus.buses_count = 3
-    Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]
+{% code overflow="wrap" %}```
+Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
+Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
+Bus.people_transferred = 200
+Bus.buses_count = 3
+Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]
+{% endcode %}
+
 
 
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
@@ -85,7 +88,10 @@ print(marshrutka_317.info())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl
+{% code overflow="wrap" %}```
+Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl
+{% endcode %}
+
 
 
 
@@ -100,7 +106,10 @@ print(marshrutka_317.info())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl
+{% code overflow="wrap" %}```
+Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl
+{% endcode %}
+
 
 
 Class variables and instance variables were changed:
@@ -115,8 +124,11 @@ print(marshrutka_317.people_transferred)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    299
-    76
+{% code overflow="wrap" %}```
+299
+76
+{% endcode %}
+
 
 
 ## Inheritance
@@ -153,8 +165,11 @@ print(bip.say())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Robot Bip 1.0 (1000 kg)
-    Bip 1.0 says: Oooooh
+{% code overflow="wrap" %}```
+Robot Bip 1.0 (1000 kg)
+Bip 1.0 says: Oooooh
+{% endcode %}
+
 
 
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
@@ -179,8 +194,11 @@ print(bender.say())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Robot Bender (1000 kg)
-    Bender says: Oh wait you’re serious. Let me laugh even harder.
+{% code overflow="wrap" %}```
+Robot Bender (1000 kg)
+Bender says: Oh wait you’re serious. Let me laugh even harder.
+{% endcode %}
+
 
 
 ## Multiple Inheritance
@@ -209,7 +227,10 @@ d.a, d.x
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
+{% code overflow="wrap" %}```
+(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
+{% endcode %}
+
 
 
 
@@ -234,7 +255,10 @@ Mail().send_message("Test")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    *** SENDING MESSAGE: <<<Test>>>  ***
+{% code overflow="wrap" %}```
+*** SENDING MESSAGE: <<<Test>>>  ***
+{% endcode %}
+
 
 
 

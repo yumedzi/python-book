@@ -40,17 +40,20 @@ except StopIteration:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Starting generator...
-    First __next__: 0
-    Next iteration!
-    Second __next__: 1
-    Next iteration!
-    For loop: 2
-    Next iteration!
-    For loop: 3
-    Next iteration!
-    Stopping generator...Bye-bye!
-    Generator is already empty (raised StopIteration)
+{% code overflow="wrap" %}```
+Starting generator...
+First __next__: 0
+Next iteration!
+Second __next__: 1
+Next iteration!
+For loop: 2
+Next iteration!
+For loop: 3
+Next iteration!
+Stopping generator...Bye-bye!
+Generator is already empty (raised StopIteration)
+{% endcode %}
+
 
 
 ## Generator expressions
@@ -73,12 +76,15 @@ print(list(gen))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    <generator object <genexpr> at 0x7f3e79f23c78>
-    2
-    4
-    6
-    8
-    [2, 4, 6, 8]
+{% code overflow="wrap" %}```
+<generator object <genexpr> at 0x7f3e79f23c78>
+2
+4
+6
+8
+[2, 4, 6, 8]
+{% endcode %}
+
 
 
 
@@ -97,8 +103,11 @@ for i in gen:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    <generator object gen_func at 0x103dcf518>
-    2
-    4
-    6
+{% code overflow="wrap" %}```
+<generator object gen_func at 0x103dcf518>
+2
+4
+6
+{% endcode %}
+
     8

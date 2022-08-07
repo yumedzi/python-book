@@ -9,13 +9,19 @@ help(math.sqrt)
 ```
 📟 _<mark style="color:green;">Output:</mark>_
 
-    * IPython shell:
+{% code overflow="wrap" %}```
+* IPython shell:
+{% endcode %}
+
 ```python
 math.cos?
 ```
 📟 _<mark style="color:green;">Output:</mark>_
 
-    * Web: https://docs.python.org/3/  
+{% code overflow="wrap" %}```
+* Web: https://docs.python.org/3/
+{% endcode %}
+
 
 
 ```python
@@ -26,7 +32,10 @@ help(time.sleep)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Help on built-in function sleep in module time:
+{% code overflow="wrap" %}```
+Help on built-in function sleep in module time:
+{% endcode %}
+
     
     sleep(...)
         sleep(seconds)

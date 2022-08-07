@@ -83,13 +83,16 @@ This will:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    111					Basics_07_OOP.ipynb
-    Basics_01_Introduction.ipynb		Basics_08_Decorators.ipynb
-    Basics_02_Strings_numbers.ipynb		Basics_09_Testing.ipynb
-    Basics_03_Containers.ipynb		Basics_10_System_libs.ipynb
-    Basics_04_Functions.ipynb		images
-    Basics_05_Functional_Programming.ipynb	OWNED
-    Basics_06_PEP8_Styling.ipynb
+{% code overflow="wrap" %}```
+111					Basics_07_OOP.ipynb
+Basics_01_Introduction.ipynb		Basics_08_Decorators.ipynb
+Basics_02_Strings_numbers.ipynb		Basics_09_Testing.ipynb
+Basics_03_Containers.ipynb		Basics_10_System_libs.ipynb
+Basics_04_Functions.ipynb		images
+Basics_05_Functional_Programming.ipynb	OWNED
+Basics_06_PEP8_Styling.ipynb
+{% endcode %}
+
 
 
 
@@ -104,7 +107,10 @@ subprocess.call(["touch", "111.txt"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    0
+{% code overflow="wrap" %}```
+0
+{% endcode %}
+
 
 
 
@@ -117,7 +123,10 @@ subprocess.call(["touch", "111.txt"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    111.txt
+{% code overflow="wrap" %}```
+111.txt
+{% endcode %}
+
 
 
 
@@ -132,7 +141,10 @@ subprocess.call(["rm", "111.txt"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    0
+{% code overflow="wrap" %}```
+0
+{% endcode %}
+
 
 
 
@@ -148,7 +160,10 @@ subprocess.call(["ls", "111.txt"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    2
+{% code overflow="wrap" %}```
+2
+{% endcode %}
+
 
 
 
@@ -175,7 +190,10 @@ subprocess.check_call(["touch", "111.txt"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    0
+{% code overflow="wrap" %}```
+0
+{% endcode %}
+
 
 
 
@@ -189,7 +207,10 @@ subprocess.check_call(["ls", "111.txt"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    0
+{% code overflow="wrap" %}```
+0
+{% endcode %}
+
 
 
 
@@ -203,7 +224,10 @@ subprocess.check_call(["rm", "111.txt"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    0
+{% code overflow="wrap" %}```
+0
+{% endcode %}
+
 
 
 

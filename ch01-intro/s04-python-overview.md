@@ -162,10 +162,13 @@ print(mult(10))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    22
-    30
-    85
-    60
+{% code overflow="wrap" %}```
+22
+30
+85
+60
+{% endcode %}
+
 
 
 ### Misc.
@@ -185,7 +188,10 @@ a, b
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    ('54', 45)
+{% code overflow="wrap" %}```
+('54', 45)
+{% endcode %}
+
 
 
 
@@ -233,8 +239,11 @@ show_something()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    >>> Showing results :)
-    Main function output
+{% code overflow="wrap" %}```
+>>> Showing results :)
+Main function output
+{% endcode %}
+
 
 
 ### OOP
@@ -275,10 +284,13 @@ print(obj.foo())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Initializing new object with val=Super Value
-    Nice warm object :)
-    Result of obj.foo(): Super Value
-    Super Value
-    Boo!
-    Some value
+{% code overflow="wrap" %}```
+Initializing new object with val=Super Value
+Nice warm object :)
+Result of obj.foo(): Super Value
+Super Value
+Boo!
+Some value
+{% endcode %}
+
     Super Value

@@ -115,7 +115,10 @@ print( res )
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    173
+{% code overflow="wrap" %}```
+173
+{% endcode %}
+
 
 
 ## Functional approach
@@ -132,7 +135,10 @@ sum(map(int, filter(bool, expr.split("+"))))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    173
+{% code overflow="wrap" %}```
+173
+{% endcode %}
+
 
 
 
@@ -180,8 +186,11 @@ print(mystery_fp(str_))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    4
-    4
+{% code overflow="wrap" %}```
+4
+4
+{% endcode %}
+
 
 
 Functional is a bit easier to understand...
@@ -207,9 +216,12 @@ print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    ['1', '2', '3']
-    [8, 625]
-    [361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
+{% code overflow="wrap" %}```
+['1', '2', '3']
+[8, 625]
+[361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
+{% endcode %}
+
 
 
 
@@ -223,9 +235,12 @@ print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    ['1', '2', '3']
-    [8, 625]
-    [8, 625]
+{% code overflow="wrap" %}```
+['1', '2', '3']
+[8, 625]
+[8, 625]
+{% endcode %}
+
 
 
 
@@ -238,8 +253,11 @@ print(list(map(lambda x: x+1, [1, 2, 3])))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    [6, 17]
-    [2, 3, 4]
+{% code overflow="wrap" %}```
+[6, 17]
+[2, 3, 4]
+{% endcode %}
+
 
 
 ## Filter
@@ -261,11 +279,14 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    [1, 2]
-    [1, 2]
-    [1, 3, 5, 7]
-    [1, 3, 5, 'a', [], 0.0, None]
-    [1, 3, 5]
+{% code overflow="wrap" %}```
+[1, 2]
+[1, 2]
+[1, 3, 5, 7]
+[1, 3, 5, 'a', [], 0.0, None]
+[1, 3, 5]
+{% endcode %}
+
 
 
 ## Zip
@@ -287,9 +308,12 @@ print(list( zip(*zipped) )) # Note that we'll loose element from longer list
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    [(1, 2), (3, 4)]
-    [(1, 1), (2, 2), (3, 0)]
-    [(1, 2, 3), (1, 2, 0)]
+{% code overflow="wrap" %}```
+[(1, 2), (3, 4)]
+[(1, 1), (2, 2), (3, 0)]
+[(1, 2, 3), (1, 2, 0)]
+{% endcode %}
+
 
 
 ## Other perls of FP

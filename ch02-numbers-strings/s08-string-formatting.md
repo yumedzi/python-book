@@ -18,9 +18,12 @@ print( f"3. {print_me}" )            # f-strings
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    1. 100505050.12123
-    2. 100505050.12123
-    3. 100505050.12123
+{% code overflow="wrap" %}```
+1. 100505050.12123
+2. 100505050.12123
+3. 100505050.12123
+{% endcode %}
+
 
 
 #### **%** (printf-style formatting)
@@ -56,7 +59,10 @@ print("For breakfast today is %s" % food)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    For breakfast today is Ceasar salad
+{% code overflow="wrap" %}```
+For breakfast today is Ceasar salad
+{% endcode %}
+
 
 
 
@@ -70,7 +76,10 @@ print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
+{% code overflow="wrap" %}```
+For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
+{% endcode %}
+
 
 
 
@@ -83,7 +92,10 @@ print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH
+{% code overflow="wrap" %}```
+And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH
+{% endcode %}
+
 
 
 #### **{}** / format()
@@ -102,7 +114,10 @@ print("Our food today is {}".format(food))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Our food today is Pizza Pepperoni and burger
+{% code overflow="wrap" %}```
+Our food today is Pizza Pepperoni and burger
+{% endcode %}
+
 
 
 Several arguments:
@@ -116,7 +131,10 @@ print("Food: '{}', money: {} UAH".format(food, money))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
+{% code overflow="wrap" %}```
+Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
+{% endcode %}
+
 
 
 It is possible when using new format (_format()_) to specify positions:
@@ -130,7 +148,10 @@ print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(mone
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)
+{% code overflow="wrap" %}```
+Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)
+{% endcode %}
+
 
 
 It is possible to pass arguments by names:
@@ -147,7 +168,10 @@ print("Want {food} but ${money} to spend".format(**data))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-    Want salad but $45 to spend
+{% code overflow="wrap" %}```
+Want salad but $45 to spend
+{% endcode %}
+
 
 
 More examples:

@@ -63,7 +63,7 @@ print(f"Bus.buses_count = {Bus.buses_count}")
 print(f"Bus.buses = {Bus.buses}")
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
     Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
     Bus.people_transferred = 200
     Bus.buses_count = 3
@@ -79,7 +79,7 @@ marshrutka_317.transfer(20)
 print(marshrutka_317.info())
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl</code></pre>
 
 
 
@@ -90,7 +90,7 @@ marshrutka_317.transfer(55)
 print(marshrutka_317.info())
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl</code></pre>
 
 
 Class variables and instance variables were changed:
@@ -101,7 +101,7 @@ print(Bus.people_transferred)
 print(marshrutka_317.people_transferred)
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>299
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>299
     76</code></pre>
 
 
@@ -133,7 +133,7 @@ print(bip)
 print(bip.say())
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Robot Bip 1.0 (1000 kg)
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Robot Bip 1.0 (1000 kg)
     Bip 1.0 says: Oooooh</code></pre>
 
 
@@ -153,7 +153,7 @@ print(bender)
 print(bender.say())          
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Robot Bender (1000 kg)
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Robot Bender (1000 kg)
     Bender says: Oh wait you’re serious. Let me laugh even harder.</code></pre>
 
 
@@ -181,7 +181,7 @@ print(D.__mro__) # D.mro()
 d.a, d.x
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)</code></pre>
 
 
 
@@ -202,7 +202,7 @@ class Mail:
 Mail().send_message("Test")
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>*** SENDING MESSAGE: <<<Test>>>  ***</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>*** SENDING MESSAGE: <<<Test>>>  ***</code></pre>
 
 
 

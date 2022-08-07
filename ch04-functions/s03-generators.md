@@ -38,7 +38,7 @@ except StopIteration:
     print("Generator is already empty (raised StopIteration)")
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Starting generator...
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Starting generator...
     First __next__: 0
     Next iteration!
     Second __next__: 1
@@ -69,7 +69,7 @@ gen = (x for x in range(1,10) if not x % 2) # get generator using generator expr
 print(list(gen))
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object <genexpr> at 0x7f3e79f23c78>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object <genexpr> at 0x7f3e79f23c78>
     2
     4
     6
@@ -89,7 +89,7 @@ for i in gen:
     print(i)
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object gen_func at 0x103dcf518>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object gen_func at 0x103dcf518>
     2
     4
     6</code></pre>

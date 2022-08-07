@@ -59,7 +59,7 @@ for root, dirs, files in os.walk('/tmp/'):
     print("ROOT:{}\nDIRS:{}\nFILES:{}\n".format(root, dirs, files))
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>ROOT:/tmp/
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>ROOT:/tmp/
     DIRS:['com.apple.launchd.jhoY1qEd1J', 'com.apple.launchd.T3n42gvHZB', 'com.apple.launchd.xfxnszQVjh']
     FILES:['1']</code></pre>
     
@@ -125,7 +125,7 @@ print(p)
 print(p.resolve())  # os.path.abspath
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>example
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>example
     /notebooks/V2/Basics/example</code></pre>
 
 
@@ -134,7 +134,7 @@ print(p.resolve())  # os.path.abspath
 print(p.exists()) # `os.path.exists`
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>False</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>False</code></pre>
 
 
 
@@ -144,7 +144,7 @@ print(p.exists())
 print(p.is_dir()) # os.path.is_dir
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True
     True</code></pre>
 
 
@@ -157,7 +157,7 @@ test_file
 
 
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>PosixPath('example/test.txt')</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>PosixPath('example/test.txt')</code></pre>
 
 
 
@@ -169,7 +169,7 @@ test_file.write_text("Hello Pathlib!")
 
 
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>14</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>14</code></pre>
 
 
 
@@ -181,7 +181,7 @@ test_file.read_text()
 
 
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'Hello Pathlib!'</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'Hello Pathlib!'</code></pre>
 
 
 
@@ -195,7 +195,7 @@ Listing dir's contents:
 
 
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[PosixPath('example/test.txt')]</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[PosixPath('example/test.txt')]</code></pre>
 
 
 

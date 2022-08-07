@@ -5,11 +5,11 @@
 ```python
 help(math.sqrt)
 ```
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>* IPython shell:</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>* IPython shell:</code></pre>
 ```python
 math.cos?
 ```
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>* Web: https://docs.python.org/3/  </code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>* Web: https://docs.python.org/3/  </code></pre>
 
 
 ```python
@@ -18,7 +18,7 @@ import time
 help(time.sleep)
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Help on built-in function sleep in module time:</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Help on built-in function sleep in module time:</code></pre>
     
     sleep(...)
         sleep(seconds)

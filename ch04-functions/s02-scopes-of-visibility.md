@@ -63,7 +63,7 @@ foo()
 print("now global is", all)
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>builtin: <built-in function all>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>builtin: <built-in function all>
     global: [1, 2, 3]
     enclosed: [1, 2, 3, 'changed!']
     checking 'all': [1, 2, 3, 'changed!']
@@ -90,7 +90,7 @@ f()
 print(a, b, c)
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1
     1 2 old string</code></pre>
 
 
@@ -122,7 +122,7 @@ print("Outside the function -> b:", b)
 
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Inside the function -> a: 100
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Inside the function -> a: 100
     Inside the function -> b: 888
     Outside the function -> a: 0
     Outside the function -> b: 888</code></pre>
@@ -145,7 +145,7 @@ def f():
 f()
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'c': 25}</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'c': 25}</code></pre>
 
 
 ### Enclosed scope
@@ -168,7 +168,7 @@ def outer():
 outer()
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>local value</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>local value</code></pre>
 
 
 
@@ -187,7 +187,7 @@ outer()
 
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>enclosed variable</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>enclosed variable</code></pre>
 
 
 Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
@@ -211,7 +211,7 @@ outer()
 print(a)
 ```
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>enclosed variable
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>enclosed variable
     changed enclosed variable
     changed enclosed variable
     global variable</code></pre>
@@ -265,7 +265,7 @@ foo()
 
 
 
-<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>55</code></pre>
+<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>55</code></pre>
 
 
 

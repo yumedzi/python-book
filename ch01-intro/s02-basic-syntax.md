@@ -64,7 +64,7 @@ if condition:
     do_something1()
         do_something2()
 ```
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>        </code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">        </pre></div>
 
 If code block is not big it is allowed to use inline form:
 
@@ -131,7 +131,7 @@ def f():
 help(f)
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Help on function f in module __main__:</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Help on function f in module __main__:</pre></div>
     
     f()
         Some nice function (the best in the world)

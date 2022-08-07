@@ -24,8 +24,8 @@ print(set_a)
 print(set_b)
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{1, 2, 3, 4}
-    {1, 2, 3, 4}</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">{1, 2, 3, 4}
+    {1, 2, 3, 4}</pre></div>
 
 
 Main methods
@@ -38,7 +38,7 @@ Main methods
 
 
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>['add',
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">['add',
      'clear',
      'copy',
      'difference',
@@ -54,7 +54,7 @@ Main methods
      'symmetric_difference',
      'symmetric_difference_update',
      'union',
-     'update']</code></pre>{% endraw %}
+     'update']</pre></div>
 
 
 

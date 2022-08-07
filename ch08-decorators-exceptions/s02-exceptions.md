@@ -45,7 +45,7 @@ print("3)")
 divide_ten([3])
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1)
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">1)
     5.0
     Cool, no exceptions were triggered!
     We're done with that.
@@ -54,7 +54,7 @@ divide_ten([3])
     We're done with that.
     3)
     Wrong type! <class 'list'>
-    We're done with that.</code></pre>{% endraw %}
+    We're done with that.</pre></div>
 
 
 Another working example:
@@ -78,7 +78,7 @@ def get_item():
 get_item()
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Enter index: -5</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Enter index: -5</pre></div>
 
 
 
@@ -159,9 +159,9 @@ main(-6)
 main(3)
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Oops, can't div by zero!
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Oops, can't div by zero!
     ERROR: Can't work with negative numbers
-    3.3333333333333335</code></pre>{% endraw %}
+    3.3333333333333335</pre></div>
 
 
 ## Referring to exceptions
@@ -188,8 +188,8 @@ except:
     raise
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
-    /tmp/1123123.txt</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
+    /tmp/1123123.txt</pre></div>
 
 
 ## Catching multiple exceptions
@@ -209,7 +209,7 @@ except (IOError, ValueError) as e:
     print(f"Data or file error: {e}")
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Data or file error: [Errno 2] No such file or directory: 'myfile.txt'</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Data or file error: [Errno 2] No such file or directory: 'myfile.txt'</pre></div>
 
 
 ## assert

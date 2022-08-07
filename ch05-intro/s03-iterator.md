@@ -47,7 +47,7 @@ list(iter([1, 2, "a", None, 10.1]))
 
 
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2, 'a', None, 10.1]</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[1, 2, 'a', None, 10.1]</pre></div>
 
 
 
@@ -64,11 +64,11 @@ print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__(
 print (a_iter.__next__())
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>False
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">False
     <method-wrapper '__iter__' of list object at 0x000000000441FC48>
     1
     <list_iterator object at 0x00000000043AE860>
-    1 2 3 4</code></pre>{% endraw %}
+    1 2 3 4</pre></div>
 
 
 

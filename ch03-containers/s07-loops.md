@@ -56,7 +56,7 @@ else:  # run this block only if no break statement called
     print("No break called -- number 12 was NOT FOUND")
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1 	: Even number ... EOL!
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">1 	: Even number ... EOL!
     2 	: Odd number ... EOL!
     3 	: Even number ... EOL!
     4 	: Odd number ... EOL!
@@ -68,7 +68,7 @@ else:  # run this block only if no break statement called
     10 	: <---SKIPPING LINE--->
     11 	: Even number ... EOL!
     12 	: Odd number
-    BYE BYE!!! (break called!)</code></pre>{% endraw %}
+    BYE BYE!!! (break called!)</pre></div>
 
 
 One more example for for-else loop - selection of DB:
@@ -103,10 +103,10 @@ print(list(range(0, 30, 5)))
 print(list(range(0, 10, 3)))
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     [0, 5, 10, 15, 20, 25]
-    [0, 3, 6, 9]</code></pre>{% endraw %}
+    [0, 3, 6, 9]</pre></div>
 
 
 
@@ -116,9 +116,9 @@ print(list(range(0)))
 print(list(range(1, 0)))
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
     []
-    []</code></pre>{% endraw %}
+    []</pre></div>
 
 
 Also - from 3.5:
@@ -131,7 +131,7 @@ Also - from 3.5:
 
 
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3]</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[0, 1, 2, 3]</pre></div>
 
 
 
@@ -143,7 +143,7 @@ Also - from 3.5:
 
 
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2, 3, 4, 5, 6]</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[1, 2, 3, 4, 5, 6]</pre></div>
 
 
 
@@ -155,7 +155,7 @@ Also - from 3.5:
 
 
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{0, 1, 2, 3}</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">{0, 1, 2, 3}</pre></div>
 
 
 
@@ -187,10 +187,10 @@ for index, girl in enumerate(["Olya", "Sveta", "Anna", "Maria"], start=1):
     print("Girl number {} is {}".format(index, girl))
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Girl number 1 is Olya
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Girl number 1 is Olya
     Girl number 2 is Sveta
     Girl number 3 is Anna
-    Girl number 4 is Maria</code></pre>{% endraw %}
+    Girl number 4 is Maria</pre></div>
 
 
 The following code:
@@ -239,9 +239,9 @@ while True:
 print("Goodbye")
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Please enter an int: 12
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Please enter an int: 12
     Square is  144
     Please enter an int: 25
     Square is  625
-    Please enter an int: 0</code></pre>{% endraw %}
+    Please enter an int: 0</pre></div>
     Goodbye

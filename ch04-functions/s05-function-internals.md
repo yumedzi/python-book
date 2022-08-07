@@ -14,8 +14,8 @@ print(f1.__code__.co_code)
 print(f2.__code__.co_code)
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b'd\x01S\x00'
-    b'd\x01S\x00'</code></pre>{% endraw %}
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">b'd\x01S\x00'
+    b'd\x01S\x00'</pre></div>
 
 
 
@@ -23,8 +23,8 @@ print(f2.__code__.co_code)
 print(f1.__code__.__doc__)
 ```
 
-{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,
+<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,
           constants, names, varnames, filename, name, firstlineno,
-          lnotab[, freevars[, cellvars]])</code></pre>{% endraw %}
+          lnotab[, freevars[, cellvars]])</pre></div>
     
     Create a code object.  Not for the faint of heart.

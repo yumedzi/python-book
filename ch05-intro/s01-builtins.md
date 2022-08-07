@@ -163,9 +163,9 @@ setattr(a_object, "b", "Wow! Adding attrs like haxxxors")
 print( a_object.b )  
 ```
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True
+{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True
     5
-    Wow! Adding attrs like haxxxors</code></pre>
+    Wow! Adding attrs like haxxxors</code></pre>{% endraw %}
 
 
 
@@ -176,7 +176,7 @@ getattr("Hello World", "lower")()
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'hello world'</code></pre>
+{% raw %}<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'hello world'</code></pre>{% endraw %}
 
 
 

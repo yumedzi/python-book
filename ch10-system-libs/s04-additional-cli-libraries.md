@@ -220,7 +220,7 @@ for i in tqdm(range(10000)):
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">100%|██████████| 10000/10000 [00:11<00:00, 902.17it/s] </pre>
+    100%|██████████| 10000/10000 [00:11<00:00, 902.17it/s] 
 
 
 ### Colorama
@@ -249,12 +249,12 @@ print('back to normal now')
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[33m[44msome yellow text
-[42mand with a green background
-Test..
-[41m[2mand in dim text
-[0m
-back to normal now</pre>
+    [33m[44msome yellow text
+    [42mand with a green background
+    Test..
+    [41m[2mand in dim text
+    [0m
+    back to normal now
 
 
 ### Yaspin
@@ -298,7 +298,7 @@ now_in_kiev
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))</pre>
+    DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
 
 
 
@@ -312,7 +312,7 @@ len(pendulum.timezones)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">592</pre>
+    592
 
 
 
@@ -326,8 +326,8 @@ print(pendulum.parse('20160413'))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">2020-11-05T00:00:00+00:00
-2016-04-13T00:00:00+00:00</pre>
+    2020-11-05T00:00:00+00:00
+    2016-04-13T00:00:00+00:00
 
 
 
@@ -338,8 +338,8 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">2020-05-01T00:00:00+00:00
-2018-01-17T00:00:00+00:00</pre>
+    2020-05-01T00:00:00+00:00
+    2018-01-17T00:00:00+00:00
 
 
 
@@ -353,7 +353,7 @@ now_in_kiev.in_timezone('UTC')
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))</pre>
+    DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))
 
 
 
@@ -369,9 +369,9 @@ print(pendulum.now().subtract(seconds=7).diff_for_humans())
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">4 days ago
-1 hour ago
-a few seconds ago</pre>
+    4 days ago
+    1 hour ago
+    a few seconds ago
 
 
 

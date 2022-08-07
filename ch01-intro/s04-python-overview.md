@@ -148,10 +148,10 @@ print(mult(10))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">22
-30
-85
-60</pre>
+    22
+    30
+    85
+    60
 
 
 ### Misc.
@@ -171,7 +171,7 @@ a, b
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">('54', 45)</pre>
+    ('54', 45)
 
 
 
@@ -217,8 +217,8 @@ show_something()
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">>>> Showing results :)
-Main function output</pre>
+    >>> Showing results :)
+    Main function output
 
 
 ### OOP
@@ -259,10 +259,10 @@ print(obj.foo())
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Initializing new object with val=Super Value
-Nice warm object :)
-Result of obj.foo(): Super Value
-Super Value
-Boo!
-Some value</pre>
+    Initializing new object with val=Super Value
+    Nice warm object :)
+    Result of obj.foo(): Super Value
+    Super Value
+    Boo!
+    Some value
     Super Value

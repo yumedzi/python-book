@@ -76,9 +76,9 @@ f1()
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">No complains at this point!
-------------------------------
-Now you'll get the error:</pre>
+    No complains at this point!
+    ------------------------------
+    Now you'll get the error:
 
 
 
@@ -122,8 +122,8 @@ print(foo()) # Will return 100500 because during call global a equals to 100500
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">10
-100500</pre>
+    10
+    100500
 
 
 But most often the function relies on the data passed to it:
@@ -142,10 +142,10 @@ print(sum(x=5))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">74
-74
-54
-54</pre>
+    74
+    74
+    54
+    54
 
 
 We can assign default argument:
@@ -170,9 +170,9 @@ print(random_phrase(length=6))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">evil unicorns
-I think ehmm evil unicorns
-ehmm umm unicorns evil nice unicorns</pre>
+    evil unicorns
+    I think ehmm evil unicorns
+    ehmm umm unicorns evil nice unicorns
 
 
 Using list comprehesion we can make this function very short
@@ -189,7 +189,7 @@ print(random_phrase(length=5))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">evil umm ehmm I think evil</pre>
+    evil umm ehmm I think evil
 
 
 ## Arguments definitions
@@ -252,7 +252,7 @@ print_strings("Hello", "World")
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World</pre>
+    Hello World
 
 
 ### Keyword arguments
@@ -269,8 +269,8 @@ print_strings(str2="James Bond", str1="Bond,")
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World
-Bond, James Bond</pre>
+    Hello World
+    Bond, James Bond
 
 
 ### Default arguments
@@ -289,8 +289,8 @@ add_friend(name="Mark")
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Friend Mark (20) added
-Friend Mark (20) added</pre>
+    Friend Mark (20) added
+    Friend Mark (20) added
 
 
 ### Variable-length arguments 

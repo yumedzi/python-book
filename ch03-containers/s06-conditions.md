@@ -24,7 +24,7 @@ else:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">a is greater than 3</pre>
+    a is greater than 3
 
 
 ## bool type
@@ -45,7 +45,7 @@ True + True
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">2</pre>
+    2
 
 
 
@@ -59,7 +59,7 @@ True + True
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">6</pre>
+    6
 
 
 
@@ -73,7 +73,7 @@ bool(24), bool("sdsds"), bool(""), bool([])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(True, True, False, False)</pre>
+    (True, True, False, False)
 
 
 
@@ -117,7 +117,7 @@ else:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Take arms against a sea of troubles!</pre>
+    Take arms against a sea of troubles!
 
 
 Because the expression is equivalent to:

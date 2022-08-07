@@ -40,17 +40,17 @@ except StopIteration:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Starting generator...
-First __next__: 0
-Next iteration!
-Second __next__: 1
-Next iteration!
-For loop: 2
-Next iteration!
-For loop: 3
-Next iteration!
-Stopping generator...Bye-bye!
-Generator is already empty (raised StopIteration)</pre>
+    Starting generator...
+    First __next__: 0
+    Next iteration!
+    Second __next__: 1
+    Next iteration!
+    For loop: 2
+    Next iteration!
+    For loop: 3
+    Next iteration!
+    Stopping generator...Bye-bye!
+    Generator is already empty (raised StopIteration)
 
 
 ## Generator expressions
@@ -73,12 +73,12 @@ print(list(gen))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;"><generator object <genexpr> at 0x7f3e79f23c78>
-2
-4
-6
-8
-[2, 4, 6, 8]</pre>
+    <generator object <genexpr> at 0x7f3e79f23c78>
+    2
+    4
+    6
+    8
+    [2, 4, 6, 8]
 
 
 
@@ -95,8 +95,8 @@ for i in gen:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;"><generator object gen_func at 0x103dcf518>
-2
-4
-6</pre>
+    <generator object gen_func at 0x103dcf518>
+    2
+    4
+    6
     8

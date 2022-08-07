@@ -80,7 +80,7 @@ A()
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;"><__main__.A object at 0x7ff51775b4a8></pre>
+    <__main__.A object at 0x7ff51775b4a8>
 
 
 
@@ -110,7 +110,7 @@ A().__hash__()
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">8793164831643</pre>
+    8793164831643
 
 
 
@@ -132,7 +132,7 @@ A.__bases__
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(object,)</pre>
+    (object,)
 
 
 
@@ -150,8 +150,8 @@ help(A)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">None
-Help on class A in module __main__:</pre>
+    None
+    Help on class A in module __main__:
     
     class A(builtins.object)
      |  Data descriptors defined here:
@@ -180,7 +180,7 @@ A.__module__
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'__main__'</pre>
+    '__main__'
 
 
 
@@ -201,7 +201,7 @@ bool(A())
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">True</pre>
+    True
 
 
 
@@ -249,8 +249,8 @@ print(b1 <= b2)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">True
-False</pre>
+    True
+    False
 
 
 ### Iterator protocol
@@ -293,7 +293,7 @@ c.__dict__
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'b': 2}</pre>
+    {'b': 2}
 
 
 

@@ -115,7 +115,7 @@ print( res )
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">173</pre>
+    173
 
 
 ## Functional approach
@@ -130,7 +130,7 @@ sum(map(int, filter(bool, expr.split("+"))))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">173</pre>
+    173
 
 
 
@@ -172,8 +172,8 @@ print(mystery_fp(str_))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">4
-4</pre>
+    4
+    4
 
 
 Functional is a bit easier to understand...
@@ -197,9 +197,9 @@ print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">['1', '2', '3']
-[8, 625]
-[361, 324, 289, 256, 225, 196, 169, 144, 121, 100]</pre>
+    ['1', '2', '3']
+    [8, 625]
+    [361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
 
 
 
@@ -211,9 +211,9 @@ print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">['1', '2', '3']
-[8, 625]
-[8, 625]</pre>
+    ['1', '2', '3']
+    [8, 625]
+    [8, 625]
 
 
 
@@ -224,8 +224,8 @@ print(list(map(lambda x: x+1, [1, 2, 3])))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[6, 17]
-[2, 3, 4]</pre>
+    [6, 17]
+    [2, 3, 4]
 
 
 ## Filter
@@ -245,11 +245,11 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[1, 2]
-[1, 2]
-[1, 3, 5, 7]
-[1, 3, 5, 'a', [], 0.0, None]
-[1, 3, 5]</pre>
+    [1, 2]
+    [1, 2]
+    [1, 3, 5, 7]
+    [1, 3, 5, 'a', [], 0.0, None]
+    [1, 3, 5]
 
 
 ## Zip
@@ -271,9 +271,9 @@ print(list( zip(*zipped) )) # Note that we'll loose element from longer list
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[(1, 2), (3, 4)]
-[(1, 1), (2, 2), (3, 0)]
-[(1, 2, 3), (1, 2, 0)]</pre>
+    [(1, 2), (3, 4)]
+    [(1, 1), (2, 2), (3, 0)]
+    [(1, 2, 3), (1, 2, 0)]
 
 
 ## Other perls of FP

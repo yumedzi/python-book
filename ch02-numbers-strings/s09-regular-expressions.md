@@ -144,7 +144,7 @@ print(dir(re))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">['A', 'ASCII', 'DEBUG', 'DOTALL', 'I', 'IGNORECASE', 'L', 'LOCALE', 'M', 'MULTILINE', 'Match', 'Pattern', 'RegexFlag', 'S', 'Scanner', 'T', 'TEMPLATE', 'U', 'UNICODE', 'VERBOSE', 'X', '_MAXCACHE', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '__version__', '_cache', '_compile', '_compile_repl', '_expand', '_locale', '_pickle', '_special_chars_map', '_subx', 'compile', 'copyreg', 'enum', 'error', 'escape', 'findall', 'finditer', 'fullmatch', 'functools', 'match', 'purge', 'search', 'split', 'sre_compile', 'sre_parse', 'sub', 'subn', 'template']</pre>
+    ['A', 'ASCII', 'DEBUG', 'DOTALL', 'I', 'IGNORECASE', 'L', 'LOCALE', 'M', 'MULTILINE', 'Match', 'Pattern', 'RegexFlag', 'S', 'Scanner', 'T', 'TEMPLATE', 'U', 'UNICODE', 'VERBOSE', 'X', '_MAXCACHE', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '__version__', '_cache', '_compile', '_compile_repl', '_expand', '_locale', '_pickle', '_special_chars_map', '_subx', 'compile', 'copyreg', 'enum', 'error', 'escape', 'findall', 'finditer', 'fullmatch', 'functools', 'match', 'purge', 'search', 'split', 'sre_compile', 'sre_parse', 'sub', 'subn', 'template']
 
 
 > Pattern is one or more regular expressions describing structure if the text that is needed to be parsed.
@@ -162,9 +162,9 @@ print(r"Printing RAW string with <\n> and <\t\t> as special characters")
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Printing string with <
-> and <		> as special characters
-Printing RAW string with <\n> and <\t\t> as special characters</pre>
+    Printing string with <
+    > and <		> as special characters
+    Printing RAW string with <\n> and <\t\t> as special characters
 
 
 Module `re` can compile regex pattern making it's repeated usage faster.
@@ -180,23 +180,23 @@ Main `re` methods:
 * ```compile(pattern)```
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">* Compile pattern to optimize it's future usages in regexes</pre>
+    * Compile pattern to optimize it's future usages in regexes
 * ```match(pattern, text)```
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">* Determine if the RE matches at the beginning of the string.</pre>
+    * Determine if the RE matches at the beginning of the string.
 * ```search(pattern, text)```
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">* Scan through a string, looking for any location where this RE matches.	</pre>
+    * Scan through a string, looking for any location where this RE matches.	
 * ```findall(pattern, text)```
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Find all substrings where the RE matches, and returns them as a list.	</pre>
+    Find all substrings where the RE matches, and returns them as a list.	
 * ```finditer(pattern, text)```
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">* Find all substrings where the RE matches, and returns them as an iterator.</pre>
+    * Find all substrings where the RE matches, and returns them as an iterator.
 
 #### Groups
 > Needed to refer to parts of matched text to obtain needed information from it
@@ -215,7 +215,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 * ```groups()```
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">* Return tuple with all matched groups</pre>
+    * Return tuple with all matched groups
 * ```group()```
     * Return the string matched by the RE	
 * ```start()```, ```end()```

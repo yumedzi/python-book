@@ -28,7 +28,7 @@ new_d
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}</pre>
+    {'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}
 
 
 
@@ -45,7 +45,7 @@ new_d
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': 'John', 'surname': 'Stark'}</pre>
+    {'name': 'John', 'surname': 'Stark'}
 
 
 
@@ -62,8 +62,8 @@ print("d2:", d2)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">d1: {'Aria': 'Stark', 'Faceless': 'Man'}
-d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}</pre>
+    d1: {'Aria': 'Stark', 'Faceless': 'Man'}
+    d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
 
 
 Using method `dict.fromkeys` we can create a new dict from an iterable (some collection) of keys.
@@ -79,7 +79,7 @@ dict.fromkeys(["name", "surname"])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': None, 'surname': None}</pre>
+    {'name': None, 'surname': None}
 
 
 
@@ -93,7 +93,7 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}</pre>
+    {'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}
 
 
 
@@ -110,7 +110,7 @@ d
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'a': [], 'b': [], 'c': [], 'd': [], 'e': []}</pre>
+    {'a': [], 'b': [], 'c': [], 'd': [], 'e': []}
 
 
 
@@ -125,7 +125,7 @@ d
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}</pre>
+    {'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}
 
 
 
@@ -143,7 +143,7 @@ d1 is d2, d2
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(False, {'some_key': 'some_value'})</pre>
+    (False, {'some_key': 'some_value'})
 
 
 

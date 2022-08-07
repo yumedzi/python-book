@@ -51,7 +51,7 @@ To run any command at the system shell, simply prefix it with !, e.g.:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">/notebooks</pre>
+    /notebooks
 
 
 ### Ipython magic functions
@@ -72,7 +72,7 @@ The following examples show how to call the builtin %timeit magic, both in line 
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">502 ns ± 4.41 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)</pre>
+    502 ns ± 4.41 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
 
 
 
@@ -83,7 +83,7 @@ max(x)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">609 µs ± 2.23 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</pre>
+    609 µs ± 2.23 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 
 
 The builtin magics include:

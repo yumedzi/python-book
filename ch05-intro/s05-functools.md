@@ -32,9 +32,9 @@ print(h2("Beatufiul World"))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World
-Margarita, Bye-bye, ja nai!..
-Hello Beatufiul World</pre>
+    Hello World
+    Margarita, Bye-bye, ja nai!..
+    Hello Beatufiul World
 
 
 
@@ -49,7 +49,7 @@ pow_of_10(5) # 5 - second arg
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">100000.0</pre>
+    100000.0
 
 
 
@@ -68,7 +68,7 @@ quadrupler(2)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">16</pre>
+    16
 
 
 
@@ -91,7 +91,7 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">15</pre>
+    15
 
 
 
@@ -105,7 +105,7 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">15</pre>
+    15
 
 
 
@@ -122,7 +122,7 @@ Factorial, "ez mode":
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">120</pre>
+    120
 
 
 
@@ -136,7 +136,7 @@ functools.reduce(lambda x, y: x * y, range(1,6))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">120</pre>
+    120
 
 
 
@@ -151,7 +151,7 @@ functools.reduce(mul, range(1,6))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">120</pre>
+    120
 
 
 

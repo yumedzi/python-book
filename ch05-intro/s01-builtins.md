@@ -165,9 +165,9 @@ print( a_object.b )
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">True
-5
-Wow! Adding attrs like haxxxors</pre>
+    True
+    5
+    Wow! Adding attrs like haxxxors
 
 
 
@@ -180,7 +180,7 @@ getattr("Hello World", "lower")()
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'hello world'</pre>
+    'hello world'
 
 
 

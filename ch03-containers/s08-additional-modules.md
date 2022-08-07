@@ -26,7 +26,7 @@ print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Student Jakeson from group 18 B is 23 year old</pre>
+    Student Jakeson from group 18 B is 23 year old
 
 
 To avoid the mess of various indexes we can add some light "OOP-flavor" to this use-case via `namedtuple`:
@@ -44,7 +44,7 @@ student
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Student Jakeson from group 18 B is 23 year old</pre>
+    Student Jakeson from group 18 B is 23 year old
 
 
 
@@ -63,7 +63,7 @@ print(student._asdict())
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])</pre>
+    OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])
 
 
 #### `deque`
@@ -87,8 +87,8 @@ print(de.popleft())
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">e
-a</pre>
+    e
+    a
 
 
 
@@ -99,7 +99,7 @@ print(de)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">deque(['BEGIN', 'b', 'c', 'd'])</pre>
+    deque(['BEGIN', 'b', 'c', 'd'])
 
 
 #### `defaultdict`
@@ -134,8 +134,8 @@ print(f(encountered_animals))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
-3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</pre>
+    defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
+    3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 
 
 The same using `setdefault` method:
@@ -159,8 +159,8 @@ print(f(encountered_animals))
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
-2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</pre>
+    {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
+    2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 
 
 If we set `default_factory` to `int` we can create a counter of things:
@@ -178,7 +178,7 @@ print(d)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})</pre>
+    defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 
 
 #### `Counter`

@@ -26,8 +26,8 @@ print(set_b)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{1, 2, 3, 4}
-{1, 2, 3, 4}</pre>
+    {1, 2, 3, 4}
+    {1, 2, 3, 4}
 
 
 Main methods
@@ -42,23 +42,23 @@ Main methods
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">['add',
- 'clear',
- 'copy',
- 'difference',
- 'difference_update',
- 'discard',
- 'intersection',
- 'intersection_update',
- 'isdisjoint',
- 'issubset',
- 'issuperset',
- 'pop',
- 'remove',
- 'symmetric_difference',
- 'symmetric_difference_update',
- 'union',
- 'update']</pre>
+    ['add',
+     'clear',
+     'copy',
+     'difference',
+     'difference_update',
+     'discard',
+     'intersection',
+     'intersection_update',
+     'isdisjoint',
+     'issubset',
+     'issuperset',
+     'pop',
+     'remove',
+     'symmetric_difference',
+     'symmetric_difference_update',
+     'union',
+     'update']
 
 
 

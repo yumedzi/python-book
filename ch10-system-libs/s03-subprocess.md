@@ -75,13 +75,13 @@ This will:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">111					Basics_07_OOP.ipynb
-Basics_01_Introduction.ipynb		Basics_08_Decorators.ipynb
-Basics_02_Strings_numbers.ipynb		Basics_09_Testing.ipynb
-Basics_03_Containers.ipynb		Basics_10_System_libs.ipynb
-Basics_04_Functions.ipynb		images
-Basics_05_Functional_Programming.ipynb	OWNED
-Basics_06_PEP8_Styling.ipynb</pre>
+    111					Basics_07_OOP.ipynb
+    Basics_01_Introduction.ipynb		Basics_08_Decorators.ipynb
+    Basics_02_Strings_numbers.ipynb		Basics_09_Testing.ipynb
+    Basics_03_Containers.ipynb		Basics_10_System_libs.ipynb
+    Basics_04_Functions.ipynb		images
+    Basics_05_Functional_Programming.ipynb	OWNED
+    Basics_06_PEP8_Styling.ipynb
 
 
 
@@ -96,7 +96,7 @@ subprocess.call(["touch", "111.txt"])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">0</pre>
+    0
 
 
 
@@ -107,7 +107,7 @@ subprocess.call(["touch", "111.txt"])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">111.txt</pre>
+    111.txt
 
 
 
@@ -120,7 +120,7 @@ subprocess.call(["rm", "111.txt"])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">0</pre>
+    0
 
 
 
@@ -134,7 +134,7 @@ subprocess.call(["ls", "111.txt"])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">2</pre>
+    2
 
 
 
@@ -159,7 +159,7 @@ subprocess.check_call(["touch", "111.txt"])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">0</pre>
+    0
 
 
 
@@ -173,7 +173,7 @@ subprocess.check_call(["ls", "111.txt"])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">0</pre>
+    0
 
 
 
@@ -187,7 +187,7 @@ subprocess.check_call(["rm", "111.txt"])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">0</pre>
+    0
 
 
 

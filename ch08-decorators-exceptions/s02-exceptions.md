@@ -47,16 +47,16 @@ divide_ten([3])
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">1)
-5.0
-Cool, no exceptions were triggered!
-We're done with that.
-2)
-Oops, invalid - you can't pass 0. Error: float division by zero
-We're done with that.
-3)
-Wrong type! <class 'list'>
-We're done with that.</pre>
+    1)
+    5.0
+    Cool, no exceptions were triggered!
+    We're done with that.
+    2)
+    Oops, invalid - you can't pass 0. Error: float division by zero
+    We're done with that.
+    3)
+    Wrong type! <class 'list'>
+    We're done with that.
 
 
 Another working example:
@@ -82,7 +82,7 @@ get_item()
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Enter index: -5</pre>
+    Enter index: -5
 
 
 
@@ -165,9 +165,9 @@ main(3)
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Oops, can't div by zero!
-ERROR: Can't work with negative numbers
-3.3333333333333335</pre>
+    Oops, can't div by zero!
+    ERROR: Can't work with negative numbers
+    3.3333333333333335
 
 
 ## Referring to exceptions
@@ -196,8 +196,8 @@ except:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
-/tmp/1123123.txt</pre>
+    OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
+    /tmp/1123123.txt
 
 
 ## Catching multiple exceptions
@@ -219,7 +219,7 @@ except (IOError, ValueError) as e:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Data or file error: [Errno 2] No such file or directory: 'myfile.txt'</pre>
+    Data or file error: [Errno 2] No such file or directory: 'myfile.txt'
 
 
 ## assert

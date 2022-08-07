@@ -61,9 +61,9 @@ for root, dirs, files in os.walk('/tmp/'):
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">ROOT:/tmp/
-DIRS:['com.apple.launchd.jhoY1qEd1J', 'com.apple.launchd.T3n42gvHZB', 'com.apple.launchd.xfxnszQVjh']
-FILES:['1']</pre>
+    ROOT:/tmp/
+    DIRS:['com.apple.launchd.jhoY1qEd1J', 'com.apple.launchd.T3n42gvHZB', 'com.apple.launchd.xfxnszQVjh']
+    FILES:['1']
     
     ROOT:/tmp/com.apple.launchd.jhoY1qEd1J
     DIRS:[]
@@ -129,8 +129,8 @@ print(p.resolve())  # os.path.abspath
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">example
-/notebooks/V2/Basics/example</pre>
+    example
+    /notebooks/V2/Basics/example
 
 
 
@@ -140,7 +140,7 @@ print(p.exists()) # `os.path.exists`
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">False</pre>
+    False
 
 
 
@@ -152,8 +152,8 @@ print(p.is_dir()) # os.path.is_dir
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">True
-True</pre>
+    True
+    True
 
 
 
@@ -167,7 +167,7 @@ test_file
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">PosixPath('example/test.txt')</pre>
+    PosixPath('example/test.txt')
 
 
 
@@ -181,7 +181,7 @@ test_file.write_text("Hello Pathlib!")
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">14</pre>
+    14
 
 
 
@@ -195,7 +195,7 @@ test_file.read_text()
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'Hello Pathlib!'</pre>
+    'Hello Pathlib!'
 
 
 
@@ -211,7 +211,7 @@ Listing dir's contents:
 
 <sub>Output:</sub>
 
-<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[PosixPath('example/test.txt')]</pre>
+    [PosixPath('example/test.txt')]
 
 
 

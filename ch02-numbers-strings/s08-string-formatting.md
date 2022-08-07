@@ -14,9 +14,11 @@ print(  "2. {}".format(print_me) )   # New format, format()
 print( f"3. {print_me}" )            # f-strings
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">1. 100505050.12123
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">1. 100505050.12123
 2. 100505050.12123
-3. 100505050.12123</span></div>
+3. 100505050.12123</pre>
 
 
 #### **%** (printf-style formatting)
@@ -48,7 +50,9 @@ food = "Ceasar salad"
 print("For breakfast today is %s" % food)
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">For breakfast today is Ceasar salad</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">For breakfast today is Ceasar salad</pre>
 
 
 
@@ -58,7 +62,9 @@ money = 130.23
 print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH</pre>
 
 
 
@@ -67,7 +73,9 @@ data = {"food": "Pasta Carbonara", "money": 300}
 print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH</pre>
 
 
 #### **{}** / format()
@@ -82,7 +90,9 @@ It's better to use this for something that requries more complex formatting
 print("Our food today is {}".format(food))
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Our food today is Pizza Pepperoni and burger</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Our food today is Pizza Pepperoni and burger</pre>
 
 
 Several arguments:
@@ -92,7 +102,9 @@ Several arguments:
 print("Food: '{}', money: {} UAH".format(food, money))
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Food: 'Pizza Pepperoni and burger', money: 130.23 UAH</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Food: 'Pizza Pepperoni and burger', money: 130.23 UAH</pre>
 
 
 It is possible when using new format (_format()_) to specify positions:
@@ -102,7 +114,9 @@ It is possible when using new format (_format()_) to specify positions:
 print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(money, food))
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)</pre>
 
 
 It is possible to pass arguments by names:
@@ -115,7 +129,9 @@ print("Want {food} but ${money} to spend".format(**data))
 # print("Want {food} but ${money} to spend".format(money=45, food="salad"))
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Want salad but $45 to spend</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Want salad but $45 to spend</pre>
 
 
 More examples:

@@ -74,9 +74,11 @@ print("Now you'll get the error:")
 f1()  
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">No complains at this point!
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">No complains at this point!
 ------------------------------
-Now you'll get the error:</span></div>
+Now you'll get the error:</pre>
 
 
 
@@ -118,8 +120,10 @@ a = 100500
 print(foo()) # Will return 100500 because during call global a equals to 100500
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">10
-100500</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">10
+100500</pre>
 
 
 But most often the function relies on the data passed to it:
@@ -136,10 +140,12 @@ print(sum(x=5))
 
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">74
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">74
 74
 54
-54</span></div>
+54</pre>
 
 
 We can assign default argument:
@@ -162,9 +168,11 @@ print(random_phrase(4))
 print(random_phrase(length=6))
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">evil unicorns
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">evil unicorns
 I think ehmm evil unicorns
-ehmm umm unicorns evil nice unicorns</span></div>
+ehmm umm unicorns evil nice unicorns</pre>
 
 
 Using list comprehesion we can make this function very short
@@ -179,7 +187,9 @@ def random_phrase(length=3):
 print(random_phrase(length=5))
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">evil umm ehmm I think evil</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">evil umm ehmm I think evil</pre>
 
 
 ## Arguments definitions
@@ -240,7 +250,9 @@ def print_strings(str1, str2):
 print_strings("Hello", "World")
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World</pre>
 
 
 ### Keyword arguments
@@ -255,8 +267,10 @@ print_strings(str1="Hello", str2="World")
 print_strings(str2="James Bond", str1="Bond,")
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World
-Bond, James Bond</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World
+Bond, James Bond</pre>
 
 
 ### Default arguments
@@ -273,8 +287,10 @@ add_friend("Mark")
 add_friend(name="Mark")
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Friend Mark (20) added
-Friend Mark (20) added</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Friend Mark (20) added
+Friend Mark (20) added</pre>
 
 
 ### Variable-length arguments 

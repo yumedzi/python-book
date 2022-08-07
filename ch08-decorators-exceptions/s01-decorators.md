@@ -85,10 +85,12 @@ scream.__qualname__ = "Super Song"
 print(scream)
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">LaLaLa
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">LaLaLa
 LaLaLaLaLaLaLaLaLaLaLaLaLaLaLa
 Oops, Exception:  name 'song' is not defined
-<function Super Song at 0x103fe2a60></span></div>
+<function Super Song at 0x103fe2a60></pre>
 
 
 `2`. We can define function everywhere! It will exist in that namespace only. #easy!
@@ -111,8 +113,10 @@ def music(beats=3):
 print(music(10))
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
-Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
+Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do</pre>
 
 
 Of course we can't access internal functions in any way...
@@ -125,7 +129,9 @@ except NameError as e:
     print("Oh, we can't acces this function outside:", e)
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Oh, we can't acces this function outside: name '_random_music' is not defined</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Oh, we can't acces this function outside: name '_random_music' is not defined</pre>
 
 
 `3`. We can even `return` function as function's result. After this we can use that object as new function itself.
@@ -150,10 +156,12 @@ print( some_party() )
 print(party()())
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
 Notes: Do,Fa,Si,Si,Do,Do,Do,Do,Fa,Do,La,Fa,Re,La,Si
 New pop-hit: Oooh-Toonc
-Notes: Si,Re</span></div>
+Notes: Si,Re</pre>
 
 
 ## Decorator syntax and examples
@@ -197,9 +205,11 @@ def greet():
 greet()
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">>>> Before running function
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">>>> Before running function
 Hello!
->>> After running function</span></div>
+>>> After running function</pre>
 
 
 Another example:
@@ -223,9 +233,11 @@ print(price)
 print(price(100, tax_rate=.1))
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;"><function dollar.<locals>.wrapper at 0x7f208019f8b0>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;"><function dollar.<locals>.wrapper at 0x7f208019f8b0>
 Args are: (100,), KWArgs: {'tax_rate': 0.1}
-$110.0</span></div>
+$110.0</pre>
 
 
 The same example, but in one line:
@@ -245,7 +257,9 @@ f()
 
 
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'$100'</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'$100'</pre>
 
 
 
@@ -274,7 +288,9 @@ f(3, 5)
 
 
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'{"result": 243}'</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'{"result": 243}'</pre>
 
 
 

@@ -63,11 +63,13 @@ print(f"Bus.buses_count = {Bus.buses_count}")
 print(f"Bus.buses = {Bus.buses}")
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
 Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
 Bus.people_transferred = 200
 Bus.buses_count = 3
-Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]</span></div>
+Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]</pre>
 
 
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
@@ -79,7 +81,9 @@ marshrutka_317.transfer(20)
 print(marshrutka_317.info())
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl</pre>
 
 
 
@@ -90,7 +94,9 @@ marshrutka_317.transfer(55)
 print(marshrutka_317.info())
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl</pre>
 
 
 Class variables and instance variables were changed:
@@ -101,8 +107,10 @@ print(Bus.people_transferred)
 print(marshrutka_317.people_transferred)
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">299
-76</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">299
+76</pre>
 
 
 ## Inheritance
@@ -133,8 +141,10 @@ print(bip)
 print(bip.say())
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Robot Bip 1.0 (1000 kg)
-Bip 1.0 says: Oooooh</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Robot Bip 1.0 (1000 kg)
+Bip 1.0 says: Oooooh</pre>
 
 
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
@@ -153,8 +163,10 @@ print(bender)
 print(bender.say())          
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Robot Bender (1000 kg)
-Bender says: Oh wait you’re serious. Let me laugh even harder.</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Robot Bender (1000 kg)
+Bender says: Oh wait you’re serious. Let me laugh even harder.</pre>
 
 
 ## Multiple Inheritance
@@ -181,7 +193,9 @@ print(D.__mro__) # D.mro()
 d.a, d.x
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)</pre>
 
 
 
@@ -202,7 +216,9 @@ class Mail:
 Mail().send_message("Test")
 ```
 
-<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">*** SENDING MESSAGE: <<<Test>>>  ***</span></div>
+Output:
+
+<pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">*** SENDING MESSAGE: <<<Test>>>  ***</pre>
 
 
 

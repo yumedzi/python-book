@@ -59,9 +59,9 @@ a = a + " World"
 print(f"#3. a now is {a}")
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">#1. a now is 42
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">#1. a now is 42
 #2. a now is [1, 2, 42]
-#3. a now is Hello World</div>
+#3. a now is Hello World</span></div>
 
 
 A lot of variables can point to same object. You don't need to declare what exact type variable should be.
@@ -77,8 +77,8 @@ print("a == b →", a == b)
 print("a is b →", a is b)
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">a == b → True
-a is b → True</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">a == b → True
+a is b → True</span></div>
 
 
 
@@ -89,8 +89,8 @@ print("a == b →", a == b)
 print("a is b →", a is b)
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">a == b → True
-a is b → False</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">a == b → True
+a is b → False</span></div>
 
 
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>

@@ -24,8 +24,8 @@ print(set_a)
 print(set_b)
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{1, 2, 3, 4}
-{1, 2, 3, 4}</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{1, 2, 3, 4}
+{1, 2, 3, 4}</span></div>
 
 
 Main methods
@@ -38,7 +38,7 @@ Main methods
 
 
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">['add',
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">['add',
  'clear',
  'copy',
  'difference',
@@ -54,7 +54,7 @@ Main methods
  'symmetric_difference',
  'symmetric_difference_update',
  'union',
- 'update']</div>
+ 'update']</span></div>
 
 
 

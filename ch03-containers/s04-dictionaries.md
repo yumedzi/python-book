@@ -26,7 +26,7 @@ new_d
 
 
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}</span></div>
 
 
 
@@ -41,7 +41,7 @@ new_d
 
 
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': 'John', 'surname': 'Stark'}</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': 'John', 'surname': 'Stark'}</span></div>
 
 
 
@@ -56,8 +56,8 @@ d2 = dict(pairs)
 print("d2:", d2)
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">d1: {'Aria': 'Stark', 'Faceless': 'Man'}
-d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">d1: {'Aria': 'Stark', 'Faceless': 'Man'}
+d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}</span></div>
 
 
 Using method `dict.fromkeys` we can create a new dict from an iterable (some collection) of keys.
@@ -71,7 +71,7 @@ dict.fromkeys(["name", "surname"])
 
 
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': None, 'surname': None}</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': None, 'surname': None}</span></div>
 
 
 
@@ -83,7 +83,7 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 
 
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}</span></div>
 
 
 
@@ -98,7 +98,7 @@ d
 
 
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'a': [], 'b': [], 'c': [], 'd': [], 'e': []}</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'a': [], 'b': [], 'c': [], 'd': [], 'e': []}</span></div>
 
 
 
@@ -111,7 +111,7 @@ d
 
 
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}</span></div>
 
 
 
@@ -127,7 +127,7 @@ d1 is d2, d2
 
 
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(False, {'some_key': 'some_value'})</div>
+<div><span style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(False, {'some_key': 'some_value'})</span></div>
 
 
 

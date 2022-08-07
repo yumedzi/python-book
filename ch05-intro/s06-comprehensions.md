@@ -20,7 +20,7 @@
 
 
 
-    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
 
 
 
@@ -32,7 +32,7 @@
 
 
 
-    [0, 2, 4, 6, 8]
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 2, 4, 6, 8]</code></pre>
 
 
 
@@ -44,7 +44,7 @@
 
 
 
-    [(2, 1),
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[(2, 1),
      (4, 1),
      (4, 3),
      (6, 1),
@@ -53,7 +53,7 @@
      (8, 1),
      (8, 3),
      (8, 5),
-     (8, 7)]
+     (8, 7)]</code></pre>
 
 
 
@@ -69,7 +69,7 @@
 
 
 
-    {0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}</code></pre>
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-    {0: 2, 1: 2, 2: 2}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{0: 2, 1: 2, 2: 2}</code></pre>
 
 
 
@@ -98,9 +98,9 @@ print(set(list_with_duplicated)) # recommended way
 print({x for x in list_with_duplicated if x % 2}) # more logical usage
 ```
 
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{1, 2, 3, 4}
     {1, 2, 3, 4}
-    {1, 2, 3, 4}
-    {1, 3}
+    {1, 3}</code></pre>
 
 
 ## Generator expression
@@ -115,7 +115,7 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 
 
 
-    <generator object <genexpr> at 0x0000023DF7253678>
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object <genexpr> at 0x0000023DF7253678></code></pre>
 
 
 

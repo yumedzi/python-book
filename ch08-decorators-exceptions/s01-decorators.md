@@ -85,10 +85,10 @@ scream.__qualname__ = "Super Song"
 print(scream)
 ```
 
-    LaLaLa
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>LaLaLa
     LaLaLaLaLaLaLaLaLaLaLaLaLaLaLa
     Oops, Exception:  name 'song' is not defined
-    <function Super Song at 0x103fe2a60>
+    <function Super Song at 0x103fe2a60></code></pre>
 
 
 `2`. We can define function everywhere! It will exist in that namespace only. #easy!
@@ -111,8 +111,8 @@ def music(beats=3):
 print(music(10))
 ```
 
-    New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
-    Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
+    Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do</code></pre>
 
 
 Of course we can't access internal functions in any way...
@@ -125,7 +125,7 @@ except NameError as e:
     print("Oh, we can't acces this function outside:", e)
 ```
 
-    Oh, we can't acces this function outside: name '_random_music' is not defined
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Oh, we can't acces this function outside: name '_random_music' is not defined</code></pre>
 
 
 `3`. We can even `return` function as function's result. After this we can use that object as new function itself.
@@ -150,10 +150,10 @@ print( some_party() )
 print(party()())
 ```
 
-    New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
     Notes: Do,Fa,Si,Si,Do,Do,Do,Do,Fa,Do,La,Fa,Re,La,Si
     New pop-hit: Oooh-Toonc
-    Notes: Si,Re
+    Notes: Si,Re</code></pre>
 
 
 ## Decorator syntax and examples
@@ -197,9 +197,9 @@ def greet():
 greet()
 ```
 
-    >>> Before running function
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>>>> Before running function
     Hello!
-    >>> After running function
+    >>> After running function</code></pre>
 
 
 Another example:
@@ -223,9 +223,9 @@ print(price)
 print(price(100, tax_rate=.1))
 ```
 
-    <function dollar.<locals>.wrapper at 0x7f208019f8b0>
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><function dollar.<locals>.wrapper at 0x7f208019f8b0>
     Args are: (100,), KWArgs: {'tax_rate': 0.1}
-    $110.0
+    $110.0</code></pre>
 
 
 The same example, but in one line:
@@ -245,7 +245,7 @@ f()
 
 
 
-    '$100'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'$100'</code></pre>
 
 
 
@@ -274,7 +274,7 @@ f(3, 5)
 
 
 
-    '{"result": 243}'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'{"result": 243}'</code></pre>
 
 
 

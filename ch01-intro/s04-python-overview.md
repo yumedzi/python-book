@@ -146,10 +146,10 @@ print(mult(b=15, a=5))
 print(mult(10))
 ```
 
-    22
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>22
     30
     85
-    60
+    60</code></pre>
 
 
 ### Misc.
@@ -167,7 +167,7 @@ a, b
 
 
 
-    ('54', 45)
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>('54', 45)</code></pre>
 
 
 
@@ -211,8 +211,8 @@ def show_something():
 show_something()
 ```
 
-    >>> Showing results :)
-    Main function output
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>>>> Showing results :)
+    Main function output</code></pre>
 
 
 ### OOP
@@ -251,10 +251,10 @@ print(Foo.attr1)
 print(obj.foo())
 ```
 
-    Initializing new object with val=Super Value
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Initializing new object with val=Super Value
     Nice warm object :)
     Result of obj.foo(): Super Value
     Super Value
     Boo!
-    Some value
+    Some value</code></pre>
     Super Value

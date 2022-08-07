@@ -97,7 +97,7 @@ print(b.class_method())
 print(b.static_method())
 ```
 
-    {'attr': "Object's own attr (from class A)"}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'attr': "Object's own attr (from class A)"}
     Running method of A
     Object's own attr (from class A)
     class attr from A
@@ -110,7 +110,7 @@ print(b.static_method())
     Running class method in B...
     class attr from B
     Running static method...
-    Some static data (from A class)
+    Some static data (from A class)</code></pre>
 
 
 ### More examples:
@@ -140,7 +140,7 @@ fd[1] = 100500
 print(fd["1"])
 ```
 
-    100500
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>100500</code></pre>
 
 
 The dict with logging around setting a key:
@@ -174,9 +174,9 @@ vd[5]
 vd
 ```
 
-    Set: z -> 3
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Set: z -> 3
     Set: 100 -> 100500
-    Set: 5 -> 0
+    Set: 5 -> 0</code></pre>
 
 
 
@@ -208,7 +208,7 @@ counter = VerboseCounter("boombbbam")
 print(counter)
 ```
 
-    MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
     Set: b -> 1
     Set: o -> 1
     Set: o -> 2
@@ -218,7 +218,7 @@ print(counter)
     Set: b -> 4
     Set: a -> 1
     Set: m -> 2
-    VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})
+    VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})</code></pre>
 
 
 #### Extending list
@@ -252,10 +252,10 @@ print(SuperList())
 print(SuperList("abcde"))
 ```
 
-    Before __init__: ['START', 'STOP']
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Before __init__: ['START', 'STOP']
     ['START', 'STOP']
     Before __init__: ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
-    ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
+    ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']</code></pre>
 
 
 There is also bigger example for this with lot of print() calls to see where exactly we are at each moment. Please use it to practice and to dig into this a bit more.
@@ -288,7 +288,7 @@ print("After changes:", l)
 print(id(l))
 ```
 
-    >>> Use parent's constructor but print this line!
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>>>> Use parent's constructor but print this line!
     >>> Original list: []
     140690636702248
     >>> Before running old __init__: []
@@ -296,7 +296,7 @@ print(id(l))
     <class '__main__.SuperList'>
     New 'list': ['a', 'b', 'c', 'd', 'e', 'last element!']
     After changes: [100, 'c', 'd', 'AAA', 'BBB']
-    140690636702248
+    140690636702248</code></pre>
 
 
 ### `super()` based on another class
@@ -327,11 +327,11 @@ class D(C):
 D().m()
 ```
 
-    default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
     super().m() -> C (we take <m> from <C>)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     B's MRO is [<class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
-    super(B, self).m() -> A (we take <m> from <A>)
+    super(B, self).m() -> A (we take <m> from <A>)</code></pre>
 
 
 More examples:
@@ -354,7 +354,7 @@ AResult()()
 
 
 
-    1
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1</code></pre>
 
 
 

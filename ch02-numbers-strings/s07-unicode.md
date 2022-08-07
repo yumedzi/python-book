@@ -67,7 +67,7 @@ s.upper()
 
 
 
-    'ҐУҐЛ 💝 ☕'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ҐУҐЛ 💝 ☕'</code></pre>
 
 
 
@@ -79,7 +79,7 @@ s[0]
 
 
 
-    'ґ'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ґ'</code></pre>
 
 
 
@@ -91,7 +91,7 @@ s[0]
 
 
 
-    'ґ and ☕'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ґ and ☕'</code></pre>
 
 
 
@@ -104,8 +104,8 @@ print(unicodedata.name("ґ"))
 print(unicodedata.name("☕"))
 ```
 
-    CYRILLIC SMALL LETTER GHE WITH UPTURN
-    HOT BEVERAGE
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>CYRILLIC SMALL LETTER GHE WITH UPTURN
+    HOT BEVERAGE</code></pre>
 
 
 
@@ -115,8 +115,8 @@ print(cap_char)
 print(unicodedata.lookup(cap_char))
 ```
 
-    CYRILLIC CAPITAL LETTER GHE WITH UPTURN
-    Ґ
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+    Ґ</code></pre>
 
 
 ### Encoding and Decoding
@@ -151,7 +151,7 @@ Encoding:
 
 
 
-    b''
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b''</code></pre>
 
 
 
@@ -163,7 +163,7 @@ Encoding:
 
 
 
-    b'?'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b'?'</code></pre>
 
 
 
@@ -175,7 +175,7 @@ Encoding:
 
 
 
-    b'&#1168;'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b'&#1168;'</code></pre>
 
 
 

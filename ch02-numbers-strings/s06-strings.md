@@ -16,8 +16,8 @@ print(s1)
 print(s2)
 ```
 
-    Hello, I'm nice little string
-    Hello, I'm nice little string
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Hello, I'm nice little string
+    Hello, I'm nice little string</code></pre>
 
 
 Multiline string (matter of syntax, for Python they are all the same):
@@ -33,11 +33,11 @@ I need to rest...
 print(big_string)
 ```
 
-    Starting here
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Starting here
     Going and going and going...
     And again and again 
     ... a bit bored..
-    I need to rest...
+    I need to rest...</code></pre>
     
 
 
@@ -48,7 +48,7 @@ print(big_string)
 print(dir("some_string")) #Emm... actually all methods...
 ```
 
-    ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']</code></pre>
 
 
 | Method(s)               |  Description                                                                              |
@@ -106,7 +106,7 @@ some_string + " and another string"
 
 
 
-    'Some funny string! and another string'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'Some funny string! and another string'</code></pre>
 
 
 
@@ -118,7 +118,7 @@ some_string * 3
 
 
 
-    'Some funny string!Some funny string!Some funny string!'
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'Some funny string!Some funny string!Some funny string!'</code></pre>
 
 
 
@@ -132,7 +132,7 @@ len(some_string)
 
 
 
-    18
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>18</code></pre>
 
 
 
@@ -147,10 +147,10 @@ some_string.lower(), some_string.upper(), some_string.title(), some_string.capit
 
 
 
-    ('some funny string!',
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>('some funny string!',
      'SOME FUNNY STRING!',
      'Some Funny String!',
-     'Some funny string!')
+     'Some funny string!')</code></pre>
 
 
 
@@ -162,8 +162,8 @@ print("abcde".islower())
 print("ABCDE".isupper())
 ```
 
-    True
-    True
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True
+    True</code></pre>
 
 
 

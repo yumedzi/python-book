@@ -26,7 +26,7 @@ new_d
 
 
 
-    {'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}</code></pre>
 
 
 
@@ -41,7 +41,7 @@ new_d
 
 
 
-    {'name': 'John', 'surname': 'Stark'}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': 'John', 'surname': 'Stark'}</code></pre>
 
 
 
@@ -56,8 +56,8 @@ d2 = dict(pairs)
 print("d2:", d2)
 ```
 
-    d1: {'Aria': 'Stark', 'Faceless': 'Man'}
-    d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>d1: {'Aria': 'Stark', 'Faceless': 'Man'}
+    d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}</code></pre>
 
 
 Using method `dict.fromkeys` we can create a new dict from an iterable (some collection) of keys.
@@ -71,7 +71,7 @@ dict.fromkeys(["name", "surname"])
 
 
 
-    {'name': None, 'surname': None}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': None, 'surname': None}</code></pre>
 
 
 
@@ -83,7 +83,7 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 
 
 
-    {'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}</code></pre>
 
 
 
@@ -98,7 +98,7 @@ d
 
 
 
-    {'a': [], 'b': [], 'c': [], 'd': [], 'e': []}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'a': [], 'b': [], 'c': [], 'd': [], 'e': []}</code></pre>
 
 
 
@@ -111,7 +111,7 @@ d
 
 
 
-    {'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}</code></pre>
 
 
 
@@ -127,7 +127,7 @@ d1 is d2, d2
 
 
 
-    (False, {'some_key': 'some_value'})
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(False, {'some_key': 'some_value'})</code></pre>
 
 
 

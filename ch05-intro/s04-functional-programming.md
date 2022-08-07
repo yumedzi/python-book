@@ -113,7 +113,7 @@ for t in expr.split("+"):
 print( res ) 
 ```
 
-    173
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>173</code></pre>
 
 
 ## Functional approach
@@ -126,7 +126,7 @@ sum(map(int, filter(bool, expr.split("+"))))
 
 
 
-    173
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>173</code></pre>
 
 
 
@@ -166,8 +166,8 @@ print(mystery_imp(str_))
 print(mystery_fp(str_))
 ```
 
-    4
-    4
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>4
+    4</code></pre>
 
 
 Functional is a bit easier to understand...
@@ -189,9 +189,9 @@ print(list(map(pow, [2, 5], [3, 4])))
 print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 ```
 
-    ['1', '2', '3']
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>['1', '2', '3']
     [8, 625]
-    [361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
+    [361, 324, 289, 256, 225, 196, 169, 144, 121, 100]</code></pre>
 
 
 
@@ -201,9 +201,9 @@ print([pow(x[0], x[1]) for x in zip([2, 5], [3, 4])])
 print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 ```
 
-    ['1', '2', '3']
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>['1', '2', '3']
     [8, 625]
-    [8, 625]
+    [8, 625]</code></pre>
 
 
 
@@ -212,8 +212,8 @@ print(list(map(sum, [[1, 2, 3] , [4, 5, 8]])))
 print(list(map(lambda x: x+1, [1, 2, 3])))    
 ```
 
-    [6, 17]
-    [2, 3, 4]
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[6, 17]
+    [2, 3, 4]</code></pre>
 
 
 ## Filter
@@ -231,11 +231,11 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else True, [1,2,3,4
 print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,4,5,0, "a", [], 0.0, False, None])))
 ```
 
-    [1, 2]
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2]
     [1, 2]
     [1, 3, 5, 7]
     [1, 3, 5, 'a', [], 0.0, None]
-    [1, 3, 5]
+    [1, 3, 5]</code></pre>
 
 
 ## Zip
@@ -255,9 +255,9 @@ zipped = zip([1, 2, 3, 4], [1, 2, 0])
 print(list( zip(*zipped) )) # Note that we'll loose element from longer list
 ```
 
-    [(1, 2), (3, 4)]
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[(1, 2), (3, 4)]
     [(1, 1), (2, 2), (3, 0)]
-    [(1, 2, 3), (1, 2, 0)]
+    [(1, 2, 3), (1, 2, 0)]</code></pre>
 
 
 ## Other perls of FP

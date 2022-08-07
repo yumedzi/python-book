@@ -22,7 +22,7 @@ else:
     print("a is lesser than 3")
 ```
 
-    a is greater than 3
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>a is greater than 3</code></pre>
 
 
 ## bool type
@@ -41,7 +41,7 @@ True + True
 
 
 
-    2
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>2</code></pre>
 
 
 
@@ -53,7 +53,7 @@ True + True
 
 
 
-    6
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>6</code></pre>
 
 
 
@@ -65,7 +65,7 @@ bool(24), bool("sdsds"), bool(""), bool([])
 
 
 
-    (True, True, False, False)
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(True, True, False, False)</code></pre>
 
 
 
@@ -107,7 +107,7 @@ else:
     print("You will not see this quote anyway =(")
 ```
 
-    Take arms against a sea of troubles!
+<pre class="notranslate" style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Take arms against a sea of troubles!</code></pre>
 
 
 Because the expression is equivalent to:

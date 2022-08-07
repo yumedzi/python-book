@@ -218,7 +218,7 @@ for i in tqdm(range(10000)):
     l.append(i ** i)
 ```
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>100%|██████████| 10000/10000 [00:11<00:00, 902.17it/s] </code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>100%|██████████| 10000/10000 [00:11<00:00, 902.17it/s] </code></pre>
 
 
 ### Colorama
@@ -250,7 +250,7 @@ print('back to normal now')
     Test..
     [41m[2mand in dim text
     [0m
-    back to normal now</code></span>
+    back to normal now</code></pre>
 
 
 ### Yaspin
@@ -292,7 +292,7 @@ now_in_kiev
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))</code></pre>
 
 
 
@@ -304,7 +304,7 @@ len(pendulum.timezones)
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>592</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>592</code></pre>
 
 
 
@@ -317,7 +317,7 @@ print(pendulum.parse('20160413'))
 ```
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>2020-11-05T00:00:00+00:00
-    2016-04-13T00:00:00+00:00</code></span>
+    2016-04-13T00:00:00+00:00</code></pre>
 
 
 
@@ -327,7 +327,7 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 ```
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>2020-05-01T00:00:00+00:00
-    2018-01-17T00:00:00+00:00</code></span>
+    2018-01-17T00:00:00+00:00</code></pre>
 
 
 
@@ -339,7 +339,7 @@ now_in_kiev.in_timezone('UTC')
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))</code></pre>
 
 
 
@@ -355,7 +355,7 @@ print(pendulum.now().subtract(seconds=7).diff_for_humans())
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>4 days ago
     1 hour ago
-    a few seconds ago</code></span>
+    a few seconds ago</code></pre>
 
 
 

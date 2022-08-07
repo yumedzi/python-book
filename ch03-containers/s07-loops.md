@@ -68,7 +68,7 @@ else:  # run this block only if no break statement called
     10 	: <---SKIPPING LINE--->
     11 	: Even number ... EOL!
     12 	: Odd number
-    BYE BYE!!! (break called!)</code></span>
+    BYE BYE!!! (break called!)</code></pre>
 
 
 One more example for for-else loop - selection of DB:
@@ -106,7 +106,7 @@ print(list(range(0, 10, 3)))
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     [0, 5, 10, 15, 20, 25]
-    [0, 3, 6, 9]</code></span>
+    [0, 3, 6, 9]</code></pre>
 
 
 
@@ -118,7 +118,7 @@ print(list(range(1, 0)))
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
     []
-    []</code></span>
+    []</code></pre>
 
 
 Also - from 3.5:
@@ -131,7 +131,7 @@ Also - from 3.5:
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3]</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3]</code></pre>
 
 
 
@@ -143,7 +143,7 @@ Also - from 3.5:
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2, 3, 4, 5, 6]</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2, 3, 4, 5, 6]</code></pre>
 
 
 
@@ -155,7 +155,7 @@ Also - from 3.5:
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{0, 1, 2, 3}</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{0, 1, 2, 3}</code></pre>
 
 
 
@@ -190,7 +190,7 @@ for index, girl in enumerate(["Olya", "Sveta", "Anna", "Maria"], start=1):
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Girl number 1 is Olya
     Girl number 2 is Sveta
     Girl number 3 is Anna
-    Girl number 4 is Maria</code></span>
+    Girl number 4 is Maria</code></pre>
 
 
 The following code:
@@ -243,5 +243,5 @@ print("Goodbye")
     Square is  144
     Please enter an int: 25
     Square is  625
-    Please enter an int: 0</code></span>
+    Please enter an int: 0</code></pre>
     Goodbye

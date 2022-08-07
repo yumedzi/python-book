@@ -41,7 +41,7 @@ f(2, 6)
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>8</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>8</code></pre>
 
 
 
@@ -53,7 +53,7 @@ list(map(lambda x: x**2, range(5)))
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 4, 9, 16]</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 4, 9, 16]</code></pre>
 
 
 
@@ -97,7 +97,7 @@ f2 = lambda: len([ x for x in range(10000)])
 ```
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>654 µs ± 13.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-    663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</code></span>
+    663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</code></pre>
 
 
 This is because lambda is syntax sugar and in the end almost the same code is being constructed
@@ -118,7 +118,7 @@ dis.dis(f1)
                  21 GET_ITER
                  22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
                  25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 28 RETURN_VALUE</code></span>
+                 28 RETURN_VALUE</code></pre>
 
 
 
@@ -135,5 +135,5 @@ dis.dis(f2)
                  18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
                  21 GET_ITER
                  22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)</code></span>
+                 25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)</code></pre>
                  28 RETURN_VALUE

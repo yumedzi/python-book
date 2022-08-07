@@ -76,7 +76,7 @@ f1()
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>No complains at this point!
     ------------------------------
-    Now you'll get the error:</code></span>
+    Now you'll get the error:</code></pre>
 
 
 
@@ -119,7 +119,7 @@ print(foo()) # Will return 100500 because during call global a equals to 100500
 ```
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>10
-    100500</code></span>
+    100500</code></pre>
 
 
 But most often the function relies on the data passed to it:
@@ -139,7 +139,7 @@ print(sum(x=5))
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>74
     74
     54
-    54</code></span>
+    54</code></pre>
 
 
 We can assign default argument:
@@ -164,7 +164,7 @@ print(random_phrase(length=6))
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>evil unicorns
     I think ehmm evil unicorns
-    ehmm umm unicorns evil nice unicorns</code></span>
+    ehmm umm unicorns evil nice unicorns</code></pre>
 
 
 Using list comprehesion we can make this function very short
@@ -179,7 +179,7 @@ def random_phrase(length=3):
 print(random_phrase(length=5))
 ```
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>evil umm ehmm I think evil</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>evil umm ehmm I think evil</code></pre>
 
 
 ## Arguments definitions
@@ -240,7 +240,7 @@ def print_strings(str1, str2):
 print_strings("Hello", "World")
 ```
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Hello World</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Hello World</code></pre>
 
 
 ### Keyword arguments
@@ -256,7 +256,7 @@ print_strings(str2="James Bond", str1="Bond,")
 ```
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Hello World
-    Bond, James Bond</code></span>
+    Bond, James Bond</code></pre>
 
 
 ### Default arguments
@@ -274,7 +274,7 @@ add_friend(name="Mark")
 ```
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Friend Mark (20) added
-    Friend Mark (20) added</code></span>
+    Friend Mark (20) added</code></pre>
 
 
 ### Variable-length arguments 

@@ -27,5 +27,5 @@ print(p.send(-25.3))
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object pluser at 0x7f4b14319a20>
     0
-    11</code></span>
+    11</code></pre>
     -24.3

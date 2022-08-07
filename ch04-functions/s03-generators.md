@@ -48,7 +48,7 @@ except StopIteration:
     For loop: 3
     Next iteration!
     Stopping generator...Bye-bye!
-    Generator is already empty (raised StopIteration)</code></span>
+    Generator is already empty (raised StopIteration)</code></pre>
 
 
 ## Generator expressions
@@ -74,7 +74,7 @@ print(list(gen))
     4
     6
     8
-    [2, 4, 6, 8]</code></span>
+    [2, 4, 6, 8]</code></pre>
 
 
 
@@ -92,5 +92,5 @@ for i in gen:
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object gen_func at 0x103dcf518>
     2
     4
-    6</code></span>
+    6</code></pre>
     8

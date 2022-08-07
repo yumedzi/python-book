@@ -110,7 +110,7 @@ print(b.static_method())
     Running class method in B...
     class attr from B
     Running static method...
-    Some static data (from A class)</code></span>
+    Some static data (from A class)</code></pre>
 
 
 ### More examples:
@@ -140,7 +140,7 @@ fd[1] = 100500
 print(fd["1"])
 ```
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>100500</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>100500</code></pre>
 
 
 The dict with logging around setting a key:
@@ -176,7 +176,7 @@ vd
 
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Set: z -> 3
     Set: 100 -> 100500
-    Set: 5 -> 0</code></span>
+    Set: 5 -> 0</code></pre>
 
 
 
@@ -218,7 +218,7 @@ print(counter)
     Set: b -> 4
     Set: a -> 1
     Set: m -> 2
-    VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})</code></span>
+    VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})</code></pre>
 
 
 #### Extending list
@@ -255,7 +255,7 @@ print(SuperList("abcde"))
 <pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Before __init__: ['START', 'STOP']
     ['START', 'STOP']
     Before __init__: ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
-    ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']</code></span>
+    ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']</code></pre>
 
 
 There is also bigger example for this with lot of print() calls to see where exactly we are at each moment. Please use it to practice and to dig into this a bit more.
@@ -296,7 +296,7 @@ print(id(l))
     <class '__main__.SuperList'>
     New 'list': ['a', 'b', 'c', 'd', 'e', 'last element!']
     After changes: [100, 'c', 'd', 'AAA', 'BBB']
-    140690636702248</code></span>
+    140690636702248</code></pre>
 
 
 ### `super()` based on another class
@@ -331,7 +331,7 @@ D().m()
     super().m() -> C (we take <m> from <C>)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     B's MRO is [<class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
-    super(B, self).m() -> A (we take <m> from <A>)</code></span>
+    super(B, self).m() -> A (we take <m> from <A>)</code></pre>
 
 
 More examples:
@@ -354,7 +354,7 @@ AResult()()
 
 
 
-<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1</code></span>
+<pre class="notranslate" style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1</code></pre>
 
 
 

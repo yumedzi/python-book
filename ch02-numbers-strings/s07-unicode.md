@@ -67,7 +67,7 @@ s.upper()
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">'ҐУҐЛ 💝 ☕'</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>'ҐУҐЛ 💝 ☕'</div>
 
 
 
@@ -79,7 +79,7 @@ s[0]
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">'ґ'</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>'ґ'</div>
 
 
 
@@ -91,7 +91,7 @@ s[0]
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">'ґ and ☕'</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>'ґ and ☕'</div>
 
 
 
@@ -104,8 +104,8 @@ print(unicodedata.name("ґ"))
 print(unicodedata.name("☕"))
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">CYRILLIC SMALL LETTER GHE WITH UPTURN
-    HOT BEVERAGE</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>CYRILLIC SMALL LETTER GHE WITH UPTURN
+HOT BEVERAGE</div>
 
 
 
@@ -115,8 +115,8 @@ print(cap_char)
 print(unicodedata.lookup(cap_char))
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">CYRILLIC CAPITAL LETTER GHE WITH UPTURN
-    Ґ</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+Ґ</div>
 
 
 ### Encoding and Decoding
@@ -151,7 +151,7 @@ Encoding:
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">b''</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>b''</div>
 
 
 
@@ -163,7 +163,7 @@ Encoding:
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">b'?'</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>b'?'</div>
 
 
 
@@ -175,7 +175,7 @@ Encoding:
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">b'&#1168;'</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>b'&#1168;'</div>
 
 
 

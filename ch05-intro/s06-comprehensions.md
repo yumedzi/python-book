@@ -20,7 +20,7 @@
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</div>
 
 
 
@@ -32,7 +32,7 @@
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[0, 2, 4, 6, 8]</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>[0, 2, 4, 6, 8]</div>
 
 
 
@@ -44,16 +44,16 @@
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[(2, 1),
-     (4, 1),
-     (4, 3),
-     (6, 1),
-     (6, 3),
-     (6, 5),
-     (8, 1),
-     (8, 3),
-     (8, 5),
-     (8, 7)]</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>[(2, 1),
+ (4, 1),
+ (4, 3),
+ (6, 1),
+ (6, 3),
+ (6, 5),
+ (8, 1),
+ (8, 3),
+ (8, 5),
+ (8, 7)]</div>
 
 
 
@@ -69,7 +69,7 @@
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">{0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>{0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}</div>
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">{0: 2, 1: 2, 2: 2}</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>{0: 2, 1: 2, 2: 2}</div>
 
 
 
@@ -98,9 +98,9 @@ print(set(list_with_duplicated)) # recommended way
 print({x for x in list_with_duplicated if x % 2}) # more logical usage
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">{1, 2, 3, 4}
-    {1, 2, 3, 4}
-    {1, 3}</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>{1, 2, 3, 4}
+{1, 2, 3, 4}
+{1, 3}</div>
 
 
 ## Generator expression
@@ -115,7 +115,7 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><generator object <genexpr> at 0x0000023DF7253678></pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;><generator object <genexpr> at 0x0000023DF7253678></div>
 
 
 

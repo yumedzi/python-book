@@ -63,14 +63,14 @@ foo()
 print("now global is", all)
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">builtin: <built-in function all>
-    global: [1, 2, 3]
-    enclosed: [1, 2, 3, 'changed!']
-    checking 'all': [1, 2, 3, 'changed!']
-    changing global: [7, 8, 9]
-    checking 'all': [1, 2, 3, 'changed!']
-    inner3 says: [1, 2, 3, 'changed!']
-    now global is [7, 8, 9]</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>builtin: <built-in function all>
+global: [1, 2, 3]
+enclosed: [1, 2, 3, 'changed!']
+checking 'all': [1, 2, 3, 'changed!']
+changing global: [7, 8, 9]
+checking 'all': [1, 2, 3, 'changed!']
+inner3 says: [1, 2, 3, 'changed!']
+now global is [7, 8, 9]</div>
 
 
 
@@ -90,8 +90,8 @@ f()
 print(a, b, c)
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">1
-    1 2 old string</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>1
+1 2 old string</div>
 
 
 * `a` - free variable
@@ -122,10 +122,10 @@ print("Outside the function -> b:", b)
 
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Inside the function -> a: 100
-    Inside the function -> b: 888
-    Outside the function -> a: 0
-    Outside the function -> b: 888</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Inside the function -> a: 100
+Inside the function -> b: 888
+Outside the function -> a: 0
+Outside the function -> b: 888</div>
 
 
 Get all locals, globals:
@@ -145,7 +145,7 @@ def f():
 f()
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">{'c': 25}</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>{'c': 25}</div>
 
 
 ### Enclosed scope
@@ -168,7 +168,7 @@ def outer():
 outer()
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">local value</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>local value</div>
 
 
 
@@ -187,7 +187,7 @@ outer()
 
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">enclosed variable</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>enclosed variable</div>
 
 
 Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
@@ -211,10 +211,10 @@ outer()
 print(a)
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">enclosed variable
-    changed enclosed variable
-    changed enclosed variable
-    global variable</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>enclosed variable
+changed enclosed variable
+changed enclosed variable
+global variable</div>
 
 
 Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
@@ -265,7 +265,7 @@ foo()
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">55</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>55</div>
 
 
 

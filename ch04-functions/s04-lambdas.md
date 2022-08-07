@@ -41,7 +41,7 @@ f(2, 6)
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">8</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>8</div>
 
 
 
@@ -53,7 +53,7 @@ list(map(lambda x: x**2, range(5)))
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">[0, 1, 4, 9, 16]</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>[0, 1, 4, 9, 16]</div>
 
 
 
@@ -96,8 +96,8 @@ f2 = lambda: len([ x for x in range(10000)])
 %timeit f2()
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">654 µs ± 13.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-    663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>654 µs ± 13.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</div>
 
 
 This is because lambda is syntax sugar and in the end almost the same code is being constructed
@@ -108,17 +108,17 @@ import dis
 dis.dis(f1)
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">  2           0 LOAD_GLOBAL              0 (len)
-                  3 LOAD_CONST               1 (<code object <listcomp> at 0x103e14c90, file "<ipython-input-67-9c2575e1edb3>", line 2>)
-                  6 LOAD_CONST               2 ('f1.<locals>.<listcomp>')
-                  9 MAKE_FUNCTION            0
-                 12 LOAD_GLOBAL              1 (range)
-                 15 LOAD_CONST               3 (10000)
-                 18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 21 GET_ITER
-                 22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 28 RETURN_VALUE</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>  2           0 LOAD_GLOBAL              0 (len)
+              3 LOAD_CONST               1 (<code object <listcomp> at 0x103e14c90, file "<ipython-input-67-9c2575e1edb3>", line 2>)
+              6 LOAD_CONST               2 ('f1.<locals>.<listcomp>')
+              9 MAKE_FUNCTION            0
+             12 LOAD_GLOBAL              1 (range)
+             15 LOAD_CONST               3 (10000)
+             18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             21 GET_ITER
+             22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             28 RETURN_VALUE</div>
 
 
 
@@ -126,14 +126,14 @@ dis.dis(f1)
 dis.dis(f2)
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">  4           0 LOAD_GLOBAL              0 (len)
-                  3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)
-                  6 LOAD_CONST               2 ('<lambda>.<locals>.<listcomp>')
-                  9 MAKE_FUNCTION            0
-                 12 LOAD_GLOBAL              1 (range)
-                 15 LOAD_CONST               3 (10000)
-                 18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 21 GET_ITER
-                 22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>  4           0 LOAD_GLOBAL              0 (len)
+              3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)
+              6 LOAD_CONST               2 ('<lambda>.<locals>.<listcomp>')
+              9 MAKE_FUNCTION            0
+             12 LOAD_GLOBAL              1 (range)
+             15 LOAD_CONST               3 (10000)
+             18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             21 GET_ITER
+             22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)</div>
                  28 RETURN_VALUE

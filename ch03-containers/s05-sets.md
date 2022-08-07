@@ -24,8 +24,8 @@ print(set_a)
 print(set_b)
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">{1, 2, 3, 4}
-    {1, 2, 3, 4}</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>{1, 2, 3, 4}
+{1, 2, 3, 4}</div>
 
 
 Main methods
@@ -38,23 +38,23 @@ Main methods
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">['add',
-     'clear',
-     'copy',
-     'difference',
-     'difference_update',
-     'discard',
-     'intersection',
-     'intersection_update',
-     'isdisjoint',
-     'issubset',
-     'issuperset',
-     'pop',
-     'remove',
-     'symmetric_difference',
-     'symmetric_difference_update',
-     'union',
-     'update']</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>['add',
+ 'clear',
+ 'copy',
+ 'difference',
+ 'difference_update',
+ 'discard',
+ 'intersection',
+ 'intersection_update',
+ 'isdisjoint',
+ 'issubset',
+ 'issuperset',
+ 'pop',
+ 'remove',
+ 'symmetric_difference',
+ 'symmetric_difference_update',
+ 'union',
+ 'update']</div>
 
 
 

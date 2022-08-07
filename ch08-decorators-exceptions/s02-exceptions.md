@@ -45,16 +45,16 @@ print("3)")
 divide_ten([3])
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">1)
-    5.0
-    Cool, no exceptions were triggered!
-    We're done with that.
-    2)
-    Oops, invalid - you can't pass 0. Error: float division by zero
-    We're done with that.
-    3)
-    Wrong type! <class 'list'>
-    We're done with that.</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>1)
+5.0
+Cool, no exceptions were triggered!
+We're done with that.
+2)
+Oops, invalid - you can't pass 0. Error: float division by zero
+We're done with that.
+3)
+Wrong type! <class 'list'>
+We're done with that.</div>
 
 
 Another working example:
@@ -78,7 +78,7 @@ def get_item():
 get_item()
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Enter index: -5</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Enter index: -5</div>
 
 
 
@@ -159,9 +159,9 @@ main(-6)
 main(3)
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Oops, can't div by zero!
-    ERROR: Can't work with negative numbers
-    3.3333333333333335</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Oops, can't div by zero!
+ERROR: Can't work with negative numbers
+3.3333333333333335</div>
 
 
 ## Referring to exceptions
@@ -188,8 +188,8 @@ except:
     raise
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
-    /tmp/1123123.txt</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
+/tmp/1123123.txt</div>
 
 
 ## Catching multiple exceptions
@@ -209,7 +209,7 @@ except (IOError, ValueError) as e:
     print(f"Data or file error: {e}")
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Data or file error: [Errno 2] No such file or directory: 'myfile.txt'</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Data or file error: [Errno 2] No such file or directory: 'myfile.txt'</div>
 
 
 ## assert

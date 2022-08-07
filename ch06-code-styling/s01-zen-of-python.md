@@ -7,7 +7,7 @@ Also know as PEP 20. (PEP is proposal for enhancement)
 import this
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">The Zen of Python, by Tim Peters</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>The Zen of Python, by Tim Peters</div>
     
     Beautiful is better than ugly.
     Explicit is better than implicit.

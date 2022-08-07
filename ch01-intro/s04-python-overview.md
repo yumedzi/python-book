@@ -146,10 +146,10 @@ print(mult(b=15, a=5))
 print(mult(10))
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">22
-    30
-    85
-    60</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>22
+30
+85
+60</div>
 
 
 ### Misc.
@@ -167,7 +167,7 @@ a, b
 
 
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">('54', 45)</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>('54', 45)</div>
 
 
 
@@ -211,8 +211,8 @@ def show_something():
 show_something()
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">>>> Showing results :)
-    Main function output</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>>>> Showing results :)
+Main function output</div>
 
 
 ### OOP
@@ -251,10 +251,10 @@ print(Foo.attr1)
 print(obj.foo())
 ```
 
-<div><pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;">Initializing new object with val=Super Value
-    Nice warm object :)
-    Result of obj.foo(): Super Value
-    Super Value
-    Boo!
-    Some value</pre></div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Initializing new object with val=Super Value
+Nice warm object :)
+Result of obj.foo(): Super Value
+Super Value
+Boo!
+Some value</div>
     Super Value

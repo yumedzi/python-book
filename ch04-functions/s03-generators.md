@@ -17,6 +17,8 @@ Generator is specific kind of object that has `__next__` method which returns "n
 Generator is particular case of more generic type - "iterator" which is defined as object with `__next__` and `__iter__` methods.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def sum_range(x, y):
     print("Starting generator...")
@@ -65,6 +67,8 @@ Very similar to list comprehension. Instead of sqaure brackets `[]` for generato
 > Important thing to understand - generator is the result of calling generator function or the result of running generator expression
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 gen = (x for x in range(1,10) if not x % 2) # get generator using generator expression
 print(gen)
@@ -91,6 +95,8 @@ print(list(gen))
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def gen_func():

@@ -15,6 +15,8 @@ to local variables go into this new namespace. In particular, function definitio
 Class objects support two kinds of operations: attribute references and instantiation.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class Bus:
     """ Sample Bus class """
@@ -80,6 +82,8 @@ Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 marshrutka_317 = Bus("# 317")
 marshrutka_317.transfer(20)
@@ -96,6 +100,8 @@ Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 b.transfer(23)
@@ -117,6 +123,8 @@ Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl
 Class variables and instance variables were changed:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(Bus.people_transferred)
 print(marshrutka_317.people_transferred)
@@ -136,6 +144,8 @@ print(marshrutka_317.people_transferred)
 ## Inheritance
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class Robot:
     sounds = ["Beeep", "Bzzzt", "Oooooh"]
@@ -154,6 +164,8 @@ class Robot:
         return f"{self.name} says: {random.choice(self.sounds)}"
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 bip = Robot("Bip 1.0")
@@ -175,6 +187,8 @@ Bip 1.0 says: Oooooh
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class BendingRobot(Robot):
     sounds = ["Kill all humans", "Kiss my shiny metal face", "Oh, your God!",
@@ -182,10 +196,12 @@ class BendingRobot(Robot):
 ```
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 bender = BendingRobot("Bender")
 print(bender)
-print(bender.say())          
+print(bender.say())
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -203,6 +219,8 @@ Bender says: Oh wait you’re serious. Let me laugh even harder.
 
 Python supports a limited form of multiple inheritance as well. A class definition with multiple base classes looks like this:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A:
@@ -243,6 +261,8 @@ d.a, d.x
 Let's enhance our `Robot` example by inheriting from two classes at once.
 
 
+🪄 _<mark style="color:green;">Code and Output:</mark>_
+
 ```python
 class Mail:
     def send_message(self, msg):
@@ -261,6 +281,8 @@ Mail().send_message("Test")
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class BendingMailingRobot(Robot, Mail):
@@ -288,6 +310,8 @@ By default all methods (except of `__new__` are instance methods).
 The method that should be called with the instance as it's first argument. This method is bound to instance so if calling as it's method passing instance is not required. Example:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class Example:
     def cool_method(self):
@@ -310,6 +334,8 @@ The method with class as the first argument. Useful to run some code without nee
 
 To mark the method as class method it is required to use builtin decorator `@classmethod`
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class Example:
@@ -340,6 +366,8 @@ This method doesn't require to pass instance/class at all.
 
 To mark the method as static method it is required to use builtin decorator `@staticmethod`
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class Example:
@@ -376,11 +404,15 @@ This chapter is only viable for Python 2 - as in Python 3 there are no such dist
 
 Before Python 2.5 the format for creating a class was:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class Old:
     pass
 ```
 This was resulted in various problems with MRO and types. So some code redesigned, for this new format introduced:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class New(object):

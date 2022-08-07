@@ -24,12 +24,16 @@ In the end this is always up to specific project's convention but having definit
 
 Consider the diff of:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def test_15(self):
    self.assertEqual(func(500), 1000)
 ```
 
 and:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def test_15_func_with_num__returns_double(self):
@@ -45,6 +49,8 @@ def test_15_func_with_num__returns_double(self):
 * Act on an object.
 * Assert that something is as expected.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def test_15_method_with_num__returns_double(self):

@@ -30,6 +30,8 @@ Script lists filenames from a dir, prints their relative and absolute paths
 
 `dir: /home/user/dir, file: foo.txt`
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def printdir(dir):
   filenames = os.listdir(dir)
@@ -48,6 +50,8 @@ Another great method of iteration through directories and files: `os.walk`:
 
 Generate the file names in a directory tree by walking the tree either top-down or bottom-up. For each directory in the tree rooted at directory top (including top itself), it yields a 3-tuple (`dirpath`, `dirnames`, `filenames`).
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Code to list contents of /tmp dir
@@ -88,6 +92,8 @@ FILES:['1']
     
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 # Mass file deleter - !DON'T TRY THIS AT HOME!
 import os
@@ -123,6 +129,8 @@ This lib is class-based wrapper on many `os` and `os.path` methods.
 Few examples:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from pathlib import Path
 
@@ -144,6 +152,8 @@ example
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(p.exists()) # `os.path.exists`
 ```
@@ -158,6 +168,8 @@ False
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 p.mkdir()         # os.mkdir
@@ -176,6 +188,8 @@ True
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 test_file = p / "test.txt"
@@ -197,6 +211,8 @@ PosixPath('example/test.txt')
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 test_file.write_text("Hello Pathlib!")
 ```
@@ -215,6 +231,8 @@ test_file.write_text("Hello Pathlib!")
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 test_file.read_text()
@@ -237,6 +255,8 @@ test_file.read_text()
 Listing dir's contents:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 [x for x in p.iterdir()]
 ```
@@ -258,6 +278,8 @@ Listing dir's contents:
 Searching for particular files by pattern:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 [x for x in p.glob("*.txt")]
 ```
@@ -271,6 +293,8 @@ Searching for particular files by pattern:
 
 Clearing our samples:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 test_file.unlink()
@@ -313,6 +337,8 @@ Mostly this module is about files and dirs copy and removal.
 ### Example
 
 Backing up python source files:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import shutil

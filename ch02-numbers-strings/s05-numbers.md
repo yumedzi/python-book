@@ -17,11 +17,15 @@
 | `%`                 | Modulo (remainder after division)
 
 To fix division on Python2:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from __future__ import division
 ```
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 365*2 - 700 + 10000 - 1
@@ -42,9 +46,10 @@ from __future__ import division
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 43 / 13
-
 ```
 
 
@@ -61,6 +66,8 @@ from __future__ import division
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 6//4
@@ -80,6 +87,8 @@ from __future__ import division
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 23 % 10
@@ -102,6 +111,8 @@ from __future__ import division
 ### Module "math"
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import math
 print (dir(math))
@@ -117,6 +128,8 @@ print (dir(math))
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 math.pi, math.e, math.sin(324), math.pow(2,10)
@@ -139,6 +152,8 @@ math.pi, math.e, math.sin(324), math.pow(2,10)
 ### Module "random"
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import random
 print (dir(random))
@@ -154,6 +169,8 @@ print (dir(random))
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 random.randint(2, 7)  # from 2 to 7, includes 7
@@ -174,6 +191,8 @@ random.randint(2, 7)  # from 2 to 7, includes 7
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 random.randrange(15)  # from 0 to 14, doesn't include 15
 ```
@@ -185,6 +204,8 @@ random.randrange(15)  # from 0 to 14, doesn't include 15
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 random.choice(["She loves me", "She doesn't love me"])
@@ -198,6 +219,8 @@ random.choice(["She loves me", "She doesn't love me"])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 # Shuffle the list l
 l = [1, 2, 3, 4, 5]
@@ -210,6 +233,8 @@ print(l)
 
 How random is "random"?
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from random import seed, random
@@ -274,6 +299,8 @@ If Python were to print the true decimal value of the binary approximation store
 print(0.1 + 0.2)
 print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1) 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 i = 0
 for _ in range(20):
@@ -306,6 +333,8 @@ for _ in range(20):
 Rounding has similar problems if number representation is approximated:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 round(2.675, 2)
 ```
@@ -322,6 +351,8 @@ Because it is: 2.67499999999999982236431605997495353221893310546875
 To see "true" value use **`decimal.Decimal`**:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from decimal import Decimal 
 Decimal(0.1)
@@ -336,6 +367,8 @@ Decimal(0.1)
 
 To set human-friendly numbers – convert string with number to Decimal :
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 Decimal('0.1') + Decimal('0.2')
@@ -354,6 +387,8 @@ Usual float-point calculations are fast but (as we just saw not accurate). So wh
 So consider this when doing heavy calculations. For this it's better to either use PyPy interpreter or write this as separate C module.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 %%timeit
 for x in range(1000, 1000000):
@@ -363,6 +398,8 @@ for x in range(1000, 1000000):
     96.4 ms ± 1.19 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 %%timeit
@@ -385,6 +422,8 @@ There are two main modules - very big and omnipotent for this:
     * Physics, chemistry modelling
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 %matplotlib inline
 import numpy as np
@@ -404,11 +443,13 @@ plt.show()
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 %matplotlib inline
 (n, bins) = np.histogram(v, bins=50)
 plt.plot(.6*(bins[1:]+bins[:-1]), n)
-plt.show() 
+plt.show()
 ```
 
 

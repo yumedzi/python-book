@@ -26,6 +26,8 @@
 
 ####   [argparse](https://docs.python.org/3/library/argparse.html)
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import argparse
 
@@ -68,6 +70,8 @@ optional arguments:
 ```
 
 ####  [docopt](http://docopt.org/)
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 """
@@ -113,6 +117,8 @@ Options:
 
 ####   [click](https://click.palletsprojects.com/en/7.x/)
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import click
 
@@ -147,6 +153,8 @@ Options:
 
 #### [fire](https://github.com/google/python-fire)
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import fire
@@ -192,6 +200,8 @@ pip install pick
 
 Example:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from pick import pick
 
@@ -210,6 +220,8 @@ produces this:
 * [`tqdm`](https://github.com/tqdm/tqdm)
     * Command line progress bar framework
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from tqdm import tqdm
@@ -242,6 +254,8 @@ Possible color formattings:
 <img src="../images/tr_10_04.png">  
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from colorama import Fore, Back, Style
 print(Fore.YELLOW + Back.BLUE + 'some yellow text')
@@ -272,6 +286,8 @@ back to normal now
 * [yaspin](https://github.com/pavdmyt/yaspin)
     * Yet Another Terminal Spinner for Python
     
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import time
 from random import randint
@@ -296,6 +312,8 @@ with yaspin(text="Loading", color="yellow") as spinner:
     * Python datetimes made easy.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import pendulum
 
@@ -318,6 +336,8 @@ DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 len(pendulum.timezones)
 ```
@@ -339,6 +359,8 @@ len(pendulum.timezones)
 We can parse datetime from a string:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(pendulum.parse("2020/11/05"))
 print(pendulum.parse('20160413'))
@@ -356,6 +378,8 @@ print(pendulum.parse('20160413'))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(pendulum.from_format('01, 05, 2020', 'D, MM, YYYY'))
 print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
@@ -372,6 +396,8 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Seamless timezone switching
@@ -392,6 +418,8 @@ DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 tomorrow = pendulum.now().add(days=1)
@@ -415,6 +443,8 @@ a few seconds ago
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 delta = tomorrow - last_week
 print(f"In hours: {delta.hours}")
@@ -435,6 +465,8 @@ print(delta.in_words(locale='ru')) # <-- Only "ru" at the moment, no "ua" :(
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from loguru import logger
 
@@ -444,6 +476,8 @@ logger.debug("That's it, beautiful and simple logging!")
     2019-09-20 13:08:41.340 | DEBUG    | __main__:<module>:3 - That's it, beautiful and simple logging!
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import sys
@@ -465,6 +499,8 @@ logger.debug("Check it now!")
 
 
 The code
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 logger.add("output.log", backtrace=True, diagnose=True)  # Set 'False' to not leak sensitive data in prod
 
@@ -521,6 +557,8 @@ log_file = /tmp/example.log
 
 and use it like this:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from configobj import ConfigObj
 
@@ -549,6 +587,8 @@ pip install configobj
 #### Reading config
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 # As example let's read ini from "virtual" file:
 import io
@@ -566,6 +606,8 @@ log_file = /tmp/example.log
 f = io.StringIO(ini_contents)  # File-like object
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from configobj import ConfigObj
@@ -602,6 +644,8 @@ Validation is done with the help of `Validator` object and `configspec` (which r
 
 Example of configspec:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 port = integer(0, 100)
 user = string(max=25)
@@ -613,6 +657,8 @@ nick = string(default=None)
 ### Profiling
 
 > The profiling package is an interactive continuous Python profiler. It is inspired from Unity 3D profiler. This package provides these features:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 > pip install profiling
@@ -669,6 +715,8 @@ print handler.headers.getheader('content-type')
 Example for Python 3
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import urllib
 from base64 import b64encode
@@ -689,6 +737,8 @@ except urllib.error.HTTPError as e:
 
 Example with requests:
 
+🪄 _<mark style="color:green;">Code and Output:</mark>_
+
 ```python
 import requests
 
@@ -707,6 +757,8 @@ r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 
 Fetching some cat facts!
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import requests
@@ -729,6 +781,8 @@ for f in facts:
     * A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 requests.get('https://catfact.ninja/fact').json()['fact']
@@ -787,6 +841,8 @@ A number is very much like a C or Java number, except that the octal and hexadec
     
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import json
 
@@ -815,6 +871,8 @@ json.dumps(b)
 * `.dumps(python_object)` -> convert Python object to string
 * `.dump(file_descriptor)` -> save Python object to file
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import pickle
@@ -854,6 +912,8 @@ pip install xmltodict
 Usage:
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import xmltodict

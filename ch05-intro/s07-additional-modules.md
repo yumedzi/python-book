@@ -6,10 +6,14 @@
     + I've shown example of `operator.mul`. There are lot of similar functions providing functionality of main operators
 * coroutines *
     + generators that can get value via yield:
-    ```python
-    val = (yield i)
-    ```
+    🪄 _<mark style="color:green;">Code:</mark>_
 
+```python
+    val = (yield i)
+```
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def pluser():

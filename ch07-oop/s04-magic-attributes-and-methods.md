@@ -9,10 +9,12 @@
 * `__class__`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class A:
     "Our great class" 
-    x = 1 
+    x = 1
 ```
 
 ## Magic methods 
@@ -40,6 +42,8 @@ class A:
 * Works with ```cls``` (class object, as instance is not created yet)
 * Old style class don't have this method!
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def __new__(cls):
     return super().__new__(cls)
@@ -52,6 +56,8 @@ def __new__(cls):
 * It is not a constructor (there is `__new__()` for that)
 * `__init__()` takes an already created object and fills required attributes according to declared logic first arg is `self`
 * Doesn't return anything (it returns `None`), just assigning attributes to an object.
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def __init__(self, name): 
@@ -72,6 +78,8 @@ def __init__(self, name):
 * Used when calling `repr(obj)` or just `obj` in Python session
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(A())
@@ -106,6 +114,8 @@ A()
 * In simplest case as for instances it is based on `id(self)` so all objects are different
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 A().__hash__()
 ```
@@ -130,6 +140,8 @@ A().__hash__()
 
 * Tuple (possibly empty or a singleton) containing the base classes, in the order of their occurrence in the base class list 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A: pass
@@ -157,6 +169,8 @@ A.__bases__
 
 * Class’s documentation string, or None if undefined.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(A.__doc__)
@@ -191,6 +205,8 @@ Help on class A in module __main__:
 * Module name in which the class is defined. This attribute is `"__main__"` in interactive mode.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 A.__module__
 ```
@@ -216,6 +232,8 @@ A.__module__
 * Used when `bool(obj)`
 * By default - True
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 bool(A())
@@ -256,6 +274,8 @@ It is really a pain to fill all of those!
 
 Battery: `functools.total_ordering`
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import functools
@@ -313,6 +333,8 @@ This is very useful to call the method which used very often.
 All instance's attributes are hold in `__dict__` attribute which is a dictionary with keys as names bound to the instance.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class C:
     a = 1
@@ -341,6 +363,8 @@ c.__dict__
 
 This is needed to suppress automatic creation of `__dict__` - this can be useful when we have a lot of simple objects and their dictionaries are taking too much space. Also slots are limiting attributes that can be assigned to an object.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class D:

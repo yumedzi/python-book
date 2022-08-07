@@ -9,6 +9,8 @@ String literals are written in a variety of ways:
 * Triple quoted: `'''Three single quotes''', """Three double quotes"""`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 s1 = "Hello, I'm nice little string"
 s2 = 'Hello, I\'m nice little string'   # escaping '
@@ -29,6 +31,8 @@ Hello, I'm nice little string
 
 Multiline string (matter of syntax, for Python they are all the same):
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 big_string = """Starting here
@@ -57,6 +61,8 @@ I need to rest...
 
 ### Main methods of strings
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(dir("some_string")) #Emm... actually all methods...
@@ -113,12 +119,16 @@ print(dir("some_string")) #Emm... actually all methods...
 #### Some examples
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_string = "Some funny string!"
 ```
 
 ##### Adding, multiplying(!) strings 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_string + " and another string"
@@ -138,6 +148,8 @@ some_string + " and another string"
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_string * 3
@@ -160,6 +172,8 @@ some_string * 3
 ##### Get length
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 len(some_string)
 ```
@@ -181,6 +195,8 @@ len(some_string)
 ##### Cosmetic/styling methods:
 * lower, upper, title, capitalize
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_string.lower(), some_string.upper(), some_string.title(), some_string.capitalize()
@@ -206,6 +222,8 @@ some_string.lower(), some_string.upper(), some_string.title(), some_string.capit
 ##### Various checking for lower/upper, all digits, all letters. Returns True/False.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print("abcde".islower())
 print("ABCDE".isupper())
@@ -223,6 +241,8 @@ True
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 "12345".isdigit(), "abc".isalpha(), "abc123".isalnum()
 ```
@@ -237,6 +257,8 @@ True
 ##### Nice examples regarding checks:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 low_str = "asdasdfhjksdhfjh"
 low_str.islower(), low_str.isupper()
@@ -249,6 +271,8 @@ low_str.islower(), low_str.isupper()
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 almost_digit_str = "12123123 123123"
@@ -263,6 +287,8 @@ almost_digit_str.isdigit(), true_digit_str.isdigit()
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 phone_num = "066-749-99-99"
@@ -319,6 +345,8 @@ It can be difficult to comprehend from the start, so the following table will sh
 The playground code to test these methods on those strings:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 METHODS = "isdecimal", "isdigit", "isnumeric"
 TEST_STRINGS = '123', '1₂34⁵', '½¾⅚', '一二三'
@@ -347,6 +375,8 @@ for str_ in TEST_STRINGS:
 * To check for all-spaces string - use ```.isspace()```
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 "    ".isspace(), "  \t \n  \r\n".isspace()
 ```
@@ -360,6 +390,8 @@ for str_ in TEST_STRINGS:
 
 * A bit hackish way to check for alphabeticals with spaces - via using ```.replace()```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 "Hello World".replace(" ", "").isalpha()
@@ -377,6 +409,8 @@ for str_ in TEST_STRINGS:
 * ```.rstrip()``` - remove only from the end
 * ```.lstrip()``` - remove only from the beginning
 
+
+🪄 _<mark style="color:green;">Code and Output:</mark>_
 
 ```python
 whitespaces_str = "  Some text goes and goes...  "
@@ -397,6 +431,8 @@ print("L-stripped string: >>>" + whitespaces_str.lstrip() + "<<<")
 Indexing starts from 0. Negative indexing means counting from the end so -1 is the last item.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_string, some_string[0], some_string[3], some_string[-1]
 ```
@@ -416,6 +452,8 @@ some_string, some_string[0], some_string[3], some_string[-1]
 * Optional third argument **step** - step.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_string[0:4], some_string[5:10], some_string[0:-1], some_string[:]
 ```
@@ -427,6 +465,8 @@ some_string[0:4], some_string[5:10], some_string[0:-1], some_string[:]
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_string[:10:2], some_string[::3], some_string[::-1]
@@ -441,6 +481,8 @@ some_string[:10:2], some_string[::3], some_string[::-1]
 
 ##### Splitting/joining
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_string = "sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef"
@@ -459,9 +501,11 @@ print(some_string.split("ZZZZ"))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print("---".join(["First", "Second", "Third"]))
-print(",".join(some_string.split()))  
+print(",".join(some_string.split()))
 ```
 
     First---Second---Third
@@ -472,6 +516,8 @@ print(",".join(some_string.split()))
 
 Rare case where string can be merged if they are separated by any number of spaces. Strings must be presented by string object themselves not by variables or function call results
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 "Hello" " World"
@@ -485,6 +531,8 @@ Rare case where string can be merged if they are separated by any number of spac
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_big_string = "Dear Katerina Matveevna! " \
                   "My soul is flying towards you " \
@@ -495,6 +543,8 @@ print(some_big_string)
     Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_big_string = ("Dear Katerina Matveevna! " 
@@ -517,6 +567,8 @@ ASCII basics were simple - single byte of data (8 bits) were used. The first 7 b
 Anyway, 128 ASCII characters were: `26` uppercase letters, `26` lowercase letters, `10` digits, punctuation symbols, some spacing characters, and some nonprintable control codes like `\n` (line feed), `\r` (carriage return), `\a` (bell), `\b` (backspace) etc:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import string
 print(len(string.ascii_letters) + len(string.digits) + len(string.punctuation) + len(string.whitespace))
@@ -527,6 +579,8 @@ print(len(string.ascii_letters) + len(string.digits) + len(string.punctuation) +
 
 In Python we can get ASCII "index" of the character with builtin function `ord` and get the character by that index with function `chr`.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(chr(65))
@@ -541,6 +595,8 @@ Please note that in fact these functions work with Unicode table (that we will c
 
 We can get all 128 characters of ASCII:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print("ASCII:\n", ''.join(chr(x) for x in range(128)))
@@ -561,6 +617,8 @@ That's why at some point other encodings (tables of codepoints) used all 8 bits 
 
 To encode Python's string into some endocing the string method `encode(coding)` is used:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print("Surströmming".encode("latin-1"))

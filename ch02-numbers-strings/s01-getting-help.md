@@ -2,6 +2,8 @@
 
 * Help
     * In Python interactive shell:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 help(math.sqrt)
 ```
@@ -12,6 +14,8 @@ help(math.sqrt)
 * IPython shell:
 ```
 {% endcode %}
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 math.cos?
@@ -25,6 +29,8 @@ math.cos?
 {% endcode %}
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import time

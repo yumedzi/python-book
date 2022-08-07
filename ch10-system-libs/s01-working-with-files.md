@@ -43,6 +43,8 @@ Example:
 > Here we are using so-called "context managers" - via *with as" keywords. This allows us to not worry about closing the file descriptor after block of with-as code.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 filename = "/tmp/1.txt"
 # filename = r"D:\tmp.txt"
@@ -68,6 +70,8 @@ Test string!!!
     True
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 %ls -la /tmp/1.txt

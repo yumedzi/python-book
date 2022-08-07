@@ -13,32 +13,46 @@ So, in next few slides we are going to see:
 
 ### Immutable types (cannot be changed after creation)
 * str
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-some_str = "I'm a string!" 
+some_str = "I'm a string!"
 ```
 * int
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_int = 14
 ```
 * float
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-some_float = 23.23 
+some_float = 23.23
 ```
 * tuple
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-some_tuple = (13, 45, "Yo!", 34.3) 
+some_tuple = (13, 45, "Yo!", 34.3)
 ```
 
 ### Mutable types (can be changed)
 * list
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-some_list = [14, "string", 14, [1, 2]] 
+some_list = [14, "string", 14, [1, 2]]
 ```
 * set
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_set = {(1, 2), 'string', 14}
 ```
 * dict
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_dict = {"name":"John", "sname":"Smith"}
 ```
@@ -52,6 +66,8 @@ some_dict = {"name":"John", "sname":"Smith"}
 * Logical operators: 
     * `and`, `or`, `not`
 * Arithmetic operators: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 number = 1 + 2 * 3 / 4.0 
 another_num = 11 % 3 ** 3 // 2
@@ -60,13 +76,17 @@ another_num = 11 % 3 ** 3 // 2
 ### Basic operators, sequences:
 
 * String operators: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 test_string = "Hello" + " " + "World!" 
 crazy_string = "Yo!" * 10 
 print(test_string[3])
-len(test_string) 
+len(test_string)
 ```
 * List operators: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 one_list = ["Ring of elves", "Ring of dwarves"] 
 all_rings = one_list + ["Ring of men"] 
@@ -77,6 +97,8 @@ all_rings.append("Ring of Power") # Also: extend(), count(), reverse(), sort()
 ### Conditions, cycles
 
 * Conditions
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 if a > b: 
@@ -89,6 +111,8 @@ else:
 
 * Cycles
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 for i in range(1, 10): 
     print(i)
@@ -98,6 +122,8 @@ while True:
 ```
 
 ### Importing
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import math
@@ -114,6 +140,8 @@ pi
 
 ### Work with Files
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 f = open("text.txt") 
 line = f.readline() 
@@ -122,6 +150,8 @@ while line:
     line = f.readline() 
 f.close()
 ```
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # More easy way:
@@ -134,6 +164,8 @@ with open("/tmp/file.txt", "r", encoding="win1251") as f:
 
 Operator "def" is used for creating functions
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 x = 10
@@ -164,6 +196,8 @@ print(mult(10))
 #### Swapping two variables
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a, b = 45, "54"
 a, b = b, a
@@ -187,6 +221,8 @@ a, b
 
 #### Read keyboard input
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(input("Please enter something")) # Python 3
 print(raw_input("Please enter something")) # Python 2
@@ -200,6 +236,8 @@ There is a common question - how exactly arguments are passing in Python's funct
 So, argument passing to a function is done not by value (we don't have "raw" data in Python, only objects that wrapping it) and not by reference (reference is int number of memory location). This is done by object-reference. In other words we are passing object itself (it's almost like passing the pointer to an object in memory).
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def testme(my_list): 
     my_list.append("END")
@@ -210,6 +248,8 @@ testme(my_list)
 
 ### Decorators
 
+
+🪄 _<mark style="color:green;">Code and Output:</mark>_
 
 ```python
 def deco(f): 
@@ -246,6 +286,8 @@ The language supports extensive introspection of types and classes. Types can be
 Operators can be overloaded in Python by defining special member functions—for instance, defining __add__ on a class permits one to use the + operator on members of that class.
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class Foo: 

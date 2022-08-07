@@ -15,6 +15,8 @@ But first of all let's check what is bound/unbound method
 
 > Method bound to the object is the function that passes that object as the first argument (instance for instance methods, class for class methods).
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = A()
 a.method(x) --> A.method(a, x)  # <-- here a.method is bound method
@@ -30,6 +32,8 @@ In the following example notice that we pass `cls` in `__new__()` but in `__init
 
 Please notice that we don't pass `cls`/`self` into class/instance methods:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A:
@@ -127,6 +131,8 @@ Some static data (from A class)
 The dict that checks for int/str version of the key if it exists:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class FlexibleDict(dict):
     def __getitem__(self, key):
@@ -160,6 +166,8 @@ print(fd["1"])
 The dict with logging around setting a key:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class VerboseDict(dict):
     def __setitem__(self, key, value):
@@ -172,6 +180,8 @@ vd[1] = 100500
 vd
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from collections import defaultdict
@@ -211,6 +221,8 @@ Set: 5 -> 0
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from collections import Counter
@@ -256,6 +268,8 @@ VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})
 But in case you want to overload `__new__` method please remember that it is static method so you need to pass `cls`:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from collections import UserList
 
@@ -297,6 +311,8 @@ There is also bigger example for this with lot of print() calls to see where exa
 
 We can clearly see that firstly we call `__new__` and after that `__init__`
 
+
+🪄 _<mark style="color:green;">Code and Output:</mark>_
 
 ```python
 class SuperList(list):
@@ -346,6 +362,8 @@ After changes: [100, 'c', 'd', 'AAA', 'BBB']
 As resume - we see that super() uses the MRO of passed class (by default it is the class we are defining method for). That's why if we pass another class directly (like it was in Python 2) it will use MRO of that class:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class A: 
     def m(self):
@@ -386,6 +404,8 @@ super(B, self).m() -> A (we take <m> from <A>)
 More examples:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class A1:
     attr = 1
@@ -417,6 +437,8 @@ AResult()()
 The same as `super()`:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class AResult(A1, A2, A3):
     def __call__(self):
@@ -434,6 +456,8 @@ AResult()()
 To start FROM A2:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class AResult(A1, A2, A3):
     def __call__(self):
@@ -448,6 +472,8 @@ AResult()()
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class AResult(A1, A2, A3):
@@ -465,6 +491,8 @@ AResult()()
 
 ### Simple `super(cls, obj)` implementation
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class super:                                         
@@ -485,10 +513,11 @@ class super:
                 ret = getattr(cls, attr)             
                 if callable(ret):                    
                     return lambda: ret(self.instance)
-                return ret                           
-
+                return ret
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A:

@@ -20,6 +20,8 @@ Ways to create a tuple:
 Creating a tuple with 1 element requires comma because without it Python consider such expression as logic grouping.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 (1)
 ```
@@ -39,8 +41,10 @@ Creating a tuple with 1 element requires comma because without it Python conside
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-(1,)  
+(1,)
 ```
 
 
@@ -60,6 +64,8 @@ Creating a tuple with 1 element requires comma because without it Python conside
 In fact parences are not needed, they are just for readability:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 1,
 ```
@@ -78,6 +84,8 @@ In fact parences are not needed, they are just for readability:
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 1, 2, 3
@@ -99,6 +107,8 @@ In fact parences are not needed, they are just for readability:
 
 ## Main methods of tuple
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_tuple = 1, 2, 100, 15
@@ -132,6 +142,8 @@ That's right - if not counting magic methods - not many at all. Just ```count```
 ## Examples
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_tuple[:2]
 ```
@@ -151,6 +163,8 @@ some_tuple[:2]
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_tuple + (4, "a")
 ```
@@ -169,6 +183,8 @@ some_tuple + (4, "a")
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 100 in some_tuple
@@ -191,6 +207,8 @@ True
 ## Tuple unpacking
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a, b = 1, 2 
 print(a, b)
@@ -199,6 +217,8 @@ print(a, b)
     1 2
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 a, b = b, a
@@ -211,6 +231,8 @@ print(a, b)
 Available only in Python 3:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a, *b, c = 1, 2, 3, 4, 5, 6, 7
 print("a is {}, b is {}, c is {}".format(a, b, c))
@@ -219,6 +241,8 @@ print("a is {}, b is {}, c is {}".format(a, b, c))
     a is 1, b is [2, 3, 4, 5, 6], c is 7
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f = lambda: (1, 2, 232, 12, 123, 123, 123, 123)
@@ -248,6 +272,8 @@ In other words:
 
 * Parts of datetime are different kinds, so it is tuple:
 
+🪄 _<mark style="color:green;">Code and Output:</mark>_
+
 ```python
 # python 2
 >>> import time
@@ -255,6 +281,8 @@ In other words:
 (2017, 5, 17, 9, 59, 54, 2, 137, 0)
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import datetime
@@ -276,12 +304,16 @@ datetime.datetime.now()
 
 * Values is result of range() are all of the same type, so it is list (in Python 2):
 
+🪄 _<mark style="color:green;">Code and Output:</mark>_
+
 ```python
 # python 2
 >>> range(10)
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 list(range(10))
@@ -295,6 +327,8 @@ list(range(10))
 
 
 * Coordinates:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # one coordinate is a tuple, each member is different kind of value (X, Y)

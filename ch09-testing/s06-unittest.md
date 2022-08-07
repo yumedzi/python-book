@@ -11,6 +11,8 @@ Usage
 2. Filling it with methods with names starting with `test_` 
 3. Run the tests by placing `unittest.main()` in a file, usually at the bottom:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if __name__ == '__main__':
     unittest.main()
@@ -31,6 +33,8 @@ if __name__ == '__main__':
 * test runner
     * A test runner is a component which orchestrates the execution of tests and provides the outcome to the user. The runner may use a graphical interface, a textual interface, or return a special value to indicate the results of executing the tests.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import unittest
@@ -59,6 +63,8 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import unittest

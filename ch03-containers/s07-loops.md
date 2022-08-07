@@ -7,6 +7,8 @@ Python has two loops available in syntax:
 
 ## For
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 for <target> in <target_iterable>:
     <code>
@@ -23,6 +25,8 @@ Notes:
 
 Example of usecase of "break/else":
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 courses = get_subscribed_courses(request.user)  # all courses of this user
 for session in task.sessions.all():  # task.sessions - all sessions where this task assigned
@@ -37,6 +41,8 @@ return render(request, template_name, context)
 
 Here is a monster-kind example which aims to show all usecases of `for` loop. You can use it as a base for your experiments:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 for x in range(1, 15):
@@ -80,6 +86,8 @@ BYE BYE!!! (break called!)
 
 One more example for for-else loop - selection of DB:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 
 default = "master"
@@ -103,6 +111,8 @@ else:
 > `range(stop)`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(list(range(10)))
 print(list(range(1, 11)))
@@ -123,6 +133,8 @@ print(list(range(0, 10, 3)))
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(list(range(0, -10, -1)))
@@ -145,6 +157,8 @@ print(list(range(1, 0)))
 Also - from 3.5:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 [*range(4)]
 ```
@@ -164,6 +178,8 @@ Also - from 3.5:
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 [1, 2, *range(3, 6), 6]
 ```
@@ -182,6 +198,8 @@ Also - from 3.5:
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 {*range(4), 1, 2}
@@ -205,12 +223,16 @@ Also - from 3.5:
 
 Try to avoid the code like the following one:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 for i in range(len(food)):
     print(food[i])
 ```
 
 Instead, use clearer "Pythonic" way:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 for piece in food:
@@ -223,6 +245,8 @@ for piece in food:
 
 > Returns an enumerate object which will yield tuples **index, item** from given iterable (a sequence, an iterator, or some other object which supports iteration)
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 for index, girl in enumerate(["Olya", "Sveta", "Anna", "Maria"], start=1):
@@ -244,6 +268,8 @@ Girl number 4 is Maria
 
 The following code:
     
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 list(enumerate(seasons))
@@ -252,6 +278,8 @@ list(enumerate(seasons, start=1))
 ```
 
 is equivalent to:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def enumerate(sequence, start=0):
@@ -265,6 +293,8 @@ def enumerate(sequence, start=0):
 
 ## While
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 while <condition>:
     <if_condition_True_code>
@@ -276,6 +306,8 @@ Inside **statements** it is possible to use ```continue``` and ```break```:
 * ```break``` statement terminates the loop without executing the ```else``` clause’s code
 * ```continue``` statement skips the rest of the code's statements and goes back to testing the condition
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 while True: 

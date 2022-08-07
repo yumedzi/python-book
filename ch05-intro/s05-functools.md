@@ -15,6 +15,8 @@ Very useful module. A sign of a good Pythonista. Most useful functions:
 > New function that calls target function with some arguments already set. This gives a copy of a function with less attributes.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import functools, math
 
@@ -43,6 +45,8 @@ Hello Beatufiul World
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 pow_of_10 = functools.partial(math.pow, 10) # 10 - first arg
 pow_of_10.__doc__ = 'Bring 10 to power x'
@@ -67,6 +71,8 @@ What if we want to be able to assign specific positional argument?
 
 It can't be done! Use `lambda` instead (of even regular `def`)
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 quadrupler = lambda x: pow(x, 4)
@@ -96,6 +102,8 @@ It is recommended to use `lambda` instead of `functools.partial` when possible.
 > In Python 2 `functools.reduce` was builtin function `reduce`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import functools
 functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
@@ -116,8 +124,10 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-((((1+2)+3)+4)+5)  
+((((1+2)+3)+4)+5)
 ```
 
 
@@ -136,6 +146,8 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 Factorial, "ez mode":
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Reminder what is factorial:
@@ -157,6 +169,8 @@ Factorial, "ez mode":
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 functools.reduce(lambda x, y: x * y, range(1,6))
 ```
@@ -175,6 +189,8 @@ functools.reduce(lambda x, y: x * y, range(1,6))
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from operator import mul
@@ -199,6 +215,8 @@ functools.reduce(mul, range(1,6))
 
 > Decorator to wrap a function with a memoizing callable that saves up to the maxsize most recent calls. 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 @functools.lru_cache(maxsize=None)

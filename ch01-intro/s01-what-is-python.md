@@ -7,6 +7,8 @@
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print("Hello World")
 ```
@@ -21,6 +23,8 @@ Hello World
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print "Hello World" # Python 2
@@ -38,6 +42,8 @@ Hello World
 
 ## What is Python?
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import antigravity
@@ -177,11 +183,15 @@ Additionally:
 
 Bonus:
 * Annotations (used for visualizing code and for data classes in Python 3.7)
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def foo(a: 'x', b: 5 + 6, c: list) -> max(2, 9)
 ```
 
 * Cool unpacking: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 (a, *rest, b) = range(5)
 ``` 

@@ -3,6 +3,8 @@
 ## Indentations
 
 Indentation or TAB, 2/**4 spaces** - whitespaces used to delimit program blocks - instead of punctuation or keywords, it uses indentation to indicate the run of a block.
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 for i in [1, 2, 3]:
     if i == 3:
@@ -26,6 +28,8 @@ qux(x);
 ```
 
 In Python the same role goes to indentations which make code much easier to read:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def foo(x):
     if x == 0:
@@ -34,7 +38,6 @@ def foo(x):
     else:
         qux(x)
         foo(x - 1)
-
 ```
 
 # Easter egg describing the "love to braces"
@@ -51,6 +54,8 @@ Indentation must maintain the constant level for same level of nesting.
 
 This is **correct**:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if condition:
     do_something1()
@@ -58,6 +63,8 @@ if condition:
 ```
    
 This is **incorrect**:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 if condition:
@@ -75,6 +82,8 @@ if condition:
 
 If code block is not big it is allowed to use inline form:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if condition: do_something1()
 else: do_something2()
@@ -83,6 +92,8 @@ for x in range(x): print(x)
 ```
 
 And it is possible to specify few statements on the same line using `;`:
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 a = [x for x in range(10) if x % 2]; f = open("tmp.txt", "w"); f.write(a); f.close()
@@ -117,14 +128,18 @@ def       for       lambda    try
 `#` - starting with this symbol everything till the end of line is ignored
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = 12345  # This is comment
 # This is comment too 
-# Continuing our comments 
+# Continuing our comments
 ```
 
 Doc string - *first string* of module, function or class. These string are used by IDEs, help auto-generating scripts etc. It is possible to specify multiline string by using starting and ending with triple quotes(`"""` or `'''`).
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def f():
@@ -157,6 +172,8 @@ Help on function f in module __main__:
 
 Or:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f.__doc__

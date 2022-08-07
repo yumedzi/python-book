@@ -2,6 +2,8 @@
 
 > Python has one omnipotent logical condition check operator: ```if```.
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if <condition>:
     <actions_when_condition_is_True>
@@ -11,6 +13,8 @@ else:
     <actions_when_conditions_are_False>
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 a = 12
@@ -41,6 +45,8 @@ a is greater than 3
 The built-in function bool() can be used to convert any value to a Boolean, if the value can be interpreted as a truth value 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 True + True
 ```
@@ -60,6 +66,8 @@ True + True
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 (True + True + True) * (True + True) - False
 ```
@@ -78,6 +86,8 @@ True + True
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 bool(24), bool("sdsds"), bool(""), bool([])
@@ -127,6 +137,8 @@ All other values are considered true — so objects of many types are always tru
 Sometimes it can surprise you. The following example will always print the first quote:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 decision = "not to be"
 if decision == "be" or "to be":
@@ -146,11 +158,15 @@ Take arms against a sea of troubles!
 
 
 Because the expression is equivalent to:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 (decision == "be") or ("to be")
 ```
 
 Solution:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 decision in ("be", "to be")
 ```

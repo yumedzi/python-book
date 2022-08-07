@@ -27,6 +27,8 @@ This module is wrapper for sys calls/functions:
 
 Parameters for all `subprocess` methods are very similar. In fact they are all based on argument list for `Popen` method. The difference is that some of the methods don't utilize all of them.
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 Popen(args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=None, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=(), *, encoding=None, errors=None, text=None)
 ```
@@ -46,6 +48,8 @@ This is due to the security reason to avoid the possibility of command injection
 
 Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of `shell=True` is strongly discouraged in cases where the command string is constructed from external input:
 
+🪄 _<mark style="color:green;">Code and Output:</mark>_
+
 ```python
 >>> from subprocess import call
 >>> filename = input("What file would you like to display?\n")
@@ -58,6 +62,8 @@ non_existent; rm -rf /
 
 > Easiest way to just run some external command
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 subprocess.call(['ls', '-la'])
 ```
@@ -68,6 +74,8 @@ This will:
 * `return` the `returncode` attribute.
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 !ls
@@ -90,6 +98,8 @@ Basics_06_PEP8_Styling.ipynb
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import subprocess
 
@@ -111,6 +121,8 @@ subprocess.call(["touch", "111.txt"])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 !ls 111.txt
 ```
@@ -125,6 +137,8 @@ subprocess.call(["touch", "111.txt"])
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 subprocess.call(["rm", "111.txt"])
@@ -144,6 +158,8 @@ subprocess.call(["rm", "111.txt"])
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 subprocess.call(["ls", "111.txt"])
@@ -168,12 +184,16 @@ subprocess.call(["ls", "111.txt"])
 > This is similar to `subprocess.call` but additionally will check result code
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 subprocess.check_call(['ls', '-la'])
 ```
 
 This will run command with arguments and wait for command to complete. If the exit code was zero (this mean it was completed successfully) then return, otherwise raise `CalledProcessError`.  The `CalledProcessError` object will have the return code in the `returncode` attribute.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 subprocess.check_call(["touch", "111.txt"])
@@ -194,6 +214,8 @@ subprocess.check_call(["touch", "111.txt"])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 subprocess.check_call(["ls", "111.txt"])
 ```
@@ -213,6 +235,8 @@ subprocess.check_call(["ls", "111.txt"])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 subprocess.check_call(["rm", "111.txt"])
 ```
@@ -231,6 +255,8 @@ subprocess.check_call(["rm", "111.txt"])
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 subprocess.check_call(["ls", "111.txt"])
@@ -257,6 +283,8 @@ subprocess.check_call(["ls", "111.txt"])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 # Create a temp lock file
 subprocess.check_call(["touch", ".lock"])
@@ -280,11 +308,15 @@ subprocess.check_call(["rm", ".lock"])
 >
 > **Note: only argument is the command to run as string.** (Other subprocess method described here use `**popenargs` mentioned above.
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 subprocess.getoutput('ls -la')
 ```
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import subprocess
@@ -299,6 +331,8 @@ subprocess.getoutput("date")
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import subprocess
@@ -322,12 +356,16 @@ print("Result 4:", subprocess.getoutput("ls -la 111.txt"))
 > * additionally will check result code
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 subprocess.check_output(['ls', '-la'])
 ```
 
 Run command with arguments and return its output. If the exit code was non-zero it raises a `CalledProcessError`.  The `CalledProcessError` object will have the return code in the `returncode` attribute and output in the `output` attribute.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import subprocess
@@ -342,6 +380,8 @@ print("Result 3 (status code for <rm -rf 111.txt> command):", subprocess.call(["
     Result 3 (status code for <rm -rf 111.txt> command): 0
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print("Result 4:", subprocess.check_output(["ls", "-la", "111.txt"]))
@@ -379,6 +419,8 @@ print("Result 4:", subprocess.check_output(["ls", "-la", "111.txt"]))
     * Easiest way of running OS commands:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import os
 status = os.system("ls")
@@ -413,6 +455,8 @@ args is sequence with command like:
 
 Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of shell=True is strongly discouraged in cases where the command string is constructed from external input:
 
+🪄 _<mark style="color:green;">Code and Output:</mark>_
+
 ```python
 >>> from subprocess import call
 >>> filename = input("What file would you like to display?\n")
@@ -424,6 +468,8 @@ non_existent; rm -rf / #
 
 > So it's often recommended to split command to run via using `shlex` module
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import shlex
@@ -451,6 +497,8 @@ It allows to watch both stdout and stderr and much more. Just look at syntax:
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import subprocess
 proc = subprocess.Popen(['echo', 'Hello POPEN', '!!!'], 
@@ -468,6 +516,8 @@ print(proc.pid)
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import subprocess
 
@@ -479,6 +529,8 @@ with open('tmp_file', "w") as f:
     proc.communicate(b'SENDING SOMETHING TO STDIN ---> 2021/04/16\n')
 ```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import subprocess, os, platform
@@ -507,6 +559,8 @@ print(stdout_value.decode("utf-8"))
 Or like this:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import shlex
 
@@ -530,6 +584,8 @@ subprocess.getoutput("cat tmp_file")
 Pipeline:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 ! df -ah | grep /notebooks
 ```
@@ -537,6 +593,8 @@ Pipeline:
     /dev/vg1000/lv  7.0T  6.6T  459G  94% /notebooks
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 p1 = subprocess.Popen(['df', '-ah'], stdout=subprocess.PIPE)
@@ -554,6 +612,8 @@ if p1.wait() == 0:  # Wait for p1 to finish with status 0
 
 Need `awk`? No problem:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import shlex
@@ -575,6 +635,8 @@ else:
 Or - via Python:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(p2_output.split()[4])
 ```
@@ -582,6 +644,8 @@ print(p2_output.split()[4])
     94%
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import re
@@ -596,6 +660,8 @@ Another example - let's get how much memory Jupyter Notebook uses.
 Shell commands used:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 !ps auxw | grep jupyter-notebook | grep -v grep
 !ps auxw | grep jupyter-notebook | grep -v grep | awk '{print $5}'
@@ -607,6 +673,8 @@ Shell commands used:
 
 Via `subprocess.check_output()`:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 cmd = "ps auxw | grep jupyter-notebook | grep -v grep | awk '{print $5}'"
@@ -621,6 +689,8 @@ print(float(subprocess.check_output(cmd, shell=True).decode("utf8").rstrip()))
 
 Via `subprocess.Popen()`:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 p1 = subprocess.Popen(["ps", "auxw"], stdout=subprocess.PIPE)
@@ -637,12 +707,14 @@ print(f'Jupyter Notebook eats {int(p4.communicate()[0].decode("utf8")) / 1024:5.
 We can also use context manager for `subprocess.Popen` to clean resources after running processes:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 with subprocess.Popen(["ls", "-la", "."], stdout=subprocess.PIPE, text=True) as proc:  
     print(proc.pid)                                                               
     print("Alive" if proc.poll() is None else "Terminated")                       
     print("OUTPUT:")                                                              
-    print(proc.communicate()[0])                                                  
+    print(proc.communicate()[0])
 ```
 
     112

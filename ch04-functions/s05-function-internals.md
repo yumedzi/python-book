@@ -5,6 +5,8 @@
 Function is wrapper around code object. Code object is wrapper for byte-code.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def f1():
     return "Hello"
@@ -25,6 +27,8 @@ b'd\x01S\x00'
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(f1.__code__.__doc__)

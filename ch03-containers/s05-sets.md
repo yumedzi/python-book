@@ -15,6 +15,8 @@ Ways to create a set:
 * ```set("abcdeabcde")```
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_list = [1, 2, 3, 4]
 some_tuple = tuple(some_list)
@@ -37,6 +39,8 @@ print(set_b)
 
 Main methods
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 [method for method in dir({1}) if not method.startswith("__")]

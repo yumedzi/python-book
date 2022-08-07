@@ -17,6 +17,8 @@ Result of `dict(some_dict)` will be shallow copy of `some_dict`
 We can create a copy with some new keys:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 d = {"name": "John", "surname": "Snow"}
 new_d = dict(d, profession="Bastard")
@@ -40,6 +42,8 @@ new_d
 We can even rewrite some old key-values:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 new_d = dict(d, surname="Stark")
 new_d
@@ -61,6 +65,8 @@ new_d
 
 And also we can create a dict from an iterable with pair key-value
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d1 = dict([("Aria", "Stark"), ("Faceless", "Man")])
@@ -85,6 +91,8 @@ Using method `dict.fromkeys` we can create a new dict from an iterable (some col
 Second attribute will allow to set a default value for all keys (or it will be `None`).
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 dict.fromkeys(["name", "surname"])
 ```
@@ -103,6 +111,8 @@ dict.fromkeys(["name", "surname"])
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
@@ -125,6 +135,8 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 It is recommended to pass some immutable object as the default value. Otherwise you could get unexpected results:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 d = dict.fromkeys("abcde", [])
 d
@@ -145,9 +157,11 @@ d
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 d["a"].append(1)
-d 
+d
 ```
 
 
@@ -166,6 +180,8 @@ d
 
 There are (from 3.5) even more craziest ways of dict creation:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d1 = {"some_key": "some_value"}
@@ -187,6 +203,8 @@ d1 is d2, d2
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 defaults = {"John": "Snow", "Aria": "Stark"}
@@ -218,6 +236,8 @@ Dictionary lookup is done in three steps:
 
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def lookup(d, key):
     "Find a key `key` in a dict `d`"
@@ -244,6 +264,8 @@ On the contrary, by default, all user defined types (instances of `class`) are u
 
 ## Main methods of dictionaries
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_dict = {"name": "John", "surname": "Snow"}
@@ -279,6 +301,8 @@ print( dir(some_dict) ) # All methods a gain
 ## Examples
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_dict["name"]
 ```
@@ -290,6 +314,8 @@ some_dict["name"]
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_dict["surname"] = "Stark"
@@ -303,6 +329,8 @@ some_dict
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_dict["alive"] = True
@@ -320,6 +348,8 @@ some_dict
 
 Trying to obtain unexistent key will be resulted in ```KeyError``` exception
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_dict["6th_book"]
@@ -340,6 +370,8 @@ some_dict["6th_book"]
 More correctly:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if "6th_book" in some_dict:
     print(some_dict["6th_book"])
@@ -359,6 +391,8 @@ Even better - use ```get()```
 3. Can specify a default value
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_dict.get("6th_book", "Nope....")
 ```
@@ -374,6 +408,8 @@ some_dict.get("6th_book", "Nope....")
 
 This method allows to write a "default" value for specific key and/or return set or that default value. In other words it will update dictionary only when the key is not found in it.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d = {"John": "Snow"}
@@ -392,6 +428,8 @@ d
 So, the code:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(d.setdefault("Robert", "Baration"))
 ```
@@ -401,6 +439,8 @@ print(d.setdefault("Robert", "Baration"))
 
 is the same as:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 if "Robert" not in d:
@@ -413,6 +453,8 @@ print(d["Robert"])
 
 If the default value is a list it can used for appending the needed value right away:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 characters = "aaaasddfgsadfgdsadfsa" 
@@ -432,6 +474,8 @@ print(counter(characters))
 ### Method `update`
 
 Doc says:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 D.update([E, ]**F) -> None.  Update D from dict/iterable E and F.
 If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
@@ -441,6 +485,8 @@ In either case, this is followed by: for k in F:  D[k] = F[k]
 
 The same syntax can be used with `dict()`.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d = {}
@@ -455,6 +501,8 @@ d
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d = {}
@@ -471,6 +519,8 @@ d
 
 And crazy example - two syntaxes altogether:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d = {}
@@ -490,6 +540,8 @@ d
 Regular `del` here too:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 del d["Yaken"]
 d
@@ -504,6 +556,8 @@ d
 
 To clear all keys it is possible to use `clear()`
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d.clear()
@@ -522,6 +576,8 @@ Also - just like with lists we have `pop()` and `popitem()` methods.
 * `pop(k [,v])` will return value by key `k` or default value `d`
 * `popitem()` will return last added pair (from Python 3.6) OR some random pair (before Python 3.6) `(key, value)` and raise `KeyError` if dict is empty
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d = {'Aria': 'Stark', 'Faceless': 'Man', 'Yaken': 'Gharr', 'some_other_key': 123}
@@ -561,6 +617,8 @@ Dictionary views can be iterated over to yield their respective data, support me
 Some examples of usage `dictviews` objects:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 d = {'Alfa': 0, 'Bravo': 1, 'Charlie': 2, 'Delta': 3}
 print(f'dict is {d}', end="\n - - -\n")
@@ -586,6 +644,8 @@ print("list(values):", list(values))
 Check how dynamic are `dictviews`:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print("Before:", d.keys())
 
@@ -602,8 +662,10 @@ print("After:", d.keys())
 ## Dictionary comprehesions
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-{x:1 for x in range(5)}  
+{x:1 for x in range(5)}
 ```
 
 
@@ -616,8 +678,10 @@ print("After:", d.keys())
 Not so oftenly used because:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-{x:y for x in range(3) for y in range (3)} 
+{x:y for x in range(3) for y in range (3)}
 ```
 
 
@@ -629,6 +693,8 @@ Not so oftenly used because:
 
 Sometimes dictionary comprehension is useful when you need to set a default mutable value (so `dict.fromkeys` is not good)
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d = {x:[] for x in "abcde"}

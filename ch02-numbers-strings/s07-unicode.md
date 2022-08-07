@@ -22,6 +22,8 @@ Each Unicode symbol has unique name and codepoint (it's number). Codepoint inclu
 
 Some examples:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 0061    'a'; LATIN SMALL LETTER A
 ...
@@ -59,6 +61,8 @@ or ☕:
 String in Python 3 is a sequence of code points.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 s = 'ґуґл 💝 ☕'
 s.upper()
@@ -79,6 +83,8 @@ s.upper()
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 s[0]
 ```
@@ -97,6 +103,8 @@ s[0]
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 '\u0491 and \u2615'
@@ -119,6 +127,8 @@ s[0]
 Via builtin module `unicodedata` it is possible to get the standardized name of Unicode character or resolve that name into a character:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import unicodedata
 print(unicodedata.name("ґ"))
@@ -136,6 +146,8 @@ HOT BEVERAGE
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 cap_char = unicodedata.name("ґ").replace("SMALL", "CAPITAL")
@@ -179,6 +191,8 @@ Encoding:
 `errors` by default is 'strict' meaning that encoding errors raise a `UnicodeEncodeError`.  Other possible values are `'ignore'`, `'replace'` and `'xmlcharrefreplace'`.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 'Ґ'.encode('ascii', 'ignore')
 ```
@@ -198,6 +212,8 @@ b''
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 'Ґ'.encode('ascii', 'replace')
 ```
@@ -216,6 +232,8 @@ b'?'
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 'Ґ'.encode('ascii', 'xmlcharrefreplace')

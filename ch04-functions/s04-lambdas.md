@@ -9,6 +9,8 @@
 * Not faster
 * They are needed when you want to pass callable object or process something only once.
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 lambda [arg1 [,arg2,.....argn]]: <expression>
 ```
@@ -23,6 +25,8 @@ Why lambda?
 * The lambdas can be used as a function shorthand that allows us to embed a function within the code. 
     * key in `sorted`
     
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 sorted([1, 2, "a", (3, 4)], key=lambda x: str(x))
 sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")
@@ -32,6 +36,8 @@ sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")
     
 * Lambdas are also commonly used to code jump tables which are lists or dictionaries of actions to be performed on demand.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f = lambda x, y: x + y 
@@ -53,6 +59,8 @@ f(2, 6)
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 list(map(lambda x: x**2, range(5)))
 ```
@@ -72,6 +80,8 @@ list(map(lambda x: x**2, range(5)))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def power_n(n): 
     import math 
@@ -82,6 +92,8 @@ print(squared(5))
 ```
 
 ### Example from production
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 conversions = {
@@ -99,6 +111,8 @@ conversions = {
 
 The same.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 def f1():
@@ -123,6 +137,8 @@ f2 = lambda: len([ x for x in range(10000)])
 
 This is because lambda is syntax sugar and in the end almost the same code is being constructed
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import dis
@@ -149,6 +165,8 @@ dis.dis(f1)
 
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 dis.dis(f2)

@@ -8,6 +8,8 @@ For old class it was vertical-then-horizontal order of looking up for object att
 
 > Just for information as it is used only in Python 2!
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class A: 
     x = 'from A'
@@ -21,6 +23,8 @@ class C(A):
 class D(B, C): 
     pass
 ```
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(D.x)
@@ -41,6 +45,8 @@ The old MRO builds a list of classes to search for methods. This algorithm is a 
 
 The problem with old style classes is that if we going to inherit from base `object` we wouldn't be able to change anything. All because the logic of searching was too simple and wasn't designed for the case where everything is inherited from `object`.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A:  # class A(object):   <--- in Python 2.5+
@@ -87,6 +93,8 @@ It can be described in one sentence as:
 The result of MRO linearization is stored in attribute `__mro__`.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(D.__mro__) # D.mro()
 ```
@@ -109,6 +117,8 @@ We see that `A` is repeated, so removing first one keeping the last one will be 
 
 ```D, B, C, A```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A(object): 
@@ -149,6 +159,8 @@ D.mro()
 <img src="../images/tr_07_MRO_of_D.png">
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class A: pass
 class B(A): pass
@@ -157,7 +169,7 @@ class D(B): pass
 class E(C): pass
 class F(D, E, B): pass
 
-print(F.__mro__) 
+print(F.__mro__)
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -184,6 +196,8 @@ Sometimes the MRO can not be built:
 
 Another example where `object` is used before the class which inherites from it which confuses the logic:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A: pass

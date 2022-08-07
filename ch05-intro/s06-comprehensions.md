@@ -30,10 +30,6 @@
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -50,10 +46,6 @@
 [0, 2, 4, 6, 8]
 ```
 {% endcode %}
-
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -81,9 +73,6 @@
 ```
 {% endcode %}
 
-
-
-
 ## Dictionary comprehension
 
 > Useful to create a dictionary with the same (default) value or predefined by some logic
@@ -106,10 +95,6 @@
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -126,9 +111,6 @@
 {0: 2, 1: 2, 2: 2}
 ```
 {% endcode %}
-
-
-
 
 ## Set comprehension
 
@@ -155,8 +137,6 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 ```
 {% endcode %}
 
-
-
 ## Generator expression
 
 > "Kind of" comprehension but instead of returning sequence as other do, generator expression returns generator object.
@@ -179,10 +159,6 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -190,4 +166,11 @@ for x in (x * x for x in range(10)):
     print(x, end=" ")
 ```
 
-    0 1 4 9 16 25 36 49 64 81
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+0 1 4 9 16 25 36 49 64 8
+```
+{% endcode %}
+1

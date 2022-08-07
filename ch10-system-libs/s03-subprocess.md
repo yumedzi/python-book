@@ -89,9 +89,6 @@ Basics_06_PEP8_Styling.ipynb
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -111,10 +108,6 @@ subprocess.call(["touch", "111.txt"])
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -128,9 +121,6 @@ subprocess.call(["touch", "111.txt"])
 111.txt
 ```
 {% endcode %}
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -149,10 +139,6 @@ subprocess.call(["rm", "111.txt"])
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -169,9 +155,6 @@ subprocess.call(["ls", "111.txt"])
 2
 ```
 {% endcode %}
-
-
-
 
 ### `subprocess.check_call`
 
@@ -202,10 +185,6 @@ subprocess.check_call(["touch", "111.txt"])
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -223,10 +202,6 @@ subprocess.check_call(["ls", "111.txt"])
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -243,10 +218,6 @@ subprocess.check_call(["rm", "111.txt"])
 0
 ```
 {% endcode %}
-
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

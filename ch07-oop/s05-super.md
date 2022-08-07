@@ -120,8 +120,6 @@ Some static data (from A class)
 ```
 {% endcode %}
 
-
-
 ### More examples:
 
 #### Base class abstraction
@@ -158,9 +156,6 @@ print(fd["1"])
 100500
 ```
 {% endcode %}
-
-
-
 The dict with logging around setting a key:
 
 
@@ -201,17 +196,14 @@ vd
 Set: z -> 3
 Set: 100 -> 100500
 Set: 5 -> 0
+
+
+
+
+
+VerboseDict(int, {'x': 1, 'y': 2, 'z': 3, 100: 100500, 5: 0})
 ```
 {% endcode %}
-
-
-
-
-
-
-    VerboseDict(int, {'x': 1, 'y': 2, 'z': 3, 100: 100500, 5: 0})
-
-
 
 #### Extending class, multi-inheritance
 
@@ -254,8 +246,6 @@ Set: m -> 2
 VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})
 ```
 {% endcode %}
-
-
 
 #### Extending list
 
@@ -300,9 +290,6 @@ Before __init__: ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
 ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
 ```
 {% endcode %}
-
-
-
 There is also bigger example for this with lot of print() calls to see where exactly we are at each moment. Please use it to practice and to dig into this a bit more.
 
 We can clearly see that firstly we call `__new__` and after that `__init__`
@@ -351,8 +338,6 @@ After changes: [100, 'c', 'd', 'AAA', 'BBB']
 ```
 {% endcode %}
 
-
-
 ### `super()` based on another class
 
 As resume - we see that super() uses the MRO of passed class (by default it is the class we are defining method for). That's why if we pass another class directly (like it was in Python 2) it will use MRO of that class:
@@ -394,9 +379,6 @@ B's MRO is [<class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
 super(B, self).m() -> A (we take <m> from <A>)
 ```
 {% endcode %}
-
-
-
 More examples:
 
 
@@ -426,10 +408,6 @@ AResult()()
 1
 ```
 {% endcode %}
-
-
-
-
 The same as `super()`:
 
 

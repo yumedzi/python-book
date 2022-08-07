@@ -63,9 +63,6 @@ Wrong type! <class 'list'>
 We're done with that.
 ```
 {% endcode %}
-
-
-
 Another working example:
 
 Checking user's input and returning the list item.
@@ -94,18 +91,14 @@ get_item()
 {% code overflow="wrap" %}
 ```
 Enter index: -5
+
+
+
+
+
+'Incorrect value'
 ```
 {% endcode %}
-
-
-
-
-
-
-    'Incorrect value'
-
-
-
 Better solution:
 
 
@@ -189,8 +182,6 @@ ERROR: Can't work with negative numbers
 ```
 {% endcode %}
 
-
-
 ## Referring to exceptions
 
 Please note that `raise` can also be used to print an error message and then re-raise the exception (allowing a caller to handle the exception as well):
@@ -226,8 +217,6 @@ OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
 ```
 {% endcode %}
 
-
-
 ## Catching multiple exceptions
 
 * Several except blocks
@@ -254,8 +243,6 @@ except (IOError, ValueError) as e:
 Data or file error: [Errno 2] No such file or directory: 'myfile.txt'
 ```
 {% endcode %}
-
-
 
 ## assert
 
@@ -293,4 +280,11 @@ except AssertionError as e:
     print("Cought AssertionError:", e)
 ```
 
-    Cought AssertionError: On paper it works...
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Cought AssertionError: On paper it work
+```
+{% endcode %}
+s...

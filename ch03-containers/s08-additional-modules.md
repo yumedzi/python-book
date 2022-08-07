@@ -33,9 +33,6 @@ print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
 Student Jakeson from group 18 B is 23 year old
 ```
 {% endcode %}
-
-
-
 To avoid the mess of various indexes we can add some light "OOP-flavor" to this use-case via `namedtuple`:
 
 
@@ -56,18 +53,14 @@ student
 {% code overflow="wrap" %}
 ```
 Student Jakeson from group 18 B is 23 year old
+
+
+
+
+
+Student(name='John', surname='Jakeson', age=23, group='18 B')
 ```
 {% endcode %}
-
-
-
-
-
-
-    Student(name='John', surname='Jakeson', age=23, group='18 B')
-
-
-
 To transform into dict:
 
 
@@ -84,8 +77,6 @@ print(student._asdict())
 OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])
 ```
 {% endcode %}
-
-
 
 #### `deque`
 
@@ -117,9 +108,6 @@ a
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -134,8 +122,6 @@ print(de)
 deque(['BEGIN', 'b', 'c', 'd'])
 ```
 {% endcode %}
-
-
 
 #### `defaultdict`
 
@@ -177,9 +163,6 @@ defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'p
 3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 ```
 {% endcode %}
-
-
-
 The same using `setdefault` method:
 
 
@@ -209,9 +192,6 @@ print(f(encountered_animals))
 2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 ```
 {% endcode %}
-
-
-
 If we set `default_factory` to `int` we can create a counter of things:
 
 
@@ -234,8 +214,6 @@ print(d)
 defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 ```
 {% endcode %}
-
-
 
 #### `Counter`
 

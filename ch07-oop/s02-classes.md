@@ -76,9 +76,6 @@ Bus.buses_count = 3
 Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]
 ```
 {% endcode %}
-
-
-
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
 
 
@@ -98,9 +95,6 @@ Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -117,9 +111,6 @@ print(marshrutka_317.info())
 Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl
 ```
 {% endcode %}
-
-
-
 Class variables and instance variables were changed:
 
 
@@ -138,8 +129,6 @@ print(marshrutka_317.people_transferred)
 76
 ```
 {% endcode %}
-
-
 
 ## Inheritance
 
@@ -179,9 +168,6 @@ Robot Bip 1.0 (1000 kg)
 Bip 1.0 says: Oooooh
 ```
 {% endcode %}
-
-
-
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
 
 
@@ -208,8 +194,6 @@ Robot Bender (1000 kg)
 Bender says: Oh wait you’re serious. Let me laugh even harder.
 ```
 {% endcode %}
-
-
 
 ## Multiple Inheritance
 
@@ -242,18 +226,14 @@ d.a, d.x
 {% code overflow="wrap" %}
 ```
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
+
+
+
+
+
+('a from C', 'x from B')
 ```
 {% endcode %}
-
-
-
-
-
-
-    ('a from C', 'x from B')
-
-
-
 Let's enhance our `Robot` example by inheriting from two classes at once.
 
 
@@ -274,9 +254,6 @@ Mail().send_message("Test")
 *** SENDING MESSAGE: <<<Test>>>  ***
 ```
 {% endcode %}
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

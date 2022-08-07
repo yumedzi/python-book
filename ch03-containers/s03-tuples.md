@@ -37,10 +37,6 @@ Creating a tuple with 1 element requires comma because without it Python conside
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -57,10 +53,6 @@ Creating a tuple with 1 element requires comma because without it Python conside
 (1,)
 ```
 {% endcode %}
-
-
-
-
 In fact parences are not needed, they are just for readability:
 
 
@@ -81,10 +73,6 @@ In fact parences are not needed, they are just for readability:
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -101,9 +89,6 @@ In fact parences are not needed, they are just for readability:
 (1, 2, 3)
 ```
 {% endcode %}
-
-
-
 
 ## Main methods of tuple
 
@@ -122,9 +107,6 @@ print( dir(some_tuple))  # Yep, again all methods
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
 ```
 {% endcode %}
-
-
-
 That's right - if not counting magic methods - not many at all. Just ```count``` and ```index```!
 
 ### Tuple methods
@@ -159,10 +141,6 @@ some_tuple[:2]
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -180,10 +158,6 @@ some_tuple + (4, "a")
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -200,9 +174,6 @@ some_tuple + (4, "a")
 True
 ```
 {% endcode %}
-
-
-
 
 ## Tuple unpacking
 

@@ -34,9 +34,6 @@ print(set_b)
 {1, 2, 3, 4}
 ```
 {% endcode %}
-
-
-
 Main methods
 
 
@@ -72,10 +69,6 @@ Main methods
  'update']
 ```
 {% endcode %}
-
-
-
-
 A lot of different methods for checking various mathematical set properties
 
 ## Set methods

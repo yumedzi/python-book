@@ -12,19 +12,38 @@ Main commands:
 * install package (install requirements from a file):
 
     ```bash
-    pip install jupyter virtualenv
-    pip install -r requirements.txt
-    ```
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+pip install jupyter virtualenv
+pip install -r requirements.txt
+```
+```
+{% endcode %}
+
 * uninstall package:
     ```bash
-    pip uninstall requests
-    ```
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+pip uninstall requests
+```
+```
+{% endcode %}
 
 * list all installed packages:
     ```bash
-    pip freeze
-    pip freeze > requirements.txt
-    ```
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+pip freeze
+pip freeze > requirements.txt
+```
+```
+{% endcode %}
 
 ### Virtualenv 
 

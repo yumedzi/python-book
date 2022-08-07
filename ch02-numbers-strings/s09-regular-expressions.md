@@ -152,8 +152,6 @@ print(dir(re))
 ```
 {% endcode %}
 
-
-
 > Pattern is one or more regular expressions describing structure if the text that is needed to be parsed.
 >
 > Patterns in Python are defined as raw string like: `r"\d+[abc]{2:3}"`. By doing this we can use **\\** for regular expressions without escaping.
@@ -178,9 +176,6 @@ Printing string with <
 Printing RAW string with <\n> and <\t\t> as special characters
 ```
 {% endcode %}
-
-
-
 Module `re` can compile regex pattern making it's repeated usage faster.
 
 Also it is worth to understand the difference between `match` and `search` methods:
@@ -235,7 +230,6 @@ Find all substrings where the RE matches, and returns them as a list.
 * Find all substrings where the RE matches, and returns them as an iterator.
 ```
 {% endcode %}
-
 
 #### Groups
 > Needed to refer to parts of matched text to obtain needed information from it

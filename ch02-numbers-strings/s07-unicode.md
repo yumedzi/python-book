@@ -23,7 +23,14 @@ Each Unicode symbol has unique name and codepoint (it's number). Codepoint inclu
 Some examples:
 
 ```python
-0061    'a'; LATIN SMALL LETTER A
+0061📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+'a'; LATIN SMALL LETTER A
+```
+{% endcode %}
+
 ...
 007B    '{'; LEFT CURLY BRACKET
 ...
@@ -77,10 +84,6 @@ s.upper()
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -98,10 +101,6 @@ s[0]
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -118,10 +117,6 @@ s[0]
 'ґ and ☕'
 ```
 {% endcode %}
-
-
-
-
 Via builtin module `unicodedata` it is possible to get the standardized name of Unicode character or resolve that name into a character:
 
 
@@ -142,9 +137,6 @@ HOT BEVERAGE
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -161,8 +153,6 @@ CYRILLIC CAPITAL LETTER GHE WITH UPTURN
 Ґ
 ```
 {% endcode %}
-
-
 
 ### Encoding and Decoding
 
@@ -206,10 +196,6 @@ b''
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -227,10 +213,6 @@ b'?'
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -240,14 +222,7 @@ b'?'
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-b'&#1168;'
-```
-{% endcode %}
-
+    b'&#1168;'
 
 
 

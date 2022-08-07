@@ -29,7 +29,14 @@ Why lambda?
 sorted([1, 2, "a", (3, 4)], key=lambda x: str(x))
 sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")
 ```
-    
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+
+```
+{% endcode %}
+
 * For example, callback handlers are frequently coded as inline lambda expressions embedded directly in a registration call's arguments list. Instead of being define with a `def` elsewhere in a file and referenced by name
     
 * Lambdas are also commonly used to code jump tables which are lists or dictionaries of actions to be performed on demand.
@@ -53,10 +60,6 @@ f(2, 6)
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -73,10 +76,6 @@ list(map(lambda x: x**2, range(5)))
 [0, 1, 4, 9, 16]
 ```
 {% endcode %}
-
-
-
-
 
 ```python
 def power_n(n): 
@@ -126,9 +125,6 @@ f2 = lambda: len([ x for x in range(10000)])
 663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 ```
 {% endcode %}
-
-
-
 This is because lambda is syntax sugar and in the end almost the same code is being constructed
 
 
@@ -157,9 +153,6 @@ dis.dis(f1)
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -180,7 +173,7 @@ dis.dis(f2)
              21 GET_ITER
              22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
              25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             28 RETURN_VALU
 ```
 {% endcode %}
-
-                 28 RETURN_VALUE
+E

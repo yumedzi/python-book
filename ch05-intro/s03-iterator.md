@@ -57,10 +57,6 @@ list(iter([1, 2, "a", None, 10.1]))
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -84,20 +80,20 @@ False
 1
 <list_iterator object at 0x00000000043AE860>
 1 2 3 4
+
+
+
+---------------------------------------------------------------------------
+
+StopIteration                             Traceback (most recent call last)
+
+<ipython-input-25-e15c83738056> in <module>()
+      7 print( a_iter )
+      8 print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
+----> 9 print (a_iter.__next__())
+
+
+StopIteratio
 ```
 {% endcode %}
-
-
-
-
-    ---------------------------------------------------------------------------
-
-    StopIteration                             Traceback (most recent call last)
-
-    <ipython-input-25-e15c83738056> in <module>()
-          7 print( a_iter )
-          8 print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
-    ----> 9 print (a_iter.__next__())
-    
-
-    StopIteration:
+n:

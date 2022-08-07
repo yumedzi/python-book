@@ -40,10 +40,6 @@ from __future__ import division
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -60,10 +56,6 @@ from __future__ import division
 3.3076923076923075
 ```
 {% endcode %}
-
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -82,10 +74,6 @@ from __future__ import division
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -102,9 +90,6 @@ from __future__ import division
 3
 ```
 {% endcode %}
-
-
-
 
 ### Module "math"
 
@@ -124,9 +109,6 @@ print (dir(math))
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -143,9 +125,6 @@ math.pi, math.e, math.sin(324), math.pow(2,10)
 (3.141592653589793, 2.718281828459045, -0.4040652194563607, 1024.0)
 ```
 {% endcode %}
-
-
-
 
 ### Module "random"
 
@@ -165,9 +144,6 @@ print (dir(random))
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -184,10 +160,6 @@ random.randint(2, 7)  # from 2 to 7, includes 7
 5
 ```
 {% endcode %}
-
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

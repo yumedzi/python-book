@@ -92,13 +92,10 @@ if __name__ == '__main__':
 x..
 ----------------------------------------------------------------------
 Ran 3 tests in 0.011s
+
+OK (expected failures=1)
 ```
 {% endcode %}
-
-    
-    OK (expected failures=1)
-
-
 Result:
 
 ```
@@ -174,24 +171,20 @@ Traceback (most recent call last):
 AssertionError: 'Foo is jumping like a crazy frog' != 'Foo is saying "Boo boo boo"'
 - Foo is jumping like a crazy frog
 + Foo is saying "Boo boo boo"
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+FAILED (failures=1)
+
+
+
+
+
+<unittest.runner.TextTestResult run=3 errors=0 failures=1>
 ```
 {% endcode %}
-
-    
-    
-    ----------------------------------------------------------------------
-    Ran 3 tests in 0.011s
-    
-    FAILED (failures=1)
-
-
-
-
-
-    <unittest.runner.TextTestResult run=3 errors=0 failures=1>
-
-
-
 How can we optimize the tests above?
 
 First of all - by removing redundancy.
@@ -227,19 +220,16 @@ unittest.TextTestRunner(verbosity=1).run(suite)
 ...
 ----------------------------------------------------------------------
 Ran 3 tests in 0.013s
+
+OK
+
+
+
+
+
+<unittest.runner.TextTestResult run=3 errors=0 failures=0>
 ```
 {% endcode %}
-
-    
-    OK
-
-
-
-
-
-    <unittest.runner.TextTestResult run=3 errors=0 failures=0>
-
-
 
 **33%** chance that we got this:
 
@@ -484,19 +474,16 @@ unittest.TextTestRunner().run(suite)
 ...
 ----------------------------------------------------------------------
 Ran 3 tests in 0.007s
+
+OK
+
+
+
+
+
+<unittest.runner.TextTestResult run=3 errors=0 failures=0>
 ```
 {% endcode %}
-
-    
-    OK
-
-
-
-
-
-    <unittest.runner.TextTestResult run=3 errors=0 failures=0>
-
-
 
 ### Test suites
 
@@ -627,19 +614,16 @@ unittest.TextTestRunner().run(suite)
 ......
 ----------------------------------------------------------------------
 Ran 6 tests in 0.012s
+
+OK
+
+
+
+
+
+<unittest.runner.TextTestResult run=6 errors=0 failures=0>
 ```
 {% endcode %}
-
-    
-    OK
-
-
-
-
-
-    <unittest.runner.TextTestResult run=6 errors=0 failures=0>
-
-
 
 ## Test Case Example
 
@@ -736,17 +720,31 @@ class RunCommandsTests(BasicTestCase):
 We can skip test:
 
 ```python
-    @unittest.skip("This unit test is in progress...")
-    def test_07_skip(self):
-        # TODO: Need to update this:
-        self.assertEqual(self.something(), self.that)
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+@unittest.skip("This unit test is in progress...")
+def test_07_skip(self):
+    # TODO: Need to update this:
+    self.assertEqual(self.something(), self.that)
+```
+{% endcode %}
+
 ```
 
 We can mark test as "Expected failure":
 
 ```python
-    @unittest.expectedFailure
-    def test_08_exp_fail(self):
-        # The API is not ready yet...
-        self.assertEqual(self.device.query("FUTURE CALL"), 42)
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+@unittest.expectedFailure
+def test_08_exp_fail(self):
+    # The API is not ready yet...
+    self.assertEqual(self.device.query("FUTURE CALL"), 42)
+```
+{% endcode %}
+
 ```

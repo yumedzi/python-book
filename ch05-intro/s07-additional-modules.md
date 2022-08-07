@@ -7,9 +7,14 @@
 * coroutines *
     + generators that can get value via yield:
     ```python
-    val = (yield i)
-    ```
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+val = (yield i)
+```
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -34,7 +39,7 @@ print(p.send(-25.3))
 <generator object pluser at 0x7f4b14319a20>
 0
 11
+-24.
 ```
 {% endcode %}
-
-    -24.3
+3

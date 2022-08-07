@@ -58,8 +58,6 @@ Generator is already empty (raised StopIteration)
 ```
 {% endcode %}
 
-
-
 ## Generator expressions
 
 Very similar to list comprehension. Instead of sqaure brackets `[]` for generator expressions it's needed to use parentheses `()`.
@@ -93,9 +91,6 @@ print(list(gen))
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -119,5 +114,4 @@ for i in gen:
 6
 ```
 {% endcode %}
-
-    8
+8

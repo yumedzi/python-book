@@ -159,8 +159,6 @@ print(mult(10))
 ```
 {% endcode %}
 
-
-
 ### Misc.
 
 #### Swapping two variables
@@ -185,9 +183,6 @@ a, b
 ('54', 45)
 ```
 {% endcode %}
-
-
-
 
 #### Read keyboard input
 
@@ -240,8 +235,6 @@ Main function output
 ```
 {% endcode %}
 
-
-
 ### OOP
 
 
@@ -290,7 +283,7 @@ Result of obj.foo(): Super Value
 Super Value
 Boo!
 Some value
+Super Valu
 ```
 {% endcode %}
-
-    Super Value
+e

@@ -228,8 +228,6 @@ for i in tqdm(range(10000)):
 ```
 {% endcode %}
 
-
-
 ### Colorama
 
 * [Colorama](https://github.com/tartley/colorama)
@@ -268,8 +266,6 @@ Test..
 back to normal now
 ```
 {% endcode %}
-
-
 
 ### Yaspin
 
@@ -320,10 +316,6 @@ DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -340,10 +332,6 @@ len(pendulum.timezones)
 592
 ```
 {% endcode %}
-
-
-
-
 We can parse datetime from a string:
 
 
@@ -363,9 +351,6 @@ print(pendulum.parse('20160413'))
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -381,9 +366,6 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 2018-01-17T00:00:00+00:00
 ```
 {% endcode %}
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -402,10 +384,6 @@ now_in_kiev.in_timezone('UTC')
 DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))
 ```
 {% endcode %}
-
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -427,9 +405,6 @@ print(pendulum.now().subtract(seconds=7).diff_for_humans())
 a few seconds ago
 ```
 {% endcode %}
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

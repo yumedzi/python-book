@@ -21,9 +21,6 @@ Hello World
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -37,8 +34,6 @@ print "Hello World" # Python 2
 Hello World
 ```
 {% endcode %}
-
-
 
 ## What is Python?
 

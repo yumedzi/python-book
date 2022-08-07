@@ -68,27 +68,24 @@ for root, dirs, files in os.walk('/tmp/'):
 ROOT:/tmp/
 DIRS:['com.apple.launchd.jhoY1qEd1J', 'com.apple.launchd.T3n42gvHZB', 'com.apple.launchd.xfxnszQVjh']
 FILES:['1']
+
+ROOT:/tmp/com.apple.launchd.jhoY1qEd1J
+DIRS:[]
+FILES:['org.macosforge.xquartz:0']
+
+ROOT:/tmp/com.apple.launchd.T3n42gvHZB
+DIRS:['testme']
+FILES:['Listeners']
+
+ROOT:/tmp/com.apple.launchd.T3n42gvHZB/testme
+DIRS:[]
+FILES:[]
+
+ROOT:/tmp/com.apple.launchd.xfxnszQVjh
+DIRS:[]
+FILES:['Render']
 ```
 {% endcode %}
-
-    
-    ROOT:/tmp/com.apple.launchd.jhoY1qEd1J
-    DIRS:[]
-    FILES:['org.macosforge.xquartz:0']
-    
-    ROOT:/tmp/com.apple.launchd.T3n42gvHZB
-    DIRS:['testme']
-    FILES:['Listeners']
-    
-    ROOT:/tmp/com.apple.launchd.T3n42gvHZB/testme
-    DIRS:[]
-    FILES:[]
-    
-    ROOT:/tmp/com.apple.launchd.xfxnszQVjh
-    DIRS:[]
-    FILES:['Render']
-    
-
 
 ```python
 # Mass file deleter - !DON'T TRY THIS AT HOME!
@@ -145,9 +142,6 @@ example
 ```
 {% endcode %}
 
-
-
-
 ```python
 print(p.exists()) # `os.path.exists`
 ```
@@ -159,9 +153,6 @@ print(p.exists()) # `os.path.exists`
 False
 ```
 {% endcode %}
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -179,9 +170,6 @@ True
 True
 ```
 {% endcode %}
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -201,10 +189,6 @@ PosixPath('example/test.txt')
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -222,10 +206,6 @@ test_file.write_text("Hello Pathlib!")
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -242,10 +222,6 @@ test_file.read_text()
 'Hello Pathlib!'
 ```
 {% endcode %}
-
-
-
-
 Listing dir's contents:
 
 
@@ -265,10 +241,6 @@ Listing dir's contents:
 [PosixPath('example/test.txt')]
 ```
 {% endcode %}
-
-
-
-
 Searching for particular files by pattern:
 
 

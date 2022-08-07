@@ -26,8 +26,6 @@ print( f"3. {print_me}" )            # f-strings
 ```
 {% endcode %}
 
-
-
 #### **%** (printf-style formatting)
 
 > `format % values`
@@ -67,9 +65,6 @@ For breakfast today is Ceasar salad
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -86,9 +81,6 @@ For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -103,8 +95,6 @@ print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
 And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH
 ```
 {% endcode %}
-
-
 
 #### **{}** / format()
 
@@ -127,9 +117,6 @@ print("Our food today is {}".format(food))
 Our food today is Pizza Pepperoni and burger
 ```
 {% endcode %}
-
-
-
 Several arguments:
 
 
@@ -146,9 +133,6 @@ print("Food: '{}', money: {} UAH".format(food, money))
 Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
 ```
 {% endcode %}
-
-
-
 It is possible when using new format (_format()_) to specify positions:
 
 
@@ -165,9 +149,6 @@ print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(mone
 Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)
 ```
 {% endcode %}
-
-
-
 It is possible to pass arguments by names:
 
 
@@ -185,9 +166,6 @@ print("Want {food} but ${money} to spend".format(**data))
 Want salad but $45 to spend
 ```
 {% endcode %}
-
-
-
 More examples:
 
 

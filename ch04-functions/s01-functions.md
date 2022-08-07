@@ -83,34 +83,31 @@ f1()
 No complains at this point!
 ------------------------------
 Now you'll get the error:
+
+
+
+---------------------------------------------------------------------------
+
+ZeroDivisionError                         Traceback (most recent call last)
+
+<ipython-input-1-41e0b6328c85> in <module>()
+      4 
+      5 print("Now you'll get the error:")
+----> 6 f1()
+      7 
+
+
+<ipython-input-1-41e0b6328c85> in f1()
+      1 def f1():
+----> 2     return 1/0
+      3 print( "No complains at this point!\n" + "-"*30 )
+      4 
+      5 print("Now you'll get the error:")
+
+
+ZeroDivisionError: division by zero
 ```
 {% endcode %}
-
-
-
-
-    ---------------------------------------------------------------------------
-
-    ZeroDivisionError                         Traceback (most recent call last)
-
-    <ipython-input-1-41e0b6328c85> in <module>()
-          4 
-          5 print("Now you'll get the error:")
-    ----> 6 f1()
-          7 
-
-
-    <ipython-input-1-41e0b6328c85> in f1()
-          1 def f1():
-    ----> 2     return 1/0
-          3 print( "No complains at this point!\n" + "-"*30 )
-          4 
-          5 print("Now you'll get the error:")
-
-
-    ZeroDivisionError: division by zero
-
-
 Function definition's execution binds the function name in the current local namespace to a function object (a wrapper around the executable code for the function). This function object contains a reference to the current global namespace as the global namespace to be used when the function is called.
 
 In simple words, if the function accesses an object which is not defined in it - it will look in current global area:
@@ -137,9 +134,6 @@ print(foo()) # Will return 100500 because during call global a equals to 100500
 100500
 ```
 {% endcode %}
-
-
-
 But most often the function relies on the data passed to it:
 
 
@@ -165,9 +159,6 @@ print(sum(x=5))
 54
 ```
 {% endcode %}
-
-
-
 We can assign default argument:
 
 
@@ -199,9 +190,6 @@ I think ehmm evil unicorns
 ehmm umm unicorns evil nice unicorns
 ```
 {% endcode %}
-
-
-
 Using list comprehesion we can make this function very short
 
 
@@ -223,8 +211,6 @@ print(random_phrase(length=5))
 evil umm ehmm I think evil
 ```
 {% endcode %}
-
-
 
 ## Arguments definitions
 
@@ -294,8 +280,6 @@ Hello World
 ```
 {% endcode %}
 
-
-
 ### Keyword arguments
 
 > Passing arguments as key=value pair in accordance with function definition. No changes needed for function. Order of arguments when calling a function doesn't matter.
@@ -318,8 +302,6 @@ Hello World
 Bond, James Bond
 ```
 {% endcode %}
-
-
 
 ### Default arguments
 
@@ -345,8 +327,6 @@ Friend Mark (20) added
 Friend Mark (20) added
 ```
 {% endcode %}
-
-
 
 ### Variable-length arguments 
 

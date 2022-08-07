@@ -77,9 +77,6 @@ else:  # run this block only if no break statement called
 BYE BYE!!! (break called!)
 ```
 {% endcode %}
-
-
-
 One more example for for-else loop - selection of DB:
 
 ```python
@@ -125,9 +122,6 @@ print(list(range(0, 10, 3)))
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -145,9 +139,6 @@ print(list(range(1, 0)))
 []
 ```
 {% endcode %}
-
-
-
 Also - from 3.5:
 
 
@@ -168,10 +159,6 @@ Also - from 3.5:
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -189,10 +176,6 @@ Also - from 3.5:
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -209,9 +192,6 @@ Also - from 3.5:
 {0, 1, 2, 3}
 ```
 {% endcode %}
-
-
-
 
 ## Pythonic cycles
 
@@ -253,9 +233,6 @@ Girl number 3 is Anna
 Girl number 4 is Maria
 ```
 {% endcode %}
-
-
-
 The following code:
     
 ```python
@@ -313,7 +290,7 @@ Square is  144
 Please enter an int: 25
 Square is  625
 Please enter an int: 0
+Goodby
 ```
 {% endcode %}
-
-    Goodbye
+e

@@ -80,9 +80,6 @@ now global is [7, 8, 9]
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -109,8 +106,6 @@ print(a, b, c)
 1 2 old string
 ```
 {% endcode %}
-
-
 
 * `a` - free variable
 * `b` - global variable
@@ -151,9 +146,6 @@ Outside the function -> a: 0
 Outside the function -> b: 888
 ```
 {% endcode %}
-
-
-
 Get all locals, globals:
 * ```locals()```
 * ```globals()```
@@ -180,8 +172,6 @@ f()
 {'c': 25}
 ```
 {% endcode %}
-
-
 
 ### Enclosed scope
 
@@ -213,9 +203,6 @@ local value
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -239,9 +226,6 @@ outer()
 enclosed variable
 ```
 {% endcode %}
-
-
-
 Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
 
 
@@ -275,9 +259,6 @@ changed enclosed variable
 global variable
 ```
 {% endcode %}
-
-
-
 Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
 
 
@@ -295,27 +276,31 @@ foo()
 ```
 
 
-    
+📟 _<mark style="color:green;">Output:</mark>_
 
-    UnboundLocalErrorTraceback (most recent call last)
-
-    <ipython-input-3-591bdaeb3bef> in <module>
-          6     b = a + 25
-          7     return a, b
-    ----> 8 foo()
-    
-
-    <ipython-input-3-591bdaeb3bef> in foo()
-          2 def foo():
-          3     # global a
-    ----> 4     a += 30  # a = a + 30
-          5 
-          6     b = a + 25
+{% code overflow="wrap" %}
+```
 
 
-    UnboundLocalError: local variable 'a' referenced before assignment
+UnboundLocalErrorTraceback (most recent call last)
+
+<ipython-input-3-591bdaeb3bef> in <module>
+      6     b = a + 25
+      7     return a, b
+----> 8 foo()
 
 
+<ipython-input-3-591bdaeb3bef> in foo()
+      2 def foo():
+      3     # global a
+----> 4     a += 30  # a = a + 30
+      5 
+      6     b = a + 25
+
+
+UnboundLocalError: local variable 'a' referenced before assignment
+```
+{% endcode %}
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -330,14 +315,7 @@ foo()
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-55
-```
-{% endcode %}
-
+    55
 
 
 

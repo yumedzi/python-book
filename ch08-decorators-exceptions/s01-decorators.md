@@ -98,8 +98,6 @@ Oops, Exception:  name 'song' is not defined
 ```
 {% endcode %}
 
-
-
 `2`. We can define function everywhere! It will exist in that namespace only. #easy!
 
 
@@ -130,9 +128,6 @@ New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
 Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
 ```
 {% endcode %}
-
-
-
 Of course we can't access internal functions in any way...
 
 
@@ -152,8 +147,6 @@ except NameError as e:
 Oh, we can't acces this function outside: name '_random_music' is not defined
 ```
 {% endcode %}
-
-
 
 `3`. We can even `return` function as function's result. After this we can use that object as new function itself.
 
@@ -189,8 +182,6 @@ New pop-hit: Oooh-Toonc
 Notes: Si,Re
 ```
 {% endcode %}
-
-
 
 ## Decorator syntax and examples
 
@@ -244,9 +235,6 @@ Hello!
 >>> After running function
 ```
 {% endcode %}
-
-
-
 Another example:
 
 Adding dollar sign to text
@@ -279,9 +267,6 @@ Args are: (100,), KWArgs: {'tax_rate': 0.1}
 $110.0
 ```
 {% endcode %}
-
-
-
 The same example, but in one line:
 
 
@@ -308,10 +293,6 @@ f()
 '$100'
 ```
 {% endcode %}
-
-
-
-
 More, more examples!!!
 
 
@@ -346,10 +327,6 @@ f(3, 5)
 '{"result": 243}'
 ```
 {% endcode %}
-
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

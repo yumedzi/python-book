@@ -85,17 +85,14 @@ A()
 {% code overflow="wrap" %}
 ```
 <__main__.A object at 0x7ff51775b4a8>
+
+
+
+
+
+<__main__.A at 0x7ff51775b4e0>
 ```
 {% endcode %}
-
-
-
-
-
-
-    <__main__.A at 0x7ff51775b4e0>
-
-
 
 ### Hash
 
@@ -125,9 +122,6 @@ A().__hash__()
 ```
 {% endcode %}
 
-
-
-
 ### Bases 
 
 `__bases__` (attribute)
@@ -154,9 +148,6 @@ A.__bases__
 ```
 {% endcode %}
 
-
-
-
 ### Docstring
 
 `__doc__` (attribute)
@@ -177,20 +168,17 @@ help(A)
 ```
 None
 Help on class A in module __main__:
+
+class A(builtins.object)
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
 ```
 {% endcode %}
-
-    
-    class A(builtins.object)
-     |  Data descriptors defined here:
-     |  
-     |  __dict__
-     |      dictionary for instance variables (if defined)
-     |  
-     |  __weakref__
-     |      list of weak references to the object (if defined)
-    
-
 
 ### Module
 
@@ -216,9 +204,6 @@ A.__module__
 ```
 {% endcode %}
 
-
-
-
 ### Boolean value
 
 `__bool__(self)` (`__nonzero__` for Python 2)
@@ -243,9 +228,6 @@ bool(A())
 True
 ```
 {% endcode %}
-
-
-
 
 ### Comparison
 
@@ -300,8 +282,6 @@ False
 ```
 {% endcode %}
 
-
-
 ### Iterator protocol
 
 `__iter__(self)`
@@ -349,9 +329,6 @@ c.__dict__
 {'b': 2}
 ```
 {% endcode %}
-
-
-
 
 > `__slots__` is a list with instance attributes that can be assigned
 

@@ -32,8 +32,6 @@ a is greater than 3
 ```
 {% endcode %}
 
-
-
 ## bool type
 
 > Boolean type is subclass of int. So for Python ```True``` is ```1```, ```False``` is ```0```. 
@@ -60,10 +58,6 @@ True + True
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -81,10 +75,6 @@ True + True
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -101,10 +91,6 @@ bool(24), bool("sdsds"), bool(""), bool([])
 (True, True, False, False)
 ```
 {% endcode %}
-
-
-
-
 
 ## Truth Value Testing
 
@@ -152,9 +138,6 @@ else:
 Take arms against a sea of troubles!
 ```
 {% endcode %}
-
-
-
 Because the expression is equivalent to:
 ```python
 (decision == "be") or ("to be")

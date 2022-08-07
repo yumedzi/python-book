@@ -35,10 +35,6 @@ new_d
 {'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}
 ```
 {% endcode %}
-
-
-
-
 We can even rewrite some old key-values:
 
 
@@ -59,10 +55,6 @@ new_d
 {'name': 'John', 'surname': 'Stark'}
 ```
 {% endcode %}
-
-
-
-
 And also we can create a dict from an iterable with pair key-value
 
 
@@ -84,9 +76,6 @@ d1: {'Aria': 'Stark', 'Faceless': 'Man'}
 d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
 ```
 {% endcode %}
-
-
-
 Using method `dict.fromkeys` we can create a new dict from an iterable (some collection) of keys.
 Second attribute will allow to set a default value for all keys (or it will be `None`).
 
@@ -108,10 +97,6 @@ dict.fromkeys(["name", "surname"])
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -128,10 +113,6 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 {'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}
 ```
 {% endcode %}
-
-
-
-
 It is recommended to pass some immutable object as the default value. Otherwise you could get unexpected results:
 
 
@@ -153,10 +134,6 @@ d
 ```
 {% endcode %}
 
-
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -174,10 +151,6 @@ d
 {'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}
 ```
 {% endcode %}
-
-
-
-
 There are (from 3.5) even more craziest ways of dict creation:
 
 
@@ -199,10 +172,6 @@ d1 is d2, d2
 (False, {'some_key': 'some_value'})
 ```
 {% endcode %}
-
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

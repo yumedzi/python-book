@@ -59,8 +59,6 @@ To run any command at the system shell, simply prefix it with !, e.g.:
 ```
 {% endcode %}
 
-
-
 ### Ipython magic functions
 
 IPython has a set of predefined "magic functions" that you can call with a command line style syntax. 
@@ -87,9 +85,6 @@ The following examples show how to call the builtin %timeit magic, both in line 
 ```
 {% endcode %}
 
-
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -104,9 +99,6 @@ max(x)
 609 µs ± 2.23 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 ```
 {% endcode %}
-
-
-
 The builtin magics include:
 
 * Functions that work with code: `%run`, `%edit`, `%save`, `%macro`, `%recall`, etc.

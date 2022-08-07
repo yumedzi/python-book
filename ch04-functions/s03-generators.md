@@ -38,7 +38,7 @@ except StopIteration:
     print("Generator is already empty (raised StopIteration)")
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Starting generator...
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Starting generator...
     First __next__: 0
     Next iteration!
     Second __next__: 1
@@ -48,7 +48,7 @@ except StopIteration:
     For loop: 3
     Next iteration!
     Stopping generator...Bye-bye!
-    Generator is already empty (raised StopIteration)</code></pre></div>
+    Generator is already empty (raised StopIteration)</code></span>
 
 
 ## Generator expressions
@@ -69,12 +69,12 @@ gen = (x for x in range(1,10) if not x % 2) # get generator using generator expr
 print(list(gen))
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object <genexpr> at 0x7f3e79f23c78>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object <genexpr> at 0x7f3e79f23c78>
     2
     4
     6
     8
-    [2, 4, 6, 8]</code></pre></div>
+    [2, 4, 6, 8]</code></span>
 
 
 
@@ -89,8 +89,8 @@ for i in gen:
     print(i)
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object gen_func at 0x103dcf518>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><generator object gen_func at 0x103dcf518>
     2
     4
-    6</code></pre></div>
+    6</code></span>
     8

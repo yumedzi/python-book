@@ -22,7 +22,7 @@ else:
     print("a is lesser than 3")
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>a is greater than 3</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>a is greater than 3</code></span>
 
 
 ## bool type
@@ -41,7 +41,7 @@ True + True
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>2</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>2</code></span>
 
 
 
@@ -53,7 +53,7 @@ True + True
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>6</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>6</code></span>
 
 
 
@@ -65,7 +65,7 @@ bool(24), bool("sdsds"), bool(""), bool([])
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(True, True, False, False)</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(True, True, False, False)</code></span>
 
 
 
@@ -107,7 +107,7 @@ else:
     print("You will not see this quote anyway =(")
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Take arms against a sea of troubles!</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Take arms against a sea of troubles!</code></span>
 
 
 Because the expression is equivalent to:

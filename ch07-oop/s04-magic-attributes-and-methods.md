@@ -78,7 +78,7 @@ print(A())
 A()
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><__main__.A object at 0x7ff51775b4a8></code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code><__main__.A object at 0x7ff51775b4a8></code></span>
 
 
 
@@ -106,7 +106,7 @@ A().__hash__()
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>8793164831643</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>8793164831643</code></span>
 
 
 
@@ -126,7 +126,7 @@ A.__bases__
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(object,)</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(object,)</code></span>
 
 
 
@@ -142,8 +142,8 @@ print(A.__doc__)
 help(A)
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>None
-    Help on class A in module __main__:</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>None
+    Help on class A in module __main__:</code></span>
     
     class A(builtins.object)
      |  Data descriptors defined here:
@@ -170,7 +170,7 @@ A.__module__
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'__main__'</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'__main__'</code></span>
 
 
 
@@ -189,7 +189,7 @@ bool(A())
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True</code></span>
 
 
 
@@ -235,8 +235,8 @@ print(b1 >= b2)
 print(b1 <= b2)
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True
-    False</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>True
+    False</code></span>
 
 
 ### Iterator protocol
@@ -277,7 +277,7 @@ c.__dict__
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'b': 2}</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'b': 2}</code></span>
 
 
 

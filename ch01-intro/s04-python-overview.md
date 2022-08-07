@@ -146,10 +146,10 @@ print(mult(b=15, a=5))
 print(mult(10))
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>22
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>22
     30
     85
-    60</code></pre></div>
+    60</code></span>
 
 
 ### Misc.
@@ -167,7 +167,7 @@ a, b
 
 
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>('54', 45)</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>('54', 45)</code></span>
 
 
 
@@ -211,8 +211,8 @@ def show_something():
 show_something()
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>>>> Showing results :)
-    Main function output</code></pre></div>
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>>>> Showing results :)
+    Main function output</code></span>
 
 
 ### OOP
@@ -251,10 +251,10 @@ print(Foo.attr1)
 print(obj.foo())
 ```
 
-<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Initializing new object with val=Super Value
+<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Initializing new object with val=Super Value
     Nice warm object :)
     Result of obj.foo(): Super Value
     Super Value
     Boo!
-    Some value</code></pre></div>
+    Some value</code></span>
     Super Value

@@ -24,7 +24,7 @@ student = ("John", "Jakeson", 23, "18 B")
 print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Student Jakeson from group 18 B is 23 year old</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Student Jakeson from group 18 B is 23 year old</code></pre></div>
 
 
 To avoid the mess of various indexes we can add some light "OOP-flavor" to this use-case via `namedtuple`:
@@ -40,7 +40,7 @@ print(f'Student {student.surname} from group {student.group} is {student.age} ye
 student
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Student Jakeson from group 18 B is 23 year old</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Student Jakeson from group 18 B is 23 year old</code></pre></div>
 
 
 
@@ -57,7 +57,7 @@ To transform into dict:
 print(student._asdict())
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])</code></pre></div>
 
 
 #### `deque`
@@ -79,8 +79,8 @@ print(de.pop())
 print(de.popleft()) 
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>e
-    a</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>e
+    a</code></pre></div>
 
 
 
@@ -89,7 +89,7 @@ de.appendleft("BEGIN")
 print(de)
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>deque(['BEGIN', 'b', 'c', 'd'])</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>deque(['BEGIN', 'b', 'c', 'd'])</code></pre></div>
 
 
 #### `defaultdict`
@@ -122,8 +122,8 @@ print(f(encountered_animals))
 %timeit f(encountered_animals)
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
-    3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
+    3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</code></pre></div>
 
 
 The same using `setdefault` method:
@@ -145,8 +145,8 @@ print(f(encountered_animals))
 %timeit f(encountered_animals)
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
-    2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
+    2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</code></pre></div>
 
 
 If we set `default_factory` to `int` we can create a counter of things:
@@ -162,7 +162,7 @@ for k in s.lower():
 print(d)
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})</code></pre></div>
 
 
 #### `Counter`

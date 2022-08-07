@@ -63,14 +63,14 @@ foo()
 print("now global is", all)
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>builtin: <built-in function all>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>builtin: <built-in function all>
     global: [1, 2, 3]
     enclosed: [1, 2, 3, 'changed!']
     checking 'all': [1, 2, 3, 'changed!']
     changing global: [7, 8, 9]
     checking 'all': [1, 2, 3, 'changed!']
     inner3 says: [1, 2, 3, 'changed!']
-    now global is [7, 8, 9]</code></pre>
+    now global is [7, 8, 9]</code></pre></div>
 
 
 
@@ -90,8 +90,8 @@ f()
 print(a, b, c)
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1
-    1 2 old string</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1
+    1 2 old string</code></pre></div>
 
 
 * `a` - free variable
@@ -122,10 +122,10 @@ print("Outside the function -> b:", b)
 
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Inside the function -> a: 100
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Inside the function -> a: 100
     Inside the function -> b: 888
     Outside the function -> a: 0
-    Outside the function -> b: 888</code></pre>
+    Outside the function -> b: 888</code></pre></div>
 
 
 Get all locals, globals:
@@ -145,7 +145,7 @@ def f():
 f()
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'c': 25}</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'c': 25}</code></pre></div>
 
 
 ### Enclosed scope
@@ -168,7 +168,7 @@ def outer():
 outer()
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>local value</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>local value</code></pre></div>
 
 
 
@@ -187,7 +187,7 @@ outer()
 
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>enclosed variable</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>enclosed variable</code></pre></div>
 
 
 Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
@@ -211,10 +211,10 @@ outer()
 print(a)
 ```
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>enclosed variable
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>enclosed variable
     changed enclosed variable
     changed enclosed variable
-    global variable</code></pre>
+    global variable</code></pre></div>
 
 
 Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
@@ -265,7 +265,7 @@ foo()
 
 
 
-<pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>55</code></pre>
+<div><pre style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>55</code></pre></div>
 
 
 

@@ -1,14 +1,16 @@
 # Testing theory
 
 > Manual testing is the process through which software developers run tests manually, comparing program expectations and actual outcomes in order to find software defects.
-
+>
 > Automated testing is the process through which automated testing tools run tests that repeat predefined actions, comparing a developing program’s expected and actual outcomes.
 
 What is the job of automated testing tools?
+
 * verify code changes work out
-* be helpful when tests fail 
+* be helpful when tests fail&#x20;
 
 Why do we need automated testing?
+
 * to allow for later changes
 * to raise confidence that code works
 * to specify and document behaviour
@@ -22,10 +24,9 @@ Some basic wise thoughts about tests:
 
 Good tests should cover all possible scenarios/use cases:
 
-<img width="500" src="images/tr_09_15.jpg">
+![](https://github.com/yumedzi/python-book/tree/4711ae7f1e67b0c7437e4f7b7ddbc48f4dc0acd8/ch09-testing/images/tr\_09\_15.jpg)
 
-... and sometimes even unbelievable:
-<img width="600" src="images/tr_09_14.jpg">
+... and sometimes even unbelievable: ![](https://github.com/yumedzi/python-book/tree/4711ae7f1e67b0c7437e4f7b7ddbc48f4dc0acd8/ch09-testing/images/tr\_09\_14.jpg)
 
 ## 7 testing principles
 
@@ -37,34 +38,33 @@ Good tests should cover all possible scenarios/use cases:
 6. Testing is context dependent
 7. Absence-of-errors is a fallacy
 
-
 ## Types of testing:
 
 * **Functional Testing**
-    * The system is tested against the functional requirements/specifications.
-* **Performance Testing** (also: Load Testing, Stress Testing): 
-    * Evaluation of the performance of components.
+  * The system is tested against the functional requirements/specifications.
+* **Performance Testing** (also: Load Testing, Stress Testing):&#x20;
+  * Evaluation of the performance of components.
 * **Usability Testing**
-    * How easily end user can operate with the application.
+  * How easily end user can operate with the application.
 * **Security Testing**
-    * Check for security vulnerabilities and the level of data protection in the system.
+  * Check for security vulnerabilities and the level of data protection in the system.
 * **Portability Testing**
-    * Check how reliably does the software work in a specific environment.
+  * Check how reliably does the software work in a specific environment.
 
 ### Functional Testing
 
 Functional Testing verifies that each function of the software application operates in conformance with the requirement specification. Functional testing is a quality assurance (QA) process and mainly involves Black Box Testing. It is concerned about the results of processing and not about the source code of the application.
-    
+
 Most well-known levels of FT:
-    
+
 * **Unit testing**
-    * units react well to input
-* **integration**: 
-    * unit/components co-operate nicely
-* **system**: 
-    * everything altogether is working OK
+  * units react well to input
+* **integration**:&#x20;
+  * unit/components co-operate nicely
+* **system**:&#x20;
+  * everything altogether is working OK
 * **acceptance**:
-    * full system on production
+  * full system on production
 
 All levels of Functional Testing:
 
@@ -76,16 +76,16 @@ All levels of Functional Testing:
 * Acceptance Testing:  Formal testing with respect to user needs, requirements, and business processes conducted to determine whether a system satisfies the acceptance criteria.
 * Alpha & Beta Testing: Alpha Testing is conducted by a team of highly skilled testers at development site whereas Beta Testing is always conducted in Real Time environment by customers or end users at their own site.
 
-
 ### Unit Testing
 
-> A **unit** is the smallest testable part of an application like functions, classes. 
-
+> A **unit** is the smallest testable part of an application like functions, classes.
+>
 > Unit Testing is a Software Testing method by which individual units of source code are tested.
 
 The idea of Unit Testing is to split the program into smallest bits and test them individually. This usually means that each specific module, class or function is tested by giving it the number of inputs and comparing the actual results with expected values.
 
 Pluses:
+
 * Easy to spot a bug
 * Easy to debug
 

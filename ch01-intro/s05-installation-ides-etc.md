@@ -1,36 +1,38 @@
+# Installation, IDEs etc.
+
 ## Installation, IDEs etc.
 
-* Python.org: 
-    *  https://www.python.org/downloads/ 
-
+* Python.org:
+  * [https://www.python.org/downloads/](https://www.python.org/downloads/)&#x20;
 * Pip (already installed in new versions of Python) is Python package manager.
 * Conda (Miniconda):
-    * https://docs.conda.io/en/latest/miniconda.html
+  * [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 
 Main commands:
 
-* install package (install requirements from a file):
+*   install package (install requirements from a file):
 
     ```bash
-    pip install jupyter virtualenv
-    pip install -r requirements.txt
+      pip install jupyter virtualenv
+      pip install -r requirements.txt
     ```
-* uninstall package:
+*   uninstall package:
+
     ```bash
-    pip uninstall requests
+      pip uninstall requests
+    ```
+*   list all installed packages:
+
+    ```bash
+      pip freeze
+      pip freeze > requirements.txt
     ```
 
-* list all installed packages:
-    ```bash
-    pip freeze
-    pip freeze > requirements.txt
-    ```
-
-### Virtualenv 
+### Virtualenv
 
 **virtualenv** - virtual environment creation tool which allows to keep different version of Python with different version of packages. Usage:
 
-```sh
+```bash
 virtualenv -p /path/to/existing/python venv
 source venv/bin/activate   # Unix
 venv\Scripts\activate      # Windows
@@ -43,10 +45,10 @@ deactivate
 Better tool to manage different python virtual environment is virtualenvwrapper.
 
 * UNIX:
-    * [virtualenvwrapper site](https://virtualenvwrapper.readthedocs.io/en/latest/)
+  * [virtualenvwrapper site](https://virtualenvwrapper.readthedocs.io/en/latest/)
 * Windows clone:
-    * [virtualenvwrapper-win](https://github.com/davidmarble/virtualenvwrapper-win/)
-    
+  * [virtualenvwrapper-win](https://github.com/davidmarble/virtualenvwrapper-win/)
+
 > Main feature is controlling all available environments with easy fast switching between them.
 
 Installation:
@@ -56,47 +58,44 @@ Installation:
 There are two related terms: projects and virtual environments.
 
 * Virtual environment
-    * Environment that lives inside `$WORKON_HOME` (`%WORKON_HOME%`)
+  * Environment that lives inside `$WORKON_HOME` (`%WORKON_HOME%`)
 * Project
-    * Directory with the code related to specific venv. 
-    * If venv was created with association to specific project dir (`-a <path/to/project/`) - after switching to it virtualenvwrapper will chande current directory to project. 
-    
+  * Directory with the code related to specific venv.&#x20;
+  * If venv was created with association to specific project dir (`-a <path/to/project/`) - after switching to it virtualenvwrapper will chande current directory to project.&#x20;
 
 **virtualenvwrapper** VENV commands:
 
 * Create new venv:
-    * `mkvirtualenv [mkvirtualenv-options] [virtualenv-options] VENV_NAME`
-    * mkvirtualenv options:
-       *  `-a project_path`       Associate existing path as project directory
-       *  `-i package`            Install package in new environment
-       *  `-r requirements_file`  
-       * `VENV_NAME` (must be last) - the name of resulted venv
+  * `mkvirtualenv [mkvirtualenv-options] [virtualenv-options] VENV_NAME`
+  * mkvirtualenv options:
+    * `-a project_path`       Associate existing path as project directory
+    * `-i package`            Install package in new environment
+    * `-r requirements_file` &#x20;
+    * `VENV_NAME` (must be last) - the name of resulted venv
 * List of all venvs:
-    * `workon` **RECOMMENDED**
-    * `lsvirtualenv`
+  * `workon` **RECOMMENDED**
+  * `lsvirtualenv`
 * Switch to another venv:
-    * `workon VENV_NAME`
+  * `workon VENV_NAME`
 * Deactivate current venv:
-    * `deactivate`
+  * `deactivate`
 
 **virtualenvwrapper** PROJECTS commands:
 
 * Associate project with current active venv:
-    * `setprojectdir <path/to/project/>`
-
+  * `setprojectdir <path/to/project/>`
 * Create new project environment:
-    * `mkproject`
-        * If the environment variable `$PROJECT_HOME` (`%PROJECT_HOME%`) is set, create a new project directory in PROJECT_HOME
+  * `mkproject`
+    * If the environment variable `$PROJECT_HOME` (`%PROJECT_HOME%`) is set, create a new project directory in PROJECT\_HOME
 * Change into project directory:
-    * `cdproject`
-    * `cd-` - change into the directory you were before running `cdproject`
+  * `cdproject`
+  * `cd-` - change into the directory you were before running `cdproject`
 
 ### How to add existing virtualenv to virtualenvwrapper
 
 Easiest way is to dump all packages from `virtualenv` environment and recreate with `virtualenvwrapper`:
 
-```sh
-
+```bash
 # dumping part
 cd /home/user/projects/old_project/
 source .venv/bin/activate (`.venv` is the dir with venv)
@@ -109,24 +108,22 @@ rm -rf .venv
 mkvirtualenv -a /home/user/projects/old_project/ -p `cat python_bin.txt` -r requirements.txt SOME_PROJ
 ```
 
-
-
 ### Problems with Python installation on Windows
 
 Mostly problems are related to incorrectly ENV variables. Some links with help to deal with this:
 
-* https://docs.python.org/2.7/using/windows.html 
-* https://docs.python.org/3/using/windows.html 
+* [https://docs.python.org/2.7/using/windows.html](https://docs.python.org/2.7/using/windows.html)&#x20;
+* [https://docs.python.org/3/using/windows.html](https://docs.python.org/3/using/windows.html)&#x20;
 
 ### Can't install some module via pip
 
 Sometimes to install additional package is impossible to do via pip because some pre-installed libraries (like MS Studio C++ or mysql/postgresql libraries) needed. So it's better to download and install precompiled packages from here:
 
-* http://www.lfd.uci.edu/~gohlke/pythonlibs/
+* [http://www.lfd.uci.edu/\~gohlke/pythonlibs/](http://www.lfd.uci.edu/\~gohlke/pythonlibs/)
 
 Install of .whl package:
 
-```sh
+```bash
 pip install <whl_file>
 ```
 
@@ -134,7 +131,7 @@ pip install <whl_file>
 
 When you see this during installing some package with pip:
 
-```sh
+```bash
 ...
     error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": https://visualstudio.microsoft.com/downloads/
 ```

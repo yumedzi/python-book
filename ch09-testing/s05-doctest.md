@@ -16,11 +16,8 @@ Ideally, `doctest` informs human readers, and tells the computer what to expect 
 ## Syntax
 
 * Lines that start with a `>>>` prompt are sent to a Python interpreter.
-
 * Lines that start with a `...` prompt are sent as continuations of the code from the previous line, allowing you to embed complex block statements into your doctests.
-
 * Finally, any lines that don't start with `>>>` or `...`, up to the next blank line or `>>>` prompt, represent the output expected from the statement.
-
 
 ```python
 def some_func(x, y=0):
@@ -28,7 +25,7 @@ def some_func(x, y=0):
     My little function to summarize a few numbers:
     >>> some_func(5, 1)
     6
-    
+
     Also, second arg is optional
     >>> some_func(5)
     5
@@ -77,18 +74,19 @@ Doctests can be keeped in plain txt files
 
 The doctest module ignores anything in the file that isn't part of a test
 
-```shell
+```
 python –m doctest test.txt -v
 ```
 
 Doctests can be keeped in docstrings in:
+
 * modules
 * functions
 * classes
 * class methods
 
-
 The simplest way to start using doctest:
+
 ```python
 if __name__ == "__main__":
     import doctest
@@ -97,7 +95,8 @@ if __name__ == "__main__":
 
 Simplest testing ever!
 
-**test_example.py**
+**test\_example.py**
+
 ```python
 def sum_nums(*args):
     """
@@ -117,7 +116,7 @@ if __name__ == "__main__":
     doctest.testmod()
 ```
 
-```shell
+```
 $ python test_example.py –v
 Trying:
 sum_nums(1, 2)
@@ -142,6 +141,7 @@ ok
 ## Expecting exceptions
 
 Exception tracebacks tend to contain many details that are not relevant to the test, but that can change unexpectedly.
+
 * The doctest module deals with this by ignoring the traceback entirely: it's only concerned with the first line:
 
 ```python
@@ -218,7 +218,7 @@ def test_zero(f):
     else:
         f.__doc__ = test_str
     return f
-    
+
 @test_zero
 def sum_nums(*args):
     "Sum func!"

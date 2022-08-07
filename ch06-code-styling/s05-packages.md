@@ -3,12 +3,10 @@
 > Package is directory with modules
 
 Why do we need them?
+
 * For structuring modules for easier usage
 
-How to create a package?
-1. Create directory
-2. Optional: Place a module
-3. That's it...
+How to create a package? 1. Create directory 2. Optional: Place a module 3. That's it...
 
 > Note: In Python 2 and Python 3 before 3.5 you required to place there special (maybe empty) file `__init__.py`
 
@@ -38,5 +36,4 @@ import helpers # IMPORT helpers.__init__.py
 import helpers.file_processors # IMPORT helpers.file_processors.__init__.py
 ```
 
-If we need to import something in package's modules - it's better to use absolute import and specify path to needed module.
-It will be possible because entry point is `main.py` and `PYTHONPATH` will be set accordingly.
+If we need to import something in package's modules - it's better to use absolute import and specify path to needed module. It will be possible because entry point is `main.py` and `PYTHONPATH` will be set accordingly.

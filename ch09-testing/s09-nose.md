@@ -1,7 +1,8 @@
-## Nose
+# Nose
+
 Nose is handy to run all tests in a directory
 
-```sh
+```bash
 pip install nose
 
 $ nosetests
@@ -13,7 +14,7 @@ Useful options:
 
 * Current directory is used as default working directory. It is possible to specify needed one (or several) via `-w` option:
 
-```sh 
+```bash
 nosetests -w parsing/ -w export/csv/tests/
 ```
 
@@ -21,28 +22,29 @@ Nose by default will look in current dir (or in `-w` specified) and will try to 
 
 * Specifying a list of tests to run. nose allows specifying a set of tests on the command line. Only tests that are both discovered and in this set of tests will be run. For example:
 
-```sh
+```bash
 nosetests -w parsing tests/test_csv.py:test_bigdata
 ```
 
-only runs the function test_bigdata found in `parsing/tests/test_csv.py`.
+only runs the function test\_bigdata found in `parsing/tests/test_csv.py`.
 
 * Not capturing stdout via `-s` option. By default, nose captures all output and only presents `stdout` from tests that fail. So `print()` calls won't show anything. By specifying `-s`, this can be turned off for debugging purposes.
 
 Other options:
 
 * `-v` - Verbose mode
-* `-m` - regex (`NOSE_TESTMATCH`) with files/dirs/tests to considered as tests 
-    * (default=`(?:^|[\b_\.\-])[Tt]est`)
-    * better not change
+* `-m` - regex (`NOSE_TESTMATCH`) with files/dirs/tests to considered as tests&#x20;
+  * (default=`(?:^|[\b_\.\-])[Tt]est`)
+  * better not change
 * `-I` - regex what files to ignore (`--ignore-files=REGEX`)
 * `-i` - regex with files/dirs/tests to be included
-    * add something that is not covered by default `-m`
+  * add something that is not covered by default `-m`
 * `-e` - regex with files/dirs/tests to be excluded
-    * if we don't want to test specific files/cases
+  * if we don't want to test specific files/cases
 * `--processes` - Parallel execution by nosetests (number of cores = processes):
 
-```sh
+```bash
 nosetests --processes=4 tests.py
 ```
+
 This is useful when testing UI with Selenium - but using number of parallel processes bigger than number of CPU cores is bad for performance.

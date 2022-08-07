@@ -276,7 +276,7 @@ In other words:
 # python 2
 >>> import time
 >>> time.localtime()
-(2017, 5, 17, 9, 59, 54, 2, 137, 0)
+(2022, 8, 7, 22, 4, 21, 6, 219, -1)
 ```
 
 
@@ -285,19 +285,10 @@ In other words:
 ```python
 import datetime
 
-for i in datetime .datetime.now().timetuple():
-    print(i, end=", ")
-    
-datetime.datetime.now()
+print(*datetime.datetime.now().timetuple(), sep=", ")
 ```
 
-    2019, 5, 24, 10, 30, 37, 4, 144, -1, 
-
-
-
-
-    datetime.datetime(2019, 5, 24, 10, 30, 37, 749557)
-
+    2022, 8, 7, 22, 4, 21, 6, 219, -1
 
 
 * Values is result of range() are all of the same type, so it is list (in Python 2):

@@ -73,7 +73,7 @@ This will:
 !ls
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     111					Basics_07_OOP.ipynb
     Basics_01_Introduction.ipynb		Basics_08_Decorators.ipynb
@@ -94,7 +94,7 @@ subprocess.call(["touch", "111.txt"])
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     0
 
@@ -105,7 +105,7 @@ _<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace;
 !ls 111.txt
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     111.txt
 
@@ -118,7 +118,7 @@ subprocess.call(["rm", "111.txt"])
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     0
 
@@ -132,7 +132,7 @@ subprocess.call(["ls", "111.txt"])
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     2
 
@@ -157,7 +157,7 @@ subprocess.check_call(["touch", "111.txt"])
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     0
 
@@ -171,7 +171,7 @@ subprocess.check_call(["ls", "111.txt"])
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     0
 
@@ -185,7 +185,7 @@ subprocess.check_call(["rm", "111.txt"])
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     0
 

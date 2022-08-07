@@ -146,7 +146,7 @@ print(mult(b=15, a=5))
 print(mult(10))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     22
     30
@@ -169,7 +169,7 @@ a, b
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     ('54', 45)
 
@@ -215,7 +215,7 @@ def show_something():
 show_something()
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     >>> Showing results :)
     Main function output
@@ -257,7 +257,7 @@ print(Foo.attr1)
 print(obj.foo())
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Initializing new object with val=Super Value
     Nice warm object :)

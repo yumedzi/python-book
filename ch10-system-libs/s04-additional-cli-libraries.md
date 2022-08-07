@@ -218,7 +218,7 @@ for i in tqdm(range(10000)):
     l.append(i ** i)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     100%|██████████| 10000/10000 [00:11<00:00, 902.17it/s] 
 
@@ -247,7 +247,7 @@ print(Style.RESET_ALL)
 print('back to normal now')
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     [33m[44msome yellow text
     [42mand with a green background
@@ -296,7 +296,7 @@ now_in_kiev
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
 
@@ -310,7 +310,7 @@ len(pendulum.timezones)
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     592
 
@@ -324,7 +324,7 @@ print(pendulum.parse("2020/11/05"))
 print(pendulum.parse('20160413'))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     2020-11-05T00:00:00+00:00
     2016-04-13T00:00:00+00:00
@@ -336,7 +336,7 @@ print(pendulum.from_format('01, 05, 2020', 'D, MM, YYYY'))
 print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     2020-05-01T00:00:00+00:00
     2018-01-17T00:00:00+00:00
@@ -351,7 +351,7 @@ now_in_kiev.in_timezone('UTC')
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))
 
@@ -367,7 +367,7 @@ print(pendulum.now().subtract(minutes=65, seconds=1).diff_for_humans())
 print(pendulum.now().subtract(seconds=7).diff_for_humans())
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     4 days ago
     1 hour ago

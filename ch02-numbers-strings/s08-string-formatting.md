@@ -14,7 +14,7 @@ print(  "2. {}".format(print_me) )   # New format, format()
 print( f"3. {print_me}" )            # f-strings
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     1. 100505050.12123
     2. 100505050.12123
@@ -50,7 +50,7 @@ food = "Ceasar salad"
 print("For breakfast today is %s" % food)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     For breakfast today is Ceasar salad
 
@@ -62,7 +62,7 @@ money = 130.23
 print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
 
@@ -73,7 +73,7 @@ data = {"food": "Pasta Carbonara", "money": 300}
 print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH
 
@@ -90,7 +90,7 @@ It's better to use this for something that requries more complex formatting
 print("Our food today is {}".format(food))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Our food today is Pizza Pepperoni and burger
 
@@ -102,7 +102,7 @@ Several arguments:
 print("Food: '{}', money: {} UAH".format(food, money))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
 
@@ -114,7 +114,7 @@ It is possible when using new format (_format()_) to specify positions:
 print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(money, food))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)
 
@@ -129,7 +129,7 @@ print("Want {food} but ${money} to spend".format(**data))
 # print("Want {food} but ${money} to spend".format(money=45, food="salad"))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Want salad but $45 to spend
 

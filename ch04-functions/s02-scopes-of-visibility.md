@@ -63,7 +63,7 @@ foo()
 print("now global is", all)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     builtin: <built-in function all>
     global: [1, 2, 3]
@@ -92,7 +92,7 @@ f()
 print(a, b, c)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     1
     1 2 old string
@@ -126,7 +126,7 @@ print("Outside the function -> b:", b)
 
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Inside the function -> a: 100
     Inside the function -> b: 888
@@ -151,7 +151,7 @@ def f():
 f()
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     {'c': 25}
 
@@ -176,7 +176,7 @@ def outer():
 outer()
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     local value
 
@@ -197,7 +197,7 @@ outer()
 
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     enclosed variable
 
@@ -223,7 +223,7 @@ outer()
 print(a)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     enclosed variable
     changed enclosed variable
@@ -279,7 +279,7 @@ foo()
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     55
 

@@ -85,7 +85,7 @@ scream.__qualname__ = "Super Song"
 print(scream)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     LaLaLa
     LaLaLaLaLaLaLaLaLaLaLaLaLaLaLa
@@ -113,7 +113,7 @@ def music(beats=3):
 print(music(10))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
     Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
@@ -129,7 +129,7 @@ except NameError as e:
     print("Oh, we can't acces this function outside:", e)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Oh, we can't acces this function outside: name '_random_music' is not defined
 
@@ -156,7 +156,7 @@ print( some_party() )
 print(party()())
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
     Notes: Do,Fa,Si,Si,Do,Do,Do,Do,Fa,Do,La,Fa,Re,La,Si
@@ -205,7 +205,7 @@ def greet():
 greet()
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     >>> Before running function
     Hello!
@@ -233,7 +233,7 @@ print(price)
 print(price(100, tax_rate=.1))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     <function dollar.<locals>.wrapper at 0x7f208019f8b0>
     Args are: (100,), KWArgs: {'tax_rate': 0.1}
@@ -257,7 +257,7 @@ f()
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     '$100'
 
@@ -288,7 +288,7 @@ f(3, 5)
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     '{"result": 243}'
 

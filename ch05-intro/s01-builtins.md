@@ -163,7 +163,7 @@ setattr(a_object, "b", "Wow! Adding attrs like haxxxors")
 print( a_object.b )  
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     True
     5
@@ -178,7 +178,7 @@ getattr("Hello World", "lower")()
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     'hello world'
 

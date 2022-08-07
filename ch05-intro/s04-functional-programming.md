@@ -113,7 +113,7 @@ for t in expr.split("+"):
 print( res ) 
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     173
 
@@ -128,7 +128,7 @@ sum(map(int, filter(bool, expr.split("+"))))
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     173
 
@@ -170,7 +170,7 @@ print(mystery_imp(str_))
 print(mystery_fp(str_))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     4
     4
@@ -195,7 +195,7 @@ print(list(map(pow, [2, 5], [3, 4])))
 print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     ['1', '2', '3']
     [8, 625]
@@ -209,7 +209,7 @@ print([pow(x[0], x[1]) for x in zip([2, 5], [3, 4])])
 print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     ['1', '2', '3']
     [8, 625]
@@ -222,7 +222,7 @@ print(list(map(sum, [[1, 2, 3] , [4, 5, 8]])))
 print(list(map(lambda x: x+1, [1, 2, 3])))    
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     [6, 17]
     [2, 3, 4]
@@ -243,7 +243,7 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else True, [1,2,3,4
 print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,4,5,0, "a", [], 0.0, False, None])))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     [1, 2]
     [1, 2]
@@ -269,7 +269,7 @@ zipped = zip([1, 2, 3, 4], [1, 2, 0])
 print(list( zip(*zipped) )) # Note that we'll loose element from longer list
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     [(1, 2), (3, 4)]
     [(1, 1), (2, 2), (3, 0)]

@@ -56,7 +56,7 @@ else:  # run this block only if no break statement called
     print("No break called -- number 12 was NOT FOUND")
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     1 	: Even number ... EOL!
     2 	: Odd number ... EOL!
@@ -105,7 +105,7 @@ print(list(range(0, 30, 5)))
 print(list(range(0, 10, 3)))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -120,7 +120,7 @@ print(list(range(0)))
 print(list(range(1, 0)))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
     []
@@ -137,7 +137,7 @@ Also - from 3.5:
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     [0, 1, 2, 3]
 
@@ -151,7 +151,7 @@ _<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace;
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     [1, 2, 3, 4, 5, 6]
 
@@ -165,7 +165,7 @@ _<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace;
 
 
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     {0, 1, 2, 3}
 
@@ -199,7 +199,7 @@ for index, girl in enumerate(["Olya", "Sveta", "Anna", "Maria"], start=1):
     print("Girl number {} is {}".format(index, girl))
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Girl number 1 is Olya
     Girl number 2 is Sveta
@@ -253,7 +253,7 @@ while True:
 print("Goodbye")
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     Please enter an int: 12
     Square is  144

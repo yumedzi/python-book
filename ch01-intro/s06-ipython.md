@@ -49,7 +49,7 @@ To run any command at the system shell, simply prefix it with !, e.g.:
 !pwd
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     /notebooks
 
@@ -70,7 +70,7 @@ The following examples show how to call the builtin %timeit magic, both in line 
 %timeit range(1000)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     502 ns ± 4.41 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
 
@@ -81,7 +81,7 @@ _<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace;
 max(x)
 ```
 
-_<mark style="color:purple; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000;border-radius: 4px;">📟 Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
     609 µs ± 2.23 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 

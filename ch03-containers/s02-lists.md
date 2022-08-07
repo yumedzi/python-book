@@ -213,3 +213,732 @@ TypeError Traceback (most recent call last)
 
 <ipython-input-9-a8ad78a8eda3> in <module>()
       1 new_list
+----> 2 new_list.sort()
+
+
+TypeError: '<' not supported between instances of 'str' and 'int'
+```
+
+But we can workaround this by using builtin function `sorted()` and specifying your own sorting function `key` which should return some values os the same type which later will be used for Python's regular sorting.
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+print(sorted(new_list, key=str)) # Here we are sorting in fact by string representations
+```
+
+    [15, 16, 23, 4, 42, 8, 'a', 'b', 'c']
+
+
+### Appending, extending
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list.append(1000)
+some_list
+```
+
+
+
+
+    [4, 8, 15, 16, 23, 42, 1000]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list = [4, 8, 15, 16, 23, 42, 1000]
+some_list.extend([1000, [10, 10, [20, 20]], some_list])
+some_list
+```
+
+
+
+
+    [4, 8, 15, 16, 23, 42, 1000, 1000, [10, 10, [20, 20]], [...]]
+
+
+
+By extending nested list Python will treat all nested as elements just as other types
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list.extend([ 0, [1,2], [3, 4]])
+some_list
+```
+
+
+
+
+    [4,
+     8,
+     15,
+     16,
+     23,
+     42,
+     1000,
+     1000,
+     [10, 10, [20, 20]],
+     [...],
+     0,
+     [1, 2],
+     [3, 4]]
+
+
+
+### Removing
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list.pop()
+```
+
+
+
+
+    [3, 4]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list.pop(0)
+```
+
+
+
+
+    4
+
+
+
+
+```python
+del some_list[0]
+del some_list[3:6]
+```
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list
+```
+
+
+
+
+    [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+
+
+
+### Other examples
+We saw very similar examples for strings - because strings are sequence too. That is the core idea (called ducktyping) in Python - the same behavior even if the types are different.
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list * 2
+```
+
+
+
+
+    [15,
+     16,
+     23,
+     [10, 10, [20, 20]],
+     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+     0,
+     [1, 2],
+     15,
+     16,
+     23,
+     [10, 10, [20, 20]],
+     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+     0,
+     [1, 2]]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list[::-1]
+```
+
+
+
+
+    [[1, 2],
+     0,
+     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+     [10, 10, [20, 20]],
+     23,
+     16,
+     15]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list[:4]
+```
+
+
+
+
+    [15, 16, 23, [10, 10, [20, 20]]]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list[2:]
+```
+
+
+
+
+    [23,
+     [10, 10, [20, 20]],
+     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+     0,
+     [1, 2]]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+print (some_list)
+some_list[-2]
+```
+
+    [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+
+
+
+
+
+    0
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+(some_list * 4)[::4]
+```
+
+
+
+
+    [15,
+     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+     16,
+     0,
+     23,
+     [1, 2],
+     [10, 10, [20, 20]]]
+
+
+
+```IndexError``` exception is raised for non-existent index element
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list[1000]
+```
+
+
+    
+
+    IndexErrorTraceback (most recent call last)
+
+    <ipython-input-24-a1d5b08ec438> in <module>()
+    ----> 1 some_list[1000]
+    
+
+    IndexError: list index out of range
+
+
+## List slices
+
+Slices of list object are a bit different to the slices of strings due to the fact that lists are mutable. Because of these additional operations are available:
+
+* slice deletion
+* slice assignment
+
+Firstly, let's check regular list slice obtaining:
+
+### Slice obtaining
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+print (some_list)
+some_list[2:4]
+```
+
+    [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+
+
+
+
+
+    [23, [10, 10, [20, 20]]]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list[2:4] = ["a", "b", "c"]
+some_list
+```
+
+
+
+
+    [15, 16, 'a', 'b', 'c', [...], 0, [1, 2]]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+some_list[:1] = [100, 100, 100]
+some_list
+```
+
+
+
+
+    [100, 100, 100, 16, 'a', 'b', 'c', [...], 0, [1, 2]]
+
+
+
+### Slice deletion
+
+By using `del` operator on the slice it is possible to delete target part from the original list:
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+list_ = list(range(1, 6))
+print("Before:", list_)
+
+del list_[2:4]
+print("After:", list_)
+```
+
+    Before: [1, 2, 3, 4, 5]
+    After: [1, 2, 5]
+
+
+### Slice assignment
+
+By assignining the slice to another iterable, the content of that iterable will be used to replace the target part of the original list:
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+list_ = list(range(1, 6))
+print("Before:", list_)
+
+list_[2:4] = ["A"]
+print("After:", list_)
+```
+
+    Before: [1, 2, 3, 4, 5]
+    After: [1, 2, 'A', 5]
+
+
+## List comprehensions
+
+> Fast, simple and "Pythonic" way to create a list
+
+Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+cool_list = [x*2 for x in range(10)]
+cool_list
+```
+
+
+
+
+    [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+
+
+It's absolutely the same as:
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+cool_list = []
+for x in range(10):
+    cool_list.append(x*2)
+cool_list
+```
+
+
+
+
+    [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+[x**2 + 2*x + 1 for x in range(10)]
+```
+
+
+
+
+    [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+# Random list (len till 15) from rand ints (till 10)
+from random import randrange
+[randrange(0, 10) for _ in range(randrange(3, 15))]
+```
+
+
+
+
+    [2, 2, 4, 8, 9, 2, 4]
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+[f"{x}-{y}" for x in [1, 2, 3] for y in "ABC"]
+```
+
+
+
+
+    ['1-A', '1-B', '1-C', '2-A', '2-B', '2-C', '3-A', '3-B', '3-C']
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+list_ = []
+for x in [1, 2, 3]:
+    for y in "ABC":
+        list_.append(f"{x}-{y}")
+print(list_)
+```
+
+    ['1-A', '1-B', '1-C', '2-A', '2-B', '2-C', '3-A', '3-B', '3-C']
+
+
+The order of loops matters:
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+[f'{x}-{y}' for x in "abc" for y in range(1, 4)]
+```
+
+
+
+
+    ['a-1', 'a-2', 'a-3', 'b-1', 'b-2', 'b-3', 'c-1', 'c-2', 'c-3']
+
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+[f'{x}-{y}' for y in range(1, 4) for x in "abc"]
+```
+
+
+
+
+    ['a-1', 'b-1', 'c-1', 'a-2', 'b-2', 'c-2', 'a-3', 'b-3', 'c-3']
+
+
+
+It's possible to create nested list and use conditions as well:
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+[(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+```
+
+
+
+
+    [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+
+
+
+is equivalent to:
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+combs = []
+for x in [1, 2, 3]:
+    for y in [3, 1, 4]:
+        if x != y:
+            combs.append((x, y))
+combs
+```
+
+
+
+
+    [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+
+
+
+Some "real-world" example:
+
+```python
+[func(x, y) for x in list_x for y in list_y if check(x, y)]
+```
+
+## Deep/shallow copy
+
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
+
+Variables in Python (name bindings) are just points to an object in memory. By assigning one variable to another we make them point to the same object which may lead to various problems.
+
+Operator ```is``` allows comparing by ids - shows is two variables pointing to the same object 
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+a = [1, 2, 3]
+b = a
+print (a is b)
+a[0] = "Surprise"
+print ("b is", b)
+```
+
+    True
+    b is ['Surprise', 2, 3]
+
+
+### Shallow copy of lists
+
+Create completely new copy of the list - by creating a new list and adding elements one by one from old one
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+b = a.copy() # Pythonic way
+b = list(a) # Almost Pythonic way
+b = a[:] # hacker way
+
+print (b is a)
+a[0] = "Oh!"
+print ("a is:", a)
+print ("b is:", b)
+```
+
+    False
+    a is: ['Oh!', 2, 3]
+    b is: ['Surprise', 2, 3]
+
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+b = a[:]  # Hackish way
+a[0] = "New"
+print ("b is:", b)
+print(a)
+```
+
+    b is: ['Oh!', 2, 3]
+    ['New', 2, 3]
+
+
+### Shallow copy problems
+If list has mutable object deeper than on the very first nesting level - shallow copy will cause similar problems as before.
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+a = [[1, 2], 3]
+b = list(a)
+a[0][0] = "Surprise!"
+print (a is b)
+print ("b is:", b)
+```
+
+    False
+    b is: [['Surprise!', 2], 3]
+
+
+### Deep copy
+
+There is a special standard module for copying - ```copy```
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+import copy
+a = [[1, 2], 3]
+
+# Shallow copy
+b = copy.copy(a)
+
+# Deep copy
+c = copy.deepcopy(a)
+a[0][0] = "Surprise!"
+print ("b is:", b)
+print ("c is:", c)
+```
+
+    b is: [['Surprise!', 2], 3]
+    c is: [[1, 2], 3]
+
+
+### Self-referencing list
+
+List is seqence-like object that contains pointers to other objects which are treated as it's elements.
+That's why it's possible to add list to itself as element!
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+a = [1, 2, 3]
+a.append(a)
+print(a)
+print(a[-1][-1][-1][-1][-1][-1][-1])
+```
+
+    [1, 2, 3, [...]]
+    [1, 2, 3, [...]]
+
+
+In this case when we ```del```ete it - Python garbage collector won't delete from memory - because the number of reference to this object is not null
+
+Usual Python console:
+    
+```python
+>>> a = [1, 2, 3]
+>>> import sys
+>>> sys.getrefcount(a)
+2
+>>> a.append(a)
+>>> sys.getrefcount(a)
+3
+```
+
+You need to be aware of such cases.
+
+### Lists for heavy calculations
+
+If you use list for complex math calculations - consider using `numpy`.
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+import numpy
+array = numpy.array(list(range(1000)))
+list_ = list((range(1000)))
+
+%timeit 999 in array
+%timeit 999 in list_
+```
+
+    12.2 µs ± 35.2 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+    29.7 µs ± 68.2 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+
+
+## Complexity of operations
+
+<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
+
+Time-complexity (aka "Big O" or "Big Oh") of various operations in current CPython.
+
+> Generally, 'n' is the number of elements currently in the container. 'k' is either the value of a parameter or the number of elements in the parameter.
+
+|Operation |Average Case|Amortized Worst Case |
+|------------|------------|----------------------------|
+|Copy        |O(n) |O(n) |
+|Append      |O(1) |O(1) |
+|Insert      |O(n) |O(n) |
+|Get Item    |O(1) |O(1) |
+|Set Item    |O(1) |O(1) |
+|Delete Item |O(n) |O(n) |
+
+|Operation |Average Case|Amortized Worst Case |
+|------------|------------|----------------------------|
+|Iteration   |O(n) |O(n) |
+|Get Slice   |O(k) |O(k) |
+|Del Slice   |O(n) |O(n) |
+|Set Slice   |O(k+n) |O(k+n) |
+|Extend      |O(k) |O(k) |
+|Sort        |O(n log n) |O(n log n) |
+|Multiply    |O(nk) |O(nk) |
+|x in s |O(n) | |
+|min(s), max(s) |O(n) | |
+|Get Length     |O(1) |O(1) |
+
+
+As we can see from [Complexity of operations](#Complexity-of-operations) section, `list` has fast (complexity is `O(1)`) such methods as `append` and `pop` which work with right end of the structure. So this is a *FILO* structure - "stack". So, if we want to achieve maximum performance we should use list as stack (and not use `insert(0, x)` and `pop(0)` methods).

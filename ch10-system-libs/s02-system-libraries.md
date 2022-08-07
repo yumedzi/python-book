@@ -41,7 +41,8 @@ def printdir(dir):
     print(os.path.join(dir, filename))
 		# dir/foo.txt (relative to current dir)
     print(os.path.abspath(os.path.join(dir, filename)))
-		# /home/user/dir/foo.txt```
+		# /home/user/dir/foo.txt
+```
 
 Another great method of iteration through directories and files: `os.walk`:
 
@@ -59,7 +60,8 @@ for root, dirs, files in os.walk('/tmp/'):
     # if "Listeners" in files:
     #     print(f"Found in {root}")
     #     break
-    print("ROOT:{}\nDIRS:{}\nFILES:{}\n".format(root, dirs, files))```
+    print("ROOT:{}\nDIRS:{}\nFILES:{}\n".format(root, dirs, files))
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -94,7 +96,8 @@ for root, dirs, files in os.walk(top, topdown=False):
     for name in files:
         os.remove(os.path.join(root, name))
     for name in dirs:
-        os.rmdir(os.path.join(root, name))```
+        os.rmdir(os.path.join(root, name))
+```
 
 ### Cheatsheet
 
@@ -140,7 +143,8 @@ print(p.resolve())  # os.path.abspath
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print(p.exists()) # `os.path.exists````
+print(p.exists()) # `os.path.exists`
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -153,7 +157,8 @@ print(p.exists()) # `os.path.exists````
 ```python
 p.mkdir()         # os.mkdir
 print(p.exists()) 
-print(p.is_dir()) # os.path.is_dir```
+print(p.is_dir()) # os.path.is_dir
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -166,7 +171,8 @@ print(p.is_dir()) # os.path.is_dir```
 
 ```python
 test_file = p / "test.txt"
-test_file```
+test_file
+```
 
 
 
@@ -181,7 +187,8 @@ test_file```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-test_file.write_text("Hello Pathlib!")```
+test_file.write_text("Hello Pathlib!")
+```
 
 
 
@@ -196,7 +203,8 @@ test_file.write_text("Hello Pathlib!")```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-test_file.read_text()```
+test_file.read_text()
+```
 
 
 

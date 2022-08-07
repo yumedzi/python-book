@@ -28,7 +28,8 @@ some_float = 23.23
 ```
 * tuple
 ```python
-some_tuple = (13, 45, "Yo!", 34.3) ```
+some_tuple = (13, 45, "Yo!", 34.3)
+```
 
 ### Mutable types (can be changed)
 * list
@@ -43,7 +44,8 @@ some_set = {(1, 2), 'string', 14}
 ```
 * dict
 ```python
-some_dict = {"name":"John", "sname":"Smith"}```
+some_dict = {"name":"John", "sname":"Smith"}
+```
 
 ### Basic operators:
 * Assignment operators: 
@@ -58,7 +60,8 @@ some_dict = {"name":"John", "sname":"Smith"}```
 
 ```python
 number = 1 + 2 * 3 / 4.0 
-another_num = 11 % 3 ** 3 // 2```
+another_num = 11 % 3 ** 3 // 2
+```
 
 ### Basic operators, sequences:
 
@@ -76,7 +79,8 @@ len(test_string)
 one_list = ["Ring of elves", "Ring of dwarves"] 
 all_rings = one_list + ["Ring of men"] 
 len(all_rings)
-all_rings.append("Ring of Power") # Also: extend(), count(), reverse(), sort()```
+all_rings.append("Ring of Power") # Also: extend(), count(), reverse(), sort()
+```
 
 ### Conditions, cycles
 
@@ -90,7 +94,8 @@ if a > b:
 elif a > 0:
     print("But it is still > 0")
 else:
-    print("Something is wrong...")```
+    print("Something is wrong...")
+```
 
 * Cycles
 
@@ -127,14 +132,16 @@ line = f.readline()
 while line: 
     print(line, end="") # suppress \n after each line as the line already has it
     line = f.readline() 
-f.close()```
+f.close()
+```
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # More easy way:
 with open("/tmp/file.txt", "r", encoding="win1251") as f:
-    print(f.readlines(), end="")```
+    print(f.readlines(), end="")
+```
 
 
 ### Functions
@@ -188,7 +195,8 @@ a, b
 
 ```python
 print(input("Please enter something")) # Python 3
-print(raw_input("Please enter something")) # Python 2```
+print(raw_input("Please enter something")) # Python 2
+```
 
 
 ### Passing argument to function

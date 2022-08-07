@@ -10,7 +10,8 @@ for i in [1, 2, 3]:
     if i == 3:
         print("Number 3 found!")
     else:
-        print("Number:", i)```
+        print("Number:", i)
+```
 
 In C we need to use brackets(`{` and `}`) to delimit blocks of code:
 ```c
@@ -57,7 +58,8 @@ This is **correct**:
 ```python
 if condition:
     do_something1()
-    do_something2()```
+    do_something2()
+```
    
 This is **incorrect**:
 
@@ -66,7 +68,8 @@ This is **incorrect**:
 ```python
 if condition:
     do_something1()
-        do_something2()```
+        do_something2()
+```
 📟 _<mark style="color:green;">Output:</mark>_
 
             
@@ -79,14 +82,16 @@ If code block is not big it is allowed to use inline form:
 if condition: do_something1()
 else: do_something2()
     
-for x in range(x): print(x)```
+for x in range(x): print(x)
+```
 
 And it is possible to specify few statements on the same line using `;`:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-a = [x for x in range(10) if x % 2]; f = open("tmp.txt", "w"); f.write(a); f.close()```
+a = [x for x in range(10) if x % 2]; f = open("tmp.txt", "w"); f.write(a); f.close()
+```
 
 These two examples are not readable so used very rarely.
 
@@ -122,7 +127,8 @@ def       for       lambda    try
 ```python
 a = 12345  # This is comment
 # This is comment too 
-# Continuing our comments ```
+# Continuing our comments
+```
 
 Doc string - *first string* of module, function or class. These string are used by IDEs, help auto-generating scripts etc. It is possible to specify multiline string by using starting and ending with triple quotes(`"""` or `'''`).
 
@@ -157,7 +163,8 @@ Or:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-f.__doc__```
+f.__doc__
+```
 
 ### Naming rules
 

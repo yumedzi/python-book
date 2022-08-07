@@ -23,7 +23,8 @@ Usual approach:
 
 ```python
 student = ("John", "Jakeson", 23, "18 B")
-print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')```
+print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -61,7 +62,8 @@ To transform into dict:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print(student._asdict())```
+print(student._asdict())
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -98,7 +100,8 @@ print(de.popleft())
 
 ```python
 de.appendleft("BEGIN")
-print(de)```
+print(de)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -112,7 +115,8 @@ print(de)```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-defaultdict(default_factory[, ...]) --> dict with default factory```
+defaultdict(default_factory[, ...]) --> dict with default factory
+```
 
 > If default_factory is not None, it is called without arguments to provide a default value for the given key, this value is inserted in the dictionary for the key, and returned.
 
@@ -206,7 +210,8 @@ print(Counter(['red', 'blue', 'red', 'green', 'blue', 'blue']))
 
 ```python
 cnt = Counter('AnnaMadrigal'.lower())
-print(cnt)```
+print(cnt)
+```
 
     Counter({'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 
@@ -217,7 +222,8 @@ It has many useful methods:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print(Counter("Asdasdasdasd").items())```
+print(Counter("Asdasdasdasd").items())
+```
 
     dict_items([('A', 1), ('s', 4), ('d', 4), ('a', 3)])
 
@@ -227,7 +233,8 @@ print(Counter("Asdasdasdasd").items())```
 
 ```python
 # elements()
-print(list(cnt.elements()))```
+print(list(cnt.elements()))
+```
 
     ['A', 'n', 'n', 'a', 'a', 'a', 'M', 'd', 'r', 'i', 'g', 'l']
 
@@ -237,7 +244,8 @@ print(list(cnt.elements()))```
 
 ```python
 # most_common(n)
-print(cnt.most_common(3))```
+print(cnt.most_common(3))
+```
 
     [('a', 3), ('n', 2), ('A', 1)]
 

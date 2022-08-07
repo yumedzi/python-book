@@ -6,7 +6,8 @@ Also know as PEP 20. (PEP is proposal for enhancement)
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-import this```
+import this
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

@@ -12,7 +12,8 @@
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-lambda [arg1 [,arg2,.....argn]]: <expression>```
+lambda [arg1 [,arg2,.....argn]]: <expression>
+```
 
 * Lambdas can take any number of arguments but return just one value in the form of an expression. 
 * They cannot contain commands or multiple expressions. 
@@ -28,7 +29,8 @@ Why lambda?
 
 ```python
 sorted([1, 2, "a", (3, 4)], key=lambda x: str(x))
-sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")```
+sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")
+```
     
 * For example, callback handlers are frequently coded as inline lambda expressions embedded directly in a registration call's arguments list. Instead of being define with a `def` elsewhere in a file and referenced by name
     
@@ -39,7 +41,8 @@ sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")```
 
 ```python
 f = lambda x, y: x + y 
-f(2, 6)```
+f(2, 6)
+```
 
 
 
@@ -54,7 +57,8 @@ f(2, 6)```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-list(map(lambda x: x**2, range(5)))```
+list(map(lambda x: x**2, range(5)))
+```
 
 
 
@@ -74,7 +78,8 @@ def power_n(n):
     return lambda x: math.pow(x, n) 
 print(power_n(3)(3))
 squared = power_n(4)
-print(squared(5))```
+print(squared(5))
+```
 
 ### Example from production
 
@@ -89,7 +94,8 @@ conversions = {
             "num_logical_processors" : lambda a, v, m, o: None,
             "uptime"                 : convertUptime,
             "uptimeSeconds"          : intConvert,
-    }```
+    }
+```
 
 ## Performance of lambda vs regular function
 
@@ -119,7 +125,8 @@ This is because lambda is syntax sugar and in the end almost the same code is be
 
 ```python
 import dis
-dis.dis(f1)```
+dis.dis(f1)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -140,7 +147,8 @@ dis.dis(f1)```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-dis.dis(f2)```
+dis.dis(f2)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

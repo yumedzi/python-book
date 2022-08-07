@@ -15,13 +15,15 @@ Definition:
 ```python
 def function_name(arg1, arg2, ... argN): 
     <statements> 
-    [return <value>]```
+    [return <value>]
+```
 
 Call function (execute and get it's result): 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-function_name(arg1, arg2, ... argN)```
+function_name(arg1, arg2, ... argN)
+```
 
 ### Argument vs Parameter
 
@@ -53,7 +55,8 @@ Python code statement can't be empty. You can "do nothing" with operator ```pass
 
 ```python
 def empty():
-    pass```
+    pass
+```
 
 or even in this way (Python 3 only):
 
@@ -62,7 +65,8 @@ or even in this way (Python 3 only):
 
 ```python
 def empty():
-    ...```
+    ...
+```
 
 The function definition does not execute the function body.
 
@@ -221,7 +225,8 @@ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
         |             |                  |
         |        Positional or keyword   |
         |                                └ Keyword only
-        └ Positional only```
+        └ Positional only
+```
 
 If `/` and `*` are not present in the function definition, arguments may be passed to a function by position or by keyword. We already saw these three types (positional, keyword and default).
 
@@ -249,13 +254,15 @@ If `/` and `*` are not present in the function definition, arguments may be pass
 
 ```python
 def print_strings(str1, str2): 
-    print(str1, str2)```
+    print(str1, str2)
+```
 
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print_strings("Hello", "World")```
+print_strings("Hello", "World")
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -273,7 +280,8 @@ For previous example:
 
 ```python
 print_strings(str1="Hello", str2="World")
-print_strings(str2="James Bond", str1="Bond,")```
+print_strings(str2="James Bond", str1="Bond,")
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

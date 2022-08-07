@@ -20,14 +20,16 @@ To fix division on Python2:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-from __future__ import division```
+from __future__ import division
+```
 
 
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-365*2 - 700 + 10000 - 1```
+365*2 - 700 + 10000 - 1
+```
 
 
 
@@ -57,7 +59,8 @@ from __future__ import division```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-6//4```
+6//4
+```
 
 
 
@@ -72,7 +75,8 @@ from __future__ import division```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-23 % 10```
+23 % 10
+```
 
 
 
@@ -90,7 +94,8 @@ from __future__ import division```
 
 ```python
 import math
-print (dir(math))```
+print (dir(math))
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -101,7 +106,8 @@ print (dir(math))```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-math.pi, math.e, math.sin(324), math.pow(2,10)```
+math.pi, math.e, math.sin(324), math.pow(2,10)
+```
 
 
 
@@ -119,7 +125,8 @@ math.pi, math.e, math.sin(324), math.pow(2,10)```
 
 ```python
 import random
-print (dir(random))```
+print (dir(random))
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -130,7 +137,8 @@ print (dir(random))```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-random.randint(2, 7)  # from 2 to 7, includes 7```
+random.randint(2, 7)  # from 2 to 7, includes 7
+```
 
 
 

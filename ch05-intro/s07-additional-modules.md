@@ -10,7 +10,7 @@
 
 ```python
     val = (yield i)
-    ```
+```
 
 
 ```python

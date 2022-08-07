@@ -116,7 +116,8 @@ Polymorphism means the ability to exist in multiple forms: "one name, many forms
 ```python
 list().__len__
 str().__len__
-dict().__len__```
+dict().__len__
+```
 
 There are 2 basic types of polymorphism:
 
@@ -138,7 +139,8 @@ class B(A):
         return 2
        
 obj = B()
-obj.method()```
+obj.method()
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -168,7 +170,8 @@ class B(A):
         return 2
     
 obj = B()
-obj.method()```
+obj.method()
+```
 
 
 

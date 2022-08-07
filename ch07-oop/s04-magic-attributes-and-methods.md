@@ -14,7 +14,8 @@
 ```python
 class A:
     "Our great class" 
-    x = 1 ```
+    x = 1
+```
 
 ## Magic methods 
 
@@ -45,7 +46,8 @@ class A:
 
 ```python
 def __new__(cls):
-    return super().__new__(cls)```
+    return super().__new__(cls)
+```
 
 ### Instance initializer
 
@@ -59,7 +61,8 @@ def __new__(cls):
 
 ```python
 def __init__(self, name): 
-    self.name = name```
+    self.name = name
+```
 
 ### Representations
 
@@ -80,7 +83,8 @@ def __init__(self, name):
 
 ```python
 print(A())
-A()```
+A()
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -108,7 +112,8 @@ A()```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-A().__hash__()```
+A().__hash__()
+```
 
 
 
@@ -152,7 +157,8 @@ A.__bases__
 
 ```python
 print(A.__doc__)
-help(A)```
+help(A)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -180,7 +186,8 @@ help(A)```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-A.__module__```
+A.__module__
+```
 
 
 
@@ -202,7 +209,8 @@ A.__module__```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-bool(A())```
+bool(A())
+```
 
 
 

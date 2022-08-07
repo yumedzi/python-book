@@ -13,7 +13,8 @@ Python has two loops available in syntax:
 for <target> in <target_iterable>:
     <code>
 else:
-    <if_break_not_called_code>```
+    <if_break_not_called_code>
+```
 
 Inside **code** it is possible to use ```continue``` and ```break```:
 * ```break``` statement terminates the loop without executing the ```else``` clause’s code
@@ -56,7 +57,8 @@ for x in range(1, 15):
         break # completely go out from for loop
     print(" ... EOL!") # will not triggered if 8 and 10
 else:  # run this block only if no break statement called
-    print("No break called -- number 12 was NOT FOUND")```
+    print("No break called -- number 12 was NOT FOUND")
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -106,7 +108,8 @@ else:
 print(list(range(10)))
 print(list(range(1, 11)))
 print(list(range(0, 30, 5)))
-print(list(range(0, 10, 3)))```
+print(list(range(0, 10, 3)))
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -122,7 +125,8 @@ print(list(range(0, 10, 3)))```
 ```python
 print(list(range(0, -10, -1)))
 print(list(range(0)))
-print(list(range(1, 0)))```
+print(list(range(1, 0)))
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -137,7 +141,8 @@ Also - from 3.5:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-[*range(4)]```
+[*range(4)]
+```
 
 
 
@@ -152,7 +157,8 @@ Also - from 3.5:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-[1, 2, *range(3, 6), 6]```
+[1, 2, *range(3, 6), 6]
+```
 
 
 
@@ -167,7 +173,8 @@ Also - from 3.5:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-{*range(4), 1, 2}```
+{*range(4), 1, 2}
+```
 
 
 
@@ -186,7 +193,8 @@ Try to avoid the code like the following one:
 
 ```python
 for i in range(len(food)):
-    print(food[i])```
+    print(food[i])
+```
 
 Instead, use clearer "Pythonic" way:
 

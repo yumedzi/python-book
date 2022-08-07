@@ -72,7 +72,8 @@ def some_func():
     ...   return x + y
     >>> sum(3, 6)
     9
-    '''```
+    '''
+```
 
 Doctests can be keeped in plain txt files
 
@@ -95,7 +96,8 @@ The simplest way to start using doctest:
 ```python
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()```
+    doctest.testmod()
+```
 
 Simplest testing ever!
 
@@ -150,7 +152,8 @@ Exception tracebacks tend to contain many details that are not relevant to the t
 
 ```python
 Traceback (most recent call last):
-<Exception>: <expected details>```
+<Exception>: <expected details>
+```
 
 * which tells it that you expect an exception, and the part after the traceback, which tells it which exception you expect.
 * The doctest module only reports a failure if one of these parts does not match.
@@ -176,7 +179,8 @@ The doctest handles this situation by matching a line that contains only the tex
 >>> def a(): 
 ...   print()
 >>> a()
-<BLANKLINE>```
+<BLANKLINE>
+```
 
 ## Directives
 
@@ -199,7 +203,8 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 'This is ... a string'
 >>> import datetime as dt
 >>> dt.datetime.now().isoformat() # doctest: +ELLIPSIS
-'...-...-...T...:...:...'```
+'...-...-...T...:...:...'
+```
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -212,7 +217,8 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 Everything is OK
 >>> 1/0 # doctest: +IGNORE_EXCEPTION_DETAIL
 Traceback (most recent call last):
-ZeroDivisionError```
+ZeroDivisionError
+```
 
 ## Trick
 

@@ -80,7 +80,8 @@ Creation of an instance of the class - like calling a function (in fact it is ex
 ```python
 marshrutka_317 = Bus("# 317")
 marshrutka_317.transfer(20)
-print(marshrutka_317.info())```
+print(marshrutka_317.info())
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -94,7 +95,8 @@ print(marshrutka_317.info())```
 b.transfer(23)
 marshrutka_317.transfer()
 marshrutka_317.transfer(55)  
-print(marshrutka_317.info())```
+print(marshrutka_317.info())
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -108,7 +110,8 @@ Class variables and instance variables were changed:
 
 ```python
 print(Bus.people_transferred)
-print(marshrutka_317.people_transferred)```
+print(marshrutka_317.people_transferred)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -136,7 +139,8 @@ class Robot:
     def say(self):
         """Say something"""
         import random 
-        return f"{self.name} says: {random.choice(self.sounds)}"```
+        return f"{self.name} says: {random.choice(self.sounds)}"
+```
 
 
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -144,7 +148,8 @@ class Robot:
 ```python
 bip = Robot("Bip 1.0")
 print(bip)
-print(bip.say())```
+print(bip.say())
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -160,7 +165,8 @@ Let's say we need to create another type of robot. To reuse existing code we hav
 ```python
 class BendingRobot(Robot):
     sounds = ["Kill all humans", "Kiss my shiny metal face", "Oh, your God!",
-              "Oh wait you’re serious. Let me laugh even harder."]```
+              "Oh wait you’re serious. Let me laugh even harder."]
+```
 
 
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -168,7 +174,8 @@ class BendingRobot(Robot):
 ```python
 bender = BendingRobot("Bender")
 print(bender)
-print(bender.say())          ```
+print(bender.say())
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -222,7 +229,8 @@ class Mail:
     def send_message(self, msg):
         print(f"*** SENDING MESSAGE: <<<{msg}>>>  ***")
         
-Mail().send_message("Test")```
+Mail().send_message("Test")
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

@@ -92,7 +92,8 @@ def gen_func():
 gen = gen_func() #  get generator object by using generator function 
 print(gen)
 for i in gen:
-    print(i)```
+    print(i)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

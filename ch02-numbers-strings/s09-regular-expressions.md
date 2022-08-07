@@ -141,7 +141,8 @@ Module `re` has all regexp-related methods:
 
 ```python
 import re 
-print(dir(re))```
+print(dir(re))
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -160,7 +161,8 @@ An example that illustrates raw strings:
 
 ```python
 print("Printing string with <\n> and <\t\t> as special characters")
-print(r"Printing RAW string with <\n> and <\t\t> as special characters")```
+print(r"Printing RAW string with <\n> and <\t\t> as special characters")
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -284,7 +286,8 @@ If we want to find all occurence of the text matching the given pattern - we sho
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-re.findall(pattern, string)```
+re.findall(pattern, string)
+```
 
 > Return a list of all non-overlapping matches in the string.
 >
@@ -330,7 +333,8 @@ for m in re.finditer(pattern, text):
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-pattern```
+pattern
+```
 
 
 

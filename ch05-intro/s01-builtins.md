@@ -162,7 +162,8 @@ a_object = A()
 print( hasattr(a_object, "a") )
 print( getattr(a_object, "a") )
 setattr(a_object, "b", "Wow! Adding attrs like haxxxors")
-print( a_object.b )  ```
+print( a_object.b )
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -175,7 +176,8 @@ print( a_object.b )  ```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-getattr("Hello World", "lower")()```
+getattr("Hello World", "lower")()
+```
 
 
 
@@ -199,7 +201,8 @@ getattr("Hello World", "lower")()```
 {1: 2, "a": 3}
 {1, 2, 3}
 range(10)
-reversed("abc")```
+reversed("abc")
+```
 
 > **Iterator** - an abstract object that is capable of yielding "next" item and raising `StopIteration` in the end.
 

@@ -23,7 +23,8 @@ Creating a tuple with 1 element requires comma because without it Python conside
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-(1)```
+(1)
+```
 
 
 
@@ -38,7 +39,8 @@ Creating a tuple with 1 element requires comma because without it Python conside
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-(1,)  ```
+(1,)
+```
 
 
 
@@ -55,7 +57,8 @@ In fact parences are not needed, they are just for readability:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-1,```
+1,
+```
 
 
 
@@ -70,7 +73,8 @@ In fact parences are not needed, they are just for readability:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-1, 2, 3```
+1, 2, 3
+```
 
 
 
@@ -88,7 +92,8 @@ In fact parences are not needed, they are just for readability:
 
 ```python
 some_tuple = 1, 2, 100, 15
-print( dir(some_tuple))  # Yep, again all methods```
+print( dir(some_tuple))  # Yep, again all methods
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -115,7 +120,8 @@ That's right - if not counting magic methods - not many at all. Just ```count```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-some_tuple[:2]```
+some_tuple[:2]
+```
 
 
 
@@ -130,7 +136,8 @@ some_tuple[:2]```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-some_tuple + (4, "a")```
+some_tuple + (4, "a")
+```
 
 
 
@@ -145,7 +152,8 @@ some_tuple + (4, "a")```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-100 in some_tuple```
+100 in some_tuple
+```
 
 
 

@@ -19,7 +19,8 @@ But first of all let's check what is bound/unbound method
 
 ```python
 a = A()
-a.method(x) --> A.method(a, x)  # <-- here a.method is bound method```
+a.method(x) --> A.method(a, x)  # <-- here a.method is bound method
+```
 
 > "bound_method is bound method :)
 
@@ -162,7 +163,8 @@ class VerboseDict(dict):
 vd = VerboseDict(x=1, y=2)
 vd["z"] = "!"
 vd[1] = 100500
-vd```
+vd
+```
 
 
 ```python
@@ -299,7 +301,8 @@ l[0] = 100
 del l[1]
 l[3:5] = ["AAA", "BBB"]
 print("After changes:", l)
-print(id(l))```
+print(id(l))
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -341,7 +344,8 @@ class D(C):
         print("~" * 60)
         print(f"B's MRO is {B.mro()}")
         print(f"super(B, self).m() -> {super(B, self).m()} (we take <m> from <A>)")
-D().m()```
+D().m()
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -387,7 +391,8 @@ The same as `super()`:
 class AResult(A1, A2, A3):
     def __call__(self):
         return super(self.__class__, self).attr
-AResult()()```
+AResult()()
+```
 
 
 
@@ -405,7 +410,8 @@ To start FROM A2:
 class AResult(A1, A2, A3):
     def __call__(self):
         return super(A1, self).attr
-AResult()()```
+AResult()()
+```
 
 
 
@@ -421,7 +427,8 @@ AResult()()```
 class AResult(A1, A2, A3):
     def __call__(self):
         return super(A2, self).attr
-AResult()()```
+AResult()()
+```
 
 
 

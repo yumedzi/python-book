@@ -18,7 +18,8 @@ except <ExceptionName> as <alias>:
 else: 
     <code if everything was OK>
 finally: 
-    <code in any case>```
+    <code in any case>
+```
 
 We are checking the code only after `try` before `except`.
 
@@ -238,7 +239,8 @@ is equivalent to:
 ```python
 if __debug__: 
     if not <test>: 
-        raise AssertionError(<data>)```
+        raise AssertionError(<data>)
+```
 
 `__debug__` is special bool variable (interpreter-level constant (one of very few ones!)) which allways is True unless `python` is called with `-O` (optimization, capital O – not a zero!)
 
@@ -257,6 +259,7 @@ assert len(range(5)) == 5
 try:
     assert 2 + 2 == "2 + 2", "On paper it works..."
 except AssertionError as e:
-    print("Cought AssertionError:", e)```
+    print("Cought AssertionError:", e)
+```
 
     Cought AssertionError: On paper it works...

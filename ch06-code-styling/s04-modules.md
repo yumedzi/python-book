@@ -26,7 +26,8 @@ import foo.bar.baz          # foo.bar.baz imported, foo bound locally
 import foo.bar.baz as fbb   # foo.bar.baz imported and bound as fbb
 from foo.bar import baz     # foo.bar.baz imported and bound as baz
 from foo import attr        # foo imported and foo.attr bound as attr
-from foo import *           # everything from foo -> curr. namespace```
+from foo import *           # everything from foo -> curr. namespace
+```
 
 Example
 
@@ -66,7 +67,8 @@ Module search logic:
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print(__name__)```
+print(__name__)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -81,7 +83,8 @@ Execution of modules as scripts:
 if __name__ == "__main__":
     # Do something
     import sys
-    print(sys.__name__)```
+    print(sys.__name__)
+```
 
 After initialization, Python programs can modify sys.path. The directory containing the script being run is placed at the beginning of the search path, ahead of the standard library path.
 
@@ -104,7 +107,8 @@ Using import module again will not reload it, it will just re-read it from cache
 ```python
 #import imp # Deprecated in 3.4.0
 import importlib as imp
-imp.reload(module)```
+imp.reload(module)
+```
 
 Python module's code is recompiled and the module-level code reexecuted. The init function of extension modules is not called a second time. As with all other objects in Python the old objects are only reclaimed after their reference counts drop to
 zero. The names in the module namespace are updated to point to any new or changed objects.

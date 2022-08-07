@@ -22,7 +22,8 @@ We can create a copy with some new keys:
 ```python
 d = {"name": "John", "surname": "Snow"}
 new_d = dict(d, profession="Bastard")
-new_d```
+new_d
+```
 
 
 
@@ -40,7 +41,8 @@ We can even rewrite some old key-values:
 
 ```python
 new_d = dict(d, surname="Stark")
-new_d```
+new_d
+```
 
 
 
@@ -61,7 +63,8 @@ d1 = dict([("Aria", "Stark"), ("Faceless", "Man")])
 print("d1:", d1)
 pairs = ["Yaken Gharr".split(), "Sirio Forell".split()]
 d2 = dict(pairs)
-print("d2:", d2)```
+print("d2:", d2)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -76,7 +79,8 @@ Second attribute will allow to set a default value for all keys (or it will be `
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-dict.fromkeys(["name", "surname"])```
+dict.fromkeys(["name", "surname"])
+```
 
 
 
@@ -91,7 +95,8 @@ dict.fromkeys(["name", "surname"])```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-dict.fromkeys(["John", "Bob", "Brandon"], "Stark")```
+dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
+```
 
 
 
@@ -109,7 +114,8 @@ It is recommended to pass some immutable object as the default value. Otherwise 
 
 ```python
 d = dict.fromkeys("abcde", [])
-d```
+d
+```
 
 
 
@@ -125,7 +131,8 @@ d```
 
 ```python
 d["a"].append(1)
-d ```
+d
+```
 
 
 
@@ -144,7 +151,8 @@ There are (from 3.5) even more craziest ways of dict creation:
 ```python
 d1 = {"some_key": "some_value"}
 d2 = {**d1} 
-d1 is d2, d2```
+d1 is d2, d2
+```
 
 
 

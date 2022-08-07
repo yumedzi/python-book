@@ -11,7 +11,8 @@ help(math.sqrt)
 
     * IPython shell:
 ```python
-math.cos?```
+math.cos?
+```
 📟 _<mark style="color:green;">Output:</mark>_
 
     * Web: https://docs.python.org/3/  

@@ -26,7 +26,8 @@ class D(B, C):
 
 ```python
 print(D.x)
-'from A'```
+'from A'
+```
 
 So as you can see value of C.x is ignored even if it is "closer". This was completely redesigned.
 
@@ -86,7 +87,8 @@ The result of MRO linearization is stored in attribute `__mro__`.
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print(D.__mro__) # D.mro()```
+print(D.__mro__) # D.mro()
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -171,7 +173,8 @@ Another example where `object` is used before the class which inherites from it 
 
 ```python
 class A: pass
-class B(object, A): pass```
+class B(object, A): pass
+```
 
 
     

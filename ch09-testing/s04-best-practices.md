@@ -28,7 +28,8 @@ Consider the diff of:
 
 ```python
 def test_15(self):
-   self.assertEqual(func(500), 1000)```
+   self.assertEqual(func(500), 1000)
+```
 
 and:
 
@@ -36,7 +37,8 @@ and:
 
 ```python
 def test_15_func_with_num__returns_double(self):
-   self.assertEqual(func(500), 1000)```
+   self.assertEqual(func(500), 1000)
+```
 
 
 ## Unit test structure
@@ -59,7 +61,8 @@ def test_15_method_with_num__returns_double(self):
     actual = some_obj.method(test_value=500)
     
     # Assert
-    self.assertEqual(actual, 1000)```   
+    self.assertEqual(actual, 1000)
+```   
 
 ### Coverage
 

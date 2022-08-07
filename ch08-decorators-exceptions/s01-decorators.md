@@ -23,7 +23,8 @@ foo = some_transformation(foo)
 ```python
 @some_transformation
 def foo(*args):
-    # doing something...```
+    # doing something...
+```
 
 ## Motivation section
 
@@ -43,7 +44,8 @@ Another decorator checks if the user has needed rights to see this page.
 def view_project_adm(request, client_id):
     request.session['adm_client_view'] = True
     project = get_object_or_404(Project, pk=id)
-    return render('view_project.html', project=project)```
+    return render('view_project.html', project=project)
+```
 
 
 ### Flask
@@ -56,7 +58,8 @@ Decorator binds the function to specific route
 @app.route("/project/<id>")
 def view_projects(id):
     project = Project.query.filter(Project.pk == id).first()
-    return render_template('view_projects.html', project=project)```
+    return render_template('view_projects.html', project=project)
+```
 
 
 
@@ -131,7 +134,8 @@ Of course we can't access internal functions in any way...
 try:
     _random_music(5)
 except NameError as e:
-    print("Oh, we can't acces this function outside:", e)```
+    print("Oh, we can't acces this function outside:", e)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -179,7 +183,8 @@ General format of usage:
 ```python
 @mydecorator
 def myfunc():
-    pass```
+    pass
+```
 It is the **absolutely** the same as:
 
 ```python
@@ -289,7 +294,8 @@ def f(x, y):
                                              
                                              
 f(3, 5)                                      
-'{"result": 243}'                            ```
+'{"result": 243}'
+```
 
 
 
@@ -769,7 +775,8 @@ def calc_tips(bill, tip_rate=0.10):
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-calc_tips(100)```
+calc_tips(100)
+```
 
 
 
@@ -782,7 +789,8 @@ calc_tips(100)```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-calc_tips(200, 0.05)```
+calc_tips(200, 0.05)
+```
 
 
 

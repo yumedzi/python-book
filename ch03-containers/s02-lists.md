@@ -16,7 +16,8 @@ Ways to create a list:
 
 ```python
 some_list = [4, 8, 15, 16, 23, 42]
-print(dir(some_list))  # Again all methods```
+print(dir(some_list))  # Again all methods
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -67,7 +68,8 @@ Lists are indexable, starting at 0
 
 ```python
 print (some_list)
-some_list[0]```
+some_list[0]
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -85,7 +87,8 @@ some_list[0]```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-some_list[2]  ```
+some_list[2]
+```
 
 
 
@@ -100,7 +103,8 @@ some_list[2]  ```
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-some_list[-1]```
+some_list[-1]
+```
 
 
 
@@ -116,7 +120,8 @@ some_list[-1]```
 
 ```python
 print (some_list)
-len(some_list)```
+len(some_list)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -135,7 +140,8 @@ len(some_list)```
 
 ```python
 some_list.reverse()
-print (some_list) ```
+print (some_list)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -147,7 +153,8 @@ print (some_list) ```
 
 ```python
 some_list.sort()
-print (some_list)```
+print (some_list)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -159,7 +166,8 @@ print (some_list)```
 
 ```python
 new_list = some_list + ["a", "b", "c"]
-print (new_list)```
+print (new_list)
+```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

@@ -43,7 +43,8 @@ The best way to get all elements of iterator - it's to feed it to `list()`
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-list(iter([1, 2, "a", None, 10.1]))  ```
+list(iter([1, 2, "a", None, 10.1]))
+```
 
 
 

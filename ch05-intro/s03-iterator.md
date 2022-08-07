@@ -47,7 +47,7 @@ list(iter([1, 2, "a", None, 10.1]))
 
 
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2, 'a', None, 10.1]</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2, 'a', None, 10.1]</code></span>
 
 
 
@@ -64,7 +64,7 @@ print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__(
 print (a_iter.__next__())
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>False
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>False
     <method-wrapper '__iter__' of list object at 0x000000000441FC48>
     1
     <list_iterator object at 0x00000000043AE860>

@@ -67,7 +67,7 @@ s.upper()
 
 
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ҐУҐЛ 💝 ☕'</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ҐУҐЛ 💝 ☕'</code></span>
 
 
 
@@ -79,7 +79,7 @@ s[0]
 
 
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ґ'</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ґ'</code></span>
 
 
 
@@ -91,7 +91,7 @@ s[0]
 
 
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ґ and ☕'</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>'ґ and ☕'</code></span>
 
 
 
@@ -104,7 +104,7 @@ print(unicodedata.name("ґ"))
 print(unicodedata.name("☕"))
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>CYRILLIC SMALL LETTER GHE WITH UPTURN
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>CYRILLIC SMALL LETTER GHE WITH UPTURN
     HOT BEVERAGE</code></span>
 
 
@@ -115,7 +115,7 @@ print(cap_char)
 print(unicodedata.lookup(cap_char))
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>CYRILLIC CAPITAL LETTER GHE WITH UPTURN
     Ґ</code></span>
 
 
@@ -151,7 +151,7 @@ Encoding:
 
 
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b''</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b''</code></span>
 
 
 
@@ -163,7 +163,7 @@ Encoding:
 
 
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b'?'</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b'?'</code></span>
 
 
 
@@ -175,7 +175,7 @@ Encoding:
 
 
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b'&#1168;'</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>b'&#1168;'</code></span>
 
 
 

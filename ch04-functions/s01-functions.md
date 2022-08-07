@@ -74,7 +74,7 @@ print("Now you'll get the error:")
 f1()  
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>No complains at this point!
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>No complains at this point!
     ------------------------------
     Now you'll get the error:</code></span>
 
@@ -118,7 +118,7 @@ a = 100500
 print(foo()) # Will return 100500 because during call global a equals to 100500
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>10
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>10
     100500</code></span>
 
 
@@ -136,7 +136,7 @@ print(sum(x=5))
 
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>74
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>74
     74
     54
     54</code></span>
@@ -162,7 +162,7 @@ print(random_phrase(4))
 print(random_phrase(length=6))
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>evil unicorns
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>evil unicorns
     I think ehmm evil unicorns
     ehmm umm unicorns evil nice unicorns</code></span>
 
@@ -179,7 +179,7 @@ def random_phrase(length=3):
 print(random_phrase(length=5))
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>evil umm ehmm I think evil</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>evil umm ehmm I think evil</code></span>
 
 
 ## Arguments definitions
@@ -240,7 +240,7 @@ def print_strings(str1, str2):
 print_strings("Hello", "World")
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Hello World</code></span>
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Hello World</code></span>
 
 
 ### Keyword arguments
@@ -255,7 +255,7 @@ print_strings(str1="Hello", str2="World")
 print_strings(str2="James Bond", str1="Bond,")
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Hello World
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Hello World
     Bond, James Bond</code></span>
 
 
@@ -273,7 +273,7 @@ add_friend("Mark")
 add_friend(name="Mark")
 ```
 
-<span style="background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Friend Mark (20) added
+<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Friend Mark (20) added
     Friend Mark (20) added</code></span>
 
 

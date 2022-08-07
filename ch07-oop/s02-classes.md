@@ -63,7 +63,7 @@ print(f"Bus.buses_count = {Bus.buses_count}")
 print(f"Bus.buses = {Bus.buses}")
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
 Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
 Bus.people_transferred = 200
 Bus.buses_count = 3
@@ -79,7 +79,7 @@ marshrutka_317.transfer(20)
 print(marshrutka_317.info())
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl</div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl</div>
 
 
 
@@ -90,7 +90,7 @@ marshrutka_317.transfer(55)
 print(marshrutka_317.info())
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl</div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl</div>
 
 
 Class variables and instance variables were changed:
@@ -101,7 +101,7 @@ print(Bus.people_transferred)
 print(marshrutka_317.people_transferred)
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>299
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">299
 76</div>
 
 
@@ -133,7 +133,7 @@ print(bip)
 print(bip.say())
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Robot Bip 1.0 (1000 kg)
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Robot Bip 1.0 (1000 kg)
 Bip 1.0 says: Oooooh</div>
 
 
@@ -153,7 +153,7 @@ print(bender)
 print(bender.say())          
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>Robot Bender (1000 kg)
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Robot Bender (1000 kg)
 Bender says: Oh wait you’re serious. Let me laugh even harder.</div>
 
 
@@ -181,7 +181,7 @@ print(D.__mro__) # D.mro()
 d.a, d.x
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)</div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)</div>
 
 
 
@@ -202,7 +202,7 @@ class Mail:
 Mail().send_message("Test")
 ```
 
-<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;>*** SENDING MESSAGE: <<<Test>>>  ***</div>
+<div style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">*** SENDING MESSAGE: <<<Test>>>  ***</div>
 
 
 

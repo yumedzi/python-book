@@ -67,7 +67,7 @@ s.upper()
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'ҐУҐЛ 💝 ☕'</pre>
 
@@ -81,7 +81,7 @@ s[0]
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'ґ'</pre>
 
@@ -95,7 +95,7 @@ Output:
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">'ґ and ☕'</pre>
 
@@ -110,7 +110,7 @@ print(unicodedata.name("ґ"))
 print(unicodedata.name("☕"))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">CYRILLIC SMALL LETTER GHE WITH UPTURN
 HOT BEVERAGE</pre>
@@ -123,7 +123,7 @@ print(cap_char)
 print(unicodedata.lookup(cap_char))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">CYRILLIC CAPITAL LETTER GHE WITH UPTURN
 Ґ</pre>
@@ -161,7 +161,7 @@ Encoding:
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">b''</pre>
 
@@ -175,7 +175,7 @@ Output:
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">b'?'</pre>
 
@@ -189,7 +189,7 @@ Output:
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">b'&#1168;'</pre>
 

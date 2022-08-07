@@ -74,7 +74,7 @@ print("Now you'll get the error:")
 f1()  
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">No complains at this point!
 ------------------------------
@@ -120,7 +120,7 @@ a = 100500
 print(foo()) # Will return 100500 because during call global a equals to 100500
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">10
 100500</pre>
@@ -140,7 +140,7 @@ print(sum(x=5))
 
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">74
 74
@@ -168,7 +168,7 @@ print(random_phrase(4))
 print(random_phrase(length=6))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">evil unicorns
 I think ehmm evil unicorns
@@ -187,7 +187,7 @@ def random_phrase(length=3):
 print(random_phrase(length=5))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">evil umm ehmm I think evil</pre>
 
@@ -250,7 +250,7 @@ def print_strings(str1, str2):
 print_strings("Hello", "World")
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World</pre>
 
@@ -267,7 +267,7 @@ print_strings(str1="Hello", str2="World")
 print_strings(str2="James Bond", str1="Bond,")
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Hello World
 Bond, James Bond</pre>
@@ -287,7 +287,7 @@ add_friend("Mark")
 add_friend(name="Mark")
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Friend Mark (20) added
 Friend Mark (20) added</pre>

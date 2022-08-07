@@ -113,7 +113,7 @@ for t in expr.split("+"):
 print( res ) 
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">173</pre>
 
@@ -128,7 +128,7 @@ sum(map(int, filter(bool, expr.split("+"))))
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">173</pre>
 
@@ -170,7 +170,7 @@ print(mystery_imp(str_))
 print(mystery_fp(str_))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">4
 4</pre>
@@ -195,7 +195,7 @@ print(list(map(pow, [2, 5], [3, 4])))
 print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">['1', '2', '3']
 [8, 625]
@@ -209,7 +209,7 @@ print([pow(x[0], x[1]) for x in zip([2, 5], [3, 4])])
 print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">['1', '2', '3']
 [8, 625]
@@ -222,7 +222,7 @@ print(list(map(sum, [[1, 2, 3] , [4, 5, 8]])))
 print(list(map(lambda x: x+1, [1, 2, 3])))    
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[6, 17]
 [2, 3, 4]</pre>
@@ -243,7 +243,7 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else True, [1,2,3,4
 print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,4,5,0, "a", [], 0.0, False, None])))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[1, 2]
 [1, 2]
@@ -269,7 +269,7 @@ zipped = zip([1, 2, 3, 4], [1, 2, 0])
 print(list( zip(*zipped) )) # Note that we'll loose element from longer list
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[(1, 2), (3, 4)]
 [(1, 1), (2, 2), (3, 0)]

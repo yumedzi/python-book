@@ -56,7 +56,7 @@ else:  # run this block only if no break statement called
     print("No break called -- number 12 was NOT FOUND")
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">1 	: Even number ... EOL!
 2 	: Odd number ... EOL!
@@ -105,7 +105,7 @@ print(list(range(0, 30, 5)))
 print(list(range(0, 10, 3)))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -120,7 +120,7 @@ print(list(range(0)))
 print(list(range(1, 0)))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
 []
@@ -137,7 +137,7 @@ Also - from 3.5:
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[0, 1, 2, 3]</pre>
 
@@ -151,7 +151,7 @@ Output:
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[1, 2, 3, 4, 5, 6]</pre>
 
@@ -165,7 +165,7 @@ Output:
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{0, 1, 2, 3}</pre>
 
@@ -199,7 +199,7 @@ for index, girl in enumerate(["Olya", "Sveta", "Anna", "Maria"], start=1):
     print("Girl number {} is {}".format(index, girl))
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Girl number 1 is Olya
 Girl number 2 is Sveta
@@ -253,7 +253,7 @@ while True:
 print("Goodbye")
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Please enter an int: 12
 Square is  144

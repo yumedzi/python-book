@@ -14,7 +14,7 @@ print(f1.__code__.co_code)
 print(f2.__code__.co_code)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">b'd\x01S\x00'
 b'd\x01S\x00'</pre>
@@ -25,7 +25,7 @@ b'd\x01S\x00'</pre>
 print(f1.__code__.__doc__)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,
       constants, names, varnames, filename, name, firstlineno,

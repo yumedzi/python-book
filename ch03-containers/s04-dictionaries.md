@@ -26,7 +26,7 @@ new_d
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}</pre>
 
@@ -43,7 +43,7 @@ new_d
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': 'John', 'surname': 'Stark'}</pre>
 
@@ -60,7 +60,7 @@ d2 = dict(pairs)
 print("d2:", d2)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">d1: {'Aria': 'Stark', 'Faceless': 'Man'}
 d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}</pre>
@@ -77,7 +77,7 @@ dict.fromkeys(["name", "surname"])
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'name': None, 'surname': None}</pre>
 
@@ -91,7 +91,7 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}</pre>
 
@@ -108,7 +108,7 @@ d
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'a': [], 'b': [], 'c': [], 'd': [], 'e': []}</pre>
 
@@ -123,7 +123,7 @@ d
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}</pre>
 
@@ -141,7 +141,7 @@ d1 is d2, d2
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(False, {'some_key': 'some_value'})</pre>
 

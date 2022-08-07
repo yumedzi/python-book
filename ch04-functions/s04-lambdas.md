@@ -41,7 +41,7 @@ f(2, 6)
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">8</pre>
 
@@ -55,7 +55,7 @@ list(map(lambda x: x**2, range(5)))
 
 
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">[0, 1, 4, 9, 16]</pre>
 
@@ -100,7 +100,7 @@ f2 = lambda: len([ x for x in range(10000)])
 %timeit f2()
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">654 µs ± 13.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</pre>
@@ -114,7 +114,7 @@ import dis
 dis.dis(f1)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">  2           0 LOAD_GLOBAL              0 (len)
               3 LOAD_CONST               1 (<code object <listcomp> at 0x103e14c90, file "<ipython-input-67-9c2575e1edb3>", line 2>)
@@ -134,7 +134,7 @@ Output:
 dis.dis(f2)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">  4           0 LOAD_GLOBAL              0 (len)
               3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)

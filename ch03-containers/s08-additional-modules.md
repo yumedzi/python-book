@@ -24,7 +24,7 @@ student = ("John", "Jakeson", 23, "18 B")
 print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Student Jakeson from group 18 B is 23 year old</pre>
 
@@ -42,7 +42,7 @@ print(f'Student {student.surname} from group {student.group} is {student.age} ye
 student
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Student Jakeson from group 18 B is 23 year old</pre>
 
@@ -61,7 +61,7 @@ To transform into dict:
 print(student._asdict())
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])</pre>
 
@@ -85,7 +85,7 @@ print(de.pop())
 print(de.popleft()) 
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">e
 a</pre>
@@ -97,7 +97,7 @@ de.appendleft("BEGIN")
 print(de)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">deque(['BEGIN', 'b', 'c', 'd'])</pre>
 
@@ -132,7 +132,7 @@ print(f(encountered_animals))
 %timeit f(encountered_animals)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
 3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</pre>
@@ -157,7 +157,7 @@ print(f(encountered_animals))
 %timeit f(encountered_animals)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">{'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
 2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</pre>
@@ -176,7 +176,7 @@ for k in s.lower():
 print(d)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})</pre>
 

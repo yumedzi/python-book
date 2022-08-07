@@ -45,7 +45,7 @@ print("3)")
 divide_ten([3])
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">1)
 5.0
@@ -80,7 +80,7 @@ def get_item():
 get_item()
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Enter index: -5</pre>
 
@@ -163,7 +163,7 @@ main(-6)
 main(3)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Oops, can't div by zero!
 ERROR: Can't work with negative numbers
@@ -194,7 +194,7 @@ except:
     raise
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
 /tmp/1123123.txt</pre>
@@ -217,7 +217,7 @@ except (IOError, ValueError) as e:
     print(f"Data or file error: {e}")
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Data or file error: [Errno 2] No such file or directory: 'myfile.txt'</pre>
 

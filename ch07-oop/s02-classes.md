@@ -63,7 +63,7 @@ print(f"Bus.buses_count = {Bus.buses_count}")
 print(f"Bus.buses = {Bus.buses}")
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
 Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
@@ -81,7 +81,7 @@ marshrutka_317.transfer(20)
 print(marshrutka_317.info())
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl</pre>
 
@@ -94,7 +94,7 @@ marshrutka_317.transfer(55)
 print(marshrutka_317.info())
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl</pre>
 
@@ -107,7 +107,7 @@ print(Bus.people_transferred)
 print(marshrutka_317.people_transferred)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">299
 76</pre>
@@ -141,7 +141,7 @@ print(bip)
 print(bip.say())
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Robot Bip 1.0 (1000 kg)
 Bip 1.0 says: Oooooh</pre>
@@ -163,7 +163,7 @@ print(bender)
 print(bender.say())          
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">Robot Bender (1000 kg)
 Bender says: Oh wait you’re serious. Let me laugh even harder.</pre>
@@ -193,7 +193,7 @@ print(D.__mro__) # D.mro()
 d.a, d.x
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)</pre>
 
@@ -216,7 +216,7 @@ class Mail:
 Mail().send_message("Test")
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">*** SENDING MESSAGE: <<<Test>>>  ***</pre>
 

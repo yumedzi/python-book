@@ -83,7 +83,7 @@ if __name__ == '__main__':
     unittest.TextTestRunner(verbosity=1).run(suite)
 ```
 
-Output:
+<sub>Output:</sub>
 
 <pre style="display:block; white-space: pre-wrap; padding:16px; background-color: #000; color: #e2e2e2; font-family: Hack, Consolas, Menlo, Mono, monospace; border-left: .25em solid #bc0000; border-radius: 4px;">x..
 ----------------------------------------------------------------------

@@ -7,8 +7,6 @@
 3. `f-strings` (Python 3.6) - inline formatting allowing to insert variables by names with format similar to `format()`
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print_me = 100505050.12123
 print(  "1. %s" % print_me )         # Old format, %
@@ -52,8 +50,6 @@ A conversion specifier contains two or more characters and has the following com
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 food = "Ceasar salad"
 print("For breakfast today is %s" % food)
@@ -69,8 +65,6 @@ For breakfast today is Ceasar salad
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 food = "Pizza Pepperoni and burger"
@@ -88,8 +82,6 @@ For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 data = {"food": "Pasta Carbonara", "money": 300}
@@ -114,8 +106,6 @@ It's better to use this for something that requries more complex formatting
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print("Our food today is {}".format(food))
 ```
@@ -132,8 +122,6 @@ Our food today is Pizza Pepperoni and burger
 
 Several arguments:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print("Food: '{}', money: {} UAH".format(food, money))
@@ -152,8 +140,6 @@ Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
 It is possible when using new format (_format()_) to specify positions:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(money, food))
 ```
@@ -170,8 +156,6 @@ Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my
 
 It is possible to pass arguments by names:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 data = {"money": 45, "food":"salad"}

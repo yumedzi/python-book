@@ -152,8 +152,6 @@ But there are much more of them!
  
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class A(object):
     a = 5
@@ -162,7 +160,7 @@ a_object = A()
 print( hasattr(a_object, "a") )
 print( getattr(a_object, "a") )
 setattr(a_object, "b", "Wow! Adding attrs like haxxxors")
-print( a_object.b )
+print( a_object.b )  
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -177,8 +175,6 @@ Wow! Adding attrs like haxxxors
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 getattr("Hello World", "lower")()
@@ -201,8 +197,6 @@ getattr("Hello World", "lower")()
 # Iterable and Iterator
 
 > **Iterable** is the source of data for iterator, usually - some sequence.
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 [1, 2, 3]

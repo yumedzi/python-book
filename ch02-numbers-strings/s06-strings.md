@@ -9,8 +9,6 @@ String literals are written in a variety of ways:
 * Triple quoted: `'''Three single quotes''', """Three double quotes"""`
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 s1 = "Hello, I'm nice little string"
 s2 = 'Hello, I\'m nice little string'   # escaping '
@@ -31,8 +29,6 @@ Hello, I'm nice little string
 
 Multiline string (matter of syntax, for Python they are all the same):
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 big_string = """Starting here
@@ -61,8 +57,6 @@ I need to rest...
 
 ### Main methods of strings
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(dir("some_string")) #Emm... actually all methods...
@@ -119,16 +113,12 @@ print(dir("some_string")) #Emm... actually all methods...
 #### Some examples
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 some_string = "Some funny string!"
 ```
 
 ##### Adding, multiplying(!) strings 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_string + " and another string"
@@ -148,8 +138,6 @@ some_string + " and another string"
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_string * 3
@@ -172,8 +160,6 @@ some_string * 3
 ##### Get length
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 len(some_string)
 ```
@@ -195,8 +181,6 @@ len(some_string)
 ##### Cosmetic/styling methods:
 * lower, upper, title, capitalize
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_string.lower(), some_string.upper(), some_string.title(), some_string.capitalize()

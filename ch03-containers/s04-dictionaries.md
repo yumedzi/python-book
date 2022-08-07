@@ -17,8 +17,6 @@ Result of `dict(some_dict)` will be shallow copy of `some_dict`
 We can create a copy with some new keys:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 d = {"name": "John", "surname": "Snow"}
 new_d = dict(d, profession="Bastard")
@@ -42,8 +40,6 @@ new_d
 We can even rewrite some old key-values:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 new_d = dict(d, surname="Stark")
 new_d
@@ -65,8 +61,6 @@ new_d
 
 And also we can create a dict from an iterable with pair key-value
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d1 = dict([("Aria", "Stark"), ("Faceless", "Man")])
@@ -91,8 +85,6 @@ Using method `dict.fromkeys` we can create a new dict from an iterable (some col
 Second attribute will allow to set a default value for all keys (or it will be `None`).
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 dict.fromkeys(["name", "surname"])
 ```
@@ -111,8 +103,6 @@ dict.fromkeys(["name", "surname"])
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
@@ -135,8 +125,6 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 It is recommended to pass some immutable object as the default value. Otherwise you could get unexpected results:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 d = dict.fromkeys("abcde", [])
 d
@@ -157,11 +145,9 @@ d
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 d["a"].append(1)
-d
+d 
 ```
 
 
@@ -180,8 +166,6 @@ d
 
 There are (from 3.5) even more craziest ways of dict creation:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 d1 = {"some_key": "some_value"}

@@ -13,8 +13,6 @@ The same data can be interpreted differently thus the type of data is as importa
 Below is the base example how we assign the data to the variables (in Python terms this is often called as "binding"):
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 a = 42
 ```
@@ -79,8 +77,6 @@ A lot of variables can point to same object. You don't need to declare what exac
 * Compare objects by id: ```is```
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 a = 100500
 b = a
@@ -99,8 +95,6 @@ a is b → True
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 a = 100500

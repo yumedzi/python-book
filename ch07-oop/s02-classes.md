@@ -80,8 +80,6 @@ Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 marshrutka_317 = Bus("# 317")
 marshrutka_317.transfer(20)
@@ -98,8 +96,6 @@ Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 b.transfer(23)
@@ -121,8 +117,6 @@ Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl
 Class variables and instance variables were changed:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(Bus.people_transferred)
 print(marshrutka_317.people_transferred)
@@ -142,8 +136,6 @@ print(marshrutka_317.people_transferred)
 ## Inheritance
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class Robot:
     sounds = ["Beeep", "Bzzzt", "Oooooh"]
@@ -162,8 +154,6 @@ class Robot:
         return f"{self.name} says: {random.choice(self.sounds)}"
 ```
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 bip = Robot("Bip 1.0")
@@ -185,8 +175,6 @@ Bip 1.0 says: Oooooh
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class BendingRobot(Robot):
     sounds = ["Kill all humans", "Kiss my shiny metal face", "Oh, your God!",
@@ -194,12 +182,10 @@ class BendingRobot(Robot):
 ```
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 bender = BendingRobot("Bender")
 print(bender)
-print(bender.say())
+print(bender.say())          
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -256,8 +242,6 @@ d.a, d.x
 
 Let's enhance our `Robot` example by inheriting from two classes at once.
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class Mail:

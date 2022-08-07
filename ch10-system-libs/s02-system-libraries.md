@@ -30,8 +30,6 @@ Script lists filenames from a dir, prints their relative and absolute paths
 
 `dir: /home/user/dir, file: foo.txt`
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def printdir(dir):
   filenames = os.listdir(dir)
@@ -50,8 +48,6 @@ Another great method of iteration through directories and files: `os.walk`:
 
 Generate the file names in a directory tree by walking the tree either top-down or bottom-up. For each directory in the tree rooted at directory top (including top itself), it yields a 3-tuple (`dirpath`, `dirnames`, `filenames`).
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Code to list contents of /tmp dir
@@ -91,8 +87,6 @@ FILES:['1']
     FILES:['Render']
     
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Mass file deleter - !DON'T TRY THIS AT HOME!
@@ -150,8 +144,6 @@ example
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(p.exists()) # `os.path.exists`
 ```
@@ -166,8 +158,6 @@ False
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 p.mkdir()         # os.mkdir
@@ -186,8 +176,6 @@ True
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 test_file = p / "test.txt"
@@ -209,8 +197,6 @@ PosixPath('example/test.txt')
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 test_file.write_text("Hello Pathlib!")
 ```
@@ -229,8 +215,6 @@ test_file.write_text("Hello Pathlib!")
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 test_file.read_text()

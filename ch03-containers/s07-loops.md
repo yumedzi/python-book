@@ -7,8 +7,6 @@ Python has two loops available in syntax:
 
 ## For
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 for <target> in <target_iterable>:
     <code>
@@ -39,8 +37,6 @@ return render(request, template_name, context)
 
 Here is a monster-kind example which aims to show all usecases of `for` loop. You can use it as a base for your experiments:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 for x in range(1, 15):
@@ -107,8 +103,6 @@ else:
 > `range(stop)`
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(list(range(10)))
 print(list(range(1, 11)))
@@ -129,8 +123,6 @@ print(list(range(0, 10, 3)))
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(list(range(0, -10, -1)))
@@ -153,8 +145,6 @@ print(list(range(1, 0)))
 Also - from 3.5:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 [*range(4)]
 ```
@@ -174,8 +164,6 @@ Also - from 3.5:
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 [1, 2, *range(3, 6), 6]
 ```
@@ -194,8 +182,6 @@ Also - from 3.5:
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 {*range(4), 1, 2}
@@ -218,8 +204,6 @@ Also - from 3.5:
 ## Pythonic cycles
 
 Try to avoid the code like the following one:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 for i in range(len(food)):

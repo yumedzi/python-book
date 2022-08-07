@@ -18,8 +18,6 @@ foo = some_transformation(foo)
 ```
 
 * Decorator will make this look really more readable and nice:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 @some_transformation
 def foo(*args):
@@ -36,8 +34,6 @@ To avoid checking routine things like cookie, check for it's existense in DB and
 
 Another decorator checks if the user has needed rights to see this page. 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 @login_required
 @staff_required
@@ -51,8 +47,6 @@ def view_project_adm(request, client_id):
 ### Flask
 
 Decorator binds the function to specific route
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 @app.route("/project/<id>")
@@ -138,8 +132,6 @@ Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
 Of course we can't access internal functions in any way...
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 try:
     _random_music(5)
@@ -197,8 +189,6 @@ Notes: Si,Re
 > Idea – function which returns processed result of another function 
 
 General format of usage:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 @mydecorator
@@ -311,8 +301,6 @@ f()
 More, more examples!!!
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def json(func):                              
     def wrapper(*args, **kwargs):            
@@ -329,7 +317,7 @@ def f(x, y):
                                              
                                              
 f(3, 5)                                      
-'{"result": 243}'
+'{"result": 243}'                            
 ```
 
 
@@ -812,8 +800,6 @@ def calc_tips(bill, tip_rate=0.10):
 ```
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 calc_tips(100)
 ```
@@ -825,8 +811,6 @@ calc_tips(100)
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 calc_tips(200, 0.05)

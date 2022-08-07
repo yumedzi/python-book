@@ -20,8 +20,6 @@ Ways to create a tuple:
 Creating a tuple with 1 element requires comma because without it Python consider such expression as logic grouping.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 (1)
 ```
@@ -41,10 +39,8 @@ Creating a tuple with 1 element requires comma because without it Python conside
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
-(1,)
+(1,)  
 ```
 
 
@@ -64,8 +60,6 @@ Creating a tuple with 1 element requires comma because without it Python conside
 In fact parences are not needed, they are just for readability:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 1,
 ```
@@ -84,8 +78,6 @@ In fact parences are not needed, they are just for readability:
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 1, 2, 3
@@ -107,8 +99,6 @@ In fact parences are not needed, they are just for readability:
 
 ## Main methods of tuple
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_tuple = 1, 2, 100, 15
@@ -142,8 +132,6 @@ That's right - if not counting magic methods - not many at all. Just ```count```
 ## Examples
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 some_tuple[:2]
 ```
@@ -163,8 +151,6 @@ some_tuple[:2]
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 some_tuple + (4, "a")
 ```
@@ -183,8 +169,6 @@ some_tuple + (4, "a")
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 100 in some_tuple

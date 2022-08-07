@@ -69,8 +69,6 @@ Test string!!!
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 %ls -la /tmp/1.txt
 ```

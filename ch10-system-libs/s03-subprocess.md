@@ -27,8 +27,6 @@ This module is wrapper for sys calls/functions:
 
 Parameters for all `subprocess` methods are very similar. In fact they are all based on argument list for `Popen` method. The difference is that some of the methods don't utilize all of them.
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 Popen(args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=None, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=(), *, encoding=None, errors=None, text=None)
 ```
@@ -48,8 +46,6 @@ This is due to the security reason to avoid the possibility of command injection
 
 Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of `shell=True` is strongly discouraged in cases where the command string is constructed from external input:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 >>> from subprocess import call
 >>> filename = input("What file would you like to display?\n")
@@ -62,8 +58,6 @@ non_existent; rm -rf /
 
 > Easiest way to just run some external command
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 subprocess.call(['ls', '-la'])
 ```
@@ -74,8 +68,6 @@ This will:
 * `return` the `returncode` attribute.
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 !ls
@@ -119,8 +111,6 @@ subprocess.call(["touch", "111.txt"])
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 !ls 111.txt
 ```
@@ -135,8 +125,6 @@ subprocess.call(["touch", "111.txt"])
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 subprocess.call(["rm", "111.txt"])
@@ -156,8 +144,6 @@ subprocess.call(["rm", "111.txt"])
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 subprocess.call(["ls", "111.txt"])
@@ -181,8 +167,6 @@ subprocess.call(["ls", "111.txt"])
 
 > This is similar to `subprocess.call` but additionally will check result code
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 subprocess.check_call(['ls', '-la'])

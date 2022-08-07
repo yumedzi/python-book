@@ -19,8 +19,6 @@
 Usual approach:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 student = ("John", "Jakeson", 23, "18 B")
 print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
@@ -69,8 +67,6 @@ Student Jakeson from group 18 B is 23 year old
 To transform into dict:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(student._asdict())
 ```
@@ -116,8 +112,6 @@ a
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 de.appendleft("BEGIN")
 print(de)
@@ -136,8 +130,6 @@ deque(['BEGIN', 'b', 'c', 'd'])
 #### `defaultdict`
 
 > `defaultdict` is a sub-class of `dict` object:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 defaultdict(default_factory[, ...]) --> dict with default factory
@@ -246,8 +238,6 @@ print(Counter(['red', 'blue', 'red', 'green', 'blue', 'blue']))
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 cnt = Counter('AnnaMadrigal'.lower())
 print(cnt)
@@ -259,8 +249,6 @@ print(cnt)
 It has many useful methods:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(Counter("Asdasdasdasd").items())
 ```
@@ -268,8 +256,6 @@ print(Counter("Asdasdasdasd").items())
     dict_items([('A', 1), ('s', 4), ('d', 4), ('a', 3)])
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # elements()
@@ -279,8 +265,6 @@ print(list(cnt.elements()))
     ['A', 'n', 'n', 'a', 'a', 'a', 'M', 'd', 'r', 'i', 'g', 'l']
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # most_common(n)

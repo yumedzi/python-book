@@ -62,8 +62,6 @@ Test passed.
 
 We can test anything that can be typed in interactive Python shell:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def some_func():
     '''
@@ -91,8 +89,6 @@ Doctests can be keeped in docstrings in:
 
 
 The simplest way to start using doctest:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 if __name__ == "__main__":
     import doctest
@@ -148,8 +144,6 @@ ok
 Exception tracebacks tend to contain many details that are not relevant to the test, but that can change unexpectedly.
 * The doctest module deals with this by ignoring the traceback entirely: it's only concerned with the first line:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 Traceback (most recent call last):
 <Exception>: <expected details>
@@ -173,8 +167,6 @@ SyntaxError: invalid syntax
 
 The doctest handles this situation by matching a line that contains only the text `<BLANKLINE>` in the expected output with a real blank line in the actual output.
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 >>> def a(): 
 ...   print()
@@ -193,8 +185,6 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 * `+SKIP` – skip the test
 * `+IGNORE_EXCEPTION_DETAIL`
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 >>> 'This is expression that eval a string'
 ... # doctest: +ELLIPSIS
@@ -205,8 +195,6 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 >>> dt.datetime.now().isoformat() # doctest: +ELLIPSIS
 '...-...-...T...:...:...'
 ```
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 >>> [1, 2, 3, 4, 5, 6, 7, 8, 9] # doctest: +NORMALIZE_WHITESPACE

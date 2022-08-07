@@ -8,8 +8,6 @@ Errors detected during execution are called **exceptions** and are not unconditi
 
 General form:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 try:
     <code> 
@@ -259,8 +257,6 @@ Debug version of raise with condition:
 
 is equivalent to:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 if __debug__: 
     if not <test>: 
@@ -275,8 +271,6 @@ python –O script.py
 
 Examples of `assert`:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 assert 1 == 1

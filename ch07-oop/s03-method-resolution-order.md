@@ -22,8 +22,6 @@ class D(B, C):
     pass
 ```
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(D.x)
 'from A'
@@ -88,8 +86,6 @@ It can be described in one sentence as:
 
 The result of MRO linearization is stored in attribute `__mro__`.
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(D.__mro__) # D.mro()
@@ -188,8 +184,6 @@ Sometimes the MRO can not be built:
 
 Another example where `object` is used before the class which inherites from it which confuses the logic:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A: pass

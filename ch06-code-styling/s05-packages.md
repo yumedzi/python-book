@@ -12,8 +12,6 @@ How to create a package?
 
 > Note: In Python 2 and Python 3 before 3.5 you required to place there special (maybe empty) file `__init__.py`
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 helpers/               Top-level package
     __init__.py        Init the helpers package
@@ -26,8 +24,6 @@ main.py                Main module (entry point)
 
 In `main.py` we can import presented packages/modules in the following ways:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import helpers.file_processors.parser
 import helpers.file_processors.parser as hfp
@@ -36,8 +32,6 @@ from helpers.file_processors import parser, saver
 from helpers.file_processors import parser as ps
 from helpers.file_processors.parser import *
 ```
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import helpers # IMPORT helpers.__init__.py

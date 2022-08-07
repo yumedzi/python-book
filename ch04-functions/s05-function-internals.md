@@ -26,8 +26,6 @@ b'd\x01S\x00'
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(f1.__code__.__doc__)
 ```

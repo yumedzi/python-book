@@ -12,8 +12,6 @@ Ways to create a list:
 ### Main methods
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 some_list = [4, 8, 15, 16, 23, 42]
 print(dir(some_list))  # Again all methods
@@ -69,8 +67,6 @@ Last two we saw in strings as well.
 Lists are indexable, starting at 0
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(some_list)
 print(some_list[0])
@@ -88,10 +84,8 @@ print(some_list[0])
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
-some_list[2]
+some_list[2]  
 ```
 
 
@@ -108,8 +102,6 @@ some_list[2]
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_list[-1]
@@ -130,8 +122,6 @@ some_list[-1]
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(some_list)
 print(len(some_list))
@@ -149,11 +139,9 @@ print(len(some_list))
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 some_list.reverse()
-print(some_list)
+print(some_list) 
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -166,8 +154,6 @@ print(some_list)
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 some_list.sort()
@@ -184,8 +170,6 @@ print(some_list)
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 new_list = some_list + ["a", "b", "c"]

@@ -126,8 +126,6 @@ print( res )
 ## Functional approach
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 sum(map(int, filter(bool, expr.split("+"))))
 ```
@@ -155,8 +153,6 @@ Let's try to guess quickly what the following two functions do.
 Imperative:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def mystery_imp(x):
     r = 0
@@ -170,8 +166,6 @@ def mystery_imp(x):
 Functional:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def mystery_fp(str_):
     return len(list(filter(lambda x: x.lower() in "abc", str_)))
@@ -179,8 +173,6 @@ def mystery_fp(str_):
 
 Yes, both of them are case-insensitively counting `'a'`, `'b'` and `'c'` characters in a string:
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 str_ = "A beautiful example of some test string"
@@ -212,8 +204,6 @@ On Python 2 - map returns list.
 For Python 3 sometimes it's better to use list comprehensions
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(list(map(str, [1, 2, 3])))
 print(list(map(pow, [2, 5], [3, 4])))
@@ -232,8 +222,6 @@ print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print([str(x) for x in [1, 2, 3]])
@@ -254,11 +242,9 @@ print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(list(map(sum, [[1, 2, 3] , [4, 5, 8]])))
-print(list(map(lambda x: x+1, [1, 2, 3])))
+print(list(map(lambda x: x+1, [1, 2, 3])))    
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -278,8 +264,6 @@ print(list(map(lambda x: x+1, [1, 2, 3])))
 
 > Construct an iterator from those elements of iterable for which function returns `True`
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print(list(filter(bool, [1, 2, 0])))

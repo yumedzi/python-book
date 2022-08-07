@@ -92,8 +92,6 @@ print(list(gen))
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 def gen_func():
     for x in range(1, 10):

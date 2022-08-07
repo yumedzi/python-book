@@ -18,8 +18,6 @@ A module can contain executable statements as well as function definitions. Thes
 
 ## Import
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 import foo                  # foo imported and bound locally
 import foo.bar.baz          # foo.bar.baz imported, foo bound locally
@@ -64,8 +62,6 @@ Module search logic:
 `__name__` - global variable that contains the module’s name (as a string)
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(__name__)
 ```
@@ -81,8 +77,6 @@ __main__
 
 
 Execution of modules as scripts:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 if __name__ == "__main__":
@@ -106,8 +100,6 @@ import some_module
 Using import module again will not reload it, it will just re-read it from cache.
 
 * Use the following to reload:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 #import imp # Deprecated in 3.4.0

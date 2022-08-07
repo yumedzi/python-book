@@ -211,8 +211,6 @@ produces this:
     * Command line progress bar framework
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 from tqdm import tqdm
 l = []
@@ -243,8 +241,6 @@ Possible color formattings:
 
 <img src="../images/tr_10_04.png">  
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 from colorama import Fore, Back, Style
@@ -322,8 +318,6 @@ DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 len(pendulum.timezones)
 ```
@@ -345,8 +339,6 @@ len(pendulum.timezones)
 We can parse datetime from a string:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(pendulum.parse("2020/11/05"))
 print(pendulum.parse('20160413'))
@@ -364,8 +356,6 @@ print(pendulum.parse('20160413'))
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 print(pendulum.from_format('01, 05, 2020', 'D, MM, YYYY'))
 print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
@@ -382,8 +372,6 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 
 
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # Seamless timezone switching
@@ -614,8 +602,6 @@ Validation is done with the help of `Validator` object and `configspec` (which r
 
 Example of configspec:
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 port = integer(0, 100)
 user = string(max=25)
@@ -627,8 +613,6 @@ nick = string(default=None)
 ### Profiling
 
 > The profiling package is an interactive continuous Python profiler. It is inspired from Unity 3D profiler. This package provides these features:
-
-🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 > pip install profiling

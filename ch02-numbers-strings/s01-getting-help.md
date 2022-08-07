@@ -2,8 +2,6 @@
 
 * Help
     * In Python interactive shell:
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 help(math.sqrt)
 ```

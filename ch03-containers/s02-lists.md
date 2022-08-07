@@ -181,18 +181,20 @@ print(new_list)
 
 > Sorting of the list with elements of different types in Python 3 is forbidden (yields an TypeError exception about unsupported `<` operation).
 
+
 ```python
->>> new_list 
->>> new_list.sort()
-TypeError Traceback (most recent call last)
-
-<ipython-input-9-a8ad78a8eda3> in <module>()
-      1 new_list
-----> 2 new_list.sort()
-
-
-TypeError: '<' not supported between instances of 'str' and 'int'
+new_list 
+new_list.sort()
 ```
+
+
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #ff0000; text-decoration-color: #ff0000">╭──────────────────────────── </span><span style="color: #800000; text-decoration-color: #800000; font-weight: bold">Traceback </span><span style="color: #bf7f7f; text-decoration-color: #bf7f7f; font-weight: bold">(most recent call last)</span><span style="color: #ff0000; text-decoration-color: #ff0000"> ────────────────────────────╮</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000">│</span> <span style="color: #808000; text-decoration-color: #808000">&lt;ipython-input-17-a8ad78a8eda3&gt;</span>:<span style="color: #0000ff; text-decoration-color: #0000ff">2</span> in <span style="color: #00ff00; text-decoration-color: #00ff00">&lt;module&gt;</span>                                             <span style="color: #ff0000; text-decoration-color: #ff0000">│</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000">╰───────────────────────────────────────────────────────────────────────────────────────────╯</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000; font-weight: bold">TypeError: </span><span style="color: #008000; text-decoration-color: #008000">'&lt;'</span> not supported between instances of <span style="color: #008000; text-decoration-color: #008000">'str'</span> and <span style="color: #008000; text-decoration-color: #008000">'int'</span>
+</pre>
+
+
 
 But we can workaround this by using builtin function `sorted()` and specifying your own sorting function `key` which should return some values os the same type which later will be used for Python's regular sorting.
 
@@ -485,28 +487,18 @@ some_list[-2]
 ```IndexError``` exception is raised for non-existent index element
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 some_list[1000]
 ```
 
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-
-
-IndexErrorTraceback (most recent call last)
-
-<ipython-input-24-a1d5b08ec438> in <module>()
-----> 1 some_list[1000]
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #ff0000; text-decoration-color: #ff0000">╭──────────────────────────── </span><span style="color: #800000; text-decoration-color: #800000; font-weight: bold">Traceback </span><span style="color: #bf7f7f; text-decoration-color: #bf7f7f; font-weight: bold">(most recent call last)</span><span style="color: #ff0000; text-decoration-color: #ff0000"> ────────────────────────────╮</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000">│</span> <span style="color: #808000; text-decoration-color: #808000">&lt;ipython-input-21-a1d5b08ec438&gt;</span>:<span style="color: #0000ff; text-decoration-color: #0000ff">1</span> in <span style="color: #00ff00; text-decoration-color: #00ff00">&lt;module&gt;</span>                                             <span style="color: #ff0000; text-decoration-color: #ff0000">│</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000">╰───────────────────────────────────────────────────────────────────────────────────────────╯</span>
+<span style="color: #ff0000; text-decoration-color: #ff0000; font-weight: bold">IndexError: </span>list index out of range
+</pre>
 
 
-IndexError: list index out of range
-```
-{% endcode %}
 
 ## List slices
 

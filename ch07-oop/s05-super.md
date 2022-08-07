@@ -97,7 +97,7 @@ print(b.class_method())
 print(b.static_method())
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'attr': "Object's own attr (from class A)"}
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'attr': "Object's own attr (from class A)"}
     Running method of A
     Object's own attr (from class A)
     class attr from A
@@ -140,7 +140,7 @@ fd[1] = 100500
 print(fd["1"])
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>100500</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>100500</code></span>
 
 
 The dict with logging around setting a key:
@@ -174,7 +174,7 @@ vd[5]
 vd
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Set: z -> 3
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Set: z -> 3
     Set: 100 -> 100500
     Set: 5 -> 0</code></span>
 
@@ -208,7 +208,7 @@ counter = VerboseCounter("boombbbam")
 print(counter)
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
     Set: b -> 1
     Set: o -> 1
     Set: o -> 2
@@ -252,7 +252,7 @@ print(SuperList())
 print(SuperList("abcde"))
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Before __init__: ['START', 'STOP']
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Before __init__: ['START', 'STOP']
     ['START', 'STOP']
     Before __init__: ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
     ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']</code></span>
@@ -288,7 +288,7 @@ print("After changes:", l)
 print(id(l))
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>>>> Use parent's constructor but print this line!
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>>>> Use parent's constructor but print this line!
     >>> Original list: []
     140690636702248
     >>> Before running old __init__: []
@@ -327,7 +327,7 @@ class D(C):
 D().m()
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
     super().m() -> C (we take <m> from <C>)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     B's MRO is [<class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
@@ -354,7 +354,7 @@ AResult()()
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1</code></span>
 
 
 

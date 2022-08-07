@@ -66,7 +66,7 @@ Module search logic:
 print(__name__)
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>__main__</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>__main__</code></span>
 
 
 Execution of modules as scripts:

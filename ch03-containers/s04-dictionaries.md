@@ -26,7 +26,7 @@ new_d
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}</code></span>
 
 
 
@@ -41,7 +41,7 @@ new_d
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': 'John', 'surname': 'Stark'}</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': 'John', 'surname': 'Stark'}</code></span>
 
 
 
@@ -56,7 +56,7 @@ d2 = dict(pairs)
 print("d2:", d2)
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>d1: {'Aria': 'Stark', 'Faceless': 'Man'}
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>d1: {'Aria': 'Stark', 'Faceless': 'Man'}
     d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}</code></span>
 
 
@@ -71,7 +71,7 @@ dict.fromkeys(["name", "surname"])
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': None, 'surname': None}</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'name': None, 'surname': None}</code></span>
 
 
 
@@ -83,7 +83,7 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}</code></span>
 
 
 
@@ -98,7 +98,7 @@ d
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'a': [], 'b': [], 'c': [], 'd': [], 'e': []}</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'a': [], 'b': [], 'c': [], 'd': [], 'e': []}</code></span>
 
 
 
@@ -111,7 +111,7 @@ d
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}</code></span>
 
 
 
@@ -127,7 +127,7 @@ d1 is d2, d2
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(False, {'some_key': 'some_value'})</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>(False, {'some_key': 'some_value'})</code></span>
 
 
 

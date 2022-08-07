@@ -56,7 +56,7 @@ else:  # run this block only if no break statement called
     print("No break called -- number 12 was NOT FOUND")
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1 	: Even number ... EOL!
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>1 	: Even number ... EOL!
     2 	: Odd number ... EOL!
     3 	: Even number ... EOL!
     4 	: Odd number ... EOL!
@@ -103,7 +103,7 @@ print(list(range(0, 30, 5)))
 print(list(range(0, 10, 3)))
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     [0, 5, 10, 15, 20, 25]
     [0, 3, 6, 9]</code></span>
@@ -116,7 +116,7 @@ print(list(range(0)))
 print(list(range(1, 0)))
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
     []
     []</code></span>
 
@@ -131,7 +131,7 @@ Also - from 3.5:
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3]</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[0, 1, 2, 3]</code></span>
 
 
 
@@ -143,7 +143,7 @@ Also - from 3.5:
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2, 3, 4, 5, 6]</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>[1, 2, 3, 4, 5, 6]</code></span>
 
 
 
@@ -155,7 +155,7 @@ Also - from 3.5:
 
 
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{0, 1, 2, 3}</code></span>
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>{0, 1, 2, 3}</code></span>
 
 
 
@@ -187,7 +187,7 @@ for index, girl in enumerate(["Olya", "Sveta", "Anna", "Maria"], start=1):
     print("Girl number {} is {}".format(index, girl))
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Girl number 1 is Olya
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Girl number 1 is Olya
     Girl number 2 is Sveta
     Girl number 3 is Anna
     Girl number 4 is Maria</code></span>
@@ -239,7 +239,7 @@ while True:
 print("Goodbye")
 ```
 
-<span style="display:block; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Please enter an int: 12
+<span class="notranslate" style="display:block; padding:16px; background-color: #000;color: #e2e2e2;font-family: Hack, Consolas, Menlo, Mono, monospace;border-left: .25em solid #bc0000;"><code>Please enter an int: 12
     Square is  144
     Please enter an int: 25
     Square is  625

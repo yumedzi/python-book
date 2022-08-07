@@ -64,10 +64,12 @@ print(D.mro())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 from C
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
 [<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>]
+```
 {% endcode %}
 
 
@@ -95,8 +97,10 @@ print(D.__mro__) # D.mro()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
+```
 {% endcode %}
 
 
@@ -130,7 +134,8 @@ D.mro()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [__main__.D,
  __main__.C,
  __main__.A1,
@@ -139,6 +144,7 @@ D.mro()
  __main__.B,
  __main__.C1,
  object]
+```
 {% endcode %}
 
 
@@ -160,8 +166,10 @@ print(F.__mro__)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 (<class '__main__.F'>, <class '__main__.D'>, <class '__main__.E'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)
+```
 {% endcode %}
 
 

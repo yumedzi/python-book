@@ -167,10 +167,12 @@ print( a_object.b )
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 True
 5
 Wow! Adding attrs like haxxxors
+```
 {% endcode %}
 
 
@@ -187,8 +189,10 @@ getattr("Hello World", "lower")()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 'hello world'
+```
 {% endcode %}
 
 

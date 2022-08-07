@@ -18,10 +18,12 @@ print( f"3. {print_me}" )            # f-strings
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 1. 100505050.12123
 2. 100505050.12123
 3. 100505050.12123
+```
 {% endcode %}
 
 
@@ -59,8 +61,10 @@ print("For breakfast today is %s" % food)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 For breakfast today is Ceasar salad
+```
 {% endcode %}
 
 
@@ -76,8 +80,10 @@ print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
+```
 {% endcode %}
 
 
@@ -92,8 +98,10 @@ print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH
+```
 {% endcode %}
 
 
@@ -114,8 +122,10 @@ print("Our food today is {}".format(food))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Our food today is Pizza Pepperoni and burger
+```
 {% endcode %}
 
 
@@ -131,8 +141,10 @@ print("Food: '{}', money: {} UAH".format(food, money))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
+```
 {% endcode %}
 
 
@@ -148,8 +160,10 @@ print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(mone
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)
+```
 {% endcode %}
 
 
@@ -168,8 +182,10 @@ print("Want {food} but ${money} to spend".format(**data))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Want salad but $45 to spend
+```
 {% endcode %}
 
 

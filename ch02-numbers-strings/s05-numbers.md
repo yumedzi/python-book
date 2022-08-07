@@ -36,8 +36,10 @@ from __future__ import division
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 10029
+```
 {% endcode %}
 
 
@@ -54,8 +56,10 @@ from __future__ import division
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 3.3076923076923075
+```
 {% endcode %}
 
 
@@ -73,8 +77,10 @@ from __future__ import division
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 1
+```
 {% endcode %}
 
 
@@ -92,8 +98,10 @@ from __future__ import division
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 3
+```
 {% endcode %}
 
 
@@ -111,8 +119,10 @@ print (dir(math))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+```
 {% endcode %}
 
 
@@ -129,8 +139,10 @@ math.pi, math.e, math.sin(324), math.pow(2,10)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 (3.141592653589793, 2.718281828459045, -0.4040652194563607, 1024.0)
+```
 {% endcode %}
 
 
@@ -148,8 +160,10 @@ print (dir(random))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 ['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_BuiltinMethodType', '_MethodType', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_inst', '_itertools', '_log', '_os', '_pi', '_random', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
+```
 {% endcode %}
 
 
@@ -166,8 +180,10 @@ random.randint(2, 7)  # from 2 to 7, includes 7
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 5
+```
 {% endcode %}
 
 

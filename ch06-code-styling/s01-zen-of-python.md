@@ -11,8 +11,10 @@ import this
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 The Zen of Python, by Tim Peters
+```
 {% endcode %}
 
     

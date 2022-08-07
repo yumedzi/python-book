@@ -65,12 +65,14 @@ print(f"Bus.buses = {Bus.buses}")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
 Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
 Bus.people_transferred = 200
 Bus.buses_count = 3
 Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]
+```
 {% endcode %}
 
 
@@ -88,8 +90,10 @@ print(marshrutka_317.info())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl
+```
 {% endcode %}
 
 
@@ -106,8 +110,10 @@ print(marshrutka_317.info())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl
+```
 {% endcode %}
 
 
@@ -124,9 +130,11 @@ print(marshrutka_317.people_transferred)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 299
 76
+```
 {% endcode %}
 
 
@@ -165,9 +173,11 @@ print(bip.say())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Robot Bip 1.0 (1000 kg)
 Bip 1.0 says: Oooooh
+```
 {% endcode %}
 
 
@@ -194,9 +204,11 @@ print(bender.say())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Robot Bender (1000 kg)
 Bender says: Oh wait you’re serious. Let me laugh even harder.
+```
 {% endcode %}
 
 
@@ -227,8 +239,10 @@ d.a, d.x
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
+```
 {% endcode %}
 
 
@@ -255,8 +269,10 @@ Mail().send_message("Test")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 *** SENDING MESSAGE: <<<Test>>>  ***
+```
 {% endcode %}
 
 

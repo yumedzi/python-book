@@ -87,10 +87,12 @@ if __name__ == '__main__':
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 x..
 ----------------------------------------------------------------------
 Ran 3 tests in 0.011s
+```
 {% endcode %}
 
     

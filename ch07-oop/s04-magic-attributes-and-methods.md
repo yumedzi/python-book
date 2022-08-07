@@ -88,8 +88,10 @@ A()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 <__main__.A object at 0x7ff51775b4a8>
+```
 {% endcode %}
 
 
@@ -123,8 +125,10 @@ A().__hash__()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 8793164831643
+```
 {% endcode %}
 
 
@@ -148,8 +152,10 @@ A.__bases__
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 (object,)
+```
 {% endcode %}
 
 
@@ -171,9 +177,11 @@ help(A)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 None
 Help on class A in module __main__:
+```
 {% endcode %}
 
     
@@ -206,8 +214,10 @@ A.__module__
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 '__main__'
+```
 {% endcode %}
 
 
@@ -232,8 +242,10 @@ bool(A())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 True
+```
 {% endcode %}
 
 
@@ -283,9 +295,11 @@ print(b1 <= b2)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 True
 False
+```
 {% endcode %}
 
 
@@ -330,8 +344,10 @@ c.__dict__
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'b': 2}
+```
 {% endcode %}
 
 

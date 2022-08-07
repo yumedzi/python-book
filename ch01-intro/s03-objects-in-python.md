@@ -63,10 +63,12 @@ print(f"#3. a now is {a}")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 #1. a now is 42
 #2. a now is [1, 2, 42]
 #3. a now is Hello World
+```
 {% endcode %}
 
 
@@ -88,9 +90,11 @@ print("a is b →", a is b)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 a == b → True
 a is b → True
+```
 {% endcode %}
 
 
@@ -107,9 +111,11 @@ print("a is b →", a is b)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 a == b → True
 a is b → False
+```
 {% endcode %}
 
 

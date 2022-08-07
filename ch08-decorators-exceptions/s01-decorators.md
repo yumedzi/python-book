@@ -93,11 +93,13 @@ print(scream)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 LaLaLa
 LaLaLaLaLaLaLaLaLaLaLaLaLaLaLa
 Oops, Exception:  name 'song' is not defined
 <function Super Song at 0x103fe2a60>
+```
 {% endcode %}
 
 
@@ -124,9 +126,11 @@ print(music(10))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
 Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
+```
 {% endcode %}
 
 
@@ -145,8 +149,10 @@ except NameError as e:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Oh, we can't acces this function outside: name '_random_music' is not defined
+```
 {% endcode %}
 
 
@@ -175,11 +181,13 @@ print(party()())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
 Notes: Do,Fa,Si,Si,Do,Do,Do,Do,Fa,Do,La,Fa,Re,La,Si
 New pop-hit: Oooh-Toonc
 Notes: Si,Re
+```
 {% endcode %}
 
 
@@ -229,10 +237,12 @@ greet()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 >>> Before running function
 Hello!
 >>> After running function
+```
 {% endcode %}
 
 
@@ -260,10 +270,12 @@ print(price(100, tax_rate=.1))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 <function dollar.<locals>.wrapper at 0x7f208019f8b0>
 Args are: (100,), KWArgs: {'tax_rate': 0.1}
 $110.0
+```
 {% endcode %}
 
 
@@ -287,8 +299,10 @@ f()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 '$100'
+```
 {% endcode %}
 
 
@@ -323,8 +337,10 @@ f(3, 5)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 '{"result": 243}'
+```
 {% endcode %}
 
 

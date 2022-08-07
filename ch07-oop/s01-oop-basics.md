@@ -144,8 +144,10 @@ obj.method()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Old result: 1
+```
 {% endcode %}
 
 
@@ -181,8 +183,10 @@ obj.method()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 2
+```
 {% endcode %}
 
 

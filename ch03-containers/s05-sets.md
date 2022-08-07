@@ -28,9 +28,11 @@ print(set_b)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {1, 2, 3, 4}
 {1, 2, 3, 4}
+```
 {% endcode %}
 
 
@@ -49,7 +51,8 @@ Main methods
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 ['add',
  'clear',
  'copy',
@@ -67,6 +70,7 @@ Main methods
  'symmetric_difference_update',
  'union',
  'update']
+```
 {% endcode %}
 
 

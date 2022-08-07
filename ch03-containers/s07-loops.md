@@ -62,7 +62,8 @@ else:  # run this block only if no break statement called
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 1 	: Even number ... EOL!
 2 	: Odd number ... EOL!
 3 	: Even number ... EOL!
@@ -76,6 +77,7 @@ else:  # run this block only if no break statement called
 11 	: Even number ... EOL!
 12 	: Odd number
 BYE BYE!!! (break called!)
+```
 {% endcode %}
 
 
@@ -116,11 +118,13 @@ print(list(range(0, 10, 3)))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 [0, 5, 10, 15, 20, 25]
 [0, 3, 6, 9]
+```
 {% endcode %}
 
 
@@ -136,10 +140,12 @@ print(list(range(1, 0)))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
 []
 []
+```
 {% endcode %}
 
 
@@ -158,8 +164,10 @@ Also - from 3.5:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [0, 1, 2, 3]
+```
 {% endcode %}
 
 
@@ -177,8 +185,10 @@ Also - from 3.5:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [1, 2, 3, 4, 5, 6]
+```
 {% endcode %}
 
 
@@ -196,8 +206,10 @@ Also - from 3.5:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {0, 1, 2, 3}
+```
 {% endcode %}
 
 
@@ -235,11 +247,13 @@ for index, girl in enumerate(["Olya", "Sveta", "Anna", "Maria"], start=1):
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Girl number 1 is Olya
 Girl number 2 is Sveta
 Girl number 3 is Anna
 Girl number 4 is Maria
+```
 {% endcode %}
 
 
@@ -292,12 +306,14 @@ print("Goodbye")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Please enter an int: 12
 Square is  144
 Please enter an int: 25
 Square is  625
 Please enter an int: 0
+```
 {% endcode %}
 
     Goodbye

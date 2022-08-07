@@ -16,9 +16,11 @@ print(f2.__code__.co_code)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 b'd\x01S\x00'
 b'd\x01S\x00'
+```
 {% endcode %}
 
 
@@ -32,10 +34,12 @@ print(f1.__code__.__doc__)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,
       constants, names, varnames, filename, name, firstlineno,
       lnotab[, freevars[, cellvars]])
+```
 {% endcode %}
 
     

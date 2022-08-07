@@ -72,8 +72,10 @@ if condition:
 ```
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 
+```
 {% endcode %}
 
 
@@ -150,8 +152,10 @@ help(f)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Help on function f in module __main__:
+```
 {% endcode %}
 
     

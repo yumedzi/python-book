@@ -30,8 +30,10 @@ new_d
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}
+```
 {% endcode %}
 
 
@@ -52,8 +54,10 @@ new_d
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'name': 'John', 'surname': 'Stark'}
+```
 {% endcode %}
 
 
@@ -74,9 +78,11 @@ print("d2:", d2)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 d1: {'Aria': 'Stark', 'Faceless': 'Man'}
 d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
+```
 {% endcode %}
 
 
@@ -96,8 +102,10 @@ dict.fromkeys(["name", "surname"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'name': None, 'surname': None}
+```
 {% endcode %}
 
 
@@ -115,8 +123,10 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}
+```
 {% endcode %}
 
 
@@ -137,8 +147,10 @@ d
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'a': [], 'b': [], 'c': [], 'd': [], 'e': []}
+```
 {% endcode %}
 
 
@@ -157,8 +169,10 @@ d
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}
+```
 {% endcode %}
 
 
@@ -180,8 +194,10 @@ d1 is d2, d2
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 (False, {'some_key': 'some_value'})
+```
 {% endcode %}
 
 

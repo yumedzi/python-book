@@ -28,8 +28,10 @@ print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Student Jakeson from group 18 B is 23 year old
+```
 {% endcode %}
 
 
@@ -49,8 +51,10 @@ student
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Student Jakeson from group 18 B is 23 year old
+```
 {% endcode %}
 
 
@@ -73,8 +77,10 @@ print(student._asdict())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])
+```
 {% endcode %}
 
 
@@ -100,9 +106,11 @@ print(de.popleft())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 e
 a
+```
 {% endcode %}
 
 
@@ -117,8 +125,10 @@ print(de)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 deque(['BEGIN', 'b', 'c', 'd'])
+```
 {% endcode %}
 
 
@@ -157,9 +167,11 @@ print(f(encountered_animals))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
 3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+```
 {% endcode %}
 
 
@@ -185,9 +197,11 @@ print(f(encountered_animals))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
 2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+```
 {% endcode %}
 
 
@@ -207,8 +221,10 @@ print(d)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
+```
 {% endcode %}
 
 

@@ -15,8 +15,10 @@ print("Hello World")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Hello World
+```
 {% endcode %}
 
 
@@ -30,8 +32,10 @@ print "Hello World" # Python 2
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Hello World
+```
 {% endcode %}
 
 

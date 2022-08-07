@@ -28,8 +28,10 @@ else:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 a is greater than 3
+```
 {% endcode %}
 
 
@@ -54,8 +56,10 @@ True + True
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 2
+```
 {% endcode %}
 
 
@@ -73,8 +77,10 @@ True + True
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 6
+```
 {% endcode %}
 
 
@@ -92,8 +98,10 @@ bool(24), bool("sdsds"), bool(""), bool([])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 (True, True, False, False)
+```
 {% endcode %}
 
 
@@ -141,8 +149,10 @@ else:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Take arms against a sea of troubles!
+```
 {% endcode %}
 
 

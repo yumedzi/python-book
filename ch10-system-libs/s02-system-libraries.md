@@ -65,10 +65,12 @@ for root, dirs, files in os.walk('/tmp/'):
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 ROOT:/tmp/
 DIRS:['com.apple.launchd.jhoY1qEd1J', 'com.apple.launchd.T3n42gvHZB', 'com.apple.launchd.xfxnszQVjh']
 FILES:['1']
+```
 {% endcode %}
 
     
@@ -138,9 +140,11 @@ print(p.resolve())  # os.path.abspath
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 example
 /notebooks/V2/Basics/example
+```
 {% endcode %}
 
 
@@ -154,8 +158,10 @@ print(p.exists()) # `os.path.exists`
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 False
+```
 {% endcode %}
 
 
@@ -171,9 +177,11 @@ print(p.is_dir()) # os.path.is_dir
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 True
 True
+```
 {% endcode %}
 
 
@@ -191,8 +199,10 @@ test_file
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 PosixPath('example/test.txt')
+```
 {% endcode %}
 
 
@@ -210,8 +220,10 @@ test_file.write_text("Hello Pathlib!")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 14
+```
 {% endcode %}
 
 
@@ -229,8 +241,10 @@ test_file.read_text()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 'Hello Pathlib!'
+```
 {% endcode %}
 
 
@@ -248,8 +262,10 @@ Listing dir's contents:
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [PosixPath('example/test.txt')]
+```
 {% endcode %}
 
 

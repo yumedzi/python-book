@@ -101,7 +101,8 @@ print(b.static_method())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'attr': "Object's own attr (from class A)"}
 Running method of A
 Object's own attr (from class A)
@@ -116,6 +117,7 @@ Running class method in B...
 class attr from B
 Running static method...
 Some static data (from A class)
+```
 {% endcode %}
 
 
@@ -149,8 +151,10 @@ print(fd["1"])
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 100500
+```
 {% endcode %}
 
 
@@ -190,10 +194,12 @@ vd
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Set: z -> 3
 Set: 100 -> 100500
 Set: 5 -> 0
+```
 {% endcode %}
 
 
@@ -229,7 +235,8 @@ print(counter)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
 Set: b -> 1
 Set: o -> 1
@@ -241,6 +248,7 @@ Set: b -> 4
 Set: a -> 1
 Set: m -> 2
 VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})
+```
 {% endcode %}
 
 
@@ -278,11 +286,13 @@ print(SuperList("abcde"))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Before __init__: ['START', 'STOP']
 ['START', 'STOP']
 Before __init__: ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
 ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
+```
 {% endcode %}
 
 
@@ -321,7 +331,8 @@ print(id(l))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 >>> Use parent's constructor but print this line!
 >>> Original list: []
 140690636702248
@@ -331,6 +342,7 @@ print(id(l))
 New 'list': ['a', 'b', 'c', 'd', 'e', 'last element!']
 After changes: [100, 'c', 'd', 'AAA', 'BBB']
 140690636702248
+```
 {% endcode %}
 
 
@@ -367,12 +379,14 @@ D().m()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
 super().m() -> C (we take <m> from <C>)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 B's MRO is [<class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
 super(B, self).m() -> A (we take <m> from <A>)
+```
 {% endcode %}
 
 
@@ -399,8 +413,10 @@ AResult()()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 1
+```
 {% endcode %}
 
 

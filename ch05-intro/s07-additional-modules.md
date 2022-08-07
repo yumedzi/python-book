@@ -29,10 +29,12 @@ print(p.send(-25.3))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 <generator object pluser at 0x7f4b14319a20>
 0
 11
+```
 {% endcode %}
 
     -24.3

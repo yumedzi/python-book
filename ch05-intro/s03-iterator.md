@@ -51,8 +51,10 @@ list(iter([1, 2, "a", None, 10.1]))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [1, 2, 'a', None, 10.1]
+```
 {% endcode %}
 
 
@@ -73,12 +75,14 @@ print (a_iter.__next__())
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 False
 <method-wrapper '__iter__' of list object at 0x000000000441FC48>
 1
 <list_iterator object at 0x00000000043AE860>
 1 2 3 4
+```
 {% endcode %}
 
 

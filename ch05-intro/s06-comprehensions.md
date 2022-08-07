@@ -24,8 +24,10 @@
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
 {% endcode %}
 
 
@@ -43,8 +45,10 @@
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [0, 2, 4, 6, 8]
+```
 {% endcode %}
 
 
@@ -62,7 +66,8 @@
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 [(2, 1),
  (4, 1),
  (4, 3),
@@ -73,6 +78,7 @@
  (8, 3),
  (8, 5),
  (8, 7)]
+```
 {% endcode %}
 
 
@@ -94,8 +100,10 @@
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}
+```
 {% endcode %}
 
 
@@ -113,8 +121,10 @@
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {0: 2, 1: 2, 2: 2}
+```
 {% endcode %}
 
 
@@ -135,10 +145,12 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {1, 2, 3, 4}
 {1, 2, 3, 4}
 {1, 3}
+```
 {% endcode %}
 
 
@@ -159,8 +171,10 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 <generator object <genexpr> at 0x0000023DF7253678>
+```
 {% endcode %}
 
 

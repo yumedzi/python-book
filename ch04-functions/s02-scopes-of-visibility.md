@@ -72,7 +72,8 @@ print("now global is", all)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 builtin: <built-in function all>
 global: [1, 2, 3]
 enclosed: [1, 2, 3, 'changed!']
@@ -81,6 +82,7 @@ changing global: [7, 8, 9]
 checking 'all': [1, 2, 3, 'changed!']
 inner3 says: [1, 2, 3, 'changed!']
 now global is [7, 8, 9]
+```
 {% endcode %}
 
 
@@ -104,9 +106,11 @@ print(a, b, c)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 1
 1 2 old string
+```
 {% endcode %}
 
 
@@ -141,11 +145,13 @@ print("Outside the function -> b:", b)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Inside the function -> a: 100
 Inside the function -> b: 888
 Outside the function -> a: 0
 Outside the function -> b: 888
+```
 {% endcode %}
 
 
@@ -171,8 +177,10 @@ f()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 {'c': 25}
+```
 {% endcode %}
 
 
@@ -199,8 +207,10 @@ outer()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 local value
+```
 {% endcode %}
 
 
@@ -223,8 +233,10 @@ outer()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 enclosed variable
+```
 {% endcode %}
 
 
@@ -252,11 +264,13 @@ print(a)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 enclosed variable
 changed enclosed variable
 changed enclosed variable
 global variable
+```
 {% endcode %}
 
 
@@ -315,8 +329,10 @@ foo()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 55
+```
 {% endcode %}
 
 

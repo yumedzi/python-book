@@ -84,10 +84,12 @@ f1()
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 No complains at this point!
 ------------------------------
 Now you'll get the error:
+```
 {% endcode %}
 
 
@@ -133,9 +135,11 @@ print(foo()) # Will return 100500 because during call global a equals to 100500
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 10
 100500
+```
 {% endcode %}
 
 
@@ -156,11 +160,13 @@ print(sum(x=5))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 74
 74
 54
 54
+```
 {% endcode %}
 
 
@@ -187,10 +193,12 @@ print(random_phrase(length=6))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 evil unicorns
 I think ehmm evil unicorns
 ehmm umm unicorns evil nice unicorns
+```
 {% endcode %}
 
 
@@ -209,8 +217,10 @@ print(random_phrase(length=5))
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 evil umm ehmm I think evil
+```
 {% endcode %}
 
 
@@ -281,8 +291,10 @@ print_strings("Hello", "World")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Hello World
+```
 {% endcode %}
 
 
@@ -303,9 +315,11 @@ print_strings(str2="James Bond", str1="Bond,")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Hello World
 Bond, James Bond
+```
 {% endcode %}
 
 
@@ -326,9 +340,11 @@ add_friend(name="Mark")
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-{% code overflow="wrap" %}```
+{% code overflow="wrap" %}
+```
 Friend Mark (20) added
 Friend Mark (20) added
+```
 {% endcode %}
 
 

@@ -204,7 +204,7 @@ print(new_list)
 
 ### Sorting
 
-> Sorting of the list with elements of different types in Python 3 is forbidden (yields an TypeError exception about unsupported `'<'` operation).
+> Sorting of the list with elements of different types in Python 3 is forbidden (yields an TypeError exception about unsupported `<` operation).
 
 ```python
 >>> new_list 

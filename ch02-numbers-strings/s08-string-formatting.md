@@ -7,12 +7,13 @@
 3. `f-strings` (Python 3.6) - inline formatting allowing to insert variables by names with format similar to `format()`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print_me = 100505050.12123
 print(  "1. %s" % print_me )         # Old format, %
 print(  "2. {}".format(print_me) )   # New format, format()
-print( f"3. {print_me}" )            # f-strings
-```
+print( f"3. {print_me}" )            # f-strings```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -45,10 +46,11 @@ A conversion specifier contains two or more characters and has the following com
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 food = "Ceasar salad"
-print("For breakfast today is %s" % food)
-```
+print("For breakfast today is %s" % food)```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -56,11 +58,12 @@ print("For breakfast today is %s" % food)
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 food = "Pizza Pepperoni and burger"
 money = 130.23
-print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
-```
+print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -68,10 +71,11 @@ print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 data = {"food": "Pasta Carbonara", "money": 300}
-print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
-```
+print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -86,9 +90,10 @@ It's better to use this for something that requries more complex formatting
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-print("Our food today is {}".format(food))
-```
+print("Our food today is {}".format(food))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -98,9 +103,10 @@ print("Our food today is {}".format(food))
 Several arguments:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-print("Food: '{}', money: {} UAH".format(food, money))
-```
+print("Food: '{}', money: {} UAH".format(food, money))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -110,9 +116,10 @@ print("Food: '{}', money: {} UAH".format(food, money))
 It is possible when using new format (_format()_) to specify positions:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(money, food))
-```
+print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(money, food))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -122,12 +129,13 @@ print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(mone
 It is possible to pass arguments by names:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 data = {"money": 45, "food":"salad"}
 # `**` - means we are passing dict as a sequence of key-value pairs
 print("Want {food} but ${money} to spend".format(**data))
-# print("Want {food} but ${money} to spend".format(money=45, food="salad"))
-```
+# print("Want {food} but ${money} to spend".format(money=45, food="salad"))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

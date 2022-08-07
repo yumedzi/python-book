@@ -111,11 +111,12 @@ There are different types of inheritance (all are supported by Python):
 
 Polymorphism means the ability to exist in multiple forms: "one name, many forms". An example:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 list().__len__
 str().__len__
-dict().__len__
-```
+dict().__len__```
 
 There are 2 basic types of polymorphism:
 
@@ -123,6 +124,8 @@ There are 2 basic types of polymorphism:
     * *Method overloading* - redefining a super-class method adding new functionality.
 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A:
@@ -135,8 +138,7 @@ class B(A):
         return 2
        
 obj = B()
-obj.method()
-```
+obj.method()```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -154,6 +156,8 @@ obj.method()
     * *Method overriding* - defining a method in a subclass with the same name as in the parent class.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class A:
     def method(self):
@@ -164,8 +168,7 @@ class B(A):
         return 2
     
 obj = B()
-obj.method()
-```
+obj.method()```
 
 
 

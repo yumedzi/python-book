@@ -25,6 +25,10 @@ So, in other words - presented code will be shown in two variations:
 
 * Two sections - code and it's output separated:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
+
+
 ```python
 def splitting_function(text):
     return text.split()

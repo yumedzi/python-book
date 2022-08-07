@@ -2,15 +2,18 @@
 
 > Python has one omnipotent logical condition check operator: ```if```.
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if <condition>:
     <actions_when_condition_is_True>
 elif <another_optional_condition>:
     <actions_when_optional_condition_is_True>
 else:
-    <actions_when_conditions_are_False>
-```
+    <actions_when_conditions_are_False>```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 a = 12
@@ -19,8 +22,7 @@ if a > 3:
 elif a == 3: 
     print("a is 3" )
 else: 
-    print("a is lesser than 3")
-```
+    print("a is lesser than 3")```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -36,9 +38,10 @@ else:
 The built-in function bool() can be used to convert any value to a Boolean, if the value can be interpreted as a truth value 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-True + True
-```
+True + True```
 
 
 
@@ -50,9 +53,10 @@ True + True
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-(True + True + True) * (True + True) - False
-```
+(True + True + True) * (True + True) - False```
 
 
 
@@ -64,9 +68,10 @@ True + True
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-bool(24), bool("sdsds"), bool(""), bool([])
-```
+bool(24), bool("sdsds"), bool(""), bool([])```
 
 
 
@@ -107,13 +112,14 @@ All other values are considered true — so objects of many types are always tru
 Sometimes it can surprise you. The following example will always print the first quote:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 decision = "not to be"
 if decision == "be" or "to be":
     print("Take arms against a sea of troubles!")
 else:
-    print("You will not see this quote anyway =(")
-```
+    print("You will not see this quote anyway =(")```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -121,14 +127,16 @@ else:
 
 
 Because the expression is equivalent to:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-(decision == "be") or ("to be")
-```
+(decision == "be") or ("to be")```
 
 Solution:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-decision in ("be", "to be")
-```
+decision in ("be", "to be")```
 
 ## Precedence of operations in Python:
 

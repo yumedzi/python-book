@@ -211,12 +211,13 @@ produces this:
     * Command line progress bar framework
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from tqdm import tqdm
 l = []
 for i in tqdm(range(10000)):
-    l.append(i ** i)
-```
+    l.append(i ** i)```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -237,6 +238,8 @@ Possible color formattings:
 <img src="../images/tr_10_04.png">  
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from colorama import Fore, Back, Style
 print(Fore.YELLOW + Back.BLUE + 'some yellow text')
@@ -244,8 +247,7 @@ print(Back.GREEN + 'and with a green background')
 print("Test..")
 print(Back.RED + Style.DIM + 'and in dim text') # Check in console...
 print(Style.RESET_ALL)
-print('back to normal now')
-```
+print('back to normal now')```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -303,9 +305,10 @@ now_in_kiev
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-len(pendulum.timezones)
-```
+len(pendulum.timezones)```
 
 
 
@@ -319,10 +322,11 @@ len(pendulum.timezones)
 We can parse datetime from a string:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(pendulum.parse("2020/11/05"))
-print(pendulum.parse('20160413'))
-```
+print(pendulum.parse('20160413'))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -331,10 +335,11 @@ print(pendulum.parse('20160413'))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(pendulum.from_format('01, 05, 2020', 'D, MM, YYYY'))
-print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
-```
+print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -343,10 +348,11 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 # Seamless timezone switching
-now_in_kiev.in_timezone('UTC')
-```
+now_in_kiev.in_timezone('UTC')```
 
 
 
@@ -562,21 +568,23 @@ Validation is done with the help of `Validator` object and `configspec` (which r
 
 Example of configspec:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 port = integer(0, 100)
 user = string(max=25)
 mode = option('quiet', 'loud', 'silent')
 mode2 = option('quiet', 'loud', 'silent', default='loud')
-nick = string(default=None)
-```
+nick = string(default=None)```
 
 ### Profiling
 
 > The profiling package is an interactive continuous Python profiler. It is inspired from Unity 3D profiler. This package provides these features:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-> pip install profiling
-```
+> pip install profiling```
 
 * Profiling statistics keep the frame stack.
 * An interactive TUI profiling statistics viewer.

@@ -24,17 +24,19 @@ In the end this is always up to specific project's convention but having definit
 
 Consider the diff of:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def test_15(self):
-   self.assertEqual(func(500), 1000)
-```
+   self.assertEqual(func(500), 1000)```
 
 and:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def test_15_func_with_num__returns_double(self):
-   self.assertEqual(func(500), 1000)
-```
+   self.assertEqual(func(500), 1000)```
 
 
 ## Unit test structure
@@ -46,6 +48,8 @@ def test_15_func_with_num__returns_double(self):
 * Assert that something is as expected.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def test_15_method_with_num__returns_double(self):
     # Arrange
@@ -55,8 +59,7 @@ def test_15_method_with_num__returns_double(self):
     actual = some_obj.method(test_value=500)
     
     # Assert
-    self.assertEqual(actual, 1000)
-```   
+    self.assertEqual(actual, 1000)```   
 
 ### Coverage
 

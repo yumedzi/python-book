@@ -10,16 +10,18 @@
 
 Definition: 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def function_name(arg1, arg2, ... argN): 
     <statements> 
-    [return <value>]
-```
+    [return <value>]```
 
 Call function (execute and get it's result): 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-function_name(arg1, arg2, ... argN)
-```
+function_name(arg1, arg2, ... argN)```
 
 ### Argument vs Parameter
 
@@ -47,18 +49,20 @@ Function always returns something. You can scpecify return value by operator ```
 Python code statement can't be empty. You can "do nothing" with operator ```pass```:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def empty():
-    pass
-```
+    pass```
 
 or even in this way (Python 3 only):
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def empty():
-    ...
-```
+    ...```
 
 The function definition does not execute the function body.
 
@@ -209,14 +213,15 @@ Schematics of these arguments and special parameters:
 
 > `/` works from Python 3.8
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
       -----------    ----------     ----------
         |             |                  |
         |        Positional or keyword   |
         |                                └ Keyword only
-        └ Positional only
-```
+        └ Positional only```
 
 If `/` and `*` are not present in the function definition, arguments may be passed to a function by position or by keyword. We already saw these three types (positional, keyword and default).
 
@@ -240,15 +245,17 @@ If `/` and `*` are not present in the function definition, arguments may be pass
 > Required arguments are the arguments passed to a function in correct positional order (that's why they also known as *positional*). The number of arguments in the function call should match exactly with the function definition.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def print_strings(str1, str2): 
-    print(str1, str2)
-```
+    print(str1, str2)```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print_strings("Hello", "World")
-```
+print_strings("Hello", "World")```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -262,10 +269,11 @@ print_strings("Hello", "World")
 For previous example:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print_strings(str1="Hello", str2="World")
-print_strings(str2="James Bond", str1="Bond,")
-```
+print_strings(str2="James Bond", str1="Bond,")```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

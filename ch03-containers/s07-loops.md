@@ -7,12 +7,13 @@ Python has two loops available in syntax:
 
 ## For
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 for <target> in <target_iterable>:
     <code>
 else:
-    <if_break_not_called_code>
-```
+    <if_break_not_called_code>```
 
 Inside **code** it is possible to use ```continue``` and ```break```:
 * ```break``` statement terminates the loop without executing the ```else``` clause’s code
@@ -38,6 +39,8 @@ return render(request, template_name, context)
 Here is a monster-kind example which aims to show all usecases of `for` loop. You can use it as a base for your experiments:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 for x in range(1, 15):
     print(x, "\t: ", end="")
@@ -53,8 +56,7 @@ for x in range(1, 15):
         break # completely go out from for loop
     print(" ... EOL!") # will not triggered if 8 and 10
 else:  # run this block only if no break statement called
-    print("No break called -- number 12 was NOT FOUND")
-```
+    print("No break called -- number 12 was NOT FOUND")```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -98,12 +100,13 @@ else:
 > `range(stop)`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(list(range(10)))
 print(list(range(1, 11)))
 print(list(range(0, 30, 5)))
-print(list(range(0, 10, 3)))
-```
+print(list(range(0, 10, 3)))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -114,11 +117,12 @@ print(list(range(0, 10, 3)))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(list(range(0, -10, -1)))
 print(list(range(0)))
-print(list(range(1, 0)))
-```
+print(list(range(1, 0)))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -130,9 +134,10 @@ print(list(range(1, 0)))
 Also - from 3.5:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-[*range(4)]
-```
+[*range(4)]```
 
 
 
@@ -144,9 +149,10 @@ Also - from 3.5:
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-[1, 2, *range(3, 6), 6]
-```
+[1, 2, *range(3, 6), 6]```
 
 
 
@@ -158,9 +164,10 @@ Also - from 3.5:
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-{*range(4), 1, 2}
-```
+{*range(4), 1, 2}```
 
 
 
@@ -175,10 +182,11 @@ Also - from 3.5:
 
 Try to avoid the code like the following one:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 for i in range(len(food)):
-    print(food[i])
-```
+    print(food[i])```
 
 Instead, use clearer "Pythonic" way:
 

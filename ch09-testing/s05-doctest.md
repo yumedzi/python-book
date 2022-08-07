@@ -62,6 +62,8 @@ Test passed.
 
 We can test anything that can be typed in interactive Python shell:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def some_func():
     '''
@@ -70,8 +72,7 @@ def some_func():
     ...   return x + y
     >>> sum(3, 6)
     9
-    '''
-```
+    '''```
 
 Doctests can be keeped in plain txt files
 
@@ -89,11 +90,12 @@ Doctests can be keeped in docstrings in:
 
 
 The simplest way to start using doctest:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()
-```
+    doctest.testmod()```
 
 Simplest testing ever!
 
@@ -144,10 +146,11 @@ ok
 Exception tracebacks tend to contain many details that are not relevant to the test, but that can change unexpectedly.
 * The doctest module deals with this by ignoring the traceback entirely: it's only concerned with the first line:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 Traceback (most recent call last):
-<Exception>: <expected details>
-```
+<Exception>: <expected details>```
 
 * which tells it that you expect an exception, and the part after the traceback, which tells it which exception you expect.
 * The doctest module only reports a failure if one of these parts does not match.
@@ -167,12 +170,13 @@ SyntaxError: invalid syntax
 
 The doctest handles this situation by matching a line that contains only the text `<BLANKLINE>` in the expected output with a real blank line in the actual output.
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 >>> def a(): 
 ...   print()
 >>> a()
-<BLANKLINE>
-```
+<BLANKLINE>```
 
 ## Directives
 
@@ -185,6 +189,8 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 * `+SKIP` – skip the test
 * `+IGNORE_EXCEPTION_DETAIL`
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 >>> 'This is expression that eval a string'
 ... # doctest: +ELLIPSIS
@@ -193,8 +199,9 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 'This is ... a string'
 >>> import datetime as dt
 >>> dt.datetime.now().isoformat() # doctest: +ELLIPSIS
-'...-...-...T...:...:...'
-```
+'...-...-...T...:...:...'```
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 >>> [1, 2, 3, 4, 5, 6, 7, 8, 9] # doctest: +NORMALIZE_WHITESPACE
@@ -205,8 +212,7 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 Everything is OK
 >>> 1/0 # doctest: +IGNORE_EXCEPTION_DETAIL
 Traceback (most recent call last):
-ZeroDivisionError
-```
+ZeroDivisionError```
 
 ## Trick
 

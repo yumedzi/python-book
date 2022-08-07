@@ -13,9 +13,10 @@
 > Bread and butter of day-to-day Python programming
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-[x for x in range(0, 10)]
-```
+[x for x in range(0, 10)]```
 
 
 
@@ -27,9 +28,10 @@
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-[x for x in range(0,10) if x%2 == 0]
-```
+[x for x in range(0,10) if x%2 == 0]```
 
 
 
@@ -41,9 +43,10 @@
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-[(x, y) for x in range(0,10) if x%2 == 0 for y in range(x) if y%2 != 0]
-```
+[(x, y) for x in range(0,10) if x%2 == 0 for y in range(x) if y%2 != 0]```
 
 
 
@@ -68,9 +71,10 @@
 > Useful to create a dictionary with the same (default) value or predefined by some logic
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-{x: str(x) for x in range(5)}
-```
+{x: str(x) for x in range(5)}```
 
 
 
@@ -82,9 +86,10 @@
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-{x: y for x in range(3) for y in range(3)}
-```
+{x: y for x in range(3) for y in range(3)}```
 
 
 
@@ -120,9 +125,10 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 > "Kind of" comprehension but instead of returning sequence as other do, generator expression returns generator object.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-(x * x for x in range(10))
-```
+(x * x for x in range(10))```
 
 
 
@@ -134,9 +140,10 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 for x in (x * x for x in range(10)):
-    print(x, end=" ")
-```
+    print(x, end=" ")```
 
     0 1 4 9 16 25 36 49 64 81

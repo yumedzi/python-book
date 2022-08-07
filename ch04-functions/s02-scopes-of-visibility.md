@@ -1,15 +1,18 @@
 # Namespaces
 
 Namespaces are just dictionaries with some names (what we call variable name) mapped to objects (actual data in memory). This mapping allows to access target object by a name that we've assigned to it. So: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_string = "Hello World"
 ```
 creates a reference to the "Hello Worold" object, and makes it accessible by variable name ```some_string```.
 
 In this case our namespace will be:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-{"some_string": "Hello World"}
-```
+{"some_string": "Hello World"}```
 
 In Python it's possible to have multiple namespaces (for example: each function has it's own context). When we trying to get some variable inside some namespace Python firstly looks at so-called local namespace and if it is not found it goes "upper". Such local contextual namespaces in Python called "scopes".
 
@@ -33,6 +36,8 @@ Local variables can be accessed only inside the function in which they are decla
 
 If a name is bound in a block, it is a **local variable** of that block, unless declared as `nonlocal` or `global`. If a name is bound at the module level, it is a **global variable**. (The variables of the module code block are local and global.) If a variable is used in a code block but not defined there, it is a **free variable**.
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 print("builtin:", all)
@@ -60,8 +65,7 @@ def foo():
     print("checking 'all':", all)
     inner3()
 foo()
-print("now global is", all)
-```
+print("now global is", all)```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -141,6 +145,8 @@ Get all locals, globals:
 Note: in global scope locals and globals are the same.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = 5
 b = 10
@@ -148,8 +154,7 @@ def f():
     c = 25
     global b
     print(locals())
-f()
-```
+f()```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -234,6 +239,8 @@ print(a)
 Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = 25
 def foo():
@@ -242,8 +249,7 @@ def foo():
     
     b = a + 25
     return a, b
-foo()
-```
+foo()```
 
 
     
@@ -268,13 +274,14 @@ foo()
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = 25
 def foo(a=a):
     a += 30  # a = a + 30
     return a
-foo()
-```
+foo()```
 
 
 
@@ -294,13 +301,14 @@ Functions can use variables from outer scopes.
 Also it's worth to mention that those variables are searched only when function is called.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def foo():
     print(i)
     
 i = 5
-foo()
-```
+foo()```
 
     5
 
@@ -331,12 +339,13 @@ print("Result of running inner function:", result())
 How can `inner` know about `a` if `foo` is already returned and all we can't access to it's local variables normally?
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print("Free vars:", result.__code__.co_freevars)
 print(result.__closure__)
 cell = result.__closure__[0]
-print("Free var #1 value:", cell.cell_contents)
-```
+print("Free var #1 value:", cell.cell_contents)```
 
     Free vars: ('a',)
     (<cell at 0x7f3e88272258: int object at 0x5594948e94a0>,)

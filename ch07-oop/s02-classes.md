@@ -75,11 +75,12 @@ print(f"Bus.buses = {Bus.buses}")
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 marshrutka_317 = Bus("# 317")
 marshrutka_317.transfer(20)
-print(marshrutka_317.info())
-```
+print(marshrutka_317.info())```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -87,12 +88,13 @@ print(marshrutka_317.info())
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 b.transfer(23)
 marshrutka_317.transfer()
 marshrutka_317.transfer(55)  
-print(marshrutka_317.info())
-```
+print(marshrutka_317.info())```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -102,10 +104,11 @@ print(marshrutka_317.info())
 Class variables and instance variables were changed:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(Bus.people_transferred)
-print(marshrutka_317.people_transferred)
-```
+print(marshrutka_317.people_transferred)```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -115,6 +118,8 @@ print(marshrutka_317.people_transferred)
 
 ## Inheritance
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class Robot:
@@ -131,15 +136,15 @@ class Robot:
     def say(self):
         """Say something"""
         import random 
-        return f"{self.name} says: {random.choice(self.sounds)}"
-```
+        return f"{self.name} says: {random.choice(self.sounds)}"```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 bip = Robot("Bip 1.0")
 print(bip)
-print(bip.say())
-```
+print(bip.say())```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -150,18 +155,20 @@ print(bip.say())
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class BendingRobot(Robot):
     sounds = ["Kill all humans", "Kiss my shiny metal face", "Oh, your God!",
-              "Oh wait you’re serious. Let me laugh even harder."]
-```
+              "Oh wait you’re serious. Let me laugh even harder."]```
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 bender = BendingRobot("Bender")
 print(bender)
-print(bender.say())          
-```
+print(bender.say())          ```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -208,13 +215,14 @@ d.a, d.x
 Let's enhance our `Robot` example by inheriting from two classes at once.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class Mail:
     def send_message(self, msg):
         print(f"*** SENDING MESSAGE: <<<{msg}>>>  ***")
         
-Mail().send_message("Test")
-```
+Mail().send_message("Test")```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

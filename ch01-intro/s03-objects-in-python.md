@@ -13,9 +13,10 @@ The same data can be interpreted differently thus the type of data is as importa
 Below is the base example how we assign the data to the variables (in Python terms this is often called as "binding"):
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-a = 42
-```
+a = 42```
 
 **42** is the data in memory, it is the Python object of **int** type (integer).
 
@@ -72,12 +73,13 @@ A lot of variables can point to same object. You don't need to declare what exac
 * Compare objects by id: ```is```
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = 100500
 b = a
 print("a == b →", a == b)
-print("a is b →", a is b)
-```
+print("a is b →", a is b)```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -86,12 +88,13 @@ print("a is b →", a is b)
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = 100500
 b = 100500
 print("a == b →", a == b)
-print("a is b →", a is b)
-```
+print("a is b →", a is b)```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

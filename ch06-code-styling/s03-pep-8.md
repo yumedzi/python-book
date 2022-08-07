@@ -50,16 +50,18 @@ Exceptions:
 Imports should usually be on separate lines
 
 Yes:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import os
 import sys
-from subprocess import Popen, PIPE
-```
+from subprocess import Popen, PIPE```
 
 No:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-import sys, os
-```
+import sys, os```
 
 Imports should be grouped in the following order:
 * standard library imports
@@ -79,18 +81,20 @@ You should put a blank line between each group of imports.
 
 Absolute imports are recommended, as they are usually more readable and tend to be better behaved (or at least give better error messages) if the import system is incorrectly configured (such as when a directory inside a package ends up on sys.path )
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import mypkg.sibling
 from mypkg import sibling
-from mypkg.sibling import example
-```
+from mypkg.sibling import example```
 
 But in some cases - when dealing with complex package layouts where using absolute imports would be unnecessarily verbose:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 from . import sibling
-from .sibling import example
-```
+from .sibling import example```
 
 ## Whitespaces
 
@@ -122,16 +126,18 @@ No: `dct ['key'] = lst [index]`
 * Don't use spaces around the = sign when used to indicate a keyword argument or a default parameter value.
 
 Yes: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def complex(real, imag=0.0, varz):
-    return magic(r=real, i=imag)
-```
+    return magic(r=real, i=imag)```
 
 No:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def complex(real, imag = 0.0, varz):
-    return magic(r = real, i = imag)
-```
+    return magic(r = real, i = imag)```
 
 ## Indentation
 
@@ -151,6 +157,8 @@ def long_function_name(
     print(var_one)
 ```
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 # Hanging indents should add a level (may be not 4 spaces)
 foo = long_function_name(
@@ -161,8 +169,7 @@ foo = long_function_name(
 d = dict(x=10,
          y=20,
          z=30,
-         w=40)
-```
+         w=40)```
 
 NO:
 
@@ -183,12 +190,13 @@ def long_function_name(
 
 *  Using if:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 # No extra indentation. It's correct but ugly
 if (this_is_one_thing and
     that_is_another_thing):
-    do_something()
-```
+    do_something()```
 
 ```python
 # Add a comment, which will provide some distinction in editors

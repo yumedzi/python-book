@@ -82,6 +82,8 @@ print(list(gen))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def gen_func():
     for x in range(1, 10):
@@ -90,8 +92,7 @@ def gen_func():
 gen = gen_func() #  get generator object by using generator function 
 print(gen)
 for i in gen:
-    print(i)
-```
+    print(i)```
 
 📟 _<mark style="color:green;">Output:</mark>_
 

@@ -11,10 +11,11 @@ Usage
 2. Filling it with methods with names starting with `test_` 
 3. Run the tests by placing `unittest.main()` in a file, usually at the bottom:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if __name__ == '__main__':
-    unittest.main()
-```
+    unittest.main()```
 
 ## Main terminology:
 

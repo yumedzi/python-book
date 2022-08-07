@@ -15,10 +15,11 @@ But first of all let's check what is bound/unbound method
 
 > Method bound to the object is the function that passes that object as the first argument (instance for instance methods, class for class methods).
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = A()
-a.method(x) --> A.method(a, x)  # <-- here a.method is bound method
-```
+a.method(x) --> A.method(a, x)  # <-- here a.method is bound method```
 
 > "bound_method is bound method :)
 
@@ -150,6 +151,8 @@ print(fd["1"])
 The dict with logging around setting a key:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class VerboseDict(dict):
     def __setitem__(self, key, value):
@@ -159,8 +162,7 @@ class VerboseDict(dict):
 vd = VerboseDict(x=1, y=2)
 vd["z"] = "!"
 vd[1] = 100500
-vd
-```
+vd```
 
 
 ```python
@@ -273,6 +275,8 @@ There is also bigger example for this with lot of print() calls to see where exa
 We can clearly see that firstly we call `__new__` and after that `__init__`
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class SuperList(list):
     def __new__(cls, *args, **kwargs):
@@ -295,8 +299,7 @@ l[0] = 100
 del l[1]
 l[3:5] = ["AAA", "BBB"]
 print("After changes:", l)
-print(id(l))
-```
+print(id(l))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -315,6 +318,8 @@ print(id(l))
 
 As resume - we see that super() uses the MRO of passed class (by default it is the class we are defining method for). That's why if we pass another class directly (like it was in Python 2) it will use MRO of that class:
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 class A: 
@@ -336,8 +341,7 @@ class D(C):
         print("~" * 60)
         print(f"B's MRO is {B.mro()}")
         print(f"super(B, self).m() -> {super(B, self).m()} (we take <m> from <A>)")
-D().m()
-```
+D().m()```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -377,12 +381,13 @@ AResult()()
 The same as `super()`:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class AResult(A1, A2, A3):
     def __call__(self):
         return super(self.__class__, self).attr
-AResult()()
-```
+AResult()()```
 
 
 
@@ -394,12 +399,13 @@ AResult()()
 To start FROM A2:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class AResult(A1, A2, A3):
     def __call__(self):
         return super(A1, self).attr
-AResult()()
-```
+AResult()()```
 
 
 
@@ -409,12 +415,13 @@ AResult()()
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class AResult(A1, A2, A3):
     def __call__(self):
         return super(A2, self).attr
-AResult()()
-```
+AResult()()```
 
 
 

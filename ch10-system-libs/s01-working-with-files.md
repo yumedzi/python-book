@@ -64,8 +64,9 @@ print(f.closed)
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-%ls -la /tmp/1.txt
-```
+%ls -la /tmp/1.txt```
 
     -rw-r--r-- 1 jovyan users 15 Jun 20 11:52 /tmp/1.txt

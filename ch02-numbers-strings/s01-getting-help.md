@@ -2,6 +2,8 @@
 
 * Help
     * In Python interactive shell:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 help(math.sqrt)
 ```
@@ -9,8 +11,7 @@ help(math.sqrt)
 
     * IPython shell:
 ```python
-math.cos?
-```
+math.cos?```
 📟 _<mark style="color:green;">Output:</mark>_
 
     * Web: https://docs.python.org/3/  

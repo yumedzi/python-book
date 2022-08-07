@@ -17,10 +17,11 @@
 Example of introspection of int object:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 a = 42
-print(dir(a))
-```
+print(dir(a))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -32,13 +33,14 @@ We see a lot of methods available in object which gives us a hint what is the ki
 Introspection of an instance of some class:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class A(object):      # Creating simple class
     attr1 = 5         # with one attribute: "attr1"
 some_obj = A()
 print(some_obj.attr1) # Checking the value of custom attribute
-print(dir(some_obj))  # This will show all inherited methods and attribute we created: "attr1"
-```
+print(dir(some_obj))  # This will show all inherited methods and attribute we created: "attr1"```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -104,9 +106,10 @@ inspect(i)
 And with methods overview:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-inspect(i, methods=True)
-```
+inspect(i, methods=True)```
 
 
 <pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #000080; text-decoration-color: #000080">╭────────────────────────────────────── </span><span style="color: #000080; text-decoration-color: #000080; font-weight: bold">&lt;</span><span style="color: #ff00ff; text-decoration-color: #ff00ff; font-weight: bold">class</span><span style="color: #000000; text-decoration-color: #000000"> </span><span style="color: #008000; text-decoration-color: #008000">'int'</span><span style="color: #000080; text-decoration-color: #000080; font-weight: bold">&gt;</span><span style="color: #000080; text-decoration-color: #000080"> ──────────────────────────────────────╮</span>
@@ -139,9 +142,10 @@ inspect(i, methods=True)
 An example of `list` inspection:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-inspect([1, 2, 3], methods=True)
-```
+inspect([1, 2, 3], methods=True)```
 
 
 <pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #000080; text-decoration-color: #000080">╭───────────────────────────────────── </span><span style="color: #000080; text-decoration-color: #000080; font-weight: bold">&lt;</span><span style="color: #ff00ff; text-decoration-color: #ff00ff; font-weight: bold">class</span><span style="color: #000000; text-decoration-color: #000000"> </span><span style="color: #008000; text-decoration-color: #008000">'list'</span><span style="color: #000080; text-decoration-color: #000080; font-weight: bold">&gt;</span><span style="color: #000080; text-decoration-color: #000080"> ──────────────────────────────────────╮</span>

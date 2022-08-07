@@ -8,6 +8,8 @@ Errors detected during execution are called **exceptions** and are not unconditi
 
 General form:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 try:
     <code> 
@@ -16,8 +18,7 @@ except <ExceptionName> as <alias>:
 else: 
     <code if everything was OK>
 finally: 
-    <code in any case>
-```
+    <code in any case>```
 
 We are checking the code only after `try` before `except`.
 
@@ -232,11 +233,12 @@ Debug version of raise with condition:
 
 is equivalent to:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 if __debug__: 
     if not <test>: 
-        raise AssertionError(<data>)
-```
+        raise AssertionError(<data>)```
 
 `__debug__` is special bool variable (interpreter-level constant (one of very few ones!)) which allways is True unless `python` is called with `-O` (optimization, capital O – not a zero!)
 
@@ -247,13 +249,14 @@ python –O script.py
 Examples of `assert`:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 assert 1 == 1
 assert len(range(5)) == 5
 try:
     assert 2 + 2 == "2 + 2", "On paper it works..."
 except AssertionError as e:
-    print("Cought AssertionError:", e)
-```
+    print("Cought AssertionError:", e)```
 
     Cought AssertionError: On paper it works...

@@ -7,9 +7,10 @@
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-print("Hello World")
-```
+print("Hello World")```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -17,9 +18,10 @@ print("Hello World")
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-print "Hello World" # Python 2
-```
+print "Hello World" # Python 2```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -29,9 +31,10 @@ print "Hello World" # Python 2
 ## What is Python?
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-import antigravity
-```
+import antigravity```
 
 ![import antigravity](../images/tr_01_00.png)
 
@@ -167,14 +170,16 @@ Additionally:
 
 Bonus:
 * Annotations (used for visualizing code and for data classes in Python 3.7)
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-def foo(a: 'x', b: 5 + 6, c: list) -> max(2, 9)
-```
+def foo(a: 'x', b: 5 + 6, c: list) -> max(2, 9)```
 
 * Cool unpacking: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-(a, *rest, b) = range(5)
-``` 
+(a, *rest, b) = range(5)``` 
 * New `super()` – you don't need to write what class to extend (we'll learn about them in OOP section)
 * Asyncio (versions 3.4, 3.5+)
 * String interpolations (3.6+)

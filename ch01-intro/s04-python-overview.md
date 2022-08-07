@@ -13,6 +13,8 @@ So, in next few slides we are going to see:
 
 ### Immutable types (cannot be changed after creation)
 * str
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_str = "I'm a string!" 
 ```
@@ -26,11 +28,12 @@ some_float = 23.23
 ```
 * tuple
 ```python
-some_tuple = (13, 45, "Yo!", 34.3) 
-```
+some_tuple = (13, 45, "Yo!", 34.3) ```
 
 ### Mutable types (can be changed)
 * list
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_list = [14, "string", 14, [1, 2]] 
 ```
@@ -40,8 +43,7 @@ some_set = {(1, 2), 'string', 14}
 ```
 * dict
 ```python
-some_dict = {"name":"John", "sname":"Smith"}
-```
+some_dict = {"name":"John", "sname":"Smith"}```
 
 ### Basic operators:
 * Assignment operators: 
@@ -52,14 +54,17 @@ some_dict = {"name":"John", "sname":"Smith"}
 * Logical operators: 
     * `and`, `or`, `not`
 * Arithmetic operators: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 number = 1 + 2 * 3 / 4.0 
-another_num = 11 % 3 ** 3 // 2
-```
+another_num = 11 % 3 ** 3 // 2```
 
 ### Basic operators, sequences:
 
 * String operators: 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 test_string = "Hello" + " " + "World!" 
 crazy_string = "Yo!" * 10 
@@ -71,12 +76,13 @@ len(test_string)
 one_list = ["Ring of elves", "Ring of dwarves"] 
 all_rings = one_list + ["Ring of men"] 
 len(all_rings)
-all_rings.append("Ring of Power") # Also: extend(), count(), reverse(), sort()
-```
+all_rings.append("Ring of Power") # Also: extend(), count(), reverse(), sort()```
 
 ### Conditions, cycles
 
 * Conditions
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 if a > b: 
@@ -84,8 +90,7 @@ if a > b:
 elif a > 0:
     print("But it is still > 0")
 else:
-    print("Something is wrong...")
-```
+    print("Something is wrong...")```
 
 * Cycles
 
@@ -114,20 +119,22 @@ pi
 
 ### Work with Files
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 f = open("text.txt") 
 line = f.readline() 
 while line: 
     print(line, end="") # suppress \n after each line as the line already has it
     line = f.readline() 
-f.close()
-```
+f.close()```
+
+🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 # More easy way:
 with open("/tmp/file.txt", "r", encoding="win1251") as f:
-    print(f.readlines(), end="")
-```
+    print(f.readlines(), end="")```
 
 
 ### Functions
@@ -177,10 +184,11 @@ a, b
 
 #### Read keyboard input
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 print(input("Please enter something")) # Python 3
-print(raw_input("Please enter something")) # Python 2
-```
+print(raw_input("Please enter something")) # Python 2```
 
 
 ### Passing argument to function

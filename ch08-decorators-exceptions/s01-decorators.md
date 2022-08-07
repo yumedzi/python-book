@@ -18,11 +18,12 @@ foo = some_transformation(foo)
 ```
 
 * Decorator will make this look really more readable and nice:
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 @some_transformation
 def foo(*args):
-    # doing something...
-```
+    # doing something...```
 
 ## Motivation section
 
@@ -34,26 +35,28 @@ To avoid checking routine things like cookie, check for it's existense in DB and
 
 Another decorator checks if the user has needed rights to see this page. 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 @login_required
 @staff_required
 def view_project_adm(request, client_id):
     request.session['adm_client_view'] = True
     project = get_object_or_404(Project, pk=id)
-    return render('view_project.html', project=project)
-```
+    return render('view_project.html', project=project)```
 
 
 ### Flask
 
 Decorator binds the function to specific route
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 @app.route("/project/<id>")
 def view_projects(id):
     project = Project.query.filter(Project.pk == id).first()
-    return render_template('view_projects.html', project=project)
-```
+    return render_template('view_projects.html', project=project)```
 
 
 
@@ -122,12 +125,13 @@ print(music(10))
 Of course we can't access internal functions in any way...
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 try:
     _random_music(5)
 except NameError as e:
-    print("Oh, we can't acces this function outside:", e)
-```
+    print("Oh, we can't acces this function outside:", e)```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -170,11 +174,12 @@ print(party()())
 
 General format of usage:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 @mydecorator
 def myfunc():
-    pass
-```
+    pass```
 It is the **absolutely** the same as:
 
 ```python
@@ -266,6 +271,8 @@ f()
 More, more examples!!!
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def json(func):                              
     def wrapper(*args, **kwargs):            
@@ -282,8 +289,7 @@ def f(x, y):
                                              
                                              
 f(3, 5)                                      
-'{"result": 243}'                            
-```
+'{"result": 243}'                            ```
 
 
 
@@ -760,9 +766,10 @@ def calc_tips(bill, tip_rate=0.10):
 ```
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-calc_tips(100)
-```
+calc_tips(100)```
 
 
 
@@ -772,9 +779,10 @@ calc_tips(100)
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-calc_tips(200, 0.05)
-```
+calc_tips(200, 0.05)```
 
 
 

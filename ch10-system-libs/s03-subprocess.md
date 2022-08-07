@@ -27,9 +27,10 @@ This module is wrapper for sys calls/functions:
 
 Parameters for all `subprocess` methods are very similar. In fact they are all based on argument list for `Popen` method. The difference is that some of the methods don't utilize all of them.
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-Popen(args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=None, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=(), *, encoding=None, errors=None, text=None)
-```
+Popen(args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=None, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=(), *, encoding=None, errors=None, text=None)```
 
 These are most important `Popen` arguments (see it's help for a full list and their meaning):
 
@@ -46,21 +47,23 @@ This is due to the security reason to avoid the possibility of command injection
 
 Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of `shell=True` is strongly discouraged in cases where the command string is constructed from external input:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 >>> from subprocess import call
 >>> filename = input("What file would you like to display?\n")
 What file would you like to display?
 non_existent; rm -rf /
->>> call("cat " + filename, shell=True) # Uh-oh. This will end badly...
-```
+>>> call("cat " + filename, shell=True) # Uh-oh. This will end badly...```
 
 ### `subprocess.call`
 
 > Easiest way to just run some external command
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-subprocess.call(['ls', '-la'])
-```
+subprocess.call(['ls', '-la'])```
 
 This will:
 * Run command with arguments.  
@@ -69,9 +72,10 @@ This will:
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-!ls
-```
+!ls```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -101,9 +105,10 @@ subprocess.call(["touch", "111.txt"])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-!ls 111.txt
-```
+!ls 111.txt```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -111,9 +116,10 @@ subprocess.call(["touch", "111.txt"])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-subprocess.call(["rm", "111.txt"])
-```
+subprocess.call(["rm", "111.txt"])```
 
 
 
@@ -125,9 +131,10 @@ subprocess.call(["rm", "111.txt"])
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-subprocess.call(["ls", "111.txt"])
-```
+subprocess.call(["ls", "111.txt"])```
 
 
 
@@ -143,9 +150,10 @@ subprocess.call(["ls", "111.txt"])
 > This is similar to `subprocess.call` but additionally will check result code
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-subprocess.check_call(['ls', '-la'])
-```
+subprocess.check_call(['ls', '-la'])```
 
 This will run command with arguments and wait for command to complete. If the exit code was zero (this mean it was completed successfully) then return, otherwise raise `CalledProcessError`.  The `CalledProcessError` object will have the return code in the `returncode` attribute.
 

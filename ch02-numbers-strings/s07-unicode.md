@@ -22,6 +22,8 @@ Each Unicode symbol has unique name and codepoint (it's number). Codepoint inclu
 
 Some examples:
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 0061    'a'; LATIN SMALL LETTER A
 ...
@@ -31,8 +33,7 @@ Some examples:
 ...
 2615   '☕'; HOT BEVERAGE
 ...
-0419   'ґ'; CYRILLIC CAPITAL LETTER GHE WITH UPTURN
-```
+0419   'ґ'; CYRILLIC CAPITAL LETTER GHE WITH UPTURN```
 
 Let's check our `ґ` character:
 
@@ -59,10 +60,11 @@ or ☕:
 String in Python 3 is a sequence of code points.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 s = 'ґуґл 💝 ☕'
-s.upper()
-```
+s.upper()```
 
 
 
@@ -74,9 +76,10 @@ s.upper()
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-s[0]
-```
+s[0]```
 
 
 
@@ -88,9 +91,10 @@ s[0]
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-'\u0491 and \u2615'
-```
+'\u0491 and \u2615'```
 
 
 
@@ -104,11 +108,12 @@ s[0]
 Via builtin module `unicodedata` it is possible to get the standardized name of Unicode character or resolve that name into a character:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 import unicodedata
 print(unicodedata.name("ґ"))
-print(unicodedata.name("☕"))
-```
+print(unicodedata.name("☕"))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -117,11 +122,12 @@ print(unicodedata.name("☕"))
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 cap_char = unicodedata.name("ґ").replace("SMALL", "CAPITAL")
 print(cap_char)
-print(unicodedata.lookup(cap_char))
-```
+print(unicodedata.lookup(cap_char))```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -154,9 +160,10 @@ Encoding:
 `errors` by default is 'strict' meaning that encoding errors raise a `UnicodeEncodeError`.  Other possible values are `'ignore'`, `'replace'` and `'xmlcharrefreplace'`.
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-'Ґ'.encode('ascii', 'ignore')
-```
+'Ґ'.encode('ascii', 'ignore')```
 
 
 
@@ -168,9 +175,10 @@ Encoding:
 
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
-'Ґ'.encode('ascii', 'replace')
-```
+'Ґ'.encode('ascii', 'replace')```
 
 
 

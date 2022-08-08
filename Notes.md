@@ -4,7 +4,7 @@
 
 This book is the result of semi-manual conversion from [Jupyter notebooks](http://jupyter.org/) which show dynamic result of presented code executed. That's why sometimes you will see the code itself, for example:
 
-```py
+```python
 def mult(a, b=5): 
     return a * b
 ```
@@ -13,7 +13,10 @@ This represents regular Python code as you would write in your IDE. You can simp
 
 To show that we are running some code and receiving output sometimes I will use `>>>` before actual command run so you could understand that the very next lines are result of previous command:
 
-```py
+
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
+```python
 >>> mult(4, 10)
 40
 ```

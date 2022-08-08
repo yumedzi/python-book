@@ -712,6 +712,8 @@ HTTP Error 401: Unauthorized
 {% endcode %}
 Example with requests:
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 import requests
 
@@ -727,6 +729,7 @@ r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 >>> r.json()
 {'private_gists': 419, 'total_private_repos': 77, ...}
 ```
+
 
 Fetching some cat facts!
 

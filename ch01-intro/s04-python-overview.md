@@ -212,6 +212,8 @@ testme(my_list)
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 def deco(f): 
     def w(*args, **kwargs): 
@@ -225,6 +227,7 @@ def show_something():
     
 show_something()
 ```
+
 
 📟 _<mark style="color:green;">Output:</mark>_
 

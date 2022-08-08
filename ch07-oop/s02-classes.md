@@ -239,6 +239,8 @@ Let's enhance our `Robot` example by inheriting from two classes at once.
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 class Mail:
     def send_message(self, msg):
@@ -246,6 +248,7 @@ class Mail:
         
 Mail().send_message("Test")
 ```
+
 
 📟 _<mark style="color:green;">Output:</mark>_
 

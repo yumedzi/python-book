@@ -993,6 +993,8 @@ In this case when we ```del```ete it - Python garbage collector won't delete fro
 
 Usual Python console:
     
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 >>> a = [1, 2, 3]
 >>> import sys
@@ -1002,6 +1004,7 @@ Usual Python console:
 >>> sys.getrefcount(a)
 3
 ```
+
 
 You need to be aware of such cases.
 

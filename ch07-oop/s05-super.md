@@ -297,6 +297,8 @@ We can clearly see that firstly we call `__new__` and after that `__init__`
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 class SuperList(list):
     def __new__(cls, *args, **kwargs):
@@ -321,6 +323,7 @@ l[3:5] = ["AAA", "BBB"]
 print("After changes:", l)
 print(id(l))
 ```
+
 
 📟 _<mark style="color:green;">Output:</mark>_
 

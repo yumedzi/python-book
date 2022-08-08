@@ -260,12 +260,15 @@ In other words:
 
 * Parts of datetime are different kinds, so it is tuple:
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 # python 2
 >>> import time
 >>> time.localtime()
 (2022, 8, 7, 22, 4, 21, 6, 219, -1)
 ```
+
 
 
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -286,11 +289,14 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 
 * Values is result of range() are all of the same type, so it is list (in Python 2):
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 # python 2
 >>> range(10)
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
+
 
 
 🪄 _<mark style="color:green;">Code:</mark>_

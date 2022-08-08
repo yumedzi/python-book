@@ -22,6 +22,8 @@ Ideally, `doctest` informs human readers, and tells the computer what to expect 
 * Finally, any lines that don't start with `>>>` or `...`, up to the next blank line or `>>>` prompt, represent the output expected from the statement.
 
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 def some_func(x, y=0):
     '''
@@ -39,6 +41,7 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=True)
 ```
+
 
 ```
 Trying:
@@ -62,6 +65,8 @@ Test passed.
 
 We can test anything that can be typed in interactive Python shell:
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 def some_func():
     '''
@@ -72,6 +77,7 @@ def some_func():
     9
     '''
 ```
+
 
 Doctests can be keeped in plain txt files
 
@@ -98,6 +104,8 @@ if __name__ == "__main__":
 Simplest testing ever!
 
 **test_example.py**
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 def sum_nums(*args):
     """
@@ -116,6 +124,7 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod()
 ```
+
 
 ```shell
 $ python test_example.py –v
@@ -152,6 +161,8 @@ Traceback (most recent call last):
 * which tells it that you expect an exception, and the part after the traceback, which tells it which exception you expect.
 * The doctest module only reports a failure if one of these parts does not match.
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 >>> 1/0
 Traceback (most recent call last):
@@ -163,9 +174,12 @@ Traceback (most recent call last):
 SyntaxError: invalid syntax
 ```
 
+
 ## Expecting blank lines
 
 The doctest handles this situation by matching a line that contains only the text `<BLANKLINE>` in the expected output with a real blank line in the actual output.
+
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
 
 ```python
 >>> def a(): 
@@ -173,6 +187,7 @@ The doctest handles this situation by matching a line that contains only the tex
 >>> a()
 <BLANKLINE>
 ```
+
 
 ## Directives
 
@@ -185,6 +200,8 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 * `+SKIP` – skip the test
 * `+IGNORE_EXCEPTION_DETAIL`
 
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
 ```python
 >>> 'This is expression that eval a string'
 ... # doctest: +ELLIPSIS
@@ -195,6 +212,9 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 >>> dt.datetime.now().isoformat() # doctest: +ELLIPSIS
 '...-...-...T...:...:...'
 ```
+
+
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
 
 ```python
 >>> [1, 2, 3, 4, 5, 6, 7, 8, 9] # doctest: +NORMALIZE_WHITESPACE
@@ -208,7 +228,10 @@ Traceback (most recent call last):
 ZeroDivisionError
 ```
 
+
 ## Trick
+
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
 
 ```python
 def test_zero(f):

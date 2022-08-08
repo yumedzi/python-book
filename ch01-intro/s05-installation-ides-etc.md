@@ -1,18 +1,20 @@
 ## Installation, IDEs etc.
 
-Python can be installed right away from the official site or use conda distro.
+Python can be installed right away from the official site or use conda distros.
 
 * [Python.org](https://www.python.org/downloads/)
-* Conda (Miniconda) - alternative maintained distribution of Python:
-    * https://docs.conda.io/en/latest/miniconda.html
+* [Anaconda](https://www.anaconda.com/) - Full distro with hundreds of shipped packages (not needed in reality)
+* [Miniconda](https://docs.conda.io/en/latest/miniconda.html) - minimal distro with basic packages
+    * Recommended as it comes with `conda` package and env manager
 
 After installation `pip` tool (Python package manager) can be used to manage 3rd party packages    
 
 Main commands:
-* install package (install requirements from a file):
+* install, upgrade package and install requirements from a file:
 
 ```bash
 pip install jupyter virtualenv
+pip install -U numpy
 pip install -r requirements.txt
 ```
 * uninstall package:
@@ -27,6 +29,15 @@ pip uninstall requests
 pip freeze
 pip freeze > requirements.txt
 ```
+
+Similarly you can manage packages via `conda` (if installed \*conda distro):
+
+```bash
+conda list                          # Print currently installed packages
+conda install requests pandas       # Install new packages 
+conda remove scipy                  # Remove packages
+```
+
 
 ### Virtual environments
 

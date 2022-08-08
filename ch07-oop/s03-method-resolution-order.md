@@ -41,7 +41,6 @@ The old MRO builds a list of classes to search for methods. This algorithm is a 
 
 The problem with old style classes is that if we going to inherit from base `object` we wouldn't be able to change anything. All because the logic of searching was too simple and wasn't designed for the case where everything is inherited from `object`.
 
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -71,20 +70,20 @@ from C
 [<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>]
 ```
 {% endcode %}
+
 Difference to old MRO is the additional check done each time before adding some class to the search path. The check is:
 
 * Is this class is the parent for some other class in the search path that will be added soon?
 
-If **yes** &rarr; then it is been shifted after it's inherited class *in order to not shadow it's methods*.
+If **yes** → then it is been shifted after it's inherited class _in order to not shadow it's methods_.
 
-This new algorithm (used by default in Python 3 and in Python 2 - from 2.2 when subclassing `object`) is called [C3-linearization](https://en.wikipedia.org/wiki/C3_linearization) in case of multiple inheritance to build an order of inheritance hierarchy in which it will search for matching method/attribute.
+This new algorithm (used by default in Python 3 and in Python 2 - from 2.2 when subclassing `object`) is called [C3-linearization](https://en.wikipedia.org/wiki/C3\_linearization) in case of multiple inheritance to build an order of inheritance hierarchy in which it will search for matching method/attribute.
 
 It can be described in one sentence as:
 
 > Deep first, from left to right with additional check and shifting the class that is parent for next classes after them.
 
 The result of MRO linearization is stored in attribute `__mro__`.
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -99,14 +98,14 @@ print(D.__mro__) # D.mro()
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
 ```
 {% endcode %}
+
 So, Python 2 would build this MRO:
 
-```D, B, A, C, A```
+`D, B, A, C, A`
 
 We see that `A` is repeated, so removing first one keeping the last one will be Python 3's MRO:
 
-```D, B, C, A```
-
+`D, B, C, A`
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -125,9 +124,6 @@ class D(C, C1): pass
 D.mro()
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -143,8 +139,7 @@ D.mro()
 ```
 {% endcode %}
 
-<img src="../images/tr_07_MRO_of_D.png">
-
+![](../images/tr\_07\_MRO\_of\_D.png)
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -167,7 +162,7 @@ print(F.__mro__)
 ```
 {% endcode %}
 
-<img src='../images/tr_07_MRO_of_F.png'>
+![](../images/tr\_07\_MRO\_of\_F.png)
 
 What's important to know about C3 is that it guarantees three important features:
 
@@ -181,7 +176,6 @@ Sometimes the MRO can not be built:
 
 Another example where `object` is used before the class which inherites from it which confuses the logic:
 
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -189,12 +183,10 @@ class A: pass
 class B(object, A): pass
 ```
 
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-
 
 TypeErrorTraceback (most recent call last)
 
@@ -207,4 +199,5 @@ TypeError: Cannot create a consistent method resolution
 order (MRO) for bases object,
 ```
 {% endcode %}
+
 A

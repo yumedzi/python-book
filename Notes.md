@@ -1,4 +1,4 @@
-# Notes about this Book
+# Notes about this book
 
 ### Code
 
@@ -13,7 +13,9 @@ This represents regular Python code as you would write in your IDE. You can simp
 
 To show that we are running some code and receiving output sometimes I will use `>>>` before actual command run so you could understand that the very next lines are result of previous command:
 
-```py
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+
+```python
 >>> mult(4, 10)
 40
 ```
@@ -21,13 +23,12 @@ To show that we are running some code and receiving output sometimes I will use 
 Those `>>>` are exactly the same ones used in usual Python interactive session.
 
 ### Code output
+
 So, in other words - presented code will be shown in two variations:
 
 * Two sections - code and it's output separated:
 
 🪄 _<mark style="color:green;">Code:</mark>_
-
-
 
 ```python
 def splitting_function(text):
@@ -38,9 +39,11 @@ splitting_function(text_to_split)
 
 📟 _<mark style="color:green;">Output:</mark>_
 
-     ["Hello", "Galaxy!"]
+```
+ ["Hello", "Galaxy!"]
+```
 
-* Code with output together \(code will be prefixed with &gt;&gt;&gt; \):
+* Code with output together (code will be prefixed with >>> ):
 
 ```python
 >>> "Hello Universe!".split()
@@ -49,7 +52,7 @@ splitting_function(text_to_split)
 
 ### Hometasks
 
-Originally course comes with a lot of home tasks. But for now they all are integrated in Training Suite companion web application. 
+Originally course comes with a lot of home tasks. But for now they all are integrated in Training Suite companion web application.
 
 ### Comments, propositions
 
@@ -57,4 +60,3 @@ If you find any error, flaw, incorrectness or have any other comment - please se
 
 * email: `vityok(AT)gmail.com`
 * skype: `lookinglass`
-

@@ -1,11 +1,13 @@
 # Subprocess
 
 The subprocess module allows us to:
+
 * spawn new processes
 * connect to their input/output/error pipes
 * obtain their return codes
 
 This module is wrapper for sys calls/functions:
+
 * `os.system()`
 * `os.spawn*()`
 * `os.popen*()`
@@ -17,13 +19,13 @@ This module is wrapper for sys calls/functions:
 > These methods cover 95% of cases:
 
 * `call`
-    * When it is only needed to run some command without checking it's output
-    * Also there is `check_call` method which additionally checks the exit status
+  * When it is only needed to run some command without checking it's output
+  * Also there is `check_call` method which additionally checks the exit status
 * `getoutput`
-    * When it's only needed to get the command's output
-    * Also there is `check_output` method which additionally checks the exit status
+  * When it's only needed to get the command's output
+  * Also there is `check_output` method which additionally checks the exit status
 * `Popen`
-    * powerfull method which can run any kind of external command and even to pass it's output to another's command input
+  * powerfull method which can run any kind of external command and even to pass it's output to another's command input
 
 Parameters for all `subprocess` methods are very similar. In fact they are all based on argument list for `Popen` method. The difference is that some of the methods don't utilize all of them.
 
@@ -33,10 +35,10 @@ Popen(args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, p
 
 These are most important `Popen` arguments (see it's help for a full list and their meaning):
 
-*  `args`: A string, or a sequence of program arguments.
-*  `stdin`, `stdout` and `stderr`: These specify the executed programs' standard `input`, `standard output` and `standard error` file handles, respectively.
-*  `shell`: If true, the command will be executed through the shell.
-*  `cwd`: Sets the current directory before the child is executed.
+* `args`: A string, or a sequence of program arguments.
+* `stdin`, `stdout` and `stderr`: These specify the executed programs' standard `input`, `standard output` and `standard error` file handles, respectively.
+* `shell`: If true, the command will be executed through the shell.
+* `cwd`: Sets the current directory before the child is executed.
 
 The command which we need to run (`args` argument, as shown above) should be passed as a list for UNIX (for Windows it doesn't matter):
 
@@ -63,11 +65,10 @@ subprocess.call(['ls', '-la'])
 ```
 
 This will:
-* Run command with arguments.  
+
+* Run command with arguments.
 * Wait for command to complete or timeout
 * `return` the `returncode` attribute.
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -97,9 +98,6 @@ import subprocess
 subprocess.call(["touch", "111.txt"])
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -128,9 +126,6 @@ subprocess.call(["touch", "111.txt"])
 subprocess.call(["rm", "111.txt"])
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -145,9 +140,6 @@ subprocess.call(["rm", "111.txt"])
 subprocess.call(["ls", "111.txt"])
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -160,22 +152,17 @@ subprocess.call(["ls", "111.txt"])
 
 > This is similar to `subprocess.call` but additionally will check result code
 
-
 ```python
 subprocess.check_call(['ls', '-la'])
 ```
 
-This will run command with arguments and wait for command to complete. If the exit code was zero (this mean it was completed successfully) then return, otherwise raise `CalledProcessError`.  The `CalledProcessError` object will have the return code in the `returncode` attribute.
-
+This will run command with arguments and wait for command to complete. If the exit code was zero (this mean it was completed successfully) then return, otherwise raise `CalledProcessError`. The `CalledProcessError` object will have the return code in the `returncode` attribute.
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 subprocess.check_call(["touch", "111.txt"])
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -190,9 +177,6 @@ subprocess.check_call(["touch", "111.txt"])
 ```python
 subprocess.check_call(["ls", "111.txt"])
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -208,9 +192,6 @@ subprocess.check_call(["ls", "111.txt"])
 subprocess.check_call(["rm", "111.txt"])
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -225,12 +206,10 @@ subprocess.check_call(["rm", "111.txt"])
 subprocess.check_call(["ls", "111.txt"])
 ```
 
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-
 
 CalledProcessErrorTraceback (most recent call last)
 
@@ -262,9 +241,6 @@ subprocess.check_call(["touch", ".lock"])
 subprocess.check_call(["rm", ".lock"])
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -283,8 +259,6 @@ subprocess.check_call(["rm", ".lock"])
 subprocess.getoutput('ls -la')
 ```
 
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -292,9 +266,6 @@ import subprocess
 
 subprocess.getoutput("date")
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -329,16 +300,15 @@ Result 4: ls: cannot access '111.txt': No such file or directory
 ### `subprocess.check_output`
 
 > This is similar to `subprocess.getoutput` but:
+>
 > * uses `*popenargs` arguments
 > * additionally will check result code
-
 
 ```python
 subprocess.check_output(['ls', '-la'])
 ```
 
-Run command with arguments and return its output. If the exit code was non-zero it raises a `CalledProcessError`.  The `CalledProcessError` object will have the return code in the `returncode` attribute and output in the `output` attribute.
-
+Run command with arguments and return its output. If the exit code was non-zero it raises a `CalledProcessError`. The `CalledProcessError` object will have the return code in the `returncode` attribute and output in the `output` attribute.
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -366,12 +336,10 @@ Result 3 (status code for <rm -rf 111.txt> command): 0
 print("Result 4:", subprocess.check_output(["ls", "-la", "111.txt"]))
 ```
 
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-
 
 CalledProcessErrorTraceback (most recent call last)
 
@@ -399,9 +367,8 @@ CalledProcessError: Command '['ls', '-la', '111.txt']' returned non-zero exit st
 ```
 {% endcode %}
 
-* `os.system(cmd)` -> exit_status
-    * Easiest way of running OS commands:
-
+* `os.system(cmd)` -> exit\_status
+  * Easiest way of running OS commands:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -411,9 +378,6 @@ status = os.system("ls")
 status
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -421,16 +385,18 @@ status
 0
 ```
 {% endcode %}
+
 It's not possible to get results of the command but you can redirect output to some file and read it:
 
 `os.system("ls > /tmp/ls.out")`
 
-* `subprocess.call()` -> exit_status
-    * Simply wait until the command completes and gives us the exit status.
+* `subprocess.call()` -> exit\_status
+  * Simply wait until the command completes and gives us the exit status.
 
 > `subprocess.call(args, *, stdin=None, stdout=None, stderr=None, shell=False)`
 
 args is sequence with command like:
+
 * `"ls -la"`
 * `["ls", "-la"]`
 
@@ -438,7 +404,7 @@ args is sequence with command like:
 
 `shell` – run commands through shell not relying on python implementations. By default it is `False`
 
-> There is a difference in `args` depending on `shell`. If it `True` args must be a string - but this may lead to a seriuos risk. 
+> There is a difference in `args` depending on `shell`. If it `True` args must be a string - but this may lead to a seriuos risk.
 
 Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of shell=True is strongly discouraged in cases where the command string is constructed from external input:
 
@@ -450,9 +416,7 @@ non_existent; rm -rf / #
 >>> call("cat " + filename, shell=True) # Uh-oh. This will end badly...
 ```
 
-
 > So it's often recommended to split command to run via using `shlex` module
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -481,11 +445,6 @@ print(command_to_run.split())
 It allows to watch both stdout and stderr and much more. Just look at syntax:
 
 > `subprocess.Popen(args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=False, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=())`
-
-
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -521,7 +480,6 @@ with open('tmp_file', "w") as f:
     proc.communicate(b'SENDING SOMETHING TO STDIN ---> 2021/04/16\n')
 ```
 
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -551,8 +509,8 @@ STDOUT: b'SENDING SOMETHING TO STDIN ---> 2021/04/16\n'
 SENDING SOMETHING TO STDIN ---> 2021/04/16
 ```
 {% endcode %}
-Or like this:
 
+Or like this:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -579,8 +537,8 @@ subprocess.getoutput("cat tmp_file")
 'SENDING SOMETHING TO STDIN ---> 2021/04/16'
 ```
 {% endcode %}
-Pipeline:
 
+Pipeline:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -615,8 +573,8 @@ if p1.wait() == 0:  # Wait for p1 to finish with status 0
 /dev/vg1000/lv  7.0T  6.6T  459G  94% /notebooks
 ```
 {% endcode %}
-Need `awk`? No problem:
 
+Need `awk`? No problem:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -640,8 +598,8 @@ else:
 94%
 ```
 {% endcode %}
-Or - via Python:
 
+Or - via Python:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -671,10 +629,10 @@ print(re.search(r'(\d+%)', p2_output).group(1))
 94%
 ```
 {% endcode %}
+
 Another example - let's get how much memory Jupyter Notebook uses.
 
 Shell commands used:
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -691,8 +649,8 @@ jovyan       6  0.0  1.0 229712 64068 ?        Sl   Apr09   1:09 /opt/conda/bin/
 229712
 ```
 {% endcode %}
-Via `subprocess.check_output()`:
 
+Via `subprocess.check_output()`:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -711,8 +669,8 @@ print(float(subprocess.check_output(cmd, shell=True).decode("utf8").rstrip()))
 251984.0
 ```
 {% endcode %}
-Via `subprocess.Popen()`:
 
+Via `subprocess.Popen()`:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -732,8 +690,8 @@ print(f'Jupyter Notebook eats {int(p4.communicate()[0].decode("utf8")) / 1024:5.
 Jupyter Notebook eats 224.33 MB of memory
 ```
 {% endcode %}
-We can also use context manager for `subprocess.Popen` to clean resources after running processes:
 
+We can also use context manager for `subprocess.Popen` to clean resources after running processes:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -770,4 +728,5 @@ drwxrwxrwx 1 jovyan users    762 Feb 24 11:26 .ipynb_checkpoints
 -rwxrwxrwx 1 jovyan users     43 Apr 16 09:41 tmp_fil
 ```
 {% endcode %}
+
 e

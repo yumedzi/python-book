@@ -1,12 +1,15 @@
-# Namespaces
+# Scopes of visibility
 
-Namespaces are just dictionaries with some names (what we call variable name) mapped to objects (actual data in memory). This mapping allows to access target object by a name that we've assigned to it. So: 
+Namespaces are just dictionaries with some names (what we call variable name) mapped to objects (actual data in memory). This mapping allows to access target object by a name that we've assigned to it. So:
+
 ```python
 some_string = "Hello World"
 ```
-creates a reference to the "Hello Worold" object, and makes it accessible by variable name ```some_string```.
+
+creates a reference to the "Hello Worold" object, and makes it accessible by variable name `some_string`.
 
 In this case our namespace will be:
+
 ```python
 {"some_string": "Hello World"}
 ```
@@ -15,11 +18,12 @@ In Python it's possible to have multiple namespaces (for example: each function 
 
 ## Scopes of visibility
 
-> All variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable. 
+> All variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable.
 
-> The scope of a variable determines the portion of the program where you can access a particular identifier. 
+> The scope of a variable determines the portion of the program where you can access a particular identifier.
 
 Scopes of visibility in Python:
+
 * Builtin variables
 * Global variables
 * Enclosed variables
@@ -27,12 +31,11 @@ Scopes of visibility in Python:
 
 The search is goes only in those 4 places!
 
-<img src="../images/scope_resolution_1.png">
+![](../images/scope\_resolution\_1.png)
 
-Local variables can be accessed only inside the function in which they are declared, whereas global variables can be accessed throughout the program body by all functions. When you call a function, the variables declared inside it are brought into scope. Use ```global```to access global variable.
+Local variables can be accessed only inside the function in which they are declared, whereas global variables can be accessed throughout the program body by all functions. When you call a function, the variables declared inside it are brought into scope. Use `global`to access global variable.
 
 If a name is bound in a block, it is a **local variable** of that block, unless declared as `nonlocal` or `global`. If a name is bound at the module level, it is a **global variable**. (The variables of the module code block are local and global.) If a variable is used in a code block but not defined there, it is a **free variable**.
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -115,7 +118,6 @@ In case above we don't have variable `a` in local scope so we go upper - and tak
 
 If the nearest enclosing scope for a free variable contains a global statement, the free variable is treated as a global.
 
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -146,12 +148,13 @@ Outside the function -> a: 0
 Outside the function -> b: 888
 ```
 {% endcode %}
+
 Get all locals, globals:
-* ```locals()```
-* ```globals()```
+
+* `locals()`
+* `globals()`
 
 Note: in global scope locals and globals are the same.
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -176,7 +179,6 @@ f()
 ### Enclosed scope
 
 Scope that is between global and local in nested functions
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -226,8 +228,8 @@ outer()
 enclosed variable
 ```
 {% endcode %}
-Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
 
+Introducing `nonlocal` statement which marking variable as enclosed (just like `global` does for global scope)
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -259,8 +261,8 @@ changed enclosed variable
 global variable
 ```
 {% endcode %}
-Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
 
+Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -275,12 +277,10 @@ def foo():
 foo()
 ```
 
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-
 
 UnboundLocalErrorTraceback (most recent call last)
 
@@ -312,9 +312,6 @@ def foo(a=a):
 foo()
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -325,12 +322,11 @@ foo()
 
 ### Closures
 
-<span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
+🔥
 
 Functions can use variables from outer scopes.
 
 Also it's worth to mention that those variables are searched only when function is called.
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -378,8 +374,8 @@ Running inner: 5
 Result of running inner function: 5
 ```
 {% endcode %}
-How can `inner` know about `a` if `foo` is already returned and all we can't access to it's local variables normally?
 
+How can `inner` know about `a` if `foo` is already returned and all we can't access to it's local variables normally?
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -399,4 +395,5 @@ Free vars: ('a',)
 Free var #1 value:
 ```
 {% endcode %}
+
 5

@@ -199,6 +199,8 @@ There is a common question - how exactly arguments are passing in Python's funct
 So, argument passing to a function is done not by value (we don't have "raw" data in Python, only objects that wrapping it) and not by reference (reference is int number of memory location). This is done by object-reference. In other words we are passing object itself (it's almost like passing the pointer to an object in memory).
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 def testme(my_list): 
     my_list.append("END")
@@ -207,17 +209,23 @@ my_list = [1]
 testme(my_list)
 ```
 
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+[1, 'END']
+```
+{% endcode %}
+
 ### Decorators
 
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
-
 ```python
 def deco(f): 
     def w(*args, **kwargs): 
-        print(">>> Showing results :)")
+        print("*** Showing results :) ***")
         return f(*args, **kwargs) 
     return w
 
@@ -228,12 +236,11 @@ def show_something():
 show_something()
 ```
 
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
->>> Showing results :)
+*** Showing results :) ***
 Main function output
 ```
 {% endcode %}

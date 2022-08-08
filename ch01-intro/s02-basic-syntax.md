@@ -162,9 +162,22 @@ f()
 Or:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 f.__doc__
 ```
+
+
+
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+'\n    Some nice function (the best in the world)\n    \n    :no params:\n    :return: None\n    '
+```
+{% endcode %}
 
 ### Naming rules
 

@@ -27,11 +27,15 @@ Hello World
 print "Hello World" # Python 2
 ```
 
+
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-Hello World
+  Input In [4]
+    print "Hello World" # Python 2
+    ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 ```
 {% endcode %}
 

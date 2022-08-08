@@ -55,7 +55,7 @@ To run any command at the system shell, simply prefix it with !, e.g.:
 
 {% code overflow="wrap" %}
 ```
-/notebooks
+/notebooks/V2/Basics
 ```
 {% endcode %}
 
@@ -81,7 +81,7 @@ The following examples show how to call the builtin %timeit magic, both in line 
 
 {% code overflow="wrap" %}
 ```
-502 ns ± 4.41 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
+290 ns ± 0.984 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
 ```
 {% endcode %}
 
@@ -96,7 +96,7 @@ max(x)
 
 {% code overflow="wrap" %}
 ```
-609 µs ± 2.23 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+473 µs ± 3.22 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
 ```
 {% endcode %}
 The builtin magics include:

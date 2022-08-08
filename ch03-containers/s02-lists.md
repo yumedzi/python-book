@@ -23,7 +23,7 @@ print(dir(some_list))  # Again all methods
 
 {% code overflow="wrap" %}
 ```
-['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
 ```
 {% endcode %}
 Actually beside magical methods (containing \_\_) there are not so much methods left
@@ -182,20 +182,30 @@ print(new_list)
 > Sorting of the list with elements of different types in Python 3 is forbidden (yields an TypeError exception about unsupported `<` operation).
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 new_list 
 new_list.sort()
 ```
 
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #ff0000; text-decoration-color: #ff0000">╭──────────────────────────── </span><span style="color: #800000; text-decoration-color: #800000; font-weight: bold">Traceback </span><span style="color: #bf7f7f; text-decoration-color: #bf7f7f; font-weight: bold">(most recent call last)</span><span style="color: #ff0000; text-decoration-color: #ff0000"> ────────────────────────────╮</span>
-<span style="color: #ff0000; text-decoration-color: #ff0000">│</span> <span style="color: #808000; text-decoration-color: #808000">&lt;ipython-input-17-a8ad78a8eda3&gt;</span>:<span style="color: #0000ff; text-decoration-color: #0000ff">2</span> in <span style="color: #00ff00; text-decoration-color: #00ff00">&lt;module&gt;</span>                                             <span style="color: #ff0000; text-decoration-color: #ff0000">│</span>
-<span style="color: #ff0000; text-decoration-color: #ff0000">╰───────────────────────────────────────────────────────────────────────────────────────────╯</span>
-<span style="color: #ff0000; text-decoration-color: #ff0000; font-weight: bold">TypeError: </span><span style="color: #008000; text-decoration-color: #008000">'&lt;'</span> not supported between instances of <span style="color: #008000; text-decoration-color: #008000">'str'</span> and <span style="color: #008000; text-decoration-color: #008000">'int'</span>
-</pre>
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+Input In [9], in <cell line: 2>()
+      1 new_list 
+----> 2 new_list.sort()
 
 
-
+TypeError: '<' not supported between instances of 'str' and 'int'
+```
+{% endcode %}
 But we can workaround this by using builtin function `sorted()` and specifying your own sorting function `key` which should return some values os the same type which later will be used for Python's regular sorting.
 
 
@@ -487,18 +497,28 @@ some_list[-2]
 ```IndexError``` exception is raised for non-existent index element
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 some_list[1000]
 ```
 
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #ff0000; text-decoration-color: #ff0000">╭──────────────────────────── </span><span style="color: #800000; text-decoration-color: #800000; font-weight: bold">Traceback </span><span style="color: #bf7f7f; text-decoration-color: #bf7f7f; font-weight: bold">(most recent call last)</span><span style="color: #ff0000; text-decoration-color: #ff0000"> ────────────────────────────╮</span>
-<span style="color: #ff0000; text-decoration-color: #ff0000">│</span> <span style="color: #808000; text-decoration-color: #808000">&lt;ipython-input-21-a1d5b08ec438&gt;</span>:<span style="color: #0000ff; text-decoration-color: #0000ff">1</span> in <span style="color: #00ff00; text-decoration-color: #00ff00">&lt;module&gt;</span>                                             <span style="color: #ff0000; text-decoration-color: #ff0000">│</span>
-<span style="color: #ff0000; text-decoration-color: #ff0000">╰───────────────────────────────────────────────────────────────────────────────────────────╯</span>
-<span style="color: #ff0000; text-decoration-color: #ff0000; font-weight: bold">IndexError: </span>list index out of range
-</pre>
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+---------------------------------------------------------------------------
+
+IndexError                                Traceback (most recent call last)
+
+Input In [24], in <cell line: 1>()
+----> 1 some_list[1000]
 
 
+IndexError: list index out of range
+```
+{% endcode %}
 
 ## List slices
 
@@ -696,7 +716,7 @@ from random import randrange
 
 {% code overflow="wrap" %}
 ```
-[2, 2, 4, 8, 9, 2, 4]
+[5, 7, 8, 4, 1, 5, 4, 5, 2, 7]
 ```
 {% endcode %}
 
@@ -1001,12 +1021,22 @@ list_ = list((range(1000)))
 %timeit 999 in list_
 ```
 
+
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-12.2 µs ± 35.2 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
-29.7 µs ± 68.2 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+---------------------------------------------------------------------------
+
+ModuleNotFoundError                       Traceback (most recent call last)
+
+Input In [46], in <cell line: 1>()
+----> 1 import numpy
+      2 array = numpy.array(list(range(1000)))
+      3 list_ = list((range(1000)))
+
+
+ModuleNotFoundError: No module named 'numpy'
 ```
 {% endcode %}
 

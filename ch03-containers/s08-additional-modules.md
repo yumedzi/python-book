@@ -74,7 +74,7 @@ print(student._asdict())
 
 {% code overflow="wrap" %}
 ```
-OrderedDict([('name', 'John'), ('surname', 'Jakeson'), ('age', 23), ('group', '18 B')])
+{'name': 'John', 'surname': 'Jakeson', 'age': 23, 'group': '18 B'}
 ```
 {% endcode %}
 
@@ -160,7 +160,7 @@ print(f(encountered_animals))
 {% code overflow="wrap" %}
 ```
 defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
-3.12 µs ± 67.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+2.39 µs ± 54.3 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
 The same using `setdefault` method:
@@ -189,7 +189,7 @@ print(f(encountered_animals))
 {% code overflow="wrap" %}
 ```
 {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
-2.44 µs ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+2.1 µs ± 32 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
 If we set `default_factory` to `int` we can create a counter of things:
@@ -280,7 +280,7 @@ print(list(cnt.elements()))
 
 {% code overflow="wrap" %}
 ```
-['A', 'n', 'n', 'a', 'a', 'a', 'M', 'd', 'r', 'i', 'g', 'l']
+['a', 'a', 'a', 'a', 'n', 'n', 'm', 'd', 'r', 'i', 'g', 'l']
 ```
 {% endcode %}
 
@@ -295,7 +295,7 @@ print(cnt.most_common(3))
 
 {% code overflow="wrap" %}
 ```
-[('a', 3), ('n', 2), ('A', 1)]
+[('a', 4), ('n', 2), ('m', 1)]
 ```
 {% endcode %}
 
@@ -413,18 +413,22 @@ print(f'b:\n{b}, shape is {b.shape}')
 print(f"Transpose T:\n{b.T}")
 ```
 
+
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-a is [2 3 4], type is int64, len is 3, shape is (3,)
-b:
-[[1 2 3]
- [4 5 6]], shape is (2, 3)
-Transpose T:
-[[1 4]
- [2 5]
- [3 6]]
+---------------------------------------------------------------------------
+
+ModuleNotFoundError                       Traceback (most recent call last)
+
+Input In [122], in <cell line: 1>()
+----> 1 import numpy as np
+      3 a = np.array([2,3,4])
+      4 print(f'a is {a}, type is {a.dtype}, len is {len(a)}, shape is {a.shape}')
+
+
+ModuleNotFoundError: No module named 'numpy'
 ```
 {% endcode %}
 
@@ -437,21 +441,22 @@ print("Transforming, mult by 3:\n", b * 3)
 print("Changing shape:\n", b.reshape(1, 6))
 ```
 
+
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-Transforming, add 0.5:
- [[1.5 2.5 3.5]
- [4.5 5.5 6.5]]
-Transforming, add 3*b:
- [[ 4  8 12]
- [16 20 24]]
-Transforming, mult by 3:
- [[ 3  6  9]
- [12 15 18]]
-Changing shape:
- [[1 2 3 4 5 6]]
+---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+Input In [123], in <cell line: 1>()
+----> 1 print("Transforming, add 0.5:\n", b + .5)
+      2 print("Transforming, add 3*b:\n", b + 3*b)
+      3 print("Transforming, mult by 3:\n", b * 3)
+
+
+TypeError: can only concatenate list (not "float") to list
 ```
 {% endcode %}
 
@@ -480,7 +485,7 @@ print(dir(bytes_))
 {% code overflow="wrap" %}
 ```
 b'\xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd1\x96\xd1\x82, \xd0\xa1\xd0\xb2\xd1\x96\xd1\x82\xd0\xb5!'
-['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'center', 'count', 'decode', 'endswith', 'expandtabs', 'find', 'fromhex', 'hex', 'index', 'isalnum', 'isalpha', 'isascii', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'center', 'count', 'decode', 'endswith', 'expandtabs', 'find', 'fromhex', 'hex', 'index', 'isalnum', 'isalpha', 'isascii', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 {% endcode %}
 

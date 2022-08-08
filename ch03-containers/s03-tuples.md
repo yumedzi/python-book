@@ -104,7 +104,7 @@ print( dir(some_tuple))  # Yep, again all methods
 
 {% code overflow="wrap" %}
 ```
-['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
 ```
 {% endcode %}
 That's right - if not counting magic methods - not many at all. Just ```count``` and ```index```!
@@ -280,7 +280,7 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 
 {% code overflow="wrap" %}
 ```
-2022, 8, 7, 22, 4, 21, 6, 219, -1
+2022, 8, 8, 0, 2, 32, 0, 220, -1
 ```
 {% endcode %}
 

@@ -158,6 +158,8 @@ print(fd["1"])
 The dict with logging around setting a key:
 
 
+🪄 _<mark style="color:green;">Code:</mark>_
+
 ```python
 class VerboseDict(dict):
     def __setitem__(self, key, value):
@@ -170,7 +172,20 @@ vd[1] = 100500
 vd
 ```
 
+📟 _<mark style="color:green;">Output:</mark>_
 
+{% code overflow="wrap" %}
+```
+Set: z -> !
+Set: 1 -> 100500
+
+
+
+
+
+{'x': 1, 'y': 2, 'z': '!', 1: 100500}
+```
+{% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -325,13 +340,13 @@ print(id(l))
 ```
 >>> Use parent's constructor but print this line!
 >>> Original list: []
-140690636702248
+140286789394384
 >>> Before running old __init__: []
 >>> After running old __init__: ['a', 'b', 'c', 'd', 'e']
 <class '__main__.SuperList'>
 New 'list': ['a', 'b', 'c', 'd', 'e', 'last element!']
 After changes: [100, 'c', 'd', 'AAA', 'BBB']
-140690636702248
+140286789394384
 ```
 {% endcode %}
 ### `super()` based on another class
@@ -522,7 +537,7 @@ D().m()
 {% code overflow="wrap" %}
 ```
 [<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.C'>, <class 'object'>]
-(<class '__main__.B'>, <__main__.D object at 0x7f4245717dd8>)
+(<class '__main__.B'>, <__main__.D object at 0x7f971041ef50>)
 Running __getattr__, attr = m
 
 

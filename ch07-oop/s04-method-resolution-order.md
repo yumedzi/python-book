@@ -192,12 +192,11 @@ class B(object, A): pass
 
 {% code overflow="wrap" %}
 ```
+---------------------------------------------------------------------------
 
+TypeError                                 Traceback (most recent call last)
 
-TypeErrorTraceback (most recent call last)
-
-<ipython-input-2-4dd56a4b1e0f> in <module>
-      1 class A: pass
+Input In [30], in <cell line: 2>()
 ----> 2 class B(object, A): pass
 
 

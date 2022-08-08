@@ -175,32 +175,4 @@ obj.method()
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-2
-```
-{% endcode %}
-## [SOLID](https://deviq.com/solid/) principles of Object Oriented Design
-
-* **SRP** – Single Responsibility Principle
-* **OCP** – Open/Closed Principle
-* **LSP** – Liskov Substitution Principle
-* **ISP** – Interface Segregation Principle
-* **DIP** – Dependency Inversion Principle
-
-### Don't Repeat Yourself (DRY)
-
-> Not the part of SOLID, but still - very important principle
-
-* Avoid duplicate code by abstracting out things that are common and placing those things in a single location.
-* DRY is about having each piece of information and behavior in your system in a single, sensible place.
-
-### Single Responsibility Principle
-
-Every object in your system should have a single responsibility, and all the object's services should be focused on carrying out that single responsibility.
-
-### Open-Closed Principle
-
-Classes should be open for extension, and closed for modification.
+    2

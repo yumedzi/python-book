@@ -15,8 +15,6 @@ to local variables go into this new namespace. In particular, function definitio
 Class objects support two kinds of operations: attribute references and instantiation.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
-
 ```python
 class Bus:
     """ Sample Bus class """
@@ -49,17 +47,47 @@ class Bus:
     
     # Adding method __repr__:
     __repr__ = info
+```
 
+
+```python
 b = Bus("Marshrutka #40")
 b.transfer(100) # --> Bus.transfer(b, 100)
+```
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
 b.transfer(50)
 print(b.info()) # --> Bus.info(b)
+```
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
+```
+{% endcode %}
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
 b3 = Bus("Tramway #1", 8)
-Bus("Marshrutka #317")
 b3.transfer(50)
-#print(b2.__dict__)
 print(b3.info())
-# print(b) # if info() changed to __str__ or __repr__
+```
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Bus 'Tramway #1 (rate: 8 UAH)' (total: 2), transferred 50 from 200 ppl
+```
+{% endcode %}
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
 print(f"Bus.people_transferred = {Bus.people_transferred}")
 print(f"Bus.buses_count = {Bus.buses_count}")
 print(f"Bus.buses = {Bus.buses}")
@@ -69,11 +97,9 @@ print(f"Bus.buses = {Bus.buses}")
 
 {% code overflow="wrap" %}
 ```
-Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
-Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
 Bus.people_transferred = 200
-Bus.buses_count = 3
-Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]
+Bus.buses_count = 2
+Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 2), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 2), transferred 50 from 200 ppl]
 ```
 {% endcode %}
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
@@ -91,7 +117,7 @@ print(marshrutka_317.info())
 
 {% code overflow="wrap" %}
 ```
-Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl
+Bus '# 317 (rate: 7 UAH)' (total: 3), transferred 20 from 220 ppl
 ```
 {% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -107,7 +133,7 @@ print(marshrutka_317.info())
 
 {% code overflow="wrap" %}
 ```
-Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl
+Bus '# 317 (rate: 7 UAH)' (total: 3), transferred 76 from 299 ppl
 ```
 {% endcode %}
 Class variables and instance variables were changed:
@@ -172,7 +198,7 @@ print(bip.say())
 {% code overflow="wrap" %}
 ```
 Robot Bip 1.0 (1000 kg)
-Bip 1.0 says: Oooooh
+Bip 1.0 says: Beeep
 ```
 {% endcode %}
 We can re-use this class to create a robot from Futurama using the inheritance. For this we need to specify base/super class in parenthesis during new class definition.
@@ -198,7 +224,7 @@ print(bender.say())
 {% code overflow="wrap" %}
 ```
 Robot Bender (1000 kg)
-Bender says: Oh wait you’re serious. Let me laugh even harder.
+Bender says: Oh, your God!
 ```
 {% endcode %}
 As we can we still can use `say` method defined in the base class.
@@ -226,7 +252,7 @@ class D(B, C):  # change to D(C, B) and check...
 
 d = D()
 print(D.__mro__) # D.mro()
-d.a, d.x
+print(d.a, d.x)
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -234,12 +260,7 @@ d.a, d.x
 {% code overflow="wrap" %}
 ```
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
-
-
-
-
-
-('a from C', 'x from B')
+a from C x from B
 ```
 {% endcode %}
 Let's enhance our `Robot` example by inheriting from two classes at once.
@@ -312,8 +333,8 @@ print(ex.cool_method)
 
 {% code overflow="wrap" %}
 ```
-I am instance method, my instance is: <__main__.Example object at 0x7f343cf57ac8>
-<bound method Example.cool_method of <__main__.Example object at 0x7f343cf57ac8>>
+I am instance method, my instance is: <__main__.Example object at 0x7f971041d210>
+<bound method Example.cool_method of <__main__.Example object at 0x7f971041d210>>
 ```
 {% endcode %}
 ### Class methods
@@ -366,17 +387,17 @@ class Example:
     @staticmethod
     def cool_method():
         Example.attr = 123123
-        print("I am a static method, I don't have access to anything :(")
+        return "I am a static method, I don't have access to anything :("
 
     @staticmethod
     def other_stat_method(str_):
         return str_[::-1]
         
 ex = Example()
-ex.cool_method()
-Example.cool_method()
-ex.other_stat_method("Topot")
-Example.attr
+print(ex.cool_method())
+print(Example.cool_method())
+print(ex.other_stat_method("Radar"))
+print(Example.attr)
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -385,11 +406,7 @@ Example.attr
 ```
 I am a static method, I don't have access to anything :(
 I am a static method, I don't have access to anything :(
-
-
-
-
-
+radaR
 123123
 ```
 {% endcode %}

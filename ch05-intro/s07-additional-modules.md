@@ -32,9 +32,9 @@ print(p.send(-25.3))
 {% code overflow="wrap" %}
 ```
 <generator object pluser at 0x7f4b14319a20>
-0
-11
 ```
 {% endcode %}
 
+    0
+    11
     -24.3

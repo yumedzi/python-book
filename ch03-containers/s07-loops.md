@@ -289,11 +289,11 @@ print("Goodbye")
 {% code overflow="wrap" %}
 ```
 Please enter an int: 3
-Square is  9
-Please enter an int: 15
-Square is  225
-Please enter an int: 0
 ```
 {% endcode %}
 
+    Square is  9
+    Please enter an int: 15
+    Square is  225
+    Please enter an int: 0
     Goodbye

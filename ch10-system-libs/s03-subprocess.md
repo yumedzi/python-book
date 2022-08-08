@@ -765,24 +765,24 @@ with subprocess.Popen(["ls", "-la", "."], stdout=subprocess.PIPE, text=True) as 
 {% code overflow="wrap" %}
 ```
 112
-Alive
-OUTPUT:
-total 744
-drwxrwxrwx 1 jovyan users    606 Apr 16 09:50 .
-drwxrwxrwx 1 jovyan users     84 Oct  2  2019 ..
--rwxrwxrwx 1 jovyan users  52631 Feb 24 11:26 Basics_01_Introduction.ipynb
--rwxrwxrwx 1 jovyan users 133308 Apr  4 09:38 Basics_02_Strings_numbers.ipynb
--rwxrwxrwx 1 jovyan users 134635 Mar 15 11:16 Basics_03_Containers.ipynb
--rwxrwxrwx 1 jovyan users  60168 Apr  4 16:31 Basics_04_Functions.ipynb
--rwxrwxrwx 1 jovyan users  47696 Mar 22 11:39 Basics_05_Functional_Programming.ipynb
--rwxrwxrwx 1 jovyan users  30427 Mar 29 10:17 Basics_06_PEP8_Styling.ipynb
--rwxrwxrwx 1 jovyan users  71901 Apr  7 06:37 Basics_07_OOP.ipynb
--rwxrwxrwx 1 jovyan users  50381 Apr  9 10:05 Basics_08_Decorators.ipynb
--rwxrwxrwx 1 jovyan users  70916 Apr 14 09:38 Basics_09_Testing.ipynb
--rwxrwxrwx 1 jovyan users  84181 Apr 16 09:50 Basics_10_System_libs.ipynb
-lrwxrwxrwx 1 jovyan users     17 Aug 23  2019 images -> /notebooks/images
-drwxrwxrwx 1 jovyan users    762 Feb 24 11:26 .ipynb_checkpoints
 ```
 {% endcode %}
 
+    Alive
+    OUTPUT:
+    total 744
+    drwxrwxrwx 1 jovyan users    606 Apr 16 09:50 .
+    drwxrwxrwx 1 jovyan users     84 Oct  2  2019 ..
+    -rwxrwxrwx 1 jovyan users  52631 Feb 24 11:26 Basics_01_Introduction.ipynb
+    -rwxrwxrwx 1 jovyan users 133308 Apr  4 09:38 Basics_02_Strings_numbers.ipynb
+    -rwxrwxrwx 1 jovyan users 134635 Mar 15 11:16 Basics_03_Containers.ipynb
+    -rwxrwxrwx 1 jovyan users  60168 Apr  4 16:31 Basics_04_Functions.ipynb
+    -rwxrwxrwx 1 jovyan users  47696 Mar 22 11:39 Basics_05_Functional_Programming.ipynb
+    -rwxrwxrwx 1 jovyan users  30427 Mar 29 10:17 Basics_06_PEP8_Styling.ipynb
+    -rwxrwxrwx 1 jovyan users  71901 Apr  7 06:37 Basics_07_OOP.ipynb
+    -rwxrwxrwx 1 jovyan users  50381 Apr  9 10:05 Basics_08_Decorators.ipynb
+    -rwxrwxrwx 1 jovyan users  70916 Apr 14 09:38 Basics_09_Testing.ipynb
+    -rwxrwxrwx 1 jovyan users  84181 Apr 16 09:50 Basics_10_System_libs.ipynb
+    lrwxrwxrwx 1 jovyan users     17 Aug 23  2019 images -> /notebooks/images
+    drwxrwxrwx 1 jovyan users    762 Feb 24 11:26 .ipynb_checkpoints
     -rwxrwxrwx 1 jovyan users     43 Apr 16 09:41 tmp_file

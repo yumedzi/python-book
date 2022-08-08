@@ -936,10 +936,10 @@ print("Groups:", dict_["audience"]["groups"]["group"])
 {% code overflow="wrap" %}
 ```
 Parsed dict:
-OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
-Name is: Vishal
-Attribute <what> is: blablabla
 ```
 {% endcode %}
 
+    OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
+    Name is: Vishal
+    Attribute <what> is: blablabla
     Groups: ['users', 'admin']

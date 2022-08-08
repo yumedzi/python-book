@@ -288,12 +288,12 @@ print(obj.foo())
 {% code overflow="wrap" %}
 ```
 Initializing new object with val=Super Value
-Nice warm object :)
-Result of obj.foo(): Super Value
-Super Value
-Boo!
-Some value
 ```
 {% endcode %}
 
+    Nice warm object :)
+    Result of obj.foo(): Super Value
+    Super Value
+    Boo!
+    Some value
     Super Value

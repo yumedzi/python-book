@@ -165,16 +165,16 @@ dis.dis(f2)
 {% code overflow="wrap" %}
 ```
   4           0 LOAD_GLOBAL              0 (len)
-              3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)
-              6 LOAD_CONST               2 ('<lambda>.<locals>.<listcomp>')
-              9 MAKE_FUNCTION            0
-             12 LOAD_GLOBAL              1 (range)
-             15 LOAD_CONST               3 (10000)
-             18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-             21 GET_ITER
-             22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-             25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
 ```
 {% endcode %}
 
+                  3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)
+                  6 LOAD_CONST               2 ('<lambda>.<locals>.<listcomp>')
+                  9 MAKE_FUNCTION            0
+                 12 LOAD_GLOBAL              1 (range)
+                 15 LOAD_CONST               3 (10000)
+                 18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+                 21 GET_ITER
+                 22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+                 25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
                  28 RETURN_VALUE

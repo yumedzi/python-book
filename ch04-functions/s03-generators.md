@@ -109,10 +109,10 @@ for i in gen:
 {% code overflow="wrap" %}
 ```
 <generator object gen_func at 0x103dcf518>
-2
-4
-6
 ```
 {% endcode %}
 
+    2
+    4
+    6
     8

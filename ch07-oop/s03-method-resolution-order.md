@@ -203,10 +203,8 @@ TypeErrorTraceback (most recent call last)
 <ipython-input-2-4dd56a4b1e0f> in <module>
       1 class A: pass
 ----> 2 class B(object, A): pass
-
-
-TypeError: Cannot create a consistent method resolution
 ```
 {% endcode %}
 
+    TypeError: Cannot create a consistent method resolution
     order (MRO) for bases object, A

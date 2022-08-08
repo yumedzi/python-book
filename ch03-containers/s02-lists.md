@@ -1009,15 +1009,17 @@ You need to be aware of such cases.
 
 If you use list for complex math calculations - consider using `numpy`.
 
+They are a bit slower to create:
+
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 import numpy
-array = numpy.array(list(range(1000)))
+array_ = numpy.array(list(range(1000)))
 list_ = list((range(1000)))
 
-%timeit 999 in array
+%timeit 999 in array_
 %timeit 999 in list_
 ```
 
@@ -1025,8 +1027,39 @@ list_ = list((range(1000)))
 
 {% code overflow="wrap" %}
 ```
-20.4 µs ± 68 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
-15.2 µs ± 69.7 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+20.6 µs ± 165 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+15.4 µs ± 89.8 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+```
+{% endcode %}
+But they are much faster (x5 in the following example) for a vector operations:
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+import math
+%timeit list(map(math.sqrt, list_))
+```
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+106 µs ± 1.05 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+```
+{% endcode %}
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+%timeit numpy.sqrt(array_)
+```
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+21.2 µs ± 375 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
 

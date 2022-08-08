@@ -90,6 +90,8 @@ StopIteration                             Traceback (most recent call last)
       7 print( a_iter )
       8 print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
 ----> 9 print (a_iter.__next__())
+
+
+StopIteration:
 ```
 {% endcode %}
-    StopIteration:

@@ -755,6 +755,6 @@ drwxrwxrwx 1 jovyan users     84 Oct  2  2019 ..
 -rwxrwxrwx 1 jovyan users  84181 Apr 16 09:50 Basics_10_System_libs.ipynb
 lrwxrwxrwx 1 jovyan users     17 Aug 23  2019 images -> /notebooks/images
 drwxrwxrwx 1 jovyan users    762 Feb 24 11:26 .ipynb_checkpoints
+-rwxrwxrwx 1 jovyan users     43 Apr 16 09:41 tmp_file
 ```
 {% endcode %}
-    -rwxrwxrwx 1 jovyan users     43 Apr 16 09:41 tmp_file

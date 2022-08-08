@@ -922,6 +922,6 @@ Parsed dict:
 OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
 Name is: Vishal
 Attribute <what> is: blablabla
+Groups: ['users', 'admin']
 ```
 {% endcode %}
-    Groups: ['users', 'admin']

@@ -202,6 +202,6 @@ TypeErrorTraceback (most recent call last)
 
 
 TypeError: Cannot create a consistent method resolution
+order (MRO) for bases object, A
 ```
 {% endcode %}
-    order (MRO) for bases object, A

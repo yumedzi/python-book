@@ -34,6 +34,6 @@ print(p.send(-25.3))
 <generator object pluser at 0x7f4b14319a20>
 0
 11
+-24.3
 ```
 {% endcode %}
-    -24.3

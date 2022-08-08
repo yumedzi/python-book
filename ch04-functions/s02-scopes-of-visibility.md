@@ -389,6 +389,6 @@ print("Free var #1 value:", cell.cell_contents)
 ```
 Free vars: ('a',)
 (<cell at 0x7f3e88272258: int object at 0x5594948e94a0>,)
+Free var #1 value: 5
 ```
 {% endcode %}
-    Free var #1 value: 5

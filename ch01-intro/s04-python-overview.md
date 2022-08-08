@@ -289,6 +289,6 @@ Result of obj.foo(): Super Value
 Super Value
 Boo!
 Some value
+Super Value
 ```
 {% endcode %}
-    Super Value

@@ -640,6 +640,6 @@ print(Template('$who likes $cookies').safe_substitute(d)) # proper way
 {% code overflow="wrap" %}
 ```
 Johnny likes whiskey
+tim likes $cookies
 ```
 {% endcode %}
-    tim likes $cookies

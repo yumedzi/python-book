@@ -169,6 +169,6 @@ dis.dis(f2)
              21 GET_ITER
              22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
              25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             28 RETURN_VALUE
 ```
 {% endcode %}
-                 28 RETURN_VALUE

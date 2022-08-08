@@ -44,6 +44,6 @@ sleep(...)
     sleep(seconds)
     
     Delay execution for a given number of seconds.  The argument may be
+    a floating point number for subsecond precision.
 ```
 {% endcode %}
-        a floating point number for subsecond precision.

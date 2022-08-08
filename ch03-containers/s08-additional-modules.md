@@ -633,6 +633,6 @@ print(list(Animal))
 {% code overflow="wrap" %}
 ```
 <enum 'Animal'>
+[<Animal.ANT: 1>, <Animal.BEE: 2>, <Animal.CAT: 3>, <Animal.DOG: 4>]
 ```
 {% endcode %}
-    [<Animal.ANT: 1>, <Animal.BEE: 2>, <Animal.CAT: 3>, <Animal.DOG: 4>]

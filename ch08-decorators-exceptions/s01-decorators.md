@@ -1112,6 +1112,6 @@ def f():
 It was nice, thank you for all..
 Some text
 Some text
+It was nice, thank you for all..
 ```
 {% endcode %}
-    It was nice, thank you for all..

@@ -37,10 +37,12 @@ print(h2("Beatufiul World"))
 {% code overflow="wrap" %}
 ```
 Hello World
-Margarita, Bye-bye, ja nai!..
-Hello Beatufiul World
 ```
 {% endcode %}
+    Margarita, Bye-bye, ja nai!..
+    Hello Beatufiul World
+
+
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -204,7 +206,6 @@ print(fib.cache_info())
 {% code overflow="wrap" %}
 ```
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
-CacheInfo(hits=36, misses=20, maxsize=None, currsize=2
 ```
 {% endcode %}
-0)
+    CacheInfo(hits=36, misses=20, maxsize=None, currsize=20)

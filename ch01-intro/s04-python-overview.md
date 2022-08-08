@@ -153,11 +153,12 @@ print(mult(10))
 {% code overflow="wrap" %}
 ```
 22
-30
-85
-60
 ```
 {% endcode %}
+    30
+    85
+    60
+
 
 ### Misc.
 
@@ -241,9 +242,10 @@ show_something()
 {% code overflow="wrap" %}
 ```
 *** Showing results :) ***
-Main function output
 ```
 {% endcode %}
+    Main function output
+
 
 ### OOP
 
@@ -288,12 +290,11 @@ print(obj.foo())
 {% code overflow="wrap" %}
 ```
 Initializing new object with val=Super Value
-Nice warm object :)
-Result of obj.foo(): Super Value
-Super Value
-Boo!
-Some value
-Super Valu
 ```
 {% endcode %}
-e
+    Nice warm object :)
+    Result of obj.foo(): Super Value
+    Super Value
+    Boo!
+    Some value
+    Super Value

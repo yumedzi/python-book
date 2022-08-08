@@ -172,10 +172,12 @@ print(r"Printing RAW string with <\n> and <\t\t> as special characters")
 {% code overflow="wrap" %}
 ```
 Printing string with <
-> and <		> as special characters
-Printing RAW string with <\n> and <\t\t> as special characters
 ```
 {% endcode %}
+    > and <		> as special characters
+    Printing RAW string with <\n> and <\t\t> as special characters
+
+
 Module `re` can compile regex pattern making it's repeated usage faster.
 
 Also it is worth to understand the difference between `match` and `search` methods:
@@ -306,13 +308,15 @@ if m:
 {% code overflow="wrap" %}
 ```
 <re.Match object; span=(10, 34), match='Foo bar 12x Foo asd  34 '>
-('asd', '34')
-Foo bar 12x Foo asd  34 
-34
-asd
-Foo asd  34
 ```
 {% endcode %}
+    ('asd', '34')
+    Foo bar 12x Foo asd  34 
+    34
+    asd
+    Foo asd  34 
+
+
 An example of re-using the previously found group in the regexp. Here we try to find the username and password for the main account (which is defined by `main_user` config option):
 
 > NOTE: we use `re.S` (singleline) flag to make `.` to match any characters including `\n` too.
@@ -389,14 +393,16 @@ for m in re.finditer(pattern, text):
 {% code overflow="wrap" %}
 ```
 Result of re.findall: [('cmonet324@salon_paris.com', 'Claude', 'Monet'), ('Elizabeth2@windsor.com', 'Elizabeth', 'II'), ('b.allen@starlabs.com', 'Barry', 'Allen')]
-User <cmonet324@salon_paris.com>: Claude Monet
-User <Elizabeth2@windsor.com>: Elizabeth II
-User <b.allen@starlabs.com>: Barry Allen
-User <cmonet324@salon_paris.com>: Claude Monet
-User <Elizabeth2@windsor.com>: Elizabeth II
-User <b.allen@starlabs.com>: Barry Allen
 ```
 {% endcode %}
+    User <cmonet324@salon_paris.com>: Claude Monet
+    User <Elizabeth2@windsor.com>: Elizabeth II
+    User <b.allen@starlabs.com>: Barry Allen
+    User <cmonet324@salon_paris.com>: Claude Monet
+    User <Elizabeth2@windsor.com>: Elizabeth II
+    User <b.allen@starlabs.com>: Barry Allen
+
+
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

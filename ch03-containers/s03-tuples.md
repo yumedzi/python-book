@@ -113,11 +113,32 @@ That's right - if not counting magic methods - not many at all. Just ```count```
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| ```some_tuple[i]```     | Return element by index ```i``` (int)
+| ```some_tuple[i]``` 📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return element by index ```i``` (int)
+```
+{% endcode %}
+
 | ```some_tuple[i:j]```   | Return new tuple - slice from element by index ```i``` till ```j-1```
 | ```some_tuple[i:j:z]```  | Return new tuple - slice with step ```z```
-| ```count(x)```          | Return number of object ```x``` found in a tuple
-| ```index(x)```          | Return first index of object ```x``` in tuple or raise `ValueError` if not found
+| ```count(x)```      📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return number of object ```x``` found in a tuple
+```
+{% endcode %}
+
+| ```index(x)```      📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return first index of object ```x``` in tuple or raise `ValueError` if not found
+```
+{% endcode %}
+
 | ```x in some_tuple```   | Return True/False - is object ```x```is part of list ```some_tuple```?
 | ```some_tuple + ("a", "b") ``` | Return new tuple - a result of two tuples merging
 

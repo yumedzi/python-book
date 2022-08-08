@@ -85,14 +85,11 @@ A()
 {% code overflow="wrap" %}
 ```
 <__main__.A object at 0x7ff51775b4a8>
-
-
-
-
-
-<__main__.A at 0x7ff51775b4e0>
 ```
 {% endcode %}
+    <__main__.A at 0x7ff51775b4e0>
+
+
 
 ### Hash
 
@@ -167,18 +164,20 @@ help(A)
 {% code overflow="wrap" %}
 ```
 None
-Help on class A in module __main__:
-
-class A(builtins.object)
- |  Data descriptors defined here:
- |  
- |  __dict__
- |      dictionary for instance variables (if defined)
- |  
- |  __weakref__
- |      list of weak references to the object (if defined)
 ```
 {% endcode %}
+    Help on class A in module __main__:
+    
+    class A(builtins.object)
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+    
+
 
 ### Module
 
@@ -278,9 +277,10 @@ print(b1 <= b2)
 {% code overflow="wrap" %}
 ```
 True
-False
 ```
 {% endcode %}
+    False
+
 
 ### Iterator protocol
 
@@ -356,8 +356,9 @@ except AttributeError:
 {% code overflow="wrap" %}
 ```
 False
-We can't access attribute b as it is not listed in __slots__
 ```
 {% endcode %}
+    We can't access attribute b as it is not listed in __slots__
+
 
 `__slots__` are meaninless when the class is inherited from the one which doesn't have `__slots__`.

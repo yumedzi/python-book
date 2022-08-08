@@ -70,12 +70,14 @@ print(f"Bus.buses = {Bus.buses}")
 {% code overflow="wrap" %}
 ```
 Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
-Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
-Bus.people_transferred = 200
-Bus.buses_count = 3
-Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]
 ```
 {% endcode %}
+    Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl
+    Bus.people_transferred = 200
+    Bus.buses_count = 3
+    Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]
+
+
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
 
 
@@ -126,9 +128,10 @@ print(marshrutka_317.people_transferred)
 {% code overflow="wrap" %}
 ```
 299
-76
 ```
 {% endcode %}
+    76
+
 
 ## Inheritance
 
@@ -165,9 +168,11 @@ print(bip.say())
 {% code overflow="wrap" %}
 ```
 Robot Bip 1.0 (1000 kg)
-Bip 1.0 says: Oooooh
 ```
 {% endcode %}
+    Bip 1.0 says: Oooooh
+
+
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
 
 
@@ -191,9 +196,10 @@ print(bender.say())
 {% code overflow="wrap" %}
 ```
 Robot Bender (1000 kg)
-Bender says: Oh wait you’re serious. Let me laugh even harder.
 ```
 {% endcode %}
+    Bender says: Oh wait you’re serious. Let me laugh even harder.
+
 
 ## Multiple Inheritance
 
@@ -226,14 +232,12 @@ d.a, d.x
 {% code overflow="wrap" %}
 ```
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
-
-
-
-
-
-('a from C', 'x from B')
 ```
 {% endcode %}
+    ('a from C', 'x from B')
+
+
+
 Let's enhance our `Robot` example by inheriting from two classes at once.
 
 
@@ -310,9 +314,10 @@ print(ex.cool_method)
 {% code overflow="wrap" %}
 ```
 I am instance method, my instance is: <__main__.Example object at 0x7f343cf57ac8>
-<bound method Example.cool_method of <__main__.Example object at 0x7f343cf57ac8>>
 ```
 {% endcode %}
+    <bound method Example.cool_method of <__main__.Example object at 0x7f343cf57ac8>>
+
 
 ### Class methods
 
@@ -346,10 +351,11 @@ Example.class_method() # Example.class_method(Example)
 {% code overflow="wrap" %}
 ```
 CLS: 5
-INSTANCE: 25
-CLS: 5
 ```
 {% endcode %}
+    INSTANCE: 25
+    CLS: 5
+
 
 ### Static method
 
@@ -383,15 +389,17 @@ Example.attr
 {% code overflow="wrap" %}
 ```
 I am a static method, I don't have access to anything :(
-I am a static method, I don't have access to anything :(
-
-
-
-
-
-123123
 ```
 {% endcode %}
+    I am a static method, I don't have access to anything :(
+
+
+
+
+
+    123123
+
+
 
 # Old and New classes
 

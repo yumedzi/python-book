@@ -66,7 +66,7 @@ if condition:
     do_something1()
         do_something2()
 ```
-📟 _<mark style="color:green;">Output:</mark>_
+        📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
@@ -101,13 +101,7 @@ Naming rules:
 Reserved words (which can't be used as variable names):
 
 ```py
-and📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-   del       from      not       while
-```
-{% endcode %}
+and       del       from      not       while    
 as        elif      global    or        with     
 assert    else      if        pass      yield    
 break     except    import    print     True          
@@ -151,14 +145,17 @@ help(f)
 {% code overflow="wrap" %}
 ```
 Help on function f in module __main__:
-
-f()
-    Some nice function (the best in the world)
-    
-    :no params:
-    :return: None
 ```
 {% endcode %}
+    
+    f()
+        Some nice function (the best in the world)
+        
+        :no params:
+        :return: None
+    
+
+
 Or:
 
 

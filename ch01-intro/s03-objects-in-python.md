@@ -66,10 +66,12 @@ print(f"#3. a now is {a}")
 {% code overflow="wrap" %}
 ```
 #1. a now is 42
-#2. a now is [1, 2, 42]
-#3. a now is Hello World
 ```
 {% endcode %}
+    #2. a now is [1, 2, 42]
+    #3. a now is Hello World
+
+
 A lot of variables can point to same object. You don't need to declare what exact type variable should be.
 
 * Compare objects by value: ```==```
@@ -90,9 +92,11 @@ print("a is b →", a is b)
 {% code overflow="wrap" %}
 ```
 a == b → True
-a is b → True
 ```
 {% endcode %}
+    a is b → True
+
+
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -108,9 +112,10 @@ print("a is b →", a is b)
 {% code overflow="wrap" %}
 ```
 a == b → True
-a is b → False
 ```
 {% endcode %}
+    a is b → False
+
 
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
 

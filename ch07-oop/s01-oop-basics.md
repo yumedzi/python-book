@@ -145,14 +145,11 @@ obj.method()
 {% code overflow="wrap" %}
 ```
 Old result: 1
-
-
-
-
-
-2
 ```
 {% endcode %}
+    2
+
+
 
 * *Overridding*, also called as *dynamic* or *runtime* polymorphism. 
     * *Method overriding* - defining a method in a subclass with the same name as in the parent class.

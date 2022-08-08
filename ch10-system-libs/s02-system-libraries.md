@@ -66,26 +66,28 @@ for root, dirs, files in os.walk('/tmp/'):
 {% code overflow="wrap" %}
 ```
 ROOT:/tmp/
-DIRS:['com.apple.launchd.jhoY1qEd1J', 'com.apple.launchd.T3n42gvHZB', 'com.apple.launchd.xfxnszQVjh']
-FILES:['1']
-
-ROOT:/tmp/com.apple.launchd.jhoY1qEd1J
-DIRS:[]
-FILES:['org.macosforge.xquartz:0']
-
-ROOT:/tmp/com.apple.launchd.T3n42gvHZB
-DIRS:['testme']
-FILES:['Listeners']
-
-ROOT:/tmp/com.apple.launchd.T3n42gvHZB/testme
-DIRS:[]
-FILES:[]
-
-ROOT:/tmp/com.apple.launchd.xfxnszQVjh
-DIRS:[]
-FILES:['Render']
 ```
 {% endcode %}
+    DIRS:['com.apple.launchd.jhoY1qEd1J', 'com.apple.launchd.T3n42gvHZB', 'com.apple.launchd.xfxnszQVjh']
+    FILES:['1']
+    
+    ROOT:/tmp/com.apple.launchd.jhoY1qEd1J
+    DIRS:[]
+    FILES:['org.macosforge.xquartz:0']
+    
+    ROOT:/tmp/com.apple.launchd.T3n42gvHZB
+    DIRS:['testme']
+    FILES:['Listeners']
+    
+    ROOT:/tmp/com.apple.launchd.T3n42gvHZB/testme
+    DIRS:[]
+    FILES:[]
+    
+    ROOT:/tmp/com.apple.launchd.xfxnszQVjh
+    DIRS:[]
+    FILES:['Render']
+    
+
 
 ```python
 # Mass file deleter - !DON'T TRY THIS AT HOME!
@@ -138,9 +140,11 @@ print(p.resolve())  # os.path.abspath
 {% code overflow="wrap" %}
 ```
 example
-/notebooks/V2/Basics/example
 ```
 {% endcode %}
+    /notebooks/V2/Basics/example
+
+
 
 ```python
 print(p.exists()) # `os.path.exists`
@@ -167,9 +171,11 @@ print(p.is_dir()) # os.path.is_dir
 {% code overflow="wrap" %}
 ```
 True
-True
 ```
 {% endcode %}
+    True
+
+
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

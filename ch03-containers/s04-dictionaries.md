@@ -73,9 +73,11 @@ print("d2:", d2)
 {% code overflow="wrap" %}
 ```
 d1: {'Aria': 'Stark', 'Faceless': 'Man'}
-d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
 ```
 {% endcode %}
+    d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
+
+
 Using method `dict.fromkeys` we can create a new dict from an iterable (some collection) of keys.
 Second attribute will allow to set a default value for all keys (or it will be `None`).
 
@@ -256,9 +258,30 @@ print( dir(some_dict) ) # All methods a gain
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| ```len()```     | Return a number of keys in dictionary
-| ```some_dict[x]```     | Return (or assign) value for key ```x```
-| ```get(x, d)```        | Return value for key ```x``` or ```d``` if it is not found
+| ```len()``` 📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return a number of keys in dictionary
+```
+{% endcode %}
+
+| ```some_dict[x]``` 📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return (or assign) value for key ```x```
+```
+{% endcode %}
+
+| ```get(x, d)```    📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return value for key ```x``` or ```d``` if it is not found
+```
+{% endcode %}
+
 | ```x in some_dict```   | Return True/False - is key ```x``` is in dictionary?
 | ```keys()```    | Return a *view* object that provides an access to all keys in dictionary
 | ```values()```  | Return a *view* object that provides an access to all values in dictionary 
@@ -267,13 +290,54 @@ print( dir(some_dict) ) # All methods a gain
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| ```pop(k, d)```         | Return value and remove key from dictionary (```d``` - default value)
-| ```popitem()```         | Return tuple ```(key, value)``` and remove it from dictionary
-| ```update(other_dict)```          | Update dictionary with key-values of ```other_dict```
+| ```pop(k, d)```     📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return value and remove key from dictionary (```d``` - default value)
+```
+{% endcode %}
+
+| ```popitem()```     📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return tuple ```(key, value)``` and remove it from dictionary
+```
+{% endcode %}
+
+| ```update(other_dict)```      📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Update dictionary with key-values of ```other_dict```
+```
+{% endcode %}
+
 | ```update(x1=y1, x2=y2, ...)```   | Update dictionary with key-values pairs: "x1": "y1", "x2": "y2", ...
-| ```clear()```                     | Empty whole dictionary (the same as ```some_dict = {}```
-| ```copy()```                      | Return shallow copy of dictionary
-| ```setdefault(k, d)```            | Set value ```d``` for key ```k``` is it was not found and/or return value for that key
+| ```clear()```                 📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Empty whole dictionary (the same as ```some_dict = {}```
+```
+{% endcode %}
+
+| ```copy()```                  📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Return shallow copy of dictionary
+```
+{% endcode %}
+
+| ```setdefault(k, d)```        📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+| Set value ```d``` for key ```k``` is it was not found and/or return value for that key
+```
+{% endcode %}
 
 ## Examples
 
@@ -348,16 +412,17 @@ some_dict["6th_book"]
 {% code overflow="wrap" %}
 ```
 ---------------------------------------------------------------------------
-
-KeyError                                  Traceback (most recent call last)
-
-Input In [204], in <cell line: 1>()
-----> 1 some_dict["6th_book"]
-
-
-KeyError: '6th_book'
 ```
 {% endcode %}
+    KeyError                                  Traceback (most recent call last)
+
+    Input In [204], in <cell line: 1>()
+    ----> 1 some_dict["6th_book"]
+
+
+    KeyError: '6th_book'
+
+
 More correctly:
 
 
@@ -621,11 +686,12 @@ print("What is left:", d)
 {% code overflow="wrap" %}
 ```
 Man
-What is left: {'Aria': 'Stark', 'Yaken': 'Gharr', 'some_other_key': 123}
-('some_other_key', 123)
-What is left: {'Aria': 'Stark', 'Yaken': 'Gharr'}
 ```
 {% endcode %}
+    What is left: {'Aria': 'Stark', 'Yaken': 'Gharr', 'some_other_key': 123}
+    ('some_other_key', 123)
+    What is left: {'Aria': 'Stark', 'Yaken': 'Gharr'}
+
 
 ### Dictionary view objects
 
@@ -671,14 +737,16 @@ print("list(values):", list(values))
 {% code overflow="wrap" %}
 ```
 dict is {'Alfa': 0, 'Bravo': 1, 'Charlie': 2, 'Delta': 3}
- - - -
-keys (len is dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])): dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
-list(keys): ['Alfa', 'Bravo', 'Charlie', 'Delta']
- - - -
-values:  (len is 4): dict_values([0, 1, 2, 3])
-list(values): [0, 1, 2, 3]
 ```
 {% endcode %}
+     - - -
+    keys (len is dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])): dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
+    list(keys): ['Alfa', 'Bravo', 'Charlie', 'Delta']
+     - - -
+    values:  (len is 4): dict_values([0, 1, 2, 3])
+    list(values): [0, 1, 2, 3]
+
+
 Check how dynamic are `dictviews`:
 
 
@@ -698,9 +766,10 @@ print("After:", d.keys())
 {% code overflow="wrap" %}
 ```
 Before: dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
-After: dict_keys(['Alfa', 'Bravo'])
 ```
 {% endcode %}
+    After: dict_keys(['Alfa', 'Bravo'])
+
 
 ## Dictionary comprehesions
 

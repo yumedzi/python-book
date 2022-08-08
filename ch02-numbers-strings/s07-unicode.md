@@ -23,14 +23,7 @@ Each Unicode symbol has unique name and codepoint (it's number). Codepoint inclu
 Some examples:
 
 ```python
-0061📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-'a'; LATIN SMALL LETTER A
-```
-{% endcode %}
-
+0061    'a'; LATIN SMALL LETTER A
 ...
 007B    '{'; LEFT CURLY BRACKET
 ...
@@ -133,9 +126,11 @@ print(unicodedata.name("☕"))
 {% code overflow="wrap" %}
 ```
 CYRILLIC SMALL LETTER GHE WITH UPTURN
-HOT BEVERAGE
 ```
 {% endcode %}
+    HOT BEVERAGE
+
+
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -150,9 +145,10 @@ print(unicodedata.lookup(cap_char))
 {% code overflow="wrap" %}
 ```
 CYRILLIC CAPITAL LETTER GHE WITH UPTURN
-Ґ
 ```
 {% endcode %}
+    Ґ
+
 
 ### Encoding and Decoding
 

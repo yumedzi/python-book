@@ -67,10 +67,12 @@ print(D.mro())
 {% code overflow="wrap" %}
 ```
 from C
-(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
-[<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>]
 ```
 {% endcode %}
+    (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
+    [<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>]
+
+
 Difference to old MRO is the additional check done each time before adding some class to the search path. The check is:
 
 * Is this class is the parent for some other class in the search path that will be added soon?
@@ -133,15 +135,17 @@ D.mro()
 {% code overflow="wrap" %}
 ```
 [__main__.D,
- __main__.C,
- __main__.A1,
- __main__.A,
- __main__.B1,
- __main__.B,
- __main__.C1,
- object]
 ```
 {% endcode %}
+     __main__.C,
+     __main__.A1,
+     __main__.A,
+     __main__.B1,
+     __main__.B,
+     __main__.C1,
+     object]
+
+
 
 <img src="../images/tr_07_MRO_of_D.png">
 
@@ -190,21 +194,19 @@ class B(object, A): pass
 ```
 
 
+    
+
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-
-
 TypeErrorTraceback (most recent call last)
-
-<ipython-input-2-4dd56a4b1e0f> in <module>
-      1 class A: pass
-----> 2 class B(object, A): pass
-
-
-TypeError: Cannot create a consistent method resolution
-order (MRO) for bases object,
 ```
 {% endcode %}
-A
+    <ipython-input-2-4dd56a4b1e0f> in <module>
+          1 class A: pass
+    ----> 2 class B(object, A): pass
+    
+
+    TypeError: Cannot create a consistent method resolution
+    order (MRO) for bases object, A

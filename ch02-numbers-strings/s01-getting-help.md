@@ -41,12 +41,11 @@ help(time.sleep)
 {% code overflow="wrap" %}
 ```
 Help on built-in function sleep in module time:
-
-sleep(...)
-    sleep(seconds)
-    
-    Delay execution for a given number of seconds.  The argument may be
-    a floating point number for subsecond precisio
 ```
 {% endcode %}
-n.
+    
+    sleep(...)
+        sleep(seconds)
+        
+        Delay execution for a given number of seconds.  The argument may be
+        a floating point number for subsecond precision.

@@ -1,30 +1,32 @@
 ## Installation, IDEs etc.
 
-* Python.org: 
-    *  https://www.python.org/downloads/ 
+Python can be installed right away from the official site or use conda distro.
 
-* Pip (already installed in new versions of Python) is Python package manager.
-* Conda (Miniconda):
+* [Python.org](https://www.python.org/downloads/)
+* Conda (Miniconda) - alternative maintained distribution of Python:
     * https://docs.conda.io/en/latest/miniconda.html
 
-Main commands:
+After installation `pip` tool (Python package manager) can be used to manage 3rd party packages    
 
+Main commands:
 * install package (install requirements from a file):
 
-    ```bash
-    pip install jupyter virtualenv
-    pip install -r requirements.txt
-    ```
+```bash
+pip install jupyter virtualenv
+pip install -r requirements.txt
+```
 * uninstall package:
-    ```bash
-    pip uninstall requests
-    ```
 
-* list all installed packages:
-    ```bash
-    pip freeze
-    pip freeze > requirements.txt
-    ```
+```bash
+pip uninstall requests
+```
+
+* list and export all installed packages:
+
+```bash
+pip freeze
+pip freeze > requirements.txt
+```
 
 ### Virtual environments
 

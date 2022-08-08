@@ -1,8 +1,10 @@
 # Notes about this Book
 
-### Code
+### Code (without results)
 
-This book is the result of semi-manual conversion from [Jupyter notebooks](http://jupyter.org/) which show dynamic result of presented code executed. That's why sometimes you will see the code itself, for example:
+> All highlighted code you see across the book is the raw Python code. By default it doesn't have label if the code sample doesn't have any results presented.
+
+This book is the result of semi-manual conversion from [Jupyter notebooks](http://jupyter.org/) which show dynamic result of presented code executed. That's why sometimes you will see the formatted and highlighted Python code itself, for example:
 
 ```python
 def mult(a, b=5): 
@@ -11,20 +13,24 @@ def mult(a, b=5):
 
 This represents regular Python code as you would write in your IDE. You can simply copy it and use in your program or run in Python interactive session after pasting it there.
 
-To show that we are running some code and receiving output sometimes I will use `>>>` before actual command run so you could understand that the very next lines are result of previous command:
+### Code with results
 
+> To show the code + it's results I am using labels before code or output blocks across the books to help differentiate between them (because of `GitBook` enforced formatting previously it was hard to understand where is the code and where is it's results).
+
+The presented code together with it's results/output will be shown in two variations:
+
+* Code with output together (code will be prefixed with `>>>`):
+
+To show that we are running some code and receiving output sometimes I will use `>>>` before actual command run so you could understand that the very next lines are results of the previous command(s):
 
 🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
 
 ```python
->>> mult(4, 10)
-40
+>>> "Hello Universe!".split()
+["Hello", "Universe!"]
 ```
 
-Those `>>>` are exactly the same ones used in usual Python interactive session.
-
-### Code output
-So, in other words - presented code will be shown in two variations:
+Those `>>>` are exactly the same ones used in usual Python interactive session (that you can invoke via running `python` in the terminal/shell).
 
 * Two sections - code and it's output separated:
 
@@ -36,28 +42,22 @@ So, in other words - presented code will be shown in two variations:
 def splitting_function(text):
     return text.split()
 text_to_split = "Hello Galaxy!"
-splitting_function(text_to_split)
+print(splitting_function(text_to_split))
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
      ["Hello", "Galaxy!"]
 
-* Code with output together \(code will be prefixed with &gt;&gt;&gt; \):
-
-```python
->>> "Hello Universe!".split()
-["Hello", "Universe!"]
-```
 
 ### Hometasks
 
-Originally course comes with a lot of home tasks. But for now they all are integrated in Training Suite companion web application. 
+Originally course comes with a lot of hometasks. But for now they all are integrated in `Training Suite` companion web application. 
 
 ### Comments, propositions
 
-If you find any error, flaw, incorrectness or have any other comment - please send my via email or Skype.
+If you find any error, flaw, incorrectness or have any other comment - please send my via email or Skype or Slack.
 
-* email: `vityok(AT)gmail.com`
-* skype: `lookinglass`
+* 📧 Email: `vityok🐱gmail.com`
+* 🇸 Skype: `lookinglass`
 

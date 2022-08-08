@@ -993,7 +993,7 @@ In this case when we ```del```ete it - Python garbage collector won't delete fro
 
 Usual Python console:
     
-🪄 _<mark style="color:green;">Code (</mark><mark style="color:blue;">>>></mark><mark style="color:green;">) and </mark>_📟_<mark style="color:green;"> Output:</mark>_
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
 
 ```python
 >>> a = [1, 2, 3]

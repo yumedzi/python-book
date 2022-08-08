@@ -130,6 +130,13 @@ print(marshrutka_317.people_transferred)
 {% endcode %}
 ## Inheritance
 
+Inheritance from some class (called "base" or `super` class) allows to create a new class "borrowing" all attributes and methods definitions as they were in the super class. It allows to:
+
+1. Reuse the code (DRY principle).
+2. Create abstractions.
+
+For example here is the class for the Robot:
+
 
 ```python
 class Robot:
@@ -149,6 +156,8 @@ class Robot:
         return f"{self.name} says: {random.choice(self.sounds)}"
 ```
 
+It is completely usable:
+
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -166,7 +175,7 @@ Robot Bip 1.0 (1000 kg)
 Bip 1.0 says: Oooooh
 ```
 {% endcode %}
-Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
+We can re-use this class to create a robot from Futurama using the inheritance. For this we need to specify base/super class in parenthesis during new class definition.
 
 
 ```python
@@ -192,6 +201,8 @@ Robot Bender (1000 kg)
 Bender says: Oh wait you’re serious. Let me laugh even harder.
 ```
 {% endcode %}
+As we can we still can use `say` method defined in the base class.
+
 ## Multiple Inheritance
 
 Python supports a limited form of multiple inheritance as well. A class definition with multiple base classes looks like this:
@@ -384,7 +395,7 @@ I am a static method, I don't have access to anything :(
 {% endcode %}
 # Old and New classes
 
-This chapter is only viable for Python 2 - as in Python 3 there are no such distinguishing as "old/new" classes.
+> This chapter is only viable for Python 2 - as in Python 3 there are no such distinguishing as "old/new" classes.
 
 Before Python 2.5 the format for creating a class was:
 

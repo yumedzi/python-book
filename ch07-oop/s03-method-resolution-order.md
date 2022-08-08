@@ -1,12 +1,12 @@
 # Method Resolution Order
 
-For old class it was vertical-then-horizontal order of looking up for object attributes/methods.
+For old classes (in Python 2 only) it was vertical-then-horizontal order of looking up for object attributes/methods.
 
 > For Python 3.x and for New style classes (Python 2.5+) MRO is horizontal-then-vertical order.
 
 ## Old style class MRO
 
-> Just for information as it is used only in Python 2!
+> Just for information as it is used only in Python 2! It is helpful to understand how MRO works now though.
 
 ```python
 class A: 

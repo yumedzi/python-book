@@ -3,13 +3,30 @@
 To get you grasp of an idea about Python it's better to just fly over it awhole. To see main syntax nuances, basic operations and workflow. We won't stop to explain everything in detail as it will be covered in next sessions. Now it's just a show-off.
 
 So, in next few slides we are going to see:
-* basic types
-    * immutable
-    * mutable
-* basic operators and methods
-* conditions
+* Basic types
+* Basic operators and methods
+* Conditions
+* Functions
 * OOP
 * Exceptions
+
+## Basic types
+
+<span title="This is important" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">ℹ️</span>
+
+| Type        | Name         | Short description                        | Mutable | Example            |
+|-------------|--------------|------------------------------------------|---------|---------------------------
+| `NoneType`  | None         | "Empty" value                            | No    |  `None`               |
+| `bool`      | Boolean      | Boolean value  (`True` or `False`)       | No    |  `True`               | 
+| `int`       | Integer      | Integer numbers                          | No    |  `42`                 |
+| `float`     | Float        | Floating point number                    | No    |  `23.43`              |
+| `str`       | String       | Textual data - sequense of characters    | No    |  `"Hello!"`           |
+| `list`      | List         | Mutable sequense of any kind of objects  | Yes   |  `[1, 2, 3]`          |
+| `tuple`     | Tuple        | Immutable sequense of objects            | No    |  `(1, 2, 3)`          |
+| `set`       | Set          | Mutable collection of unique objects     | Yes   |  `{1, 2, 3}`          |
+| `frozentset`| Frozen Set   | Immutable collection of unique objects   | No    |  `frozenset({1, 2, 3})`          |
+| `dict`      | Dictionary   | The collection of key-value pairs        | Yes   |  `{"name": "Johnny", "second_name": "Walker" }`  |
+|   
 
 ### Immutable types (cannot be changed after creation)
 * str
@@ -158,6 +175,40 @@ print(mult(10))
 60
 ```
 {% endcode %}
+Lambda function - short (functional) method of defining a function. Used for sorting, building jump tables, when the function is not planned to be used after some operation and with `map`/`filter`.
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+mult2 = lambda x, y: x * y
+mult2(5, 6)
+```
+
+
+
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+30
+```
+{% endcode %}
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+functions = [lambda x: x+100, lambda x: x-100] # Jump table
+print(functions[0](50), functions[1](50), sep="; ")
+```
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+150; -50
+```
+{% endcode %}
 ### Misc.
 
 #### Swapping two variables
@@ -290,5 +341,62 @@ Super Value
 Boo!
 Some value
 Super Value
+```
+{% endcode %}
+### Exceptions
+
+Sometime Python encounters the error during the work of some code or function - it creates an event called exception. If this exception is not handled (the program doesn't expect it) Python stops stops the program execution.
+
+For example the file with the following code will print the message about Traceback and never the line "You won't see me!":
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+1/0
+print("You won't see me!")
+```
+
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+---------------------------------------------------------------------------
+
+ZeroDivisionError                         Traceback (most recent call last)
+
+Input In [25], in <cell line: 1>()
+----> 1 1/0
+      2 print("You won't see me!")
+
+
+ZeroDivisionError: division by zero
+```
+{% endcode %}
+But we can handle this error, doing so tells Python that the occurrence of this error is expected and we don't need to stop the program.
+
+Handling exceptions is done via `try`/`except`/`finally` blocks:
+
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+try:
+    1/0
+except ZeroDivisionError:
+    print("Oh, you tried to divide by 0! Nice try!")
+else:
+    print("You will see this when the error won't be encountered.")
+finally:
+    print("You will see this in any case - was error encountered or not.")
+```
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+Oh, you tried to divide by 0! Nice try!
+You will see this in any case - was error encountered or not.
 ```
 {% endcode %}

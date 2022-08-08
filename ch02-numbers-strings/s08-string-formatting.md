@@ -259,7 +259,7 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 
 {% code overflow="wrap" %}
 ```
-'String has this method: <built-in method isalpha of str object at 0x7f2112e2dc70>'
+'String has this method: <built-in method isalpha of str object at 0x7f48c401c030>'
 ```
 {% endcode %}
 ### Differences between formatters:
@@ -412,11 +412,11 @@ f'{unexistent_var}'
 
 {% code overflow="wrap" %}
 ```
+---------------------------------------------------------------------------
 
+NameError                                 Traceback (most recent call last)
 
-NameErrorTraceback (most recent call last)
-
-<ipython-input-71-a2838fe909a3> in <module>
+Input In [85], in <cell line: 1>()
 ----> 1 f'{unexistent_var}'
 
 
@@ -434,11 +434,11 @@ f'{1/0}'
 
 {% code overflow="wrap" %}
 ```
+---------------------------------------------------------------------------
 
+ZeroDivisionError                         Traceback (most recent call last)
 
-ZeroDivisionErrorTraceback (most recent call last)
-
-<ipython-input-72-a9fc87ed0d89> in <module>
+Input In [86], in <cell line: 1>()
 ----> 1 f'{1/0}'
 
 
@@ -585,13 +585,13 @@ f'It was: {now:%a %d/%m/%Y}'
 
 {% code overflow="wrap" %}
 ```
-Mon 01/03/2021
+Mon 08/08/2022
 
 
 
 
 
-'It was: Mon 01/03/2021'
+'It was: Mon 08/08/2022'
 ```
 {% endcode %}
 ### Dynamic width

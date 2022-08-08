@@ -3,14 +3,13 @@
 ## Quick tutorials
 
 
-* Brief interactive Python tutorial:
-    * http://www.learnpython.org/
-* Super detailed official Python tutorial (a bit large):
-    * https://docs.python.org/3/tutorial/
-* Super short "Python in 10 minutes" article by Stavros Korokithakis:
-    * https://www.stavros.io/tutorials/python/
-* Why Python slow? (nice article with lot of Python internals explanation)
-    * https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/
+* [Brief interactive Python tutorial](http://www.learnpython.org/)
+* [Super detailed official Python tutorial (a bit large)](https://docs.python.org/3/tutorial/)
+* [Super short "Python in 10 minutes" article by Stavros Korokithakis](https://www.stavros.io/tutorials/python/)
+* [Why Python slow? (nice article with lot of Python internals explanation)](https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/)
+* [How to use Python virtualenv](https://pythonbasics.org/virtualenv/)
+* [Poetry vs Virtualenv](https://www.the-analytics.club/virtualenv-alternative-for-python-dependency-management)
+* [Conda cheatsheet (PDF!)](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
 
 ## Courses:
 

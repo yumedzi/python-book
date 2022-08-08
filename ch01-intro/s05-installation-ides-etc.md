@@ -26,16 +26,36 @@ Main commands:
     pip freeze > requirements.txt
     ```
 
-### Virtualenv 
+### Virtual environments
 
-**virtualenv** - virtual environment creation tool which allows to keep different version of Python with different version of packages. Usage:
+Virtual environment is the way of isolation the Python installation from other environments allowing to maintain the same versions of all packages as it was planned/required/designed for. This allows to mimic the working environment on other system and contribute in the development. Also with this we can run tests of different Python programs with different dependencies locally, on remote machines or clouds.
+
+There are quite a few possible solutions for virtualizing the environment:
+* [Virtualenv](https://virtualenv.pypa.io/en/latest/)
+    * Almost default solution (some part of it were integrated into Python 3.3 as module `venv`). Very simple but robust way of creating an isolated environment at a given place.
+* [Conda](https://conda.io)
+    * The most popular modern method of virtual environment on production is using specialized Python distribution and it's own  environment manager. You can create, export or delete environments.
+    * It is the a de facto standard for data science or AI/ML-related projects.
+    * It has faster mimicking alternative called [mamba](https://mamba.readthedocs.io/en/latest/index.html)
+* [Poetry](https://python-poetry.org/)
+    * Modern and slick packaging, dependency resolver and virtual env management tool. You can do some magic things like having separate dev/prod requirements, project relocation, publishing helpers.
+
+## virtualenv
+
+> Virtual environment creation tool which allows to keep different version of Python with different version of packages. 
+
+You need to install it via pip:
+
+`pip install virtualenv`
+
+Usage:
 
 ```sh
-virtualenv -p /path/to/existing/python venv
-source venv/bin/activate   # Unix
-venv\Scripts\activate      # Windows
+virtualenv -p /path/to/existing/python venv   # Create "venv" environment using Python from "/path/to/existing/python"
+source venv/bin/activate                      # Activation of this env in Unix             
+venv\Scripts\activate                         # Activation of this env in Windows
 ...
-deactivate
+deactivate                                    # Deactivation (reverting to system-wide Python)
 ```
 
 ### virtualenvwrapper
@@ -111,6 +131,23 @@ mkvirtualenv -a /home/user/projects/old_project/ -p `cat python_bin.txt` -r requ
 
 
 
+## Conda
+
+> Here I will cover main `conda` environment management commands only, full list: `conda help` and `conda env --help`
+
+| Action                                   |  Command             
+|------------------------------------------|----------------------------------
+| **List all environments and locations**  | `conda env list`
+| **Activate another environment**         | `conda activate ENVNAME`
+| **Reactivate base environment**          | `conda activate base`
+| Create an empty new env                  | `conda env create -n ENVNAME`
+| Clone existing environment               | `conda create --clone ENVNAME`
+| Create new env from file (.yaml)         | `conda env create -n ENVNAME --file ENV.yml`
+| Create new env from file (.txt)          | `conda env create -n ENVNAME --file ENV.txt`
+| Export env to file (.yaml)               | `conda env export ENVNAME > ENV.yml`
+
+
+
 ### Problems with Python installation on Windows
 
 Mostly problems are related to incorrectly ENV variables. Some links with help to deal with this:
@@ -147,9 +184,10 @@ this means it is required to download and install **Microsoft Visual C++ Build T
 
 ## Best IDEs:
 
-* Microsoft Visual Studio Code
-* PyCharm (Community Edition is OK)
-* Sublime Text
-* Eclipse with pydev
-* Notepad++
-* vim
+* [**Microsoft Visual Studio Code**](https://code.visualstudio.com/)  <-- recommended
+* [JetBrains PyCharm](https://www.jetbrains.com/pycharm/) (Community Edition is OK) or [Fleet](https://www.jetbrains.com/fleet/)
+* [Sublime Text](https://www.sublimetext.com/3) (with lot of Python plugins)
+* [Notepad++](https://notepad-plus-plus.org/)
+* [Spyder](https://www.spyder-ide.org/)
+* [Eclipse with pydev](https://pydev.org)
+* [vim](https://www.vim.org/)

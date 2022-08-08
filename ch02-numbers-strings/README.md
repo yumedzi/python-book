@@ -6,7 +6,7 @@
 
 * [Getting help](/ch02-numbers-strings/s01-getting-help.md)
 * [Introspection](/ch02-numbers-strings/s02-introspection.md)
-* [Classification of builtin types](/ch02-numbers-strings/s03-classification-of-builtin-types.md)
+* [Basic types](/ch02-numbers-strings/s03-basic-types.md)
 * [None object](/ch02-numbers-strings/s04-none-object.md)
 * [Numbers](/ch02-numbers-strings/s05-numbers.md)
 * [Strings](/ch02-numbers-strings/s06-strings.md)

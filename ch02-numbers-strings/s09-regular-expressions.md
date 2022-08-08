@@ -400,7 +400,7 @@ pattern
 
 {% code overflow="wrap" %}
 ```
-'user: ([\\w\\d@\\._]+)\naccount: \\w+\\\\(\\w+)\\.?(\\w*)?'
+'user: ([\\w\\d@\\.]+)\naccount: \\w+\\\\(\\w+)\\.?(\\w*)?'
 ```
 {% endcode %}
 * string `user: `

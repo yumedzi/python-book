@@ -31,7 +31,6 @@ else:
 a is greater than 3
 ```
 {% endcode %}
-
 ## bool type
 
 > Boolean type is subclass of int. So for Python ```True``` is ```1```, ```False``` is ```0```. 
@@ -57,7 +56,6 @@ True + True
 2
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -74,7 +72,6 @@ True + True
 6
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -91,7 +88,6 @@ bool(24), bool("sdsds"), bool(""), bool([])
 (True, True, False, False)
 ```
 {% endcode %}
-
 ## Truth Value Testing
 
 Any object can be tested for truth value, for use in an if or while condition or as operand of the Boolean operations below. The following values are considered `False`:
@@ -138,7 +134,6 @@ else:
 Take arms against a sea of troubles!
 ```
 {% endcode %}
-
 Because the expression is equivalent to:
 ```python
 (decision == "be") or ("to be")

@@ -26,7 +26,6 @@ Hello, I'm nice little string
 Hello, I'm nice little string
 ```
 {% endcode %}
-
 Multiline string (matter of syntax, for Python they are all the same):
 
 
@@ -53,7 +52,6 @@ And again and again
 I need to rest...
 ```
 {% endcode %}
-
 ### Main methods of strings
 
 
@@ -70,7 +68,6 @@ print(dir("some_string")) #Emm... actually all methods...
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 {% endcode %}
-
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
 | **Cosmetic methods:**|
@@ -135,7 +132,6 @@ some_string + " and another string"
 'Some funny string! and another string'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -152,7 +148,6 @@ some_string * 3
 'Some funny string!Some funny string!Some funny string!'
 ```
 {% endcode %}
-
 ##### Get length
 
 
@@ -172,7 +167,6 @@ len(some_string)
 18
 ```
 {% endcode %}
-
 ##### Cosmetic/styling methods:
 * lower, upper, title, capitalize
 
@@ -196,7 +190,6 @@ some_string.lower(), some_string.upper(), some_string.title(), some_string.capit
  'Some funny string!')
 ```
 {% endcode %}
-
 ##### Various checking for lower/upper, all digits, all letters. Returns True/False.
 
 
@@ -215,7 +208,6 @@ True
 True
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -232,7 +224,6 @@ True
 (True, True, True)
 ```
 {% endcode %}
-
 ##### Nice examples regarding checks:
 
 
@@ -253,7 +244,6 @@ low_str.islower(), low_str.isupper()
 (True, False)
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -272,7 +262,6 @@ almost_digit_str.isdigit(), true_digit_str.isdigit()
 (False, True)
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -292,7 +281,6 @@ phone_num.isalpha(), name.isalpha(), name_with_spaces.isalpha()
 (False, True, False)
 ```
 {% endcode %}
-
 ### Checks of numeric/digits
 
 It can be difficult to comprehend from the start, so the following table will show difference between three related methods (`isdecimal(), isdigit(), isnumeric()`):
@@ -364,7 +352,6 @@ for str_ in TEST_STRINGS:
 '一二三'.isnumeric()       🡒 True
 ```
 {% endcode %}
-
 ##### Checking for space-containing strings
 * To check for all-spaces string - use ```.isspace()```
 
@@ -385,7 +372,6 @@ for str_ in TEST_STRINGS:
 (True, True)
 ```
 {% endcode %}
-
 * A bit hackish way to check for alphabeticals with spaces - via using ```.replace()```
 
 
@@ -405,7 +391,6 @@ for str_ in TEST_STRINGS:
 True
 ```
 {% endcode %}
-
 ##### Stripping - removing whitespaces
 * ```.strip()``` - remove from the beginning and from the end both
 * ```.rstrip()``` - remove only from the end
@@ -432,7 +417,6 @@ R-stripped string: >>>  Some text goes and goes...<<<
 L-stripped string: >>>Some text goes and goes...  <<<
 ```
 {% endcode %}
-
 ##### Get character by index (it's possible because string is sequence)
 
 Indexing starts from 0. Negative indexing means counting from the end so -1 is the last item.
@@ -454,7 +438,6 @@ some_string, some_string[0], some_string[3], some_string[-1]
 ('Some funny string!', 'S', 'e', '!')
 ```
 {% endcode %}
-
 ##### Slicing
 ```some_str[start:stop[:step]]``` (again sequence-like syntax) - getting part of sequence. 
 
@@ -479,7 +462,6 @@ some_string[0:4], some_string[5:10], some_string[0:-1], some_string[:]
 ('Some', 'funny', 'Some funny string', 'Some funny string!')
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -496,7 +478,6 @@ some_string[:10:2], some_string[::3], some_string[::-1]
 ('Sm un', 'Seuytn', '!gnirts ynnuf emoS')
 ```
 {% endcode %}
-
 ##### Splitting/joining
 
 
@@ -522,7 +503,6 @@ print(some_string.split("ZZZZ"))
 ['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -538,7 +518,6 @@ First---Second---Third
 sdfsdfsdf,!,sdfsdff,wdfwefwefwef,wefwef
 ```
 {% endcode %}
-
 ### Concatenation
 
 Rare case where string can be merged if they are separated by any number of spaces. Strings must be presented by string object themselves not by variables or function call results
@@ -560,7 +539,6 @@ Rare case where string can be merged if they are separated by any number of spac
 'Hello World'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -577,7 +555,6 @@ print(some_big_string)
 Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -594,7 +571,6 @@ print(some_big_string)
 Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
 ```
 {% endcode %}
-
 ### Unicode
 
 #### ASCII
@@ -620,7 +596,6 @@ print(len(string.ascii_letters) + len(string.digits) + len(string.punctuation) +
 100
 ```
 {% endcode %}
-
 In Python we can get ASCII "index" of the character with builtin function `ord` and get the character by that index with function `chr`.
 
 
@@ -639,7 +614,6 @@ A
 65
 ```
 {% endcode %}
-
 Please note that in fact these functions work with Unicode table (that we will cover in a minute) but Unicode table begins with ASCII and extends it.
 
 We can get all 128 characters of ASCII:
@@ -660,7 +634,6 @@ ASCII:
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 ```
 {% endcode %}
-
 So, ASCII is great we can't write neither cyrillic texts like `ґуґл з'їв яйко-сподівайко` nor swedish like `Surströmming` with it. The reason is simple - this table just doesn't have needed codepoints for non-latin characters.
 
 That's why at some point other encodings (tables of codepoints) used all 8 bits were created:
@@ -688,5 +661,4 @@ print("ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
 b'Surstr\xf6mming'
 ```
 {% endcode %}
-
     b"\xb4\xf3\xb4\xeb \xe7'\xbf\xe2 \xff\xe9\xea\xee-\xf1\xef\xee\xe4\xb3\xe2\xe0\xe9\xea\xee"

@@ -153,7 +153,6 @@ Old result: 1
 2
 ```
 {% endcode %}
-
 * *Overridding*, also called as *dynamic* or *runtime* polymorphism. 
     * *Method overriding* - defining a method in a subclass with the same name as in the parent class.
 
@@ -183,7 +182,6 @@ obj.method()
 2
 ```
 {% endcode %}
-
 ## [SOLID](https://deviq.com/solid/) principles of Object Oriented Design
 
 * **SRP** – Single Responsibility Principle

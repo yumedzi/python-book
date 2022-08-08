@@ -79,7 +79,6 @@ inner3 says: [1, 2, 3, 'changed!']
 now global is [7, 8, 9]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -106,7 +105,6 @@ print(a, b, c)
 1 2 old string
 ```
 {% endcode %}
-
 * `a` - free variable
 * `b` - global variable
 * `c` - local variable
@@ -146,7 +144,6 @@ Outside the function -> a: 0
 Outside the function -> b: 888
 ```
 {% endcode %}
-
 Get all locals, globals:
 * ```locals()```
 * ```globals()```
@@ -173,7 +170,6 @@ f()
 {'c': 25}
 ```
 {% endcode %}
-
 ### Enclosed scope
 
 Scope that is between global and local in nested functions
@@ -203,7 +199,6 @@ outer()
 local value
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -227,7 +222,6 @@ outer()
 enclosed variable
 ```
 {% endcode %}
-
 Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
 
 
@@ -261,7 +255,6 @@ changed enclosed variable
 global variable
 ```
 {% endcode %}
-
 Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
 
 
@@ -304,7 +297,6 @@ UnboundLocalErrorTraceback (most recent call last)
 UnboundLocalError: local variable 'a' referenced before assignment
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -325,7 +317,6 @@ foo()
 55
 ```
 {% endcode %}
-
 ### Closures
 
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
@@ -352,7 +343,6 @@ foo()
 5
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -381,7 +371,6 @@ Running inner: 5
 Result of running inner function: 5
 ```
 {% endcode %}
-
 How can `inner` know about `a` if `foo` is already returned and all we can't access to it's local variables normally?
 
 
@@ -399,8 +388,7 @@ print("Free var #1 value:", cell.cell_contents)
 {% code overflow="wrap" %}
 ```
 Free vars: ('a',)
+(<cell at 0x7f3e88272258: int object at 0x5594948e94a0>,)
 ```
 {% endcode %}
-
-    (<cell at 0x7f3e88272258: int object at 0x5594948e94a0>,)
     Free var #1 value: 5

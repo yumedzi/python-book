@@ -39,7 +39,6 @@ from __future__ import division
 10029
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -56,7 +55,6 @@ from __future__ import division
 3.3076923076923075
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -73,7 +71,6 @@ from __future__ import division
 1
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -90,7 +87,6 @@ from __future__ import division
 3
 ```
 {% endcode %}
-
 ### Module "math"
 
 
@@ -108,7 +104,6 @@ print (dir(math))
 ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -125,7 +120,6 @@ math.pi, math.e, math.sin(324), math.pow(2,10)
 (3.141592653589793, 2.718281828459045, -0.4040652194563607, 1024.0)
 ```
 {% endcode %}
-
 ### Module "random"
 
 
@@ -143,7 +137,6 @@ print (dir(random))
 ['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_BuiltinMethodType', '_MethodType', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_inst', '_itertools', '_log', '_os', '_pi', '_random', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -160,7 +153,6 @@ random.randint(2, 7)  # from 2 to 7, includes 7
 5
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -177,7 +169,6 @@ random.randrange(15)  # from 0 to 14, doesn't include 15
 7
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -194,7 +185,6 @@ random.choice(["She loves me", "She doesn't love me"])
 'She loves me'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -211,7 +201,6 @@ print(l)
 [1, 4, 5, 3, 2]
 ```
 {% endcode %}
-
 How random is "random"?
 
 
@@ -235,7 +224,6 @@ print([random() for _ in range(5)])
 [0.8056271362589, 0.7940590105180981, 0.029425761106168014, 0.17465638335376021, 0.0022298761599784944]
 ```
 {% endcode %}
-
 ### Problems with floating-point calculations
 
 > Short reminders about decimal and binary number systems
@@ -320,7 +308,6 @@ for _ in range(20):
 2.0000000000000004
 ```
 {% endcode %}
-
 Rounding has similar problems if number representation is approximated:
 
 
@@ -340,7 +327,6 @@ round(2.675, 2)
 2.67
 ```
 {% endcode %}
-
 Because it is: 2.67499999999999982236431605997495353221893310546875
 
 To see "true" value use **`decimal.Decimal`**:
@@ -363,7 +349,6 @@ Decimal(0.1)
 Decimal('0.1000000000000000055511151231257827021181583404541015625')
 ```
 {% endcode %}
-
 To set human-friendly numbers – convert string with number to Decimal :
 
 
@@ -383,7 +368,6 @@ Decimal('0.1') + Decimal('0.2')
 Decimal('0.3')
 ```
 {% endcode %}
-
 ### Complex calculations
 
 Usual float-point calculations are fast but (as we just saw not accurate). So what if you need to be precise and fast? Obvious answer - "use Decimal" is not that good because Decimal is slow (in Python3 it was greatly optimized bu still it is not super fast).
@@ -405,7 +389,6 @@ for x in range(1000, 1000000):
 96.4 ms ± 1.19 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -421,7 +404,6 @@ for x in range(1000, 1000000):
 606 ms ± 6.88 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 ```
 {% endcode %}
-
 ### Scientific calculations
 
 There are two main modules - very big and omnipotent for this:
@@ -456,7 +438,6 @@ plt.show()
 
 ```
 {% endcode %}
-
 ![png](../images/Basics_02_Strings_numbers_69_0.png)
     
 
@@ -479,5 +460,4 @@ plt.show()
 
 ```
 {% endcode %}
-
 ![png](../images/Basics_02_Strings_numbers_70_0.png)

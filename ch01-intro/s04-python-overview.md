@@ -158,7 +158,6 @@ print(mult(10))
 60
 ```
 {% endcode %}
-
 ### Misc.
 
 #### Swapping two variables
@@ -183,7 +182,6 @@ a, b
 ('54', 45)
 ```
 {% endcode %}
-
 #### Read keyboard input
 
 ```python
@@ -216,7 +214,6 @@ testme(my_list)
 [1, 'END']
 ```
 {% endcode %}
-
 ### Decorators
 
 
@@ -244,7 +241,6 @@ show_something()
 Main function output
 ```
 {% endcode %}
-
 ### OOP
 
 
@@ -288,12 +284,11 @@ print(obj.foo())
 {% code overflow="wrap" %}
 ```
 Initializing new object with val=Super Value
+Nice warm object :)
+Result of obj.foo(): Super Value
+Super Value
+Boo!
+Some value
 ```
 {% endcode %}
-
-    Nice warm object :)
-    Result of obj.foo(): Super Value
-    Super Value
-    Boo!
-    Some value
     Super Value

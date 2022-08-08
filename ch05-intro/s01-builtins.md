@@ -174,7 +174,6 @@ True
 Wow! Adding attrs like haxxxors
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -191,7 +190,6 @@ getattr("Hello World", "lower")()
 'hello world'
 ```
 {% endcode %}
-
 # Iterable and Iterator
 
 > **Iterable** is the source of data for iterator, usually - some sequence.

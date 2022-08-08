@@ -108,7 +108,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 ZeroDivisionError: division by zero
 ```
 {% endcode %}
-
 Function definition's execution binds the function name in the current local namespace to a function object (a wrapper around the executable code for the function). This function object contains a reference to the current global namespace as the global namespace to be used when the function is called.
 
 In simple words, if the function accesses an object which is not defined in it - it will look in current global area:
@@ -135,7 +134,6 @@ print(foo()) # Will return 100500 because during call global a equals to 100500
 100500
 ```
 {% endcode %}
-
 But most often the function relies on the data passed to it:
 
 
@@ -161,7 +159,6 @@ print(sum(x=5))
 54
 ```
 {% endcode %}
-
 We can assign default argument:
 
 
@@ -193,7 +190,6 @@ I think ehmm evil unicorns
 ehmm umm unicorns evil nice unicorns
 ```
 {% endcode %}
-
 Using list comprehesion we can make this function very short
 
 
@@ -215,7 +211,6 @@ print(random_phrase(length=5))
 evil umm ehmm I think evil
 ```
 {% endcode %}
-
 ## Arguments definitions
 
 > Note that arguments are passed using *call by value* (where the *value* is always an *object reference*, not the value of the object
@@ -283,7 +278,6 @@ print_strings("Hello", "World")
 Hello World
 ```
 {% endcode %}
-
 ### Keyword arguments
 
 > Passing arguments as key=value pair in accordance with function definition. No changes needed for function. Order of arguments when calling a function doesn't matter.
@@ -306,7 +300,6 @@ Hello World
 Bond, James Bond
 ```
 {% endcode %}
-
 ### Default arguments
 
 > A default argument is an argument that assumes a default value if a value is not provided in the function call for that argument.
@@ -331,7 +324,6 @@ Friend Mark (20) added
 Friend Mark (20) added
 ```
 {% endcode %}
-
 ### Variable-length arguments 
 
 > You may need to process a function for more arguments than you specified while defining the function. These arguments are called variable-length arguments and are not named in the function definition, unlike required and default arguments. 
@@ -358,7 +350,6 @@ Friend John (25) added
 Friend Sara (18) added
 ```
 {% endcode %}
-
 ### Order
 
 Order of arguments of different types matters:
@@ -399,7 +390,6 @@ print( func(10, 20, c=6))  # Correct order
 36
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -422,7 +412,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: func() missing 1 required positional argument: 'b'
 ```
 {% endcode %}
-
 ## Positional-Only parameters
 
 > From Python 3.8 there is special syntax to mark some arguments as *positional-only*. Such arguments are placed before a `/` symbol, the rest of the parameters are not positional-only (they can be positional-or-keyword or keyword-only).
@@ -446,7 +435,6 @@ divmod(x, y, /)
     Return the tuple (x//y, x%y).  Invariant: div*y + mod == x.
 ```
 {% endcode %}
-
 This is useful in many case, for example `int` has this help:
 
 ```txt
@@ -543,7 +531,6 @@ TypeErrorTraceback (most recent call last)
 TypeError: files_search() takes 1 positional argument but 5 were given
 ```
 {% endcode %}
-
 ## Annotations
 
 > Mostly decorative optional feature. Used to generate more understandable help and documentation, add support for this in IDE.

@@ -36,7 +36,6 @@ Creating a tuple with 1 element requires comma because without it Python conside
 1
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -53,7 +52,6 @@ Creating a tuple with 1 element requires comma because without it Python conside
 (1,)
 ```
 {% endcode %}
-
 In fact parences are not needed, they are just for readability:
 
 
@@ -73,7 +71,6 @@ In fact parences are not needed, they are just for readability:
 (1,)
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -90,7 +87,6 @@ In fact parences are not needed, they are just for readability:
 (1, 2, 3)
 ```
 {% endcode %}
-
 ## Main methods of tuple
 
 
@@ -108,7 +104,6 @@ print( dir(some_tuple))  # Yep, again all methods
 ['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
 ```
 {% endcode %}
-
 That's right - if not counting magic methods - not many at all. Just ```count``` and ```index```!
 
 ### Tuple methods
@@ -142,7 +137,6 @@ some_tuple[:2]
 (1, 2)
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -159,7 +153,6 @@ some_tuple + (4, "a")
 (1, 2, 100, 15, 4, 'a')
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -176,7 +169,6 @@ some_tuple + (4, "a")
 True
 ```
 {% endcode %}
-
 ## Tuple unpacking
 
 
@@ -194,7 +186,6 @@ print(a, b)
 1 2
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -209,7 +200,6 @@ print(a, b)
 2 1
 ```
 {% endcode %}
-
 Available only in Python 3:
 
 
@@ -227,7 +217,6 @@ print("a is {}, b is {}, c is {}".format(a, b, c))
 a is 1, b is [2, 3, 4, 5, 6], c is 7
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -243,7 +232,6 @@ print(x)
 1
 ```
 {% endcode %}
-
 ## Tuples vs Lists
 
 
@@ -289,7 +277,6 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 2022, 8, 8, 0, 14, 17, 0, 220, -1
 ```
 {% endcode %}
-
 * Values is result of range() are all of the same type, so it is list (in Python 2):
 
 🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
@@ -318,7 +305,6 @@ list(range(10))
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 {% endcode %}
-
 * Coordinates:
 
 ```python

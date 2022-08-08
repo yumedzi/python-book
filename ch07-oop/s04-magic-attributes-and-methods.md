@@ -93,7 +93,6 @@ A()
 <__main__.A at 0x7ff51775b4e0>
 ```
 {% endcode %}
-
 ### Hash
 
 `__hash__(self)`
@@ -121,7 +120,6 @@ A().__hash__()
 8793164831643
 ```
 {% endcode %}
-
 ### Bases 
 
 `__bases__` (attribute)
@@ -147,7 +145,6 @@ A.__bases__
 (object,)
 ```
 {% endcode %}
-
 ### Docstring
 
 `__doc__` (attribute)
@@ -179,7 +176,6 @@ class A(builtins.object)
  |      list of weak references to the object (if defined)
 ```
 {% endcode %}
-
 ### Module
 
 `__module__`  (attribute)
@@ -203,7 +199,6 @@ A.__module__
 '__main__'
 ```
 {% endcode %}
-
 ### Boolean value
 
 `__bool__(self)` (`__nonzero__` for Python 2)
@@ -228,7 +223,6 @@ bool(A())
 True
 ```
 {% endcode %}
-
 ### Comparison
 
 `__eq__(self, other)`
@@ -281,7 +275,6 @@ True
 False
 ```
 {% endcode %}
-
 ### Iterator protocol
 
 `__iter__(self)`
@@ -329,7 +322,6 @@ c.__dict__
 {'b': 2}
 ```
 {% endcode %}
-
 > `__slots__` is a list with instance attributes that can be assigned
 
 This is needed to suppress automatic creation of `__dict__` - this can be useful when we have a lot of simple objects and their dictionaries are taking too much space. Also slots are limiting attributes that can be assigned to an object.
@@ -359,5 +351,4 @@ False
 We can't access attribute b as it is not listed in __slots__
 ```
 {% endcode %}
-
 `__slots__` are meaninless when the class is inherited from the one which doesn't have `__slots__`.

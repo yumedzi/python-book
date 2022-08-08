@@ -14,7 +14,6 @@ help(math.sqrt)
 * IPython shell:
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -27,7 +26,6 @@ math.cos?
 * Web: https://docs.python.org/3/
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -41,12 +39,11 @@ help(time.sleep)
 {% code overflow="wrap" %}
 ```
 Help on built-in function sleep in module time:
+
+sleep(...)
+    sleep(seconds)
+    
+    Delay execution for a given number of seconds.  The argument may be
 ```
 {% endcode %}
-
-    
-    sleep(...)
-        sleep(seconds)
-        
-        Delay execution for a given number of seconds.  The argument may be
         a floating point number for subsecond precision.

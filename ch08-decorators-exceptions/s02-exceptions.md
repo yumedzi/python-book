@@ -63,7 +63,6 @@ Wrong type! <class 'list'>
 We're done with that.
 ```
 {% endcode %}
-
 Another working example:
 
 Checking user's input and returning the list item.
@@ -100,7 +99,6 @@ Enter index: -5
 'Incorrect value'
 ```
 {% endcode %}
-
 Better solution:
 
 
@@ -183,7 +181,6 @@ ERROR: Can't work with negative numbers
 3.3333333333333335
 ```
 {% endcode %}
-
 ## Referring to exceptions
 
 Please note that `raise` can also be used to print an error message and then re-raise the exception (allowing a caller to handle the exception as well):
@@ -218,7 +215,6 @@ OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
 /tmp/1123123.txt
 ```
 {% endcode %}
-
 ## Catching multiple exceptions
 
 * Several except blocks
@@ -245,7 +241,6 @@ except (IOError, ValueError) as e:
 Data or file error: [Errno 2] No such file or directory: 'myfile.txt'
 ```
 {% endcode %}
-
 ## assert
 
 > Testing for poor ones

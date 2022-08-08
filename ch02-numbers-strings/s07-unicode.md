@@ -76,7 +76,6 @@ s.upper()
 'ҐУҐЛ 💝 ☕'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -93,7 +92,6 @@ s[0]
 'ґ'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -110,7 +108,6 @@ s[0]
 'ґ and ☕'
 ```
 {% endcode %}
-
 Via builtin module `unicodedata` it is possible to get the standardized name of Unicode character or resolve that name into a character:
 
 
@@ -130,7 +127,6 @@ CYRILLIC SMALL LETTER GHE WITH UPTURN
 HOT BEVERAGE
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -147,7 +143,6 @@ CYRILLIC CAPITAL LETTER GHE WITH UPTURN
 Ґ
 ```
 {% endcode %}
-
 ### Encoding and Decoding
 
 So, let's summary previous section:
@@ -189,7 +184,6 @@ Encoding:
 b''
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -206,7 +200,6 @@ b''
 b'?'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -223,7 +216,6 @@ b'?'
 b'&#1168;'
 ```
 {% endcode %}
-
 Decoding:
 
 `bytes.decode(encoding='utf-8', errors='strict')`

@@ -35,7 +35,6 @@ new_d
 {'name': 'John', 'surname': 'Snow', 'profession': 'Bastard'}
 ```
 {% endcode %}
-
 We can even rewrite some old key-values:
 
 
@@ -56,7 +55,6 @@ new_d
 {'name': 'John', 'surname': 'Stark'}
 ```
 {% endcode %}
-
 And also we can create a dict from an iterable with pair key-value
 
 
@@ -78,7 +76,6 @@ d1: {'Aria': 'Stark', 'Faceless': 'Man'}
 d2: {'Yaken': 'Gharr', 'Sirio': 'Forell'}
 ```
 {% endcode %}
-
 Using method `dict.fromkeys` we can create a new dict from an iterable (some collection) of keys.
 Second attribute will allow to set a default value for all keys (or it will be `None`).
 
@@ -99,7 +96,6 @@ dict.fromkeys(["name", "surname"])
 {'name': None, 'surname': None}
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -116,7 +112,6 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 {'John': 'Stark', 'Bob': 'Stark', 'Brandon': 'Stark'}
 ```
 {% endcode %}
-
 It is recommended to pass some immutable object as the default value. Otherwise you could get unexpected results:
 
 
@@ -137,7 +132,6 @@ d
 {'a': [], 'b': [], 'c': [], 'd': [], 'e': []}
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -155,7 +149,6 @@ d
 {'a': [1], 'b': [1], 'c': [1], 'd': [1], 'e': [1]}
 ```
 {% endcode %}
-
 There are (from 3.5) even more craziest ways of dict creation:
 
 
@@ -177,7 +170,6 @@ d1 is d2, d2
 (False, {'some_key': 'some_value'})
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -193,7 +185,6 @@ print(new_book)
 {'John': 'Stark', 'Aria': 'Stark'}
 ```
 {% endcode %}
-
 ## How dictionaries work
 
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>
@@ -256,7 +247,6 @@ print( dir(some_dict) ) # All methods a gain
 ['__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
 ```
 {% endcode %}
-
 #### Dictionary methods
 
 | Method(s)               |  Description                                                                              |
@@ -299,7 +289,6 @@ some_dict["name"]
 'John'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -317,7 +306,6 @@ some_dict
 {'name': 'John', 'surname': 'Stark'}
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -335,7 +323,6 @@ some_dict
 {'name': 'John', 'surname': 'Stark', 'alive': True}
 ```
 {% endcode %}
-
 ### Method `get`
 
 Trying to obtain unexistent key will be resulted in ```KeyError``` exception
@@ -363,7 +350,6 @@ Input In [204], in <cell line: 1>()
 KeyError: '6th_book'
 ```
 {% endcode %}
-
 More correctly:
 
 
@@ -383,7 +369,6 @@ else:
 Martin!....:(
 ```
 {% endcode %}
-
 Even better - use ```get()```
 
 > Using `get` is very "pythonic"
@@ -409,7 +394,6 @@ some_dict.get("6th_book", "Nope....")
 'Nope....'
 ```
 {% endcode %}
-
 ### Method `setdefault`
 
 This method allows to write a "default" value for specific key and/or return set or that default value. In other words it will update dictionary only when the key is not found in it.
@@ -434,7 +418,6 @@ d
 {'John': 'Snow', 'Aria': 'Stark'}
 ```
 {% endcode %}
-
 So, the code:
 
 
@@ -451,7 +434,6 @@ print(d.setdefault("Robert", "Baration"))
 Baration
 ```
 {% endcode %}
-
 is the same as:
 
 
@@ -470,7 +452,6 @@ print(d["Robert"])
 Baration
 ```
 {% endcode %}
-
 If the default value is a list it can used for appending the needed value right away:
 
 
@@ -495,7 +476,6 @@ print(counter(characters))
 {'a': 7, 's': 4, 'd': 5, 'f': 3, 'g': 2}
 ```
 {% endcode %}
-
 ### Method `update`
 
 Doc says:
@@ -527,7 +507,6 @@ d
 {'a': 1, 'b': 2}
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -546,7 +525,6 @@ d
 {'a': 1, 'b': 2}
 ```
 {% endcode %}
-
 And crazy example - two syntaxes altogether:
 
 
@@ -568,7 +546,6 @@ d
 {'Aria': 'Stark', 'Yaken': 'Gharr', 'Faceless': 'Man', 'some_other_key': 123}
 ```
 {% endcode %}
-
 ### Deleting
 
 Regular `del` here too:
@@ -591,7 +568,6 @@ d
 {'Aria': 'Stark', 'Faceless': 'Man', 'some_other_key': 123}
 ```
 {% endcode %}
-
 To clear all keys it is possible to use `clear()`
 
 
@@ -612,7 +588,6 @@ d
 {}
 ```
 {% endcode %}
-
 Also - just like with lists we have `pop()` and `popitem()` methods.
 
 * `pop(k [,v])` will return value by key `k` or default value `d`
@@ -639,7 +614,6 @@ What is left: {'Aria': 'Stark', 'Yaken': 'Gharr', 'some_other_key': 123}
 What is left: {'Aria': 'Stark', 'Yaken': 'Gharr'}
 ```
 {% endcode %}
-
 ### Dictionary view objects
 
 The methods `dict.keys()`, `dict.values()` and `dict.items()` return so-called `view` objects in Python 3 (in Python 2 they return a list of corresponding values - all keys, all values and all key-value pairs). 
@@ -692,7 +666,6 @@ values:  (len is 4): dict_values([0, 1, 2, 3])
 list(values): [0, 1, 2, 3]
 ```
 {% endcode %}
-
 Check how dynamic are `dictviews`:
 
 
@@ -715,7 +688,6 @@ Before: dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
 After: dict_keys(['Alfa', 'Bravo'])
 ```
 {% endcode %}
-
 ## Dictionary comprehesions
 
 
@@ -735,7 +707,6 @@ After: dict_keys(['Alfa', 'Bravo'])
 {0: 1, 1: 1, 2: 1, 3: 1, 4: 1}
 ```
 {% endcode %}
-
 Not so oftenly used because:
 
 
@@ -755,7 +726,6 @@ Not so oftenly used because:
 {0: 2, 1: 2, 2: 2}
 ```
 {% endcode %}
-
 Sometimes dictionary comprehension is useful when you need to set a default mutable value (so `dict.fromkeys` is not good)
 
 
@@ -777,7 +747,6 @@ d
 {'a': [1], 'b': [], 'c': [], 'd': [], 'e': []}
 ```
 {% endcode %}
-
 ## Complexity of operations
 
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>

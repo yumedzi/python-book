@@ -151,7 +151,6 @@ print(dir(re))
 ['A', 'ASCII', 'DEBUG', 'DOTALL', 'I', 'IGNORECASE', 'L', 'LOCALE', 'M', 'MULTILINE', 'Match', 'Pattern', 'RegexFlag', 'S', 'Scanner', 'T', 'TEMPLATE', 'U', 'UNICODE', 'VERBOSE', 'X', '_MAXCACHE', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '__version__', '_cache', '_compile', '_compile_repl', '_expand', '_locale', '_pickle', '_special_chars_map', '_subx', 'compile', 'copyreg', 'enum', 'error', 'escape', 'findall', 'finditer', 'fullmatch', 'functools', 'match', 'purge', 'search', 'split', 'sre_compile', 'sre_parse', 'sub', 'subn', 'template']
 ```
 {% endcode %}
-
 > Pattern is one or more regular expressions describing structure if the text that is needed to be parsed.
 >
 > Patterns in Python are defined as raw string like: `r"\d+[abc]{2:3}"`. By doing this we can use **\\** for regular expressions without escaping.
@@ -176,7 +175,6 @@ Printing string with <
 Printing RAW string with <\n> and <\t\t> as special characters
 ```
 {% endcode %}
-
 Module `re` can compile regex pattern making it's repeated usage faster.
 
 Also it is worth to understand the difference between `match` and `search` methods:
@@ -195,7 +193,6 @@ Main `re` methods:
 * Compile pattern to optimize it's future usages in regexes
 ```
 {% endcode %}
-
 * ```match(pattern, text)```
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -204,7 +201,6 @@ Main `re` methods:
 * Determine if the RE matches at the beginning of the string.
 ```
 {% endcode %}
-
 * ```search(pattern, text)```
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -213,7 +209,6 @@ Main `re` methods:
 * Scan through a string, looking for any location where this RE matches.
 ```
 {% endcode %}
-
 * ```findall(pattern, text)```
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -222,7 +217,6 @@ Main `re` methods:
 Find all substrings where the RE matches, and returns them as a list.
 ```
 {% endcode %}
-
 * ```finditer(pattern, text)```
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -231,7 +225,6 @@ Find all substrings where the RE matches, and returns them as a list.
 * Find all substrings where the RE matches, and returns them as an iterator.
 ```
 {% endcode %}
-
 #### Groups
 > Needed to refer to parts of matched text to obtain needed information from it
 
@@ -254,7 +247,6 @@ If they successfully match the pattern - they will return special `re.Match` obj
 * Return tuple with all matched groups
 ```
 {% endcode %}
-
 * ```group()```
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -263,7 +255,6 @@ If they successfully match the pattern - they will return special `re.Match` obj
 * Return the string matched by the RE
 ```
 {% endcode %}
-
 * ```start()```, ```end()```
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -272,7 +263,6 @@ If they successfully match the pattern - they will return special `re.Match` obj
 * Return the starting/ending position of the match
 ```
 {% endcode %}
-
 * ```span()```
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -281,7 +271,6 @@ If they successfully match the pattern - they will return special `re.Match` obj
 * Return a tuple containing the (start, end) positions of the match
 ```
 {% endcode %}
-
 An example of using groups and match object:
 
 
@@ -315,7 +304,6 @@ asd
 Foo asd  34
 ```
 {% endcode %}
-
 An example of re-using the previously found group in the regexp. Here we try to find the username and password for the main account (which is defined by `main_user` config option):
 
 > NOTE: we use `re.S` (singleline) flag to make `.` to match any characters including `\n` too.
@@ -345,7 +333,6 @@ re.search(r"main_user: (\w+).*credential\s+\1:([^\n]*)", config, re.S).groups()
 ('user02', 'U2_^&%^$^sdghjf23')
 ```
 {% endcode %}
-
 ### Multiple matching
 
 If we want to find all occurence of the text matching the given pattern - we should use `re.findall`
@@ -400,7 +387,6 @@ User <Elizabeth2@windsor.com>: Elizabeth II
 User <b.allen@starlabs.com>: Barry Allen
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -417,7 +403,6 @@ pattern
 'user: ([\\w\\d@\\._]+)\naccount: \\w+\\\\(\\w+)\\.?(\\w*)?'
 ```
 {% endcode %}
-
 * string `user: `
 * text containing words, digits, `@`, dots and `_` - capturing as group `#1`
 * string `\naccount: ` followed by a string containing words ending with `\`
@@ -466,7 +451,6 @@ re.findall(r"<span>(.*)</span>", html)
 ['text1</span> and <span>text2</span> and <span>text3']
 ```
 {% endcode %}
-
 To make these quantifiers (`*` and `+`) lazy (non-greedy) to much as few as possible we can add `?` to them.
 Now the example from above correctly returns the contents of all `<span>` tags:
 

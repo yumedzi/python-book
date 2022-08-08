@@ -76,7 +76,6 @@ Bus.buses_count = 3
 Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 3), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 3), transferred 50 from 200 ppl, Bus 'Marshrutka #317 (rate: 7 UAH)' (total: 3), transferred 0 from 200 ppl]
 ```
 {% endcode %}
-
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
 
 
@@ -95,7 +94,6 @@ print(marshrutka_317.info())
 Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 20 from 220 ppl
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -112,7 +110,6 @@ print(marshrutka_317.info())
 Bus '# 317 (rate: 7 UAH)' (total: 4), transferred 76 from 299 ppl
 ```
 {% endcode %}
-
 Class variables and instance variables were changed:
 
 
@@ -131,7 +128,6 @@ print(marshrutka_317.people_transferred)
 76
 ```
 {% endcode %}
-
 ## Inheritance
 
 
@@ -170,7 +166,6 @@ Robot Bip 1.0 (1000 kg)
 Bip 1.0 says: Oooooh
 ```
 {% endcode %}
-
 Let's say we need to create another type of robot. To reuse existing code we have to use Inheritance:
 
 
@@ -197,7 +192,6 @@ Robot Bender (1000 kg)
 Bender says: Oh wait you’re serious. Let me laugh even harder.
 ```
 {% endcode %}
-
 ## Multiple Inheritance
 
 Python supports a limited form of multiple inheritance as well. A class definition with multiple base classes looks like this:
@@ -237,7 +231,6 @@ d.a, d.x
 ('a from C', 'x from B')
 ```
 {% endcode %}
-
 Let's enhance our `Robot` example by inheriting from two classes at once.
 
 
@@ -261,7 +254,6 @@ Mail().send_message("Test")
 *** SENDING MESSAGE: <<<Test>>>  ***
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -280,7 +272,6 @@ bender2_0.send_message(bender2_0.say())
 *** SENDING MESSAGE: <<<Bender 2.0 says: Kill all humans>>>  ***
 ```
 {% endcode %}
-
 ## Methods
 
 Methods can be:
@@ -317,7 +308,6 @@ I am instance method, my instance is: <__main__.Example object at 0x7f343cf57ac8
 <bound method Example.cool_method of <__main__.Example object at 0x7f343cf57ac8>>
 ```
 {% endcode %}
-
 ### Class methods
 
 The method with class as the first argument. Useful to run some code without need of creating the instace. 
@@ -354,7 +344,6 @@ INSTANCE: 25
 CLS: 5
 ```
 {% endcode %}
-
 ### Static method
 
 This method doesn't require to pass instance/class at all.
@@ -396,7 +385,6 @@ I am a static method, I don't have access to anything :(
 123123
 ```
 {% endcode %}
-
 # Old and New classes
 
 This chapter is only viable for Python 2 - as in Python 3 there are no such distinguishing as "old/new" classes.

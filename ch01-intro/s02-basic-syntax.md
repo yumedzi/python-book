@@ -73,7 +73,6 @@ if condition:
 
 ```
 {% endcode %}
-
 If code block is not big it is allowed to use inline form:
 
 ```python
@@ -154,7 +153,6 @@ f()
     :return: None
 ```
 {% endcode %}
-
 Or:
 
 
@@ -174,7 +172,6 @@ f.__doc__
 '\n    Some nice function (the best in the world)\n    \n    :no params:\n    :return: None\n    '
 ```
 {% endcode %}
-
 ### Naming rules
 
 * Variables can only contain letters, numbers, and underscores. Variable names can start with a letter or an underscore, but can not start with a number.

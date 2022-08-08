@@ -29,7 +29,6 @@
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -46,7 +45,6 @@
 [0, 2, 4, 6, 8]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -72,7 +70,6 @@
  (8, 7)]
 ```
 {% endcode %}
-
 ## Dictionary comprehension
 
 > Useful to create a dictionary with the same (default) value or predefined by some logic
@@ -94,7 +91,6 @@
 {0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -111,7 +107,6 @@
 {0: 2, 1: 2, 2: 2}
 ```
 {% endcode %}
-
 ## Set comprehension
 
 > Not so widely used but still can be quite helpful. For example if you read lines from the file you can collect unqiue ones.
@@ -136,7 +131,6 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 {1, 3}
 ```
 {% endcode %}
-
 ## Generator expression
 
 > "Kind of" comprehension but instead of returning sequence as other do, generator expression returns generator object.
@@ -158,7 +152,6 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 <generator object <genexpr> at 0x0000023DF7253678>
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python

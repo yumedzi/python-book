@@ -24,7 +24,6 @@ b'd\x01S\x00'
 b'd\x01S\x00'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -36,10 +35,8 @@ print(f1.__code__.__doc__)
 {% code overflow="wrap" %}
 ```
 code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,
+      constants, names, varnames, filename, name, firstlineno,
+      lnotab[, freevars[, cellvars]])
 ```
 {% endcode %}
-
-          constants, names, varnames, filename, name, firstlineno,
-          lnotab[, freevars[, cellvars]])
-    
     Create a code object.  Not for the faint of heart.

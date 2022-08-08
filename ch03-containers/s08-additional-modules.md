@@ -33,7 +33,6 @@ print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
 Student Jakeson from group 18 B is 23 year old
 ```
 {% endcode %}
-
 To avoid the mess of various indexes we can add some light "OOP-flavor" to this use-case via `namedtuple`:
 
 
@@ -62,7 +61,6 @@ Student Jakeson from group 18 B is 23 year old
 Student(name='John', surname='Jakeson', age=23, group='18 B')
 ```
 {% endcode %}
-
 To transform into dict:
 
 
@@ -79,7 +77,6 @@ print(student._asdict())
 {'name': 'John', 'surname': 'Jakeson', 'age': 23, 'group': '18 B'}
 ```
 {% endcode %}
-
 #### `deque`
 
 > `deque` stands for "Double Edged Queue"
@@ -109,7 +106,6 @@ e
 a
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -124,7 +120,6 @@ print(de)
 deque(['BEGIN', 'b', 'c', 'd'])
 ```
 {% endcode %}
-
 #### `defaultdict`
 
 > `defaultdict` is a sub-class of `dict` object:
@@ -165,7 +160,6 @@ defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'p
 2.48 µs ± 13.3 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
-
 The same using `setdefault` method:
 
 
@@ -195,7 +189,6 @@ print(f(encountered_animals))
 2.19 µs ± 9.49 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
-
 If we set `default_factory` to `int` we can create a counter of things:
 
 
@@ -218,7 +211,6 @@ print(d)
 defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 ```
 {% endcode %}
-
 #### `Counter`
 
 > This class is a sub-class of `dict` and used to measure how often each member is present in a given iterable
@@ -241,7 +233,6 @@ print(Counter(['red', 'blue', 'red', 'green', 'blue', 'blue']))
 Counter({'blue': 3, 'red': 2, 'green': 1})
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -256,7 +247,6 @@ print(cnt)
 Counter({'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 ```
 {% endcode %}
-
 It has many useful methods:
 
 
@@ -273,7 +263,6 @@ print(Counter("Asdasdasdasd").items())
 dict_items([('A', 1), ('s', 4), ('d', 4), ('a', 3)])
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -288,7 +277,6 @@ print(list(cnt.elements()))
 ['a', 'a', 'a', 'a', 'n', 'n', 'm', 'd', 'r', 'i', 'g', 'l']
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -303,7 +291,6 @@ print(cnt.most_common(3))
 [('a', 4), ('n', 2), ('m', 1)]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -321,7 +308,6 @@ print(c)
 Counter({'a': 3, 'b': 0, 'c': -3, 'd': -6})
 ```
 {% endcode %}
-
 ### `array`
 
 > New in version 3.3
@@ -388,7 +374,6 @@ array('b', [65, 66, 67])
 array('b', [65, 66, 67, 49, 50, 51])
 ```
 {% endcode %}
-
 #### `numpy`
 
 As we can see `array` is memory-optimized version of a `list` class. It doesn't have any additional methods for "mathematical"-related operations like matrix transpose, transformation, mutation, filtering and other. In case of those kinds of operations are needed - it is recommended to use powerful and famous module [`numpy`](https://numpy.org/) that has many features like:
@@ -432,7 +417,6 @@ Transpose T:
  [3 6]]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -459,7 +443,6 @@ Changing shape:
  [[1 2 3 4 5 6]]
 ```
 {% endcode %}
-
 ### `bytearray`
 
 > Array of bytes type (length of item is 1B)
@@ -488,7 +471,6 @@ b'\xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd1\x96\xd1\x82, \xd0\xa1\xd0\xb2\xd1\x96\xd1
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'center', 'count', 'decode', 'endswith', 'expandtabs', 'find', 'fromhex', 'hex', 'index', 'isalnum', 'isalpha', 'isascii', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 {% endcode %}
-
 `bytearray` bultin type is mutable counterpart of `bytes` type.
 
 There is no dedicated literal syntax for bytearray objects, instead they are always created by calling the constructor:
@@ -515,7 +497,6 @@ bytearray(b'Hello World')
 72, bytearray(b'lo '), bytearray(b'dlroW')
 ```
 {% endcode %}
-
 Good news: due to Python's duck-typing, methods of `str`, `bytes` and `bytearray` are the same, the main difference is that they return the object of the correspondent type. Also, when iterating through `bytearray`, it will yield bytecode of the character. This can sometimes overcomplicate things.
 
 
@@ -547,7 +528,6 @@ True
 b'World'
 ```
 {% endcode %}
-
 ### `enum`
 
 > New in version 3.4
@@ -599,7 +579,6 @@ print(color_settings_per_page)
 {<Page.LOGIN: 1>: <Color.RED: 1>, <Page.DASHBOARD: 2>: <Color.GREEN: 2>, <Page.SEARCH: 3>: <Color.BLUE: 3>}
 ```
 {% endcode %}
-
 Enums can be iterated over:
 
 
@@ -621,7 +600,6 @@ Color.GREEN
 Color.BLUE
 ```
 {% endcode %}
-
 It behaves like a new type:
 
 
@@ -642,7 +620,6 @@ True
 RED
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -658,5 +635,4 @@ print(list(Animal))
 <enum 'Animal'>
 ```
 {% endcode %}
-
     [<Animal.ANT: 1>, <Animal.BEE: 2>, <Animal.CAT: 3>, <Animal.DOG: 4>]

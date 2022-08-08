@@ -56,7 +56,6 @@ list(iter([1, 2, "a", None, 10.1]))
 [1, 2, 'a', None, 10.1]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -93,5 +92,4 @@ StopIteration                             Traceback (most recent call last)
 ----> 9 print (a_iter.__next__())
 ```
 {% endcode %}
-
     StopIteration:

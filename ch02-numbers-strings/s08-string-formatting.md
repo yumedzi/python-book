@@ -25,7 +25,6 @@ print( f"3. {print_me}" )            # f-strings
 3. 100505050.12123
 ```
 {% endcode %}
-
 #### **%** (printf-style formatting)
 
 > `format % values`
@@ -64,7 +63,6 @@ print("For breakfast today is %s" % food)
 For breakfast today is Ceasar salad
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -80,7 +78,6 @@ print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -95,7 +92,6 @@ print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
 And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH
 ```
 {% endcode %}
-
 #### **{}** / format()
 
 It's better to use this for something that requries more complex formatting
@@ -117,7 +113,6 @@ print("Our food today is {}".format(food))
 Our food today is Pizza Pepperoni and burger
 ```
 {% endcode %}
-
 Several arguments:
 
 
@@ -134,7 +129,6 @@ print("Food: '{}', money: {} UAH".format(food, money))
 Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
 ```
 {% endcode %}
-
 It is possible when using new format (_format()_) to specify positions:
 
 
@@ -151,7 +145,6 @@ print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(mone
 Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)
 ```
 {% endcode %}
-
 It is possible to pass arguments by names:
 
 
@@ -169,7 +162,6 @@ print("Want {food} but ${money} to spend".format(**data))
 Want salad but $45 to spend
 ```
 {% endcode %}
-
 More examples:
 
 
@@ -189,7 +181,6 @@ More examples:
 'First thing in the morning is coffee'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -206,7 +197,6 @@ More examples:
 "I'd like a cookie with coffee"
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -223,7 +213,6 @@ More examples:
 'Bring me coffee and cookie'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -240,7 +229,6 @@ More examples:
 'Remember my name: Heisenberg'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -258,7 +246,6 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 'Remember my name: Heisenberg'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -275,7 +262,6 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 'String has this method: <built-in method isalpha of str object at 0x7f2112e2dc70>'
 ```
 {% endcode %}
-
 ### Differences between formatters:
 
 
@@ -341,7 +327,6 @@ No answer.
 "What's gone with that boy, I wonder? You TOM!" No answer.
 ```
 {% endcode %}
-
 * Convert Values to different Bases 
     * You can use the following letters to convert a number to their bases:
         * decimal, hex, octal, binary
@@ -360,7 +345,6 @@ print ("{0:d} - {0:x} - {0:o} - {0:b}".format(21))
 21 - 15 - 25 - 10101
 ```
 {% endcode %}
-
 * Escaping braces:
 
 
@@ -377,7 +361,6 @@ print ( "{{0}} / {}".format("TEST") )
 {0} / TEST
 ```
 {% endcode %}
-
 #### f-strings formatting
 
 New feature appeared in Python 3.6. It is possible to inject local variable right into string (variable interpolation)
@@ -415,7 +398,6 @@ ___34.125___
   34.125
 ```
 {% endcode %}
-
 In case interpolating var is not defined - you'll get regular NameError:
 
 
@@ -441,7 +423,6 @@ NameErrorTraceback (most recent call last)
 NameError: name 'unexistent_var' is not defined
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -464,7 +445,6 @@ ZeroDivisionErrorTraceback (most recent call last)
 ZeroDivisionError: division by zero
 ```
 {% endcode %}
-
 `f-string` are evaluated only during creation (once):
 
 
@@ -484,7 +464,6 @@ print(str_)
 Value is 100500
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -499,7 +478,6 @@ print(str_)
 Value is 100500
 ```
 {% endcode %}
-
 Expressions may be evaluated directly inside a string:
 
 
@@ -519,7 +497,6 @@ f'{ 1 + 2 }'
 '3'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -537,7 +514,6 @@ f'{"just another string"}'
 'quoted string'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -557,7 +533,6 @@ f'{d["a"], l[2:5]}'
 '(100500, [3, 4, 5])'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -574,7 +549,6 @@ Result of function is:
 Hello! John
 ```
 {% endcode %}
-
 Format int value as hex:
 
 
@@ -595,7 +569,6 @@ f'input={value:#x}'
 'input=0x4d2'
 ```
 {% endcode %}
-
 Format `datetime` objects (see [docs for datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior):
 
 
@@ -621,7 +594,6 @@ Mon 01/03/2021
 'It was: Mon 01/03/2021'
 ```
 {% endcode %}
-
 ### Dynamic width
 
 
@@ -646,7 +618,6 @@ f'result: {value:{width}.{precision}f}'
 'result:     12.34567'
 ```
 {% endcode %}
-
 ####  Templates
 
 A bit underrated feature of builtin string module. _Template_ is very simple template engine.
@@ -671,5 +642,4 @@ print(Template('$who likes $cookies').safe_substitute(d)) # proper way
 Johnny likes whiskey
 ```
 {% endcode %}
-
     tim likes $cookies

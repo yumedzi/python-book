@@ -227,7 +227,6 @@ for i in tqdm(range(10000)):
 100%|██████████| 10000/10000 [00:11<00:00, 902.17it/s]
 ```
 {% endcode %}
-
 ### Colorama
 
 * [Colorama](https://github.com/tartley/colorama)
@@ -266,7 +265,6 @@ Test..
 back to normal now
 ```
 {% endcode %}
-
 ### Yaspin
 
 * [yaspin](https://github.com/pavdmyt/yaspin)
@@ -315,7 +313,6 @@ now_in_kiev
 DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -332,7 +329,6 @@ len(pendulum.timezones)
 592
 ```
 {% endcode %}
-
 We can parse datetime from a string:
 
 
@@ -351,7 +347,6 @@ print(pendulum.parse('20160413'))
 2016-04-13T00:00:00+00:00
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -367,7 +362,6 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 2018-01-17T00:00:00+00:00
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -385,7 +379,6 @@ now_in_kiev.in_timezone('UTC')
 DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -406,7 +399,6 @@ print(pendulum.now().subtract(seconds=7).diff_for_humans())
 a few seconds ago
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -426,7 +418,6 @@ In hours: 23
 1 неделя 23 часа 59 минут 59 секунд
 ```
 {% endcode %}
-
 ### Loguru
 
 * [Loguru](https://github.com/Delgan/loguru)
@@ -449,7 +440,6 @@ logger.debug("That's it, beautiful and simple logging!")
 2019-09-20 13:08:41.340 | DEBUG    | __main__:<module>:3 - That's it, beautiful and simple logging!
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -475,7 +465,6 @@ logger.debug("Check it now!")
 [32m2019-09-20T13:09:10.415490+0000[0m [34m[1mCheck it now![0m
 ```
 {% endcode %}
-
 The code
 ```python
 logger.add("output.log", backtrace=True, diagnose=True)  # Set 'False' to not leak sensitive data in prod
@@ -605,7 +594,6 @@ True
 /tmp/example.log
 ```
 {% endcode %}
-
 #### Validating
 
 This powerful feature allows to validate provided ini file before parsing and using it. 
@@ -712,7 +700,6 @@ except urllib.error.HTTPError as e:
 HTTP Error 401: Unauthorized
 ```
 {% endcode %}
-
 Example with requests:
 
 🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
@@ -764,7 +751,6 @@ for f in facts:
 * A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -781,7 +767,6 @@ requests.get('https://catfact.ninja/fact').json()['fact']
 'Some common houseplants poisonous to cats include: English Ivy, iris, mistletoe, philodendron, and yew.'
 ```
 {% endcode %}
-
 ## JSON
 
 [JSON](http://json.org) is JavaScript Object Notation.
@@ -852,7 +837,6 @@ json.dumps(b)
 '{"a": 1, "b": 3, "c": [1, 2, 3, "hello"]}'
 ```
 {% endcode %}
-
 #### Other serialization libs*
 
 > `pickle`, `cPickle`, `yaml` (`pip install pyyaml`)
@@ -892,7 +876,6 @@ b'\x80\x03]q\x00(K\x01K\x02K\x03K\x04}q\x01(X\x01\x00\x00\x00aq\x02X\x01\x00\x00
 25
 ```
 {% endcode %}
-
 ## xmltodict
 
 [`xmltodict`](https://github.com/martinblech/xmltodict) is an open source python library, which used for converting xml to python dict.
@@ -936,10 +919,9 @@ print("Groups:", dict_["audience"]["groups"]["group"])
 {% code overflow="wrap" %}
 ```
 Parsed dict:
+OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
+Name is: Vishal
+Attribute <what> is: blablabla
 ```
 {% endcode %}
-
-    OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
-    Name is: Vishal
-    Attribute <what> is: blablabla
     Groups: ['users', 'admin']

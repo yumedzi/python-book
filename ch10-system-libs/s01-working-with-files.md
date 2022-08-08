@@ -67,7 +67,6 @@ Test string!!!
 True
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python

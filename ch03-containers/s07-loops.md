@@ -77,7 +77,6 @@ else:  # run this block only if no break statement called
 BYE BYE!!! (break called!)
 ```
 {% endcode %}
-
 One more example for for-else loop - selection of DB:
 
 ```python
@@ -122,7 +121,6 @@ print(list(range(0, 10, 3)))
 [0, 3, 6, 9]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -140,7 +138,6 @@ print(list(range(1, 0)))
 []
 ```
 {% endcode %}
-
 Also - from 3.5:
 
 
@@ -160,7 +157,6 @@ Also - from 3.5:
 [0, 1, 2, 3]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -177,7 +173,6 @@ Also - from 3.5:
 [1, 2, 3, 4, 5, 6]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -194,7 +189,6 @@ Also - from 3.5:
 {0, 1, 2, 3}
 ```
 {% endcode %}
-
 ## Pythonic cycles
 
 Try to avoid the code like the following one:
@@ -235,7 +229,6 @@ Girl number 3 is Anna
 Girl number 4 is Maria
 ```
 {% endcode %}
-
 The following code:
     
 ```python
@@ -289,11 +282,10 @@ print("Goodbye")
 {% code overflow="wrap" %}
 ```
 Please enter an int: 3
+Square is  9
+Please enter an int: 15
+Square is  225
+Please enter an int: 0
 ```
 {% endcode %}
-
-    Square is  9
-    Please enter an int: 15
-    Square is  225
-    Please enter an int: 0
     Goodbye

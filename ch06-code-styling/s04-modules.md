@@ -75,7 +75,6 @@ print(__name__)
 __main__
 ```
 {% endcode %}
-
 Execution of modules as scripts:
 
 ```python

@@ -96,7 +96,6 @@ Ran 3 tests in 0.011s
 OK (expected failures=1)
 ```
 {% endcode %}
-
 Result:
 
 ```
@@ -186,7 +185,6 @@ FAILED (failures=1)
 <unittest.runner.TextTestResult run=3 errors=0 failures=1>
 ```
 {% endcode %}
-
 How can we optimize the tests above?
 
 First of all - by removing redundancy.
@@ -232,7 +230,6 @@ OK
 <unittest.runner.TextTestResult run=3 errors=0 failures=0>
 ```
 {% endcode %}
-
 **33%** chance that we got this:
 
 ```shell
@@ -486,7 +483,6 @@ OK
 <unittest.runner.TextTestResult run=3 errors=0 failures=0>
 ```
 {% endcode %}
-
 ### Test suites
 
 * Used to organize many tests
@@ -626,7 +622,6 @@ OK
 <unittest.runner.TextTestResult run=6 errors=0 failures=0>
 ```
 {% endcode %}
-
 ## Test Case Example
 
 Let's check "kind-of-real-world" example. It is of course mostly "mock" but still it is interesting project.

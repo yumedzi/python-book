@@ -20,7 +20,6 @@ print("Hello World")
 Hello World
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -38,7 +37,6 @@ print "Hello World" # Python 2
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 ```
 {% endcode %}
-
 ## What is Python?
 
 

@@ -36,7 +36,6 @@ sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")
 
 ```
 {% endcode %}
-
 * For example, callback handlers are frequently coded as inline lambda expressions embedded directly in a registration call's arguments list. Instead of being define with a `def` elsewhere in a file and referenced by name
     
 * Lambdas are also commonly used to code jump tables which are lists or dictionaries of actions to be performed on demand.
@@ -59,7 +58,6 @@ f(2, 6)
 8
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -76,7 +74,6 @@ list(map(lambda x: x**2, range(5)))
 [0, 1, 4, 9, 16]
 ```
 {% endcode %}
-
 ```python
 def power_n(n): 
     import math 
@@ -125,7 +122,6 @@ f2 = lambda: len([ x for x in range(10000)])
 663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 ```
 {% endcode %}
-
 This is because lambda is syntax sugar and in the end almost the same code is being constructed
 
 
@@ -153,7 +149,6 @@ dis.dis(f1)
              28 RETURN_VALUE
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -165,16 +160,15 @@ dis.dis(f2)
 {% code overflow="wrap" %}
 ```
   4           0 LOAD_GLOBAL              0 (len)
+              3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)
+              6 LOAD_CONST               2 ('<lambda>.<locals>.<listcomp>')
+              9 MAKE_FUNCTION            0
+             12 LOAD_GLOBAL              1 (range)
+             15 LOAD_CONST               3 (10000)
+             18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             21 GET_ITER
+             22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
 ```
 {% endcode %}
-
-                  3 LOAD_CONST               1 (<code object <listcomp> at 0x103e149c0, file "<ipython-input-67-9c2575e1edb3>", line 4>)
-                  6 LOAD_CONST               2 ('<lambda>.<locals>.<listcomp>')
-                  9 MAKE_FUNCTION            0
-                 12 LOAD_GLOBAL              1 (range)
-                 15 LOAD_CONST               3 (10000)
-                 18 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 21 GET_ITER
-                 22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
-                 25 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
                  28 RETURN_VALUE

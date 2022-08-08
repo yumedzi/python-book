@@ -86,7 +86,6 @@ DIRS:[]
 FILES:['Render']
 ```
 {% endcode %}
-
 ```python
 # Mass file deleter - !DON'T TRY THIS AT HOME!
 import os
@@ -141,7 +140,6 @@ example
 /notebooks/V2/Basics/example
 ```
 {% endcode %}
-
 ```python
 print(p.exists()) # `os.path.exists`
 ```
@@ -153,7 +151,6 @@ print(p.exists()) # `os.path.exists`
 False
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -170,7 +167,6 @@ True
 True
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -188,7 +184,6 @@ test_file
 PosixPath('example/test.txt')
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -205,7 +200,6 @@ test_file.write_text("Hello Pathlib!")
 14
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -222,7 +216,6 @@ test_file.read_text()
 'Hello Pathlib!'
 ```
 {% endcode %}
-
 Listing dir's contents:
 
 
@@ -242,7 +235,6 @@ Listing dir's contents:
 [PosixPath('example/test.txt')]
 ```
 {% endcode %}
-
 Searching for particular files by pattern:
 
 
@@ -262,7 +254,6 @@ Searching for particular files by pattern:
 [PosixPath('example/test.txt')]
 ```
 {% endcode %}
-
 Clearing our samples:
 
 

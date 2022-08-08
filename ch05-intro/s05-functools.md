@@ -41,7 +41,6 @@ Margarita, Bye-bye, ja nai!..
 Hello Beatufiul World
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -60,7 +59,6 @@ pow_of_10(5) # 5 - second arg
 100000.0
 ```
 {% endcode %}
-
 What if we want to be able to assign specific positional argument?
 
 It can't be done! Use `lambda` instead (of even regular `def`)
@@ -83,7 +81,6 @@ quadrupler(2)
 16
 ```
 {% endcode %}
-
 It is recommended to use `lambda` instead of `functools.partial` when possible.
 
 ### functools.reduce
@@ -110,7 +107,6 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 15
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -127,7 +123,6 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 15
 ```
 {% endcode %}
-
 Factorial, "ez mode":
 
 
@@ -148,7 +143,6 @@ Factorial, "ez mode":
 120
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -165,7 +159,6 @@ functools.reduce(lambda x, y: x * y, range(1,6))
 120
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -183,7 +176,6 @@ functools.reduce(mul, range(1,6))
 120
 ```
 {% endcode %}
-
 ### functools.lru_cache
 
 > Decorator to wrap a function with a memoizing callable that saves up to the maxsize most recent calls. 
@@ -209,5 +201,4 @@ print(fib.cache_info())
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
 ```
 {% endcode %}
-
     CacheInfo(hits=36, misses=20, maxsize=None, currsize=20)

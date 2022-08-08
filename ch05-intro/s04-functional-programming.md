@@ -122,7 +122,6 @@ print( res )
 173
 ```
 {% endcode %}
-
 ## Functional approach
 
 
@@ -142,7 +141,6 @@ sum(map(int, filter(bool, expr.split("+"))))
 173
 ```
 {% endcode %}
-
 Don't freak out - we'll cover all of this.
 
 One more example that shows how different reading of some code weritten via imperative programming style or functional is.
@@ -189,7 +187,6 @@ print(mystery_fp(str_))
 4
 ```
 {% endcode %}
-
 Functional is a bit easier to understand...
 
 ## Map
@@ -220,7 +217,6 @@ print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 [361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -238,7 +234,6 @@ print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 [8, 625]
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -254,7 +249,6 @@ print(list(map(lambda x: x+1, [1, 2, 3])))
 [2, 3, 4]
 ```
 {% endcode %}
-
 ## Filter
 
 > `filter(function, iterable)`
@@ -283,7 +277,6 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,
 [1, 3, 5]
 ```
 {% endcode %}
-
 ## Zip
 
 > `zip(*iterables)`
@@ -312,7 +305,6 @@ print(list( zip(*zipped) )) # Note that we'll loose element from longer list
 [(1, 2, 3), (1, 2, 0)]
 ```
 {% endcode %}
-
 ## Other perls of FP
 
 * Avoid state 

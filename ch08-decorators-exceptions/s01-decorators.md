@@ -97,7 +97,6 @@ Oops, Exception:  name 'song' is not defined
 <function Super Song at 0x103fe2a60>
 ```
 {% endcode %}
-
 `2`. We can define function everywhere! It will exist in that namespace only. #easy!
 
 
@@ -128,7 +127,6 @@ New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
 Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
 ```
 {% endcode %}
-
 Of course we can't access internal functions in any way...
 
 
@@ -148,7 +146,6 @@ except NameError as e:
 Oh, we can't acces this function outside: name '_random_music' is not defined
 ```
 {% endcode %}
-
 `3`. We can even `return` function as function's result. After this we can use that object as new function itself.
 
 
@@ -183,7 +180,6 @@ New pop-hit: Oooh-Toonc
 Notes: Si,Re
 ```
 {% endcode %}
-
 ## Decorator syntax and examples
 
 > Idea – function which returns processed result of another function 
@@ -239,7 +235,6 @@ Hello!
 >>> After running function
 ```
 {% endcode %}
-
 Another example:
 
 Adding dollar sign to text
@@ -272,7 +267,6 @@ Args are: (100,), KWArgs: {'tax_rate': 0.1}
 $110.0
 ```
 {% endcode %}
-
 The same example, but in one line:
 
 
@@ -299,7 +293,6 @@ f()
 '$100'
 ```
 {% endcode %}
-
 More, more examples!!!
 
 
@@ -334,7 +327,6 @@ f(3, 5)
 '{"result": 243}'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -370,7 +362,6 @@ my_func.counter = 10
 my_func.__dict__ = {'counter': 10}
 ```
 {% endcode %}
-
 Shown above decorator is call counter.
 
 ### Evolution of decorator
@@ -402,7 +393,6 @@ test1, test1(100500)
 (<function __main__.test1(x)>, 100500)
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -427,7 +417,6 @@ Init...
 48
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -455,7 +444,6 @@ Init...
 2019-12-09 10:17:56.486420
 ```
 {% endcode %}
-
 Tro-lo-lo decorator which return completely other function than original one:
 
 
@@ -486,7 +474,6 @@ test1()
 'HAhahahahha Trololo'
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -513,7 +500,6 @@ print(test1(25))
 25
 ```
 {% endcode %}
-
 Adding some counter to wrapper to be able to see in test1:
 
 
@@ -547,7 +533,6 @@ print(test1.counter)
 3
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
@@ -604,7 +589,6 @@ Init of decorator...
 'This function was decorated by IDEAL DECORATOR on 2020-12-30 07:52:06.535243 and ran 2 times (last run: 2020-12-30 07:52:06.536808)'
 ```
 {% endcode %}
-
 You want more?... 
 
 Ok. It is very useful timer decorator
@@ -643,7 +627,6 @@ Function: my_fnc(1, {}), time spent: 3.666 seconds
 Function: f({}), time spent: 7.063 seconds
 ```
 {% endcode %}
-
 "Fakely long runnning" decorator
 
 
@@ -676,7 +659,6 @@ Work is in progress....
 Done
 ```
 {% endcode %}
-
 It is possible to add some random strings to show during "fake running" time window:
 
 
@@ -724,7 +706,6 @@ Alligning matrixes of indexes for data frames...
 4
 ```
 {% endcode %}
-
 Super cool decorator that controls the time of execution for decorated function and stops it in case of exceeding that time:
 
 
@@ -781,7 +762,6 @@ Timed out!
 None
 ```
 {% endcode %}
-
 ## Chaining decorators
 
 It is possible to chain and use multiple decorators in succession.
@@ -829,7 +809,6 @@ hello()
 "<b><i><span style='color: red;'>Goodbye World!</span></i></b>"
 ```
 {% endcode %}
-
 <b><i><span style='color: red;'>Goodbye World!</span></i></b>
 
 
@@ -856,7 +835,6 @@ hello()
 '<b><i><b><b>Goodbye again, World!</b></b></i></b>'
 ```
 {% endcode %}
-
 As resume memoization rule:
     
 > Decorator is 
@@ -909,7 +887,6 @@ calc_tips(100)
 10
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -926,7 +903,6 @@ calc_tips(200, 0.05)
 10
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -940,7 +916,6 @@ print(calc_tips(100, 0.05)) # Surprise! Why?
 10
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -954,7 +929,6 @@ print(calc_tips._val)
 {100: 10, 200: 10}
 ```
 {% endcode %}
-
 Way to improve this cashing decorator - change key to a tuple that contains a `tip_rate` also. In this way we'll cover all possible cases.
 
 
@@ -1009,7 +983,6 @@ Function docstring: None
 <function riddle_deco.<locals>._f at 0x7fd4f15baea0>
 ```
 {% endcode %}
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -1029,7 +1002,6 @@ Function name: test
 <function test at 0x7fd4f15baea0>
 ```
 {% endcode %}
-
 We can do this in decorator to fix all these issues
 
 
@@ -1065,7 +1037,6 @@ Print something nice
 <function pretty_func at 0x7f210c6936a8>
 ```
 {% endcode %}
-
 Alternative - suggested method - to use `functools.wraps` decorator which will automatically assign wrapper function’s `__module__`, `__name__`, `__qualname__`, `__annotations__` and `__doc__`. 
 
 
@@ -1104,7 +1075,6 @@ Docstring
 <function example at 0x104ad2ea0>
 ```
 {% endcode %}
-
 ### One-time decorator
 
 Haiku about subject:
@@ -1140,9 +1110,8 @@ def f():
 {% code overflow="wrap" %}
 ```
 It was nice, thank you for all..
+Some text
+Some text
 ```
 {% endcode %}
-
-    Some text
-    Some text
     It was nice, thank you for all..

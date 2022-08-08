@@ -287,8 +287,8 @@ print("Goodbye")
 ```
 Please enter an int: 3
 Square is  9
-Please enter an int: 12
-Square is  144
+Please enter an int: 15
+Square is  225
 Please enter an int: 0
 Goodby
 ```

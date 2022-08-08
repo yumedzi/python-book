@@ -160,7 +160,7 @@ print(f(encountered_animals))
 {% code overflow="wrap" %}
 ```
 defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
-2.39 µs ± 54.3 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+2.48 µs ± 13.3 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
 The same using `setdefault` method:
@@ -189,7 +189,7 @@ print(f(encountered_animals))
 {% code overflow="wrap" %}
 ```
 {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
-2.1 µs ± 32 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+2.19 µs ± 9.49 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
 If we set `default_factory` to `int` we can create a counter of things:
@@ -413,22 +413,18 @@ print(f'b:\n{b}, shape is {b.shape}')
 print(f"Transpose T:\n{b.T}")
 ```
 
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
----------------------------------------------------------------------------
-
-ModuleNotFoundError                       Traceback (most recent call last)
-
-Input In [122], in <cell line: 1>()
-----> 1 import numpy as np
-      3 a = np.array([2,3,4])
-      4 print(f'a is {a}, type is {a.dtype}, len is {len(a)}, shape is {a.shape}')
-
-
-ModuleNotFoundError: No module named 'numpy'
+a is [2 3 4], type is int64, len is 3, shape is (3,)
+b:
+[[1 2 3]
+ [4 5 6]], shape is (2, 3)
+Transpose T:
+[[1 4]
+ [2 5]
+ [3 6]]
 ```
 {% endcode %}
 
@@ -441,22 +437,21 @@ print("Transforming, mult by 3:\n", b * 3)
 print("Changing shape:\n", b.reshape(1, 6))
 ```
 
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
----------------------------------------------------------------------------
-
-TypeError                                 Traceback (most recent call last)
-
-Input In [123], in <cell line: 1>()
-----> 1 print("Transforming, add 0.5:\n", b + .5)
-      2 print("Transforming, add 3*b:\n", b + 3*b)
-      3 print("Transforming, mult by 3:\n", b * 3)
-
-
-TypeError: can only concatenate list (not "float") to list
+Transforming, add 0.5:
+ [[1.5 2.5 3.5]
+ [4.5 5.5 6.5]]
+Transforming, add 3*b:
+ [[ 4  8 12]
+ [16 20 24]]
+Transforming, mult by 3:
+ [[ 3  6  9]
+ [12 15 18]]
+Changing shape:
+ [[1 2 3 4 5 6]]
 ```
 {% endcode %}
 

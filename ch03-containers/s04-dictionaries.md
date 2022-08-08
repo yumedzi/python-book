@@ -351,7 +351,7 @@ some_dict["6th_book"]
 
 KeyError                                  Traceback (most recent call last)
 
-Input In [74], in <cell line: 1>()
+Input In [204], in <cell line: 1>()
 ----> 1 some_dict["6th_book"]
 
 

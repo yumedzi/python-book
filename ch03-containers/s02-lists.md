@@ -198,7 +198,7 @@ new_list.sort()
 
 TypeError                                 Traceback (most recent call last)
 
-Input In [9], in <cell line: 2>()
+Input In [139], in <cell line: 2>()
       1 new_list 
 ----> 2 new_list.sort()
 
@@ -512,7 +512,7 @@ some_list[1000]
 
 IndexError                                Traceback (most recent call last)
 
-Input In [24], in <cell line: 1>()
+Input In [154], in <cell line: 1>()
 ----> 1 some_list[1000]
 
 
@@ -716,7 +716,7 @@ from random import randrange
 
 {% code overflow="wrap" %}
 ```
-[5, 7, 8, 4, 1, 5, 4, 5, 2, 7]
+[4, 3, 9, 9, 4, 4]
 ```
 {% endcode %}
 
@@ -1021,22 +1021,12 @@ list_ = list((range(1000)))
 %timeit 999 in list_
 ```
 
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
----------------------------------------------------------------------------
-
-ModuleNotFoundError                       Traceback (most recent call last)
-
-Input In [46], in <cell line: 1>()
-----> 1 import numpy
-      2 array = numpy.array(list(range(1000)))
-      3 list_ = list((range(1000)))
-
-
-ModuleNotFoundError: No module named 'numpy'
+20.4 µs ± 68 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+15.2 µs ± 69.7 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
 

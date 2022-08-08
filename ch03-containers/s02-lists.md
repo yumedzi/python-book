@@ -1019,16 +1019,16 @@ import numpy
 array_ = numpy.array(list(range(1000)))
 list_ = list((range(1000)))
 
-%timeit 999 in array_
 %timeit 999 in list_
+%timeit 999 in array_
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-20.6 µs ± 165 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
-15.4 µs ± 89.8 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+15.4 µs ± 201 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+20.2 µs ± 124 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
 But they are much faster (x5 in the following example) for a vector operations:
@@ -1038,20 +1038,8 @@ But they are much faster (x5 in the following example) for a vector operations:
 
 ```python
 import math
+
 %timeit list(map(math.sqrt, list_))
-```
-
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-106 µs ± 1.05 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
-```
-{% endcode %}
-
-🪄 _<mark style="color:green;">Code:</mark>_
-
-```python
 %timeit numpy.sqrt(array_)
 ```
 
@@ -1059,7 +1047,20 @@ import math
 
 {% code overflow="wrap" %}
 ```
-21.2 µs ± 375 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+107 µs ± 1.82 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+21.2 µs ± 296 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+```
+{% endcode %}
+
+```python
+
+```
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+106 µs ± 1.05 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
 

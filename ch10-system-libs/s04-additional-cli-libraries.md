@@ -259,14 +259,13 @@ print('back to normal now')
 {% code overflow="wrap" %}
 ```
 [33m[44msome yellow text
+[42mand with a green background
+Test..
+[41m[2mand in dim text
+[0m
+back to normal now
 ```
 {% endcode %}
-    [42mand with a green background
-    Test..
-    [41m[2mand in dim text
-    [0m
-    back to normal now
-
 
 ### Yaspin
 
@@ -333,6 +332,7 @@ len(pendulum.timezones)
 592
 ```
 {% endcode %}
+
 We can parse datetime from a string:
 
 
@@ -348,11 +348,9 @@ print(pendulum.parse('20160413'))
 {% code overflow="wrap" %}
 ```
 2020-11-05T00:00:00+00:00
+2016-04-13T00:00:00+00:00
 ```
 {% endcode %}
-    2016-04-13T00:00:00+00:00
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -366,11 +364,9 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 {% code overflow="wrap" %}
 ```
 2020-05-01T00:00:00+00:00
+2018-01-17T00:00:00+00:00
 ```
 {% endcode %}
-    2018-01-17T00:00:00+00:00
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -406,12 +402,10 @@ print(pendulum.now().subtract(seconds=7).diff_for_humans())
 {% code overflow="wrap" %}
 ```
 4 days ago
+1 hour ago
+a few seconds ago
 ```
 {% endcode %}
-    1 hour ago
-    a few seconds ago
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -428,11 +422,10 @@ print(delta.in_words(locale='ru')) # <-- Only "ru" at the moment, no "ua" :(
 {% code overflow="wrap" %}
 ```
 In hours: 23
+1 week 23 hours 59 minutes 59 seconds
+1 неделя 23 часа 59 минут 59 секунд
 ```
 {% endcode %}
-    1 week 23 hours 59 minutes 59 seconds
-    1 неделя 23 часа 59 минут 59 секунд
-
 
 ### Loguru
 
@@ -477,10 +470,11 @@ logger.debug("Check it now!")
 {% code overflow="wrap" %}
 ```
 2019-09-20 13:09:10.415 | DEBUG    | __main__:<module>:10 - Check it now!
+
+
+[32m2019-09-20T13:09:10.415490+0000[0m [34m[1mCheck it now![0m
 ```
 {% endcode %}
-    [32m2019-09-20T13:09:10.415490+0000[0m [34m[1mCheck it now![0m
-
 
 The code
 ```python
@@ -606,12 +600,11 @@ print(config['logging']['log_file'])
 {% code overflow="wrap" %}
 ```
 0.1
+True
+['ui', 'web', 'db', 'logging', 'web services']
+/tmp/example.log
 ```
 {% endcode %}
-    True
-    ['ui', 'web', 'db', 'logging', 'web services']
-    /tmp/example.log
-
 
 #### Validating
 
@@ -719,6 +712,7 @@ except urllib.error.HTTPError as e:
 HTTP Error 401: Unauthorized
 ```
 {% endcode %}
+
 Example with requests:
 
 🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
@@ -763,15 +757,13 @@ for f in facts:
 {% code overflow="wrap" %}
 ```
 200
+* A cat's jaw has only up and down motion; it does not have any lateral, side to side motion, like dogs and humans.
+* Abraham Lincoln loved cats. He had four of them while he lived in the White House.
+* When your cats rubs up against you, she is actually marking you as \hers\" with her scent. If your cat pushes his face against your head"
+* Approximately 40,000 people are bitten by cats in the U.S. annually.
+* A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
 ```
 {% endcode %}
-    * A cat's jaw has only up and down motion; it does not have any lateral, side to side motion, like dogs and humans.
-    * Abraham Lincoln loved cats. He had four of them while he lived in the White House.
-    * When your cats rubs up against you, she is actually marking you as \hers\" with her scent. If your cat pushes his face against your head"
-    * Approximately 40,000 people are bitten by cats in the U.S. annually.
-    * A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -852,11 +844,14 @@ json.dumps(b)
 {% code overflow="wrap" %}
 ```
 [1, 2, "hello man!", [34, 56.5]]
+
+
+
+
+
+'{"a": 1, "b": 3, "c": [1, 2, 3, "hello"]}'
 ```
 {% endcode %}
-    '{"a": 1, "b": 3, "c": [1, 2, 3, "hello"]}'
-
-
 
 #### Other serialization libs*
 
@@ -888,17 +883,15 @@ unpickled[-1][-1]['01'](5)
 {% code overflow="wrap" %}
 ```
 b'\x80\x03]q\x00(K\x01K\x02K\x03K\x04}q\x01(X\x01\x00\x00\x00aq\x02X\x01\x00\x00\x00bq\x03X\x02\x00\x00\x0001q\x04c__main__\nf\nq\x05u\x86q\x06e.'
+[1, 2, 3, (4, {'a': 'b', '01': <function f at 0x7f6dc4048378>})]
+
+
+
+
+
+25
 ```
 {% endcode %}
-    [1, 2, 3, (4, {'a': 'b', '01': <function f at 0x7f6dc4048378>})]
-
-
-
-
-
-    25
-
-
 
 ## xmltodict
 
@@ -943,9 +936,10 @@ print("Groups:", dict_["audience"]["groups"]["group"])
 {% code overflow="wrap" %}
 ```
 Parsed dict:
+OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
+Name is: Vishal
+Attribute <what> is: blablabla
 ```
 {% endcode %}
-    OrderedDict([('audience', OrderedDict([('id', OrderedDict([('@what', 'blablabla'), ('@key', '100500'), ('#text', '123')])), ('name', 'Vishal'), ('groups', OrderedDict([('group', ['users', 'admin'])]))]))])
-    Name is: Vishal
-    Attribute <what> is: blablabla
+
     Groups: ['users', 'admin']

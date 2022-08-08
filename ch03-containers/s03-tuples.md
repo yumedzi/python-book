@@ -53,6 +53,7 @@ Creating a tuple with 1 element requires comma because without it Python conside
 (1,)
 ```
 {% endcode %}
+
 In fact parences are not needed, they are just for readability:
 
 
@@ -107,38 +108,18 @@ print( dir(some_tuple))  # Yep, again all methods
 ['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
 ```
 {% endcode %}
+
 That's right - if not counting magic methods - not many at all. Just ```count``` and ```index```!
 
 ### Tuple methods
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| ```some_tuple[i]``` 📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return element by index ```i``` (int)
-```
-{% endcode %}
-
+| ```some_tuple[i]```     | Return element by index ```i``` (int)
 | ```some_tuple[i:j]```   | Return new tuple - slice from element by index ```i``` till ```j-1```
 | ```some_tuple[i:j:z]```  | Return new tuple - slice with step ```z```
-| ```count(x)```      📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return number of object ```x``` found in a tuple
-```
-{% endcode %}
-
-| ```index(x)```      📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return first index of object ```x``` in tuple or raise `ValueError` if not found
-```
-{% endcode %}
-
+| ```count(x)```          | Return number of object ```x``` found in a tuple
+| ```index(x)```          | Return first index of object ```x``` in tuple or raise `ValueError` if not found
 | ```x in some_tuple```   | Return True/False - is object ```x```is part of list ```some_tuple```?
 | ```some_tuple + ("a", "b") ``` | Return new tuple - a result of two tuples merging
 
@@ -228,6 +209,7 @@ print(a, b)
 2 1
 ```
 {% endcode %}
+
 Available only in Python 3:
 
 

@@ -21,11 +21,9 @@ print(f2.__code__.co_code)
 {% code overflow="wrap" %}
 ```
 b'd\x01S\x00'
+b'd\x01S\x00'
 ```
 {% endcode %}
-    b'd\x01S\x00'
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -38,9 +36,9 @@ print(f1.__code__.__doc__)
 {% code overflow="wrap" %}
 ```
 code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,
+      constants, names, varnames, filename, name, firstlineno,
+      lnotab[, freevars[, cellvars]])
 ```
 {% endcode %}
-          constants, names, varnames, filename, name, firstlineno,
-          lnotab[, freevars[, cellvars]])
-    
+
     Create a code object.  Not for the faint of heart.

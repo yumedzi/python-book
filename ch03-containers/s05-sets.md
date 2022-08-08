@@ -31,10 +31,9 @@ print(set_b)
 {% code overflow="wrap" %}
 ```
 {1, 2, 3, 4}
+{1, 2, 3, 4}
 ```
 {% endcode %}
-    {1, 2, 3, 4}
-
 
 Main methods
 
@@ -53,26 +52,24 @@ Main methods
 {% code overflow="wrap" %}
 ```
 ['add',
+ 'clear',
+ 'copy',
+ 'difference',
+ 'difference_update',
+ 'discard',
+ 'intersection',
+ 'intersection_update',
+ 'isdisjoint',
+ 'issubset',
+ 'issuperset',
+ 'pop',
+ 'remove',
+ 'symmetric_difference',
+ 'symmetric_difference_update',
+ 'union',
+ 'update']
 ```
 {% endcode %}
-     'clear',
-     'copy',
-     'difference',
-     'difference_update',
-     'discard',
-     'intersection',
-     'intersection_update',
-     'isdisjoint',
-     'issubset',
-     'issuperset',
-     'pop',
-     'remove',
-     'symmetric_difference',
-     'symmetric_difference_update',
-     'union',
-     'update']
-
-
 
 A lot of different methods for checking various mathematical set properties
 
@@ -80,14 +77,7 @@ A lot of different methods for checking various mathematical set properties
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| ```len()```     📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return int - length of the set
-```
-{% endcode %}
-
+| ```len()```         | Return int - length of the set
 | ```x in set_a```    | Return True/False - is object ```x```is part of the set ```set_a```?
 | ```set_a``` &#124;  ```set_b``` | Return new set - a **union** (all from both)
 | ```set_a & set_b``` | Return new set - a **intersection** (common to both)

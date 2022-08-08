@@ -28,18 +28,16 @@ print "Hello World" # Python 2
 ```
 
 
-  📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-Input In [4]
+  Input In [4]
+    print "Hello World" # Python 2
+    ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 ```
 {% endcode %}
-        print "Hello World" # Python 2
-        ^
-    SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
-
-
 
 ## What is Python?
 

@@ -110,6 +110,7 @@ s[0]
 'ґ and ☕'
 ```
 {% endcode %}
+
 Via builtin module `unicodedata` it is possible to get the standardized name of Unicode character or resolve that name into a character:
 
 
@@ -126,11 +127,9 @@ print(unicodedata.name("☕"))
 {% code overflow="wrap" %}
 ```
 CYRILLIC SMALL LETTER GHE WITH UPTURN
+HOT BEVERAGE
 ```
 {% endcode %}
-    HOT BEVERAGE
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -145,10 +144,9 @@ print(unicodedata.lookup(cap_char))
 {% code overflow="wrap" %}
 ```
 CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+Ґ
 ```
 {% endcode %}
-    Ґ
-
 
 ### Encoding and Decoding
 
@@ -225,6 +223,7 @@ b'?'
 b'&#1168;'
 ```
 {% endcode %}
+
 Decoding:
 
 `bytes.decode(encoding='utf-8', errors='strict')`

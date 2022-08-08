@@ -142,6 +142,7 @@ sum(map(int, filter(bool, expr.split("+"))))
 173
 ```
 {% endcode %}
+
 Don't freak out - we'll cover all of this.
 
 One more example that shows how different reading of some code weritten via imperative programming style or functional is.
@@ -185,10 +186,9 @@ print(mystery_fp(str_))
 {% code overflow="wrap" %}
 ```
 4
+4
 ```
 {% endcode %}
-    4
-
 
 Functional is a bit easier to understand...
 
@@ -216,12 +216,10 @@ print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 {% code overflow="wrap" %}
 ```
 ['1', '2', '3']
+[8, 625]
+[361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
 ```
 {% endcode %}
-    [8, 625]
-    [361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -236,12 +234,10 @@ print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 {% code overflow="wrap" %}
 ```
 ['1', '2', '3']
+[8, 625]
+[8, 625]
 ```
 {% endcode %}
-    [8, 625]
-    [8, 625]
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -255,10 +251,9 @@ print(list(map(lambda x: x+1, [1, 2, 3])))
 {% code overflow="wrap" %}
 ```
 [6, 17]
+[2, 3, 4]
 ```
 {% endcode %}
-    [2, 3, 4]
-
 
 ## Filter
 
@@ -282,13 +277,12 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,
 {% code overflow="wrap" %}
 ```
 [1, 2]
+[1, 2]
+[1, 3, 5, 7]
+[1, 3, 5, 'a', [], 0.0, None]
+[1, 3, 5]
 ```
 {% endcode %}
-    [1, 2]
-    [1, 3, 5, 7]
-    [1, 3, 5, 'a', [], 0.0, None]
-    [1, 3, 5]
-
 
 ## Zip
 
@@ -314,11 +308,10 @@ print(list( zip(*zipped) )) # Note that we'll loose element from longer list
 {% code overflow="wrap" %}
 ```
 [(1, 2), (3, 4)]
+[(1, 1), (2, 2), (3, 0)]
+[(1, 2, 3), (1, 2, 0)]
 ```
 {% endcode %}
-    [(1, 1), (2, 2), (3, 0)]
-    [(1, 2, 3), (1, 2, 0)]
-
 
 ## Other perls of FP
 

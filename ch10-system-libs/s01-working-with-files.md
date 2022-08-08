@@ -63,12 +63,10 @@ print(f.closed)
 {% code overflow="wrap" %}
 ```
 Test string!!!
+
+True
 ```
 {% endcode %}
-    
-    True
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -76,11 +74,4 @@ Test string!!!
 %ls -la /tmp/1.txt
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
--rw-r--r-- 1 jovyan users 15 Jun 20 11:52 /tmp/1.tx
-```
-{% endcode %}
-t
+    -rw-r--r-- 1 jovyan users 15 Jun 20 11:52 /tmp/1.txt

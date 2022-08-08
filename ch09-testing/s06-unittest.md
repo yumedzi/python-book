@@ -90,13 +90,12 @@ if __name__ == '__main__':
 {% code overflow="wrap" %}
 ```
 x..
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+OK (expected failures=1)
 ```
 {% endcode %}
-    ----------------------------------------------------------------------
-    Ran 3 tests in 0.011s
-    
-    OK (expected failures=1)
-
 
 Result:
 
@@ -164,31 +163,29 @@ unittest.TextTestRunner().run(suite)
 {% code overflow="wrap" %}
 ```
 F..
+======================================================================
+FAIL: test_action (__main__.MonkeyTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<ipython-input-15-4b4fd808bbe2>", line 14, in test_action
+    self.assertEqual(monkey.action(), 'Foo is saying "Boo boo boo"')
+AssertionError: 'Foo is jumping like a crazy frog' != 'Foo is saying "Boo boo boo"'
+- Foo is jumping like a crazy frog
++ Foo is saying "Boo boo boo"
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+FAILED (failures=1)
+
+
+
+
+
+<unittest.runner.TextTestResult run=3 errors=0 failures=1>
 ```
 {% endcode %}
-    ======================================================================
-    FAIL: test_action (__main__.MonkeyTestCase)
-    ----------------------------------------------------------------------
-    Traceback (most recent call last):
-      File "<ipython-input-15-4b4fd808bbe2>", line 14, in test_action
-        self.assertEqual(monkey.action(), 'Foo is saying "Boo boo boo"')
-    AssertionError: 'Foo is jumping like a crazy frog' != 'Foo is saying "Boo boo boo"'
-    - Foo is jumping like a crazy frog
-    + Foo is saying "Boo boo boo"
-    
-    
-    ----------------------------------------------------------------------
-    Ran 3 tests in 0.011s
-    
-    FAILED (failures=1)
-
-
-
-
-
-    <unittest.runner.TextTestResult run=3 errors=0 failures=1>
-
-
 
 How can we optimize the tests above?
 
@@ -223,20 +220,18 @@ unittest.TextTestRunner(verbosity=1).run(suite)
 {% code overflow="wrap" %}
 ```
 ...
+----------------------------------------------------------------------
+Ran 3 tests in 0.013s
+
+OK
+
+
+
+
+
+<unittest.runner.TextTestResult run=3 errors=0 failures=0>
 ```
 {% endcode %}
-    ----------------------------------------------------------------------
-    Ran 3 tests in 0.013s
-    
-    OK
-
-
-
-
-
-    <unittest.runner.TextTestResult run=3 errors=0 failures=0>
-
-
 
 **33%** chance that we got this:
 
@@ -479,20 +474,18 @@ unittest.TextTestRunner().run(suite)
 {% code overflow="wrap" %}
 ```
 ...
+----------------------------------------------------------------------
+Ran 3 tests in 0.007s
+
+OK
+
+
+
+
+
+<unittest.runner.TextTestResult run=3 errors=0 failures=0>
 ```
 {% endcode %}
-    ----------------------------------------------------------------------
-    Ran 3 tests in 0.007s
-    
-    OK
-
-
-
-
-
-    <unittest.runner.TextTestResult run=3 errors=0 failures=0>
-
-
 
 ### Test suites
 
@@ -621,20 +614,18 @@ unittest.TextTestRunner().run(suite)
 {% code overflow="wrap" %}
 ```
 ......
+----------------------------------------------------------------------
+Ran 6 tests in 0.012s
+
+OK
+
+
+
+
+
+<unittest.runner.TextTestResult run=6 errors=0 failures=0>
 ```
 {% endcode %}
-    ----------------------------------------------------------------------
-    Ran 6 tests in 0.012s
-    
-    OK
-
-
-
-
-
-    <unittest.runner.TextTestResult run=6 errors=0 failures=0>
-
-
 
 ## Test Case Example
 

@@ -104,22 +104,21 @@ print(b.static_method())
 {% code overflow="wrap" %}
 ```
 {'attr': "Object's own attr (from class A)"}
+Running method of A
+Object's own attr (from class A)
+class attr from A
+--------------------------------------------------------------------------------
+Running __new__...
+[<class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>, <class 'object'>]
+Running instance method in B...
+Running method of A
+Object's own attr (from class B)
+Running class method in B...
+class attr from B
+Running static method...
+Some static data (from A class)
 ```
 {% endcode %}
-    Running method of A
-    Object's own attr (from class A)
-    class attr from A
-    --------------------------------------------------------------------------------
-    Running __new__...
-    [<class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>, <class 'object'>]
-    Running instance method in B...
-    Running method of A
-    Object's own attr (from class B)
-    Running class method in B...
-    class attr from B
-    Running static method...
-    Some static data (from A class)
-
 
 ### More examples:
 
@@ -157,6 +156,7 @@ print(fd["1"])
 100500
 ```
 {% endcode %}
+
 The dict with logging around setting a key:
 
 
@@ -195,18 +195,16 @@ vd
 {% code overflow="wrap" %}
 ```
 Set: z -> 3
+Set: 100 -> 100500
+Set: 5 -> 0
+
+
+
+
+
+VerboseDict(int, {'x': 1, 'y': 2, 'z': 3, 100: 100500, 5: 0})
 ```
 {% endcode %}
-    Set: 100 -> 100500
-    Set: 5 -> 0
-
-
-
-
-
-    VerboseDict(int, {'x': 1, 'y': 2, 'z': 3, 100: 100500, 5: 0})
-
-
 
 #### Extending class, multi-inheritance
 
@@ -237,19 +235,18 @@ print(counter)
 {% code overflow="wrap" %}
 ```
 MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
+Set: b -> 1
+Set: o -> 1
+Set: o -> 2
+Set: m -> 1
+Set: b -> 2
+Set: b -> 3
+Set: b -> 4
+Set: a -> 1
+Set: m -> 2
+VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})
 ```
 {% endcode %}
-    Set: b -> 1
-    Set: o -> 1
-    Set: o -> 2
-    Set: m -> 1
-    Set: b -> 2
-    Set: b -> 3
-    Set: b -> 4
-    Set: a -> 1
-    Set: m -> 2
-    VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})
-
 
 #### Extending list
 
@@ -289,12 +286,11 @@ print(SuperList("abcde"))
 {% code overflow="wrap" %}
 ```
 Before __init__: ['START', 'STOP']
+['START', 'STOP']
+Before __init__: ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
+['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
 ```
 {% endcode %}
-    ['START', 'STOP']
-    Before __init__: ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
-    ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
-
 
 There is also bigger example for this with lot of print() calls to see where exactly we are at each moment. Please use it to practice and to dig into this a bit more.
 
@@ -336,17 +332,16 @@ print(id(l))
 {% code overflow="wrap" %}
 ```
 >>> Use parent's constructor but print this line!
+>>> Original list: []
+140690636702248
+>>> Before running old __init__: []
+>>> After running old __init__: ['a', 'b', 'c', 'd', 'e']
+<class '__main__.SuperList'>
+New 'list': ['a', 'b', 'c', 'd', 'e', 'last element!']
+After changes: [100, 'c', 'd', 'AAA', 'BBB']
+140690636702248
 ```
 {% endcode %}
-    >>> Original list: []
-    140690636702248
-    >>> Before running old __init__: []
-    >>> After running old __init__: ['a', 'b', 'c', 'd', 'e']
-    <class '__main__.SuperList'>
-    New 'list': ['a', 'b', 'c', 'd', 'e', 'last element!']
-    After changes: [100, 'c', 'd', 'AAA', 'BBB']
-    140690636702248
-
 
 ### `super()` based on another class
 
@@ -383,13 +378,12 @@ D().m()
 {% code overflow="wrap" %}
 ```
 default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
+super().m() -> C (we take <m> from <C>)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+B's MRO is [<class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
+super(B, self).m() -> A (we take <m> from <A>)
 ```
 {% endcode %}
-    super().m() -> C (we take <m> from <C>)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    B's MRO is [<class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
-    super(B, self).m() -> A (we take <m> from <A>)
-
 
 More examples:
 
@@ -420,6 +414,7 @@ AResult()()
 1
 ```
 {% endcode %}
+
 The same as `super()`:
 
 
@@ -442,6 +437,7 @@ AResult()()
 1
 ```
 {% endcode %}
+
 To start FROM A2:
 
 
@@ -540,13 +536,9 @@ D().m()
 {% code overflow="wrap" %}
 ```
 [<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.C'>, <class 'object'>]
+(<class '__main__.B'>, <__main__.D object at 0x7f4245717dd8>)
+Running __getattr__, attr = m
 ```
 {% endcode %}
-    (<class '__main__.B'>, <__main__.D object at 0x7f4245717dd8>)
-    Running __getattr__, attr = m
-
-
-
-
 
     'C'

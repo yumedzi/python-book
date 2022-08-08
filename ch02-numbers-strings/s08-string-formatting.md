@@ -21,11 +21,10 @@ print( f"3. {print_me}" )            # f-strings
 {% code overflow="wrap" %}
 ```
 1. 100505050.12123
+2. 100505050.12123
+3. 100505050.12123
 ```
 {% endcode %}
-    2. 100505050.12123
-    3. 100505050.12123
-
 
 #### **%** (printf-style formatting)
 
@@ -118,6 +117,7 @@ print("Our food today is {}".format(food))
 Our food today is Pizza Pepperoni and burger
 ```
 {% endcode %}
+
 Several arguments:
 
 
@@ -134,6 +134,7 @@ print("Food: '{}', money: {} UAH".format(food, money))
 Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
 ```
 {% endcode %}
+
 It is possible when using new format (_format()_) to specify positions:
 
 
@@ -150,6 +151,7 @@ print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(mone
 Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)
 ```
 {% endcode %}
+
 It is possible to pass arguments by names:
 
 
@@ -167,6 +169,7 @@ print("Want {food} but ${money} to spend".format(**data))
 Want salad but $45 to spend
 ```
 {% endcode %}
+
 More examples:
 
 
@@ -279,80 +282,20 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 | %               |  {}        | Output                                                                                        |
 |-------------------------|----------------------|----------------------------------------------------------------------------|
 |```'%s %s' % ('one', 'two')```    | ```'{} {}'.format('one', 'two')```    | ```one two```    |
-| ```'%d %d' % (1, 2)```       📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```'{} {}'.format(1, 2)```            | ```1 2```        |
-```
-{% endcode %}
-
+| ```'%d %d' % (1, 2)```           | ```'{} {}'.format(1, 2)```            | ```1 2```        |
 | ---                              | ```'{1} {0}'.format('one', 'two')```  | ```two one```    |
-| ```'%10s' % ('test',)```     📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```'{:>10}'.format('test')```         | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```test``` |
-```
-{% endcode %}
-
-| ```'%-10s' % ('test',)```    📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```'{:10}'.format('test')```          | ```test```       |
-```
-{% endcode %}
-
-| ---                              | ```'{:_<10}'.format('test')```   📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```test______``` |
-```
-{% endcode %}
-
-| ---                              | ```'{:^10}'.format('test')```     📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| &nbsp;&nbsp;&nbsp;```test```&nbsp;&nbsp;&nbsp; |
-```
-{% endcode %}
+| ```'%10s' % ('test',)```         | ```'{:>10}'.format('test')```         | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```test``` | 
+| ```'%-10s' % ('test',)```        | ```'{:10}'.format('test')```          | ```test```       |
+| ---                              | ```'{:_<10}'.format('test')```       | ```test______``` |
+| ---                              | ```'{:^10}'.format('test')```         | &nbsp;&nbsp;&nbsp;```test```&nbsp;&nbsp;&nbsp; | 
 
 | %               |  {}        | Output                                                                                        |
 |-------------------------|----------------------|----------------------------------------------------------------------------|
-| ```'%.3s' % ('abcdef',)```   📟 _<mark style="color:green;">Output:</mark>_
+| ```'%.3s' % ('abcdef',)```       | ```'{:.3}'.format('abcdef')```        | ```abc```        | 
+| ```'%d' % (42,)```               | ```'{:d}'.format(42)```               | ```42```         |
+| ```'%06.2f' % (3.141592,)```     | ```'{:06.2f}'.format(3.14159)```      | ```003.14```     |
+| ---                              | ```'{p.type}'.format(p=Plant())```    | ```tree```       |
 
-{% code overflow="wrap" %}
-```
-| ```'{:.3}'.format('abcdef')```        | ```abc```        |
-```
-{% endcode %}
-
-| ```'%d' % (42,)```           📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```'{:d}'.format(42)```               | ```42```         |
-```
-{% endcode %}
-
-| ```'%06.2f' % (3.141592,)``` 📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```'{:06.2f}'.format(3.14159)```      | ```003.14```     |
-```
-{% endcode %}
-
-| ---                              | ```'{p.type}'.format(p=Plant())```    | ```tree```   📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-|
-```
-{% endcode %}
 In last example assuming p is the instance of Plant class defined like:
 ```python
 class Plant(object):
@@ -364,61 +307,13 @@ class Plant(object):
 
 | Data                    | Format                 | Output            | Decription |
 |-------------------------|------------------------|------------------|-------------------------------------------------|
-| ```3.1415926```     📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```{:.2f}```           | ```3.14```       | 2 decimal places    |
-```
-{% endcode %}
-
-| ```3.1415926```     📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```{:+.2f}```          | ```+3.14```      |  2 decimal places with sign  |
-```
-{% endcode %}
-
-| ```2.71828```       📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```{:.0f}```           | ```3```          | No decimal places    |
-```
-{% endcode %}
-
-| ```1000000```       📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```{:,}```             | ```1,000,000```  |  Number with comma sep |
-```
-{% endcode %}
-
-| ```13```            📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```{:>10d}```           | <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>`13`         | Right aligned
-```
-{% endcode %}
-
-| ```13```            📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```{:<10d}```          | `13`<code>&nbsp;&nbsp;&nbsp;&nbsp;</code>         | Left aligned |
-```
-{% endcode %}
-
-| ```13```            📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| ```{:^10d}```          | <code>&nbsp;&nbsp;&nbsp;&nbsp;</code>`13`<code>&nbsp;&nbsp;&nbsp;&nbsp;</code>         | Center aligned |
-```
-{% endcode %}
+| ```3.1415926```         | ```{:.2f}```           | ```3.14```       | 2 decimal places    |
+| ```3.1415926```         | ```{:+.2f}```          | ```+3.14```      |  2 decimal places with sign  |
+| ```2.71828```           | ```{:.0f}```           | ```3```          | No decimal places    |
+| ```1000000```           | ```{:,}```             | ```1,000,000```  |  Number with comma sep |
+| ```13```                | ```{:>10d}```           | <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>`13`         | Right aligned 
+| ```13```                | ```{:<10d}```          | `13`<code>&nbsp;&nbsp;&nbsp;&nbsp;</code>         | Left aligned |
+| ```13```                | ```{:^10d}```          | <code>&nbsp;&nbsp;&nbsp;&nbsp;</code>`13`<code>&nbsp;&nbsp;&nbsp;&nbsp;</code>         | Center aligned |
 
 #### .format() "cheats"
 * Show the same string several times
@@ -440,14 +335,12 @@ print('''{0}!
 {% code overflow="wrap" %}
 ```
 TOM!
+No answer. 
+"TOM!" 
+No answer. 
+"What's gone with that boy, I wonder? You TOM!" No answer.
 ```
 {% endcode %}
-    No answer. 
-    "TOM!" 
-    No answer. 
-    "What's gone with that boy, I wonder? You TOM!" No answer. 
-    
-
 
 * Convert Values to different Bases 
     * You can use the following letters to convert a number to their bases:
@@ -517,12 +410,11 @@ print(f'{var:^10}')
 {% code overflow="wrap" %}
 ```
 34.125
+00000034.125
+___34.125___
+  34.125
 ```
 {% endcode %}
-    00000034.125
-    ___34.125___
-      34.125  
-
 
 In case interpolating var is not defined - you'll get regular NameError:
 
@@ -534,22 +426,21 @@ f'{unexistent_var}'
 ```
 
 
-    
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
+
+
 NameErrorTraceback (most recent call last)
+
+<ipython-input-71-a2838fe909a3> in <module>
+----> 1 f'{unexistent_var}'
+
+
+NameError: name 'unexistent_var' is not defined
 ```
 {% endcode %}
-    <ipython-input-71-a2838fe909a3> in <module>
-    ----> 1 f'{unexistent_var}'
-    
-
-    NameError: name 'unexistent_var' is not defined
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -558,21 +449,21 @@ f'{1/0}'
 ```
 
 
-    
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
+
+
 ZeroDivisionErrorTraceback (most recent call last)
+
+<ipython-input-72-a9fc87ed0d89> in <module>
+----> 1 f'{1/0}'
+
+
+ZeroDivisionError: division by zero
 ```
 {% endcode %}
-    <ipython-input-72-a9fc87ed0d89> in <module>
-    ----> 1 f'{1/0}'
-    
-
-    ZeroDivisionError: division by zero
-
 
 `f-string` are evaluated only during creation (once):
 
@@ -608,6 +499,7 @@ print(str_)
 Value is 100500
 ```
 {% endcode %}
+
 Expressions may be evaluated directly inside a string:
 
 
@@ -679,10 +571,9 @@ print(f'Result of function is:\n{foo("John")}')
 {% code overflow="wrap" %}
 ```
 Result of function is:
+Hello! John
 ```
 {% endcode %}
-    Hello! John
-
 
 Format int value as hex:
 
@@ -704,6 +595,7 @@ f'input={value:#x}'
 'input=0x4d2'
 ```
 {% endcode %}
+
 Format `datetime` objects (see [docs for datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior):
 
 
@@ -721,11 +613,14 @@ f'It was: {now:%a %d/%m/%Y}'
 {% code overflow="wrap" %}
 ```
 Mon 01/03/2021
+
+
+
+
+
+'It was: Mon 01/03/2021'
 ```
 {% endcode %}
-    'It was: Mon 01/03/2021'
-
-
 
 ### Dynamic width
 
@@ -776,4 +671,5 @@ print(Template('$who likes $cookies').safe_substitute(d)) # proper way
 Johnny likes whiskey
 ```
 {% endcode %}
+
     tim likes $cookies

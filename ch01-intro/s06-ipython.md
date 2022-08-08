@@ -99,6 +99,7 @@ max(x)
 473 µs ± 3.22 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
 ```
 {% endcode %}
+
 The builtin magics include:
 
 * Functions that work with code: `%run`, `%edit`, `%save`, `%macro`, `%recall`, etc.

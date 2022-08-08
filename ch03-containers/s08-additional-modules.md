@@ -33,6 +33,7 @@ print(f'Student {student[1]} from group {student[3]} is {student[2]} year old')
 Student Jakeson from group 18 B is 23 year old
 ```
 {% endcode %}
+
 To avoid the mess of various indexes we can add some light "OOP-flavor" to this use-case via `namedtuple`:
 
 
@@ -53,11 +54,14 @@ student
 {% code overflow="wrap" %}
 ```
 Student Jakeson from group 18 B is 23 year old
+
+
+
+
+
+Student(name='John', surname='Jakeson', age=23, group='18 B')
 ```
 {% endcode %}
-    Student(name='John', surname='Jakeson', age=23, group='18 B')
-
-
 
 To transform into dict:
 
@@ -102,11 +106,9 @@ print(de.popleft())
 {% code overflow="wrap" %}
 ```
 e
+a
 ```
 {% endcode %}
-    a
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -160,10 +162,9 @@ print(f(encountered_animals))
 {% code overflow="wrap" %}
 ```
 defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
+2.48 µs ± 13.3 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
-    2.48 µs ± 13.3 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
-
 
 The same using `setdefault` method:
 
@@ -191,10 +192,9 @@ print(f(encountered_animals))
 {% code overflow="wrap" %}
 ```
 {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
+2.19 µs ± 9.49 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
-    2.19 µs ± 9.49 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
-
 
 If we set `default_factory` to `int` we can create a counter of things:
 
@@ -256,6 +256,7 @@ print(cnt)
 Counter({'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 ```
 {% endcode %}
+
 It has many useful methods:
 
 
@@ -382,12 +383,11 @@ print(bytes_array)
 {% code overflow="wrap" %}
 ```
 Array now is array('f', [1.2000000476837158, 2.0999999046325684]), item size is 4)
+After appending array is array('f', [1.2000000476837158, 2.0999999046325684, 3.141516923904419])
+array('b', [65, 66, 67])
+array('b', [65, 66, 67, 49, 50, 51])
 ```
 {% endcode %}
-    After appending array is array('f', [1.2000000476837158, 2.0999999046325684, 3.141516923904419])
-    array('b', [65, 66, 67])
-    array('b', [65, 66, 67, 49, 50, 51])
-
 
 #### `numpy`
 
@@ -423,17 +423,15 @@ print(f"Transpose T:\n{b.T}")
 {% code overflow="wrap" %}
 ```
 a is [2 3 4], type is int64, len is 3, shape is (3,)
+b:
+[[1 2 3]
+ [4 5 6]], shape is (2, 3)
+Transpose T:
+[[1 4]
+ [2 5]
+ [3 6]]
 ```
 {% endcode %}
-    b:
-    [[1 2 3]
-     [4 5 6]], shape is (2, 3)
-    Transpose T:
-    [[1 4]
-     [2 5]
-     [3 6]]
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -449,19 +447,18 @@ print("Changing shape:\n", b.reshape(1, 6))
 {% code overflow="wrap" %}
 ```
 Transforming, add 0.5:
+ [[1.5 2.5 3.5]
+ [4.5 5.5 6.5]]
+Transforming, add 3*b:
+ [[ 4  8 12]
+ [16 20 24]]
+Transforming, mult by 3:
+ [[ 3  6  9]
+ [12 15 18]]
+Changing shape:
+ [[1 2 3 4 5 6]]
 ```
 {% endcode %}
-     [[1.5 2.5 3.5]
-     [4.5 5.5 6.5]]
-    Transforming, add 3*b:
-     [[ 4  8 12]
-     [16 20 24]]
-    Transforming, mult by 3:
-     [[ 3  6  9]
-     [12 15 18]]
-    Changing shape:
-     [[1 2 3 4 5 6]]
-
 
 ### `bytearray`
 
@@ -488,10 +485,9 @@ print(dir(bytes_))
 {% code overflow="wrap" %}
 ```
 b'\xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd1\x96\xd1\x82, \xd0\xa1\xd0\xb2\xd1\x96\xd1\x82\xd0\xb5!'
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'center', 'count', 'decode', 'endswith', 'expandtabs', 'find', 'fromhex', 'hex', 'index', 'isalnum', 'isalpha', 'isascii', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 {% endcode %}
-    ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'center', 'count', 'decode', 'endswith', 'expandtabs', 'find', 'fromhex', 'hex', 'index', 'isalnum', 'isalpha', 'isascii', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
-
 
 `bytearray` bultin type is mutable counterpart of `bytes` type.
 
@@ -516,10 +512,9 @@ print(b[0], b[3:6], b[:5:-1], sep=", ")
 {% code overflow="wrap" %}
 ```
 bytearray(b'Hello World')
+72, bytearray(b'lo '), bytearray(b'dlroW')
 ```
 {% endcode %}
-    72, bytearray(b'lo '), bytearray(b'dlroW')
-
 
 Good news: due to Python's duck-typing, methods of `str`, `bytes` and `bytearray` are the same, the main difference is that they return the object of the correspondent type. Also, when iterating through `bytearray`, it will yield bytecode of the character. This can sometimes overcomplicate things.
 
@@ -542,17 +537,16 @@ print(b''.join([chr(x).encode('utf8') for x in reversed(b[:5:-1])]))
 {% code overflow="wrap" %}
 ```
 bytearray(b'Hello World')
+True
+100
+108
+114
+111
+87
+
+b'World'
 ```
 {% endcode %}
-    True
-    100
-    108
-    114
-    111
-    87
-    
-    b'World'
-
 
 ### `enum`
 
@@ -605,6 +599,7 @@ print(color_settings_per_page)
 {<Page.LOGIN: 1>: <Color.RED: 1>, <Page.DASHBOARD: 2>: <Color.GREEN: 2>, <Page.SEARCH: 3>: <Color.BLUE: 3>}
 ```
 {% endcode %}
+
 Enums can be iterated over:
 
 
@@ -621,12 +616,11 @@ for color in Color:
 {% code overflow="wrap" %}
 ```
 We have these color options:
+Color.RED
+Color.GREEN
+Color.BLUE
 ```
 {% endcode %}
-    Color.RED
-    Color.GREEN
-    Color.BLUE
-
 
 It behaves like a new type:
 
@@ -644,12 +638,10 @@ print(Color.RED.name)
 {% code overflow="wrap" %}
 ```
 <enum 'Color'>
+True
+RED
 ```
 {% endcode %}
-    True
-    RED
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -666,4 +658,5 @@ print(list(Animal))
 <enum 'Animal'>
 ```
 {% endcode %}
+
     [<Animal.ANT: 1>, <Animal.BEE: 2>, <Animal.CAT: 3>, <Animal.DOG: 4>]

@@ -23,10 +23,9 @@ print(s2)
 {% code overflow="wrap" %}
 ```
 Hello, I'm nice little string
+Hello, I'm nice little string
 ```
 {% endcode %}
-    Hello, I'm nice little string
-
 
 Multiline string (matter of syntax, for Python they are all the same):
 
@@ -48,14 +47,12 @@ print(big_string)
 {% code overflow="wrap" %}
 ```
 Starting here
+Going and going and going...
+And again and again 
+... a bit bored..
+I need to rest...
 ```
 {% endcode %}
-    Going and going and going...
-    And again and again 
-    ... a bit bored..
-    I need to rest...
-    
-
 
 ### Main methods of strings
 
@@ -77,14 +74,7 @@ print(dir("some_string")) #Emm... actually all methods...
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
 | **Cosmetic methods:**|
-| ```lower(), upper()```            📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return new string - in lowercase, uppercase
-```
-{% endcode %}
-
+| ```lower(), upper()```                | Return new string - in lowercase, uppercase
 | ```title(), capitalize()```    | Return new string - all words starts with uppercase, with first word in uppercase 
 | `center(w)`, `ljust(w)`, `rjust(w)`  | Return new string centered or justified to left/right in a string of length `w`
 | `strip()`, `rstrip()`, `lstrip()`     | Return new string with removed whitespaces
@@ -93,77 +83,29 @@ print(dir("some_string")) #Emm... actually all methods...
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
 | **Checks:**|
-| ```s in some_string```       📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return True/False - if sub-string `s` is part of `some_string`
-```
-{% endcode %}
-
+| ```s in some_string```           | Return True/False - if sub-string `s` is part of `some_string`
 | `islower()`, `isupper()`         | Return True/False - if all character are in lower/upper case
 | ```startswith(s), endswith(s)``` | Return True/False - if string starts/ends with a sub-string `s`
 | ```isalpha(), isalnum()``` | Return True/False - are all characters: alphabetical, alpha-numerical?
 | ```isdecimal(), isdigit(), isnumeric()``` | Return True/False - are all characters: regular digits, digits with super/subscripts or any numeric Unicode character?
-| ```isspace()```                   📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return True/False - are all characters whitespaces (`" "`, `"\n"`, `"\t"` etc.) ?
-```
-{% endcode %}
-
+| ```isspace()```                       | Return True/False - are all characters whitespaces (`" "`, `"\n"`, `"\t"` etc.) ?
 | `isprintable()`                       | Return True/False - if all characters are printable
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
 | **Searching:** |
-| ```count(s)```                    📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return number of sub-string `s` is part of  string
-```
-{% endcode %}
-
+| ```count(s)```                        | Return number of sub-string `s` is part of  string                              
 | `index(s)`                        | Return index of first sub-string `s` that found in a string or `ValueError`
 | `find(s)`                        | Return index of first sub-string `s` that found in a string or `-1`
-| ```len(some_string)```       📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return int - length of string
-```
-{% endcode %}
+| ```len(some_string)```           | Return int - length of string
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
 | **Split, join, obtaining parts of string:**
-| ```split(s)```               📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return list of string parts splitted by delimiter `s` (whitespace by default)
-```
-{% endcode %}
-
-| ```splitlines(s)```               📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return list of strings splitted by line ending
-```
-{% endcode %}
-
+| ```split(s)```                   | Return list of string parts splitted by delimiter `s` (whitespace by default)
+| ```splitlines(s)```                   | Return list of strings splitted by line ending
 | ```s.join(str_iterable)```    | Return new string - result of merging all strings from iterable with strings using delimiter `s`
-| ```some_string[i]```         📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return new string - one character by index `i`
-```
-{% endcode %}
-
+| ```some_string[i]```             | Return new string - one character by index `i`
 | ```some_string[n1:n2:step]```    | Return new string - sub-string from `n1` till `n2` (non-inclusive) with step `step`
 
 
@@ -249,13 +191,11 @@ some_string.lower(), some_string.upper(), some_string.title(), some_string.capit
 {% code overflow="wrap" %}
 ```
 ('some funny string!',
+ 'SOME FUNNY STRING!',
+ 'Some Funny String!',
+ 'Some funny string!')
 ```
 {% endcode %}
-     'SOME FUNNY STRING!',
-     'Some Funny String!',
-     'Some funny string!')
-
-
 
 ##### Various checking for lower/upper, all digits, all letters. Returns True/False.
 
@@ -272,11 +212,9 @@ print("ABCDE".isupper())
 {% code overflow="wrap" %}
 ```
 True
+True
 ```
 {% endcode %}
-    True
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -413,20 +351,19 @@ for str_ in TEST_STRINGS:
 {% code overflow="wrap" %}
 ```
 '123'.isdecimal()       🡒 True
+'123'.isdigit()         🡒 True
+'123'.isnumeric()       🡒 True
+'1₂34⁵'.isdecimal()     🡒 False
+'1₂34⁵'.isdigit()       🡒 True
+'1₂34⁵'.isnumeric()     🡒 True
+'½¾⅚'.isdecimal()       🡒 False
+'½¾⅚'.isdigit()         🡒 False
+'½¾⅚'.isnumeric()       🡒 True
+'一二三'.isdecimal()       🡒 False
+'一二三'.isdigit()         🡒 False
+'一二三'.isnumeric()       🡒 True
 ```
 {% endcode %}
-    '123'.isdigit()         🡒 True
-    '123'.isnumeric()       🡒 True
-    '1₂34⁵'.isdecimal()     🡒 False
-    '1₂34⁵'.isdigit()       🡒 True
-    '1₂34⁵'.isnumeric()     🡒 True
-    '½¾⅚'.isdecimal()       🡒 False
-    '½¾⅚'.isdigit()         🡒 False
-    '½¾⅚'.isnumeric()       🡒 True
-    '一二三'.isdecimal()       🡒 False
-    '一二三'.isdigit()         🡒 False
-    '一二三'.isnumeric()       🡒 True
-
 
 ##### Checking for space-containing strings
 * To check for all-spaces string - use ```.isspace()```
@@ -490,12 +427,11 @@ print("L-stripped string: >>>" + whitespaces_str.lstrip() + "<<<")
 {% code overflow="wrap" %}
 ```
 Initial string:   >>>  Some text goes and goes...  <<<
+Stripped string: >>>Some text goes and goes...<<<
+R-stripped string: >>>  Some text goes and goes...<<<
+L-stripped string: >>>Some text goes and goes...  <<<
 ```
 {% endcode %}
-    Stripped string: >>>Some text goes and goes...<<<
-    R-stripped string: >>>  Some text goes and goes...<<<
-    L-stripped string: >>>Some text goes and goes...  <<<
-
 
 ##### Get character by index (it's possible because string is sequence)
 
@@ -580,14 +516,12 @@ print(some_string.split("ZZZZ"))
 {% code overflow="wrap" %}
 ```
 ['sdfsdfsdf', '!', '', '', '', '', 'sdfsdff', '\t', '\n', 'wdfwefwefwef', 'wefwef']
+['sdfsdfsdf', '!', 'sdfsdff', 'wdfwefwefwef', 'wefwef']
+['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
+['sdfsdfsdf ', '     sdfsdff \t \n wdfwefwefwef wefwef']
+['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
 ```
 {% endcode %}
-    ['sdfsdfsdf', '!', 'sdfsdff', 'wdfwefwefwef', 'wefwef']
-    ['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
-    ['sdfsdfsdf ', '     sdfsdff \t \n wdfwefwefwef wefwef']
-    ['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -601,10 +535,9 @@ print(",".join(some_string.split()))
 {% code overflow="wrap" %}
 ```
 First---Second---Third
+sdfsdfsdf,!,sdfsdff,wdfwefwefwef,wefwef
 ```
 {% endcode %}
-    sdfsdfsdf,!,sdfsdff,wdfwefwefwef,wefwef
-
 
 ### Concatenation
 
@@ -687,6 +620,7 @@ print(len(string.ascii_letters) + len(string.digits) + len(string.punctuation) +
 100
 ```
 {% endcode %}
+
 In Python we can get ASCII "index" of the character with builtin function `ord` and get the character by that index with function `chr`.
 
 
@@ -702,10 +636,9 @@ print(ord("A"))
 {% code overflow="wrap" %}
 ```
 A
+65
 ```
 {% endcode %}
-    65
-
 
 Please note that in fact these functions work with Unicode table (that we will cover in a minute) but Unicode table begins with ASCII and extends it.
 
@@ -723,11 +656,10 @@ print("ASCII:\n", ''.join(chr(x) for x in range(128)))
 {% code overflow="wrap" %}
 ```
 ASCII:
+  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 ```
 {% endcode %}
-      	
-     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
-
 
 So, ASCII is great we can't write neither cyrillic texts like `ґуґл з'їв яйко-сподівайко` nor swedish like `Surströmming` with it. The reason is simple - this table just doesn't have needed codepoints for non-latin characters.
 
@@ -756,4 +688,5 @@ print("ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
 b'Surstr\xf6mming'
 ```
 {% endcode %}
+
     b"\xb4\xf3\xb4\xeb \xe7'\xbf\xe2 \xff\xe9\xea\xee-\xf1\xef\xee\xe4\xb3\xe2\xe0\xe9\xea\xee"

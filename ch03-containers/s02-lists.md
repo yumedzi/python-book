@@ -26,6 +26,7 @@ print(dir(some_list))  # Again all methods
 ['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
 ```
 {% endcode %}
+
 Actually beside magical methods (containing \_\_) there are not so much methods left
 
 Worth to note that most methods are not returning anything - they are just directly changing the list itself because it is mutable object.
@@ -34,82 +35,20 @@ Worth to note that most methods are not returning anything - they are just direc
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-----------------------------------------------------------------------------------------
-| ```len(some_list)```   📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return int - length of the list
-```
-{% endcode %}
-
-| ```reverse()```        📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Reverse order of elements of the list in place
-```
-{% endcode %}
-
-| ```sort()```           📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Sort elements of the list in place
-```
-{% endcode %}
-
-| ```append(x)```        📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Add new element ```x``` to the end of the list
-```
-{% endcode %}
-
-| ```extend(iterable)``` 📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Append elements of iterable to the end of the list
-```
-{% endcode %}
-
-| ```pop()```            📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return and remove the last element from the list
-```
-{% endcode %}
-
-| ```pop(i)```           📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return and remove element by index ```i``` from the list
-```
-{% endcode %}
+| ```len(some_list)```       | Return int - length of the list
+| ```reverse()```            | Reverse order of elements of the list in place
+| ```sort()```               | Sort elements of the list in place
+| ```append(x)```            | Add new element ```x``` to the end of the list
+| ```extend(iterable)```     | Append elements of iterable to the end of the list
+| ```pop()```                | Return and remove the last element from the list
+| ```pop(i)```               | Return and remove element by index ```i``` from the list
 
 | Method(s)               |  Description                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| ```some_list[i]```  📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Return (or assign) element by index ```i``` (int)
-```
-{% endcode %}
-
+| ```some_list[i]```      | Return (or assign) element by index ```i``` (int)
 | ```some_list[i:j]```    | Return new list - slice from element by index ```i``` till ```j-1```
 | ```some_list[i:j:z]```  | Return new list - slice with step ```z```
-| ```del some_list[3]``` 📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| Remove element of index ```3``` from list ```some_list```
-```
-{% endcode %}
-
+| ```del some_list[3]```     | Remove element of index ```3``` from list ```some_list```
 | ```del some_list[2:4]```   | Remove part (starting from index ```2``` till ```3```) from list ```some_list```
 | ```2 in some_list```    | Return True/False - is object ```2```is part of list ```some_list```?
 | ```some_list + ["a", "b"]``` | Return new list - a sum of merged lists
@@ -140,11 +79,9 @@ print(some_list[0])
 {% code overflow="wrap" %}
 ```
 [4, 8, 15, 16, 23, 42]
+4
 ```
 {% endcode %}
-    4
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -192,11 +129,9 @@ print(len(some_list))
 {% code overflow="wrap" %}
 ```
 [4, 8, 15, 16, 23, 42]
+6
 ```
 {% endcode %}
-    6
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -261,17 +196,17 @@ new_list.sort()
 {% code overflow="wrap" %}
 ```
 ---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+Input In [139], in <cell line: 2>()
+      1 new_list 
+----> 2 new_list.sort()
+
+
+TypeError: '<' not supported between instances of 'str' and 'int'
 ```
 {% endcode %}
-    TypeError                                 Traceback (most recent call last)
-
-    Input In [139], in <cell line: 2>()
-          1 new_list 
-    ----> 2 new_list.sort()
-
-
-    TypeError: '<' not supported between instances of 'str' and 'int'
-
 
 But we can workaround this by using builtin function `sorted()` and specifying your own sorting function `key` which should return some values os the same type which later will be used for Python's regular sorting.
 
@@ -329,6 +264,7 @@ some_list
 [4, 8, 15, 16, 23, 42, 1000, 1000, [10, 10, [20, 20]], [...]]
 ```
 {% endcode %}
+
 By extending nested list Python will treat all nested as elements just as other types
 
 
@@ -347,22 +283,20 @@ some_list
 {% code overflow="wrap" %}
 ```
 [4,
+ 8,
+ 15,
+ 16,
+ 23,
+ 42,
+ 1000,
+ 1000,
+ [10, 10, [20, 20]],
+ [...],
+ 0,
+ [1, 2],
+ [3, 4]]
 ```
 {% endcode %}
-     8,
-     15,
-     16,
-     23,
-     42,
-     1000,
-     1000,
-     [10, 10, [20, 20]],
-     [...],
-     0,
-     [1, 2],
-     [3, 4]]
-
-
 
 ### Removing
 
@@ -442,24 +376,21 @@ some_list * 2
 {% code overflow="wrap" %}
 ```
 [15,
+ 16,
+ 23,
+ [10, 10, [20, 20]],
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ 0,
+ [1, 2],
+ 15,
+ 16,
+ 23,
+ [10, 10, [20, 20]],
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ 0,
+ [1, 2]]
 ```
 {% endcode %}
-     16,
-     23,
-     [10, 10, [20, 20]],
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     0,
-     [1, 2],
-     15,
-     16,
-     23,
-     [10, 10, [20, 20]],
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     0,
-     [1, 2]]
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -475,17 +406,14 @@ some_list[::-1]
 {% code overflow="wrap" %}
 ```
 [[1, 2],
+ 0,
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ [10, 10, [20, 20]],
+ 23,
+ 16,
+ 15]
 ```
 {% endcode %}
-     0,
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     [10, 10, [20, 20]],
-     23,
-     16,
-     15]
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -518,15 +446,12 @@ some_list[2:]
 {% code overflow="wrap" %}
 ```
 [23,
+ [10, 10, [20, 20]],
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ 0,
+ [1, 2]]
 ```
 {% endcode %}
-     [10, 10, [20, 20]],
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     0,
-     [1, 2]]
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -540,12 +465,14 @@ some_list[-2]
 {% code overflow="wrap" %}
 ```
 [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+
+
+
+
+
+0
 ```
 {% endcode %}
-    0
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -561,16 +488,14 @@ some_list[-2]
 {% code overflow="wrap" %}
 ```
 [15,
+ [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
+ 16,
+ 0,
+ 23,
+ [1, 2],
+ [10, 10, [20, 20]]]
 ```
 {% endcode %}
-     [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]],
-     16,
-     0,
-     23,
-     [1, 2],
-     [10, 10, [20, 20]]]
-
-
 
 ```IndexError``` exception is raised for non-existent index element
 
@@ -587,16 +512,16 @@ some_list[1000]
 {% code overflow="wrap" %}
 ```
 ---------------------------------------------------------------------------
+
+IndexError                                Traceback (most recent call last)
+
+Input In [154], in <cell line: 1>()
+----> 1 some_list[1000]
+
+
+IndexError: list index out of range
 ```
 {% endcode %}
-    IndexError                                Traceback (most recent call last)
-
-    Input In [154], in <cell line: 1>()
-    ----> 1 some_list[1000]
-
-
-    IndexError: list index out of range
-
 
 ## List slices
 
@@ -622,12 +547,14 @@ some_list[2:4]
 {% code overflow="wrap" %}
 ```
 [15, 16, 23, [10, 10, [20, 20]], [...], 0, [1, 2]]
+
+
+
+
+
+[23, [10, 10, [20, 20]]]
 ```
 {% endcode %}
-    [23, [10, 10, [20, 20]]]
-
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -685,10 +612,9 @@ print("After:", list_)
 {% code overflow="wrap" %}
 ```
 Before: [1, 2, 3, 4, 5]
+After: [1, 2, 5]
 ```
 {% endcode %}
-    After: [1, 2, 5]
-
 
 ### Slice assignment
 
@@ -710,10 +636,9 @@ print("After:", list_)
 {% code overflow="wrap" %}
 ```
 Before: [1, 2, 3, 4, 5]
+After: [1, 2, 'A', 5]
 ```
 {% endcode %}
-    After: [1, 2, 'A', 5]
-
 
 ## List comprehensions
 
@@ -739,6 +664,7 @@ cool_list
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
 {% endcode %}
+
 It's absolutely the same as:
 
 
@@ -832,6 +758,7 @@ print(list_)
 ['1-A', '1-B', '1-C', '2-A', '2-B', '2-C', '3-A', '3-B', '3-C']
 ```
 {% endcode %}
+
 The order of loops matters:
 
 
@@ -868,6 +795,7 @@ The order of loops matters:
 ['a-1', 'b-1', 'c-1', 'a-2', 'b-2', 'c-2', 'a-3', 'b-3', 'c-3']
 ```
 {% endcode %}
+
 It's possible to create nested list and use conditions as well:
 
 
@@ -887,6 +815,7 @@ It's possible to create nested list and use conditions as well:
 [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
 ```
 {% endcode %}
+
 is equivalent to:
 
 
@@ -911,6 +840,7 @@ combs
 [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
 ```
 {% endcode %}
+
 Some "real-world" example:
 
 ```python
@@ -941,10 +871,9 @@ print ("b is", b)
 {% code overflow="wrap" %}
 ```
 True
+b is ['Surprise', 2, 3]
 ```
 {% endcode %}
-    b is ['Surprise', 2, 3]
-
 
 ### Shallow copy of lists
 
@@ -969,12 +898,10 @@ print ("b is:", b)
 {% code overflow="wrap" %}
 ```
 False
+a is: ['Oh!', 2, 3]
+b is: ['Surprise', 2, 3]
 ```
 {% endcode %}
-    a is: ['Oh!', 2, 3]
-    b is: ['Surprise', 2, 3]
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -990,10 +917,9 @@ print(a)
 {% code overflow="wrap" %}
 ```
 b is: ['Oh!', 2, 3]
+['New', 2, 3]
 ```
 {% endcode %}
-    ['New', 2, 3]
-
 
 ### Shallow copy problems
 If list has mutable object deeper than on the very first nesting level - shallow copy will cause similar problems as before.
@@ -1014,10 +940,9 @@ print ("b is:", b)
 {% code overflow="wrap" %}
 ```
 False
+b is: [['Surprise!', 2], 3]
 ```
 {% endcode %}
-    b is: [['Surprise!', 2], 3]
-
 
 ### Deep copy
 
@@ -1045,10 +970,9 @@ print ("c is:", c)
 {% code overflow="wrap" %}
 ```
 b is: [['Surprise!', 2], 3]
+c is: [[1, 2], 3]
 ```
 {% endcode %}
-    c is: [[1, 2], 3]
-
 
 ### Self-referencing list
 
@@ -1070,10 +994,9 @@ print(a[-1][-1][-1][-1][-1][-1][-1])
 {% code overflow="wrap" %}
 ```
 [1, 2, 3, [...]]
+[1, 2, 3, [...]]
 ```
 {% endcode %}
-    [1, 2, 3, [...]]
-
 
 In this case when we ```del```ete it - Python garbage collector won't delete from memory - because the number of reference to this object is not null
 
@@ -1117,10 +1040,9 @@ list_ = list((range(1000)))
 {% code overflow="wrap" %}
 ```
 15.4 µs ± 201 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+20.2 µs ± 124 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
-    20.2 µs ± 124 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
-
 
 But they are much faster (x5 in the following example) for a vector operations:
 
@@ -1139,10 +1061,9 @@ import math
 {% code overflow="wrap" %}
 ```
 107 µs ± 1.82 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+21.2 µs ± 296 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
-    21.2 µs ± 296 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
-
 
 ## Complexity of operations
 

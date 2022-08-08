@@ -83,16 +83,14 @@ This will:
 {% code overflow="wrap" %}
 ```
 111					Basics_07_OOP.ipynb
+Basics_01_Introduction.ipynb		Basics_08_Decorators.ipynb
+Basics_02_Strings_numbers.ipynb		Basics_09_Testing.ipynb
+Basics_03_Containers.ipynb		Basics_10_System_libs.ipynb
+Basics_04_Functions.ipynb		images
+Basics_05_Functional_Programming.ipynb	OWNED
+Basics_06_PEP8_Styling.ipynb
 ```
 {% endcode %}
-    Basics_01_Introduction.ipynb		Basics_08_Decorators.ipynb
-    Basics_02_Strings_numbers.ipynb		Basics_09_Testing.ipynb
-    Basics_03_Containers.ipynb		Basics_10_System_libs.ipynb
-    Basics_04_Functions.ipynb		images
-    Basics_05_Functional_Programming.ipynb	OWNED
-    Basics_06_PEP8_Styling.ipynb
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -231,30 +229,29 @@ subprocess.check_call(["ls", "111.txt"])
 ```
 
 
-    
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
+
+
 CalledProcessErrorTraceback (most recent call last)
+
+<ipython-input-18-bf1b71ed0249> in <module>
+----> 1 subprocess.check_call(["ls", "111.txt"])
+
+
+/opt/conda/lib/python3.7/subprocess.py in check_call(*popenargs, **kwargs)
+    345         if cmd is None:
+    346             cmd = popenargs[0]
+--> 347         raise CalledProcessError(retcode, cmd)
+    348     return 0
+    349 
+
+
+CalledProcessError: Command '['ls', '111.txt']' returned non-zero exit status 2.
 ```
 {% endcode %}
-    <ipython-input-18-bf1b71ed0249> in <module>
-    ----> 1 subprocess.check_call(["ls", "111.txt"])
-    
-
-    /opt/conda/lib/python3.7/subprocess.py in check_call(*popenargs, **kwargs)
-        345         if cmd is None:
-        346             cmd = popenargs[0]
-    --> 347         raise CalledProcessError(retcode, cmd)
-        348     return 0
-        349 
-
-
-    CalledProcessError: Command '['ls', '111.txt']' returned non-zero exit status 2.
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -325,13 +322,12 @@ print("Result 4:", subprocess.getoutput("ls -la 111.txt"))
 
 {% code overflow="wrap" %}
 ```
-Result 1:
+Result 1: 
+Result 2: -rwxrwxrwx 1 jovyan users 0 Dec 11 10:42 111.txt
+Result 3 (status code for <rm -rf 111.txt> command): 0
+Result 4: ls: cannot access '111.txt': No such file or directory
 ```
 {% endcode %}
-    Result 2: -rwxrwxrwx 1 jovyan users 0 Dec 11 10:42 111.txt
-    Result 3 (status code for <rm -rf 111.txt> command): 0
-    Result 4: ls: cannot access '111.txt': No such file or directory
-
 
 ### `subprocess.check_output`
 
@@ -362,12 +358,10 @@ print("Result 3 (status code for <rm -rf 111.txt> command):", subprocess.call(["
 {% code overflow="wrap" %}
 ```
 Result 1: b''
+Result 2: b'-rwxrwxrwx 1 jovyan users 0 Sep 20 12:16 111.txt\n'
+Result 3 (status code for <rm -rf 111.txt> command): 0
 ```
 {% endcode %}
-    Result 2: b'-rwxrwxrwx 1 jovyan users 0 Sep 20 12:16 111.txt\n'
-    Result 3 (status code for <rm -rf 111.txt> command): 0
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -376,37 +370,37 @@ print("Result 4:", subprocess.check_output(["ls", "-la", "111.txt"]))
 ```
 
 
-    
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
+
+
 CalledProcessErrorTraceback (most recent call last)
+
+<ipython-input-45-ff7b35de820f> in <module>
+----> 1 print("Result 4:", subprocess.check_output(["ls", "-la", "111.txt"]))
+
+
+/opt/conda/lib/python3.7/subprocess.py in check_output(timeout, *popenargs, **kwargs)
+    393 
+    394     return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+--> 395                **kwargs).stdout
+    396 
+    397 
+
+
+/opt/conda/lib/python3.7/subprocess.py in run(input, capture_output, timeout, check, *popenargs, **kwargs)
+    485         if check and retcode:
+    486             raise CalledProcessError(retcode, process.args,
+--> 487                                      output=stdout, stderr=stderr)
+    488     return CompletedProcess(process.args, retcode, stdout, stderr)
+    489 
+
+
+CalledProcessError: Command '['ls', '-la', '111.txt']' returned non-zero exit status 2.
 ```
 {% endcode %}
-    <ipython-input-45-ff7b35de820f> in <module>
-    ----> 1 print("Result 4:", subprocess.check_output(["ls", "-la", "111.txt"]))
-    
-
-    /opt/conda/lib/python3.7/subprocess.py in check_output(timeout, *popenargs, **kwargs)
-        393 
-        394     return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
-    --> 395                **kwargs).stdout
-        396 
-        397 
-
-
-    /opt/conda/lib/python3.7/subprocess.py in run(input, capture_output, timeout, check, *popenargs, **kwargs)
-        485         if check and retcode:
-        486             raise CalledProcessError(retcode, process.args,
-    --> 487                                      output=stdout, stderr=stderr)
-        488     return CompletedProcess(process.args, retcode, stdout, stderr)
-        489 
-
-
-    CalledProcessError: Command '['ls', '-la', '111.txt']' returned non-zero exit status 2.
-
 
 * `os.system(cmd)` -> exit_status
     * Easiest way of running OS commands:
@@ -430,6 +424,7 @@ status
 0
 ```
 {% endcode %}
+
 It's not possible to get results of the command but you can redirect output to some file and read it:
 
 `os.system("ls > /tmp/ls.out")`
@@ -482,10 +477,9 @@ print(command_to_run.split())
 {% code overflow="wrap" %}
 ```
 ['find', '/', '-type=d', '-name=super file']
+['find', '/', '-type=d', "-name='super", "file'"]
 ```
 {% endcode %}
-    ['find', '/', '-type=d', "-name='super", "file'"]
-
 
 ## Popen
 
@@ -518,12 +512,10 @@ print(proc.pid)
 {% code overflow="wrap" %}
 ```
 STDOUT: b'Hello POPEN !!!\n'
+STDERR: None
+72
 ```
 {% endcode %}
-    STDERR: None
-    72
-
-
 
 ```python
 import subprocess
@@ -562,12 +554,10 @@ print(stdout_value.decode("utf-8"))
 {% code overflow="wrap" %}
 ```
 /notebooks/V2/Basics
+STDOUT: b'SENDING SOMETHING TO STDIN ---> 2021/04/16\n'
+SENDING SOMETHING TO STDIN ---> 2021/04/16
 ```
 {% endcode %}
-    STDOUT: b'SENDING SOMETHING TO STDIN ---> 2021/04/16\n'
-    SENDING SOMETHING TO STDIN ---> 2021/04/16
-    
-
 
 Or like this:
 
@@ -589,11 +579,14 @@ subprocess.getoutput("cat tmp_file")
 {% code overflow="wrap" %}
 ```
 ['cat', 'tmp_file']
+
+
+
+
+
+'SENDING SOMETHING TO STDIN ---> 2021/04/16'
 ```
 {% endcode %}
-    'SENDING SOMETHING TO STDIN ---> 2021/04/16'
-
-
 
 Pipeline:
 
@@ -631,8 +624,6 @@ if p1.wait() == 0:  # Wait for p1 to finish with status 0
 /dev/vg1000/lv  7.0T  6.6T  459G  94% /notebooks
 ```
 {% endcode %}
-    
-
 
 Need `awk`? No problem:
 
@@ -659,8 +650,6 @@ else:
 94%
 ```
 {% endcode %}
-    
-
 
 Or - via Python:
 
@@ -693,6 +682,7 @@ print(re.search(r'(\d+%)', p2_output).group(1))
 94%
 ```
 {% endcode %}
+
 Another example - let's get how much memory Jupyter Notebook uses.
 
 Shell commands used:
@@ -710,10 +700,9 @@ Shell commands used:
 {% code overflow="wrap" %}
 ```
 jovyan       6  0.0  1.0 229712 64068 ?        Sl   Apr09   1:09 /opt/conda/bin/python /opt/conda/bin/jupyter-notebook
+229712
 ```
 {% endcode %}
-    229712
-
 
 Via `subprocess.check_output()`:
 
@@ -732,10 +721,9 @@ print(float(subprocess.check_output(cmd, shell=True).decode("utf8").rstrip()))
 {% code overflow="wrap" %}
 ```
 251984.0
+251984.0
 ```
 {% endcode %}
-    251984.0
-
 
 Via `subprocess.Popen()`:
 
@@ -758,6 +746,7 @@ print(f'Jupyter Notebook eats {int(p4.communicate()[0].decode("utf8")) / 1024:5.
 Jupyter Notebook eats 224.33 MB of memory
 ```
 {% endcode %}
+
 We can also use context manager for `subprocess.Popen` to clean resources after running processes:
 
 
@@ -776,23 +765,24 @@ with subprocess.Popen(["ls", "-la", "."], stdout=subprocess.PIPE, text=True) as 
 {% code overflow="wrap" %}
 ```
 112
+Alive
+OUTPUT:
+total 744
+drwxrwxrwx 1 jovyan users    606 Apr 16 09:50 .
+drwxrwxrwx 1 jovyan users     84 Oct  2  2019 ..
+-rwxrwxrwx 1 jovyan users  52631 Feb 24 11:26 Basics_01_Introduction.ipynb
+-rwxrwxrwx 1 jovyan users 133308 Apr  4 09:38 Basics_02_Strings_numbers.ipynb
+-rwxrwxrwx 1 jovyan users 134635 Mar 15 11:16 Basics_03_Containers.ipynb
+-rwxrwxrwx 1 jovyan users  60168 Apr  4 16:31 Basics_04_Functions.ipynb
+-rwxrwxrwx 1 jovyan users  47696 Mar 22 11:39 Basics_05_Functional_Programming.ipynb
+-rwxrwxrwx 1 jovyan users  30427 Mar 29 10:17 Basics_06_PEP8_Styling.ipynb
+-rwxrwxrwx 1 jovyan users  71901 Apr  7 06:37 Basics_07_OOP.ipynb
+-rwxrwxrwx 1 jovyan users  50381 Apr  9 10:05 Basics_08_Decorators.ipynb
+-rwxrwxrwx 1 jovyan users  70916 Apr 14 09:38 Basics_09_Testing.ipynb
+-rwxrwxrwx 1 jovyan users  84181 Apr 16 09:50 Basics_10_System_libs.ipynb
+lrwxrwxrwx 1 jovyan users     17 Aug 23  2019 images -> /notebooks/images
+drwxrwxrwx 1 jovyan users    762 Feb 24 11:26 .ipynb_checkpoints
 ```
 {% endcode %}
-    Alive
-    OUTPUT:
-    total 744
-    drwxrwxrwx 1 jovyan users    606 Apr 16 09:50 .
-    drwxrwxrwx 1 jovyan users     84 Oct  2  2019 ..
-    -rwxrwxrwx 1 jovyan users  52631 Feb 24 11:26 Basics_01_Introduction.ipynb
-    -rwxrwxrwx 1 jovyan users 133308 Apr  4 09:38 Basics_02_Strings_numbers.ipynb
-    -rwxrwxrwx 1 jovyan users 134635 Mar 15 11:16 Basics_03_Containers.ipynb
-    -rwxrwxrwx 1 jovyan users  60168 Apr  4 16:31 Basics_04_Functions.ipynb
-    -rwxrwxrwx 1 jovyan users  47696 Mar 22 11:39 Basics_05_Functional_Programming.ipynb
-    -rwxrwxrwx 1 jovyan users  30427 Mar 29 10:17 Basics_06_PEP8_Styling.ipynb
-    -rwxrwxrwx 1 jovyan users  71901 Apr  7 06:37 Basics_07_OOP.ipynb
-    -rwxrwxrwx 1 jovyan users  50381 Apr  9 10:05 Basics_08_Decorators.ipynb
-    -rwxrwxrwx 1 jovyan users  70916 Apr 14 09:38 Basics_09_Testing.ipynb
-    -rwxrwxrwx 1 jovyan users  84181 Apr 16 09:50 Basics_10_System_libs.ipynb
-    lrwxrwxrwx 1 jovyan users     17 Aug 23  2019 images -> /notebooks/images
-    drwxrwxrwx 1 jovyan users    762 Feb 24 11:26 .ipynb_checkpoints
+
     -rwxrwxrwx 1 jovyan users     43 Apr 16 09:41 tmp_file

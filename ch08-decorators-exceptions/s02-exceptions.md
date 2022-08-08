@@ -52,18 +52,17 @@ divide_ten([3])
 {% code overflow="wrap" %}
 ```
 1)
+5.0
+Cool, no exceptions were triggered!
+We're done with that.
+2)
+Oops, invalid - you can't pass 0. Error: float division by zero
+We're done with that.
+3)
+Wrong type! <class 'list'>
+We're done with that.
 ```
 {% endcode %}
-    5.0
-    Cool, no exceptions were triggered!
-    We're done with that.
-    2)
-    Oops, invalid - you can't pass 0. Error: float division by zero
-    We're done with that.
-    3)
-    Wrong type! <class 'list'>
-    We're done with that.
-
 
 Another working example:
 
@@ -93,11 +92,14 @@ get_item()
 {% code overflow="wrap" %}
 ```
 Enter index: -5
+
+
+
+
+
+'Incorrect value'
 ```
 {% endcode %}
-    'Incorrect value'
-
-
 
 Better solution:
 
@@ -177,11 +179,10 @@ main(3)
 {% code overflow="wrap" %}
 ```
 Oops, can't div by zero!
+ERROR: Can't work with negative numbers
+3.3333333333333335
 ```
 {% endcode %}
-    ERROR: Can't work with negative numbers
-    3.3333333333333335
-
 
 ## Referring to exceptions
 
@@ -214,10 +215,9 @@ except:
 {% code overflow="wrap" %}
 ```
 OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
+/tmp/1123123.txt
 ```
 {% endcode %}
-    /tmp/1123123.txt
-
 
 ## Catching multiple exceptions
 
@@ -282,11 +282,4 @@ except AssertionError as e:
     print("Cought AssertionError:", e)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-Cought AssertionError: On paper it work
-```
-{% endcode %}
-s...
+    Cought AssertionError: On paper it works...

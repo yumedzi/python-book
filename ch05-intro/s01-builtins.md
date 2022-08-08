@@ -170,12 +170,10 @@ print( a_object.b )
 {% code overflow="wrap" %}
 ```
 True
+5
+Wow! Adding attrs like haxxxors
 ```
 {% endcode %}
-    5
-    Wow! Adding attrs like haxxxors
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

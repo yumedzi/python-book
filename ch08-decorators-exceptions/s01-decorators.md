@@ -92,12 +92,11 @@ print(scream)
 {% code overflow="wrap" %}
 ```
 LaLaLa
+LaLaLaLaLaLaLaLaLaLaLaLaLaLaLa
+Oops, Exception:  name 'song' is not defined
+<function Super Song at 0x103fe2a60>
 ```
 {% endcode %}
-    LaLaLaLaLaLaLaLaLaLaLaLaLaLaLa
-    Oops, Exception:  name 'song' is not defined
-    <function Super Song at 0x103fe2a60>
-
 
 `2`. We can define function everywhere! It will exist in that namespace only. #easy!
 
@@ -126,10 +125,9 @@ print(music(10))
 {% code overflow="wrap" %}
 ```
 New pop-hit: Tync-Tync-Boom-Oooh-Toonc-Beep-Beep-Boom-Beep-Toonc
+Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
 ```
 {% endcode %}
-    Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
-
 
 Of course we can't access internal functions in any way...
 
@@ -180,12 +178,11 @@ print(party()())
 {% code overflow="wrap" %}
 ```
 New pop-hit: Toonc-Oooh-Oooh-Tync-Oooh-Oooh-Toonc-Oooh-Toonc-Oooh-Tync-Toonc-Boom-Oooh-Beep
+Notes: Do,Fa,Si,Si,Do,Do,Do,Do,Fa,Do,La,Fa,Re,La,Si
+New pop-hit: Oooh-Toonc
+Notes: Si,Re
 ```
 {% endcode %}
-    Notes: Do,Fa,Si,Si,Do,Do,Do,Do,Fa,Do,La,Fa,Re,La,Si
-    New pop-hit: Oooh-Toonc
-    Notes: Si,Re
-
 
 ## Decorator syntax and examples
 
@@ -238,11 +235,10 @@ greet()
 {% code overflow="wrap" %}
 ```
 >>> Before running function
+Hello!
+>>> After running function
 ```
 {% endcode %}
-    Hello!
-    >>> After running function
-
 
 Another example:
 
@@ -272,11 +268,10 @@ print(price(100, tax_rate=.1))
 {% code overflow="wrap" %}
 ```
 <function dollar.<locals>.wrapper at 0x7f208019f8b0>
+Args are: (100,), KWArgs: {'tax_rate': 0.1}
+$110.0
 ```
 {% endcode %}
-    Args are: (100,), KWArgs: {'tax_rate': 0.1}
-    $110.0
-
 
 The same example, but in one line:
 
@@ -304,6 +299,7 @@ f()
 '$100'
 ```
 {% endcode %}
+
 More, more examples!!!
 
 
@@ -369,12 +365,11 @@ print(f"my_func.__dict__ = {my_func.__dict__}")
 {% code overflow="wrap" %}
 ```
 New deco init...
+0
+my_func.counter = 10
+my_func.__dict__ = {'counter': 10}
 ```
 {% endcode %}
-    0
-    my_func.counter = 10
-    my_func.__dict__ = {'counter': 10}
-
 
 Shown above decorator is call counter.
 
@@ -428,12 +423,10 @@ print(test1(48))
 {% code overflow="wrap" %}
 ```
 Init...
+25
+48
 ```
 {% endcode %}
-    25
-    48
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -458,11 +451,10 @@ print(test1.created_at)
 {% code overflow="wrap" %}
 ```
 Init...
+25
+2019-12-09 10:17:56.486420
 ```
 {% endcode %}
-    25
-    2019-12-09 10:17:56.486420
-
 
 Tro-lo-lo decorator which return completely other function than original one:
 
@@ -518,10 +510,9 @@ print(test1(25))
 {% code overflow="wrap" %}
 ```
 <function my_deco.<locals>.wrapper at 0x10483a488>
+25
 ```
 {% endcode %}
-    25
-
 
 Adding some counter to wrapper to be able to see in test1:
 
@@ -552,12 +543,10 @@ print(test1.counter)
 {% code overflow="wrap" %}
 ```
 25 48
+1
+3
 ```
 {% endcode %}
-    1
-    3
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -601,22 +590,20 @@ foo.info()
 {% code overflow="wrap" %}
 ```
 Init of decorator...
+>>> Before running!...
+>>> Result is: 10000000000000000000000000000000000000000
+>>> After running....
+>>> Before running!...
+>>> Result is: 10000000000000000000000000000000000000000
+>>> After running....
+
+
+
+
+
+'This function was decorated by IDEAL DECORATOR on 2020-12-30 07:52:06.535243 and ran 2 times (last run: 2020-12-30 07:52:06.536808)'
 ```
 {% endcode %}
-    >>> Before running!...
-    >>> Result is: 10000000000000000000000000000000000000000
-    >>> After running....
-    >>> Before running!...
-    >>> Result is: 10000000000000000000000000000000000000000
-    >>> After running....
-
-
-
-
-
-    'This function was decorated by IDEAL DECORATOR on 2020-12-30 07:52:06.535243 and ran 2 times (last run: 2020-12-30 07:52:06.536808)'
-
-
 
 You want more?... 
 
@@ -653,10 +640,9 @@ l2 = f()
 {% code overflow="wrap" %}
 ```
 Function: my_fnc(1, {}), time spent: 3.666 seconds
+Function: f({}), time spent: 7.063 seconds
 ```
 {% endcode %}
-    Function: f({}), time spent: 7.063 seconds
-
 
 "Fakely long runnning" decorator
 
@@ -685,12 +671,11 @@ f()
 {% code overflow="wrap" %}
 ```
 Work is in progress....
+Work is in progress....
+Work is in progress....
+Done
 ```
 {% endcode %}
-    Work is in progress....
-    Work is in progress....
-    Done
-
 
 It is possible to add some random strings to show during "fake running" time window:
 
@@ -729,18 +714,16 @@ calc_sum(2, 2)
 {% code overflow="wrap" %}
 ```
 Traversing trough raw data internals...
+Validating obtained subprocess results...
+Alligning matrixes of indexes for data frames...
+
+
+
+
+
+4
 ```
 {% endcode %}
-    Validating obtained subprocess results...
-    Alligning matrixes of indexes for data frames...
-
-
-
-
-
-    4
-
-
 
 Super cool decorator that controls the time of execution for decorated function and stops it in case of exceeding that time:
 
@@ -792,13 +775,12 @@ print(long(4))
 {% code overflow="wrap" %}
 ```
 >>> Running quick / 1 second:
+Done
+>>> Running long / 4 seconds:
+Timed out! 
+None
 ```
 {% endcode %}
-    Done
-    >>> Running long / 4 seconds:
-    Timed out! 
-    None
-
 
 ## Chaining decorators
 
@@ -874,6 +856,7 @@ hello()
 '<b><i><b><b>Goodbye again, World!</b></b></i></b>'
 ```
 {% endcode %}
+
 As resume memoization rule:
     
 > Decorator is 
@@ -971,6 +954,7 @@ print(calc_tips._val)
 {100: 10, 200: 10}
 ```
 {% endcode %}
+
 Way to improve this cashing decorator - change key to a tuple that contains a `tip_rate` also. In this way we'll cover all possible cases.
 
 
@@ -1021,12 +1005,10 @@ print(calc_tips)
 {% code overflow="wrap" %}
 ```
 Function name: _f
+Function docstring: None
+<function riddle_deco.<locals>._f at 0x7fd4f15baea0>
 ```
 {% endcode %}
-    Function docstring: None
-    <function riddle_deco.<locals>._f at 0x7fd4f15baea0>
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -1044,10 +1026,9 @@ print(calc_tips)
 {% code overflow="wrap" %}
 ```
 Function name: test
+<function test at 0x7fd4f15baea0>
 ```
 {% endcode %}
-    <function test at 0x7fd4f15baea0>
-
 
 We can do this in decorator to fix all these issues
 
@@ -1079,12 +1060,11 @@ print(pretty_func)
 {% code overflow="wrap" %}
 ```
 Mew mew mew
+pretty_func
+Print something nice
+<function pretty_func at 0x7f210c6936a8>
 ```
 {% endcode %}
-    pretty_func
-    Print something nice
-    <function pretty_func at 0x7f210c6936a8>
-
 
 Alternative - suggested method - to use `functools.wraps` decorator which will automatically assign wrapper function’s `__module__`, `__name__`, `__qualname__`, `__annotations__` and `__doc__`. 
 
@@ -1118,13 +1098,12 @@ print(example)
 {% code overflow="wrap" %}
 ```
 Calling decorated function
+Called example function
+example
+Docstring
+<function example at 0x104ad2ea0>
 ```
 {% endcode %}
-    Called example function
-    example
-    Docstring
-    <function example at 0x104ad2ea0>
-
 
 ### One-time decorator
 
@@ -1161,8 +1140,9 @@ def f():
 {% code overflow="wrap" %}
 ```
 It was nice, thank you for all..
+Some text
+Some text
 ```
 {% endcode %}
-    Some text
-    Some text
+
     It was nice, thank you for all..

@@ -172,11 +172,10 @@ print(r"Printing RAW string with <\n> and <\t\t> as special characters")
 {% code overflow="wrap" %}
 ```
 Printing string with <
+> and <		> as special characters
+Printing RAW string with <\n> and <\t\t> as special characters
 ```
 {% endcode %}
-    > and <		> as special characters
-    Printing RAW string with <\n> and <\t\t> as special characters
-
 
 Module `re` can compile regex pattern making it's repeated usage faster.
 
@@ -282,6 +281,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 * Return a tuple containing the (start, end) positions of the match
 ```
 {% endcode %}
+
 An example of using groups and match object:
 
 
@@ -308,14 +308,13 @@ if m:
 {% code overflow="wrap" %}
 ```
 <re.Match object; span=(10, 34), match='Foo bar 12x Foo asd  34 '>
+('asd', '34')
+Foo bar 12x Foo asd  34 
+34
+asd
+Foo asd  34
 ```
 {% endcode %}
-    ('asd', '34')
-    Foo bar 12x Foo asd  34 
-    34
-    asd
-    Foo asd  34 
-
 
 An example of re-using the previously found group in the regexp. Here we try to find the username and password for the main account (which is defined by `main_user` config option):
 
@@ -393,16 +392,14 @@ for m in re.finditer(pattern, text):
 {% code overflow="wrap" %}
 ```
 Result of re.findall: [('cmonet324@salon_paris.com', 'Claude', 'Monet'), ('Elizabeth2@windsor.com', 'Elizabeth', 'II'), ('b.allen@starlabs.com', 'Barry', 'Allen')]
+User <cmonet324@salon_paris.com>: Claude Monet
+User <Elizabeth2@windsor.com>: Elizabeth II
+User <b.allen@starlabs.com>: Barry Allen
+User <cmonet324@salon_paris.com>: Claude Monet
+User <Elizabeth2@windsor.com>: Elizabeth II
+User <b.allen@starlabs.com>: Barry Allen
 ```
 {% endcode %}
-    User <cmonet324@salon_paris.com>: Claude Monet
-    User <Elizabeth2@windsor.com>: Elizabeth II
-    User <b.allen@starlabs.com>: Barry Allen
-    User <cmonet324@salon_paris.com>: Claude Monet
-    User <Elizabeth2@windsor.com>: Elizabeth II
-    User <b.allen@starlabs.com>: Barry Allen
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -469,6 +466,7 @@ re.findall(r"<span>(.*)</span>", html)
 ['text1</span> and <span>text2</span> and <span>text3']
 ```
 {% endcode %}
+
 To make these quantifiers (`*` and `+`) lazy (non-greedy) to much as few as possible we can add `?` to them.
 Now the example from above correctly returns the contents of all `<span>` tags:
 
@@ -484,11 +482,4 @@ re.findall(r"<span>(.*?)</span>", html)
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-['text1', 'text2', 'text
-```
-{% endcode %}
-3']
+    ['text1', 'text2', 'text3']

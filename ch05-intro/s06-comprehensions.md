@@ -61,19 +61,17 @@
 {% code overflow="wrap" %}
 ```
 [(2, 1),
+ (4, 1),
+ (4, 3),
+ (6, 1),
+ (6, 3),
+ (6, 5),
+ (8, 1),
+ (8, 3),
+ (8, 5),
+ (8, 7)]
 ```
 {% endcode %}
-     (4, 1),
-     (4, 3),
-     (6, 1),
-     (6, 3),
-     (6, 5),
-     (8, 1),
-     (8, 3),
-     (8, 5),
-     (8, 7)]
-
-
 
 ## Dictionary comprehension
 
@@ -134,11 +132,10 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 {% code overflow="wrap" %}
 ```
 {1, 2, 3, 4}
+{1, 2, 3, 4}
+{1, 3}
 ```
 {% endcode %}
-    {1, 2, 3, 4}
-    {1, 3}
-
 
 ## Generator expression
 
@@ -169,11 +166,4 @@ for x in (x * x for x in range(10)):
     print(x, end=" ")
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-0 1 4 9 16 25 36 49 64 8
-```
-{% endcode %}
-1
+    0 1 4 9 16 25 36 49 64 81

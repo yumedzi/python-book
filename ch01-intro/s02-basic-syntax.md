@@ -66,13 +66,14 @@ if condition:
     do_something1()
         do_something2()
 ```
-        📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
 
 ```
 {% endcode %}
+
 If code block is not big it is allowed to use inline form:
 
 ```python
@@ -145,16 +146,14 @@ help(f)
 {% code overflow="wrap" %}
 ```
 Help on function f in module __main__:
+
+f()
+    Some nice function (the best in the world)
+    
+    :no params:
+    :return: None
 ```
 {% endcode %}
-    
-    f()
-        Some nice function (the best in the world)
-        
-        :no params:
-        :return: None
-    
-
 
 Or:
 

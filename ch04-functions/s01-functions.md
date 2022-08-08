@@ -81,34 +81,33 @@ f1()
 {% code overflow="wrap" %}
 ```
 No complains at this point!
+------------------------------
+Now you'll get the error:
+
+
+
+---------------------------------------------------------------------------
+
+ZeroDivisionError                         Traceback (most recent call last)
+
+<ipython-input-1-41e0b6328c85> in <module>()
+      4 
+      5 print("Now you'll get the error:")
+----> 6 f1()
+      7 
+
+
+<ipython-input-1-41e0b6328c85> in f1()
+      1 def f1():
+----> 2     return 1/0
+      3 print( "No complains at this point!\n" + "-"*30 )
+      4 
+      5 print("Now you'll get the error:")
+
+
+ZeroDivisionError: division by zero
 ```
 {% endcode %}
-    ------------------------------
-    Now you'll get the error:
-
-
-
-    ---------------------------------------------------------------------------
-
-    ZeroDivisionError                         Traceback (most recent call last)
-
-    <ipython-input-1-41e0b6328c85> in <module>()
-          4 
-          5 print("Now you'll get the error:")
-    ----> 6 f1()
-          7 
-
-
-    <ipython-input-1-41e0b6328c85> in f1()
-          1 def f1():
-    ----> 2     return 1/0
-          3 print( "No complains at this point!\n" + "-"*30 )
-          4 
-          5 print("Now you'll get the error:")
-
-
-    ZeroDivisionError: division by zero
-
 
 Function definition's execution binds the function name in the current local namespace to a function object (a wrapper around the executable code for the function). This function object contains a reference to the current global namespace as the global namespace to be used when the function is called.
 
@@ -133,10 +132,9 @@ print(foo()) # Will return 100500 because during call global a equals to 100500
 {% code overflow="wrap" %}
 ```
 10
+100500
 ```
 {% endcode %}
-    100500
-
 
 But most often the function relies on the data passed to it:
 
@@ -158,12 +156,11 @@ print(sum(x=5))
 {% code overflow="wrap" %}
 ```
 74
+74
+54
+54
 ```
 {% endcode %}
-    74
-    54
-    54
-
 
 We can assign default argument:
 
@@ -192,11 +189,10 @@ print(random_phrase(length=6))
 {% code overflow="wrap" %}
 ```
 evil unicorns
+I think ehmm evil unicorns
+ehmm umm unicorns evil nice unicorns
 ```
 {% endcode %}
-    I think ehmm evil unicorns
-    ehmm umm unicorns evil nice unicorns
-
 
 Using list comprehesion we can make this function very short
 
@@ -307,10 +303,9 @@ print_strings(str2="James Bond", str1="Bond,")
 {% code overflow="wrap" %}
 ```
 Hello World
+Bond, James Bond
 ```
 {% endcode %}
-    Bond, James Bond
-
 
 ### Default arguments
 
@@ -333,10 +328,9 @@ add_friend(name="Mark")
 {% code overflow="wrap" %}
 ```
 Friend Mark (20) added
+Friend Mark (20) added
 ```
 {% endcode %}
-    Friend Mark (20) added
-
 
 ### Variable-length arguments 
 
@@ -361,10 +355,9 @@ add_friend(**friend2)
 {% code overflow="wrap" %}
 ```
 Friend John (25) added
+Friend Sara (18) added
 ```
 {% endcode %}
-    Friend Sara (18) added
-
 
 ### Order
 
@@ -400,14 +393,12 @@ print( func(10, 20, c=6))  # Correct order
 {% code overflow="wrap" %}
 ```
 5
+6
+9
+13
+36
 ```
 {% endcode %}
-    6
-    9
-    13
-    36
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -421,16 +412,16 @@ print( func(3, c=6))  # Missing required arg b - exception!
 {% code overflow="wrap" %}
 ```
 ---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+<ipython-input-3-e4ed5e80880e> in <module>()
+----> 1 print( func(3, c=6))  # Missing required arg b - exception!
+
+
+TypeError: func() missing 1 required positional argument: 'b'
 ```
 {% endcode %}
-    TypeError                                 Traceback (most recent call last)
-
-    <ipython-input-3-e4ed5e80880e> in <module>()
-    ----> 1 print( func(3, c=6))  # Missing required arg b - exception!
-    
-
-    TypeError: func() missing 1 required positional argument: 'b'
-
 
 ## Positional-Only parameters
 
@@ -450,13 +441,11 @@ help(divmod)
 {% code overflow="wrap" %}
 ```
 Help on built-in function divmod in module builtins:
+
+divmod(x, y, /)
+    Return the tuple (x//y, x%y).  Invariant: div*y + mod == x.
 ```
 {% endcode %}
-    
-    divmod(x, y, /)
-        Return the tuple (x//y, x%y).  Invariant: div*y + mod == x.
-    
-
 
 This is useful in many case, for example `int` has this help:
 
@@ -538,22 +527,22 @@ files_search(["1.txt", "some.log"], 1, 1, True, False)
 ```
 
 
-    
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
+
+
 TypeErrorTraceback (most recent call last)
+
+<ipython-input-7-53f9c885bca9> in <module>
+      1 # ERROR:
+----> 2 files_search(["1.txt", "some.log"], 1, 1, True, False)
+
+
+TypeError: files_search() takes 1 positional argument but 5 were given
 ```
 {% endcode %}
-    <ipython-input-7-53f9c885bca9> in <module>
-          1 # ERROR:
-    ----> 2 files_search(["1.txt", "some.log"], 1, 1, True, False)
-    
-
-    TypeError: files_search() takes 1 positional argument but 5 were given
-
 
 ## Annotations
 

@@ -76,23 +76,22 @@ print (a_iter.__next__())
 {% code overflow="wrap" %}
 ```
 False
+<method-wrapper '__iter__' of list object at 0x000000000441FC48>
+1
+<list_iterator object at 0x00000000043AE860>
+1 2 3 4
+
+
+
+---------------------------------------------------------------------------
+
+StopIteration                             Traceback (most recent call last)
+
+<ipython-input-25-e15c83738056> in <module>()
+      7 print( a_iter )
+      8 print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
+----> 9 print (a_iter.__next__())
 ```
 {% endcode %}
-    <method-wrapper '__iter__' of list object at 0x000000000441FC48>
-    1
-    <list_iterator object at 0x00000000043AE860>
-    1 2 3 4
-
-
-
-    ---------------------------------------------------------------------------
-
-    StopIteration                             Traceback (most recent call last)
-
-    <ipython-input-25-e15c83738056> in <module>()
-          7 print( a_iter )
-          8 print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
-    ----> 9 print (a_iter.__next__())
-    
 
     StopIteration:

@@ -70,17 +70,15 @@ print("now global is", all)
 {% code overflow="wrap" %}
 ```
 builtin: <built-in function all>
+global: [1, 2, 3]
+enclosed: [1, 2, 3, 'changed!']
+checking 'all': [1, 2, 3, 'changed!']
+changing global: [7, 8, 9]
+checking 'all': [1, 2, 3, 'changed!']
+inner3 says: [1, 2, 3, 'changed!']
+now global is [7, 8, 9]
 ```
 {% endcode %}
-    global: [1, 2, 3]
-    enclosed: [1, 2, 3, 'changed!']
-    checking 'all': [1, 2, 3, 'changed!']
-    changing global: [7, 8, 9]
-    checking 'all': [1, 2, 3, 'changed!']
-    inner3 says: [1, 2, 3, 'changed!']
-    now global is [7, 8, 9]
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -105,10 +103,9 @@ print(a, b, c)
 {% code overflow="wrap" %}
 ```
 1
+1 2 old string
 ```
 {% endcode %}
-    1 2 old string
-
 
 * `a` - free variable
 * `b` - global variable
@@ -144,12 +141,11 @@ print("Outside the function -> b:", b)
 {% code overflow="wrap" %}
 ```
 Inside the function -> a: 100
+Inside the function -> b: 888
+Outside the function -> a: 0
+Outside the function -> b: 888
 ```
 {% endcode %}
-    Inside the function -> b: 888
-    Outside the function -> a: 0
-    Outside the function -> b: 888
-
 
 Get all locals, globals:
 * ```locals()```
@@ -231,6 +227,7 @@ outer()
 enclosed variable
 ```
 {% endcode %}
+
 Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
 
 
@@ -259,12 +256,11 @@ print(a)
 {% code overflow="wrap" %}
 ```
 enclosed variable
+changed enclosed variable
+changed enclosed variable
+global variable
 ```
 {% endcode %}
-    changed enclosed variable
-    changed enclosed variable
-    global variable
-
 
 Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
 
@@ -283,32 +279,31 @@ foo()
 ```
 
 
-    
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
+
+
 UnboundLocalErrorTraceback (most recent call last)
+
+<ipython-input-3-591bdaeb3bef> in <module>
+      6     b = a + 25
+      7     return a, b
+----> 8 foo()
+
+
+<ipython-input-3-591bdaeb3bef> in foo()
+      2 def foo():
+      3     # global a
+----> 4     a += 30  # a = a + 30
+      5 
+      6     b = a + 25
+
+
+UnboundLocalError: local variable 'a' referenced before assignment
 ```
 {% endcode %}
-    <ipython-input-3-591bdaeb3bef> in <module>
-          6     b = a + 25
-          7     return a, b
-    ----> 8 foo()
-    
-
-    <ipython-input-3-591bdaeb3bef> in foo()
-          2 def foo():
-          3     # global a
-    ----> 4     a += 30  # a = a + 30
-          5 
-          6     b = a + 25
-
-
-    UnboundLocalError: local variable 'a' referenced before assignment
-
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -382,11 +377,10 @@ print("Result of running inner function:", result())
 {% code overflow="wrap" %}
 ```
 Running inner: 5
+<function foo.<locals>.inner at 0x7f3e881fe488>
+Result of running inner function: 5
 ```
 {% endcode %}
-    <function foo.<locals>.inner at 0x7f3e881fe488>
-    Result of running inner function: 5
-
 
 How can `inner` know about `a` if `foo` is already returned and all we can't access to it's local variables normally?
 
@@ -405,7 +399,8 @@ print("Free var #1 value:", cell.cell_contents)
 {% code overflow="wrap" %}
 ```
 Free vars: ('a',)
+(<cell at 0x7f3e88272258: int object at 0x5594948e94a0>,)
 ```
 {% endcode %}
-    (<cell at 0x7f3e88272258: int object at 0x5594948e94a0>,)
+
     Free var #1 value: 5

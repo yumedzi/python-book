@@ -113,29 +113,11 @@ All other values are considered true — so objects of many types are always tru
 
 | Operation    |  Result                        |
 |--------------|--------------------------------|
-| ```x or y```   📟 _<mark style="color:green;">Output:</mark>_
+| ```x or y```       | if ```x``` is false, then ```y```, else ```x```
+| ```x and y```      | if ```x``` is false, then ```x```, else ```y```
+| ```not x```        | if ```x``` is false, then ```True```, else ```False```
 
-{% code overflow="wrap" %}
-```
-| if ```x``` is false, then ```y```, else ```x```
-```
-{% endcode %}
 
-| ```x and y```  📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| if ```x``` is false, then ```x```, else ```y```
-```
-{% endcode %}
-
-| ```not x```    📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-| if ```x``` is false, then ```True```, else ```False```
-```
-{% endcode %}
 Sometimes it can surprise you. The following example will always print the first quote:
 
 
@@ -156,6 +138,7 @@ else:
 Take arms against a sea of troubles!
 ```
 {% endcode %}
+
 Because the expression is equivalent to:
 ```python
 (decision == "be") or ("to be")

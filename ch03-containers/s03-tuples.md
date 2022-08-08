@@ -260,7 +260,7 @@ In other words:
 
 * Parts of datetime are different kinds, so it is tuple:
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+🪄 _<mark style="color:green;">Code (</mark><mark style="color:blue;">>>></mark><mark style="color:green;">) and </mark>_📟_<mark style="color:green;"> Output:</mark>_
 
 ```python
 # python 2
@@ -289,7 +289,7 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 
 * Values is result of range() are all of the same type, so it is list (in Python 2):
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+🪄 _<mark style="color:green;">Code (</mark><mark style="color:blue;">>>></mark><mark style="color:green;">) and </mark>_📟_<mark style="color:green;"> Output:</mark>_
 
 ```python
 # python 2

@@ -46,7 +46,7 @@ This is due to the security reason to avoid the possibility of command injection
 
 Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of `shell=True` is strongly discouraged in cases where the command string is constructed from external input:
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+🪄 _<mark style="color:green;">Code (</mark><mark style="color:blue;">>>></mark><mark style="color:green;">) and </mark>_📟_<mark style="color:green;"> Output:</mark>_
 
 ```python
 >>> from subprocess import call
@@ -445,7 +445,7 @@ args is sequence with command like:
 
 Executing shell commands that incorporate unsanitized input from an untrusted source makes a program vulnerable to shell injection, a serious security flaw which can result in arbitrary command execution. For this reason, the use of shell=True is strongly discouraged in cases where the command string is constructed from external input:
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+🪄 _<mark style="color:green;">Code (</mark><mark style="color:blue;">>>></mark><mark style="color:green;">) and </mark>_📟_<mark style="color:green;"> Output:</mark>_
 
 ```python
 >>> from subprocess import call

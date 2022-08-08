@@ -1052,18 +1052,6 @@ import math
 ```
 {% endcode %}
 
-```python
-
-```
-
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-106 µs ± 1.05 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
-```
-{% endcode %}
-
 ## Complexity of operations
 
 <span title="Advanced topic" style="position: absolute; top: 25px; right: 30px; font-size: 250%; color:red">🔥</span>

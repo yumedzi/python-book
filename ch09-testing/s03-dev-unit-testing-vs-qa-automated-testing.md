@@ -61,7 +61,7 @@ Difference between DEV and QA tests:
 | Focus            | Individual module/unit works as expected | Entire application works as expected
 | Coverage         | Number of units, code lines  | Number of Tech requirements
 | Maintenance      | Low        | High
-| Programming language | The same of the code | Any language, usually: `Python`, `Java`
+| Programming language | The same as the code | Any language, usually: `Python`, `Java`
 | Changes          | High       | Low
 | Written by       | Developers | QA engineers
 | Written at       | Start of the development | When feature is added, ready for tests

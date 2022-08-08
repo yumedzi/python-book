@@ -207,8 +207,6 @@ Example of decorator realization
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
-
 ```python
 def my_deco(func): 
     def wrapper(): 
@@ -224,7 +222,6 @@ def greet():
 
 greet()
 ```
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -535,8 +532,6 @@ print(test1.counter)
 {% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
-
 ```python
 def my_deco(func): # FINAL VERSION OF IDEAL DECORATOR
     print("Init of decorator...")
@@ -568,7 +563,6 @@ foo(10, 40)
 
 foo.info()
 ```
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -733,8 +727,6 @@ Let's check how it works:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
-
 ```python
 import time
 
@@ -749,7 +741,6 @@ print(long(1))
 print(">>> Running long / 4 seconds:")
 print(long(4))
 ```
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 

@@ -22,8 +22,6 @@ Ideally, `doctest` informs human readers, and tells the computer what to expect 
 * Finally, any lines that don't start with `>>>` or `...`, up to the next blank line or `>>>` prompt, represent the output expected from the statement.
 
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
-
 ```python
 def some_func(x, y=0):
     '''
@@ -41,7 +39,6 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=True)
 ```
-
 
 ```
 Trying:
@@ -65,8 +62,6 @@ Test passed.
 
 We can test anything that can be typed in interactive Python shell:
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
-
 ```python
 def some_func():
     '''
@@ -77,7 +72,6 @@ def some_func():
     9
     '''
 ```
-
 
 Doctests can be keeped in plain txt files
 
@@ -104,8 +98,6 @@ if __name__ == "__main__":
 Simplest testing ever!
 
 **test_example.py**
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
-
 ```python
 def sum_nums(*args):
     """
@@ -124,7 +116,6 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod()
 ```
-
 
 ```shell
 $ python test_example.py –v
@@ -230,8 +221,6 @@ ZeroDivisionError
 
 
 ## Trick
-
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
 
 ```python
 def test_zero(f):

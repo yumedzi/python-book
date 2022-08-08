@@ -17,7 +17,7 @@ A Test Case is a set of steps or conditions that a tester should follow to deter
 Individual steps or intermidiate checks are tests or unit tests:
 
 ```sh
-[ INPUT ] -------->  [ PROGRAM ] --------> [ OUTPUT ] -----> [ CORRECT? ] ---> [ PASS or FAIL]
+[ INPUT ] --->  [ PROGRAM ] ---> [ OUTPUT ] ---> [ CORRECT? ] ---> [ PASS or FAIL]
 ```
 
 A formal test-case is usually described by a known input and by an expected output, which is compared to actual result during test execution. Comparing actual and expected is the result of the test case.

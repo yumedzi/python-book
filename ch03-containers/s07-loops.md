@@ -281,8 +281,8 @@ print("Goodbye")
 
 {% code overflow="wrap" %}
 ```
-Please enter an int: 3
-Square is  9
+Please enter an int: 5
+Square is  25
 Please enter an int: 15
 Square is  225
 Please enter an int: 0

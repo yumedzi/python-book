@@ -1,5 +1,7 @@
 ## Getting help
 
+<img src="../images/tr_02_04.jpg" width=40% />
+
 * Help
     * In Python interactive shell:
 🪄 _<mark style="color:green;">Code:</mark>_

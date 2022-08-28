@@ -571,9 +571,9 @@ print(some_big_string)
 Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
 ```
 {% endcode %}
-### Unicode
+## Unicode
 
-#### ASCII
+### ASCII
 
 Previously characters used in text data were limited by encoding standard called [ASCII](https://en.wikipedia.org/wiki/ASCII) (American Standard Code for Information Interchange). The key point was "American" so all non-latin characters were missing in that table. 
 
@@ -639,8 +639,12 @@ So, ASCII is great we can't write neither cyrillic texts like `ґуґл з'їв 
 That's why at some point other encodings (tables of codepoints) used all 8 bits were created:
 * latin-1, windows-1252
     * These cover all main European languages
+* latin-2
+    * Central or Eastern European
 * windows-1251, koi8
     * These cover most cyrillic languages
+* big5
+    * Traditional Chinese
 
 To encode Python's string into some endocing the string method `encode(coding)` is used:
 
@@ -648,10 +652,13 @@ To encode Python's string into some endocing the string method `encode(coding)` 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print("Surströmming".encode("latin-1"))
+print("Surströmming".encode("latin_1"))
 # print("Surströmming".encode("windows-1251")) # WON"T WORK
-print("ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
-#print("ґуґл з'їв яйко-сподівайко".encode("latin-1")) # WON'T WORK
+
+print("Piękna jest taka pewność, ale niepewność jest piękniejsza.".encode("latin2"))
+
+print("Ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
+#print("Ґуґл з'їв яйко-сподівайко".encode("latin-1")) # WON'T WORK
 ```
 
 📟 _<mark style="color:green;">Output:</mark>_
@@ -659,6 +666,7 @@ print("ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
 {% code overflow="wrap" %}
 ```
 b'Surstr\xf6mming'
-b"\xb4\xf3\xb4\xeb \xe7'\xbf\xe2 \xff\xe9\xea\xee-\xf1\xef\xee\xe4\xb3\xe2\xe0\xe9\xea\xee"
+b'Pi\xeakna jest taka pewno\xb6\xe6, ale niepewno\xb6\xe6 jest pi\xeakniejsza.'
+b"\xa5\xf3\xb4\xeb \xe7'\xbf\xe2 \xff\xe9\xea\xee-\xf1\xef\xee\xe4\xb3\xe2\xe0\xe9\xea\xee"
 ```
 {% endcode %}

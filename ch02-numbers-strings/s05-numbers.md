@@ -2,9 +2,9 @@
 
 ### Types:
 
-* int
-* float
-* complex
+* `int`
+* `float`
+* `complex`
 
 ### Operations:
 
@@ -150,7 +150,7 @@ random.randint(2, 7)  # from 2 to 7, includes 7
 
 {% code overflow="wrap" %}
 ```
-6
+7
 ```
 {% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -166,7 +166,7 @@ random.randrange(15)  # from 0 to 14, doesn't include 15
 
 {% code overflow="wrap" %}
 ```
-7
+13
 ```
 {% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -198,7 +198,7 @@ print(l)
 
 {% code overflow="wrap" %}
 ```
-[4, 5, 2, 1, 3]
+[2, 4, 5, 3, 1]
 ```
 {% endcode %}
 How random is "random"?
@@ -238,7 +238,7 @@ $$1011 = 1∗2^3+0∗2^2+1∗2^1+1∗2^0$$
 
 Table with decimal to binary map 
 
-| Decimal 	| Binary   | 	Powers of two
+| Decimal 	| Binary   | Powers of `2`
 |-----------|----------|--------------------------
 |0  | 0 	|$$0 * 2^0$$
 |1 	| 1 	|$$1 * 2^0$$
@@ -270,9 +270,23 @@ If Python were to print the true decimal value of the binary approximation store
 ```
 0.1 -> 0.100000000000000005551115123125782
 ```
-print(0.1 + 0.2)
-print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1) 
 
+
+🪄 _<mark style="color:green;">Code:</mark>_
+
+```python
+print(0.1 + 0.2)
+print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1)
+```
+
+📟 _<mark style="color:green;">Output:</mark>_
+
+{% code overflow="wrap" %}
+```
+0.30000000000000004
+0.9999999999999999
+```
+{% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -386,7 +400,7 @@ for x in range(1000, 1000000):
 
 {% code overflow="wrap" %}
 ```
-95.1 ms ± 1.35 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+98.4 ms ± 4.87 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 ```
 {% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -401,7 +415,7 @@ for x in range(1000, 1000000):
 
 {% code overflow="wrap" %}
 ```
-593 ms ± 3.61 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+612 ms ± 6.46 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 ```
 {% endcode %}
 ### Scientific calculations
@@ -435,59 +449,14 @@ plt.show()
 
 {% code overflow="wrap" %}
 ```
----------------------------------------------------------------------------
 
-ModuleNotFoundError                       Traceback (most recent call last)
-
-Input In [28], in <cell line: 1>()
-----> 1 get_ipython().run_line_magic('matplotlib', 'inline')
-      2 import numpy as np
-      3 import matplotlib.pyplot as plt
-
-
-File /opt/conda/lib/python3.10/site-packages/IPython/core/interactiveshell.py:2305, in InteractiveShell.run_line_magic(self, magic_name, line, _stack_depth)
-   2303     kwargs['local_ns'] = self.get_local_scope(stack_depth)
-   2304 with self.builtin_trap:
--> 2305     result = fn(*args, **kwargs)
-   2306 return result
-
-
-File /opt/conda/lib/python3.10/site-packages/IPython/core/magics/pylab.py:99, in PylabMagics.matplotlib(self, line)
-     97     print("Available matplotlib backends: %s" % backends_list)
-     98 else:
----> 99     gui, backend = self.shell.enable_matplotlib(args.gui.lower() if isinstance(args.gui, str) else args.gui)
-    100     self._show_matplotlib_backend(args.gui, backend)
-
-
-File /opt/conda/lib/python3.10/site-packages/IPython/core/interactiveshell.py:3478, in InteractiveShell.enable_matplotlib(self, gui)
-   3457 def enable_matplotlib(self, gui=None):
-   3458     """Enable interactive matplotlib and inline figure support.
-   3459 
-   3460     This takes the following steps:
-   (...)
-   3476         display figures inline.
-   3477     """
--> 3478     from matplotlib_inline.backend_inline import configure_inline_support
-   3480     from IPython.core import pylabtools as pt
-   3481     gui, backend = pt.find_gui_and_backend(gui, self.pylab_gui_select)
-
-
-File /opt/conda/lib/python3.10/site-packages/matplotlib_inline/backend_inline.py:6, in <module>
-      1 """A matplotlib backend for publishing figures via display_data"""
-      3 # Copyright (c) IPython Development Team.
-      4 # Distributed under the terms of the BSD 3-Clause License.
-----> 6 import matplotlib
-      7 from matplotlib.backends.backend_agg import (  # noqa
-      8     new_figure_manager,
-      9     FigureCanvasAgg,
-     10     new_figure_manager_given_figure,
-     11 )
-     12 from matplotlib import colors
-
-
-ModuleNotFoundError: No module named 'matplotlib'
 ```
 {% endcode %}
+![png](../images/Basics_02_Strings_numbers_70_0.png)
+    
+
+
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -502,56 +471,7 @@ plt.show()
 
 {% code overflow="wrap" %}
 ```
----------------------------------------------------------------------------
 
-ModuleNotFoundError                       Traceback (most recent call last)
-
-Input In [29], in <cell line: 1>()
-----> 1 get_ipython().run_line_magic('matplotlib', 'inline')
-      2 (n, bins) = np.histogram(v, bins=50)
-      3 plt.plot(.6*(bins[1:]+bins[:-1]), n)
-
-
-File /opt/conda/lib/python3.10/site-packages/IPython/core/interactiveshell.py:2305, in InteractiveShell.run_line_magic(self, magic_name, line, _stack_depth)
-   2303     kwargs['local_ns'] = self.get_local_scope(stack_depth)
-   2304 with self.builtin_trap:
--> 2305     result = fn(*args, **kwargs)
-   2306 return result
-
-
-File /opt/conda/lib/python3.10/site-packages/IPython/core/magics/pylab.py:99, in PylabMagics.matplotlib(self, line)
-     97     print("Available matplotlib backends: %s" % backends_list)
-     98 else:
----> 99     gui, backend = self.shell.enable_matplotlib(args.gui.lower() if isinstance(args.gui, str) else args.gui)
-    100     self._show_matplotlib_backend(args.gui, backend)
-
-
-File /opt/conda/lib/python3.10/site-packages/IPython/core/interactiveshell.py:3478, in InteractiveShell.enable_matplotlib(self, gui)
-   3457 def enable_matplotlib(self, gui=None):
-   3458     """Enable interactive matplotlib and inline figure support.
-   3459 
-   3460     This takes the following steps:
-   (...)
-   3476         display figures inline.
-   3477     """
--> 3478     from matplotlib_inline.backend_inline import configure_inline_support
-   3480     from IPython.core import pylabtools as pt
-   3481     gui, backend = pt.find_gui_and_backend(gui, self.pylab_gui_select)
-
-
-File /opt/conda/lib/python3.10/site-packages/matplotlib_inline/backend_inline.py:6, in <module>
-      1 """A matplotlib backend for publishing figures via display_data"""
-      3 # Copyright (c) IPython Development Team.
-      4 # Distributed under the terms of the BSD 3-Clause License.
-----> 6 import matplotlib
-      7 from matplotlib.backends.backend_agg import (  # noqa
-      8     new_figure_manager,
-      9     FigureCanvasAgg,
-     10     new_figure_manager_given_figure,
-     11 )
-     12 from matplotlib import colors
-
-
-ModuleNotFoundError: No module named 'matplotlib'
 ```
 {% endcode %}
+![png](../images/Basics_02_Strings_numbers_71_0.png)

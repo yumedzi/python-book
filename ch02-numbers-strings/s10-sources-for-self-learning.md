@@ -1,7 +1,7 @@
 # Sources for self-learning
 
 
-* http://www.learnpython.org/ 
+* [LearnPython](http://www.learnpython.org/)
     * Lessons 2,4-6, 11
 * [String Formatting - RealPython](https://realpython.com/python-string-formatting/)
 * Unicode tutorials:

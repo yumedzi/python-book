@@ -416,7 +416,7 @@ f'{unexistent_var}'
 
 NameError                                 Traceback (most recent call last)
 
-Input In [251], in <cell line: 1>()
+Input In [372], in <cell line: 1>()
 ----> 1 f'{unexistent_var}'
 
 
@@ -438,7 +438,7 @@ f'{1/0}'
 
 ZeroDivisionError                         Traceback (most recent call last)
 
-Input In [252], in <cell line: 1>()
+Input In [373], in <cell line: 1>()
 ----> 1 f'{1/0}'
 
 

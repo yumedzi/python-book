@@ -400,7 +400,7 @@ for x in range(1000, 1000000):
 
 {% code overflow="wrap" %}
 ```
-98.4 ms ± 4.87 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+97.8 ms ± 4.27 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 ```
 {% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -415,7 +415,7 @@ for x in range(1000, 1000000):
 
 {% code overflow="wrap" %}
 ```
-612 ms ± 6.46 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+607 ms ± 7.19 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 ```
 {% endcode %}
 ### Scientific calculations

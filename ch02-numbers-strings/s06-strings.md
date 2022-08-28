@@ -32,11 +32,11 @@ Multiline string (matter of syntax, for Python they are all the same):
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-big_string = """Starting here
-Going and going and going...
-And again and again 
-... a bit bored..
-I need to rest...
+big_string = """She’s fifteen, sells flowers at the train station.
+Sun and berries sweeten the oxygen beyond the mines.
+Trains stop for a moment, move further on.
+Soldiers go to the East, soldiers go to the West.
+                               (c) Serhiy Zhadan
 """
 print(big_string)
 ```
@@ -45,11 +45,11 @@ print(big_string)
 
 {% code overflow="wrap" %}
 ```
-Starting here
-Going and going and going...
-And again and again 
-... a bit bored..
-I need to rest...
+She’s fifteen, sells flowers at the train station.
+Sun and berries sweeten the oxygen beyond the mines.
+Trains stop for a moment, move further on.
+Soldiers go to the East, soldiers go to the West.
+                               (c) Serhiy Zhadan
 ```
 {% endcode %}
 ### Main methods of strings
@@ -542,9 +542,9 @@ Rare case where string can be merged if they are separated by any number of spac
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-some_big_string = "Dear Katerina Matveevna! " \
-                  "My soul is flying towards you " \
-                  "while I'm lost here in this endless desert..."
+some_big_string = "Everything started with music, " \
+                  "with scars left by songs " \
+                  "heard at fall weddings with other kids my age."
 print(some_big_string)
 ```
 
@@ -552,15 +552,15 @@ print(some_big_string)
 
 {% code overflow="wrap" %}
 ```
-Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
+Everything started with music, with scars left by songs heard at fall weddings with other kids my age.
 ```
 {% endcode %}
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-some_big_string = ("Dear Katerina Matveevna! " 
-                   "My soul is flying towards you " 
-                   "while I'm lost here in this endless desert...")
+some_big_string = ("You will reply today, touching warm letters, "
+                   "leafing through them in the dark, confusing vowels with consonants, "
+                   "like a typewriter in an old Warsaw office. ")
 print(some_big_string)
 ```
 
@@ -568,7 +568,7 @@ print(some_big_string)
 
 {% code overflow="wrap" %}
 ```
-Dear Katerina Matveevna! My soul is flying towards you while I'm lost here in this endless desert...
+You will reply today, touching warm letters, leafing through them in the dark, confusing vowels with consonants, like a typewriter in an old Warsaw office.
 ```
 {% endcode %}
 ## Unicode
@@ -637,13 +637,13 @@ ASCII:
 So, ASCII is great we can't write neither cyrillic texts like `ґуґл з'їв яйко-сподівайко` nor swedish like `Surströmming` with it. The reason is simple - this table just doesn't have needed codepoints for non-latin characters.
 
 That's why at some point other encodings (tables of codepoints) used all 8 bits were created:
-* latin-1, windows-1252
+* `latin-1`, `windows-1252`
     * These cover all main European languages
-* latin-2
+* `latin-2`
     * Central or Eastern European
-* windows-1251, koi8
+* `windows-1251`, `koi8`
     * These cover most cyrillic languages
-* big5
+* `big5`
     * Traditional Chinese
 
 To encode Python's string into some endocing the string method `encode(coding)` is used:

@@ -35,7 +35,10 @@ Similarly you can manage packages via `conda` (if installed \*conda distro):
 ```bash
 conda list                          # Print currently installed packages
 conda install requests pandas       # Install new packages 
-conda remove scipy                  # Remove packages
+conda remove scipy                  # Remove packages (alias: uninstall)
+conda update python                 # Update package (alias: upgrade), even Python itself:
+
+python                          3.9.13-h9a09f29_0_cpython --> 3.10.6-h9a09f29_0_cpython
 ```
 
 
@@ -198,6 +201,7 @@ this means it is required to download and install **Microsoft Visual C++ Build T
 ## Best IDEs:
 
 * [**Microsoft Visual Studio Code**](https://code.visualstudio.com/)  <-- recommended
+    * [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) <-- required
 * [JetBrains PyCharm](https://www.jetbrains.com/pycharm/) (Community Edition is OK) or [Fleet](https://www.jetbrains.com/fleet/)
 * [Sublime Text](https://www.sublimetext.com/3) (with lot of Python plugins)
 * [Notepad++](https://notepad-plus-plus.org/)

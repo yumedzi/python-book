@@ -59,23 +59,33 @@ import antigravity
 
 
 
-* The programming language Python was conceived in the late **1980**s, and its implementation was started in December **1989** by Guido van Rossum at CWI in the Netherlands.
-
+* The programming language Python was conceived in the late **1980**s
+* Implementation was started in December **1989** by Guido van Rossum at CWI in the Netherlands.
 * Python was named for the BBC TV show [Monty Python's Flying Circus](https://en.wikipedia.org/wiki/Monty_Python%27s_Flying_Circus).
+* Python 1.0 was released on January 1994.
+* Python 2.0 was released on October 2000.
+* Python 3.0 was released on December 2008.
+
 
 <center><img src="../images/guido.jpg" /></center>
 
-* [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum) is Python's principal author, and his continuing central role in deciding the direction of Python is reflected in the title given to him by the Python community, **Benevolent Dictator for Life (BDFL)**.
-
+* [Guido van Rossum](https://gvanrossum.github.io/) is Python's principal author, and his continuing central role in deciding the direction of Python is reflected in the title given to him by the Python community, **Benevolent Dictator for Life (BDFL)**.
 * In July 2018, van Rossum announced that he would be stepping down from the position of BDFL of the Python programming language. Many thinks that's why:
 
 > "Now that PEP 572 is done, I don't ever want to have to fight so hard for a PEP and find that so many people despise my decisions."
 
-
+* Worked at:
+    * Google
+    * Dropbox
+    * Microsoft
+* Has this license plate:
+    <img src="https://gvanrossum.github.io/images/license_thumb.jpg"/>
 
 * First commit to [SVN](https://hg.python.org/cpython/):
 
 <center><img src="../images/tr_01_04.png" /></center>
+
+Versions:
 
 * **Python 1.0** was released on January 1994.
 
@@ -84,6 +94,8 @@ import antigravity
 
 
 * **Python 3.0**, a major, backwards-incompatible release, was released on December 3, 2008 after a long period of testing. Many of its major features have also been backported to the backwards-compatible Python 2.6 and 2.7.
+
+* In 2022, Python `3.10.4` and `3.9.12` were expedited and so were older releases including 3.8.13, and 3.7.13 because of many security issues. Python `3.9.13` is the latest `3.9` version, and from now on `3.9` (and older; `3.8` and `3.7`) will only get security updates.
 
 
 > Full history is described in [Wikipedia](https://en.wikipedia.org/wiki/History_of_Python)

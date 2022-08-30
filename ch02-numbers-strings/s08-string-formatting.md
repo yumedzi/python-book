@@ -10,7 +10,7 @@
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-print_me = 100505050.12123
+print_me = 100500.12
 print(  "1. %s" % print_me )         # Old format, %
 print(  "2. {}".format(print_me) )   # New format, format()
 print( f"3. {print_me}" )            # f-strings
@@ -20,9 +20,9 @@ print( f"3. {print_me}" )            # f-strings
 
 {% code overflow="wrap" %}
 ```
-1. 100505050.12123
-2. 100505050.12123
-3. 100505050.12123
+1. 100500.12
+2. 100500.12
+3. 100500.12
 ```
 {% endcode %}
 #### **%** (printf-style formatting)

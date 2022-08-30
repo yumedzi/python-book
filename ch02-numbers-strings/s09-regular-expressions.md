@@ -4,6 +4,8 @@
 
 It is very complex subject to cover so we are going to just look at basic concepts.
 
+> The best online tool for testing/writing/experimenting with regular expressions: [Regex101](https://regex101.com/)
+
 More information: https://docs.python.org/3/library/re.html
 
 Regular expression consists of two parts (examples: `a+`, `[a-z]*`, `.*` ):

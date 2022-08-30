@@ -306,7 +306,7 @@ Operators can be overloaded in Python by defining special member functions—for
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
-class Foo: 
+class Foo:
     attr1 = "Some value"
     attr2 = "Boo!"
     

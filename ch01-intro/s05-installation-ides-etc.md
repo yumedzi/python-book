@@ -168,14 +168,14 @@ mkvirtualenv -a /home/user/projects/old_project/ -p `cat python_bin.txt` -r requ
 
 Mostly problems are related to incorrectly ENV variables. Some links with help to deal with this:
 
-* https://docs.python.org/2.7/using/windows.html 
-* https://docs.python.org/3/using/windows.html 
+* [Py2](https://docs.python.org/2.7/using/windows.html)
+* [Py3](https://docs.python.org/3/using/windows.html)
 
 ### Can't install some module via pip
 
 Sometimes to install additional package is impossible to do via pip because some pre-installed libraries (like MS Studio C++ or mysql/postgresql libraries) needed. So it's better to download and install precompiled packages from here:
 
-* http://www.lfd.uci.edu/~gohlke/pythonlibs/
+* [gohlke](http://www.lfd.uci.edu/~gohlke/pythonlibs/)
 
 Install of .whl package:
 

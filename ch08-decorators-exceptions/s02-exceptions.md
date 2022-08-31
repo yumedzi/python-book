@@ -22,7 +22,7 @@ finally:
 We are checking the code only after `try` before `except`.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def divide_ten(num): 
@@ -47,7 +47,7 @@ print("3)")
 divide_ten([3])
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -69,7 +69,7 @@ Checking user's input and returning the list item.
 Non-ideal solution would be:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 l = list(range(10))
@@ -86,7 +86,7 @@ def get_item():
 get_item()
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -137,7 +137,7 @@ For raising custom Exception – `raise` used:
 * `raise CustomException()`
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 # divide.py :
@@ -172,7 +172,7 @@ main(-6)
 main(3)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -186,7 +186,7 @@ ERROR: Can't work with negative numbers
 Please note that `raise` can also be used to print an error message and then re-raise the exception (allowing a caller to handle the exception as well):
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import sys
@@ -207,7 +207,7 @@ except:
     raise
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -221,7 +221,7 @@ OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
 * Putting several exceptions in a tuple
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import sys
@@ -234,7 +234,7 @@ except (IOError, ValueError) as e:
     print(f"Data or file error: {e}")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -266,7 +266,7 @@ python –O script.py
 Examples of `assert`:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 assert 1 == 1

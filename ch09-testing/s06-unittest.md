@@ -60,7 +60,7 @@ if __name__ == '__main__':
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import unittest
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     unittest.TextTestRunner(verbosity=1).run(suite)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -135,7 +135,7 @@ class Monkey:
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import unittest
@@ -157,7 +157,7 @@ suite = unittest.TestLoader().loadTestsFromModule(MonkeyTestCase())
 unittest.TextTestRunner().run(suite)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -190,7 +190,7 @@ How can we optimize the tests above?
 First of all - by removing redundancy.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 class MonkeyTestCase(unittest.TestCase):
@@ -213,7 +213,7 @@ suite = unittest.TestLoader().loadTestsFromModule(MonkeyTestCase())
 unittest.TextTestRunner(verbosity=1).run(suite)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -438,7 +438,7 @@ def tearDownClass(cls):
 And the final version of tests for Monkey:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 class MonkeyTestCase(unittest.TestCase):
@@ -466,7 +466,7 @@ suite = unittest.TestLoader().loadTestsFromModule(MonkeyTestCase())
 unittest.TextTestRunner().run(suite)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -550,7 +550,7 @@ class Monkey:
 Updated tests would be:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import unittest
@@ -605,7 +605,7 @@ suite = unittest.TestLoader().loadTestsFromModule(ExtendedMonkeyTestCase())
 unittest.TextTestRunner().run(suite)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

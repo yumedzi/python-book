@@ -12,7 +12,7 @@ else:
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a = 12
@@ -24,7 +24,7 @@ else:
     print("a is lesser than 3")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -40,7 +40,7 @@ a is greater than 3
 The built-in function bool() can be used to convert any value to a Boolean, if the value can be interpreted as a truth value 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 True + True
@@ -49,14 +49,14 @@ True + True
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 2
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 (True + True + True) * (True + True) - False
@@ -65,14 +65,14 @@ True + True
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 6
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 bool(24), bool("sdsds"), bool(""), bool([])
@@ -81,7 +81,7 @@ bool(24), bool("sdsds"), bool(""), bool([])
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -117,7 +117,7 @@ All other values are considered true — so objects of many types are always tru
 Sometimes it can surprise you. The following example will always print the first quote:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 decision = "not to be"
@@ -127,7 +127,7 @@ else:
     print("You will not see this quote anyway =(")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

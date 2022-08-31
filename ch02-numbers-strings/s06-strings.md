@@ -9,7 +9,7 @@ String literals are written in a variety of ways:
 * Triple quoted: `'''Three single quotes''', """Three double quotes"""`
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 s1 = "Hello, I'm nice little string"
@@ -18,7 +18,7 @@ print(s1)
 print(s2)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -29,7 +29,7 @@ Hello, I'm nice little string
 Multiline string (matter of syntax, for Python they are all the same):
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 big_string = """She’s fifteen, sells flowers at the train station.
@@ -41,7 +41,7 @@ Soldiers go to the East, soldiers go to the West.
 print(big_string)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -55,13 +55,13 @@ Soldiers go to the East, soldiers go to the West.
 ### Main methods of strings
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(dir("some_string")) #Emm... actually all methods...
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -116,7 +116,7 @@ some_string = "Some funny string!"
 ##### Adding, multiplying(!) strings 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_string + " and another string"
@@ -125,14 +125,14 @@ some_string + " and another string"
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 'Some funny string! and another string'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_string * 3
@@ -141,7 +141,7 @@ some_string * 3
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -151,7 +151,7 @@ some_string * 3
 ##### Get length
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 len(some_string)
@@ -160,7 +160,7 @@ len(some_string)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -171,7 +171,7 @@ len(some_string)
 * lower, upper, title, capitalize
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_string.lower(), some_string.upper(), some_string.title(), some_string.capitalize()
@@ -180,7 +180,7 @@ some_string.lower(), some_string.upper(), some_string.title(), some_string.capit
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -193,14 +193,14 @@ some_string.lower(), some_string.upper(), some_string.title(), some_string.capit
 ##### Various checking for lower/upper, all digits, all letters. Returns True/False.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print("abcde".islower())
 print("ABCDE".isupper())
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -208,7 +208,7 @@ True
 True
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 "12345".isdigit(), "abc".isalpha(), "abc123".isalnum()
@@ -217,7 +217,7 @@ True
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -227,7 +227,7 @@ True
 ##### Nice examples regarding checks:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 low_str = "asdasdfhjksdhfjh"
@@ -237,14 +237,14 @@ low_str.islower(), low_str.isupper()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 (True, False)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 almost_digit_str = "12123123 123123"
@@ -255,14 +255,14 @@ almost_digit_str.isdigit(), true_digit_str.isdigit()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 (False, True)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 phone_num = "066-749-99-99"
@@ -274,7 +274,7 @@ phone_num.isalpha(), name.isalpha(), name_with_spaces.isalpha()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -322,7 +322,7 @@ It can be difficult to comprehend from the start, so the following table will sh
 The playground code to test these methods on those strings:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 METHODS = "isdecimal", "isdigit", "isnumeric"
@@ -334,7 +334,7 @@ for str_ in TEST_STRINGS:
         print(f'{method_str:23} 🡒 {eval(method_str)}')
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -356,7 +356,7 @@ for str_ in TEST_STRINGS:
 * To check for all-spaces string - use ```.isspace()```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 "    ".isspace(), "  \t \n  \r\n".isspace()
@@ -365,7 +365,7 @@ for str_ in TEST_STRINGS:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -375,7 +375,7 @@ for str_ in TEST_STRINGS:
 * A bit hackish way to check for alphabeticals with spaces - via using ```.replace()```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 "Hello World".replace(" ", "").isalpha()
@@ -384,7 +384,7 @@ for str_ in TEST_STRINGS:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -397,7 +397,7 @@ True
 * ```.lstrip()``` - remove only from the beginning
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 whitespaces_str = "  Some text goes and goes...  "
@@ -407,7 +407,7 @@ print("R-stripped string: >>>" + whitespaces_str.rstrip() + "<<<")
 print("L-stripped string: >>>" + whitespaces_str.lstrip() + "<<<")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -422,7 +422,7 @@ L-stripped string: >>>Some text goes and goes...  <<<
 Indexing starts from 0. Negative indexing means counting from the end so -1 is the last item.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_string, some_string[0], some_string[3], some_string[-1]
@@ -431,7 +431,7 @@ some_string, some_string[0], some_string[3], some_string[-1]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -446,7 +446,7 @@ some_string, some_string[0], some_string[3], some_string[-1]
 * Optional third argument **step** - step.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_string[0:4], some_string[5:10], some_string[0:-1], some_string[:]
@@ -455,14 +455,14 @@ some_string[0:4], some_string[5:10], some_string[0:-1], some_string[:]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 ('Some', 'funny', 'Some funny string', 'Some funny string!')
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_string[:10:2], some_string[::3], some_string[::-1]
@@ -471,7 +471,7 @@ some_string[:10:2], some_string[::3], some_string[::-1]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -481,7 +481,7 @@ some_string[:10:2], some_string[::3], some_string[::-1]
 ##### Splitting/joining
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_string = "sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef"
@@ -492,7 +492,7 @@ print(some_string.split("!"))
 print(some_string.split("ZZZZ"))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -503,14 +503,14 @@ print(some_string.split("ZZZZ"))
 ['sdfsdfsdf !     sdfsdff \t \n wdfwefwefwef wefwef']
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print("---".join(["First", "Second", "Third"]))
 print(",".join(some_string.split()))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -523,7 +523,7 @@ sdfsdfsdf,!,sdfsdff,wdfwefwefwef,wefwef
 Rare case where string can be merged if they are separated by any number of spaces. Strings must be presented by string object themselves not by variables or function call results
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 "Hello" " World"
@@ -532,14 +532,14 @@ Rare case where string can be merged if they are separated by any number of spac
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 'Hello World'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_big_string = "Everything started with music, " \
@@ -548,14 +548,14 @@ some_big_string = "Everything started with music, " \
 print(some_big_string)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 Everything started with music, with scars left by songs heard at fall weddings with other kids my age.
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_big_string = ("You will reply today, touching warm letters, "
@@ -564,7 +564,7 @@ some_big_string = ("You will reply today, touching warm letters, "
 print(some_big_string)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -582,14 +582,14 @@ ASCII basics were simple - single byte of data (8 bits) were used. The first 7 b
 Anyway, 128 ASCII characters were: `26` uppercase letters, `26` lowercase letters, `10` digits, punctuation symbols, some spacing characters, and some nonprintable control codes like `\n` (line feed), `\r` (carriage return), `\a` (bell), `\b` (backspace) etc:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import string
 print(len(string.ascii_letters) + len(string.digits) + len(string.punctuation) + len(string.whitespace))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -599,14 +599,14 @@ print(len(string.ascii_letters) + len(string.digits) + len(string.punctuation) +
 In Python we can get ASCII "index" of the character with builtin function `ord` and get the character by that index with function `chr`.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(chr(65))
 print(ord("A"))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -619,13 +619,13 @@ Please note that in fact these functions work with Unicode table (that we will c
 We can get all 128 characters of ASCII:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print("ASCII:\n", ''.join(chr(x) for x in range(128)))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -649,7 +649,7 @@ That's why at some point other encodings (tables of codepoints) used all 8 bits 
 To encode Python's string into some endocing the string method `encode(coding)` is used:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print("Surströmming".encode("latin_1"))
@@ -661,7 +661,7 @@ print("Ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
 #print("Ґуґл з'їв яйко-сподівайко".encode("latin-1")) # WON'T WORK
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

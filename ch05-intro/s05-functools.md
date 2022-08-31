@@ -15,7 +15,7 @@ Very useful module. A sign of a good Pythonista. Most useful functions:
 > New function that calls target function with some arguments already set. This gives a copy of a function with less attributes.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import functools, math
@@ -32,7 +32,7 @@ h2 = lambda arg: string_concatenator("Hello ", arg)
 print(h2("Beatufiul World"))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -41,7 +41,7 @@ Margarita, Bye-bye, ja nai!..
 Hello Beatufiul World
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 pow_of_10 = functools.partial(math.pow, 10) # 10 - first arg
@@ -52,7 +52,7 @@ pow_of_10(5) # 5 - second arg
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -64,7 +64,7 @@ What if we want to be able to assign specific positional argument?
 It can't be done! Use `lambda` instead (of even regular `def`)
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 quadrupler = lambda x: pow(x, 4)
@@ -74,7 +74,7 @@ quadrupler(2)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -90,7 +90,7 @@ It is recommended to use `lambda` instead of `functools.partial` when possible.
 > In Python 2 `functools.reduce` was builtin function `reduce`
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import functools
@@ -100,14 +100,14 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 15
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 ((((1+2)+3)+4)+5)
@@ -116,7 +116,7 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -126,7 +126,7 @@ functools.reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
 Factorial, "ez mode":
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 # Reminder what is factorial:
@@ -136,14 +136,14 @@ Factorial, "ez mode":
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 120
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 functools.reduce(lambda x, y: x * y, range(1,6))
@@ -152,14 +152,14 @@ functools.reduce(lambda x, y: x * y, range(1,6))
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 120
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 from operator import mul
@@ -169,7 +169,7 @@ functools.reduce(mul, range(1,6))
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -181,7 +181,7 @@ functools.reduce(mul, range(1,6))
 > Decorator to wrap a function with a memoizing callable that saves up to the maxsize most recent calls. 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 @functools.lru_cache(maxsize=None)
@@ -194,7 +194,7 @@ print([fib(n) for n in range(20)])
 print(fib.cache_info())
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

@@ -139,14 +139,14 @@ Module `re` has all regexp-related methods:
 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import re 
 print(dir(re))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -161,14 +161,14 @@ print(dir(re))
 An example that illustrates raw strings:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print("Printing string with <\n> and <\t\t> as special characters")
 print(r"Printing RAW string with <\n> and <\t\t> as special characters")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -188,7 +188,7 @@ That's why in most cases when we are looking for some text the usage `search` is
 Main `re` methods:
 
 * ```compile(pattern)```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -196,7 +196,7 @@ Main `re` methods:
 ```
 {% endcode %}
 * ```match(pattern, text)```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -204,7 +204,7 @@ Main `re` methods:
 ```
 {% endcode %}
 * ```search(pattern, text)```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -212,7 +212,7 @@ Main `re` methods:
 ```
 {% endcode %}
 * ```findall(pattern, text)```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -220,7 +220,7 @@ Find all substrings where the RE matches, and returns them as a list.
 ```
 {% endcode %}
 * ```finditer(pattern, text)```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -242,7 +242,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 
 **Match object** has the following methods:
 * ```groups()```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -250,7 +250,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 ```
 {% endcode %}
 * ```group()```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -258,7 +258,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 ```
 {% endcode %}
 * ```start()```, ```end()```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -266,7 +266,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 ```
 {% endcode %}
 * ```span()```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -276,7 +276,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 An example of using groups and match object:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import re 
@@ -294,7 +294,7 @@ if m:
     print(text[22:34])
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -311,7 +311,7 @@ An example of re-using the previously found group in the regexp. Here we try to 
 > NOTE: we use `re.S` (singleline) flag to make `.` to match any characters including `\n` too.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 config = """
@@ -328,7 +328,7 @@ re.search(r"main_user: (\w+).*credential\s+\1:([^\n]*)", config, re.S).groups()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -350,7 +350,7 @@ a list of groups; this will be a list of tuples if the pattern
 has more than one group.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 text = """user: cmonet324@salon_paris.com
@@ -376,7 +376,7 @@ for m in re.finditer(pattern, text):
     print(f"User <{email}>: {first_name} {second_name}")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -389,7 +389,7 @@ User <Elizabeth2@windsor.com>: Elizabeth II
 User <b.allen@starlabs.com>: Barry Allen
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 pattern
@@ -398,7 +398,7 @@ pattern
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -435,7 +435,7 @@ Let's check the following example where we can see that regexp will match too mu
 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 html = "<span>text1</span> and <span>text2</span> and <span>text3</span>"
@@ -446,7 +446,7 @@ re.findall(r"<span>(.*)</span>", html)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -457,7 +457,7 @@ To make these quantifiers (`*` and `+`) lazy (non-greedy) to much as few as poss
 Now the example from above correctly returns the contents of all `<span>` tags:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 html = "<span>text1</span> and <span>text2</span> and <span>text3</span>"

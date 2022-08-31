@@ -49,7 +49,7 @@ Another great method of iteration through directories and files: `os.walk`:
 Generate the file names in a directory tree by walking the tree either top-down or bottom-up. For each directory in the tree rooted at directory top (including top itself), it yields a 3-tuple (`dirpath`, `dirnames`, `filenames`).
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 # Code to list contents of /tmp dir
@@ -61,7 +61,7 @@ for root, dirs, files in os.walk('/tmp/'):
     print("ROOT:{}\nDIRS:{}\nFILES:{}\n".format(root, dirs, files))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -121,7 +121,7 @@ This lib is class-based wrapper on many `os` and `os.path` methods.
 Few examples:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 from pathlib import Path
@@ -132,7 +132,7 @@ print(p)
 print(p.resolve())  # os.path.abspath
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -144,14 +144,14 @@ example
 print(p.exists()) # `os.path.exists`
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 False
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 p.mkdir()         # os.mkdir
@@ -159,7 +159,7 @@ print(p.exists())
 print(p.is_dir()) # os.path.is_dir
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -167,7 +167,7 @@ True
 True
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 test_file = p / "test.txt"
@@ -177,14 +177,14 @@ test_file
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 PosixPath('example/test.txt')
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 test_file.write_text("Hello Pathlib!")
@@ -193,14 +193,14 @@ test_file.write_text("Hello Pathlib!")
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 14
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 test_file.read_text()
@@ -209,7 +209,7 @@ test_file.read_text()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -219,7 +219,7 @@ test_file.read_text()
 Listing dir's contents:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 [x for x in p.iterdir()]
@@ -228,7 +228,7 @@ Listing dir's contents:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -238,7 +238,7 @@ Listing dir's contents:
 Searching for particular files by pattern:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 [x for x in p.glob("*.txt")]
@@ -247,7 +247,7 @@ Searching for particular files by pattern:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

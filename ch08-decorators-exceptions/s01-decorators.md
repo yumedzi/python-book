@@ -68,7 +68,7 @@ def view_projects(id):
 `1`. Function is first-class object. Don't panic - it means that it is the same object as everything else. That's why we can assign function to another variable.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def song(times=3): 
@@ -87,7 +87,7 @@ scream.__qualname__ = "Super Song"
 print(scream)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -100,7 +100,7 @@ Oops, Exception:  name 'song' is not defined
 `2`. We can define function everywhere! It will exist in that namespace only. #easy!
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def music(beats=3): 
@@ -119,7 +119,7 @@ def music(beats=3):
 print(music(10))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -130,7 +130,7 @@ Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
 Of course we can't access internal functions in any way...
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 try:
@@ -139,7 +139,7 @@ except NameError as e:
     print("Oh, we can't acces this function outside:", e)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -150,7 +150,7 @@ Oh, we can't acces this function outside: name '_random_music' is not defined
 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def party(kind=""):
@@ -170,7 +170,7 @@ print( some_party() )
 print(party()())
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -205,7 +205,7 @@ where `mydecorator` is some function...
 Example of decorator realization
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def my_deco(func): 
@@ -223,7 +223,7 @@ def greet():
 greet()
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -237,7 +237,7 @@ Another example:
 Adding dollar sign to text
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def dollar(fn): 
@@ -255,7 +255,7 @@ print(price)
 print(price(100, tax_rate=.1))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -267,7 +267,7 @@ $110.0
 The same example, but in one line:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def dollar(func): 
@@ -283,7 +283,7 @@ f()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -293,7 +293,7 @@ f()
 More, more examples!!!
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def json(func):                              
@@ -317,14 +317,14 @@ f(3, 5)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 '{"result": 243}'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def count(f): 
@@ -349,7 +349,7 @@ print(f"my_func.counter = {my_func.counter}")
 print(f"my_func.__dict__ = {my_func.__dict__}")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -366,7 +366,7 @@ Shown above decorator is call counter.
 Let's create deco step by step!
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def my_deco(func):
@@ -383,14 +383,14 @@ test1, test1(100500)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 (<function __main__.test1(x)>, 100500)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def my_deco(func):
@@ -405,7 +405,7 @@ print(test1(25))
 print(test1(48))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -414,7 +414,7 @@ Init...
 48
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def capture_time(func):
@@ -432,7 +432,7 @@ print(test1(25))
 print(test1.created_at)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -444,7 +444,7 @@ Init...
 Tro-lo-lo decorator which return completely other function than original one:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def bad_deco(func):
@@ -464,14 +464,14 @@ test1()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 'HAhahahahha Trololo'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def my_deco(func):
@@ -489,7 +489,7 @@ print(test1)
 print(test1(25))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -500,7 +500,7 @@ print(test1(25))
 Adding some counter to wrapper to be able to see in test1:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def my_deco(func):
@@ -521,7 +521,7 @@ print(test1(1))
 print(test1.counter)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -530,7 +530,7 @@ print(test1.counter)
 3
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def my_deco(func): # FINAL VERSION OF IDEAL DECORATOR
@@ -564,7 +564,7 @@ foo(10, 40)
 foo.info()
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -588,7 +588,7 @@ You want more?...
 Ok. It is very useful timer decorator
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def timer(f): 
@@ -613,7 +613,7 @@ l = my_fnc(1)
 l2 = f()
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -624,7 +624,7 @@ Function: f({}), time spent: 7.063 seconds
 "Fakely long runnning" decorator
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def work(func):
@@ -643,7 +643,7 @@ def f():
 f()
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -656,7 +656,7 @@ Done
 It is possible to add some random strings to show during "fake running" time window:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def work(func):
@@ -685,7 +685,7 @@ def calc_sum(x, y):
 calc_sum(2, 2)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -725,7 +725,7 @@ def time_limit(func):
 Let's check how it works:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import time
@@ -742,7 +742,7 @@ print(">>> Running long / 4 seconds:")
 print(long(4))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -776,7 +776,7 @@ def makered(fn):
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 @makebold
@@ -793,7 +793,7 @@ hello()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -803,7 +803,7 @@ hello()
 <b><i><span style='color: red;'>Goodbye World!</span></i></b>
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 @makebold
@@ -819,7 +819,7 @@ hello()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -862,7 +862,7 @@ def calc_tips(bill, tip_rate=0.10):
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 calc_tips(100)
@@ -871,14 +871,14 @@ calc_tips(100)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 10
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 calc_tips(200, 0.05)
@@ -887,33 +887,33 @@ calc_tips(200, 0.05)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 10
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(calc_tips(100, 0.05)) # Surprise! Why?
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 10
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(calc_tips._val)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -955,7 +955,7 @@ def riddle_deco(f):
 Decorated function loosing it's name and docstring. In fact we are substituting one function with completely different one that just uses the first one.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 calc_tips
@@ -965,7 +965,7 @@ print("Function docstring:", calc_tips.__doc__)
 print(calc_tips)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -974,7 +974,7 @@ Function docstring: None
 <function riddle_deco.<locals>._f at 0x7fd4f15baea0>
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 # "Fixing":
@@ -985,7 +985,7 @@ print("Function name:", calc_tips.__name__)
 print(calc_tips)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -996,7 +996,7 @@ Function name: test
 We can do this in decorator to fix all these issues
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def deco(f):
@@ -1018,7 +1018,7 @@ print(pretty_func.__doc__)
 print(pretty_func)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -1031,7 +1031,7 @@ Print something nice
 Alternative - suggested method - to use `functools.wraps` decorator which will automatically assign wrapper function’s `__module__`, `__name__`, `__qualname__`, `__annotations__` and `__doc__`. 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 from functools import wraps
@@ -1055,7 +1055,7 @@ print(example.__doc__)
 print(example)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -1077,7 +1077,7 @@ Haiku about subject:
 > for decorator-one-timer
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def batterfly(f):
@@ -1096,7 +1096,7 @@ def f():
     1/0
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

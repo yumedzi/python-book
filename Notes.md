@@ -23,7 +23,7 @@ The presented code together with it's results/output will be shown in two variat
 
 To show that we are running some code and receiving output sometimes I will use `>>>` before actual command run so you could understand that the very next lines are results of the previous command(s):
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
+🪄 <mark style="color:red;">Code</mark> <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> <mark style="color:green;">Output</mark>:
 
 ```python
 >>> "Hello Universe!".split()
@@ -34,7 +34,7 @@ Those `>>>` are exactly the same ones used in usual Python interactive session (
 
 * Two sections - code and it's output separated:
 
-🪄 _<mark style="color:red;">Code</mark>:_
+🪄 <mark style="color:red;">Code</mark>:
 
 
 
@@ -45,7 +45,7 @@ text_to_split = "Hello Galaxy!"
 print(splitting_function(text_to_split))
 ```
 
-📟 _<mark style="color:green;">Output</mark>_:
+📟 <mark style="color:green;">Output</mark>:
 
      ["Hello", "Galaxy!"]
 

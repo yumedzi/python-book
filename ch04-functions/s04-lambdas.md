@@ -23,13 +23,13 @@ Why lambda?
 * The lambdas can be used as a function shorthand that allows us to embed a function within the code. 
     * key in `sorted`
     
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 sorted([1, 2, "a", (3, 4)], key=lambda x: str(x))
 sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")
 ```
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -41,7 +41,7 @@ sorted([1, 2, 11, 3, "11", "asd", "5"], key=lambda x: f"{x:>10}")
 * Lambdas are also commonly used to code jump tables which are lists or dictionaries of actions to be performed on demand.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 f = lambda x, y: x + y 
@@ -51,14 +51,14 @@ f(2, 6)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 8
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 list(map(lambda x: x**2, range(5)))
@@ -67,7 +67,7 @@ list(map(lambda x: x**2, range(5)))
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -102,7 +102,7 @@ conversions = {
 The same.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def f1():
@@ -114,7 +114,7 @@ f2 = lambda: len([ x for x in range(10000)])
 %timeit f2()
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -125,14 +125,14 @@ f2 = lambda: len([ x for x in range(10000)])
 This is because lambda is syntax sugar and in the end almost the same code is being constructed
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import dis
 dis.dis(f1)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -149,13 +149,13 @@ dis.dis(f1)
              28 RETURN_VALUE
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 dis.dis(f2)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

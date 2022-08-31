@@ -11,7 +11,7 @@
     ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def pluser():
@@ -27,7 +27,7 @@ print(p.send(10))
 print(p.send(-25.3))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

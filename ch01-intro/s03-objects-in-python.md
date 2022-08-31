@@ -47,7 +47,7 @@ Simplified schema how code, variables and objects in memory interconnected:
 The variable itself doesn't have a specific type by itself, it should be considered as a "name" or some kind of a "tag" attached to the object. In some sense it just points  to the object. Assignment does not copy a value - it just attaches a name to the object that contains the data. Also that's why we can reassign it to another object:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a = 42
@@ -61,7 +61,7 @@ a = a + " World"
 print(f"#3. a now is {a}")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -76,7 +76,7 @@ A lot of variables can point to same object. You don't need to declare what exac
 * Compare objects by id: ```is```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a = 100500
@@ -85,7 +85,7 @@ print("a == b →", a == b)
 print("a is b →", a is b)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -93,7 +93,7 @@ a == b → True
 a is b → True
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a = 100500
@@ -102,7 +102,7 @@ print("a == b →", a == b)
 print("a is b →", a is b)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

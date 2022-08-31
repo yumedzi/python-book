@@ -65,7 +65,7 @@ The function definition does not execute the function body.
 The body will be executed *only* when the function is called:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def f1():
@@ -76,7 +76,7 @@ print("Now you'll get the error:")
 f1()
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -113,7 +113,7 @@ Function definition's execution binds the function name in the current local nam
 In simple words, if the function accesses an object which is not defined in it - it will look in current global area:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a = 10
@@ -126,7 +126,7 @@ a = 100500
 print(foo()) # Will return 100500 because during call global a equals to 100500
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -137,7 +137,7 @@ print(foo()) # Will return 100500 because during call global a equals to 100500
 But most often the function relies on the data passed to it:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def sum(x, y=4): 
@@ -149,7 +149,7 @@ print(sum(5))
 print(sum(x=5))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -162,7 +162,7 @@ print(sum(x=5))
 We can assign default argument:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 from random import choice
@@ -181,7 +181,7 @@ print(random_phrase(4))
 print(random_phrase(length=6))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -193,7 +193,7 @@ ehmm umm unicorns evil nice unicorns
 Using list comprehesion we can make this function very short
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def random_phrase(length=3):
@@ -204,7 +204,7 @@ def random_phrase(length=3):
 print(random_phrase(length=5))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -265,13 +265,13 @@ def print_strings(str1, str2):
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print_strings("Hello", "World")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -285,14 +285,14 @@ Hello World
 For previous example:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print_strings(str1="Hello", str2="World")
 print_strings(str2="James Bond", str1="Bond,")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -306,7 +306,7 @@ Bond, James Bond
 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def add_friend(name, age=20): 
@@ -316,7 +316,7 @@ add_friend("Mark")
 add_friend(name="Mark")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -332,7 +332,7 @@ Friend Mark (20) added
 * Two asterisks (```**```) are placed before the variable name that holds dictionary with keyword-variable arguments.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 friend1 = ("John", 25) 
@@ -342,7 +342,7 @@ friend2 = dict(name="Sara", age=18)
 add_friend(**friend2)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -365,7 +365,7 @@ Order of arguments of different types matters:
 This allows avoid difficulties with understanding which argument goes to which variable.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 def func(a, b, c=2): 
@@ -379,7 +379,7 @@ print( func(10, 20, c=6))  # Correct order
 #print( func(c=6, 10, 20))  # Incorrect order
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -390,14 +390,14 @@ print( func(10, 20, c=6))  # Correct order
 36
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print( func(3, c=6))  # Missing required arg b - exception!
 ```
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -419,13 +419,13 @@ TypeError: func() missing 1 required positional argument: 'b'
 The thing is - that many built-in functions implemented in C already accept only positional arguments:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 help(divmod)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -507,7 +507,7 @@ files_search(["1.txt", "some.log"], depth=3, include_archives=True)
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 # ERROR:
@@ -515,7 +515,7 @@ files_search(["1.txt", "some.log"], 1, 1, True, False)
 ```
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

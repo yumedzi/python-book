@@ -7,20 +7,20 @@
 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print("Hello World")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 Hello World
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
+🪄 <mark style="color:red;">Code</mark> <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> <mark style="color:green;">Output</mark>:
 
 
 ```python

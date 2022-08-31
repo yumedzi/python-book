@@ -72,7 +72,7 @@ or ☕:
 String in Python 3 is a sequence of code points.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 s = 'ґуґл 💝 ☕'
@@ -82,14 +82,14 @@ s.upper()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 'ҐУҐЛ 💝 ☕'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 s[0]
@@ -98,14 +98,14 @@ s[0]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 'ґ'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 '\u0491 and \u2615'
@@ -114,14 +114,14 @@ s[0]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 'ґ and ☕'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 w = 'Z\u0142oto daj wiedźminowi'
@@ -131,7 +131,7 @@ w[1], w[-7]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -141,7 +141,7 @@ w[1], w[-7]
 Via builtin module `unicodedata` it is possible to get the standardized name of Unicode character or resolve that name into a character:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import unicodedata
@@ -150,7 +150,7 @@ print(unicodedata.name("ł"))
 print(unicodedata.name("☕"))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -159,7 +159,7 @@ LATIN SMALL LETTER L WITH STROKE
 HOT BEVERAGE
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 cap_char = unicodedata.name("ł").replace("SMALL", "CAPITAL")
@@ -167,7 +167,7 @@ print(cap_char)
 print(unicodedata.lookup(cap_char))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -209,7 +209,7 @@ As we can see characters present in ASCII are shown as text right away, absent c
 `errors` by default is 'strict' meaning that encoding errors raise a `UnicodeEncodeError`.  Other possible values are `'ignore'`, `'replace'`, `'xmlcharrefreplace'` and `backslashreplace`.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('ascii', 'ignore')
@@ -218,14 +218,14 @@ As we can see characters present in ASCII are shown as text right away, absent c
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 b'Bo w kadym z nas jest Chaos i ad, Dobro i Zo.'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('ascii', 'replace')
@@ -234,14 +234,14 @@ b'Bo w kadym z nas jest Chaos i ad, Dobro i Zo.'
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 b'Bo w ka?dym z nas jest Chaos i ?ad, Dobro i Z?o.'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('ascii', 'xmlcharrefreplace')
@@ -250,14 +250,14 @@ b'Bo w ka?dym z nas jest Chaos i ?ad, Dobro i Z?o.'
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 b'Bo w ka&#380;dym z nas jest Chaos i &#321;ad, Dobro i Z&#322;o.'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('ascii', 'backslashreplace')
@@ -266,7 +266,7 @@ b'Bo w ka&#380;dym z nas jest Chaos i &#321;ad, Dobro i Z&#322;o.'
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -298,7 +298,7 @@ Few words on a hex format:
 * `\x**` - representation in a string
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 0x41
@@ -307,14 +307,14 @@ Few words on a hex format:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 65
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 "\x41"
@@ -323,14 +323,14 @@ Few words on a hex format:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 'A'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 "\x01" # a non printable character
@@ -339,7 +339,7 @@ Few words on a hex format:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -364,7 +364,7 @@ Notice that in `UTF8` it is `C5 82` meaning it should be coded as `\xc5\x82`.
 Let's check encoded strings with this character to verify the encoded bytes we supposed to find:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('utf8')
@@ -373,7 +373,7 @@ Let's check encoded strings with this character to verify the encoded bytes we s
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -388,7 +388,7 @@ Here we see that:
 Ukrainian characters also use 2 bytes symbols:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 "Сію-вію, сію-вію конопелечки...".encode("utf8")
@@ -397,7 +397,7 @@ Ukrainian characters also use 2 bytes symbols:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -407,7 +407,7 @@ b'\xd0\xa1\xd1\x96\xd1\x8e-\xd0\xb2\xd1\x96\xd1\x8e, \xd1\x81\xd1\x96\xd1\x8e-\x
 Japanese katakana (word means "Python" - `paisonu`), as we can each character takes `3` bytes:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 python_in_japanese = 'パイソン'
@@ -416,7 +416,7 @@ print(python_in_japanese.encode('utf8'))
 print(int(len(python_in_japanese.encode('utf8')) / len(python_in_japanese)))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -427,14 +427,14 @@ b'\xe3\x83\x91\xe3\x82\xa4\xe3\x82\xbd\xe3\x83\xb3'
 And lastly, emojis take `3-4` characters:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print('☕'.encode('utf8'))
 print('🐍'.encode('utf8'))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

@@ -12,14 +12,14 @@ Ways to create a list:
 ### Main methods
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list = [4, 8, 15, 16, 23, 42]
 print(dir(some_list))  # Again all methods
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -66,14 +66,14 @@ Last two we saw in strings as well.
 Lists are indexable, starting at 0
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(some_list)
 print(some_list[0])
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -81,7 +81,7 @@ print(some_list[0])
 4
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list[2]
@@ -90,14 +90,14 @@ some_list[2]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 15
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list[-1]
@@ -106,21 +106,21 @@ some_list[-1]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 42
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(some_list)
 print(len(some_list))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -128,42 +128,42 @@ print(len(some_list))
 6
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list.reverse()
 print(some_list)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [42, 23, 16, 15, 8, 4]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list.sort()
 print(some_list)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [4, 8, 15, 16, 23, 42]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 new_list = some_list + ["a", "b", "c"]
 print(new_list)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -175,7 +175,7 @@ print(new_list)
 > Sorting of the list with elements of different types in Python 3 is forbidden (yields an TypeError exception about unsupported `<` operation).
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 new_list 
@@ -183,7 +183,7 @@ new_list.sort()
 ```
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -202,13 +202,13 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 But we can workaround this by using builtin function `sorted()` and specifying your own sorting function `key` which should return some values os the same type which later will be used for Python's regular sorting.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(sorted(new_list, key=str)) # Here we are sorting in fact by string representations
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -218,7 +218,7 @@ print(sorted(new_list, key=str)) # Here we are sorting in fact by string represe
 ### Appending, extending
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list.append(1000)
@@ -228,14 +228,14 @@ some_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [4, 8, 15, 16, 23, 42, 1000]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list = [4, 8, 15, 16, 23, 42, 1000]
@@ -246,7 +246,7 @@ some_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -256,7 +256,7 @@ some_list
 By extending nested list Python will treat all nested as elements just as other types
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list.extend([ 0, [1,2], [3, 4]])
@@ -266,7 +266,7 @@ some_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -288,7 +288,7 @@ some_list
 ### Removing
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list.pop()
@@ -297,14 +297,14 @@ some_list.pop()
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [3, 4]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list.pop(0)
@@ -313,7 +313,7 @@ some_list.pop(0)
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -326,7 +326,7 @@ del some_list[3:6]
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list
@@ -335,7 +335,7 @@ some_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -346,7 +346,7 @@ some_list
 We saw very similar examples for strings - because strings are sequence too. That is the core idea (called ducktyping) in Python - the same behavior even if the types are different.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list * 2
@@ -355,7 +355,7 @@ some_list * 2
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -375,7 +375,7 @@ some_list * 2
  [1, 2]]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list[::-1]
@@ -384,7 +384,7 @@ some_list[::-1]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -397,7 +397,7 @@ some_list[::-1]
  15]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list[:4]
@@ -406,14 +406,14 @@ some_list[:4]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [15, 16, 23, [10, 10, [20, 20]]]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list[2:]
@@ -422,7 +422,7 @@ some_list[2:]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -433,14 +433,14 @@ some_list[2:]
  [1, 2]]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print (some_list)
 some_list[-2]
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -453,7 +453,7 @@ some_list[-2]
 0
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 (some_list * 4)[::4]
@@ -462,7 +462,7 @@ some_list[-2]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -478,14 +478,14 @@ some_list[-2]
 ```IndexError``` exception is raised for non-existent index element
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list[1000]
 ```
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -512,14 +512,14 @@ Firstly, let's check regular list slice obtaining:
 ### Slice obtaining
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print (some_list)
 some_list[2:4]
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -532,7 +532,7 @@ some_list[2:4]
 [23, [10, 10, [20, 20]]]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list[2:4] = ["a", "b", "c"]
@@ -542,14 +542,14 @@ some_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [15, 16, 'a', 'b', 'c', [...], 0, [1, 2]]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_list[:1] = [100, 100, 100]
@@ -559,7 +559,7 @@ some_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -571,7 +571,7 @@ some_list
 By using `del` operator on the slice it is possible to delete target part from the original list:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 list_ = list(range(1, 6))
@@ -581,7 +581,7 @@ del list_[2:4]
 print("After:", list_)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -594,7 +594,7 @@ After: [1, 2, 5]
 By assignining the slice to another iterable, the content of that iterable will be used to replace the target part of the original list:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 list_ = list(range(1, 6))
@@ -604,7 +604,7 @@ list_[2:4] = ["A"]
 print("After:", list_)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -619,7 +619,7 @@ After: [1, 2, 'A', 5]
 Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 cool_list = [x*2 for x in range(10)]
@@ -629,7 +629,7 @@ cool_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -639,7 +639,7 @@ cool_list
 It's absolutely the same as:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 cool_list = []
@@ -651,14 +651,14 @@ cool_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 [x**2 + 2*x + 1 for x in range(10)]
@@ -667,14 +667,14 @@ cool_list
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 # Random list (len till 15) from rand ints (till 10)
@@ -685,14 +685,14 @@ from random import randrange
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 [0, 5, 9, 4, 6, 2, 8, 1, 3, 4, 2]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 [f"{x}-{y}" for x in [1, 2, 3] for y in "ABC"]
@@ -701,14 +701,14 @@ from random import randrange
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 ['1-A', '1-B', '1-C', '2-A', '2-B', '2-C', '3-A', '3-B', '3-C']
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 list_ = []
@@ -718,7 +718,7 @@ for x in [1, 2, 3]:
 print(list_)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -728,7 +728,7 @@ print(list_)
 The order of loops matters:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 [f'{x}-{y}' for x in "abc" for y in range(1, 4)]
@@ -737,14 +737,14 @@ The order of loops matters:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 ['a-1', 'a-2', 'a-3', 'b-1', 'b-2', 'b-3', 'c-1', 'c-2', 'c-3']
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 [f'{x}-{y}' for y in range(1, 4) for x in "abc"]
@@ -753,7 +753,7 @@ The order of loops matters:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -763,7 +763,7 @@ The order of loops matters:
 It's possible to create nested list and use conditions as well:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
@@ -772,7 +772,7 @@ It's possible to create nested list and use conditions as well:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -782,7 +782,7 @@ It's possible to create nested list and use conditions as well:
 is equivalent to:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 combs = []
@@ -796,7 +796,7 @@ combs
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -818,7 +818,7 @@ Variables in Python (name bindings) are just points to an object in memory. By a
 Operator ```is``` allows comparing by ids - shows is two variables pointing to the same object 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a = [1, 2, 3]
@@ -828,7 +828,7 @@ a[0] = "Surprise"
 print ("b is", b)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -841,7 +841,7 @@ b is ['Surprise', 2, 3]
 Create completely new copy of the list - by creating a new list and adding elements one by one from old one
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 b = a.copy() # Pythonic way
@@ -854,7 +854,7 @@ print ("a is:", a)
 print ("b is:", b)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -863,7 +863,7 @@ a is: ['Oh!', 2, 3]
 b is: ['Surprise', 2, 3]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 b = a[:]  # Hackish way
@@ -872,7 +872,7 @@ print ("b is:", b)
 print(a)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -884,7 +884,7 @@ b is: ['Oh!', 2, 3]
 If list has mutable object deeper than on the very first nesting level - shallow copy will cause similar problems as before.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a = [[1, 2], 3]
@@ -894,7 +894,7 @@ print (a is b)
 print ("b is:", b)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -907,7 +907,7 @@ b is: [['Surprise!', 2], 3]
 There is a special standard module for copying - ```copy```
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import copy
@@ -923,7 +923,7 @@ print ("b is:", b)
 print ("c is:", c)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -937,7 +937,7 @@ List is seqence-like object that contains pointers to other objects which are tr
 That's why it's possible to add list to itself as element!
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a = [1, 2, 3]
@@ -946,7 +946,7 @@ print(a)
 print(a[-1][-1][-1][-1][-1][-1][-1])
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -958,7 +958,7 @@ In this case when we ```del```ete it - Python garbage collector won't delete fro
 
 Usual Python console:
     
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
+🪄 <mark style="color:red;">Code</mark> <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> <mark style="color:green;">Output</mark>:
 
 
 ```python
@@ -981,7 +981,7 @@ If you use list for complex math calculations - consider using `numpy`.
 They are a bit slower to create:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import numpy
@@ -992,7 +992,7 @@ list_ = list((range(1000)))
 %timeit 999 in array_
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -1003,7 +1003,7 @@ list_ = list((range(1000)))
 But they are much faster (x5 in the following example) for a vector operations:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import math
@@ -1012,7 +1012,7 @@ import math
 %timeit numpy.sqrt(array_)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

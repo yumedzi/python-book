@@ -20,7 +20,7 @@ Ways to create a tuple:
 Creating a tuple with 1 element requires comma because without it Python consider such expression as logic grouping.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 (1)
@@ -29,14 +29,14 @@ Creating a tuple with 1 element requires comma because without it Python conside
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 1
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 (1,)
@@ -45,7 +45,7 @@ Creating a tuple with 1 element requires comma because without it Python conside
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -55,7 +55,7 @@ Creating a tuple with 1 element requires comma because without it Python conside
 In fact parences are not needed, they are just for readability:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 1,
@@ -64,14 +64,14 @@ In fact parences are not needed, they are just for readability:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 (1,)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 1, 2, 3
@@ -80,7 +80,7 @@ In fact parences are not needed, they are just for readability:
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -90,14 +90,14 @@ In fact parences are not needed, they are just for readability:
 ## Main methods of tuple
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_tuple = 1, 2, 100, 15
 print( dir(some_tuple))  # Yep, again all methods
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -121,7 +121,7 @@ That's right - if not counting magic methods - not many at all. Just ```count```
 ## Examples
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_tuple[:2]
@@ -130,14 +130,14 @@ some_tuple[:2]
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 (1, 2)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 some_tuple + (4, "a")
@@ -146,14 +146,14 @@ some_tuple + (4, "a")
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 (1, 2, 100, 15, 4, 'a')
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 100 in some_tuple
@@ -162,7 +162,7 @@ some_tuple + (4, "a")
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -172,28 +172,28 @@ True
 ## Tuple unpacking
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a, b = 1, 2 
 print(a, b)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 1 2
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a, b = b, a
 print(a, b)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -203,21 +203,21 @@ print(a, b)
 Available only in Python 3:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 a, *b, c = 1, 2, 3, 4, 5, 6, 7
 print("a is {}, b is {}, c is {}".format(a, b, c))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
 a is 1, b is [2, 3, 4, 5, 6], c is 7
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 f = lambda: (1, 2, 232, 12, 123, 123, 123, 123)
@@ -225,7 +225,7 @@ x, *_ = f()
 print(x)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -251,7 +251,7 @@ In other words:
 
 * Parts of datetime are different kinds, so it is tuple:
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
+🪄 <mark style="color:red;">Code</mark> <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> <mark style="color:green;">Output</mark>:
 
 
 ```python
@@ -263,7 +263,7 @@ In other words:
 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 import datetime
@@ -271,7 +271,7 @@ import datetime
 print(*datetime.datetime.now().timetuple(), sep=", ")
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -280,7 +280,7 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 {% endcode %}
 * Values is result of range() are all of the same type, so it is list (in Python 2):
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
+🪄 <mark style="color:red;">Code</mark> <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> <mark style="color:green;">Output</mark>:
 
 
 ```python
@@ -291,7 +291,7 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 list(range(10))
@@ -300,7 +300,7 @@ list(range(10))
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

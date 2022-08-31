@@ -103,7 +103,7 @@ Task:
 ## Imperative approach
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 expr = "1+2+22+++100++48"
@@ -115,7 +115,7 @@ for t in expr.split("+"):
 print( res )
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -125,7 +125,7 @@ print( res )
 ## Functional approach
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 sum(map(int, filter(bool, expr.split("+"))))
@@ -134,7 +134,7 @@ sum(map(int, filter(bool, expr.split("+"))))
 
 
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -171,7 +171,7 @@ def mystery_fp(str_):
 Yes, both of them are case-insensitively counting `'a'`, `'b'` and `'c'` characters in a string:
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 str_ = "A beautiful example of some test string"
@@ -179,7 +179,7 @@ print(mystery_imp(str_))
 print(mystery_fp(str_))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -200,7 +200,7 @@ On Python 2 - map returns list.
 For Python 3 sometimes it's better to use list comprehensions
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(list(map(str, [1, 2, 3])))
@@ -208,7 +208,7 @@ print(list(map(pow, [2, 5], [3, 4])))
 print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -217,7 +217,7 @@ print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 [361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print([str(x) for x in [1, 2, 3]])
@@ -225,7 +225,7 @@ print([pow(x[0], x[1]) for x in zip([2, 5], [3, 4])])
 print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -234,14 +234,14 @@ print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 [8, 625]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(list(map(sum, [[1, 2, 3] , [4, 5, 8]])))
 print(list(map(lambda x: x+1, [1, 2, 3])))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -256,7 +256,7 @@ print(list(map(lambda x: x+1, [1, 2, 3])))
 > Construct an iterator from those elements of iterable for which function returns `True`
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(list(filter(bool, [1, 2, 0])))
@@ -266,7 +266,7 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else True, [1,2,3,4
 print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,4,5,0, "a", [], 0.0, False, None])))
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -286,7 +286,7 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,
 Simply speaking `zip()` creates pairs from elements of provided arguments 
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(list( zip([1, 3], [2, 4] )))
@@ -296,7 +296,7 @@ zipped = zip([1, 2, 3, 4], [1, 2, 0])
 print(list( zip(*zipped) )) # Note that we'll loose element from longer list
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```

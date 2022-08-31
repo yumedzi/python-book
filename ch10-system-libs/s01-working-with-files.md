@@ -43,7 +43,7 @@ Example:
 > Here we are using so-called "context managers" - via *with as" keywords. This allows us to not worry about closing the file descriptor after block of with-as code.
 
 
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 filename = "/tmp/1.txt"
@@ -58,7 +58,7 @@ with open(filename) as f:
 print(f.closed)
 ```
 
-📟 _<mark style="color:green;">Output</mark>:_
+📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
@@ -67,7 +67,7 @@ Test string!!!
 True
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_:
+🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 %ls -la /tmp/1.txt

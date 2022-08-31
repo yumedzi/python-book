@@ -152,7 +152,7 @@ print(f(encountered_animals))
 {% code overflow="wrap" %}
 ```
 defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']})
-2.57 µs ± 24.3 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+2.65 µs ± 144 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
 The same using `setdefault` method:
@@ -181,7 +181,7 @@ print(f(encountered_animals))
 {% code overflow="wrap" %}
 ```
 {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'panther'], 'snakes': ['python', 'anaconda']}
-2.2 µs ± 37.8 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+2.25 µs ± 24.4 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
 ```
 {% endcode %}
 If we set `default_factory` to `int` we can create a counter of things:

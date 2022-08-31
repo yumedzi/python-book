@@ -191,7 +191,7 @@ new_list.sort()
 
 TypeError                                 Traceback (most recent call last)
 
-Input In [149], in <cell line: 2>()
+Input In [282], in <cell line: 2>()
       1 new_list 
 ----> 2 new_list.sort()
 
@@ -494,7 +494,7 @@ some_list[1000]
 
 IndexError                                Traceback (most recent call last)
 
-Input In [164], in <cell line: 1>()
+Input In [297], in <cell line: 1>()
 ----> 1 some_list[1000]
 
 
@@ -690,7 +690,7 @@ from random import randrange
 
 {% code overflow="wrap" %}
 ```
-[5, 0, 4, 8, 4, 0, 1]
+[9, 2, 2, 4, 6, 2]
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
@@ -997,8 +997,8 @@ list_ = list((range(1000)))
 
 {% code overflow="wrap" %}
 ```
-15.8 µs ± 364 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
-20.8 µs ± 272 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+15.3 µs ± 99.8 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+20.4 µs ± 373 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
 But they are much faster (x5 in the following example) for a vector operations:
@@ -1017,8 +1017,8 @@ import math
 
 {% code overflow="wrap" %}
 ```
-106 µs ± 564 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
-21.4 µs ± 246 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+109 µs ± 1.48 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+21.3 µs ± 317 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
 ## Complexity of operations

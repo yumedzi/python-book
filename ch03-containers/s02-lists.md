@@ -205,18 +205,15 @@ But we can workaround this by specifying your own sorting function (as argument 
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
-new_list.sort(key=str)) # Here we are sorting in fact by string representations
+new_list.sort(key=str) # Here we are sorting in fact by string representations
+print(new_list)
 ```
-
 
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-  Input In [150]
-    new_list.sort(key=str)) # Here we are sorting in fact by string representations
-                          ^
-SyntaxError: unmatched ')'
+[15, 16, 23, 4, 42, 8, 'a', 'b', 'c']
 ```
 {% endcode %}
 ### Appending, extending

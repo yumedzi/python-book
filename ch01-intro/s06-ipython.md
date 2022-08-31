@@ -45,7 +45,7 @@ You can use the `%history` magic function to examine past input and output. Inpu
 To run any command at the system shell, simply prefix it with !, e.g.:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 !pwd
@@ -70,7 +70,7 @@ The following examples show how to call the builtin %timeit magic, both in line 
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 %timeit range(1000)
@@ -83,7 +83,7 @@ The following examples show how to call the builtin %timeit magic, both in line 
 290 ns ± 0.984 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 %%timeit x = range(10000)

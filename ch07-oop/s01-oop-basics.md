@@ -124,7 +124,7 @@ There are 2 basic types of polymorphism:
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A:
@@ -157,7 +157,7 @@ Old result: 1
     * *Method overriding* - defining a method in a subclass with the same name as in the parent class.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A:

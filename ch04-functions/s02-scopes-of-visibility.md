@@ -34,7 +34,7 @@ Local variables can be accessed only inside the function in which they are decla
 If a name is bound in a block, it is a **local variable** of that block, unless declared as `nonlocal` or `global`. If a name is bound at the module level, it is a **global variable**. (The variables of the module code block are local and global.) If a variable is used in a code block but not defined there, it is a **free variable**.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("builtin:", all)
@@ -79,7 +79,7 @@ inner3 says: [1, 2, 3, 'changed!']
 now global is [7, 8, 9]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 1
@@ -114,7 +114,7 @@ In case above we don't have variable `a` in local scope so we go upper - and tak
 If the nearest enclosing scope for a free variable contains a global statement, the free variable is treated as a global.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # Global variables
@@ -151,7 +151,7 @@ Get all locals, globals:
 Note: in global scope locals and globals are the same.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 5
@@ -175,7 +175,7 @@ f()
 Scope that is between global and local in nested functions
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 'global variable'
@@ -199,7 +199,7 @@ outer()
 local value
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 'global variable'
@@ -225,7 +225,7 @@ enclosed variable
 Introducing ```nonlocal``` statement which marking variable as enclosed (just like ```global``` does for global scope)
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 'global variable'
@@ -258,7 +258,7 @@ global variable
 Assign operation creates a local variable by default (if not `global` or `nonlocal` used for that variable).
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 25
@@ -297,7 +297,7 @@ UnboundLocalErrorTraceback (most recent call last)
 UnboundLocalError: local variable 'a' referenced before assignment
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 25
@@ -326,7 +326,7 @@ Functions can use variables from outer scopes.
 Also it's worth to mention that those variables are searched only when function is called.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def foo():
@@ -343,7 +343,7 @@ foo()
 5
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def foo():
@@ -374,7 +374,7 @@ Result of running inner function: 5
 How can `inner` know about `a` if `foo` is already returned and all we can't access to it's local variables normally?
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("Free vars:", result.__code__.co_freevars)

@@ -152,7 +152,7 @@ with open("/tmp/file.txt", "r", encoding="win1251") as f:
 Operator "def" is used for creating functions
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 x = 10
@@ -178,7 +178,7 @@ print(mult(10))
 Lambda function - short (functional) method of defining a function. Used for sorting, building jump tables, when the function is not planned to be used after some operation and with `map`/`filter`.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 mult2 = lambda x, y: x * y
@@ -195,7 +195,7 @@ mult2(5, 6)
 30
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 functions = [lambda x: x+100, lambda x: x-100] # Jump table
@@ -214,7 +214,7 @@ print(functions[0](50), functions[1](50), sep="; ")
 #### Swapping two variables
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a, b = 45, "54"
@@ -248,7 +248,7 @@ There is a common question - how exactly arguments are passing in Python's funct
 So, argument passing to a function is done not by value (we don't have "raw" data in Python, only objects that wrapping it) and not by reference (reference is int number of memory location). This is done by object-reference. In other words we are passing object itself (it's almost like passing the pointer to an object in memory).
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def testme(my_list): 
@@ -268,7 +268,7 @@ testme(my_list)
 ### Decorators
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def deco(f): 
@@ -303,7 +303,7 @@ Operators can be overloaded in Python by defining special member functions—for
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class Foo:
@@ -350,7 +350,7 @@ Sometime Python encounters the error during the work of some code or function - 
 For example the file with the following code will print the message about Traceback and never the line "You won't see me!":
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 1/0
@@ -379,7 +379,7 @@ But we can handle this error, doing so tells Python that the occurrence of this 
 Handling exceptions is done via `try`/`except`/`finally` blocks:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 try:

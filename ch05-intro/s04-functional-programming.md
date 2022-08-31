@@ -103,7 +103,7 @@ Task:
 ## Imperative approach
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 expr = "1+2+22+++100++48"
@@ -125,7 +125,7 @@ print( res )
 ## Functional approach
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 sum(map(int, filter(bool, expr.split("+"))))
@@ -171,7 +171,7 @@ def mystery_fp(str_):
 Yes, both of them are case-insensitively counting `'a'`, `'b'` and `'c'` characters in a string:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 str_ = "A beautiful example of some test string"
@@ -200,7 +200,7 @@ On Python 2 - map returns list.
 For Python 3 sometimes it's better to use list comprehensions
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(list(map(str, [1, 2, 3])))
@@ -217,7 +217,7 @@ print(list(map(lambda x,y: x**2 + 2*x*y + y**2, range(10)[::-1], [10]*10)))
 [361, 324, 289, 256, 225, 196, 169, 144, 121, 100]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print([str(x) for x in [1, 2, 3]])
@@ -234,7 +234,7 @@ print([pow(x, y) for x,y in zip([2, 5], [3, 4])])
 [8, 625]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(list(map(sum, [[1, 2, 3] , [4, 5, 8]])))
@@ -256,7 +256,7 @@ print(list(map(lambda x: x+1, [1, 2, 3])))
 > Construct an iterator from those elements of iterable for which function returns `True`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(list(filter(bool, [1, 2, 0])))
@@ -286,7 +286,7 @@ print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,
 Simply speaking `zip()` creates pairs from elements of provided arguments 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(list( zip([1, 3], [2, 4] )))

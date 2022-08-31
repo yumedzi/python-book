@@ -4,7 +4,7 @@
 
 * Help
     * In Python interactive shell:
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 help(math.sqrt)
@@ -16,7 +16,7 @@ help(math.sqrt)
 * IPython shell:
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 math.cos?
@@ -28,7 +28,7 @@ math.cos?
 * Web: https://docs.python.org/3/
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import time

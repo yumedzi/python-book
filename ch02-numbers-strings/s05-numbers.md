@@ -23,7 +23,7 @@ from __future__ import division
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 365*2 - 700 + 10000 - 1
@@ -39,7 +39,7 @@ from __future__ import division
 10029
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 43 / 13
@@ -55,7 +55,7 @@ from __future__ import division
 3.3076923076923075
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 6//4
@@ -71,7 +71,7 @@ from __future__ import division
 1
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 23 % 10
@@ -90,7 +90,7 @@ from __future__ import division
 ### Module "math"
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import math
@@ -104,7 +104,7 @@ print (dir(math))
 ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 math.pi, math.e, math.sin(324), math.pow(2,10)
@@ -123,7 +123,7 @@ math.pi, math.e, math.sin(324), math.pow(2,10)
 ### Module "random"
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import random
@@ -137,7 +137,7 @@ print (dir(random))
 ['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_ONE', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_accumulate', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_floor', '_index', '_inst', '_isfinite', '_log', '_os', '_pi', '_random', '_repeat', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randbytes', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 random.randint(2, 7)  # from 2 to 7, includes 7
@@ -153,7 +153,7 @@ random.randint(2, 7)  # from 2 to 7, includes 7
 7
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 random.randrange(15)  # from 0 to 14, doesn't include 15
@@ -169,7 +169,7 @@ random.randrange(15)  # from 0 to 14, doesn't include 15
 13
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 random.choice(["She loves me", "She doesn't love me"])
@@ -185,7 +185,7 @@ random.choice(["She loves me", "She doesn't love me"])
 'She loves me'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # Shuffle the list l
@@ -204,7 +204,7 @@ print(l)
 How random is "random"?
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from random import seed, random
@@ -272,7 +272,7 @@ If Python were to print the true decimal value of the binary approximation store
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(0.1 + 0.2)
@@ -287,7 +287,7 @@ print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1)
 0.9999999999999999
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 i = 0
@@ -325,7 +325,7 @@ for _ in range(20):
 Rounding has similar problems if number representation is approximated:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 round(2.675, 2)
@@ -346,7 +346,7 @@ Because it is: 2.67499999999999982236431605997495353221893310546875
 To see "true" value use **`decimal.Decimal`**:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from decimal import Decimal 
@@ -366,7 +366,7 @@ Decimal('0.1000000000000000055511151231257827021181583404541015625')
 To set human-friendly numbers – convert string with number to Decimal :
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 Decimal('0.1') + Decimal('0.2')
@@ -388,7 +388,7 @@ Usual float-point calculations are fast but (as we just saw not accurate). So wh
 So consider this when doing heavy calculations. For this it's better to either use PyPy interpreter or write this as separate C module.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 %%timeit
@@ -403,7 +403,7 @@ for x in range(1000, 1000000):
 97.8 ms ± 4.27 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 %%timeit
@@ -430,7 +430,7 @@ There are two main modules - very big and omnipotent for this:
     * Physics, chemistry modelling
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 %matplotlib inline
@@ -457,7 +457,7 @@ plt.show()
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 %matplotlib inline

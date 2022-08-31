@@ -22,7 +22,7 @@ finally:
 We are checking the code only after `try` before `except`.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def divide_ten(num): 
@@ -69,7 +69,7 @@ Checking user's input and returning the list item.
 Non-ideal solution would be:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 l = list(range(10))
@@ -137,7 +137,7 @@ For raising custom Exception – `raise` used:
 * `raise CustomException()`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # divide.py :
@@ -186,7 +186,7 @@ ERROR: Can't work with negative numbers
 Please note that `raise` can also be used to print an error message and then re-raise the exception (allowing a caller to handle the exception as well):
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import sys
@@ -221,7 +221,7 @@ OS error: [Errno 2] No such file or directory: '/tmp/1123123.txt'
 * Putting several exceptions in a tuple
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import sys
@@ -266,7 +266,7 @@ python –O script.py
 Examples of `assert`:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 assert 1 == 1

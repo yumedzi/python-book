@@ -31,7 +31,7 @@ In the following example notice that we pass `cls` in `__new__()` but in `__init
 Please notice that we don't pass `cls`/`self` into class/instance methods:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A:
@@ -126,7 +126,7 @@ Some static data (from A class)
 The dict that checks for int/str version of the key if it exists:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class FlexibleDict(dict):
@@ -158,7 +158,7 @@ print(fd["1"])
 The dict with logging around setting a key:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class VerboseDict(dict):
@@ -186,7 +186,7 @@ Set: 1 -> 100500
 {'x': 1, 'y': 2, 'z': '!', 1: 100500}
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from collections import defaultdict
@@ -223,7 +223,7 @@ VerboseDict(int, {'x': 1, 'y': 2, 'z': 3, 100: 100500, 5: 0})
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from collections import Counter
@@ -266,7 +266,7 @@ VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})
 But in case you want to overload `__new__` method please remember that it is static method so you need to pass `cls`:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from collections import UserList
@@ -307,7 +307,7 @@ There is also bigger example for this with lot of print() calls to see where exa
 We can clearly see that firstly we call `__new__` and after that `__init__`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class SuperList(list):
@@ -354,7 +354,7 @@ After changes: [100, 'c', 'd', 'AAA', 'BBB']
 As resume - we see that super() uses the MRO of passed class (by default it is the class we are defining method for). That's why if we pass another class directly (like it was in Python 2) it will use MRO of that class:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A: 
@@ -393,7 +393,7 @@ super(B, self).m() -> A (we take <m> from <A>)
 More examples:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A1:
@@ -422,7 +422,7 @@ AResult()()
 The same as `super()`:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class AResult(A1, A2, A3):
@@ -444,7 +444,7 @@ AResult()()
 To start FROM A2:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class AResult(A1, A2, A3):
@@ -463,7 +463,7 @@ AResult()()
 2
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class AResult(A1, A2, A3):
@@ -509,7 +509,7 @@ class super:
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A:

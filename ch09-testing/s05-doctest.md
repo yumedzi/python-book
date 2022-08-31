@@ -152,7 +152,7 @@ Traceback (most recent call last):
 * which tells it that you expect an exception, and the part after the traceback, which tells it which exception you expect.
 * The doctest module only reports a failure if one of these parts does not match.
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_<mark style="color:green;"></mark>:
+🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
 
 
 ```python
@@ -171,7 +171,7 @@ SyntaxError: invalid syntax
 
 The doctest handles this situation by matching a line that contains only the text `<BLANKLINE>` in the expected output with a real blank line in the actual output.
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_<mark style="color:green;"></mark>:
+🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
 
 
 ```python
@@ -193,7 +193,7 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 * `+SKIP` – skip the test
 * `+IGNORE_EXCEPTION_DETAIL`
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_<mark style="color:green;"></mark>:
+🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
 
 
 ```python
@@ -208,7 +208,7 @@ To enable a behavior, write a +(plus symbol) followed by the behavior name. To d
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_<mark style="color:green;"></mark>:
+🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
 
 
 ```python

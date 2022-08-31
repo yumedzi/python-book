@@ -15,7 +15,7 @@ Ways to create a set:
 * ```set("abcdeabcde")```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_list = [1, 2, 3, 4]
@@ -37,7 +37,7 @@ print(set_b)
 Main methods
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 [method for method in dir({1}) if not method.startswith("__")]

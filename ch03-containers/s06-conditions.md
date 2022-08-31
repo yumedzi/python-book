@@ -12,7 +12,7 @@ else:
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 12
@@ -40,7 +40,7 @@ a is greater than 3
 The built-in function bool() can be used to convert any value to a Boolean, if the value can be interpreted as a truth value 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 True + True
@@ -56,7 +56,7 @@ True + True
 2
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 (True + True + True) * (True + True) - False
@@ -72,7 +72,7 @@ True + True
 6
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 bool(24), bool("sdsds"), bool(""), bool([])
@@ -117,7 +117,7 @@ All other values are considered true — so objects of many types are always tru
 Sometimes it can surprise you. The following example will always print the first quote:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 decision = "not to be"

@@ -13,7 +13,7 @@
 > Bread and butter of day-to-day Python programming
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 [x for x in range(0, 10)]
@@ -29,7 +29,7 @@
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 [x for x in range(0,10) if x%2 == 0]
@@ -45,7 +45,7 @@
 [0, 2, 4, 6, 8]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 [(x, y) for x in range(0,10) if x%2 == 0 for y in range(x) if y%2 != 0]
@@ -75,7 +75,7 @@
 > Useful to create a dictionary with the same (default) value or predefined by some logic
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 {x: str(x) for x in range(5)}
@@ -91,7 +91,7 @@
 {0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 {x: y for x in range(3) for y in range(3)}
@@ -112,7 +112,7 @@
 > Not so widely used but still can be quite helpful. For example if you read lines from the file you can collect unqiue ones.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 list_with_duplicated = [1, 1, 2, 3, 2, 1, 4, 2]
@@ -136,7 +136,7 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 > "Kind of" comprehension but instead of returning sequence as other do, generator expression returns generator object.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 (x * x for x in range(10))
@@ -152,7 +152,7 @@ print({x for x in list_with_duplicated if x % 2}) # more logical usage
 <generator object <genexpr> at 0x0000023DF7253678>
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 for x in (x * x for x in range(10)):

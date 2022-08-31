@@ -59,7 +59,7 @@ if condition:
 
 This is **incorrect**:
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 if condition:
@@ -126,7 +126,7 @@ a = 12345  # This is comment
 Doc string - *first string* of module, function or class. These string are used by IDEs, help auto-generating scripts etc. It is possible to specify multiline string by using starting and ending with triple quotes(`"""` or `'''`).
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def f():
@@ -156,7 +156,7 @@ f()
 Or:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 f.__doc__

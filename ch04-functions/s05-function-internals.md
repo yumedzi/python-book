@@ -5,7 +5,7 @@
 Function is wrapper around code object. Code object is wrapper for byte-code.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def f1():
@@ -24,7 +24,7 @@ b'd\x01S\x00'
 b'd\x01S\x00'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(f1.__code__.__doc__)

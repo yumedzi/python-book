@@ -60,7 +60,7 @@ if __name__ == '__main__':
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import unittest
@@ -135,7 +135,7 @@ class Monkey:
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import unittest
@@ -190,7 +190,7 @@ How can we optimize the tests above?
 First of all - by removing redundancy.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class MonkeyTestCase(unittest.TestCase):
@@ -438,7 +438,7 @@ def tearDownClass(cls):
 And the final version of tests for Monkey:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class MonkeyTestCase(unittest.TestCase):
@@ -550,7 +550,7 @@ class Monkey:
 Updated tests would be:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import unittest

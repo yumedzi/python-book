@@ -19,7 +19,7 @@
 Usual approach:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 student = ("John", "Jakeson", 23, "18 B")
@@ -36,7 +36,7 @@ Student Jakeson from group 18 B is 23 year old
 To avoid the mess of various indexes we can add some light "OOP-flavor" to this use-case via `namedtuple`:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from collections import namedtuple
@@ -64,7 +64,7 @@ Student(name='John', surname='Jakeson', age=23, group='18 B')
 To transform into dict:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(student._asdict())
@@ -87,7 +87,7 @@ While regular list is efficiently performant only when accessing it's "right sid
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from collections import deque
@@ -106,7 +106,7 @@ e
 a
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 de.appendleft("BEGIN")
@@ -131,7 +131,7 @@ defaultdict(default_factory[, ...]) --> dict with default factory
 > If default_factory is not None, it is called without arguments to provide a default value for the given key, this value is inserted in the dictionary for the key, and returned.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # Groupping stuff:
@@ -163,7 +163,7 @@ defaultdict(<class 'list'>, {'birds': ['eagle', 'hawk'], 'mammals': ['hippo', 'p
 The same using `setdefault` method:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 encountered_animals = [("birds", "eagle"), ("mammals", "hippo"), ("mammals", "panther"), 
@@ -192,7 +192,7 @@ print(f(encountered_animals))
 If we set `default_factory` to `int` we can create a counter of things:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 s = 'AnnaMadrigal'
@@ -218,7 +218,7 @@ defaultdict(<class 'int'>, {'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g':
 This is very similar to previous example of `defaultdict` and `int` as `default_factory`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from collections import Counter
@@ -233,7 +233,7 @@ print(Counter(['red', 'blue', 'red', 'green', 'blue', 'blue']))
 Counter({'blue': 3, 'red': 2, 'green': 1})
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 cnt = Counter('AnnaMadrigal'.lower())
@@ -250,7 +250,7 @@ Counter({'a': 4, 'n': 2, 'm': 1, 'd': 1, 'r': 1, 'i': 1, 'g': 1, 'l': 1})
 It has many useful methods:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(Counter("Asdasdasdasd").items())
@@ -263,7 +263,7 @@ print(Counter("Asdasdasdasd").items())
 dict_items([('A', 1), ('s', 4), ('d', 4), ('a', 3)])
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # elements()
@@ -277,7 +277,7 @@ print(list(cnt.elements()))
 ['a', 'a', 'a', 'a', 'n', 'n', 'm', 'd', 'r', 'i', 'g', 'l']
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # most_common(n)
@@ -291,7 +291,7 @@ print(cnt.most_common(3))
 [('a', 4), ('n', 2), ('m', 1)]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # substract
@@ -346,7 +346,7 @@ Array has the similar to `list` operations like indexing and slicing. Also, `arr
 Some examples:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import array
@@ -388,7 +388,7 @@ To install it - either run `pip install numpy` or use [Anaconda distro](https://
 NumPy's main object is the homogeneous multidimensional array. It is a table of elements (usually numbers), all of the same type, indexed by a tuple of non-negative integers. In NumPy dimensions are called axes.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import numpy as np
@@ -417,7 +417,7 @@ Transpose T:
  [3 6]]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("Transforming, add 0.5:\n", b + .5)
@@ -452,7 +452,7 @@ Changing shape:
 In Python 3 string is a sequence of Unicode characters. If we encode them we will get so-called `bytes` object suitable for sending over internet or writing it to a socket or file (but usually python hides this from programmer when dealing with files using default encoding). `bytes` is analogue of the strings used in Python 2. `bytes` object is immutable, just like regular string and has the same methods.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 str_ = "Привіт, Світе!"
@@ -481,7 +481,7 @@ There is no dedicated literal syntax for bytearray objects, instead they are alw
 * Copying existing binary data via the buffer protocol: `bytearray(b'Hi!')`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 b = bytearray(b'Hello World')
@@ -500,7 +500,7 @@ bytearray(b'Hello World')
 Good news: due to Python's duck-typing, methods of `str`, `bytes` and `bytearray` are the same, the main difference is that they return the object of the correspondent type. Also, when iterating through `bytearray`, it will yield bytecode of the character. This can sometimes overcomplicate things.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(b)
@@ -548,7 +548,7 @@ class Color(Enum):
 >Member values can be anything: int, str, etc.. If the exact value is unimportant you may use auto instances and an appropriate value will be chosen for you. Care must be taken if you mix auto with other values.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from enum import Enum, auto
@@ -582,7 +582,7 @@ print(color_settings_per_page)
 Enums can be iterated over:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("We have these color options:")
@@ -603,7 +603,7 @@ Color.BLUE
 It behaves like a new type:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(type(Color.RED))
@@ -620,7 +620,7 @@ True
 RED
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 Animal = Enum('Animal', 'ANT BEE CAT DOG')

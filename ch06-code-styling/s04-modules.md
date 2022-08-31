@@ -62,7 +62,7 @@ Module search logic:
 `__name__` - global variable that contains the module’s name (as a string)
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(__name__)

@@ -38,7 +38,7 @@ return render(request, template_name, context)
 Here is a monster-kind example which aims to show all usecases of `for` loop. You can use it as a base for your experiments:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 for x in range(1, 15):
@@ -102,7 +102,7 @@ else:
 > `range(stop)`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(list(range(10)))
@@ -121,7 +121,7 @@ print(list(range(0, 10, 3)))
 [0, 3, 6, 9]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(list(range(0, -10, -1)))
@@ -141,7 +141,7 @@ print(list(range(1, 0)))
 Also - from 3.5:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 [*range(4)]
@@ -157,7 +157,7 @@ Also - from 3.5:
 [0, 1, 2, 3]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 [1, 2, *range(3, 6), 6]
@@ -173,7 +173,7 @@ Also - from 3.5:
 [1, 2, 3, 4, 5, 6]
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 {*range(4), 1, 2}
@@ -212,7 +212,7 @@ for piece in food:
 > Returns an enumerate object which will yield tuples **index, item** from given iterable (a sequence, an iterator, or some other object which supports iteration)
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 for index, girl in enumerate(["Olya", "Sveta", "Anna", "Maria"], start=1):
@@ -264,7 +264,7 @@ Inside **statements** it is possible to use ```continue``` and ```break```:
 * ```continue``` statement skips the rest of the code's statements and goes back to testing the condition
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 while True: 

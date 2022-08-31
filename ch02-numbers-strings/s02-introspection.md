@@ -17,7 +17,7 @@
 Example of introspection of int object:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a = 42
@@ -36,7 +36,7 @@ We see a lot of methods available in object which gives us a hint what is the ki
 Introspection of an instance of some class:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A(object):      # Creating simple class
@@ -61,7 +61,7 @@ In this case we can see many inherited methods (from parent class called "object
 > `sys.getsizeof()` - get the size (in bytes) of the memory allocated byt the object.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import sys

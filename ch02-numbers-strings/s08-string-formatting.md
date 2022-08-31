@@ -7,7 +7,7 @@
 3. `f-strings` (Python 3.6) - inline formatting allowing to insert variables by names with format similar to `format()`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print_me = 100500.12
@@ -49,7 +49,7 @@ A conversion specifier contains two or more characters and has the following com
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 food = "Ceasar salad"
@@ -63,7 +63,7 @@ print("For breakfast today is %s" % food)
 For breakfast today is Ceasar salad
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 food = "Pizza Pepperoni and burger"
@@ -78,7 +78,7 @@ print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 data = {"food": "Pasta Carbonara", "money": 300}
@@ -100,7 +100,7 @@ It's better to use this for something that requries more complex formatting
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("Our food today is {}".format(food))
@@ -116,7 +116,7 @@ Our food today is Pizza Pepperoni and burger
 Several arguments:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("Food: '{}', money: {} UAH".format(food, money))
@@ -132,7 +132,7 @@ Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
 It is possible when using new format (_format()_) to specify positions:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(money, food))
@@ -165,7 +165,7 @@ Want salad but $45 to spend
 More examples:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 "First thing in the morning is {0}".format("coffee") # References first positional argument
@@ -181,7 +181,7 @@ More examples:
 'First thing in the morning is coffee'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 "I'd like a {} with coffee".format("cookie") # Implicitly references the first positional argument
@@ -197,7 +197,7 @@ More examples:
 "I'd like a cookie with coffee"
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 "Bring me {} and {}".format("coffee", "cookie") # Same as "From {0} to {1}"
@@ -213,7 +213,7 @@ More examples:
 'Bring me coffee and cookie'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 "Remember my name: {name}".format(name="Heisenberg") # References keyword argument 'name'
@@ -229,7 +229,7 @@ More examples:
 'Remember my name: Heisenberg'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 data = dict(do_what="Remember", my_what="name", name="Heisenberg")
@@ -246,7 +246,7 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 'Remember my name: Heisenberg'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 "String has this method: {0.isalpha}".format("")  # 'isalpha' attribute of first positional arg
@@ -305,7 +305,7 @@ class Plant(object):
 * Show the same string several times
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print('''{0}!
@@ -332,7 +332,7 @@ No answer.
         * decimal, hex, octal, binary
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print ("{0:d} - {0:x} - {0:o} - {0:b}".format(21))
@@ -348,7 +348,7 @@ print ("{0:d} - {0:x} - {0:o} - {0:b}".format(21))
 * Escaping braces:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print ( "{{0}} / {}".format("TEST") )
@@ -378,7 +378,7 @@ f'<text> { <expression> <optional !s, !r, or !a> <optional : format specifier> }
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 var = 34.125
@@ -401,7 +401,7 @@ ___34.125___
 In case interpolating var is not defined - you'll get regular NameError:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 f'{unexistent_var}'
@@ -423,7 +423,7 @@ Input In [372], in <cell line: 1>()
 NameError: name 'unexistent_var' is not defined
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 f'{1/0}'
@@ -448,7 +448,7 @@ ZeroDivisionError: division by zero
 `f-string` are evaluated only during creation (once):
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 value = 100500
@@ -464,7 +464,7 @@ print(str_)
 Value is 100500
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 value = 42
@@ -481,7 +481,7 @@ Value is 100500
 Expressions may be evaluated directly inside a string:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 f'{ 1 + 2 }'
@@ -497,7 +497,7 @@ f'{ 1 + 2 }'
 '3'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 f'{"just another string"}'
@@ -514,7 +514,7 @@ f'{"just another string"}'
 'quoted string'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {"a": 100500}
@@ -533,7 +533,7 @@ f'{d["a"], l[2:5]}'
 '(100500, [3, 4, 5])'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def foo(x): 
@@ -552,7 +552,7 @@ Hello! John
 Format int value as hex:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 value = 1234
@@ -572,7 +572,7 @@ f'input={value:#x}'
 Format `datetime` objects (see [docs for datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior):
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import datetime
@@ -592,7 +592,7 @@ It was: Wed 31/08/2022
 ### Dynamic width
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import decimal
@@ -618,7 +618,7 @@ f'result: {value:{width}.{precision}f}'
 A bit underrated feature of builtin string module. _Template_ is very simple template engine.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from string import Template 

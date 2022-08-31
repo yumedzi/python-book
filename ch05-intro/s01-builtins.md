@@ -152,7 +152,7 @@ But there are much more of them!
  
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A(object):
@@ -174,7 +174,7 @@ True
 Wow! Adding attrs like haxxxors
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 getattr("Hello World", "lower")()

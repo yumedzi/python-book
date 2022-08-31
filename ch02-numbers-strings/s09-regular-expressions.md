@@ -139,7 +139,7 @@ Module `re` has all regexp-related methods:
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import re 
@@ -161,7 +161,7 @@ print(dir(re))
 An example that illustrates raw strings:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("Printing string with <\n> and <\t\t> as special characters")
@@ -276,7 +276,7 @@ If they successfully match the pattern - they will return special `re.Match` obj
 An example of using groups and match object:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import re 
@@ -311,7 +311,7 @@ An example of re-using the previously found group in the regexp. Here we try to 
 > NOTE: we use `re.S` (singleline) flag to make `.` to match any characters including `\n` too.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 config = """
@@ -350,7 +350,7 @@ a list of groups; this will be a list of tuples if the pattern
 has more than one group.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 text = """user: cmonet324@salon_paris.com
@@ -389,7 +389,7 @@ User <Elizabeth2@windsor.com>: Elizabeth II
 User <b.allen@starlabs.com>: Barry Allen
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 pattern
@@ -435,7 +435,7 @@ Let's check the following example where we can see that regexp will match too mu
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 html = "<span>text1</span> and <span>text2</span> and <span>text3</span>"
@@ -457,7 +457,7 @@ To make these quantifiers (`*` and `+`) lazy (non-greedy) to much as few as poss
 Now the example from above correctly returns the contents of all `<span>` tags:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 html = "<span>text1</span> and <span>text2</span> and <span>text3</span>"

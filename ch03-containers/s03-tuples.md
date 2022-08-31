@@ -20,7 +20,7 @@ Ways to create a tuple:
 Creating a tuple with 1 element requires comma because without it Python consider such expression as logic grouping.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 (1)
@@ -36,7 +36,7 @@ Creating a tuple with 1 element requires comma because without it Python conside
 1
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 (1,)
@@ -55,7 +55,7 @@ Creating a tuple with 1 element requires comma because without it Python conside
 In fact parences are not needed, they are just for readability:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 1,
@@ -71,7 +71,7 @@ In fact parences are not needed, they are just for readability:
 (1,)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 1, 2, 3
@@ -90,7 +90,7 @@ In fact parences are not needed, they are just for readability:
 ## Main methods of tuple
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_tuple = 1, 2, 100, 15
@@ -121,7 +121,7 @@ That's right - if not counting magic methods - not many at all. Just ```count```
 ## Examples
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_tuple[:2]
@@ -137,7 +137,7 @@ some_tuple[:2]
 (1, 2)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_tuple + (4, "a")
@@ -153,7 +153,7 @@ some_tuple + (4, "a")
 (1, 2, 100, 15, 4, 'a')
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 100 in some_tuple
@@ -172,7 +172,7 @@ True
 ## Tuple unpacking
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a, b = 1, 2 
@@ -186,7 +186,7 @@ print(a, b)
 1 2
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a, b = b, a
@@ -203,7 +203,7 @@ print(a, b)
 Available only in Python 3:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 a, *b, c = 1, 2, 3, 4, 5, 6, 7
@@ -217,7 +217,7 @@ print("a is {}, b is {}, c is {}".format(a, b, c))
 a is 1, b is [2, 3, 4, 5, 6], c is 7
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 f = lambda: (1, 2, 232, 12, 123, 123, 123, 123)
@@ -251,7 +251,7 @@ In other words:
 
 * Parts of datetime are different kinds, so it is tuple:
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_<mark style="color:green;"></mark>:
+🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
 
 
 ```python
@@ -263,7 +263,7 @@ In other words:
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import datetime
@@ -280,7 +280,7 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 {% endcode %}
 * Values is result of range() are all of the same type, so it is list (in Python 2):
 
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_<mark style="color:green;"></mark>:
+🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
 
 
 ```python
@@ -291,7 +291,7 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 list(range(10))

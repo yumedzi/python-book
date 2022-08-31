@@ -49,7 +49,7 @@ Another great method of iteration through directories and files: `os.walk`:
 Generate the file names in a directory tree by walking the tree either top-down or bottom-up. For each directory in the tree rooted at directory top (including top itself), it yields a 3-tuple (`dirpath`, `dirnames`, `filenames`).
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # Code to list contents of /tmp dir
@@ -121,7 +121,7 @@ This lib is class-based wrapper on many `os` and `os.path` methods.
 Few examples:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from pathlib import Path
@@ -151,7 +151,7 @@ print(p.exists()) # `os.path.exists`
 False
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 p.mkdir()         # os.mkdir
@@ -167,7 +167,7 @@ True
 True
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 test_file = p / "test.txt"
@@ -184,7 +184,7 @@ test_file
 PosixPath('example/test.txt')
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 test_file.write_text("Hello Pathlib!")
@@ -200,7 +200,7 @@ test_file.write_text("Hello Pathlib!")
 14
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 test_file.read_text()
@@ -219,7 +219,7 @@ test_file.read_text()
 Listing dir's contents:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 [x for x in p.iterdir()]
@@ -238,7 +238,7 @@ Listing dir's contents:
 Searching for particular files by pattern:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 [x for x in p.glob("*.txt")]

@@ -56,7 +56,7 @@ b.transfer(100) # --> Bus.transfer(b, 100)
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 b.transfer(50)
@@ -70,7 +70,7 @@ print(b.info()) # --> Bus.info(b)
 Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 b3 = Bus("Tramway #1", 8)
@@ -85,7 +85,7 @@ print(b3.info())
 Bus 'Tramway #1 (rate: 8 UAH)' (total: 2), transferred 50 from 200 ppl
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(f"Bus.people_transferred = {Bus.people_transferred}")
@@ -105,7 +105,7 @@ Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 2), transferred 150 from
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 marshrutka_317 = Bus("# 317")
@@ -120,7 +120,7 @@ print(marshrutka_317.info())
 Bus '# 317 (rate: 7 UAH)' (total: 3), transferred 20 from 220 ppl
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 b.transfer(23)
@@ -139,7 +139,7 @@ Bus '# 317 (rate: 7 UAH)' (total: 3), transferred 76 from 299 ppl
 Class variables and instance variables were changed:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(Bus.people_transferred)
@@ -185,7 +185,7 @@ class Robot:
 It is completely usable:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 bip = Robot("Bip 1.0")
@@ -211,7 +211,7 @@ class BendingRobot(Robot):
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 bender = BendingRobot("Bender")
@@ -234,7 +234,7 @@ As we can we still can use `say` method defined in the base class.
 Python supports a limited form of multiple inheritance as well. A class definition with multiple base classes looks like this:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A:
@@ -266,7 +266,7 @@ a from C x from B
 Let's enhance our `Robot` example by inheriting from two classes at once.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class Mail:
@@ -283,7 +283,7 @@ Mail().send_message("Test")
 *** SENDING MESSAGE: <<<Test>>>  ***
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class BendingMailingRobot(Robot, Mail):
@@ -315,7 +315,7 @@ By default all methods (except of `__new__` are instance methods).
 The method that should be called with the instance as it's first argument. This method is bound to instance so if calling as it's method passing instance is not required. Example:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class Example:
@@ -344,7 +344,7 @@ The method with class as the first argument. Useful to run some code without nee
 To mark the method as class method it is required to use builtin decorator `@classmethod`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class Example:
@@ -380,7 +380,7 @@ This method doesn't require to pass instance/class at all.
 To mark the method as static method it is required to use builtin decorator `@staticmethod`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class Example:

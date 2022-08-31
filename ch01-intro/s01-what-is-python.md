@@ -7,7 +7,7 @@
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("Hello World")
@@ -20,7 +20,7 @@ print("Hello World")
 Hello World
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_<mark style="color:green;"></mark>:
+🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_:
 
 
 ```python

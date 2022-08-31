@@ -72,7 +72,7 @@ or ☕:
 String in Python 3 is a sequence of code points.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 s = 'ґуґл 💝 ☕'
@@ -89,7 +89,7 @@ s.upper()
 'ҐУҐЛ 💝 ☕'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 s[0]
@@ -105,7 +105,7 @@ s[0]
 'ґ'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 '\u0491 and \u2615'
@@ -121,7 +121,7 @@ s[0]
 'ґ and ☕'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 w = 'Z\u0142oto daj wiedźminowi'
@@ -141,7 +141,7 @@ w[1], w[-7]
 Via builtin module `unicodedata` it is possible to get the standardized name of Unicode character or resolve that name into a character:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import unicodedata
@@ -159,7 +159,7 @@ LATIN SMALL LETTER L WITH STROKE
 HOT BEVERAGE
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 cap_char = unicodedata.name("ł").replace("SMALL", "CAPITAL")
@@ -209,7 +209,7 @@ As we can see characters present in ASCII are shown as text right away, absent c
 `errors` by default is 'strict' meaning that encoding errors raise a `UnicodeEncodeError`.  Other possible values are `'ignore'`, `'replace'`, `'xmlcharrefreplace'` and `backslashreplace`.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('ascii', 'ignore')
@@ -225,7 +225,7 @@ As we can see characters present in ASCII are shown as text right away, absent c
 b'Bo w kadym z nas jest Chaos i ad, Dobro i Zo.'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('ascii', 'replace')
@@ -241,7 +241,7 @@ b'Bo w kadym z nas jest Chaos i ad, Dobro i Zo.'
 b'Bo w ka?dym z nas jest Chaos i ?ad, Dobro i Z?o.'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('ascii', 'xmlcharrefreplace')
@@ -257,7 +257,7 @@ b'Bo w ka?dym z nas jest Chaos i ?ad, Dobro i Z?o.'
 b'Bo w ka&#380;dym z nas jest Chaos i &#321;ad, Dobro i Z&#322;o.'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('ascii', 'backslashreplace')
@@ -298,7 +298,7 @@ Few words on a hex format:
 * `\x**` - representation in a string
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 0x41
@@ -314,7 +314,7 @@ Few words on a hex format:
 65
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 "\x41"
@@ -330,7 +330,7 @@ Few words on a hex format:
 'A'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 "\x01" # a non printable character
@@ -364,7 +364,7 @@ Notice that in `UTF8` it is `C5 82` meaning it should be coded as `\xc5\x82`.
 Let's check encoded strings with this character to verify the encoded bytes we supposed to find:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 'Bo w każdym z nas jest Chaos i Ład, Dobro i Zło.'.encode('utf8')
@@ -388,7 +388,7 @@ Here we see that:
 Ukrainian characters also use 2 bytes symbols:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 "Сію-вію, сію-вію конопелечки...".encode("utf8")
@@ -407,7 +407,7 @@ b'\xd0\xa1\xd1\x96\xd1\x8e-\xd0\xb2\xd1\x96\xd1\x8e, \xd1\x81\xd1\x96\xd1\x8e-\x
 Japanese katakana (word means "Python" - `paisonu`), as we can each character takes `3` bytes:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 python_in_japanese = 'パイソン'
@@ -427,7 +427,7 @@ b'\xe3\x83\x91\xe3\x82\xa4\xe3\x82\xbd\xe3\x83\xb3'
 And lastly, emojis take `3-4` characters:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print('☕'.encode('utf8'))

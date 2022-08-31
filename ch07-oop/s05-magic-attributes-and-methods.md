@@ -73,7 +73,7 @@ def __init__(self, name):
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(A())
@@ -104,7 +104,7 @@ A()
 * In simplest case as for instances it is based on `id(self)` so all objects are different
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 A().__hash__()
@@ -127,7 +127,7 @@ A().__hash__()
 * Tuple (possibly empty or a singleton) containing the base classes, in the order of their occurrence in the base class list 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class A: pass
@@ -152,7 +152,7 @@ A.__bases__
 * Class’s documentation string, or None if undefined.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(A.__doc__)
@@ -183,7 +183,7 @@ class A(builtins.object)
 * Module name in which the class is defined. This attribute is `"__main__"` in interactive mode.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 A.__module__
@@ -207,7 +207,7 @@ A.__module__
 * By default - True
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 bool(A())
@@ -245,7 +245,7 @@ It is really a pain to fill all of those!
 Battery: `functools.total_ordering`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import functools
@@ -300,7 +300,7 @@ This is very useful to call the method which used very often.
 All instance's attributes are hold in `__dict__` attribute which is a dictionary with keys as names bound to the instance.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class C:
@@ -327,7 +327,7 @@ c.__dict__
 This is needed to suppress automatic creation of `__dict__` - this can be useful when we have a lot of simple objects and their dictionaries are taking too much space. Also slots are limiting attributes that can be assigned to an object.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 class D:

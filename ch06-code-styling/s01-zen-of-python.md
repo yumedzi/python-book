@@ -3,7 +3,7 @@
 Also know as PEP 20. (PEP is proposal for enhancement)
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import this

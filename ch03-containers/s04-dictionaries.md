@@ -17,7 +17,7 @@ Result of `dict(some_dict)` will be shallow copy of `some_dict`
 We can create a copy with some new keys:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {"name": "John", "surname": "Snow"}
@@ -38,7 +38,7 @@ new_d
 We can even rewrite some old key-values:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 new_d = dict(d, surname="Stark")
@@ -58,7 +58,7 @@ new_d
 And also we can create a dict from an iterable with pair key-value
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d1 = dict([("Aria", "Stark"), ("Faceless", "Man")])
@@ -80,7 +80,7 @@ Using method `dict.fromkeys` we can create a new dict from an iterable (some col
 Second attribute will allow to set a default value for all keys (or it will be `None`).
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 dict.fromkeys(["name", "surname"])
@@ -96,7 +96,7 @@ dict.fromkeys(["name", "surname"])
 {'name': None, 'surname': None}
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
@@ -115,7 +115,7 @@ dict.fromkeys(["John", "Bob", "Brandon"], "Stark")
 It is recommended to pass some immutable object as the default value. Otherwise you could get unexpected results:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = dict.fromkeys("abcde", [])
@@ -132,7 +132,7 @@ d
 {'a': [], 'b': [], 'c': [], 'd': [], 'e': []}
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d["a"].append(1)
@@ -152,7 +152,7 @@ d
 There are (from 3.5) even more craziest ways of dict creation:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d1 = {"some_key": "some_value"}
@@ -170,7 +170,7 @@ d1 is d2, d2
 (False, {'some_key': 'some_value'})
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 defaults = {"John": "Snow", "Aria": "Stark"}
@@ -233,7 +233,7 @@ On the contrary, by default, all user defined types (instances of `class`) are u
 ## Main methods of dictionaries
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_dict = {"name": "John", "surname": "Snow"}
@@ -273,7 +273,7 @@ print( dir(some_dict) ) # All methods a gain
 ## Examples
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_dict["name"]
@@ -289,7 +289,7 @@ some_dict["name"]
 'John'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_dict["surname"] = "Stark"
@@ -306,7 +306,7 @@ some_dict
 {'name': 'John', 'surname': 'Stark'}
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_dict["alive"] = True
@@ -328,7 +328,7 @@ some_dict
 Trying to obtain unexistent key will be resulted in ```KeyError``` exception
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_dict["6th_book"]
@@ -353,7 +353,7 @@ KeyError: '6th_book'
 More correctly:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 if "6th_book" in some_dict:
@@ -378,7 +378,7 @@ Even better - use ```get()```
 3. Can specify a default value
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 some_dict.get("6th_book", "Nope....")
@@ -399,7 +399,7 @@ some_dict.get("6th_book", "Nope....")
 This method allows to write a "default" value for specific key and/or return set or that default value. In other words it will update dictionary only when the key is not found in it.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {"John": "Snow"}
@@ -421,7 +421,7 @@ d
 So, the code:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(d.setdefault("Robert", "Baration"))
@@ -437,7 +437,7 @@ Baration
 is the same as:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 if "Robert" not in d:
@@ -455,7 +455,7 @@ Baration
 If the default value is a list it can used for appending the needed value right away:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 characters = "aaaasddfgsadfgdsadfsa" 
@@ -489,7 +489,7 @@ In either case, this is followed by: for k in F:  D[k] = F[k]
 The same syntax can be used with `dict()`.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {}
@@ -507,7 +507,7 @@ d
 {'a': 1, 'b': 2}
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {}
@@ -528,7 +528,7 @@ d
 And crazy example - two syntaxes altogether:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {}
@@ -551,7 +551,7 @@ d
 Regular `del` here too:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 del d["Yaken"]
@@ -571,7 +571,7 @@ d
 To clear all keys it is possible to use `clear()`
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d.clear()
@@ -594,7 +594,7 @@ Also - just like with lists we have `pop()` and `popitem()` methods.
 * `popitem()` will return last added pair (from Python 3.6) OR some random pair (before Python 3.6) `(key, value)` and raise `KeyError` if dict is empty
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {'Aria': 'Stark', 'Faceless': 'Man', 'Yaken': 'Gharr', 'some_other_key': 123}
@@ -638,7 +638,7 @@ Dictionary views can be iterated over to yield their respective data, support me
 Some examples of usage `dictviews` objects:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {'Alfa': 0, 'Bravo': 1, 'Charlie': 2, 'Delta': 3}
@@ -669,7 +669,7 @@ list(values): [0, 1, 2, 3]
 Check how dynamic are `dictviews`:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print("Before:", d.keys())
@@ -691,7 +691,7 @@ After: dict_keys(['Alfa', 'Bravo'])
 ## Dictionary comprehesions
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 {x:1 for x in range(5)}
@@ -710,7 +710,7 @@ After: dict_keys(['Alfa', 'Bravo'])
 Not so oftenly used because:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 {x:y for x in range(3) for y in range (3)}
@@ -729,7 +729,7 @@ Not so oftenly used because:
 Sometimes dictionary comprehension is useful when you need to set a default mutable value (so `dict.fromkeys` is not good)
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 d = {x:[] for x in "abcde"}

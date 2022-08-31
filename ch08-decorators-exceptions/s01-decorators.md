@@ -68,7 +68,7 @@ def view_projects(id):
 `1`. Function is first-class object. Don't panic - it means that it is the same object as everything else. That's why we can assign function to another variable.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def song(times=3): 
@@ -100,7 +100,7 @@ Oops, Exception:  name 'song' is not defined
 `2`. We can define function everywhere! It will exist in that namespace only. #easy!
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def music(beats=3): 
@@ -130,7 +130,7 @@ Notes: Si,La,Do,Fa,Re,La,Do,La,Re,Do
 Of course we can't access internal functions in any way...
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 try:
@@ -150,7 +150,7 @@ Oh, we can't acces this function outside: name '_random_music' is not defined
 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def party(kind=""):
@@ -205,7 +205,7 @@ where `mydecorator` is some function...
 Example of decorator realization
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def my_deco(func): 
@@ -237,7 +237,7 @@ Another example:
 Adding dollar sign to text
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def dollar(fn): 
@@ -267,7 +267,7 @@ $110.0
 The same example, but in one line:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def dollar(func): 
@@ -293,7 +293,7 @@ f()
 More, more examples!!!
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def json(func):                              
@@ -324,7 +324,7 @@ f(3, 5)
 '{"result": 243}'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def count(f): 
@@ -366,7 +366,7 @@ Shown above decorator is call counter.
 Let's create deco step by step!
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def my_deco(func):
@@ -390,7 +390,7 @@ test1, test1(100500)
 (<function __main__.test1(x)>, 100500)
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def my_deco(func):
@@ -414,7 +414,7 @@ Init...
 48
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def capture_time(func):
@@ -444,7 +444,7 @@ Init...
 Tro-lo-lo decorator which return completely other function than original one:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def bad_deco(func):
@@ -471,7 +471,7 @@ test1()
 'HAhahahahha Trololo'
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def my_deco(func):
@@ -500,7 +500,7 @@ print(test1(25))
 Adding some counter to wrapper to be able to see in test1:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def my_deco(func):
@@ -530,7 +530,7 @@ print(test1.counter)
 3
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def my_deco(func): # FINAL VERSION OF IDEAL DECORATOR
@@ -588,7 +588,7 @@ You want more?...
 Ok. It is very useful timer decorator
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def timer(f): 
@@ -624,7 +624,7 @@ Function: f({}), time spent: 7.063 seconds
 "Fakely long runnning" decorator
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def work(func):
@@ -656,7 +656,7 @@ Done
 It is possible to add some random strings to show during "fake running" time window:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def work(func):
@@ -725,7 +725,7 @@ def time_limit(func):
 Let's check how it works:
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 import time
@@ -776,7 +776,7 @@ def makered(fn):
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 @makebold
@@ -803,7 +803,7 @@ hello()
 <b><i><span style='color: red;'>Goodbye World!</span></i></b>
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 @makebold
@@ -862,7 +862,7 @@ def calc_tips(bill, tip_rate=0.10):
 ```
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 calc_tips(100)
@@ -878,7 +878,7 @@ calc_tips(100)
 10
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 calc_tips(200, 0.05)
@@ -894,7 +894,7 @@ calc_tips(200, 0.05)
 10
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(calc_tips(100, 0.05)) # Surprise! Why?
@@ -907,7 +907,7 @@ print(calc_tips(100, 0.05)) # Surprise! Why?
 10
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 print(calc_tips._val)
@@ -955,7 +955,7 @@ def riddle_deco(f):
 Decorated function loosing it's name and docstring. In fact we are substituting one function with completely different one that just uses the first one.
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 calc_tips
@@ -974,7 +974,7 @@ Function docstring: None
 <function riddle_deco.<locals>._f at 0x7fd4f15baea0>
 ```
 {% endcode %}
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 # "Fixing":
@@ -996,7 +996,7 @@ Function name: test
 We can do this in decorator to fix all these issues
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def deco(f):
@@ -1031,7 +1031,7 @@ Print something nice
 Alternative - suggested method - to use `functools.wraps` decorator which will automatically assign wrapper function’s `__module__`, `__name__`, `__qualname__`, `__annotations__` and `__doc__`. 
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 from functools import wraps
@@ -1077,7 +1077,7 @@ Haiku about subject:
 > for decorator-one-timer
 
 
-🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
+🪄 _<mark style="color:red;">Code</mark>_:
 
 ```python
 def batterfly(f):

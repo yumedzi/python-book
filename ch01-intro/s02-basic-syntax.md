@@ -56,17 +56,17 @@ if condition:
     do_something1()
     do_something2()
 ```
-   
+
 This is **incorrect**:
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 if condition:
     do_something1()
         do_something2()
 ```
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -126,7 +126,7 @@ a = 12345  # This is comment
 Doc string - *first string* of module, function or class. These string are used by IDEs, help auto-generating scripts etc. It is possible to specify multiline string by using starting and ending with triple quotes(`"""` or `'''`).
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 def f():
@@ -140,7 +140,7 @@ def f():
 help(f)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -156,7 +156,7 @@ f()
 Or:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 f.__doc__
@@ -165,7 +165,7 @@ f.__doc__
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```

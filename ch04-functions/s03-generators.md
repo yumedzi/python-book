@@ -17,7 +17,7 @@ Generator is specific kind of object that has `__next__` method which returns "n
 Generator is particular case of more generic type - "iterator" which is defined as object with `__next__` and `__iter__` methods.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 def sum_range(x, y):
@@ -40,7 +40,7 @@ except StopIteration:
     print("Generator is already empty (raised StopIteration)")
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -64,7 +64,7 @@ Very similar to list comprehension. Instead of sqaure brackets `[]` for generato
 > Important thing to understand - generator is the result of calling generator function or the result of running generator expression
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 gen = (x for x in range(1,10) if not x % 2) # get generator using generator expression
@@ -77,7 +77,7 @@ gen = (x for x in range(1,10) if not x % 2) # get generator using generator expr
 print(list(gen))
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -89,7 +89,7 @@ print(list(gen))
 [2, 4, 6, 8]
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 def gen_func():
@@ -102,7 +102,7 @@ for i in gen:
     print(i)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```

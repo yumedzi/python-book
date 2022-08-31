@@ -211,7 +211,7 @@ produces this:
     * Command line progress bar framework
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 from tqdm import tqdm
@@ -220,7 +220,7 @@ for i in tqdm(range(10000)):
     l.append(i ** i)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -241,7 +241,7 @@ Possible color formattings:
 <img src="../images/tr_10_04.png">  
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 from colorama import Fore, Back, Style
@@ -253,7 +253,7 @@ print(Style.RESET_ALL)
 print('back to normal now')
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -294,7 +294,7 @@ with yaspin(text="Loading", color="yellow") as spinner:
     * Python datetimes made easy.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 import pendulum
@@ -306,14 +306,14 @@ now_in_kiev
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
 DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 len(pendulum.timezones)
@@ -322,7 +322,7 @@ len(pendulum.timezones)
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -332,14 +332,14 @@ len(pendulum.timezones)
 We can parse datetime from a string:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 print(pendulum.parse("2020/11/05"))
 print(pendulum.parse('20160413'))
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -347,14 +347,14 @@ print(pendulum.parse('20160413'))
 2016-04-13T00:00:00+00:00
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 print(pendulum.from_format('01, 05, 2020', 'D, MM, YYYY'))
 print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -362,7 +362,7 @@ print(pendulum.from_format('2018-1-17', 'YYYY-M-DD'))
 2018-01-17T00:00:00+00:00
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 # Seamless timezone switching
@@ -372,14 +372,14 @@ now_in_kiev.in_timezone('UTC')
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
 DateTime(2020, 9, 4, 10, 23, 7, 728239, tzinfo=Timezone('UTC'))
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 tomorrow = pendulum.now().add(days=1)
@@ -390,7 +390,7 @@ print(pendulum.now().subtract(minutes=65, seconds=1).diff_for_humans())
 print(pendulum.now().subtract(seconds=7).diff_for_humans())
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -399,7 +399,7 @@ print(pendulum.now().subtract(seconds=7).diff_for_humans())
 a few seconds ago
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 delta = tomorrow - last_week
@@ -409,7 +409,7 @@ print(delta.in_words(locale='en'))
 print(delta.in_words(locale='ru')) # <-- Only "ru" at the moment, no "ua" :(
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -425,7 +425,7 @@ In hours: 23
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 from loguru import logger
@@ -433,14 +433,14 @@ from loguru import logger
 logger.debug("That's it, beautiful and simple logging!")
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
 2019-09-20 13:08:41.340 | DEBUG    | __main__:<module>:3 - That's it, beautiful and simple logging!
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 import sys
@@ -455,7 +455,7 @@ logger.add(sys.stdout, colorize=True, format="<green>{time}</green> <level>{mess
 logger.debug("Check it now!")
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -568,7 +568,7 @@ f = io.StringIO(ini_contents)  # File-like object
 ```
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 from configobj import ConfigObj
@@ -584,7 +584,7 @@ print(config['services'])  # ["ui", "web", "db"]
 print(config['logging']['log_file'])
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -676,7 +676,7 @@ print handler.headers.getheader('content-type')
 Example for Python 3
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 import urllib
@@ -693,7 +693,7 @@ except urllib.error.HTTPError as e:
     print(e)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -702,7 +702,8 @@ HTTP Error 401: Unauthorized
 {% endcode %}
 Example with requests:
 
-🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
+🪄 _<mark style="color:red;">Code</mark>_ <mark style="color:blue;">>>></mark> and <mark style="color:green;">📟</mark> _<mark style="color:green;">Output</mark>_<mark style="color:green;"></mark>:
+
 
 ```python
 import requests
@@ -724,7 +725,7 @@ r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 Fetching some cat facts!
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 import requests
@@ -739,7 +740,7 @@ for f in facts:
     print(f"* {f['fact']}")
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -751,7 +752,7 @@ for f in facts:
 * A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 requests.get('https://catfact.ninja/fact').json()['fact']
@@ -760,7 +761,7 @@ requests.get('https://catfact.ninja/fact').json()['fact']
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -813,7 +814,7 @@ A number is very much like a C or Java number, except that the octal and hexadec
     
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 import json
@@ -824,7 +825,7 @@ print(json.dumps(a))
 json.dumps(b)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -847,7 +848,7 @@ json.dumps(b)
 * `.dump(file_descriptor)` -> save Python object to file
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 import pickle
@@ -862,7 +863,7 @@ print(unpickled)
 unpickled[-1][-1]['01'](5)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -891,7 +892,7 @@ Usage:
 
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 import xmltodict
@@ -914,7 +915,7 @@ print("Attribute <what> is:", dict_["audience"]["id"]["@what"])
 print("Groups:", dict_["audience"]["groups"]["group"])
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```

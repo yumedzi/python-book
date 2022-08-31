@@ -152,7 +152,7 @@ But there are much more of them!
  
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 class A(object):
@@ -165,7 +165,7 @@ setattr(a_object, "b", "Wow! Adding attrs like haxxxors")
 print( a_object.b )
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -174,7 +174,7 @@ True
 Wow! Adding attrs like haxxxors
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 getattr("Hello World", "lower")()
@@ -183,7 +183,7 @@ getattr("Hello World", "lower")()
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```

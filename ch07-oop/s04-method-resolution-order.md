@@ -42,7 +42,7 @@ The old MRO builds a list of classes to search for methods. This algorithm is a 
 The problem with old style classes is that if we going to inherit from base `object` we wouldn't be able to change anything. All because the logic of searching was too simple and wasn't designed for the case where everything is inherited from `object`.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 class A:  # class A(object):   <--- in Python 2.5+
@@ -62,7 +62,7 @@ print(D.__mro__)
 print(D.mro())
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -86,13 +86,13 @@ It can be described in one sentence as:
 The result of MRO linearization is stored in attribute `__mro__`.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 print(D.__mro__) # D.mro()
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -108,7 +108,7 @@ We see that `A` is repeated, so removing first one keeping the last one will be 
 ```D, B, C, A```
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 class A(object): 
@@ -128,7 +128,7 @@ D.mro()
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -145,7 +145,7 @@ D.mro()
 <img src="../images/tr_07_MRO_of_D.png">
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 class A: pass
@@ -158,7 +158,7 @@ class F(D, E, B): pass
 print(F.__mro__)
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -180,7 +180,7 @@ Sometimes the MRO can not be built:
 Another example where `object` is used before the class which inherites from it which confuses the logic:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 class A: pass
@@ -188,7 +188,7 @@ class B(object, A): pass
 ```
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```

@@ -40,7 +40,7 @@ So, it's exactly how `for` and `iter` works! It just used object's `__iter__()` 
 The best way to get all elements of iterator - it's to feed it to `list()`
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 list(iter([1, 2, "a", None, 10.1]))
@@ -49,14 +49,14 @@ list(iter([1, 2, "a", None, 10.1]))
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
 [1, 2, 'a', None, 10.1]
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 a = [1, 2, 3, 4]
@@ -70,7 +70,7 @@ print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__(
 print (a_iter.__next__())
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```

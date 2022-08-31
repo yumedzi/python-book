@@ -17,14 +17,14 @@
 Example of introspection of int object:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 a = 42
 print(dir(a))
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -36,7 +36,7 @@ We see a lot of methods available in object which gives us a hint what is the ki
 Introspection of an instance of some class:
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 class A(object):      # Creating simple class
@@ -46,7 +46,7 @@ print(some_obj.attr1) # Checking the value of custom attribute
 print(dir(some_obj))  # This will show all inherited methods and attribute we created: "attr1"
 ```
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```
@@ -61,7 +61,7 @@ In this case we can see many inherited methods (from parent class called "object
 > `sys.getsizeof()` - get the size (in bytes) of the memory allocated byt the object.
 
 
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:red;">Code</mark><mark style="color:green;"></mark>:_
 
 ```python
 import sys
@@ -72,7 +72,7 @@ sys.getsizeof(100500)
 
 
 
-📟 _<mark style="color:green;">Output:</mark>_
+📟 _<mark style="color:green;">Output</mark>:_
 
 {% code overflow="wrap" %}
 ```

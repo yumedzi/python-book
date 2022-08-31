@@ -1,8 +1,11 @@
 # Basic syntax
 
-## Indentations
+## Basic syntax
+
+### Indentations
 
 Indentation or TAB, 2/**4 spaces** - whitespaces used to delimit program blocks - instead of punctuation or keywords, it uses indentation to indicate the run of a block.
+
 ```python
 for i in [1, 2, 3]:
     if i == 3:
@@ -12,6 +15,7 @@ for i in [1, 2, 3]:
 ```
 
 In C we need to use brackets(`{` and `}`) to delimit blocks of code:
+
 ```c
 void foo(int x)
 {
@@ -26,6 +30,7 @@ qux(x);
 ```
 
 In Python the same role goes to indentations which make code much easier to read:
+
 ```python
 def foo(x):
     if x == 0:
@@ -34,16 +39,15 @@ def foo(x):
     else:
         qux(x)
         foo(x - 1)
-
 ```
 
-# Easter egg describing the "love to braces"
+## Easter egg describing the "love to braces"
 
 ```py
 from __future__ import braces
 ```
 
-```sh
+```
 SyntaxError: not a chance
 ```
 
@@ -56,7 +60,7 @@ if condition:
     do_something1()
     do_something2()
 ```
-   
+
 This is **incorrect**:
 
 🪄 _<mark style="color:green;">Code:</mark>_
@@ -66,13 +70,14 @@ if condition:
     do_something1()
         do_something2()
 ```
+
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
 ```
-
 ```
 {% endcode %}
+
 If code block is not big it is allowed to use inline form:
 
 ```python
@@ -90,9 +95,10 @@ a = [x for x in range(10) if x % 2]; f = open("tmp.txt", "w"); f.write(a); f.clo
 
 These two examples are not readable so used very rarely.
 
-## Identificators and reserved words
+### Identificators and reserved words
 
 Naming rules:
+
 * can have only alphabetical characters, numbers and `_`
 * can't start with number
 * case sensitive
@@ -110,12 +116,9 @@ continue  finally   is        return
 def       for       lambda    try
 ```
 
-
-
-### Comments and documentation strings
+#### Comments and documentation strings
 
 `#` - starting with this symbol everything till the end of line is ignored
-
 
 ```python
 a = 12345  # This is comment
@@ -123,10 +126,9 @@ a = 12345  # This is comment
 # Continuing our comments 
 ```
 
-Doc string - *first string* of module, function or class. These string are used by IDEs, help auto-generating scripts etc. It is possible to specify multiline string by using starting and ending with triple quotes(`"""` or `'''`).
+Doc string - _first string_ of module, function or class. These string are used by IDEs, help auto-generating scripts etc. It is possible to specify multiline string by using starting and ending with triple quotes(`"""` or `'''`).
 
-
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:purple;">Code</mark><mark style="color:green;">:</mark>_
 
 ```python
 def f():
@@ -153,17 +155,14 @@ f()
     :return: None
 ```
 {% endcode %}
-Or:
 
+Or:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f.__doc__
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -172,9 +171,10 @@ f.__doc__
 '\n    Some nice function (the best in the world)\n    \n    :no params:\n    :return: None\n    '
 ```
 {% endcode %}
-### Naming rules
+
+\### Naming rules
 
 * Variables can only contain letters, numbers, and underscores. Variable names can start with a letter or an underscore, but can not start with a number.
-* Spaces are not allowed in variable names, so we use underscores instead of spaces. For example, use student_name instead of "student name".
+* Spaces are not allowed in variable names, so we use underscores instead of spaces. For example, use student\_name instead of "student name".
 * You cannot use Python keywords as variable names.
 * Be careful about using the lowercase letter l and the uppercase letter O in places where they could be confused with the numbers 1 and 0.

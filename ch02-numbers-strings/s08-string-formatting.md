@@ -1,11 +1,12 @@
-### Formatting
+# String Formatting
+
+#### Formatting
 
 > There are two (old one new) styles of string formatting in Python. They are very similar when dealing with simple stuff but also have a lot of in-deep presentation and text transformation options
 
 1. `printf-style` (**%**, old) - based on C printf style formatting that handles a narrower range of types and is slightly harder to use correctly, but is often faster for the cases it can handle.
 2. `str.format()` (new) provides a large degree of flexibility and customization.
 3. `f-strings` (Python 3.6) - inline formatting allowing to insert variables by names with format similar to `format()`
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -25,11 +26,12 @@ print( f"3. {print_me}" )            # f-strings
 3. 100500.12
 ```
 {% endcode %}
-#### **%** (printf-style formatting)
+
+**% (printf-style formatting)**
 
 > `format % values`
 
-> `format` is a string, `%` conversion specifications in format are replaced with zero or more elements of `values`. 
+> `format` is a string, `%` conversion specifications in format are replaced with zero or more elements of `values`.
 
 A conversion specifier contains two or more characters and has the following components, which must occur in this order:
 
@@ -47,8 +49,6 @@ A conversion specifier contains two or more characters and has the following com
 
 `7`. Conversion type.
 
-
-
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -63,6 +63,7 @@ print("For breakfast today is %s" % food)
 For breakfast today is Ceasar salad
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -78,6 +79,7 @@ print( "For lunch we have: %35s, budget: %012.3f UAH" % (food, money) )
 For lunch we have:          Pizza Pepperoni and burger, budget: 00000130.230 UAH
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -92,13 +94,12 @@ print( "And for dinner:  %(food)20s, money to spend: %(money)9.2f UAH" % data )
 And for dinner:       Pasta Carbonara, money to spend:    300.00 UAH
 ```
 {% endcode %}
-#### **{}** / format()
+
+**{} / format()**
 
 It's better to use this for something that requries more complex formatting
 
-> Format strings contain “replacement fields” surrounded by curly braces {}. Anything that is not contained in braces is considered literal text, which is copied unchanged to the output. If you need to include a brace character in the literal text, it can be escaped by doubling: {{ and }}.
-
-
+> Format strings contain “replacement fields” surrounded by curly braces {}. Anything that is not contained in braces is considered literal text, which is copied unchanged to the output. If you need to include a brace character in the literal text, it can be escaped by doubling: \{{ and \}}.
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -113,8 +114,8 @@ print("Our food today is {}".format(food))
 Our food today is Pizza Pepperoni and burger
 ```
 {% endcode %}
-Several arguments:
 
+Several arguments:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -129,8 +130,8 @@ print("Food: '{}', money: {} UAH".format(food, money))
 Food: 'Pizza Pepperoni and burger', money: 130.23 UAH
 ```
 {% endcode %}
-It is possible when using new format (_format()_) to specify positions:
 
+It is possible when using new format (_format()_) to specify positions:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -145,8 +146,8 @@ print("Food is {1}, money: {0}, (I have exactly ${0} in my wallet!)".format(mone
 Food is Pizza Pepperoni and burger, money: 130.23, (I have exactly $130.23 in my wallet!)
 ```
 {% endcode %}
-It is possible to pass arguments by names:
 
+It is possible to pass arguments by names:
 
 ```python
 data = {"money": 45, "food":"salad"}
@@ -162,17 +163,14 @@ print("Want {food} but ${money} to spend".format(**data))
 Want salad but $45 to spend
 ```
 {% endcode %}
-More examples:
 
+More examples:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 "First thing in the morning is {0}".format("coffee") # References first positional argument
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -181,14 +179,12 @@ More examples:
 'First thing in the morning is coffee'
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 "I'd like a {} with coffee".format("cookie") # Implicitly references the first positional argument
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -197,14 +193,12 @@ More examples:
 "I'd like a cookie with coffee"
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 "Bring me {} and {}".format("coffee", "cookie") # Same as "From {0} to {1}"
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -213,14 +207,12 @@ More examples:
 'Bring me coffee and cookie'
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 "Remember my name: {name}".format(name="Heisenberg") # References keyword argument 'name'
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -229,6 +221,7 @@ More examples:
 'Remember my name: Heisenberg'
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -236,9 +229,6 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 "{do_what} my {my_what}: {name}".format(**data)
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -246,14 +236,12 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 'Remember my name: Heisenberg'
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 "String has this method: {0.isalpha}".format("")  # 'isalpha' attribute of first positional arg
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -262,48 +250,48 @@ data = dict(do_what="Remember", my_what="name", name="Heisenberg")
 'String has this method: <built-in method isalpha of str object at 0x7efc5848c030>'
 ```
 {% endcode %}
-### Differences between formatters:
 
+#### Differences between formatters:
 
-| %               |  {}        | Output                                                                                        |
-|-------------------------|----------------------|----------------------------------------------------------------------------|
-|```'%s %s' % ('one', 'two')```    | ```'{} {}'.format('one', 'two')```    | ```one two```    |
-| ```'%d %d' % (1, 2)```           | ```'{} {}'.format(1, 2)```            | ```1 2```        |
-| ---                              | ```'{1} {0}'.format('one', 'two')```  | ```two one```    |
-| ```'%10s' % ('test',)```         | ```'{:>10}'.format('test')```         | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```test``` | 
-| ```'%-10s' % ('test',)```        | ```'{:10}'.format('test')```          | ```test```       |
-| ---                              | ```'{:_<10}'.format('test')```       | ```test______``` |
-| ---                              | ```'{:^10}'.format('test')```         | &nbsp;&nbsp;&nbsp;```test```&nbsp;&nbsp;&nbsp; | 
+| %                          | {}                               | Output       |
+| -------------------------- | -------------------------------- | ------------ |
+| `'%s %s' % ('one', 'two')` | `'{} {}'.format('one', 'two')`   | `one two`    |
+| `'%d %d' % (1, 2)`         | `'{} {}'.format(1, 2)`           | `1 2`        |
+| ---                        | `'{1} {0}'.format('one', 'two')` | `two one`    |
+| `'%10s' % ('test',)`       | `'{:>10}'.format('test')`        |      `test`  |
+| `'%-10s' % ('test',)`      | `'{:10}'.format('test')`         | `test`       |
+| ---                        | `'{:_<10}'.format('test')`       | `test______` |
+| ---                        | `'{:^10}'.format('test')`        |    `test`    |
 
-| %               |  {}        | Output                                                                                        |
-|-------------------------|----------------------|----------------------------------------------------------------------------|
-| ```'%.3s' % ('abcdef',)```       | ```'{:.3}'.format('abcdef')```        | ```abc```        | 
-| ```'%d' % (42,)```               | ```'{:d}'.format(42)```               | ```42```         |
-| ```'%06.2f' % (3.141592,)```     | ```'{:06.2f}'.format(3.14159)```      | ```003.14```     |
-| ---                              | ```'{p.type}'.format(p=Plant())```    | ```tree```       |
+| %                        | {}                             | Output   |
+| ------------------------ | ------------------------------ | -------- |
+| `'%.3s' % ('abcdef',)`   | `'{:.3}'.format('abcdef')`     | `abc`    |
+| `'%d' % (42,)`           | `'{:d}'.format(42)`            | `42`     |
+| `'%06.2f' % (3.141592,)` | `'{:06.2f}'.format(3.14159)`   | `003.14` |
+| ---                      | `'{p.type}'.format(p=Plant())` | `tree`   |
 
 In last example assuming p is the instance of Plant class defined like:
+
 ```python
 class Plant(object):
     type = 'tree
 ```
 
-#### .format() cheatsheet
+**.format() cheatsheet**
 
+| Data        | Format    | Output       | Decription                 |
+| ----------- | --------- | ------------ | -------------------------- |
+| `3.1415926` | `{:.2f}`  | `3.14`       | 2 decimal places           |
+| `3.1415926` | `{:+.2f}` | `+3.14`      | 2 decimal places with sign |
+| `2.71828`   | `{:.0f}`  | `3`          | No decimal places          |
+| `1000000`   | `{:,}`    | `1,000,000`  | Number with comma sep      |
+| `13`        | `{:>10d}` |         `13` | Right aligned              |
+| `13`        | `{:<10d}` | `13`         | Left aligned               |
+| `13`        | `{:^10d}` |     `13`     | Center aligned             |
 
-| Data                    | Format                 | Output            | Decription |
-|-------------------------|------------------------|------------------|-------------------------------------------------|
-| ```3.1415926```         | ```{:.2f}```           | ```3.14```       | 2 decimal places    |
-| ```3.1415926```         | ```{:+.2f}```          | ```+3.14```      |  2 decimal places with sign  |
-| ```2.71828```           | ```{:.0f}```           | ```3```          | No decimal places    |
-| ```1000000```           | ```{:,}```             | ```1,000,000```  |  Number with comma sep |
-| ```13```                | ```{:>10d}```           | <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>`13`         | Right aligned 
-| ```13```                | ```{:<10d}```          | `13`<code>&nbsp;&nbsp;&nbsp;&nbsp;</code>         | Left aligned |
-| ```13```                | ```{:^10d}```          | <code>&nbsp;&nbsp;&nbsp;&nbsp;</code>`13`<code>&nbsp;&nbsp;&nbsp;&nbsp;</code>         | Center aligned |
+**.format() "cheats"**
 
-#### .format() "cheats"
 * Show the same string several times
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -327,10 +315,10 @@ No answer.
 "What's gone with that boy, I wonder? You TOM!" No answer.
 ```
 {% endcode %}
-* Convert Values to different Bases 
-    * You can use the following letters to convert a number to their bases:
-        * decimal, hex, octal, binary
 
+* Convert Values to different Bases
+  * You can use the following letters to convert a number to their bases:
+    * decimal, hex, octal, binary
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -345,8 +333,8 @@ print ("{0:d} - {0:x} - {0:o} - {0:b}".format(21))
 21 - 15 - 25 - 10101
 ```
 {% endcode %}
-* Escaping braces:
 
+* Escaping braces:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -361,7 +349,8 @@ print ( "{{0}} / {}".format("TEST") )
 {0} / TEST
 ```
 {% endcode %}
-#### f-strings formatting
+
+**f-strings formatting**
 
 New feature appeared in Python 3.6. It is possible to inject local variable right into string (variable interpolation)
 
@@ -369,14 +358,11 @@ New feature appeared in Python 3.6. It is possible to inject local variable righ
 
 This feature is described by [PEP 498](https://www.python.org/dev/peps/pep-0498/#specification)
 
-
-
 The format is:
 
 ```python
 f'<text> { <expression> <optional !s, !r, or !a> <optional : format specifier> } <text> ... '
 ```
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -398,15 +384,14 @@ ___34.125___
   34.125
 ```
 {% endcode %}
-In case interpolating var is not defined - you'll get regular NameError:
 
+In case interpolating var is not defined - you'll get regular NameError:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f'{unexistent_var}'
 ```
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -423,12 +408,12 @@ Input In [372], in <cell line: 1>()
 NameError: name 'unexistent_var' is not defined
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f'{1/0}'
 ```
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -445,8 +430,8 @@ Input In [373], in <cell line: 1>()
 ZeroDivisionError: division by zero
 ```
 {% endcode %}
-`f-string` are evaluated only during creation (once):
 
+`f-string` are evaluated only during creation (once):
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -464,6 +449,7 @@ print(str_)
 Value is 100500
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -478,17 +464,14 @@ print(str_)
 Value is 100500
 ```
 {% endcode %}
-Expressions may be evaluated directly inside a string:
 
+Expressions may be evaluated directly inside a string:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f'{ 1 + 2 }'
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -497,15 +480,13 @@ f'{ 1 + 2 }'
 '3'
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
 f'{"just another string"}'
 'quoted string'
 ```
-
-
-
 
 📟 _<mark style="color:green;">Output:</mark>_
 
@@ -514,6 +495,7 @@ f'{"just another string"}'
 'quoted string'
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -523,9 +505,6 @@ l = [1, 2, 3, 4, 5]
 f'{d["a"], l[2:5]}'
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -533,6 +512,7 @@ f'{d["a"], l[2:5]}'
 '(100500, [3, 4, 5])'
 ```
 {% endcode %}
+
 🪄 _<mark style="color:green;">Code:</mark>_
 
 ```python
@@ -549,8 +529,8 @@ Result of function is:
 Hello! John
 ```
 {% endcode %}
-Format int value as hex:
 
+Format int value as hex:
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -559,9 +539,6 @@ value = 1234
 f'input={value:#x}'
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -569,8 +546,8 @@ f'input={value:#x}'
 'input=0x4d2'
 ```
 {% endcode %}
-Format `datetime` objects (see [docs for datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior):
 
+Format `datetime` objects (see [docs for datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior):
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -594,8 +571,8 @@ Sun 28/08/2022
 'It was: Sun 28/08/2022'
 ```
 {% endcode %}
-### Dynamic width
 
+#### Dynamic width
 
 🪄 _<mark style="color:green;">Code:</mark>_
 
@@ -608,9 +585,6 @@ value = decimal.Decimal('12.34567')
 f'result: {value:{width}.{precision}f}'
 ```
 
-
-
-
 📟 _<mark style="color:green;">Output:</mark>_
 
 {% code overflow="wrap" %}
@@ -618,10 +592,10 @@ f'result: {value:{width}.{precision}f}'
 'result:     12.34567'
 ```
 {% endcode %}
-####  Templates
+
+**Templates**
 
 A bit underrated feature of builtin string module. _Template_ is very simple template engine.
-
 
 🪄 _<mark style="color:green;">Code:</mark>_
 

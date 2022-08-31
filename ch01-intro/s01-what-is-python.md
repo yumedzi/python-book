@@ -20,23 +20,14 @@ print("Hello World")
 Hello World
 ```
 {% endcode %}
-🪄 _<mark style="color:green;">Code:</mark>_
+🪄 _<mark style="color:green;">Code (</mark>_<mark style="color:blue;">>>></mark>_<mark style="color:green;">) and</mark>_ <mark style="color:green;"></mark><mark style="color:green;">📟</mark> <mark style="color:green;"></mark>_<mark style="color:green;">Output</mark>_<mark style="color:green;">:</mark>
 
 ```python
-print "Hello World" # Python 2
+>>> print "Hello World" # Python 2
+"Hello World"
 ```
 
 
-📟 _<mark style="color:green;">Output:</mark>_
-
-{% code overflow="wrap" %}
-```
-  Input In [4]
-    print "Hello World" # Python 2
-    ^
-SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
-```
-{% endcode %}
 ## What is Python?
 
 

@@ -274,7 +274,7 @@ print(*datetime.datetime.now().timetuple(), sep=", ")
 
 {% code overflow="wrap" %}
 ```
-2022, 8, 8, 16, 29, 14, 0, 220, -1
+2022, 8, 31, 5, 10, 39, 2, 243, -1
 ```
 {% endcode %}
 * Values is result of range() are all of the same type, so it is list (in Python 2):

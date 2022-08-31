@@ -191,7 +191,7 @@ new_list.sort()
 
 TypeError                                 Traceback (most recent call last)
 
-Input In [9], in <cell line: 2>()
+Input In [149], in <cell line: 2>()
       1 new_list 
 ----> 2 new_list.sort()
 
@@ -199,20 +199,24 @@ Input In [9], in <cell line: 2>()
 TypeError: '<' not supported between instances of 'str' and 'int'
 ```
 {% endcode %}
-But we can workaround this by using builtin function `sorted()` and specifying your own sorting function `key` which should return some values os the same type which later will be used for Python's regular sorting.
+But we can workaround this by specifying your own sorting function (as argument `key`) which should return some values of the same type which Python will be sorting instead of real values.
 
 
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
-print(sorted(new_list, key=str)) # Here we are sorting in fact by string representations
+new_list.sort(key=str)) # Here we are sorting in fact by string representations
 ```
+
 
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-[15, 16, 23, 4, 42, 8, 'a', 'b', 'c']
+  Input In [150]
+    new_list.sort(key=str)) # Here we are sorting in fact by string representations
+                          ^
+SyntaxError: unmatched ')'
 ```
 {% endcode %}
 ### Appending, extending
@@ -493,7 +497,7 @@ some_list[1000]
 
 IndexError                                Traceback (most recent call last)
 
-Input In [24], in <cell line: 1>()
+Input In [164], in <cell line: 1>()
 ----> 1 some_list[1000]
 
 
@@ -689,7 +693,7 @@ from random import randrange
 
 {% code overflow="wrap" %}
 ```
-[0, 5, 9, 4, 6, 2, 8, 1, 3, 4, 2]
+[5, 0, 4, 8, 4, 0, 1]
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
@@ -996,8 +1000,8 @@ list_ = list((range(1000)))
 
 {% code overflow="wrap" %}
 ```
-15.2 µs ± 57.9 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
-21.2 µs ± 626 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+15.8 µs ± 364 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+20.8 µs ± 272 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
 But they are much faster (x5 in the following example) for a vector operations:
@@ -1016,8 +1020,8 @@ import math
 
 {% code overflow="wrap" %}
 ```
-102 µs ± 235 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
-20.9 µs ± 372 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+106 µs ± 564 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
+21.4 µs ± 246 ns per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 {% endcode %}
 ## Complexity of operations

@@ -16,10 +16,12 @@ else:
 
 ```python
 a = 12
-if a > 3: 
-    print("a is greater than 3" )
+if a > 10: 
+    print("a is greater than 10" )
 elif a == 3: 
     print("a is 3" )
+elif a == 5:
+    print("a is 5")
 else: 
     print("a is lesser than 3")
 ```
@@ -28,7 +30,7 @@ else:
 
 {% code overflow="wrap" %}
 ```
-a is greater than 3
+a is greater than 10
 ```
 {% endcode %}
 ## bool type

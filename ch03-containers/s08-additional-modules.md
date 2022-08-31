@@ -45,7 +45,7 @@ Student = namedtuple("Student", "name surname age group")
 
 student = Student("John", "Jakeson", 23, "18 B")
 print(f'Student {student.surname} from group {student.group} is {student.age} year old')
-student
+print(student)
 ```
 
 📟 <mark style="color:green;">Output</mark>:
@@ -53,11 +53,6 @@ student
 {% code overflow="wrap" %}
 ```
 Student Jakeson from group 18 B is 23 year old
-
-
-
-
-
 Student(name='John', surname='Jakeson', age=23, group='18 B')
 ```
 {% endcode %}

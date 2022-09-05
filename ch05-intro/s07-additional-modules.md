@@ -1,8 +1,8 @@
 # What is left behind?
 
-* itertools
+* [itertools](https://docs.python.org/3/library/itertools.html)
     + Number of various "batteries" providing most imaginable iterators for most usecases
-* operator
+* [operator](https://docs.python.org/3/library/operator.html)
     + I've shown example of `operator.mul`. There are lot of similar functions providing functionality of main operators
 * coroutines *
     + generators that can get value via yield:

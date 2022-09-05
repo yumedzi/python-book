@@ -7,6 +7,5 @@
 <br>
 
 * Additional tutorials: 
-    * http://learnpythonthehardway.org/book/ 
-    * http://www.codecademy.com/tracks/python 
-    * https://www.coursera.org/course/pythonlearn
+    * [PythonGeekz article: Functions and arguments](https://pythongeeks.org/python-arguments/)
+    * [PythonGeekz article: Generator vs Iterators](https://pythongeeks.org/python-generators-vs-iterators/)

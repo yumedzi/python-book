@@ -106,9 +106,9 @@ The same.
 
 ```python
 def f1():
-    return len([ x for x in range(10000)])
+    return len([x for x in range(10000)])
 
-f2 = lambda: len([ x for x in range(10000)])
+f2 = lambda: len([x for x in range(10000)])
 
 %timeit f1()
 %timeit f2()
@@ -118,8 +118,8 @@ f2 = lambda: len([ x for x in range(10000)])
 
 {% code overflow="wrap" %}
 ```
-654 µs ± 13.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-663 µs ± 9.15 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+654 µs ± 25 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
+630 µs ± 2.84 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
 ```
 {% endcode %}
 This is because lambda is syntax sugar and in the end almost the same code is being constructed

@@ -4,7 +4,7 @@ Namespaces are just dictionaries with some names (what we call variable name) ma
 ```python
 some_string = "Hello World"
 ```
-creates a reference to the "Hello Worold" object, and makes it accessible by variable name ```some_string```.
+creates a reference to the "Hello World" object, and makes it accessible by variable name ```some_string```.
 
 In this case our namespace will be:
 ```python

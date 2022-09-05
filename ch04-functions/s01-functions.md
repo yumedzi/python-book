@@ -140,13 +140,13 @@ But most often the function relies on the data passed to it:
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
-def sum(x, y=4): 
+def sum_(x, y=4): 
     return x * 10 + y
  
-print(sum(4, 34,)) 
-print(sum(y=34, x=4,))
-print(sum(5))
-print(sum(x=5))
+print(sum_(4, 34)) 
+print(sum_(y=34, x=4,))
+print(sum_(5))
+print(sum_(x=5))
 ```
 
 📟 <mark style="color:green;">Output</mark>:
@@ -224,7 +224,7 @@ It is possible to define a function by using the following types of formal argum
 * Variable-length arguments (also called arbitrary argument lists)
 
 
-Schematics of these arguments and special parameters:
+Schematics of parameters:
 
 > `/` works from Python 3.8
 
@@ -376,7 +376,7 @@ print( func(1, 2, 3))
 print( func(c=4, a=2, b=3)) 
 print( func(a=1, b=10))
 print( func(10, 20, c=6))  # Correct order
-#print( func(c=6, 10, 20))  # Incorrect order
+# print( func(c=6, 10, 20))  # Incorrect order
 ```
 
 📟 <mark style="color:green;">Output</mark>:
@@ -479,7 +479,7 @@ Consider this function:
 
 
 ```python
-def files_search(files, depth=None, case_sensitive=True, include_archives=None, count_duplicates=False):
+def files_search(files, depth=None, case_sensitive=True, include_archives=None, count_duplicates=False): 
     pass
 ```
 
@@ -490,7 +490,7 @@ There is a lot of ways to call this function, and not all calls are understandab
 files_search(["1.txt", "some.log"])
 files_search(["1.txt", "some.log"], 1)
 files_search(["1.txt", "some.log"], 1, True)
-files_search(["1.txt", "some.log"], 3, 0, True, 1)
+files_search(["1.txt", "some.log"], 3, 0, True, 1) 
 files_search(["1.txt", "some.log"], include_archives=True)
 files_search(["1.txt", "some.log"], depth=1, include_archives=True)
 ```

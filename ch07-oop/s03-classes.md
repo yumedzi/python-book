@@ -694,11 +694,6 @@ class Bus:
     ...
 ```
 
-
-```python
-
-```
-
 # Old and New classes
 
 > This chapter is only viable for Python 2 - as in Python 3 there are no such distinguishing as "old/new" classes.

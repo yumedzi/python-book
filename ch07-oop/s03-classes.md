@@ -23,7 +23,7 @@ Here is the simplest class for Cat and two objects of this class:
 
 ```python
 class Cat:
-    pass
+    pass 
 
 agata = Cat()
 blanka = Cat()
@@ -36,8 +36,8 @@ print(blanka, id(blanka))
 
 {% code overflow="wrap" %}
 ```
-<__main__.Cat object at 0x7f6e0c0e3a00> 140110625389056
-<__main__.Cat object at 0x7f6e0c0e2bf0> 140110625385456
+<__main__.Cat object at 0x7f6dddf02380> 140109851665280
+<__main__.Cat object at 0x7f6dddf03cd0> 140109851671760
 ```
 {% endcode %}
 Cat class and object is "empty" - doesn't define any attributes and methods. They even don't have their proper name.
@@ -75,7 +75,7 @@ class Cat:
         self.name = name
         
     def __str__(self):
-        return f'Cat "{self.name}"'
+        return f'<Cat "{self.name}">'
         
 agata = Cat("Agata")
 street_cat = Cat()
@@ -88,8 +88,8 @@ print(street_cat)
 
 {% code overflow="wrap" %}
 ```
-Cat "Agata"
-Cat "Stray"
+<Cat "Agata">
+<Cat "Stray">
 ```
 {% endcode %}
 Magic methods are not the only ones we can define - in fact we can add any method that would describe some action involving an object.
@@ -105,9 +105,10 @@ class Cat:
     
     def __init__(self, name="Stray"):
         self.name = name
+        #self.default_sound = "Rrrr"  # We can override "global" class attribute with "local" instance attribute
         
     def __str__(self):
-        return f'Cat "{self.name}"'
+        return f'<Cat "{self.name}">'
     
     def sound(self, times=3):
         return " ".join([self.default_sound] * times)
@@ -132,6 +133,7 @@ class Bus:
     # Class attributes
     buses_count = 0
     people_transferred = 0
+    money_collected = 0
     buses = []
  
     # Instance Initializer
@@ -140,6 +142,7 @@ class Bus:
         self.name = name
         self.people_transferred = 0
         self.rate = rate
+        self.money_collected = 0
         Bus.buses_count += 1  # self.__class__.buses_count += 1
         Bus.buses.append(self)
  
@@ -147,17 +150,22 @@ class Bus:
     def transfer(self, num=1):
         self.people_transferred += num
         self.__class__.people_transferred += num
+        self.money_collected += self.rate * num
+        self.__class__.money_collected += self.rate * num
+        
+    def __str__(self):
+        return f"<Bus '{self.name}'>"
  
     def info(self): # change to __str__
         data = dict(
             name=self.name, total_buses=Bus.buses_count, rate=self.rate,
             num=self.people_transferred, total=Bus.people_transferred
         )
-        return "Bus '{name} (rate: {rate} €)' (total: {total_buses}), " \
+        return "Bus '{name}' (rate: {rate}€) (total: {total_buses}), " \
                "transferred {num} from {total} ppl".format(**data)
     
-    # Adding method __repr__:
-    __repr__ = info
+    def __repr__(self):
+        return f"Bus('{self.name}', {self.rate})"
 ```
 
 
@@ -167,6 +175,33 @@ b.transfer(100) # --> Bus.transfer(b, 100)
 ```
 
 
+```python
+b
+```
+
+
+
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+Bus('Bus #40', 7)
+```
+{% endcode %}
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+print(b)
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+<Bus 'Bus #40'>
+```
+{% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
@@ -178,28 +213,29 @@ print(b.info()) # --> Bus.info(b)
 
 {% code overflow="wrap" %}
 ```
-Bus 'Bus #40 (rate: 7 €)' (total: 1), transferred 150 from 150 ppl
+Bus 'Bus #40' (rate: 7€) (total: 1), transferred 150 from 150 ppl
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
-b3 = Bus("Tram #1", 8)
-b3.transfer(50)
-print(b3.info())
+b2 = Bus("Tram #1", 8)
+b2.transfer(50)
+print(b2.info())
 ```
 
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-Bus 'Tram #1 (rate: 8 €)' (total: 2), transferred 50 from 200 ppl
+Bus 'Tram #1' (rate: 8€) (total: 2), transferred 50 from 200 ppl
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 print(f"Bus.people_transferred = {Bus.people_transferred}")
+print(f"Bus.money_collected = {Bus.money_collected}")
 print(f"Bus.buses_count = {Bus.buses_count}")
 print(f"Bus.buses = {Bus.buses}")
 ```
@@ -209,8 +245,9 @@ print(f"Bus.buses = {Bus.buses}")
 {% code overflow="wrap" %}
 ```
 Bus.people_transferred = 200
+Bus.money_collected = 1450
 Bus.buses_count = 2
-Bus.buses = [Bus 'Bus #40 (rate: 7 €)' (total: 2), transferred 150 from 200 ppl, Bus 'Tram #1 (rate: 8 €)' (total: 2), transferred 50 from 200 ppl]
+Bus.buses = [Bus('Bus #40', 7), Bus('Tram #1', 8)]
 ```
 {% endcode %}
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
@@ -228,7 +265,7 @@ print(bus_317.info())
 
 {% code overflow="wrap" %}
 ```
-Bus '# 317 (rate: 7 €)' (total: 4), transferred 20 from 365 ppl
+Bus '# 317' (rate: 7€) (total: 3), transferred 20 from 220 ppl
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
@@ -244,7 +281,7 @@ print(bus_317.info())
 
 {% code overflow="wrap" %}
 ```
-Bus '# 317 (rate: 7 €)' (total: 4), transferred 76 from 444 ppl
+Bus '# 317' (rate: 7€) (total: 3), transferred 76 from 299 ppl
 ```
 {% endcode %}
 Class variables and instance variables were changed:
@@ -261,7 +298,7 @@ print(bus_317.people_transferred)
 
 {% code overflow="wrap" %}
 ```
-444
+299
 76
 ```
 {% endcode %}
@@ -309,7 +346,7 @@ print(bip.say())
 {% code overflow="wrap" %}
 ```
 Robot Bip 1.0 (1000 kg)
-Bip 1.0 says: Beeep
+Bip 1.0 says: Bzzzt
 ```
 {% endcode %}
 We can re-use this class to create a robot from Futurama using the inheritance. For this we need to specify base/super class in parenthesis during new class definition.
@@ -335,7 +372,7 @@ print(bender.say())
 {% code overflow="wrap" %}
 ```
 Robot Bender (1000 kg)
-Bender says: Oh, your God!
+Bender says: Kiss my shiny metal face
 ```
 {% endcode %}
 As we can we still can use `say` method defined in the base class.
@@ -349,12 +386,12 @@ Python supports a limited form of multiple inheritance as well. A class definiti
 
 ```python
 class A:
-    a = "a from A"
+    a = "a from A"[]
     
 class B(A):
     x = "x from B"
     
-class C(A):
+class C(A):[]
     a = "a from C"
     x = "x from C",
     
@@ -409,7 +446,31 @@ bender2_0.send_message(bender2_0.say())
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 2.0 says: Kill all humans>>>  ***
+*** SENDING MESSAGE: <<<Bender 2.0 says: Oh wait you’re serious. Let me laugh even harder.>>>  ***
+```
+{% endcode %}
+More advanced example:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+class BendingMailingRobot(Robot, Mail):
+    sounds = ["Kill all humans", "Kiss my shiny metal face", "Oh, your God!",
+              "Oh wait you’re serious. Let me laugh even harder."]
+    
+    def mail(self):
+        return self.send_message(self.say())
+    
+bender3_0 = BendingMailingRobot("Bender 3.0")
+bender3_0.mail()
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+*** SENDING MESSAGE: <<<Bender 3.0 says: Oh, your God!>>>  ***
 ```
 {% endcode %}
 ## Methods
@@ -444,8 +505,8 @@ print(ex.cool_method)
 
 {% code overflow="wrap" %}
 ```
-I am instance method, my instance is: <__main__.Example object at 0x7f971041d210>
-<bound method Example.cool_method of <__main__.Example object at 0x7f971041d210>>
+I am instance method, my instance is: <__main__.Example object at 0x7f6ddd803400>
+<bound method Example.cool_method of <__main__.Example object at 0x7f6ddd803400>>
 ```
 {% endcode %}
 ### Class methods

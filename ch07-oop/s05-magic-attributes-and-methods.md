@@ -84,13 +84,13 @@ A()
 
 {% code overflow="wrap" %}
 ```
-<__main__.A object at 0x7f97100eca00>
+<__main__.A object at 0x7f6ddc87cc10>
 
 
 
 
 
-<__main__.A at 0x7f97100d0af0>
+<__main__.A at 0x7f6ddc87dd80>
 ```
 {% endcode %}
 ### Hash
@@ -117,7 +117,7 @@ A().__hash__()
 
 {% code overflow="wrap" %}
 ```
-8767924107207
+8756864253664
 ```
 {% endcode %}
 ### Bases 

@@ -340,13 +340,13 @@ print(id(l))
 ```
 >>> Use parent's constructor but print this line!
 >>> Original list: []
-140286789394384
+140109826683536
 >>> Before running old __init__: []
 >>> After running old __init__: ['a', 'b', 'c', 'd', 'e']
 <class '__main__.SuperList'>
 New 'list': ['a', 'b', 'c', 'd', 'e', 'last element!']
 After changes: [100, 'c', 'd', 'AAA', 'BBB']
-140286789394384
+140109826683536
 ```
 {% endcode %}
 ### `super()` based on another class
@@ -537,7 +537,7 @@ D().m()
 {% code overflow="wrap" %}
 ```
 [<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.C'>, <class 'object'>]
-(<class '__main__.B'>, <__main__.D object at 0x7f971041ef50>)
+(<class '__main__.B'>, <__main__.D object at 0x7f6ddc87e7a0>)
 Running __getattr__, attr = m
 
 

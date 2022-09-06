@@ -36,8 +36,8 @@ print(blanka, id(blanka))
 
 {% code overflow="wrap" %}
 ```
-<__main__.Cat object at 0x7f6dddf02380> 140109851665280
-<__main__.Cat object at 0x7f6dddf03cd0> 140109851671760
+<__main__.Cat object at 0x7f6ddc65fa30> 140109825833520
+<__main__.Cat object at 0x7f6ddc65f8e0> 140109825833184
 ```
 {% endcode %}
 Cat class and object is "empty" - doesn't define any attributes and methods. They even don't have their proper name.
@@ -346,7 +346,7 @@ print(bip.say())
 {% code overflow="wrap" %}
 ```
 Robot Bip 1.0 (1000 kg)
-Bip 1.0 says: Bzzzt
+Bip 1.0 says: Oooooh
 ```
 {% endcode %}
 We can re-use this class to create a robot from Futurama using the inheritance. For this we need to specify base/super class in parenthesis during new class definition.
@@ -372,7 +372,7 @@ print(bender.say())
 {% code overflow="wrap" %}
 ```
 Robot Bender (1000 kg)
-Bender says: Kiss my shiny metal face
+Bender says: Oh wait you’re serious. Let me laugh even harder.
 ```
 {% endcode %}
 As we can we still can use `say` method defined in the base class.
@@ -403,12 +403,15 @@ print(D.__mro__) # D.mro()
 print(d.a, d.x)
 ```
 
+
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
-a from C x from B
+  Input In [152]
+    a = "a from A"[]
+                   ^
+SyntaxError: invalid syntax
 ```
 {% endcode %}
 Let's enhance our `Robot` example by inheriting from two classes at once.
@@ -446,7 +449,7 @@ bender2_0.send_message(bender2_0.say())
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 2.0 says: Oh wait you’re serious. Let me laugh even harder.>>>  ***
+*** SENDING MESSAGE: <<<Bender 2.0 says: Oh, your God!>>>  ***
 ```
 {% endcode %}
 More advanced example:
@@ -467,7 +470,7 @@ bender3_0.mail()
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 3.0 says: Oh, your God!>>>  ***
+*** SENDING MESSAGE: <<<Bender 3.0 says: Kill all humans>>>  ***
 ```
 {% endcode %}
 And even more advanced example (with overloading of the existing `send_message` method with `super()` function covered later):
@@ -488,7 +491,7 @@ bender4_0.send_message()
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 4.0 says: Kill all humans>>>  ***
+*** SENDING MESSAGE: <<<Bender 4.0 says: Oh wait you’re serious. Let me laugh even harder.>>>  ***
 ```
 {% endcode %}
 ## Methods
@@ -523,8 +526,8 @@ print(ex.cool_method)
 
 {% code overflow="wrap" %}
 ```
-I am instance method, my instance is: <__main__.Example object at 0x7f6ddd803400>
-<bound method Example.cool_method of <__main__.Example object at 0x7f6ddd803400>>
+I am instance method, my instance is: <__main__.Example object at 0x7f6dddbe37c0>
+<bound method Example.cool_method of <__main__.Example object at 0x7f6dddbe37c0>>
 ```
 {% endcode %}
 ### Class methods
@@ -596,8 +599,8 @@ Bus2.general_info()
 
 {% code overflow="wrap" %}
 ```
-* People_transferred = 0
-* Money_collected = 0
+* People_transferred = 299
+* Money_collected = 2143
 * Total buses = 0
 * Buses = []
 ```
@@ -616,8 +619,8 @@ Bus2.general_info()
 
 {% code overflow="wrap" %}
 ```
-* People_transferred = 0
-* Money_collected = 0
+* People_transferred = 299
+* Money_collected = 2143
 * Total buses = 1
 * Buses = [Bus('Some Bus', 7)]
 ```
@@ -636,7 +639,7 @@ Bus2.remove_bus(bus)
 
 {% code overflow="wrap" %}
 ```
-No such bus registered!
+<Bus 'Some Bus'> removed
 No such bus registered!
 ```
 {% endcode %}

@@ -143,8 +143,8 @@ class Bus:
         self.people_transferred = 0
         self.rate = rate
         self.money_collected = 0
-        Bus.buses_count += 1  # self.__class__.buses_count += 1
-        Bus.buses.append(self)
+        self.__class__.buses_count += 1   # self.__class__ instead of hardcoding Bus
+        self.__class__.buses.append(self) # self.__class__ instead of hardcoding Bus
  
     # Instance method
     def transfer(self, num=1):
@@ -455,10 +455,7 @@ More advanced example:
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
-class BendingMailingRobot(Robot, Mail):
-    sounds = ["Kill all humans", "Kiss my shiny metal face", "Oh, your God!",
-              "Oh wait you’re serious. Let me laugh even harder."]
-    
+class BendingMailingRobot(BendingRobot, Mail):
     def mail(self):
         return self.send_message(self.say())
     
@@ -471,6 +468,27 @@ bender3_0.mail()
 {% code overflow="wrap" %}
 ```
 *** SENDING MESSAGE: <<<Bender 3.0 says: Oh, your God!>>>  ***
+```
+{% endcode %}
+And even more advanced example (with overloading of the existing `send_message` method with `super()` function covered later):
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+class BendingMailingRobot(BendingRobot, Mail):
+    def send_message(self):
+        return super().send_message(self.say())
+    
+bender4_0 = BendingMailingRobot("Bender 4.0")
+bender4_0.send_message()
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+*** SENDING MESSAGE: <<<Bender 4.0 says: Kill all humans>>>  ***
 ```
 {% endcode %}
 ## Methods
@@ -545,6 +563,83 @@ INSTANCE: 25
 CLS: 5
 ```
 {% endcode %}
+Let's add some class method to `Bus` class. Please note that we don't need any existing buses to call `general_info` method on `Bus2`:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+class Bus2(Bus):
+    buses_count = 0
+    buses = []
+    
+    @classmethod
+    def general_info(cls):
+        print(f"* People_transferred = {cls.people_transferred}")
+        print(f"* Money_collected = {cls.money_collected}")
+        print(f"* Total buses = {cls.buses_count}")
+        print(f"* Buses = {cls.buses}")
+        
+    @classmethod
+    def remove_bus(cls, bus):
+        try:
+            cls.buses.remove(bus)
+            cls.buses_count -= 1
+            print(f"{bus} removed")
+        except ValueError:
+            print("No such bus registered!")
+            
+Bus2.general_info()
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+* People_transferred = 0
+* Money_collected = 0
+* Total buses = 0
+* Buses = []
+```
+{% endcode %}
+Let's add some buses, check the general info and remove buses:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+bus = Bus2()
+Bus2.general_info()
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+* People_transferred = 0
+* Money_collected = 0
+* Total buses = 1
+* Buses = [Bus('Some Bus', 7)]
+```
+{% endcode %}
+Removing also works good:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+Bus2.remove_bus(bus)
+Bus2.remove_bus(bus)
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+No such bus registered!
+No such bus registered!
+```
+{% endcode %}
 ### Static method
 
 This method doesn't require to pass instance/class at all.
@@ -582,6 +677,28 @@ radaR
 123123
 ```
 {% endcode %}
+We can use static method for creating some helper function for `Bus` class, let's add simple one for calculating money collected:
+
+```python
+class Bus:
+    ...
+    @staticmethod
+    def calc_money(ppl, rate):
+        return ppl * rate
+    
+    def transfer(self, num=1):
+        self.people_transferred += num
+        self.__class__.people_transferred += num
+        self.money_collected += self.calc_money(num, self.rate)
+        self.__class__.money_collected += self.calc_money(num, self.rate)
+    ...
+```
+
+
+```python
+
+```
+
 # Old and New classes
 
 > This chapter is only viable for Python 2 - as in Python 3 there are no such distinguishing as "old/new" classes.

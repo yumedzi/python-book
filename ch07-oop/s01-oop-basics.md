@@ -1,3 +1,8 @@
+OOP (Object oriented Programming) in plan words:
+
+`Сlass` 
+
+
 # OOP Basics
 
 > OOP (Object oriented Programming) - programming paradigm where all operations are based on manipulations on abstract objects which has internal state and support methods that query or modify this internal state in some way.

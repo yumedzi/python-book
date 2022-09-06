@@ -14,6 +14,117 @@ to local variables go into this new namespace. In particular, function definitio
 
 Class objects support two kinds of operations: attribute references and instantiation.
 
+### Simple OOP examples
+
+Here is the simplest class for Cat and two objects of this class:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+class Cat:
+    pass
+
+agata = Cat()
+blanka = Cat()
+
+print(agata, id(agata))
+print(blanka, id(blanka))
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+<__main__.Cat object at 0x7f6e0c0e3a00> 140110625389056
+<__main__.Cat object at 0x7f6e0c0e2bf0> 140110625385456
+```
+{% endcode %}
+Cat class and object is "empty" - doesn't define any attributes and methods. They even don't have their proper name.
+
+Let's add names:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+agata.name = "Agata"
+
+print(agata.name)
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+Agata
+```
+{% endcode %}
+We can assign attributes during initialization of the object - it would simplify things a lot.
+
+The method starts with `__` ("dunder") is called a magic method. `__init__` is one example, `__str__` - method that defines a string representation of the object - is another.
+
+`self` in examples below is the reference to the object itself so we could use it in the function code - for example during `str(agata)` Python will call `agata.__str__()` which will need to return a string including `agata.name`, and it does this using the reference `self`.
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+class Cat:
+    def __init__(self, name="Stray"):
+        self.name = name
+        
+    def __str__(self):
+        return f'Cat "{self.name}"'
+        
+agata = Cat("Agata")
+street_cat = Cat()
+
+print(agata)
+print(street_cat)
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+Cat "Agata"
+Cat "Stray"
+```
+{% endcode %}
+Magic methods are not the only ones we can define - in fact we can add any method that would describe some action involving an object.
+
+Here we also will set a class attribute accessible from all children.
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+class Cat:
+    default_sound = "Meow"
+    
+    def __init__(self, name="Stray"):
+        self.name = name
+        
+    def __str__(self):
+        return f'Cat "{self.name}"'
+    
+    def sound(self, times=3):
+        return " ".join([self.default_sound] * times)
+    
+blanka = Cat("Blanka")
+print(blanka.sound())
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+Meow Meow Meow
+```
+{% endcode %}
+Examples with more methods/attributes:
+
 
 ```python
 class Bus:
@@ -42,7 +153,7 @@ class Bus:
             name=self.name, total_buses=Bus.buses_count, rate=self.rate,
             num=self.people_transferred, total=Bus.people_transferred
         )
-        return "Bus '{name} (rate: {rate} UAH)' (total: {total_buses}), " \
+        return "Bus '{name} (rate: {rate} €)' (total: {total_buses}), " \
                "transferred {num} from {total} ppl".format(**data)
     
     # Adding method __repr__:
@@ -51,7 +162,7 @@ class Bus:
 
 
 ```python
-b = Bus("Marshrutka #40")
+b = Bus("Bus #40")
 b.transfer(100) # --> Bus.transfer(b, 100)
 ```
 
@@ -67,13 +178,13 @@ print(b.info()) # --> Bus.info(b)
 
 {% code overflow="wrap" %}
 ```
-Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 1), transferred 150 from 150 ppl
+Bus 'Bus #40 (rate: 7 €)' (total: 1), transferred 150 from 150 ppl
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
-b3 = Bus("Tramway #1", 8)
+b3 = Bus("Tram #1", 8)
 b3.transfer(50)
 print(b3.info())
 ```
@@ -82,7 +193,7 @@ print(b3.info())
 
 {% code overflow="wrap" %}
 ```
-Bus 'Tramway #1 (rate: 8 UAH)' (total: 2), transferred 50 from 200 ppl
+Bus 'Tram #1 (rate: 8 €)' (total: 2), transferred 50 from 200 ppl
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
@@ -99,7 +210,7 @@ print(f"Bus.buses = {Bus.buses}")
 ```
 Bus.people_transferred = 200
 Bus.buses_count = 2
-Bus.buses = [Bus 'Marshrutka #40 (rate: 7 UAH)' (total: 2), transferred 150 from 200 ppl, Bus 'Tramway #1 (rate: 8 UAH)' (total: 2), transferred 50 from 200 ppl]
+Bus.buses = [Bus 'Bus #40 (rate: 7 €)' (total: 2), transferred 150 from 200 ppl, Bus 'Tram #1 (rate: 8 €)' (total: 2), transferred 50 from 200 ppl]
 ```
 {% endcode %}
 Creation of an instance of the class - like calling a function (in fact it is exactly like this - firstly we calling magic method `__new__()` then `__init__()`
@@ -108,32 +219,32 @@ Creation of an instance of the class - like calling a function (in fact it is ex
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
-marshrutka_317 = Bus("# 317")
-marshrutka_317.transfer(20)
-print(marshrutka_317.info())
+bus_317 = Bus("# 317")
+bus_317.transfer(20)
+print(bus_317.info())
 ```
 
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-Bus '# 317 (rate: 7 UAH)' (total: 3), transferred 20 from 220 ppl
+Bus '# 317 (rate: 7 €)' (total: 4), transferred 20 from 365 ppl
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 b.transfer(23)
-marshrutka_317.transfer()
-marshrutka_317.transfer(55)  
-print(marshrutka_317.info())
+bus_317.transfer()
+bus_317.transfer(55)  
+print(bus_317.info())
 ```
 
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-Bus '# 317 (rate: 7 UAH)' (total: 3), transferred 76 from 299 ppl
+Bus '# 317 (rate: 7 €)' (total: 4), transferred 76 from 444 ppl
 ```
 {% endcode %}
 Class variables and instance variables were changed:
@@ -143,14 +254,14 @@ Class variables and instance variables were changed:
 
 ```python
 print(Bus.people_transferred)
-print(marshrutka_317.people_transferred)
+print(bus_317.people_transferred)
 ```
 
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-299
+444
 76
 ```
 {% endcode %}

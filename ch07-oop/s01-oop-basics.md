@@ -2,14 +2,17 @@
 
 > OOP (Object oriented Programming) - programming paradigm where all operations are based on manipulations on abstract objects which has internal state and support methods that query or modify this internal state in some way.
 
+All objects in Python are of some type (which is the class in OOP terminology) but we can also create our own custom classes.
+
 Python’s class mechanism adds classes with a minimum of new syntax and semantics. 
 
 Python classes provide all the standard features of Object Oriented Programming: the class inheritance mechanism allows multiple base classes, a derived class can override any methods of its base class or classes, and a method can call the method of a base class with the same name. Objects can contain arbitrary amounts and kinds of data. As is true for modules, classes partake of the dynamic nature of Python: they are created at runtime, and can be modified further after creation.
 
 ## OOP for absolute beginners
 
+* Class is the user defined data structure containing both variables with data (attributes) and functions (methods)
+    * the blueprint for the box in the picture
 * Instance/Object is box with attributes (data)
-* Class is the blueprint for this box
 
 <img src="../images/tr_07_01.png">
 

@@ -196,7 +196,7 @@ class B(object, A): pass
 
 TypeError                                 Traceback (most recent call last)
 
-Input In [167], in <cell line: 2>()
+Input In [288], in <cell line: 2>()
       1 class A: pass
 ----> 2 class B(object, A): pass
 

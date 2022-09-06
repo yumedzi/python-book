@@ -109,14 +109,35 @@ Object's own attr (from class A)
 class attr from A
 --------------------------------------------------------------------------------
 Running __new__...
-[<class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>, <class 'object'>]
-Running instance method in B...
-Running method of A
-Object's own attr (from class B)
-Running class method in B...
-class attr from B
-Running static method...
-Some static data (from A class)
+()
+
+
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [299], in <cell line: 58>()
+     55 print("--------" * 10)
+     57 # Working with class B (child to A and C)
+---> 58 b = B()
+     59 print(B.mro())
+     60 b.attr = "Object's own attr (from class B)"
+
+
+Input In [299], in B.__new__(cls)
+     38 def __new__(cls):
+     39     print("Running __new__...")
+---> 40     return super().__new__(cls)
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 ### More examples:
@@ -177,13 +198,35 @@ vd
 {% code overflow="wrap" %}
 ```
 Set: z -> !
-Set: 1 -> 100500
+()
 
 
 
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [301], in <cell line: 7>()
+      4         super().__setitem__(key, value)
+      6 vd = VerboseDict(x=1, y=2)
+----> 7 vd["z"] = "!"
+      8 vd[1] = 100500
+      9 vd
 
 
-{'x': 1, 'y': 2, 'z': '!', 1: 100500}
+Input In [301], in VerboseDict.__setitem__(self, key, value)
+      2 def __setitem__(self, key, value):
+      3     print(f'Set: {key} -> {value}')
+----> 4     super().__setitem__(key, value)
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
@@ -208,14 +251,35 @@ vd
 {% code overflow="wrap" %}
 ```
 Set: z -> 3
-Set: 100 -> 100500
-Set: 5 -> 0
+()
 
 
 
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [302], in <cell line: 9>()
+      6         super().__setitem__(key, value)  # no change needed
+      8 vd = VerboseDict(int, x=1, y=2)
+----> 9 vd["z"] = 3
+     10 vd[100] = 100500
+     11 vd[5]
 
 
-VerboseDict(int, {'x': 1, 'y': 2, 'z': 3, 100: 100500, 5: 0})
+Input In [302], in VerboseDict.__setitem__(self, key, value)
+      4 def __setitem__(self, key, value):
+      5     print(f'Set: {key} -> {value}')
+----> 6     super().__setitem__(key, value)
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 #### Extending class, multi-inheritance
@@ -248,15 +312,53 @@ print(counter)
 ```
 MRO for VerboseCounter is: [<class '__main__.VerboseCounter'>, <class '__main__.VerboseDict'>, <class 'collections.Counter'>, <class 'dict'>, <class 'object'>]
 Set: b -> 1
-Set: o -> 1
-Set: o -> 2
-Set: m -> 1
-Set: b -> 2
-Set: b -> 3
-Set: b -> 4
-Set: a -> 1
-Set: m -> 2
-VerboseCounter({'b': 4, 'o': 2, 'm': 2, 'a': 1})
+()
+
+
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [303], in <cell line: 13>()
+     11 # This will use __setitem__ from Counter instead of dict
+     12 print(f'MRO for VerboseCounter is: {VerboseCounter.mro()}')
+---> 13 counter = VerboseCounter("boombbbam")
+     14 print(counter)
+
+
+File /opt/conda/lib/python3.10/collections/__init__.py:577, in Counter.__init__(self, iterable, **kwds)
+    566 '''Create a new, empty Counter object.  And if given, count elements
+    567 from an input iterable.  Or, initialize the count from another mapping
+    568 of elements to their counts.
+   (...)
+    574 
+    575 '''
+    576 super().__init__()
+--> 577 self.update(iterable, **kwds)
+
+
+File /opt/conda/lib/python3.10/collections/__init__.py:670, in Counter.update(self, iterable, **kwds)
+    668             super().update(iterable)
+    669     else:
+--> 670         _count_elements(self, iterable)
+    671 if kwds:
+    672     self.update(kwds)
+
+
+Input In [303], in VerboseDict.__setitem__(self, key, value)
+      4 def __setitem__(self, key, value):
+      5     print(f'Set: {key} -> {value}')
+----> 6     super().__setitem__(key, value)
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 #### Extending list
@@ -296,10 +398,37 @@ print(SuperList("abcde"))
 
 {% code overflow="wrap" %}
 ```
-Before __init__: ['START', 'STOP']
-['START', 'STOP']
-Before __init__: ['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
-['START', 'e', 'd', 'c', 'b', 'a', 'STOP']
+()
+
+
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [304], in <cell line: 20>()
+     15 #         if data:
+     16 #             self.extend(reversed(data))
+     17 #         self.append("STOP")
+     18         pass
+---> 20 print(SuperList())
+     21 print(SuperList("abcde"))
+
+
+Input In [304], in SuperList.__new__(cls, data, *args)
+      4 def __new__(cls, data=None, *args):
+----> 5     result = super().__new__(cls)
+      6     result.append("START")
+      7     if data:
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 There is also bigger example for this with lot of print() calls to see where exactly we are at each moment. Please use it to practice and to dig into this a bit more.
@@ -339,14 +468,37 @@ print(id(l))
 {% code overflow="wrap" %}
 ```
 >>> Use parent's constructor but print this line!
->>> Original list: []
-140109826683536
->>> Before running old __init__: []
->>> After running old __init__: ['a', 'b', 'c', 'd', 'e']
-<class '__main__.SuperList'>
-New 'list': ['a', 'b', 'c', 'd', 'e', 'last element!']
-After changes: [100, 'c', 'd', 'AAA', 'BBB']
-140109826683536
+()
+
+
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [305], in <cell line: 15>()
+     12         print(">>> After running old __init__:", self)
+     13         self.append("last element!")
+---> 15 l = SuperList("abcde")
+     16 print(type(l))
+     17 print("New 'list':", l)
+
+
+Input In [305], in SuperList.__new__(cls, *args, **kwargs)
+      2 def __new__(cls, *args, **kwargs):
+      3     print(">>> Use parent's constructor but print this line!")
+----> 4     original_list = super().__new__(cls, *args, **kwargs)
+      5     print(">>> Original list:", original_list)
+      6     print(id(original_list))
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 ### `super()` based on another class
@@ -384,10 +536,35 @@ D().m()
 {% code overflow="wrap" %}
 ```
 default super()'s MRO is [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
-super().m() -> C (we take <m> from <C>)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-B's MRO is [<class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
-super(B, self).m() -> A (we take <m> from <A>)
+()
+
+
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [306], in <cell line: 20>()
+     18         print(f"B's MRO is {B.mro()}")
+     19         print(f"super(B, self).m() -> {super(B, self).m()} (we take <m> from <A>)")
+---> 20 D().m()
+
+
+Input In [306], in D.m(self)
+     14 def m(self):
+     15     print(f"default super()'s MRO is {self.__class__.mro()}")
+---> 16     print(f"super().m() -> {super().m()} (we take <m> from <C>)")
+     17     print("~" * 60)
+     18     print(f"B's MRO is {B.mro()}")
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 More examples:
@@ -409,14 +586,36 @@ class AResult(A1, A2, A3):
 AResult()()
 ```
 
-
-
-
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-1
+()
+
+
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [307], in <cell line: 11>()
+      9     def __call__(self):       
+     10         return super().attr   
+---> 11 AResult()()
+
+
+Input In [307], in AResult.__call__(self)
+      9 def __call__(self):       
+---> 10     return super().attr
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 The same as `super()`:
@@ -431,13 +630,17 @@ class AResult(A1, A2, A3):
 AResult()()
 ```
 
-
-
-
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
+(<class '__main__.AResult'>, <__main__.AResult object at 0x7f6dddc8c430>)
+Running __getattr__, attr = attr
+
+
+
+
+
 1
 ```
 {% endcode %}
@@ -453,13 +656,17 @@ class AResult(A1, A2, A3):
 AResult()()
 ```
 
-
-
-
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
+(<class '__main__.A1'>, <__main__.AResult object at 0x7f6ddc52cca0>)
+Running __getattr__, attr = attr
+
+
+
+
+
 2
 ```
 {% endcode %}
@@ -472,13 +679,17 @@ class AResult(A1, A2, A3):
 AResult()()
 ```
 
-
-
-
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
+(<class '__main__.A2'>, <__main__.AResult object at 0x7f6dddd50d30>)
+Running __getattr__, attr = attr
+
+
+
+
+
 3
 ```
 {% endcode %}
@@ -509,8 +720,6 @@ class super:
 ```
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 class A:
     def m(self):                                     
@@ -531,19 +740,3 @@ class D(A, B, C):
 print(D.mro())                                       
 D().m()
 ```
-
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-[<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.C'>, <class 'object'>]
-(<class '__main__.B'>, <__main__.D object at 0x7f6ddc87e7a0>)
-Running __getattr__, attr = m
-
-
-
-
-
-'C'
-```
-{% endcode %}

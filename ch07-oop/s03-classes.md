@@ -36,8 +36,8 @@ print(blanka, id(blanka))
 
 {% code overflow="wrap" %}
 ```
-<__main__.Cat object at 0x7f6ddc65fa30> 140109825833520
-<__main__.Cat object at 0x7f6ddc65f8e0> 140109825833184
+<__main__.Cat object at 0x7f6ddc668be0> 140109825870816
+<__main__.Cat object at 0x7f6ddc66b760> 140109825881952
 ```
 {% endcode %}
 Cat class and object is "empty" - doesn't define any attributes and methods. They even don't have their proper name.
@@ -346,7 +346,7 @@ print(bip.say())
 {% code overflow="wrap" %}
 ```
 Robot Bip 1.0 (1000 kg)
-Bip 1.0 says: Oooooh
+Bip 1.0 says: Bzzzt
 ```
 {% endcode %}
 We can re-use this class to create a robot from Futurama using the inheritance. For this we need to specify base/super class in parenthesis during new class definition.
@@ -372,7 +372,7 @@ print(bender.say())
 {% code overflow="wrap" %}
 ```
 Robot Bender (1000 kg)
-Bender says: Oh wait you’re serious. Let me laugh even harder.
+Bender says: Kill all humans
 ```
 {% endcode %}
 As we can we still can use `say` method defined in the base class.
@@ -408,7 +408,7 @@ print(d.a, d.x)
 
 {% code overflow="wrap" %}
 ```
-  Input In [152]
+  Input In [273]
     a = "a from A"[]
                    ^
 SyntaxError: invalid syntax
@@ -449,7 +449,7 @@ bender2_0.send_message(bender2_0.say())
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 2.0 says: Oh, your God!>>>  ***
+*** SENDING MESSAGE: <<<Bender 2.0 says: Oh wait you’re serious. Let me laugh even harder.>>>  ***
 ```
 {% endcode %}
 More advanced example:
@@ -470,7 +470,7 @@ bender3_0.mail()
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 3.0 says: Kill all humans>>>  ***
+*** SENDING MESSAGE: <<<Bender 3.0 says: Oh wait you’re serious. Let me laugh even harder.>>>  ***
 ```
 {% endcode %}
 And even more advanced example (with overloading of the existing `send_message` method with `super()` function covered later):
@@ -491,7 +491,32 @@ bender4_0.send_message()
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 4.0 says: Oh wait you’re serious. Let me laugh even harder.>>>  ***
+()
+
+
+
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [277], in <cell line: 6>()
+      3         return super().send_message(self.say())
+      5 bender4_0 = BendingMailingRobot("Bender 4.0")
+----> 6 bender4_0.send_message()
+
+
+Input In [277], in BendingMailingRobot.send_message(self)
+      2 def send_message(self):
+----> 3     return super().send_message(self.say())
+
+
+Input In [250], in super.__init__(self, *args, **kwargs)
+      2 def __init__(self, *args, **kwargs):             
+      3     print(args)                                  
+----> 4     self.start_cls, self.instance = args
+
+
+ValueError: not enough values to unpack (expected 2, got 0)
 ```
 {% endcode %}
 ## Methods
@@ -526,8 +551,8 @@ print(ex.cool_method)
 
 {% code overflow="wrap" %}
 ```
-I am instance method, my instance is: <__main__.Example object at 0x7f6dddbe37c0>
-<bound method Example.cool_method of <__main__.Example object at 0x7f6dddbe37c0>>
+I am instance method, my instance is: <__main__.Example object at 0x7f6ddc873340>
+<bound method Example.cool_method of <__main__.Example object at 0x7f6ddc873340>>
 ```
 {% endcode %}
 ### Class methods
@@ -573,8 +598,11 @@ Let's add some class method to `Bus` class. Please note that we don't need any e
 
 ```python
 class Bus2(Bus):
+    # creating isolated class attributes to not use the ones from base Bus class
     buses_count = 0
     buses = []
+    people_transferred = 0
+    money_collected = 0
     
     @classmethod
     def general_info(cls):
@@ -599,8 +627,8 @@ Bus2.general_info()
 
 {% code overflow="wrap" %}
 ```
-* People_transferred = 299
-* Money_collected = 2143
+* People_transferred = 0
+* Money_collected = 0
 * Total buses = 0
 * Buses = []
 ```
@@ -612,6 +640,7 @@ Let's add some buses, check the general info and remove buses:
 
 ```python
 bus = Bus2()
+bus.transfer(100)
 Bus2.general_info()
 ```
 
@@ -619,8 +648,8 @@ Bus2.general_info()
 
 {% code overflow="wrap" %}
 ```
-* People_transferred = 299
-* Money_collected = 2143
+* People_transferred = 100
+* Money_collected = 700
 * Total buses = 1
 * Buses = [Bus('Some Bus', 7)]
 ```

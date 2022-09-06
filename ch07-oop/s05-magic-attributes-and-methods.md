@@ -73,26 +73,11 @@ def __init__(self, name):
 
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 print(A())
 A()
 ```
 
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-<__main__.A object at 0x7f6ddc872b00>
-
-
-
-
-
-<__main__.A at 0x7f6ddc871b10>
-```
-{% endcode %}
 ### Hash
 
 `__hash__(self)`
@@ -104,22 +89,10 @@ A()
 * In simplest case as for instances it is based on `id(self)` so all objects are different
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 A().__hash__()
 ```
 
-
-
-
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-8756864250685
-```
-{% endcode %}
 ### Bases 
 
 `__bases__` (attribute)
@@ -127,24 +100,12 @@ A().__hash__()
 * Tuple (possibly empty or a singleton) containing the base classes, in the order of their occurrence in the base class list 
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 class A: pass
 
 A.__bases__
 ```
 
-
-
-
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-(object,)
-```
-{% endcode %}
 ### Docstring
 
 `__doc__` (attribute)
@@ -152,30 +113,11 @@ A.__bases__
 * Class’s documentation string, or None if undefined.
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 print(A.__doc__)
 help(A)
 ```
 
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-None
-Help on class A in module __main__:
-
-class A(builtins.object)
- |  Data descriptors defined here:
- |  
- |  __dict__
- |      dictionary for instance variables (if defined)
- |  
- |  __weakref__
- |      list of weak references to the object (if defined)
-```
-{% endcode %}
 ### Module
 
 `__module__`  (attribute)
@@ -183,22 +125,10 @@ class A(builtins.object)
 * Module name in which the class is defined. This attribute is `"__main__"` in interactive mode.
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 A.__module__
 ```
 
-
-
-
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-'__main__'
-```
-{% endcode %}
 ### Boolean value
 
 `__bool__(self)` (`__nonzero__` for Python 2)
@@ -207,22 +137,10 @@ A.__module__
 * By default - True
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 bool(A())
 ```
 
-
-
-
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-True
-```
-{% endcode %}
 ### Comparison
 
 `__eq__(self, other)`
@@ -245,8 +163,6 @@ It is really a pain to fill all of those!
 Battery: `functools.total_ordering`
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 import functools
 
@@ -267,14 +183,6 @@ print(b1 >= b2)
 print(b1 <= b2)
 ```
 
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-True
-False
-```
-{% endcode %}
 ### Iterator protocol
 
 `__iter__(self)`
@@ -300,8 +208,6 @@ This is very useful to call the method which used very often.
 All instance's attributes are hold in `__dict__` attribute which is a dictionary with keys as names bound to the instance.
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 class C:
     a = 1
@@ -312,22 +218,10 @@ c.b = 2
 c.__dict__
 ```
 
-
-
-
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-{'b': 2}
-```
-{% endcode %}
 > `__slots__` is a list with instance attributes that can be assigned
 
 This is needed to suppress automatic creation of `__dict__` - this can be useful when we have a lot of simple objects and their dictionaries are taking too much space. Also slots are limiting attributes that can be assigned to an object.
 
-
-🪄 <mark style="color:red;">Code</mark>:
 
 ```python
 class D:
@@ -343,12 +237,4 @@ except AttributeError:
     print("We can't access attribute b as it is not listed in __slots__")
 ```
 
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-False
-We can't access attribute b as it is not listed in __slots__
-```
-{% endcode %}
 `__slots__` are meaninless when the class is inherited from the one which doesn't have `__slots__`.

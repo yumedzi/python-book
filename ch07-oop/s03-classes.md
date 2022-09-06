@@ -36,8 +36,8 @@ print(blanka, id(blanka))
 
 {% code overflow="wrap" %}
 ```
-<__main__.Cat object at 0x7f6ddc668be0> 140109825870816
-<__main__.Cat object at 0x7f6ddc66b760> 140109825881952
+<__main__.Cat object at 0x7ff57dd25360> 140692354650976
+<__main__.Cat object at 0x7ff57dd25540> 140692354651456
 ```
 {% endcode %}
 Cat class and object is "empty" - doesn't define any attributes and methods. They even don't have their proper name.
@@ -346,7 +346,7 @@ print(bip.say())
 {% code overflow="wrap" %}
 ```
 Robot Bip 1.0 (1000 kg)
-Bip 1.0 says: Bzzzt
+Bip 1.0 says: Oooooh
 ```
 {% endcode %}
 We can re-use this class to create a robot from Futurama using the inheritance. For this we need to specify base/super class in parenthesis during new class definition.
@@ -372,7 +372,7 @@ print(bender.say())
 {% code overflow="wrap" %}
 ```
 Robot Bender (1000 kg)
-Bender says: Kill all humans
+Bender says: Oh, your God!
 ```
 {% endcode %}
 As we can we still can use `say` method defined in the base class.
@@ -386,12 +386,12 @@ Python supports a limited form of multiple inheritance as well. A class definiti
 
 ```python
 class A:
-    a = "a from A"[]
+    a = "a from A"
     
 class B(A):
     x = "x from B"
     
-class C(A):[]
+class C(A):
     a = "a from C"
     x = "x from C",
     
@@ -403,15 +403,12 @@ print(D.__mro__) # D.mro()
 print(d.a, d.x)
 ```
 
-
 📟 <mark style="color:green;">Output</mark>:
 
 {% code overflow="wrap" %}
 ```
-  Input In [273]
-    a = "a from A"[]
-                   ^
-SyntaxError: invalid syntax
+(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
+a from C x from B
 ```
 {% endcode %}
 Let's enhance our `Robot` example by inheriting from two classes at once.
@@ -449,7 +446,7 @@ bender2_0.send_message(bender2_0.say())
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 2.0 says: Oh wait you’re serious. Let me laugh even harder.>>>  ***
+*** SENDING MESSAGE: <<<Bender 2.0 says: Kiss my shiny metal face>>>  ***
 ```
 {% endcode %}
 More advanced example:
@@ -470,7 +467,7 @@ bender3_0.mail()
 
 {% code overflow="wrap" %}
 ```
-*** SENDING MESSAGE: <<<Bender 3.0 says: Oh wait you’re serious. Let me laugh even harder.>>>  ***
+*** SENDING MESSAGE: <<<Bender 3.0 says: Oh, your God!>>>  ***
 ```
 {% endcode %}
 And even more advanced example (with overloading of the existing `send_message` method with `super()` function covered later):
@@ -479,11 +476,11 @@ And even more advanced example (with overloading of the existing `send_message` 
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python
-class BendingMailingRobot(BendingRobot, Mail):
+class BendingMailingRobot3(BendingRobot, Mail):
     def send_message(self):
         return super().send_message(self.say())
-    
-bender4_0 = BendingMailingRobot("Bender 4.0")
+
+bender4_0 = BendingMailingRobot3("Bender 4.0")
 bender4_0.send_message()
 ```
 
@@ -491,32 +488,7 @@ bender4_0.send_message()
 
 {% code overflow="wrap" %}
 ```
-()
-
-
-
----------------------------------------------------------------------------
-
-ValueError                                Traceback (most recent call last)
-
-Input In [277], in <cell line: 6>()
-      3         return super().send_message(self.say())
-      5 bender4_0 = BendingMailingRobot("Bender 4.0")
-----> 6 bender4_0.send_message()
-
-
-Input In [277], in BendingMailingRobot.send_message(self)
-      2 def send_message(self):
-----> 3     return super().send_message(self.say())
-
-
-Input In [250], in super.__init__(self, *args, **kwargs)
-      2 def __init__(self, *args, **kwargs):             
-      3     print(args)                                  
-----> 4     self.start_cls, self.instance = args
-
-
-ValueError: not enough values to unpack (expected 2, got 0)
+*** SENDING MESSAGE: <<<Bender 4.0 says: Kiss my shiny metal face>>>  ***
 ```
 {% endcode %}
 ## Methods
@@ -551,8 +523,8 @@ print(ex.cool_method)
 
 {% code overflow="wrap" %}
 ```
-I am instance method, my instance is: <__main__.Example object at 0x7f6ddc873340>
-<bound method Example.cool_method of <__main__.Example object at 0x7f6ddc873340>>
+I am instance method, my instance is: <__main__.Example object at 0x7ff57df07610>
+<bound method Example.cool_method of <__main__.Example object at 0x7ff57df07610>>
 ```
 {% endcode %}
 ### Class methods

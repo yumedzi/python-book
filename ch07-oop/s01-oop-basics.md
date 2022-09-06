@@ -152,33 +152,13 @@ obj.method()
 
 {% code overflow="wrap" %}
 ```
-()
+Old result: 1
 
 
 
----------------------------------------------------------------------------
-
-ValueError                                Traceback (most recent call last)
-
-Input In [253], in <cell line: 11>()
-      8         return 2
-     10 obj = B()
----> 11 obj.method()
 
 
-Input In [253], in B.method(self)
-      6 def method(self):
-----> 7     print("Old result:", super().method())
-      8     return 2
-
-
-Input In [250], in super.__init__(self, *args, **kwargs)
-      2 def __init__(self, *args, **kwargs):             
-      3     print(args)                                  
-----> 4     self.start_cls, self.instance = args
-
-
-ValueError: not enough values to unpack (expected 2, got 0)
+2
 ```
 {% endcode %}
 * *Overridding*, also called as *dynamic* or *runtime* polymorphism. 

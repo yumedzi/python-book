@@ -41,7 +41,8 @@
 
 
 ## Tasks, challenges
-* https://www.hackerrank.com/domains/python
-* https://www.codewars.com/kata/python
-* https://py.checkio.org/
-* https://empireofcode.com/
+* [HackerRank](https://www.hackerrank.com/domains/python)
+* [CodeWars](https://www.codewars.com/kata/python)
+* [CheckIO](https://py.checkio.org/)
+* [EdaBit](https://edabit.com/challenges/python3#!)
+* Deprecated/down: [Empire Of Code](https://empireofcode.com/)

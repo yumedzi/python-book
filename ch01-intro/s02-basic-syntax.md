@@ -79,7 +79,7 @@ If code block is not big it is allowed to use inline form:
 if condition: do_something1()
 else: do_something2()
     
-for x in range(x): print(x)
+for x in range(10): print(x)
 ```
 
 And it is possible to specify few statements on the same line using `;`:

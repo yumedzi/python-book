@@ -310,7 +310,7 @@ now_in_kiev
 
 {% code overflow="wrap" %}
 ```
-DateTime(2020, 9, 4, 13, 23, 7, 728239, tzinfo=Timezone('Europe/Kiev'))
+DateTime(2022, 9, 7, 11, 15, 3, 170298, tzinfo=Timezone('Europe/Kiev'))
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:

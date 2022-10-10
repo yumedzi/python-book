@@ -103,9 +103,9 @@ No: `spam  ( ham[ 1 ], { eggs: 2 } )`
 
 * Immediately before a comma, semicolon, or colon:
 
-Yes: `if x == 4: print x, y; x, y = y, x`
+Yes: `if x == 4: print(x, y); x, y = y, x`
 
-No: `if x == 4 : print x , y ; x , y = y , x`
+No: `if x == 4 : print(x , y ); x , y = y , x`
 
 * Immediately before the open parenthesis that starts the argument list of a function call:
 

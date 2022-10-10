@@ -105,9 +105,10 @@ All other values are considered true — so objects of many types are always tru
 
 ## Boolean operations
 
-* or
-* and
-* not
+* `or`
+* `and`
+* `not`
+* `^` (`XOR` - exclusive OR - only if its arguments differ)
 
 | Operation    |  Result                        |
 |--------------|--------------------------------|

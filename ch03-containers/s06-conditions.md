@@ -256,7 +256,7 @@ print(check_student(student1))
 Student John has a good mark
 ```
 {% endcode %}
-If we don't specify a second tuple item or `None` instead of object:
+If we don't specify a second tuple item or pass `None` or any other object instead of a 1,2-item tuple:
 
 
 🪄 <mark style="color:red;">Code</mark>:
@@ -264,6 +264,7 @@ If we don't specify a second tuple item or `None` instead of object:
 ```python
 print(check_student(("Steve",)))
 print(check_student(None))
+print(check_student((1, 2, 3)))
 ```
 
 📟 <mark style="color:green;">Output</mark>:
@@ -271,6 +272,7 @@ print(check_student(None))
 {% code overflow="wrap" %}
 ```
 No mark for student Steve passed
+Incorrect value passed - should be: (NAME: str, MARK:int)
 Incorrect value passed - should be: (NAME: str, MARK:int)
 ```
 {% endcode %}

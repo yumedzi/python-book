@@ -1,5 +1,7 @@
 # Conditions
 
+## if operator
+
 > Python has one omnipotent logical condition check operator: ```if```.
 
 ```python

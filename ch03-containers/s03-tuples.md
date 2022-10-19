@@ -245,7 +245,7 @@ For heterogeneous collections of data where access by name is clearer than acces
 
 In other words:
 * use tuple for structure
-* use list for order/sequencing
+* use list for order/sequencing and processing one by one
 
 ### Examples
 

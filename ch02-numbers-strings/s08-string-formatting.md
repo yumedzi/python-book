@@ -293,6 +293,7 @@ class Plant(object):
 
 | Data                    | Format                 | Output            | Decription |
 |-------------------------|------------------------|------------------|-------------------------------------------------|
+| ```123```         | ```{:10}```           | <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>```123```       | placeholder is 10|
 | ```3.1415926```         | ```{:.2f}```           | ```3.14```       | 2 decimal places    |
 | ```3.1415926```         | ```{:+.2f}```          | ```+3.14```      |  2 decimal places with sign  |
 | ```2.71828```           | ```{:.0f}```           | ```3```          | No decimal places    |

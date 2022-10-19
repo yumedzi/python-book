@@ -94,7 +94,7 @@ from __future__ import division
 
 ```python
 import math
-print (dir(math))
+print(dir(math))
 ```
 
 📟 <mark style="color:green;">Output</mark>:

@@ -13,7 +13,7 @@
 | `tuple`     | Immutable sequense of objects            |<span style="color:blue">No</span>|  `(1, 2, 3)`          |
 | `set`       | Mutable collection of unique objects     |<span style="color:green">Yes</span>|  `{1, 2, 3}`          |
 | `frozenset`| Immutable collection of unique objects    |<span style="color:blue">No</span>|  `frozenset({1, 2, 3})`
-| `dict`      | The collection of key-value pairs        |<span style="color:green">Yes</span>|  `{"name": "Johnny", "second_name": "Walker" }`
+| `dict`      | The collection of key-value pairs        |<span style="color:green">Yes</span>|  `{"name": "Johnny", "second_name": "Walker"}`
 
 Main categories:
 * Mutable or Immutable
@@ -26,6 +26,7 @@ Main categories:
     * Can be invoked/run like a function or class (has method `__call__()` defined)? 
 
 Additional types:
+* `range`
 * `function` 
 * `code object`
 * `module`

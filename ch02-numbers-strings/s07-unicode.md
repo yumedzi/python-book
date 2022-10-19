@@ -10,7 +10,7 @@ That's why Unicode was born!
 
 > Unicode provides a unique number for every character, no matter what the platform, nomatter what the program, no matter what the language.
 
-Unicode is a registry for all known characters. Current Unicode 14.0 (September 2021) contains `144,697` characters:
+Unicode is a registry for all known characters. Current Unicode 14.0 (September 2022) contains `144,697` characters:
 
 * `144,697` graphic characters
 * `163` format characters
@@ -148,6 +148,7 @@ import unicodedata
 print(unicodedata.name("ґ"))
 print(unicodedata.name("ł"))
 print(unicodedata.name("☕"))
+print(unicodedata.name("🟥"))
 ```
 
 📟 <mark style="color:green;">Output</mark>:
@@ -157,6 +158,7 @@ print(unicodedata.name("☕"))
 CYRILLIC SMALL LETTER GHE WITH UPTURN
 LATIN SMALL LETTER L WITH STROKE
 HOT BEVERAGE
+LARGE RED SQUARE
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:

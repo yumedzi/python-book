@@ -167,3 +167,108 @@ The following table summarizes the operator precedence in Python, from lowest pr
 |`await x`                                            | Await expression
 |`x[index]`, `x[index:index]`, `x(arguments...)`, `x.attribute`                | **Subscription, slicing, call, attribute reference**
 |`(expressions...)`, `[expressions...]`, `{key: value...}`, `{expressions...}` | Binding or tuple display, list display, dictionary display, set display
+
+
+
+## Structural Pattern Matching
+
+Sometimes it is pain to manage the tree-like structure of `if-elif-elif-elif-else` statements. It is becoming a burden to maintain:
+
+```python
+if subject == value1:
+    <action_1>
+elif subject == value2:
+    <action_2>
+else:
+    <default_action>
+```
+
+In Python 3.10 we got a completely new syntax for defining of a match statement and case statements of patterns with associated actions allowing substitute a mess of multiple `elif` conditions with a much clear structure. 
+
+The generic syntax of pattern matching is:
+
+```python
+match subject:
+    case pattern_1:
+        <action_1>
+    case <pattern_2>:
+        <action_2>
+    case _:
+        <default_action>
+```
+
+Pattern matching will try each pattern until a match to run an action from it or the lastly defined `default` match action. The match is comparing the structure/value of the pattern and a given item. It is possible to substitute exact values in the pattern with variables and use them in a action.
+
+An example:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+def http_error(status):
+    match status:
+        case 400:
+            return "Bad request"
+        case 404:
+            return "Not found"
+        case 500 | 501 | 502:  # We can use set-like case pattern
+            return "Server Error"
+        case _:
+            return "Something's wrong with the internet"
+
+print(http_error(500))
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+Server Error
+```
+{% endcode %}
+We can even assign variables using patterns:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+GOOD_MARKS = [4, 5]
+
+def check_student(student: tuple) -> str:
+    match student:
+        case (name,):
+            return f"No mark for student {name} passed"
+        case (name, mark):
+            return f"Student {name} has a {'good' if mark in GOOD_MARKS else 'bad'} mark"
+        case _:
+            return "Incorrect value passed - should be: (NAME: str, MARK:int)"
+
+student1 = "John", 5
+print(check_student(student1))
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+Student John has a good mark
+```
+{% endcode %}
+If we don't specify a second tuple item or `None` instead of object:
+
+
+🪄 <mark style="color:red;">Code</mark>:
+
+```python
+print(check_student(("Steve",)))
+print(check_student(None))
+```
+
+📟 <mark style="color:green;">Output</mark>:
+
+{% code overflow="wrap" %}
+```
+No mark for student Steve passed
+Incorrect value passed - should be: (NAME: str, MARK:int)
+```
+{% endcode %}

@@ -367,105 +367,13 @@ pattern = r"""user: ([\w\d@\.]+)
 account: \w+\\(\w+)\.?(\w*)?"""
 
 print(f"Result of re.findall: {re.findall(pattern, text)}")
-
+print("---")
 for email, first_name, second_name in re.findall(pattern, text):
     print(f"User <{email}>: {first_name} {second_name}")
-    
+print("---")
 for m in re.finditer(pattern, text):
     email, first_name, second_name = m.groups()
     print(f"User <{email}>: {first_name} {second_name}")
 ```
 
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-Result of re.findall: [('cmonet324@salon_paris.com', 'Claude', 'Monet'), ('Elizabeth2@windsor.com', 'Elizabeth', 'II'), ('b.allen@starlabs.com', 'Barry', 'Allen')]
-User <cmonet324@salon_paris.com>: Claude Monet
-User <Elizabeth2@windsor.com>: Elizabeth II
-User <b.allen@starlabs.com>: Barry Allen
-User <cmonet324@salon_paris.com>: Claude Monet
-User <Elizabeth2@windsor.com>: Elizabeth II
-User <b.allen@starlabs.com>: Barry Allen
-```
-{% endcode %}
-🪄 <mark style="color:red;">Code</mark>:
-
-```python
-pattern
-```
-
-
-
-
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-'user: ([\\w\\d@\\.]+)\naccount: \\w+\\\\(\\w+)\\.?(\\w*)?'
-```
-{% endcode %}
-* string `user: `
-* text containing words, digits, `@`, dots and `_` - capturing as group `#1`
-* string `\naccount: ` followed by a string containing words ending with `\`
-* two capturing groups (`#2` and optional `#3`) for texts containing words only separated by optional (because of `?` quantifier) backslash
-
-<img src="../images/tr_02_03.png" />
-
-### Flags
-
-> Flag is optional argument for all main `re` methods. It changes how RE engine works:
-
-| Regex Flag  | Description |
-|-------------|--------------|
-| `re.M` |	**M**ulti line. Causes `^` and `$` to match the begin/end of each line (not only begin/end of string)
-| `re.I` |	Case **i**sensitive
-| `re.S` | 	**S**ingle line. Dot matches newline characters 
-| `re.X` |  E**x**tended. Spaces and text after a `#` in the pattern are ignored
-
-### Greediness
-
-> 'Greedy' means match longest possible string.
->
-> 'Lazy' means match shortest possible string.
-
-
-By default quantifiers "\*" and "+" are greedy - this means that regexp will try to match as much text as possible.
-Let's check the following example where we can see that regexp will match too much (where we wanted to parse out the contents of the tag "span"):
-
-
-
-🪄 <mark style="color:red;">Code</mark>:
-
-```python
-html = "<span>text1</span> and <span>text2</span> and <span>text3</span>"
-
-re.findall(r"<span>(.*)</span>", html)
-```
-
-
-
-
-📟 <mark style="color:green;">Output</mark>:
-
-{% code overflow="wrap" %}
-```
-['text1</span> and <span>text2</span> and <span>text3']
-```
-{% endcode %}
-To make these quantifiers (`*` and `+`) lazy (non-greedy) to much as few as possible we can add `?` to them.
-Now the example from above correctly returns the contents of all `<span>` tags:
-
-
-🪄 <mark style="color:red;">Code</mark>:
-
-```python
-html = "<span>text1</span> and <span>text2</span> and <span>text3</span>"
-
-re.findall(r"<span>(.*?)</span>", html)
-```
-
-
-
-
-    ['text1', 'text2', 'text3']
+    Result of re.findall: [('cmonet324@salon_paris.com', 'Claude', 'Monet'), ('Elizabeth2@windsor.com', 'Elizabeth', 'II'), ('b.allen@starlabs.com', 'Barry', 'Allen')]

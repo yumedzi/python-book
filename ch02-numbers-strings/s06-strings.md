@@ -658,7 +658,7 @@ print("Surströmming".encode("latin_1"))
 print("Piękna jest taka pewność, ale niepewność jest piękniejsza.".encode("latin2"))
 
 print("Ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
-#print("Ґуґл з'їв яйко-сподівайко".encode("latin-1")) # WON'T WORK
+# print("Ґуґл з'їв яйко-сподівайко".encode("latin-1")) # WON'T WORK
 ```
 
 📟 <mark style="color:green;">Output</mark>:

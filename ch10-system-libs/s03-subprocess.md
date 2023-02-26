@@ -574,19 +574,11 @@ subprocess.getoutput("cat tmp_file")
 Pipeline:
 
 
-🪄 <mark style="color:red;">Code</mark>:
-
 ```python
 ! df -ah | grep /notebooks
 ```
 
-📟 <mark style="color:green;">Output</mark>:
 
-{% code overflow="wrap" %}
-```
-/dev/vg1000/lv  7.0T  6.6T  459G  94% /notebooks
-```
-{% endcode %}
 🪄 <mark style="color:red;">Code</mark>:
 
 ```python

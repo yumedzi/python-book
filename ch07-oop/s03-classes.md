@@ -76,12 +76,16 @@ class Cat:
         
     def __str__(self):
         return f'<Cat "{self.name}">'
+    
+    def __repr__(self):
+        return f'Cat("{self.name}")'
         
 agata = Cat("Agata")
 street_cat = Cat()
 
 print(agata)
 print(street_cat)
+print(repr(agata))
 ```
 
 📟 <mark style="color:green;">Output</mark>:
@@ -90,6 +94,7 @@ print(street_cat)
 ```
 <Cat "Agata">
 <Cat "Stray">
+Cat("Agata")
 ```
 {% endcode %}
 Magic methods are not the only ones we can define - in fact we can add any method that would describe some action involving an object.
@@ -131,9 +136,9 @@ Examples with more methods/attributes:
 class Bus:
     """ Sample Bus class """
     # Class attributes
-    buses_count = 0
-    people_transferred = 0
-    money_collected = 0
+    buses_count = 0         # IDEA: change with classmethod property -- get len(buses)
+    people_transferred = 0  # IDEA: change with dict()
+    money_collected = 0     # IDEA: change with dict()
     buses = []
  
     # Instance Initializer

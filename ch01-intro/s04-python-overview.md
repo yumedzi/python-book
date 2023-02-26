@@ -25,7 +25,7 @@ So, in next few slides we are going to see:
 | `tuple`     | Tuple        | Immutable sequense of objects            | No    |  `(1, 2, 3)`          |
 | `set`       | Set          | Mutable collection of unique objects     | Yes   |  `{1, 2, 3}`          |
 | `frozentset`| Frozen Set   | Immutable collection of unique objects   | No    |  `frozenset({1, 2, 3})`          |
-| `dict`      | Dictionary   | The collection of key-value pairs        | Yes   |  `{"name": "Johnny", "second_name": "Walker" }`  |
+| `dict`      | Dictionary   | The collection of key-value pairs        | Yes   |  `{"name": "Johnny", "second_name": "Walker"}`  |
 |   
 
 ### Immutable types (cannot be changed after creation)

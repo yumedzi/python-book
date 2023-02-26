@@ -58,7 +58,7 @@ Update/clean advises
 * Variables should be named properly with descriptive names( `a`, `abc` or `function_1` are not good). 
 * Modules ( `.py` files) should be max 500 lines of code. 
 * Each module should have a clear purpose and name (e.g. `data_processing.py`, `db_export.py` ). 
-* Use `if name == '__main__':` code blocks if this module will be imported. 
+* Use `if __name__ == '__main__':` code blocks if this module will be imported. 
 * Use list comprehensions when it is suitable (not too long lines)
 * Use `for` loops and don't forget about `continue` and `break/else` clauses. 
 * When iterating - don't use `for i in range(len(list_))`, use `enumerate()` instead

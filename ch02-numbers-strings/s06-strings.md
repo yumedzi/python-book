@@ -658,7 +658,7 @@ print("Surströmming".encode("latin_1"))
 print("Piękna jest taka pewność, ale niepewność jest piękniejsza.".encode("latin2"))
 
 print("Ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
-# print("Ґуґл з'їв яйко-сподівайко".encode("latin-1")) # WON'T WORK
+# print("Ґуґл з'їв яйко-сподівайко".encode("latin1")) # WON'T WORK
 ```
 
 📟 <mark style="color:green;">Output</mark>:
@@ -668,5 +668,19 @@ print("Ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
 b'Surstr\xf6mming'
 b'Pi\xeakna jest taka pewno\xb6\xe6, ale niepewno\xb6\xe6 jest pi\xeakniejsza.'
 b"\xa5\xf3\xb4\xeb \xe7'\xbf\xe2 \xff\xe9\xea\xee-\xf1\xef\xee\xe4\xb3\xe2\xe0\xe9\xea\xee"
+
+
+
+---------------------------------------------------------------------------
+
+UnicodeEncodeError                        Traceback (most recent call last)
+
+Input In [6], in <cell line: 7>()
+      4 print("Piękna jest taka pewność, ale niepewność jest piękniejsza.".encode("latin2"))
+      6 print("Ґуґл з'їв яйко-сподівайко".encode("windows-1251"))
+----> 7 print("Ґуґл з'їв яйко-сподівайко".encode("latin1"))
+
+
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
 ```
 {% endcode %}

@@ -121,7 +121,8 @@ But there are much more of them!
     * `set()`
     * `bool()`
     * `frozenset()`
-    
+    * `bytes()`
+    * `bytearray()`    
 
 * Introspection:
     * `id()`

@@ -29,7 +29,8 @@ Functions:
 * `lowercase_with_underscores`
 
 Modules:
-* `lowercasewithoutunderscores`
+* `shortalllowercases`
+* `long_can_use_underscores_for_readability`
 
 Class:
 * `CapWords`

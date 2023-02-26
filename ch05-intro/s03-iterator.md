@@ -62,12 +62,12 @@ list(iter([1, 2, "a", None, 10.1]))
 a = [1, 2, 3, 4]
 print( "__next__" in a ) # list doesn't have __next__() --> not iterator! just iterable
 
-print( a.__iter__ )
-print (a.__iter__().__next__())
+print(a.__iter__ )
+print(a.__iter__().__next__())
 a_iter = iter(a)
-print( a_iter )
-print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
-print (a_iter.__next__())
+print(a_iter )
+print(a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
+print(a_iter.__next__())
 ```
 
 📟 <mark style="color:green;">Output</mark>:
@@ -75,9 +75,9 @@ print (a_iter.__next__())
 {% code overflow="wrap" %}
 ```
 False
-<method-wrapper '__iter__' of list object at 0x000000000441FC48>
+<method-wrapper '__iter__' of list object at 0x7f57511021c0>
 1
-<list_iterator object at 0x00000000043AE860>
+<list_iterator object at 0x7f5751f67a00>
 1 2 3 4
 
 
@@ -86,10 +86,10 @@ False
 
 StopIteration                             Traceback (most recent call last)
 
-<ipython-input-25-e15c83738056> in <module>()
-      7 print( a_iter )
-      8 print (a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
-----> 9 print (a_iter.__next__())
+Input In [1], in <cell line: 9>()
+      7 print(a_iter )
+      8 print(a_iter.__next__(), a_iter.__next__(), a_iter.__next__(), a_iter.__next__())
+----> 9 print(a_iter.__next__())
 
 
 StopIteration:

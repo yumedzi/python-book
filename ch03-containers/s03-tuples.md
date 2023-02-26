@@ -1,6 +1,6 @@
 # Tuples
 
-> Tuple is ordered immutable sequence of objects. They are used when memory counts, when we don't want to change members accidentally, for passing arguments etc.
+> Tuple is ordered immutable sequence of ANY objects. They are used when memory counts, when we don't want to change members accidentally, for passing arguments etc.
 
 > Syntactically, a tuple is a comma-separated sequence of values. It is not necessary, but it is conventional to enclose tuples in parentheses.
 

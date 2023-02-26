@@ -150,11 +150,4 @@ So any Python object includes at a minimum:
     * for numbers like `int`, `float` etc. - it's the value itself
     * for sequences - pointer to sctucture in memory which holds member objects
 
-On a 64-bit operating system (the default these days) those first two items mean a minimum of `16` additional bytes of overhead. 
-
-### Naming rules
-
-* Variables can only contain letters, numbers, and underscores. Variable names can start with a letter or an underscore, but can not start with a number.
-* Spaces are not allowed in variable names, so we use underscores instead of spaces. For example, use student_name instead of "student name".
-* You cannot use Python keywords as variable names.
-* Be careful about using the lowercase letter l and the uppercase letter O in places where they could be confused with the numbers 1 and 0.
+On a 64-bit operating system (the default these days) those first two items mean a minimum of `16` additional bytes of overhead.

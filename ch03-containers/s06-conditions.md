@@ -191,7 +191,7 @@ The generic syntax of pattern matching is:
 
 ```python
 match subject:
-    case pattern_1:
+    case <pattern_1>:
         <action_1>
     case <pattern_2>:
         <action_2>
@@ -216,7 +216,7 @@ def http_error(status):
         case 500 | 501 | 502:  # We can use set-like case pattern
             return "Server Error"
         case _:
-            return "Something's wrong with the internet"
+            return "The status is not supported"
 
 print(http_error(500))
 ```
@@ -240,12 +240,16 @@ def check_student(student: tuple) -> str:
     match student:
         case (name,):
             return f"No mark for student {name} passed"
+        case ("", _):
+            return f"Empty student name is not supported"
+        case (_, 0):
+            return f"Mark 0 is not supported"
         case (name, mark):
             return f"Student {name} has a {'good' if mark in GOOD_MARKS else 'bad'} mark"
         case _:
             return "Incorrect value passed - should be: (NAME: str, MARK:int)"
 
-student1 = "John", 5
+student1 = "John", 0
 print(check_student(student1))
 ```
 
@@ -253,7 +257,7 @@ print(check_student(student1))
 
 {% code overflow="wrap" %}
 ```
-Student John has a good mark
+Mark 0 is not supported
 ```
 {% endcode %}
 If we don't specify a second tuple item or pass `None` or any other object instead of a 1,2-item tuple:

@@ -456,7 +456,7 @@ pos_only(42)      # OK
 pos_only(arg=42)  # Error
 ```
 
-## Keyword-only parameters
+## Keyword-only arguments
 
 > There is a special syntax to mark some arguments as *keyword-only*. Those parameters go after `*` symbol in the arguments list.
 
@@ -511,7 +511,7 @@ files_search(["1.txt", "some.log"], depth=3, include_archives=True)
 
 ```python
 # ERROR:
-files_search(["1.txt", "some.log"], 1, 1, True, False)
+files_search(["1.txt", "some.log"], 1, 1, True)
 ```
 
 
@@ -519,16 +519,16 @@ files_search(["1.txt", "some.log"], 1, 1, True, False)
 
 {% code overflow="wrap" %}
 ```
+---------------------------------------------------------------------------
 
+TypeError                                 Traceback (most recent call last)
 
-TypeErrorTraceback (most recent call last)
-
-<ipython-input-7-53f9c885bca9> in <module>
+Input In [2], in <cell line: 2>()
       1 # ERROR:
-----> 2 files_search(["1.txt", "some.log"], 1, 1, True, False)
+----> 2 files_search(["1.txt", "some.log"], 1, 1, True)
 
 
-TypeError: files_search() takes 1 positional argument but 5 were given
+TypeError: files_search() takes 1 positional argument but 4 were given
 ```
 {% endcode %}
 ## Annotations

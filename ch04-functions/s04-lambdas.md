@@ -118,8 +118,8 @@ f2 = lambda: len([x for x in range(10000)])
 
 {% code overflow="wrap" %}
 ```
-654 µs ± 25 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
-630 µs ± 2.84 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
+680 µs ± 37.4 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
+649 µs ± 5.79 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
 ```
 {% endcode %}
 This is because lambda is syntax sugar and in the end almost the same code is being constructed

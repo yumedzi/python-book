@@ -646,7 +646,7 @@ print(f'dict is {d}', end="\n - - -\n")
 
 keys, values = d.keys(), d.values()
 
-print(f"keys (len is {keys}): {keys}")
+print(f"keys (len is {len(keys)}): {keys}")
 print("list(keys):", list(keys), end="\n - - -\n")
 
 print(f"values:  (len is {len(values)}): {values}")
@@ -659,7 +659,7 @@ print("list(values):", list(values))
 ```
 dict is {'Alfa': 0, 'Bravo': 1, 'Charlie': 2, 'Delta': 3}
  - - -
-keys (len is dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])): dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
+keys (len is 4): dict_keys(['Alfa', 'Bravo', 'Charlie', 'Delta'])
 list(keys): ['Alfa', 'Bravo', 'Charlie', 'Delta']
  - - -
 values:  (len is 4): dict_values([0, 1, 2, 3])

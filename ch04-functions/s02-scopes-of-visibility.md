@@ -87,7 +87,7 @@ b = 3.1415926
 c = "old string"
 
 def f():
-    print(a)
+    print(a)  
     global b
 
     b = 2

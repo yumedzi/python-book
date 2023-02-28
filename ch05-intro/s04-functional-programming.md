@@ -108,7 +108,7 @@ Task:
 ```python
 expr = "1+2+22+++100++48"
 res = 0
-
+ 
 for t in expr.split("+"):
     if t != "":
         res += int(t)
@@ -262,8 +262,8 @@ print(list(map(lambda x: x+1, [1, 2, 3])))
 print(list(filter(bool, [1, 2, 0])))
 print(list(filter(lambda x: x > 0, [-2, -1, 0, 1, 2])))
 print(list(filter(lambda x: x%2, [1, 2, 3, 4, 5, 6, 7, 8])))
-print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else True, [1,2,3,4,5,0, "a", [], 0.0, False, None])))
-print(list(filter(lambda z: int(z) % 2 if isinstance(z, int) else False, [1,2,3,4,5,0, "a", [], 0.0, False, None])))
+print(list(filter(lambda a: int(a) % 2 if isinstance(a, int) else True, [1,2,3,4,5,0, "a", [], 0.0, False, None])))
+print(list(filter(lambda a: int(a) % 2 if isinstance(a, int) else False, [1,2,3,4,5,0, "a", [], 0.0, False, None])))
 ```
 
 📟 <mark style="color:green;">Output</mark>:

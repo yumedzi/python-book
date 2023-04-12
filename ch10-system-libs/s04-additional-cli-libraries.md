@@ -734,7 +734,7 @@ endpoint = 'https://catfact.ninja/facts?limit=5'
 
 r = requests.get(endpoint)
 print(r.status_code) 
-# print(r.json())
+#print(r.json())
 facts = r.json()['data']
 for f in facts: 
     print(f"* {f['fact']}")
@@ -745,11 +745,11 @@ for f in facts:
 {% code overflow="wrap" %}
 ```
 200
-* A cat's jaw has only up and down motion; it does not have any lateral, side to side motion, like dogs and humans.
-* Abraham Lincoln loved cats. He had four of them while he lived in the White House.
-* When your cats rubs up against you, she is actually marking you as \hers\" with her scent. If your cat pushes his face against your head"
-* Approximately 40,000 people are bitten by cats in the U.S. annually.
-* A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.
+* Unlike dogs, cats do not have a sweet tooth. Scientists believe this is due to a mutation in a key taste receptor.
+* When a cat chases its prey, it keeps its head level. Dogs and humans bob their heads up and down.
+* The technical term for a cat’s hairball is a “bezoar.”
+* A group of cats is called a “clowder.”
+* A cat can’t climb head first down a tree because every claw on a cat’s paw points the same way. To get down from a tree, a cat must back down.
 ```
 {% endcode %}
 🪄 <mark style="color:red;">Code</mark>:

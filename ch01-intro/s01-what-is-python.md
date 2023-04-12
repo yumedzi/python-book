@@ -148,7 +148,7 @@ Almost everything said for Java also applies for C++, just more so: where Python
 There are two main branches of Python: 
 * Python 2 (~ 2.7.17)
     * The old branch with the support stopped at January 2020.
-* Python 3 (~ 3.10)
+* Python 3 (~ 3.11)
 
 Python 3 is a "big hotfix" for a lot of different issues found in Python 2 over the years.
 
